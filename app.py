@@ -1,0 +1,1264 @@
+"""
+视频精选 Web 应用 — Flask 后端 v3
+新增: 搜索API · 并发YouTube · 视频缓存 · 并行摘要 · 健康检查 · 封面代理 · 深度分析 · 质量评分
+"""
+import json
+import hashlib
+import os
+import re
+import time
+from datetime import datetime
+import urllib.parse
+import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from io import BytesIO
+from pathlib import Path
+
+import requests
+from flask import Flask, Response, jsonify, render_template, request
+
+from config import (
+    BILIBILI_CATEGORIES,
+    BILIBILI_CATEGORY_LABELS,
+    CACHE_DIR,
+    DEEPSEEK_API_KEY,
+    DEEPSEEK_BASE_URL,
+    MIN_DURATION_SECONDS,
+    NOTES_EXPORT_DIR,
+    SUMMARY_CACHE_TTL,
+    VIDEO_LIST_CACHE_TTL,
+    VIDEOS_PER_PAGE,
+    YOUTUBE_API_KEY,
+    YOUTUBE_EDUCATION_CHANNELS,
+    YOUTUBE_MAX_WORKERS,
+    YOUTUBE_MAX_WORKERS_API,
+    YOUTUBE_TIMEOUT,
+)
+
+app = Flask(__name__)
+app.config["JSON_AS_ASCII"] = False
+
+Path(CACHE_DIR).mkdir(parents=True, exist_ok=True)
+
+# YouTube 时长缓存 (永久，时长不变)
+DURATION_CACHE_FILE = Path(CACHE_DIR) / "yt_duration_cache.json"
+
+
+def _load_duration_cache() -> dict:
+    if DURATION_CACHE_FILE.exists():
+        try:
+            return json.loads(DURATION_CACHE_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
+def _save_duration_cache(data: dict) -> None:
+    DURATION_CACHE_FILE.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+
+def _get_cached_duration(video_id: str) -> int:
+    return _load_duration_cache().get(video_id, 0)
+
+
+def _set_cached_duration(video_id: str, seconds: int) -> None:
+    cache = _load_duration_cache()
+    cache[video_id] = seconds
+    if len(cache) > 5000:
+        cache = dict(list(cache.items())[-3000:])
+    _save_duration_cache(cache)
+
+
+# ──────────────────────────────────────────────
+#  缓存工具
+# ──────────────────────────────────────────────
+
+def cache_get(key: str) -> dict | None:
+    cache_file = Path(CACHE_DIR) / f"{key}.json"
+    if not cache_file.exists():
+        return None
+    try:
+        data = json.loads(cache_file.read_text(encoding="utf-8"))
+        return data
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def cache_set(key: str, data: dict) -> None:
+    data["_ts"] = time.time()
+    cache_file = Path(CACHE_DIR) / f"{key}.json"
+    cache_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def cache_key(*parts: str) -> str:
+    return hashlib.md5(":".join(parts).encode()).hexdigest()[:16]
+
+
+def cache_get_with_ttl(key: str, ttl: int) -> dict | None:
+    data = cache_get(key)
+    if data and time.time() - data.get("_ts", 0) < ttl:
+        return data
+    return None
+
+
+def strip_html(text: str) -> str:
+    return re.sub(r"<[^>]+>", "", text)
+
+
+def parse_duration(raw: str) -> int:
+    """解析时长字符串为秒数。支持 mm:ss 和 hh:mm:ss"""
+    if not raw:
+        return 0
+    raw = str(raw).strip()
+    # 已经是纯数字（秒）
+    if raw.isdigit():
+        return int(raw)
+    parts = raw.split(":")
+    if len(parts) == 2:
+        return int(parts[0]) * 60 + int(parts[1])
+    elif len(parts) == 3:
+        return int(parts[0]) * 3600 + int(parts[1]) * 60 + int(parts[2])
+    return 0
+
+
+def format_duration(seconds: int) -> str:
+    """秒数 → 可读时长: 12:34 或 1:23:45"""
+    if seconds <= 0:
+        return ""
+    h, m = divmod(seconds, 3600)
+    m, s = divmod(m, 60)
+    if h > 0:
+        return f"{h}:{m:02d}:{s:02d}"
+    return f"{m}:{s:02d}"
+
+
+def duration_badge(seconds: int) -> str:
+    """时长标签: 短/中/长"""
+    if seconds < 600:
+        return "5-10分钟"
+    elif seconds < 1800:
+        return "10-30分钟"
+    elif seconds < 3600:
+        return "30-60分钟"
+    else:
+        return "60分钟以上"
+
+
+def parse_iso8601_duration(iso_duration: str) -> int:
+    """解析 YouTube API 返回的 ISO 8601 时长 (PT12M34S) 为秒数"""
+    if not iso_duration:
+        return 0
+    m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", str(iso_duration).strip())
+    if not m:
+        return 0
+    h, mi, s = (int(m.group(g) or 0) for g in (1, 2, 3))
+    return h * 3600 + mi * 60 + s
+
+
+def _proxy_thumbnail(url: str) -> str:
+    """将外部图片URL转为本地代理URL，解决B站防盗链"""
+    if not url:
+        return ""
+    return f"/api/thumbnail?url={urllib.parse.quote(url, safe='')}"
+
+
+def _parse_view_count(raw: str) -> float:
+    """解析'12.3万'格式为数字"""
+    if not raw:
+        return 0
+    raw = str(raw).strip()
+    if "万" in raw:
+        return float(raw.replace("万", "")) * 10000
+    try:
+        return float(raw)
+    except ValueError:
+        return 0
+
+
+def _video_score(v: dict) -> float:
+    """视频质量综合评分（含时效性加权）"""
+    views = v.get("views_raw", 0) or _parse_view_count(v.get("views", ""))
+    danmaku = _parse_view_count(v.get("danmaku", ""))
+    dur = v.get("duration_seconds", 0)
+    published = v.get("published", 0)
+
+    # 基础: 播放量 (log防止头部垄断)
+    score = max(1, views) ** 0.4
+
+    # 互动加成: 弹幕/播放比
+    if views > 0 and danmaku > 0:
+        engagement = min(danmaku / views * 1000, 10)
+        score *= (1 + engagement * 0.5)
+
+    # 时长加成: 中长视频加权（10-60分钟最佳）
+    if 600 <= dur <= 3600:
+        score *= 1.3
+    elif dur > 3600:
+        score *= 1.0
+
+    # 时效性加权: 越新越高（24h内+200%, 3天内+150%, 7天内+100%, 14天内+50%）
+    if isinstance(published, (int, float)) and published > 0:
+        age_hours = (time.time() - published) / 3600
+        if age_hours <= 24:
+            score *= 3.0
+        elif age_hours <= 72:
+            score *= 2.5
+        elif age_hours <= 168:
+            score *= 2.0
+        elif age_hours <= 336:
+            score *= 1.5
+
+    # 作者权重: 知名作者加成
+    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online"}
+    if v.get("author", "") in top_authors:
+        score *= 1.5
+
+    return round(score, 1)
+
+
+# ──────────────────────────────────────────────
+#  B站 视频源
+# ──────────────────────────────────────────────
+
+def _parse_bilibili_video(item: dict) -> dict:
+    tid = item.get("tid", 0)
+    dur_raw = item.get("duration", "")
+    dur_sec = parse_duration(dur_raw)
+    stat = item.get("stat", {})
+    return {
+        "id": f"bilibili_{item.get('aid', item.get('id', ''))}",
+        "source": "bilibili",
+        "title": item.get("title", ""),
+        "url": f"https://www.bilibili.com/video/{item.get('bvid', '')}",
+        "thumbnail": _proxy_thumbnail(item.get("pic", "")),
+        "author": item.get("owner", {}).get("name", ""),
+        "duration": format_duration(dur_sec),
+        "duration_seconds": dur_sec,
+        "duration_badge": duration_badge(dur_sec),
+        "views": format_count(stat.get("view", 0)),
+        "views_raw": int(stat.get("view", 0) or 0),
+        "danmaku": format_count(stat.get("danmaku", 0)),
+        "likes": format_count(stat.get("like", 0)),
+        "likes_raw": int(stat.get("like", 0) or 0),
+        "category": BILIBILI_CATEGORIES.get(tid, _guess_category(tid)),
+        "description": (item.get("desc", "") or "")[:300],
+        "published": item.get("pubdate", 0),
+        "published_str": datetime.fromtimestamp(item.get("pubdate", 0)).strftime("%Y-%m-%d") if item.get("pubdate", 0) else "",
+        "embed_id": item.get("bvid", ""),
+        "embed_src": "bilibili",
+        "summary": None,
+        "favorited": False,
+    }
+
+
+def _guess_category(tid: int) -> str:
+    """对未映射的 tid 猜一个合理的分类名"""
+    guesses = {
+        1: "动画", 13: "番剧", 167: "国创", 3: "音乐", 129: "舞蹈",
+        4: "游戏", 5: "娱乐", 119: "鬼畜", 155: "时尚", 160: "生活",
+        165: "广告", 166: "搞笑", 181: "影视",
+    }
+    return guesses.get(tid, f"分区{tid}")
+
+
+def fetch_bilibili_videos(category_id: int | None = None) -> list[dict]:
+    """获取 B站教育类视频（热门 + 分区排行榜）"""
+    videos = []
+    seen_ids = set()
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+        "Referer": "https://www.bilibili.com/",
+    }
+
+    def add_video(item):
+        vid = item.get("aid", item.get("id", ""))
+        if vid not in seen_ids:
+            seen_ids.add(vid)
+            v = _parse_bilibili_video(item)
+            # 过滤纯娱乐内容
+            if v["category"] in ("动画", "番剧", "游戏", "娱乐", "鬼畜", "搞笑"):
+                return
+            # 过滤短视频 (< 5 分钟)
+            if v["duration_seconds"] < MIN_DURATION_SECONDS:
+                return
+            videos.append(v)
+
+    # 1) 热门榜
+    try:
+        url = "https://api.bilibili.com/x/web-interface/popular"
+        resp = requests.get(url, params={"ps": 50, "pn": 1}, headers=headers, timeout=15)
+        data = resp.json()
+        if data.get("code") == 0:
+            for item in data.get("data", {}).get("list", []):
+                tid = item.get("tid", 0)
+                if category_id and tid != category_id:
+                    continue
+                if tid in BILIBILI_CATEGORIES:
+                    add_video(item)
+    except Exception as e:
+        app.logger.error(f"B站热门 API 失败: {e}")
+
+    # 2) 各教育分区排行榜 — B站侧重推新，使用周榜+日榜
+    cats_to_fetch = [category_id] if category_id else [k for k in BILIBILI_CATEGORIES if k < 200]
+    for cid in cats_to_fetch[:12]:  # 限制数量避免太多请求
+        try:
+            rank_url = "https://api.bilibili.com/x/web-interface/ranking/v2"
+            resp = requests.get(rank_url, params={"rid": cid, "type": "weekly"}, headers=headers, timeout=15)
+            rank_data = resp.json()
+            if rank_data.get("code") == 0:
+                for item in rank_data.get("data", {}).get("list", [])[:6]:
+                    add_video(item)
+        except Exception as e:
+            app.logger.error(f"B站分区 {cid} 周榜失败: {e}")
+
+    # 3) 日榜补充最新内容
+    for cid in cats_to_fetch[:6]:
+        try:
+            rank_url = "https://api.bilibili.com/x/web-interface/ranking/v2"
+            resp = requests.get(rank_url, params={"rid": cid, "type": "daily"}, headers=headers, timeout=15)
+            rank_data = resp.json()
+            if rank_data.get("code") == 0:
+                for item in rank_data.get("data", {}).get("list", [])[:3]:
+                    add_video(item)
+        except Exception as e:
+            app.logger.error(f"B站分区 {cid} 日榜失败: {e}")
+
+    videos.sort(key=lambda v: v.get("published", 0), reverse=True)
+    return videos
+
+
+def format_count(n: int) -> str:
+    if n >= 10000:
+        return f"{n / 10000:.1f}万"
+    return str(n)
+
+
+# ──────────────────────────────────────────────
+#  YouTube 视频源 (并发请求)
+# ──────────────────────────────────────────────
+
+def _fetch_youtube_channel_rss(channel: dict) -> list[dict]:
+    """获取单个 YouTube 频道的 RSS 视频"""
+    videos = []
+    try:
+        rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel['id']}"
+        resp = requests.get(rss_url, timeout=YOUTUBE_TIMEOUT)
+        text = resp.text
+        # 清理非法 XML 字符
+        text = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]", "", text)
+        # XML 只支持5种实体，替换掉其他 HTML 实体
+        text = re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#)\w+;", " ", text)
+        try:
+            root = ET.fromstring(text)
+        except ET.ParseError:
+            app.logger.debug(f"YouTube RSS XML parse failed for {channel['name']}, trying permissive mode")
+            # 最后手段：正则直接提取数据
+            videos = _parse_youtube_rss_regex(resp.text, channel)
+            return videos
+        ns = {
+            "atom": "http://www.w3.org/2005/Atom",
+            "media": "http://search.yahoo.com/mrss/",
+            "yt": "http://www.youtube.com/xml/schemas/2015",
+        }
+        for entry in root.findall("atom:entry", ns)[:4]:
+            vid_el = entry.find("atom:id", ns)
+            video_id = vid_el.text.split(":")[-1] if vid_el is not None else ""
+            title_el = entry.find("atom:title", ns)
+            pub_el = entry.find("atom:published", ns)
+            pub_ts = 0
+            if pub_el is not None and pub_el.text:
+                try:
+                    pub_ts = int(datetime.fromisoformat(pub_el.text.replace("Z", "+00:00")).timestamp())
+                except Exception:
+                    pass
+            media_group = entry.find("media:group", ns)
+            thumbnail = ""
+            description = ""
+            dur_sec = 0
+            if media_group is not None:
+                thumb = media_group.find("media:thumbnail", ns)
+                if thumb is not None:
+                    thumbnail = thumb.get("url", "")
+                desc = media_group.find("media:description", ns)
+                if desc is not None and desc.text:
+                    description = strip_html(desc.text)[:300]
+                # YouTube 时长：优先 yt:duration，回退 media:content/@duration
+                yt_dur = media_group.find("yt:duration", ns)
+                if yt_dur is not None and yt_dur.text:
+                    dur_sec = int(yt_dur.text)
+                else:
+                    dur_el = media_group.find("media:content", ns)
+                    if dur_el is not None:
+                        dur_sec = int(dur_el.get("duration", 0) or 0)
+                # 记录调试信息（仅首次）
+                if dur_sec == 0:
+                    pass  # YouTube RSS 不提供时长是正常的
+
+            # RSS 无时长时，查缓存
+            if dur_sec == 0 and video_id:
+                dur_sec = _get_cached_duration(video_id)
+            # 过滤短视频（仅当有时长数据时）
+            if dur_sec > 0 and dur_sec < MIN_DURATION_SECONDS:
+                continue
+            # 无时长无缓存 — 放行但标记"时长未知"
+
+            videos.append({
+                "id": f"youtube_{video_id}",
+                "source": "youtube",
+                "title": title_el.text if title_el is not None else "",
+                "url": f"https://www.youtube.com/watch?v={video_id}",
+                "thumbnail": thumbnail,
+                "author": channel["name"],
+                "duration": format_duration(dur_sec),
+                "duration_seconds": dur_sec,
+                "duration_badge": duration_badge(dur_sec) if dur_sec else "",
+                "views": "",
+                "views_raw": 0,
+                "danmaku": "",
+                "likes": "",
+                "likes_raw": 0,
+                "category": "教育",
+                "description": description,
+                "published": pub_ts,
+                "published_str": datetime.fromtimestamp(pub_ts).strftime("%Y-%m-%d") if pub_ts else "",
+                "embed_id": video_id,
+                "embed_src": "youtube",
+                "summary": None,
+                "favorited": False,
+            })
+    except Exception as e:
+        app.logger.error(f"YouTube RSS 失败 ({channel['name']}): {e}")
+    return videos
+
+
+def fetch_youtube_videos_rss() -> list[dict]:
+    """并发获取所有 YouTube 频道 RSS"""
+    videos = []
+    with ThreadPoolExecutor(max_workers=YOUTUBE_MAX_WORKERS) as executor:
+        futures = {executor.submit(_fetch_youtube_channel_rss, ch): ch for ch in YOUTUBE_EDUCATION_CHANNELS}
+        for future in as_completed(futures):
+            try:
+                videos.extend(future.result())
+            except Exception:
+                pass
+    return videos
+
+
+def _parse_youtube_rss_regex(text: str, channel: dict) -> list[dict]:
+    """正则方式解析 YouTube RSS（XML 解析失败时的 fallback）"""
+    import re as re_mod
+    videos = []
+    # 先剥掉 CDATA 包裹
+    text = re_mod.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", text)
+    # 匹配 <entry ...>...</entry>
+    entries = re_mod.findall(r"<entry[^>]*>(.*?)</entry>", text, re_mod.DOTALL)
+    for entry in entries[:4]:
+        vid_match = re_mod.search(r"(?:yt:)?videoId[^>]*>([^<\s]+)", entry)
+        if not vid_match:
+            vid_match = re_mod.search(r"<id[^>]*>[^:]*:([^<\s]+)</id>", entry)
+        title_match = re_mod.search(r"<title[^>]*>(.+?)</title>", entry)
+        thumb_match = re_mod.search(r'url="(https?://[^"]+\.(?:jpg|jpeg|png|webp)[^"]*)"', entry)
+        desc_match = re_mod.search(r"<media:description[^>]*>(.*?)</media:description>", entry)
+        pub_match = re_mod.search(r"<published>([^<]+)</published>", entry)
+
+        video_id = vid_match.group(1) if vid_match else ""
+        title_str = title_match.group(1).strip() if title_match else ""
+        if not video_id or not title_str:
+            continue
+        # 查缓存的时长
+        dur_cached = _get_cached_duration(video_id)
+        pub_ts = 0
+        if pub_match:
+            try:
+                pub_ts = int(datetime.fromisoformat(pub_match.group(1).replace("Z", "+00:00")).timestamp())
+            except Exception:
+                pass
+
+        videos.append({
+            "id": f"youtube_{video_id}",
+            "source": "youtube",
+            "title": title_str,
+            "url": f"https://www.youtube.com/watch?v={video_id}",
+            "thumbnail": (thumb_match.group(1) if thumb_match else ""),
+            "author": channel["name"],
+            "duration": format_duration(dur_cached),
+            "duration_seconds": dur_cached,
+            "duration_badge": duration_badge(dur_cached) if dur_cached else "",
+            "views": "", "views_raw": 0,
+            "danmaku": "", "likes": "", "likes_raw": 0,
+            "category": "教育",
+            "description": (desc_match.group(1).strip() if desc_match else "")[:300],
+            "published": pub_ts,
+            "published_str": datetime.fromtimestamp(pub_ts).strftime("%Y-%m-%d") if pub_ts else "",
+            "embed_id": video_id,
+            "embed_src": "youtube",
+            "summary": None,
+            "favorited": False,
+        })
+    app.logger.debug(f"YouTube regex fallback for {channel['name']}: extracted {len(videos)} videos")
+    return videos
+
+
+def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
+    """获取单个 YouTube 频道的搜索结果（不含时长）"""
+    videos = []
+    try:
+        resp = requests.get(
+            "https://www.googleapis.com/youtube/v3/search",
+            params={
+                "part": "snippet",
+                "channelId": channel["id"],
+                "maxResults": 5,
+                "order": "date",
+                "type": "video",
+                "key": YOUTUBE_API_KEY,
+            },
+            timeout=YOUTUBE_TIMEOUT,
+        )
+        data = resp.json()
+        for item in data.get("items", []):
+            snippet = item.get("snippet", {})
+            vid = item.get("id", {}).get("videoId", "")
+            if not vid:
+                continue
+            pub_ts = 0
+            pub_str = snippet.get("publishedAt", "")
+            if pub_str:
+                try:
+                    pub_ts = int(datetime.fromisoformat(pub_str.replace("Z", "+00:00")).timestamp())
+                except Exception:
+                    pass
+            videos.append({
+                "id": f"youtube_{vid}",
+                "youtube_id": vid,
+                "source": "youtube",
+                "title": snippet.get("title", ""),
+                "url": f"https://www.youtube.com/watch?v={vid}",
+                "thumbnail": snippet.get("thumbnails", {}).get("medium", {}).get("url", ""),
+                "author": snippet.get("channelTitle", ""),
+                "duration": "",
+                "duration_seconds": 0,
+                "duration_badge": "",
+                "views": "",
+                "views_raw": 0,
+                "danmaku": "",
+                "likes": "",
+                "likes_raw": 0,
+                "category": "教育",
+                "description": strip_html(snippet.get("description", "") or "")[:300],
+                "published": pub_ts,
+                "published_str": datetime.fromtimestamp(pub_ts).strftime("%Y-%m-%d") if pub_ts else "",
+                "embed_id": vid,
+                "embed_src": "youtube",
+                "summary": None,
+                "favorited": False,
+            })
+    except Exception as e:
+        app.logger.error(f"YouTube 搜索失败 ({channel['name']}): {e}")
+    return videos
+
+
+def _enrich_youtube_videos(videos: list[dict]) -> list[dict]:
+    """批量获取 YouTube 视频详情，补充时长和播放量"""
+    if not videos:
+        return videos
+    video_ids = [v["youtube_id"] for v in videos if v.get("youtube_id")]
+    if not video_ids:
+        return videos
+
+    details_map = {}
+    for i in range(0, len(video_ids), 50):
+        batch_ids = video_ids[i:i + 50]
+        try:
+            resp = requests.get(
+                "https://www.googleapis.com/youtube/v3/videos",
+                params={
+                    "part": "contentDetails,statistics",
+                    "id": ",".join(batch_ids),
+                    "key": YOUTUBE_API_KEY,
+                },
+                timeout=YOUTUBE_TIMEOUT,
+            )
+            data = resp.json()
+            for item in data.get("items", []):
+                vid = item.get("id", "")
+                duration_iso = item.get("contentDetails", {}).get("duration", "")
+                dur_sec = parse_iso8601_duration(duration_iso)
+                view_count = int(item.get("statistics", {}).get("viewCount", 0) or 0)
+                details_map[vid] = {
+                    "duration": format_duration(dur_sec),
+                    "duration_seconds": dur_sec,
+                    "duration_badge": duration_badge(dur_sec),
+                    "views": format_count(view_count) if view_count else "",
+                    "views_raw": view_count,
+                }
+        except Exception as e:
+            app.logger.error(f"YouTube 视频详情获取失败: {e}")
+
+    for v in videos:
+        vid = v.get("youtube_id", "")
+        if vid in details_map:
+            v.update(details_map[vid])
+            _set_cached_duration(vid, details_map[vid]["duration_seconds"])
+        else:
+            cached_dur = _get_cached_duration(vid)
+            if cached_dur > 0:
+                v["duration"] = format_duration(cached_dur)
+                v["duration_seconds"] = cached_dur
+                v["duration_badge"] = duration_badge(cached_dur)
+
+    return videos
+
+
+def fetch_youtube_videos_api() -> list[dict]:
+    """YouTube Data API v3 (需要 API Key) — 并发搜索 + 批量详情"""
+    if not YOUTUBE_API_KEY:
+        return []
+    all_videos = []
+
+    # 并发搜索所有频道
+    with ThreadPoolExecutor(max_workers=YOUTUBE_MAX_WORKERS_API) as executor:
+        futures = {executor.submit(_fetch_youtube_channel_search, ch): ch for ch in YOUTUBE_EDUCATION_CHANNELS}
+        for future in as_completed(futures):
+            try:
+                all_videos.extend(future.result())
+            except Exception:
+                pass
+
+    # 批量获取时长和播放量
+    all_videos = _enrich_youtube_videos(all_videos)
+
+    # 过滤短视频
+    all_videos = [
+        v for v in all_videos
+        if v.get("duration_seconds", 0) == 0 or v["duration_seconds"] >= MIN_DURATION_SECONDS
+    ]
+
+    return all_videos
+
+
+def fetch_youtube_videos() -> list[dict]:
+    """YouTube 视频获取入口"""
+    if YOUTUBE_API_KEY:
+        videos = fetch_youtube_videos_api()
+        if videos:
+            return videos
+    return fetch_youtube_videos_rss()
+
+
+# ──────────────────────────────────────────────
+#  AI 摘要引擎
+# ──────────────────────────────────────────────
+
+def generate_summary(video: dict) -> str | None:
+    if not DEEPSEEK_API_KEY:
+        return None
+    ck = cache_key("summary", video["source"], video["id"])
+    if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
+        return cached.get("summary")
+
+    title = video.get("title", "")
+    description = video.get("description", "")
+    author = video.get("author", "")
+    if not title:
+        return None
+
+    prompt = f"""请为以下视频生成一个简洁的中文摘要（100-200字），帮助用户判断是否值得观看。
+
+视频标题：{title}
+视频作者：{author}
+视频简介：{description[:500] if description else '无'}
+
+要求：
+1. 用2-3句话概括视频可能涉及的核心内容
+2. 标注视频的深度级别（入门/进阶/专业）
+3. 推荐观看人群（如：适合XX领域学习者）
+4. 语言简洁有力，避免套话
+
+请直接输出摘要，不要加"摘要："等前缀。"""
+
+    try:
+        resp = requests.post(
+            f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+            headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 400, "temperature": 0.5},
+            timeout=30,
+        )
+        data = resp.json()
+        summary = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+        if summary:
+            cache_set(ck, {"summary": summary})
+            return summary
+    except Exception as e:
+        app.logger.error(f"DeepSeek 摘要失败: {e}")
+    return None
+
+
+def generate_summaries_parallel(videos: list[dict]) -> None:
+    """并行生成多个视频的 AI 摘要"""
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(generate_summary, v): i for i, v in enumerate(videos)}
+        for future in as_completed(futures):
+            i = futures[future]
+            try:
+                videos[i]["summary"] = future.result()
+            except Exception:
+                pass
+
+
+def _time_distribution(videos: list[dict]) -> dict:
+    """统计视频时间分布"""
+    now = time.time()
+    today = 0
+    week = 0
+    month = 0
+    older = 0
+    for v in videos:
+        pub = v.get("published", 0)
+        if not pub:
+            continue
+        age_hours = (now - pub) / 3600
+        if age_hours <= 24:
+            today += 1
+        elif age_hours <= 168:
+            week += 1
+        elif age_hours <= 720:
+            month += 1
+        else:
+            older += 1
+    return {"today": today, "week": week, "month": month, "older": older}
+
+
+# ──────────────────────────────────────────────
+#  字幕提取
+# ──────────────────────────────────────────────
+
+TRANSCRIPT_DIR = Path(CACHE_DIR) / "transcripts"
+TRANSCRIPT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _get_transcript_cache_path(source: str, embed_id: str) -> Path:
+    key = f"{source}_{embed_id}"
+    return TRANSCRIPT_DIR / f"{cache_key(key)}.txt"
+
+
+def fetch_youtube_transcript(video_id: str) -> str:
+    """YouTube 字幕: 逐语言尝试，缓存结果"""
+    if not video_id:
+        return ""
+    cache_path = _get_transcript_cache_path("youtube", video_id)
+    if cache_path.exists():
+        return cache_path.read_text(encoding="utf-8")[:4000]
+
+    try:
+        from youtube_transcript_api import YouTubeTranscriptApi
+        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=["zh-Hans", "zh", "en"])
+        text = " ".join(t.get("text", "") for t in transcript if t.get("text"))
+        text = " ".join(text.split())
+        cache_path.write_text(text, encoding="utf-8")
+        return text[:4000]
+    except Exception:
+        app.logger.debug(f"YouTube 字幕获取失败: {video_id}")
+        return ""
+
+
+def fetch_bilibili_transcript(bvid: str) -> str:
+    """B站字幕: 从 /x/web-interface/view 获取"""
+    if not bvid:
+        return ""
+    cache_path = _get_transcript_cache_path("bilibili", bvid)
+    if cache_path.exists():
+        return cache_path.read_text(encoding="utf-8")[:4000]
+
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "Referer": "https://www.bilibili.com/",
+        }
+        resp = requests.get(
+            "https://api.bilibili.com/x/web-interface/view",
+            params={"bvid": bvid}, headers=headers, timeout=10,
+        )
+        data = resp.json()
+        subtitles = data.get("data", {}).get("subtitle", {}).get("list", [])
+        if not subtitles:
+            return ""
+        sub_url = subtitles[0].get("subtitle_url", "")
+        if not sub_url:
+            return ""
+        if sub_url.startswith("//"):
+            sub_url = "https:" + sub_url
+        sub_resp = requests.get(sub_url, headers=headers, timeout=10)
+        sub_data = sub_resp.json()
+        lines = []
+        for item in sub_data.get("body", []):
+            content = item.get("content", "")
+            if content:
+                lines.append(content)
+        text = " ".join(lines)
+        text = " ".join(text.split())
+        cache_path.write_text(text, encoding="utf-8")
+        return text[:4000]
+    except Exception:
+        app.logger.debug(f"B站字幕获取失败: {bvid}")
+        return ""
+
+
+def get_transcript_for_video(video: dict) -> str:
+    """统一入口"""
+    embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
+    source = video.get("source", "")
+    if source == "youtube":
+        return fetch_youtube_transcript(embed_id)
+    if source == "bilibili":
+        return fetch_bilibili_transcript(embed_id)
+    return ""
+
+
+# ──────────────────────────────────────────────
+#  API 路由
+# ──────────────────────────────────────────────
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/api/health")
+def api_health():
+    return jsonify({"status": "ok", "deepseek": bool(DEEPSEEK_API_KEY), "youtube_key": bool(YOUTUBE_API_KEY)})
+
+
+@app.route("/api/thumbnail")
+def api_thumbnail():
+    """代理外部图片，解决B站防盗链"""
+    url = request.args.get("url", "")
+    if not url:
+        return "", 400
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "Referer": "https://www.bilibili.com/",
+        }
+        resp = requests.get(url, headers=headers, timeout=10)
+        return Response(resp.content, mimetype=resp.headers.get("Content-Type", "image/jpeg"))
+    except Exception:
+        return "", 500
+
+
+@app.route("/api/analyze")
+def api_analyze():
+    """深度分析视频内容 — 结构化输出 + 时间线"""
+    title = request.args.get("title", "")
+    description = request.args.get("description", "")
+    author = request.args.get("author", "")
+    category = request.args.get("category", "")
+    duration = request.args.get("duration", "")
+    duration_sec = int(request.args.get("duration_sec", 0) or 0)
+    dur_min = duration_sec // 60 if duration_sec else 0
+    subtitle_text = request.args.get("subtitle_text", "")[:3000]
+
+    if not title or not DEEPSEEK_API_KEY:
+        return jsonify({"error": "缺少标题或API未配置"}), 400
+
+    ck = cache_key("analyze", title[:80])
+    if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL * 2):
+        return jsonify(cached)
+
+    timeline_hint = ""
+    if dur_min > 0:
+        seg_count = min(5, max(2, dur_min // 5))
+        seg_interval = dur_min // seg_count
+        timeline_hint = f"请根据字幕定位真实时间节点（共{seg_count}个），例如 00:00-{seg_interval:02d}:00 ..."
+
+    subtitle_context = ""
+    if subtitle_text:
+        subtitle_context = f"【视频字幕节选】\n{subtitle_text}\n\n"
+
+    prompt = f"""你是专业内容策展人。{subtitle_context}请基于以上信息做深度分析，用语简洁。
+
+【视频信息】
+标题：{title}
+作者：{author}
+分类：{category}
+时长：{duration}
+简介：{description[:600] if description else '无'}
+
+请严格用以下结构输出：
+
+## 内容概要
+（2-3句话，简洁概括核心内容）
+
+## 时间线节点
+（{timeline_hint}按阶段简述，每节点15字以内）
+- 00:00-XX:XX 开头引入...
+- XX:XX-XX:XX 核心内容...
+- XX:XX-结束 总结...
+
+## 核心要点
+- 要点1：详细展开说明（20-40字）
+- 要点2：详细展开说明（20-40字）
+- 要点3：详细展开说明（20-40字）
+（列举3-5个要点，每个适当展开，不必过于简短）
+
+## 关联标签
+（3个相关话题标签）"""
+
+    try:
+        resp = requests.post(
+            f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+            headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 900, "temperature": 0.3},
+            timeout=45,
+        )
+        data = resp.json()
+        analysis = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+        if analysis:
+            result = {"analysis": analysis, "cached": False}
+            cache_set(ck, result)
+            return jsonify(result)
+    except Exception as e:
+        app.logger.error(f"深度分析失败: {e}")
+
+    return jsonify({"error": "分析生成失败"}), 500
+
+
+@app.route("/api/videos")
+def api_videos():
+    source = request.args.get("source", "all")
+    category = request.args.get("category", "")
+    page = max(1, int(request.args.get("page", 1)))
+    with_summary = request.args.get("with_summary", "false").lower() == "true"
+    search = request.args.get("search", "").strip()
+    prefs = request.args.get("prefs", "")  # 逗号分隔的偏好分类
+    essence = request.args.get("essence", "false").lower() == "true"
+    sort = request.args.get("sort", "")
+    following = request.args.get("following", "")  # 逗号分隔的关注作者
+    _sort_explicit = request.args.get("sort") is not None
+
+    # B站默认按时间排序（推新），YouTube/全部默认综合评分（发现优质）
+    if not sort:
+        sort = "time" if source in ("bilibili",) else "score"
+
+    # 视频列表短期缓存键
+    list_ck = cache_key("videos", source, category, str(page), search[:20], sort)
+
+    # 非摘要模式尝试读缓存
+    if not with_summary and not search and not prefs and not essence:
+        if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
+            return jsonify(cached)
+
+    all_videos = []
+
+    if source in ("bilibili", "all"):
+        cat_id = None
+        if category:
+            cat_id = next((k for k, v in BILIBILI_CATEGORIES.items() if v == category), None)
+        all_videos.extend(fetch_bilibili_videos(cat_id))
+
+    if source in ("youtube", "all"):
+        all_videos.extend(fetch_youtube_videos())
+
+    # 搜索过滤
+    if search:
+        q = search.lower()
+        all_videos = [
+            v for v in all_videos
+            if q in v["title"].lower() or q in v.get("description", "").lower() or q in v["author"].lower()
+        ]
+
+    # 视频质量评分
+    for v in all_videos:
+        v["score"] = _video_score(v)
+
+    # 偏好加权
+    preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
+    if preferred_cats:
+        for v in all_videos:
+            if v["category"] in preferred_cats:
+                v["score"] *= 2.0
+            elif any(pc in v.get("description", "") or pc in v["title"] for pc in preferred_cats):
+                v["score"] *= 1.5
+
+    # 关注频道加权：提升但不绕过审核
+    following_authors = [f.strip() for f in following.split(",") if f.strip()]
+    if following_authors:
+        for v in all_videos:
+            if v.get("author", "") in following_authors:
+                v["score"] *= 2.5
+
+    # 精华模式: 只保留前 50%
+    if essence:
+        all_videos.sort(key=lambda v: (v["score"], v.get("published", 0)), reverse=True)
+        all_videos = all_videos[: max(12, len(all_videos) // 2)]
+
+    # 排序
+    if sort == "time":
+        all_videos.sort(key=lambda v: v.get("published", 0), reverse=True)
+    elif sort == "views":
+        all_videos.sort(key=lambda v: v.get("views_raw", 0), reverse=True)
+    elif sort == "likes":
+        all_videos.sort(key=lambda v: v.get("likes_raw", 0), reverse=True)
+    else:
+        all_videos.sort(key=lambda v: (v["score"], v.get("published", 0)), reverse=True)
+
+    # 分页
+    total = len(all_videos)
+    start = (page - 1) * VIDEOS_PER_PAGE
+    end = start + VIDEOS_PER_PAGE
+    paged = all_videos[start:end]
+
+    # 并行 AI 摘要
+    if with_summary and DEEPSEEK_API_KEY:
+        generate_summaries_parallel(paged)
+
+    result = {
+        "videos": paged,
+        "total": total,
+        "page": page,
+        "per_page": VIDEOS_PER_PAGE,
+        "has_more": end < total,
+        "categories": BILIBILI_CATEGORY_LABELS,
+        "search": search if search else None,
+        "sort": sort,
+        "time_distribution": _time_distribution(all_videos),
+    }
+
+    # 缓存非摘要非搜索非偏好非精华非自定义排序的结果
+    if not with_summary and not search and not prefs and not essence and sort == "score":
+        cache_set(list_ck, result)
+
+    return jsonify(result)
+
+
+@app.route("/api/summarize")
+def api_summarize():
+    video_id = request.args.get("video_id", "")
+    source = request.args.get("source", "")
+    title = request.args.get("title", "")
+    description = request.args.get("description", "")
+    author = request.args.get("author", "")
+
+    if not title and not video_id:
+        return jsonify({"error": "缺少视频信息"}), 400
+
+    ck = cache_key("summary", source, video_id)
+    if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
+        return jsonify({"summary": cached.get("summary"), "cached": True})
+
+    summary = generate_summary({"id": video_id, "source": source, "title": title, "description": description, "author": author})
+    if summary:
+        return jsonify({"summary": summary, "cached": False})
+    return jsonify({"error": "摘要生成失败"}), 500
+
+
+@app.route("/api/categories")
+def api_categories():
+    return jsonify({"bilibili": BILIBILI_CATEGORY_LABELS, "youtube": ["教育", "科技"]})
+
+
+@app.route("/api/transcript")
+def api_transcript():
+    source = request.args.get("source", "")
+    embed_id = request.args.get("embed_id", "")
+    if not embed_id:
+        return jsonify({"text": ""})
+    video = {"source": source, "embed_id": embed_id}
+    text = get_transcript_for_video(video)
+    return jsonify({"text": text})
+
+
+# ──────────────────────────────────────────────
+#  视频笔记 API
+# ──────────────────────────────────────────────
+
+NOTES_CACHE_DIR = Path(CACHE_DIR) / "notes"
+NOTES_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _notes_json_path(video_id: str) -> Path:
+    return NOTES_CACHE_DIR / f"{cache_key(video_id)}.json"
+
+
+def _load_notes(video_id: str) -> dict:
+    p = _notes_json_path(video_id)
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
+def _save_notes(video_id: str, data: dict) -> None:
+    data["updated_at"] = datetime.now().isoformat()
+    p = _notes_json_path(video_id)
+    p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+@app.route("/api/notes/<path:video_id>")
+def api_load_notes(video_id):
+    notes = _load_notes(video_id)
+    if not notes:
+        return jsonify({"video_id": video_id, "notes": "", "ai_summary": "", "chat_history": [], "exported": False})
+    return jsonify(notes)
+
+
+@app.route("/api/notes/save", methods=["POST"])
+def api_save_notes():
+    data = request.get_json(force=True)
+    video_id = data.get("video_id", "")
+    if not video_id:
+        return jsonify({"error": "缺少 video_id"}), 400
+    existing = _load_notes(video_id)
+    existing.update(data)
+    _save_notes(video_id, existing)
+    return jsonify({"status": "ok", "video_id": video_id})
+
+
+@app.route("/api/chat", methods=["POST"])
+def api_chat():
+    data = request.get_json(force=True)
+    message = data.get("message", "").strip()
+    title = data.get("title", "")
+    description = data.get("description", "")
+    author = data.get("author", "")
+    subtitle_text = data.get("subtitle_text", "")[:2500]
+    chat_history = data.get("chat_history", [])
+
+    if not message or not title or not DEEPSEEK_API_KEY:
+        return jsonify({"error": "缺少必要信息或API未配置"}), 400
+
+    context_lines = [f"视频标题：{title}"]
+    if author:
+        context_lines.append(f"视频作者：{author}")
+    if description:
+        context_lines.append(f"视频简介：{description[:400]}")
+    if subtitle_text:
+        context_lines.append(f"视频字幕节选：\n{subtitle_text}")
+    video_context = "\n".join(context_lines)
+
+    messages = [
+        {"role": "system", "content": f"你是一个视频学习助手。用户正在观看以下视频，请根据视频主题回答用户问题，回答要简洁、有深度。\n\n{video_context}"},
+    ]
+
+    for h in chat_history[-6:]:
+        messages.append(h)
+
+    messages.append({"role": "user", "content": message})
+
+    try:
+        resp = requests.post(
+            f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+            headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+            json={"model": "deepseek-chat", "messages": messages, "max_tokens": 600, "temperature": 0.5},
+            timeout=40,
+        )
+        resp_data = resp.json()
+        reply = resp_data.get("choices", [{}])[0].get("message", {}).get("content", "")
+        if reply:
+            return jsonify({"reply": reply})
+    except Exception as e:
+        app.logger.error(f"AI 对话失败: {e}")
+
+    return jsonify({"error": "对话生成失败"}), 500
+
+
+@app.route("/api/notes/export", methods=["POST"])
+def api_export_notes():
+    data = request.get_json(force=True)
+    video_id = data.get("video_id", "")
+    if not video_id:
+        return jsonify({"error": "缺少 video_id"}), 400
+
+    existing = _load_notes(video_id)
+
+    title = data.get("title", existing.get("title", ""))
+    author = data.get("author", existing.get("author", ""))
+    url = data.get("url", existing.get("url", ""))
+    source = data.get("source", existing.get("source", ""))
+    category = data.get("category", existing.get("category", ""))
+    notes = data.get("notes", existing.get("notes", ""))
+    ai_summary = existing.get("ai_summary", "")
+    chat_history = existing.get("chat_history", [])
+    viewed_at = existing.get("viewed_at", [])
+
+    source_label = "B站" if source == "bilibili" else "YouTube" if source == "youtube" else source
+    export_dir = Path(os.path.expanduser(NOTES_EXPORT_DIR)) / source_label
+    export_dir.mkdir(parents=True, exist_ok=True)
+
+    safe_title = re.sub(r'[\\/:*?"<>|]', '_', title)[:80]
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    filename = f"{date_str}_{safe_title}.md"
+    filepath = export_dir / filename
+
+    chat_section = ""
+    if chat_history:
+        chat_lines = ["## AI 对话记录\n"]
+        for h in chat_history:
+            role_tag = "### 💬 问" if h["role"] == "user" else "### 🤖 答"
+            chat_lines.append(f"{role_tag}\n\n{h['content']}\n")
+        chat_section = "\n".join(chat_lines)
+
+    md_content = f"""# {title}
+
+- **来源**: {source_label}
+- **作者**: {author}
+- **分类**: {category}
+- **链接**: {url}
+- **观看时间**: {', '.join(viewed_at) if viewed_at else date_str}
+- **导出时间**: {datetime.now().strftime("%Y-%m-%d %H:%M")}
+
+---
+
+## AI 摘要
+
+{ai_summary or '暂无 AI 摘要，可先保存笔记后查看。'}
+
+---
+
+## 我的笔记
+
+{notes or '暂无笔记'}
+
+---
+
+{chat_section}
+"""
+
+    filepath.write_text(md_content, encoding="utf-8")
+
+    existing["exported"] = True
+    existing["export_path"] = str(filepath)
+    _save_notes(video_id, existing)
+
+    return jsonify({"status": "ok", "path": str(filepath)})
+
+
+@app.route("/api/notes/list")
+def api_notes_list():
+    files = sorted(NOTES_CACHE_DIR.glob("*.json"), key=lambda f: f.stat().st_mtime, reverse=True)
+    result = []
+    for f in files[:50]:
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+            result.append({
+                "video_id": d.get("video_id", ""),
+                "title": d.get("title", ""),
+                "author": d.get("author", ""),
+                "source": d.get("source", ""),
+                "category": d.get("category", ""),
+                "url": d.get("url", ""),
+                "exported": d.get("exported", False),
+                "viewed_at": d.get("viewed_at", []),
+            })
+        except (json.JSONDecodeError, OSError):
+            pass
+    return jsonify(result)
+
+
+if __name__ == "__main__":
+    print("🎬 视频精选 Web 应用 v2 启动中...")
+    print(f"   DeepSeek API: {'已配置' if DEEPSEEK_API_KEY else '未配置（摘要功能不可用）'}")
+    print(f"   YouTube API: {'已配置' if YOUTUBE_API_KEY else '未配置（使用 RSS 并发模式）'}")
+    app.run(host="0.0.0.0", port=8080, debug=True)
