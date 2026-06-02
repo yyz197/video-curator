@@ -31,7 +31,11 @@ def _load_channels_config():
     channels_file = os.path.join(PROJECT_DIR, "channels.json")
     try:
         with open(channels_file, encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        # JSON key 是 string → 转回 int
+        raw_cats = data.get("bilibili_categories", {})
+        data["bilibili_categories"] = {int(k): v for k, v in raw_cats.items()}
+        return data
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
 
