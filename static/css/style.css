@@ -931,16 +931,16 @@ body {
 
 /* ── Summary (left column, below player) ── */
 .notes-summary-section {
-    background: var(--bg); border-radius: var(--radius); padding: 14px;
-    flex-shrink: 0; font-size: 13px;
+    background: var(--bg); border-radius: var(--radius); padding: 10px 14px;
+    flex-shrink: 0; font-size: 12px;
 }
-.notes-summary-header { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
-#notesSummaryStatus { font-weight: 400; color: var(--text-muted); font-size: 12px; }
-.notes-summary-text { color: var(--text-secondary); line-height: 1.65; }
-.notes-summary-text h3 { font-size: 14px; margin: 8px 0 4px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 4px; }
-.notes-summary-text h4 { font-size: 13px; margin: 6px 0 2px; color: var(--text); }
-.notes-summary-text ul { padding-left: 18px; margin: 4px 0; }
-.notes-summary-text li { margin-bottom: 2px; }
+.notes-summary-header { font-size: 12px; font-weight: 600; margin-bottom: 4px; color: var(--text); }
+#notesSummaryStatus { font-weight: 400; color: var(--text-muted); font-size: 11px; }
+.notes-summary-text { color: var(--text-secondary); line-height: 1.45; }
+.notes-summary-text h3 { font-size: 13px; margin: 6px 0 2px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; }
+.notes-summary-text h4 { font-size: 12px; margin: 4px 0 2px; color: var(--text); }
+.notes-summary-text ul { padding-left: 16px; margin: 2px 0; }
+.notes-summary-text li { margin-bottom: 1px; }
 
 /* ── Tabs ── */
 .notes-tabs {
