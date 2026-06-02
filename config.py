@@ -20,7 +20,7 @@ DEEPSEEK_BASE_URL = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.co
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
 
 # 缓存目录
-CACHE_DIR = os.environ.get("VC_CACHE_DIR", "/tmp/video-curator-cache")
+CACHE_DIR = os.environ.get("VC_CACHE_DIR", os.path.join(PROJECT_DIR, "cache"))
 
 
 # ──────────────────────────────────────────────
