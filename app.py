@@ -1092,12 +1092,17 @@ def api_videos():
     # 偏好分类解析（提前，供缓存过滤使用）
     preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
 
-    # 预热缓存优先（24h TTL, 不依赖 prefs/essence）
+    # 缓存策略: 短期(30min)优先, 预热(24h)兜底, prefs/essence时缩短预热有效期
     if not with_summary and not search:
-        if warmup_cached := cache_get_with_ttl(list_ck, 86400):
+        # 1) 短期缓存 (无偏好/无精华时)
+        if not prefs and not essence and not following:
+            if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
+                return jsonify(cached)
+        # 2) 预热缓存 (最多4h有效, 避免整天看旧数据)
+        warmup_ttl = 14400 if (prefs or essence) else 86400  # 4h有偏好, 24h无偏好
+        if warmup_cached := cache_get_with_ttl(list_ck, warmup_ttl):
             videos = warmup_cached.get("videos", [])
             total = warmup_cached.get("total", len(videos))
-            # 应用偏好/精华过滤（复用缓存数据）
             if preferred_cats:
                 for v in videos:
                     if v["category"] in preferred_cats:
@@ -1108,24 +1113,13 @@ def api_videos():
                 videos.sort(key=lambda v: (v.get("score", 0), v.get("published", 0)), reverse=True)
                 videos = videos[: max(12, len(videos) // 2)]
                 total = len(videos)
-            # 第一页取前24个
             videos = videos[:VIDEOS_PER_PAGE]
             result = {
-                "videos": videos,
-                "total": total,
-                "page": page,
-                "per_page": VIDEOS_PER_PAGE,
-                "has_more": total > VIDEOS_PER_PAGE,
-                "categories": BILIBILI_CATEGORY_LABELS,
-                "search": None,
-                "cached": True,
+                "videos": videos, "total": total, "page": page,
+                "per_page": VIDEOS_PER_PAGE, "has_more": total > VIDEOS_PER_PAGE,
+                "categories": BILIBILI_CATEGORY_LABELS, "search": None, "cached": True,
             }
             return jsonify(result)
-
-    # 短期缓存（无偏好/无搜索时）
-    if not with_summary and not search and not prefs and not essence and not following:
-        if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
-            return jsonify(cached)
 
     all_videos = []
 
