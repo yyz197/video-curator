@@ -169,7 +169,7 @@
                         :src="'https://player.bilibili.com/player.html?bvid='+currentVideo.embed_id+'&autoplay=0'"
                         allowfullscreen frameborder="0"></iframe>
                 <iframe v-else-if="currentVideo?.source==='youtube' && currentVideo?.embed_id"
-                        :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0&enablejsapi=1'"
+                        :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0&enablejsapi=1&origin='+encodeURIComponent(window.location.origin)"
                         allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer"></iframe>
                 <div v-else style="display:flex;align-items:center;justify-content:center;height:100%;color:#999">暂无嵌入播放地址</div>
             </div>
@@ -215,13 +215,15 @@
                 <div v-else-if="subtitleSegments.length" class="subtitle-container">
                     <div class="subtitle-translation" v-if="fullTranslation" v-html="fullTranslation.replace(/\n/g,'<br>')"></div>
                     <div class="subtitle-divider" v-if="fullTranslation">━━ 时间轴字幕 ━━</div>
-                    <div class="subtitle-list">
+                    <div class="subtitle-list" style="padding:0 4px">
                         <div v-for="(seg, i) in subtitleSegments" :key="i" class="subtitle-row"
                              :class="{active:currentTime>=seg.start&&currentTime<=seg.start+seg.duration}"
+                             :style="currentTime>=seg.start&&currentTime<=seg.start+seg.duration?'font-size:15px;font-weight:500;padding:8px 6px;background:var(--accent-light);border-left:3px solid var(--accent);margin:2px 0;border-radius:4px':''"
                              :ref="el=>{if(currentTime>=seg.start&&currentTime<=seg.start+seg.duration)el?.scrollIntoView({block:'center',behavior:'smooth'})}">
-                            <span class="subtitle-time">[[ fmtTime(seg.start) ]]</span>
-                            <span class="subtitle-text" v-text="seg.original"></span>
+                            <span class="subtitle-time" style="font-size:11px;min-width:42px" v-text="fmtTime(seg.start)"></span>
+                            <span style="font-size:14px;line-height:1.6;color:var(--text)" v-text="seg.original"></span>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div v-else style="text-align:center;color:var(--text-muted);padding:20px">点击底部按钮加载字幕</div>
