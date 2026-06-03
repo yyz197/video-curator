@@ -478,11 +478,14 @@ createApp({
 
     async function _fetchAnalysis(video) {
         analysisLoading.value = true;
+        // 如果有字幕, 加入分析上下文
+        const subText = subtitleSegments.value.map(s => s.original).join(' ').slice(0, 3000);
         try {
             const params = new URLSearchParams({
                 title:video.title, description:video.description||'',
                 author:video.author, category:video.category||'',
                 duration:video.duration||'', duration_sec:video.duration_seconds||0,
+                subtitle_text: subText,
             });
             const r = await fetch('/api/analyze?'+params);
             const d = await r.json();
