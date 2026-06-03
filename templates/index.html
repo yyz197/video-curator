@@ -201,15 +201,16 @@
                 </div>
             </div>
 
+        <!-- Note: force display:flex on v-show tabs to override CSS display:none -->
             <!-- Analysis Tab -->
-            <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px">
+            <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column">
                 <div v-if="analysisLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在分析</span></div>
-                <div v-else-if="analysis" v-html="renderedAnalysis" class="analysis-content" style="font-size:13px;line-height:1.8"></div>
+                <div v-else-if="analysis" v-html="renderedAnalysis" class="analysis-content" style="font-size:13px;line-height:1.8;flex:1"></div>
                 <div v-else style="text-align:center;color:var(--text-muted);padding:20px">分析暂不可用</div>
             </div>
 
             <!-- Subtitle Tab -->
-            <div v-show="activeTab==='subtitle'" class="notes-tab-content" style="flex:1;overflow-y:auto">
+            <div v-show="activeTab==='subtitle'" class="notes-tab-content" style="flex:1;overflow-y:auto;display:flex;flex-direction:column">
                 <div v-if="subtitleLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在加载字幕</span></div>
                 <div v-else-if="subtitleSegments.length" class="subtitle-container">
                     <div class="subtitle-translation" v-if="fullTranslation" v-html="fullTranslation.replace(/\n/g,'<br>')"></div>
