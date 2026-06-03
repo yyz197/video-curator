@@ -239,8 +239,7 @@
         <a class="notes-link-btn" :href="currentVideo?.url" target="_blank">🔗 外链观看</a>
         <button class="notes-save-btn" @click="saveNotes">💾 保存</button>
         <button class="notes-export-btn" @click="exportNotes">📂 导出</button>
-        <button class="notes-translate-btn" @click="loadSubtitles"
-                v-text="currentVideo?.source==='bilibili'?'📄 查看字幕':'🌐 翻译字幕'"></button>
+        <button class="notes-translate-btn" @click="loadSubtitles">🌐 翻译/字幕</button>
     </div>
 </div>
 
