@@ -133,8 +133,13 @@
             <div class="notes-player-column">
                 <div class="video-player-container" id="videoPlayerContainer"></div>
                 <div class="notes-summary-section" id="notesSummarySection">
-                    <div class="notes-summary-header">📊 深度分析 <span id="notesSummaryStatus">生成中...</span></div>
-                    <div class="notes-summary-text" id="notesSummaryText"></div>
+                    <div class="notes-summary-header" id="notesSummaryHeader" role="button" tabindex="0" style="cursor:pointer">
+                        📊 深度分析 <span id="notesSummaryStatus">生成中...</span>
+                        <span class="notes-summary-toggle" id="notesSummaryToggle">▾</span>
+                    </div>
+                    <div class="notes-summary-body" id="notesSummaryBody">
+                        <div class="notes-summary-text" id="notesSummaryText"></div>
+                    </div>
                 </div>
                 <div class="notes-translation-section" id="notesTranslationSection" style="display:none">
                     <div class="notes-summary-header">🌐 中文字幕翻译</div>
@@ -151,7 +156,12 @@
 
                 <div class="notes-tab-content active" id="notesTabNote">
                     <div class="notes-editor-section">
-                        <textarea class="notes-editor" id="notesEditor" placeholder="在这里记录你的想法...支持 Markdown"></textarea>
+                        <div class="notes-empty-guide" id="notesEmptyGuide">
+                            <div class="notes-empty-icon">💡</div>
+                            <p>视频播放到关键处时，在此记录你的想法</p>
+                            <p class="notes-empty-hint">支持 Markdown · 点击 🤖 AI对话 可向AI提问</p>
+                        </div>
+                        <textarea class="notes-editor" id="notesEditor" placeholder="在这里记录你的想法...支持 Markdown" style="display:none"></textarea>
                     </div>
                 </div>
 

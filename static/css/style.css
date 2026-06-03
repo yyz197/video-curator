@@ -1235,7 +1235,12 @@ body::before {
     background: var(--bg); border-radius: var(--radius); padding: 10px 14px;
     flex-shrink: 0; font-size: 12px;
 }
-.notes-summary-header { font-size: 12px; font-weight: 600; margin-bottom: 4px; color: var(--text); }
+.notes-summary-header { font-size: 12px; font-weight: 600; margin-bottom: 4px; color: var(--text); display: flex; align-items: center; gap: 8px; user-select: none; }
+.notes-summary-header:hover { color: var(--accent); }
+.notes-summary-toggle { margin-left: auto; font-size: 14px; transition: transform 0.2s; }
+.notes-summary-section.collapsed .notes-summary-toggle { transform: rotate(-90deg); }
+.notes-summary-body { overflow: hidden; transition: max-height 0.3s ease; }
+.notes-summary-section.collapsed .notes-summary-body { max-height: 0 !important; }
 #notesSummaryStatus { font-weight: 400; color: var(--text-muted); font-size: 11px; }
 .notes-summary-text { color: var(--text-secondary); line-height: 1.45; }
 .notes-summary-text h3 { font-size: 13px; margin: 6px 0 2px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; }
@@ -1260,6 +1265,13 @@ body::before {
 
 /* ── Editor ── */
 .notes-editor-section { flex: 1; display: flex; flex-direction: column; padding: 10px 0; }
+.notes-empty-guide {
+    text-align: center; padding: 32px 20px; color: var(--text-muted);
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.notes-empty-icon { font-size: 28px; margin-bottom: 4px; }
+.notes-empty-guide p { font-size: 13px; }
+.notes-empty-hint { font-size: 11px; opacity: 0.7; }
 .notes-editor {
     width: 100%; flex: 1; min-height: 120px; padding: 12px;
     border: 1px solid var(--border); border-radius: var(--radius);
@@ -1293,7 +1305,7 @@ body::before {
 /* ── Actions ── */
 .notes-actions {
     display: flex; gap: 8px; padding: 12px 24px; border-top: 1px solid var(--border);
-    flex-shrink: 0; flex-wrap: wrap;
+    flex-shrink: 0; flex-wrap: wrap; align-items: center;
 }
 .notes-link-btn {
     padding: 8px 16px; border: 1px solid var(--border); border-radius: var(--radius);
@@ -1308,18 +1320,18 @@ body::before {
 }
 .notes-save-btn:hover { opacity: 0.85; }
 .notes-export-btn {
+    padding: 8px 18px; border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--bg); color: var(--text-secondary); font-size: 13px;
+    cursor: pointer; transition: all 0.15s; white-space: nowrap;
+}
+.notes-export-btn:hover { border-color: var(--success); color: var(--success); }
+.notes-done-btn {
     padding: 8px 18px; border: none; border-radius: var(--radius);
     background: var(--success); color: #fff; font-size: 13px;
     cursor: pointer; transition: opacity 0.15s; white-space: nowrap;
 }
-.notes-export-btn:hover { opacity: 0.85; }
-.notes-done-btn {
-    padding: 8px 16px; border: 1px solid var(--border); border-radius: var(--radius);
-    background: var(--bg); color: var(--text-secondary); font-size: 13px;
-    cursor: pointer; transition: all 0.15s; white-space: nowrap;
-}
-.notes-done-btn:hover { border-color: var(--success); color: var(--success); }
-.notes-done-btn.marked { background: var(--success-bg); border-color: var(--success); color: var(--success); }
+.notes-done-btn:hover { opacity: 0.85; }
+.notes-done-btn.marked { background: var(--success-bg); border: 1px solid var(--success); color: var(--success); }
 .notes-translate-btn {
     padding: 8px 16px; border: 1px solid var(--border); border-radius: var(--radius);
     background: var(--bg); color: var(--text-secondary); font-size: 13px;

@@ -35,6 +35,8 @@
     const notesTranslateBtn = $("#notesTranslateBtn");
     const notesTranslationText = $("#notesTranslationText");
     const notesTranslationSection = $("#notesTranslationSection");
+    const notesSummaryHeader = $("#notesSummaryHeader");
+    const notesSummaryBody = $("#notesSummaryBody");
 
     const tabBtns = document.querySelectorAll(".notes-tab");
     const tabContents = document.querySelectorAll(".notes-tab-content");
@@ -61,6 +63,7 @@
         chatHistory = [];
         chatMessages.innerHTML = '<div class="chat-empty">输入问题，AI 将根据视频内容为你解答</div>';
         notesEditor.value = "";
+        showEmptyGuide(true);
         notesSummaryText.innerHTML = "";
         notesSummaryStatus.textContent = "正在深度分析...";
         notesSummaryStatus.style.display = "";
@@ -144,6 +147,7 @@
             const data = await fetchAPI("/api/notes/" + encodeURIComponent(videoId));
             if (data && data.notes) {
                 notesEditor.value = data.notes || "";
+                showEmptyGuide(false);
                 if (data.chat_history && data.chat_history.length > 0) {
                     chatHistory = data.chat_history;
                     renderChatHistory();
@@ -513,6 +517,24 @@
         container.appendChild(toast);
         setTimeout(() => toast.remove(), 3200);
     }
+
+    // ── Collapsible Analysis ──
+    notesSummaryHeader.addEventListener("click", () => {
+        const section = document.getElementById("notesSummarySection");
+        section.classList.toggle("collapsed");
+    });
+    document.getElementById("notesSummaryBody").style.maxHeight = "600px";
+
+    // ── Empty Guide ──
+    function showEmptyGuide(show) {
+        const guide = document.getElementById("notesEmptyGuide");
+        const editor = document.getElementById("notesEditor");
+        if (guide) guide.style.display = show ? "flex" : "none";
+        if (editor) editor.style.display = show ? "none" : "block";
+    }
+    notesEditor.addEventListener("input", () => {
+        showEmptyGuide(notesEditor.value.trim().length === 0);
+    });
 
     // ── Translate Subtitle ──
     notesTranslateBtn.addEventListener("click", async () => {
