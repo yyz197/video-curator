@@ -703,14 +703,30 @@ def fetch_youtube_videos_api() -> list[dict]:
     return all_videos
 
 
+def _probe_google_api() -> bool:
+    """快速检查 Google API 是否可达（不消耗配额）"""
+    import socket
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(3)
+        sock.connect(("www.googleapis.com", 443))
+        sock.close()
+        return True
+    except Exception:
+        return False
+
+
 def fetch_youtube_videos() -> list[dict]:
     """YouTube 视频获取入口"""
     if YOUTUBE_API_KEY:
-        videos = fetch_youtube_videos_api()
-        if videos:
-            app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
-            return videos
-        app.logger.warning("YouTube API 无结果，回退到 RSS 模式")
+        if not _probe_google_api():
+            app.logger.warning("Google API 不可达，直接使用 RSS 模式")
+        else:
+            videos = fetch_youtube_videos_api()
+            if videos:
+                app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
+                return videos
+            app.logger.warning("YouTube API 无结果，回退到 RSS 模式")
     return fetch_youtube_videos_rss()
 
 
