@@ -34,4 +34,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f cache/ 2>/dev/null || true
-          if git diff --staged --quiet; then echo "No cache changes"; else git commit -m "warmup: daily cache refresh" && git push; fi
+          if git diff --staged --quiet; then
+            echo "No cache changes"
+          else
+            git commit -m "warmup: daily cache refresh" && git pull --rebase && git push
+          fi
