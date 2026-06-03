@@ -479,7 +479,21 @@ createApp({
             if (d && d.notes) notes.value = d.notes;
         } catch(e) {}
 
-        // Load analysis
+        // 预加载字幕 (异步, 分析等它完成)
+        const embedId = video.embed_id || video.youtube_id || '';
+        if (embedId) {
+            try {
+                const sp = new URLSearchParams({video_id:video.id, source:video.source, embed_id:embedId});
+                const sr = await fetch('/api/translate?'+sp);
+                const sd = await sr.json();
+                if (sd && sd.segments) {
+                    subtitleSegments.value = sd.segments;
+                    fullTranslation.value = sd.translation || '';
+                }
+            } catch(e) {}
+        }
+
+        // 分析 (字幕已就绪)
         _fetchAnalysis(video);
     }
 

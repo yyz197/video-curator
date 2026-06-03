@@ -1057,7 +1057,7 @@ def api_analyze():
     if subtitle_text:
         subtitle_context = f"【视频字幕节选】\n{subtitle_text}\n\n"
 
-    prompt = f"""你是专业内容策展人。{subtitle_context}请基于以上信息做深度分析，用语简洁。
+    prompt = f"""你是专业内容策展人。{subtitle_context}请基于以上信息做深度观前分析，帮助观众在观看前了解内容。
 
 【视频信息】
 标题：{title}
@@ -1066,31 +1066,35 @@ def api_analyze():
 时长：{duration}
 简介：{description[:600] if description else '无'}
 
-请严格用以下结构输出：
+请严格用以下结构输出（Markdown格式）：
 
 ## 内容概要
-（2-3句话，简洁概括核心内容）
+（3-4句话精炼概括本期内容，让观众10秒内了解主题）
 
-## 时间线节点
-（{timeline_hint}按阶段简述，每节点15字以内）
-- 00:00-XX:XX 开头引入...
-- XX:XX-XX:XX 核心内容...
-- XX:XX-结束 总结...
+## 核心知识点
+- 知识1：详细说明 + 相关背景（有字幕则基于字幕深入展开）
+- 知识2：详细说明 + 相关背景
+- 知识3：详细说明 + 相关背景
+（列举3-5个核心知识点，每个都要结合字幕具体内容展开）
 
-## 核心要点
-- 要点1：详细展开说明（20-40字）
-- 要点2：详细展开说明（20-40字）
-- 要点3：详细展开说明（20-40字）
-（列举3-5个要点，每个适当展开，不必过于简短）
+## 关键术语
+- **术语1** (英文原文): 一句话解释
+- **术语2** (英文原文): 一句话解释
+（提取视频中出现的专业术语、人名、地名等，附英文原文和简洁解释）
 
-## 关联标签
-（3个相关话题标签）"""
+## 背景补充
+（补充与主题相关的历史背景、前沿进展或关联知识，帮助理解视频语境）
+
+## 观看建议
+- 知识密度：⭐1-5星
+- 适看人群：（具体描述）
+- 一句话建议：（是否值得看，为什么）"""
 
     try:
         resp = requests.post(
             f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
             headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1200, "temperature": 0.3},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1500, "temperature": 0.3},
             timeout=45,
         )
         data = resp.json()
