@@ -109,8 +109,10 @@
         notesOverlay.classList.add("open");
         document.body.style.overflow = "hidden";
 
-        // Focus editor after transition
-        setTimeout(() => notesEditor.focus(), 300);
+        // Focus editor after transition (skip if hidden)
+        setTimeout(() => {
+            if (notesEditor.style.display !== "none") notesEditor.focus();
+        }, 300);
     }
 
     function closeNotesDrawer() {
