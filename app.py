@@ -1311,7 +1311,7 @@ def api_translate():
     if source == "bilibili":
         return jsonify({
             "translation": raw_text[:2000],
-            "segments": segments[:80],
+            "segments": segments[:300],
             "cached": True,
         })
 
@@ -1349,7 +1349,7 @@ def api_translate():
         cache_set(ck, {"translation": full_translation})
         return jsonify({
             "translation": full_translation,
-            "segments": segments[:80],  # 前80条, 字幕最有用
+            "segments": segments[:300],  # 完整覆盖视频
             "cached": False,
         })
     return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500

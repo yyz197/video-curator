@@ -164,7 +164,7 @@
     </div>
     <div class="notes-drawer-body">
         <div class="notes-player-column">
-            <div class="video-player-container">
+            <div class="video-player-container" style="position:relative">
                 <iframe v-if="currentVideo?.source==='bilibili' && currentVideo?.embed_id"
                         :src="'https://player.bilibili.com/player.html?bvid='+currentVideo.embed_id+'&autoplay=0'"
                         allowfullscreen frameborder="0"></iframe>
@@ -172,6 +172,11 @@
                         :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0&enablejsapi=1&origin='+encodeURIComponent(window.location.origin)"
                         allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer"></iframe>
                 <div v-else style="display:flex;align-items:center;justify-content:center;height:100%;color:#999">暂无嵌入播放地址</div>
+                <!-- 实时字幕叠加 -->
+                <div v-if="currentSubtitleText" style="position:absolute;bottom:50px;left:50%;transform:translateX(-50%);
+                    background:rgba(0,0,0,0.78);color:#fff;padding:8px 20px;border-radius:8px;
+                    font-size:17px;line-height:1.5;max-width:90%;text-align:center;z-index:10;pointer-events:none;
+                    transition:opacity 0.15s" v-text="currentSubtitleText"></div>
             </div>
         </div>
         <div class="notes-content-column">
@@ -333,6 +338,12 @@ createApp({
     const toasts = ref([]);
 
     // ── Computed ──
+    const currentSubtitleText = computed(() => {
+        if (!subtitleSegments.value.length) return '';
+        const t = currentTime.value;
+        const seg = subtitleSegments.value.find(s => t >= s.start && t <= s.start + s.duration);
+        return seg ? seg.original : '';
+    });
     const displayVideos = computed(() => {
         if (page.value === 1 && !search.value && !category.value) return videos.value.slice(1);
         return videos.value;
@@ -619,6 +630,7 @@ createApp({
         drawerOpen, currentVideo, notes, analysis, analysisLoading, activeTab,
         chatHistory, chatInput, chatLoading,
         subtitleSegments, subtitleLoading, fullTranslation, currentTime,
+        currentSubtitleText,
         darkMode, scrollY, favoritesOpen, prefPanelOpen, favorites, toasts,
         displayVideos, statusMsg, renderedAnalysis,
         toggleDarkMode, toggleFav, isFaved, removeFav, togglePref, savePrefs,
