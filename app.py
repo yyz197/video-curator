@@ -890,8 +890,9 @@ def fetch_youtube_transcript(video_id: str) -> str:
 
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
-        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=["zh-Hans", "zh", "en"])
-        text = " ".join(t.get("text", "") for t in transcript if t.get("text"))
+        api = YouTubeTranscriptApi()
+        transcript = api.fetch(video_id, languages=["zh-Hans", "zh", "en"])
+        text = " ".join(t.text for t in transcript if t.text)
         text = " ".join(text.split())
         cache_path.write_text(text, encoding="utf-8")
         return text[:4000]
