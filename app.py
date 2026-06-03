@@ -342,7 +342,14 @@ def _fetch_youtube_channel_rss(channel: dict) -> list[dict]:
     videos = []
     try:
         rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel['id']}"
-        resp = requests.get(rss_url, timeout=YOUTUBE_TIMEOUT)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        }
+        resp = requests.get(rss_url, headers=headers, timeout=YOUTUBE_TIMEOUT)
+        if resp.status_code != 200:
+            app.logger.warning(f"YouTube RSS HTTP {resp.status_code} ({channel['name']})")
+            return videos
         text = resp.text
         # 清理非法 XML 字符
         text = re.sub(r"[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]", "", text)
@@ -428,6 +435,9 @@ def _fetch_youtube_channel_rss(channel: dict) -> list[dict]:
             })
     except Exception as e:
         app.logger.error(f"YouTube RSS 失败 ({channel['name']}): {e}")
+    else:
+        if videos:
+            app.logger.debug(f"YouTube RSS [{channel['name']}]: {len(videos)} 个视频")
     return videos
 
 
@@ -448,16 +458,17 @@ def _parse_youtube_rss_regex(text: str, channel: dict) -> list[dict]:
     """正则方式解析 YouTube RSS（XML 解析失败时的 fallback）"""
     import re as re_mod
     videos = []
-    # 先剥掉 CDATA 包裹
-    text = re_mod.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", text)
-    # 匹配 <entry ...>...</entry>
-    entries = re_mod.findall(r"<entry[^>]*>(.*?)</entry>", text, re_mod.DOTALL)
+    text = re_mod.sub(r"<!\s*\[CDATA\[(.*?)\]\s*\]>", r"\1", text)
+    entries = re_mod.findall(r"<(?:atom:)?entry[^>]*>(.*?)</(?:atom:)?entry>", text, re_mod.DOTALL)
+    # 如果带命名空间的 entry 没匹配到，尝试不带命名空间
+    if not entries:
+        entries = re_mod.findall(r"<entry[^>]*>(.*?)</entry>", text, re_mod.DOTALL)
     for entry in entries[:4]:
-        vid_match = re_mod.search(r"(?:yt:)?videoId[^>]*>([^<\s]+)", entry)
+        vid_match = re_mod.search(r"(?:yt:)?videoId[^>]*>\s*([^<\s]+)", entry)
         if not vid_match:
-            vid_match = re_mod.search(r"<id[^>]*>[^:]*:([^<\s]+)</id>", entry)
-        title_match = re_mod.search(r"<title[^>]*>(.+?)</title>", entry)
-        thumb_match = re_mod.search(r'url="(https?://[^"]+\.(?:jpg|jpeg|png|webp)[^"]*)"', entry)
+            vid_match = re_mod.search(r"<id[^>]*>[^:]*:(\w+)\s*<", entry)
+        title_match = re_mod.search(r"<(?:media:)?title[^>]*>(.+?)</(?:media:)?title>", entry)
+        thumb_match = re_mod.search(r'url\s*=\s*"((?:https?:)?//[^"]+\.(?:jpg|jpeg|png|webp)[^"]*)"', entry)
         desc_match = re_mod.search(r"<media:description[^>]*>(.*?)</media:description>", entry)
         pub_match = re_mod.search(r"<published>([^<]+)</published>", entry)
 
@@ -500,7 +511,11 @@ def _parse_youtube_rss_regex(text: str, channel: dict) -> list[dict]:
 
 
 def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
-    """获取单个 YouTube 频道的搜索结果（不含时长）"""
+    """获取单个 YouTube 频道的搜索结果（不含时长），带短期缓存"""
+    ck = cache_key("yt_search", channel["id"])
+    if cached := cache_get_with_ttl(ck, 900):
+        return cached.get("videos", [])
+
     videos = []
     try:
         resp = requests.get(
@@ -508,7 +523,7 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
             params={
                 "part": "snippet",
                 "channelId": channel["id"],
-                "maxResults": 5,
+                "maxResults": 3,
                 "order": "date",
                 "type": "video",
                 "key": YOUTUBE_API_KEY,
@@ -516,6 +531,11 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
             timeout=YOUTUBE_TIMEOUT,
         )
         data = resp.json()
+        if "error" in data:
+            err = data["error"]
+            msg = err.get("message", str(err))
+            app.logger.error(f"YouTube API 错误 ({channel['name']}): HTTP {resp.status_code} — {msg}")
+            return videos
         for item in data.get("items", []):
             snippet = item.get("snippet", {})
             vid = item.get("id", {}).get("videoId", "")
@@ -555,6 +575,8 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
             })
     except Exception as e:
         app.logger.error(f"YouTube 搜索失败 ({channel['name']}): {e}")
+    else:
+        cache_set(ck, {"videos": videos})
     return videos
 
 
@@ -580,6 +602,11 @@ def _enrich_youtube_videos(videos: list[dict]) -> list[dict]:
                 timeout=YOUTUBE_TIMEOUT,
             )
             data = resp.json()
+            if "error" in data:
+                err = data["error"]
+                msg = err.get("message", str(err))
+                app.logger.error(f"YouTube Videos API 错误: HTTP {resp.status_code} — {msg}")
+                continue
             for item in data.get("items", []):
                 vid = item.get("id", "")
                 duration_iso = item.get("contentDetails", {}).get("duration", "")
@@ -621,18 +648,25 @@ def fetch_youtube_videos_api() -> list[dict]:
         futures = {executor.submit(_fetch_youtube_channel_search, ch): ch for ch in YOUTUBE_EDUCATION_CHANNELS}
         for future in as_completed(futures):
             try:
-                all_videos.extend(future.result())
+                result = future.result()
+                if result:
+                    ch = futures[future]
+                    app.logger.debug(f"YouTube API [{ch['name']}]: {len(result)} 个视频")
+                all_videos.extend(result)
             except Exception:
                 pass
 
-    # 批量获取时长和播放量
-    all_videos = _enrich_youtube_videos(all_videos)
+    app.logger.info(f"YouTube API 搜索完成: 共 {len(all_videos)} 个视频")
 
-    # 过滤短视频
-    all_videos = [
-        v for v in all_videos
-        if v.get("duration_seconds", 0) == 0 or v["duration_seconds"] >= MIN_DURATION_SECONDS
-    ]
+    if all_videos:
+        all_videos = _enrich_youtube_videos(all_videos)
+
+        # 过滤短视频
+        all_videos = [
+            v for v in all_videos
+            if v.get("duration_seconds", 0) == 0 or v["duration_seconds"] >= MIN_DURATION_SECONDS
+        ]
+        app.logger.info(f"YouTube API 过滤后: {len(all_videos)} 个视频")
 
     return all_videos
 
@@ -642,7 +676,9 @@ def fetch_youtube_videos() -> list[dict]:
     if YOUTUBE_API_KEY:
         videos = fetch_youtube_videos_api()
         if videos:
+            app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
             return videos
+        app.logger.warning("YouTube API 无结果，回退到 RSS 模式")
     return fetch_youtube_videos_rss()
 
 
@@ -943,10 +979,13 @@ def api_videos():
     # 视频列表短期缓存键
     list_ck = cache_key("videos", source, category, str(page), search[:20], sort)
 
-    # 非摘要模式尝试读缓存
-    if not with_summary and not search and not prefs and not essence:
+    # 非摘要/非搜索/非偏好模式尝试读缓存
+    if not with_summary and not search and not prefs and not essence and not following:
         if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
             return jsonify(cached)
+        # 预热缓存 (warmup.py 生成, TTL 更长)
+        if warmup_cached := cache_get_with_ttl(list_ck, 86400):
+            return jsonify(warmup_cached)
 
     all_videos = []
 
