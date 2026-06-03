@@ -58,6 +58,7 @@
 
     // ── Open / Close ──
     function openNotesDrawer(video) {
+        try {
         currentVideo = video;
         chatHistory = [];
         chatMessages.innerHTML = '<div class="chat-empty">输入问题，AI 将根据视频内容为你解答</div>';
@@ -113,6 +114,9 @@
         setTimeout(() => {
             if (notesEditor.style.display !== "none") notesEditor.focus();
         }, 300);
+        } catch (e) {
+            console.error("openNotesDrawer 出错:", e);
+        }
     }
 
     function closeNotesDrawer() {
@@ -156,7 +160,6 @@
                 }
                 if (data.ai_summary) {
                     notesSummaryText.innerHTML = renderMarkdown(data.ai_summary);
-                    notesSummaryStatus.style.display = "none";
                 }
             }
         } catch (e) {
@@ -476,6 +479,18 @@
             } catch {}
         });
     })();
+
+    // ── Tab Switching ──
+    function switchTab(tab) {
+        tabBtns.forEach(b => b.classList.toggle("active", b.dataset.notesTab === tab));
+        tabContents.forEach(c => c.classList.toggle("active", c.id === "notesTab" + tab.charAt(0).toUpperCase() + tab.slice(1)));
+        // 切换到非字幕tab时停止时间同步
+        if (tab !== "subtitle" && subtitleTimer) {
+            clearInterval(subtitleTimer);
+            subtitleTimer = null;
+        }
+    }
+    tabBtns.forEach(btn => btn.addEventListener("click", () => switchTab(btn.dataset.notesTab)));
 
     // ── Collapsible / Old Analysis Cleanup ──
     // (已移至右侧Tab, 不再需要折叠逻辑)
