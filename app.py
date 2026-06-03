@@ -734,57 +734,6 @@ def fetch_youtube_videos_api() -> list[dict]:
     return all_videos
 
 
-def _probe_google_api() -> bool:
-    """快速检查 Google 网络是否可达（不消耗配额，走代理）"""
-    try:
-        resp = requests.get(
-            "https://www.youtube.com/",
-            headers={"User-Agent": "Mozilla/5.0"},
-            timeout=5,
-        )
-        return resp.status_code < 500
-    except Exception:
-        return False
-
-
-def _probe_youtube_access() -> bool:
-    """快速检查 YouTube 是否可达（走代理），5秒超时"""
-    try:
-        resp = requests.get(
-            "https://www.youtube.com/",
-            headers={"User-Agent": "Mozilla/5.0"},
-            timeout=5,
-        )
-        return resp.status_code < 500
-    except Exception:
-        return False
-
-
-def _probe_google_api() -> bool:
-    # 现在和 _probe_youtube_access 走同一代理，直接复用
-    return _probe_youtube_access()
-
-
-def _probe_youtube_web() -> bool:
-    return _probe_youtube_access()
-
-
-def fetch_youtube_videos() -> list[dict]:
-    """YouTube 视频获取入口"""
-    if not _probe_youtube_access():
-        app.logger.warning("YouTube 不可达（请检查 VPN/代理）")
-        return []
-
-    if YOUTUBE_API_KEY:
-        videos = fetch_youtube_videos_api()
-        if videos:
-            app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
-            return videos
-        app.logger.warning("YouTube API 无结果，回退到 RSS 模式")
-
-    return fetch_youtube_videos_rss()
-
-
 # ──────────────────────────────────────────────
 #  AI 摘要引擎
 # ──────────────────────────────────────────────
