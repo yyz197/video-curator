@@ -734,6 +734,17 @@ def fetch_youtube_videos_api() -> list[dict]:
     return all_videos
 
 
+def fetch_youtube_videos() -> list[dict]:
+    """YouTube 视频获取入口"""
+    if YOUTUBE_API_KEY:
+        videos = fetch_youtube_videos_api()
+        if videos:
+            app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
+            return videos
+        app.logger.warning("YouTube API 无结果，回退到 RSS 模式")
+    return fetch_youtube_videos_rss()
+
+
 # ──────────────────────────────────────────────
 #  AI 摘要引擎
 # ──────────────────────────────────────────────
