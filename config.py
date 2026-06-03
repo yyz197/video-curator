@@ -109,8 +109,8 @@ VIDEOS_PER_PAGE = 24
 # 摘要缓存过期时间 (秒) = 7 天
 SUMMARY_CACHE_TTL = 86400 * 7
 
-# 视频列表缓存 (秒) = 10 分钟 — 避免频繁调用B站API
-VIDEO_LIST_CACHE_TTL = 600
+# 视频列表缓存 (秒) = 30 分钟
+VIDEO_LIST_CACHE_TTL = 1800
 
 # 最低视频时长 (秒) — 低于此值自动排除
 MIN_DURATION_SECONDS = 300  # 5 分钟

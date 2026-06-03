@@ -550,22 +550,28 @@ def _parse_youtube_rss_regex(text: str, channel: dict) -> list[dict]:
     return videos
 
 
+def _get_uploads_playlist_id(channel_id: str) -> str:
+    """频道ID → 上传列表ID (UCxxx → UUxxx, 无需API)"""
+    if channel_id.startswith("UC"):
+        return "UU" + channel_id[2:]
+    return channel_id
+
+
 def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
-    """获取单个 YouTube 频道的搜索结果（不含时长），带短期缓存"""
+    """获取单个 YouTube 频道的最新视频 (playlistItems.list, 仅1单位配额)"""
     ck = cache_key("yt_search", channel["id"])
-    if cached := cache_get_with_ttl(ck, 900):
+    if cached := cache_get_with_ttl(ck, 3600):
         return cached.get("videos", [])
 
     videos = []
+    playlist_id = _get_uploads_playlist_id(channel["id"])
     try:
         resp = requests.get(
-            "https://www.googleapis.com/youtube/v3/search",
+            "https://www.googleapis.com/youtube/v3/playlistItems",
             params={
                 "part": "snippet",
-                "channelId": channel["id"],
-                "maxResults": 3,
-                "order": "date",
-                "type": "video",
+                "playlistId": playlist_id,
+                "maxResults": 5,
                 "key": YOUTUBE_API_KEY,
             },
             timeout=YOUTUBE_TIMEOUT,
@@ -578,7 +584,7 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
             return videos
         for item in data.get("items", []):
             snippet = item.get("snippet", {})
-            vid = item.get("id", {}).get("videoId", "")
+            vid = snippet.get("resourceId", {}).get("videoId", "")
             if not vid:
                 continue
             pub_ts = 0
@@ -797,7 +803,7 @@ def generate_summary(video: dict) -> str | None:
         resp = requests.post(
             f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
             headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 400, "temperature": 0.5},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 250, "temperature": 0.5},
             timeout=30,
         )
         data = resp.json()
@@ -1024,7 +1030,7 @@ def api_analyze():
         resp = requests.post(
             f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
             headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 900, "temperature": 0.3},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 600, "temperature": 0.3},
             timeout=45,
         )
         data = resp.json()
@@ -1218,7 +1224,7 @@ def api_translate():
             resp = requests.post(
                 f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
                 headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": chunk_prompt}], "max_tokens": 2000, "temperature": 0.3},
+                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": chunk_prompt}], "max_tokens": 1000, "temperature": 0.3},
                 timeout=45,
             )
             data = resp.json()
@@ -1318,7 +1324,7 @@ def api_chat():
         resp = requests.post(
             f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
             headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-            json={"model": "deepseek-chat", "messages": messages, "max_tokens": 600, "temperature": 0.5},
+            json={"model": "deepseek-chat", "messages": messages, "max_tokens": 400, "temperature": 0.5},
             timeout=40,
         )
         resp_data = resp.json()
