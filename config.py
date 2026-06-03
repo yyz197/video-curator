@@ -125,7 +125,7 @@ YOUTUBE_MAX_WORKERS = 5
 YOUTUBE_MAX_WORKERS_API = 3
 
 # 最大并发 B站请求数
-BILIBILI_MAX_WORKERS = 4
+BILIBILI_MAX_WORKERS = 2
 
 # 笔记导出目录
 NOTES_EXPORT_DIR = os.path.expanduser("~/Desktop/视频笔记")
