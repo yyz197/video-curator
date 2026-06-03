@@ -124,5 +124,8 @@ YOUTUBE_MAX_WORKERS = 5
 # 最大并发 YouTube API 请求数 (Data API v3, 受 API 配额限制)
 YOUTUBE_MAX_WORKERS_API = 3
 
+# 最大并发 B站请求数
+BILIBILI_MAX_WORKERS = 4
+
 # 笔记导出目录
 NOTES_EXPORT_DIR = os.path.expanduser("~/Desktop/视频笔记")

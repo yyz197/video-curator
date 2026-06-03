@@ -4,7 +4,7 @@
 """
 import json
 import hashlib
-import os
+import random
 import re
 import time
 from datetime import datetime
@@ -20,6 +20,7 @@ from flask import Flask, Response, jsonify, render_template, request
 from config import (
     BILIBILI_CATEGORIES,
     BILIBILI_CATEGORY_LABELS,
+    BILIBILI_MAX_WORKERS,
     CACHE_DIR,
     DEEPSEEK_API_KEY,
     DEEPSEEK_BASE_URL,
@@ -220,6 +221,27 @@ def _video_score(v: dict) -> float:
 #  B站 视频源
 # ──────────────────────────────────────────────
 
+# UA 轮换池 — 防 B站 API 限流
+_BILIBILI_USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+]
+
+
+def _bilibili_headers() -> dict:
+    return {
+        "User-Agent": random.choice(_BILIBILI_USER_AGENTS),
+        "Referer": "https://www.bilibili.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Origin": "https://www.bilibili.com",
+    }
+
+
 def _parse_bilibili_video(item: dict) -> dict:
     tid = item.get("tid", 0)
     dur_raw = item.get("duration", "")
@@ -261,32 +283,43 @@ def _guess_category(tid: int) -> str:
     return guesses.get(tid, f"分区{tid}")
 
 
+def _fetch_bilibili_ranking(rid: int, rank_type: str) -> list[dict]:
+    """获取单个 B站分区的排行榜"""
+    try:
+        resp = requests.get(
+            "https://api.bilibili.com/x/web-interface/ranking/v2",
+            params={"rid": rid, "type": rank_type},
+            headers=_bilibili_headers(),
+            timeout=15,
+        )
+        data = resp.json()
+        if data.get("code") == 0:
+            return data.get("data", {}).get("list", [])
+    except Exception as e:
+        app.logger.error(f"B站分区 {rid} {rank_type}榜失败: {e}")
+    return []
+
+
 def fetch_bilibili_videos(category_id: int | None = None) -> list[dict]:
-    """获取 B站教育类视频（热门 + 分区排行榜）"""
+    """获取 B站教育类视频（热门 + 并发分区排行榜）"""
     videos = []
     seen_ids = set()
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-        "Referer": "https://www.bilibili.com/",
-    }
 
     def add_video(item):
         vid = item.get("aid", item.get("id", ""))
         if vid not in seen_ids:
             seen_ids.add(vid)
             v = _parse_bilibili_video(item)
-            # 过滤纯娱乐内容
             if v["category"] in ("动画", "番剧", "游戏", "娱乐", "鬼畜", "搞笑"):
                 return
-            # 过滤短视频 (< 5 分钟)
             if v["duration_seconds"] < MIN_DURATION_SECONDS:
                 return
             videos.append(v)
 
-    # 1) 热门榜
+    # 1) 热门榜（单次请求）
     try:
         url = "https://api.bilibili.com/x/web-interface/popular"
-        resp = requests.get(url, params={"ps": 50, "pn": 1}, headers=headers, timeout=15)
+        resp = requests.get(url, params={"ps": 50, "pn": 1}, headers=_bilibili_headers(), timeout=15)
         data = resp.json()
         if data.get("code") == 0:
             for item in data.get("data", {}).get("list", []):
@@ -298,30 +331,29 @@ def fetch_bilibili_videos(category_id: int | None = None) -> list[dict]:
     except Exception as e:
         app.logger.error(f"B站热门 API 失败: {e}")
 
-    # 2) 各教育分区排行榜 — B站侧重推新，使用周榜+日榜
+    # 2) 并发拉取各分区周榜 + 日榜
     cats_to_fetch = [category_id] if category_id else [k for k in BILIBILI_CATEGORIES if k < 200]
-    for cid in cats_to_fetch[:12]:  # 限制数量避免太多请求
-        try:
-            rank_url = "https://api.bilibili.com/x/web-interface/ranking/v2"
-            resp = requests.get(rank_url, params={"rid": cid, "type": "weekly"}, headers=headers, timeout=15)
-            rank_data = resp.json()
-            if rank_data.get("code") == 0:
-                for item in rank_data.get("data", {}).get("list", [])[:6]:
-                    add_video(item)
-        except Exception as e:
-            app.logger.error(f"B站分区 {cid} 周榜失败: {e}")
-
-    # 3) 日榜补充最新内容
+    tasks = []
+    for cid in cats_to_fetch[:12]:
+        tasks.append((cid, "weekly"))
     for cid in cats_to_fetch[:6]:
-        try:
-            rank_url = "https://api.bilibili.com/x/web-interface/ranking/v2"
-            resp = requests.get(rank_url, params={"rid": cid, "type": "daily"}, headers=headers, timeout=15)
-            rank_data = resp.json()
-            if rank_data.get("code") == 0:
-                for item in rank_data.get("data", {}).get("list", [])[:3]:
-                    add_video(item)
-        except Exception as e:
-            app.logger.error(f"B站分区 {cid} 日榜失败: {e}")
+        tasks.append((cid, "daily"))
+
+    if tasks:
+        with ThreadPoolExecutor(max_workers=BILIBILI_MAX_WORKERS) as executor:
+            futures = {
+                executor.submit(_fetch_bilibili_ranking, cid, rank_type): (cid, rank_type)
+                for cid, rank_type in tasks
+            }
+            for future in as_completed(futures):
+                cid, rank_type = futures[future]
+                try:
+                    items = future.result()
+                    limit = 6 if rank_type == "weekly" else 3
+                    for item in items[:limit]:
+                        add_video(item)
+                except Exception as e:
+                    app.logger.error(f"B站分区 {cid} {rank_type}榜失败: {e}")
 
     videos.sort(key=lambda v: v.get("published", 0), reverse=True)
     return videos
