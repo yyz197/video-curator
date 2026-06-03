@@ -21,11 +21,11 @@ except Exception as e:
 def _save_video_list_cache(source: str, videos: list, label: str, sort: str = "score") -> None:
     """保存视频列表缓存，供 app.py 的 api_videos 读取"""
     total = len(videos)
-    page1 = videos[:VIDEOS_PER_PAGE]
+    # 存全量视频，让偏好/精华过滤有足够数据
     ck = cache_key("videos", source, "", "1", "", sort)
     data = {
         "_ts": time.time(),
-        "videos": page1,
+        "videos": videos,  # 全量
         "total": total,
         "page": 1,
         "per_page": VIDEOS_PER_PAGE,
@@ -34,7 +34,7 @@ def _save_video_list_cache(source: str, videos: list, label: str, sort: str = "s
         "search": None,
     }
     cache_set(ck, data)
-    print(f"     {label}: 缓存 {len(page1)}/{total} 个视频 (key={ck})")
+    print(f"     {label}: 缓存 {total} 个视频 (key={ck})")
 
 
 def warmup():

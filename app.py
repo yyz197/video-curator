@@ -1065,13 +1065,43 @@ def api_videos():
     # 视频列表短期缓存键
     list_ck = cache_key("videos", source, category, str(page), search[:20], sort)
 
-    # 非摘要/非搜索/非偏好模式尝试读缓存
+    # 偏好分类解析（提前，供缓存过滤使用）
+    preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
+
+    # 预热缓存优先（24h TTL, 不依赖 prefs/essence）
+    if not with_summary and not search:
+        if warmup_cached := cache_get_with_ttl(list_ck, 86400):
+            videos = warmup_cached.get("videos", [])
+            total = warmup_cached.get("total", len(videos))
+            # 应用偏好/精华过滤（复用缓存数据）
+            if preferred_cats:
+                for v in videos:
+                    if v["category"] in preferred_cats:
+                        v["score"] = v.get("score", 10) * 2.0
+                    elif any(pc in v.get("description", "") or pc in v["title"] for pc in preferred_cats):
+                        v["score"] = v.get("score", 10) * 1.5
+            if essence:
+                videos.sort(key=lambda v: (v.get("score", 0), v.get("published", 0)), reverse=True)
+                videos = videos[: max(12, len(videos) // 2)]
+                total = len(videos)
+            # 第一页取前24个
+            videos = videos[:VIDEOS_PER_PAGE]
+            result = {
+                "videos": videos,
+                "total": total,
+                "page": page,
+                "per_page": VIDEOS_PER_PAGE,
+                "has_more": total > VIDEOS_PER_PAGE,
+                "categories": BILIBILI_CATEGORY_LABELS,
+                "search": None,
+                "cached": True,
+            }
+            return jsonify(result)
+
+    # 短期缓存（无偏好/无搜索时）
     if not with_summary and not search and not prefs and not essence and not following:
         if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
             return jsonify(cached)
-        # 预热缓存 (warmup.py 生成, TTL 更长)
-        if warmup_cached := cache_get_with_ttl(list_ck, 86400):
-            return jsonify(warmup_cached)
 
     all_videos = []
 
@@ -1097,7 +1127,6 @@ def api_videos():
         v["score"] = _video_score(v)
 
     # 偏好加权
-    preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
     if preferred_cats:
         for v in all_videos:
             if v["category"] in preferred_cats:
