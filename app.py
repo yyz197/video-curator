@@ -1257,15 +1257,25 @@ def api_translate():
 
     video = {"source": source, "embed_id": embed_id or video_id}
 
-    # 获取带时间戳的分段字幕
+    # 1) 先查翻译缓存 (warmup每天预生成)
+    ck = cache_key("translate", source, video_id or embed_id)
+    if translate_cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
+        timed_data = get_transcript_timed(video)  # 字幕分段可能也缓存了
+        return jsonify({
+            "translation": translate_cached.get("translation", ""),
+            "segments": (timed_data or {}).get("segments", [])[:300],
+            "cached": True,
+        })
+
+    # 2) 无缓存 → 尝试实时获取
     timed_data = get_transcript_timed(video)
     if not timed_data or not timed_data.get("segments"):
-        return jsonify({"translation": "", "segments": [], "error": "无法获取字幕"})
+        return jsonify({"translation": "", "segments": [], "error": "无法获取字幕(需VPN或warmup预加载)"})
 
     segments = timed_data.get("segments", [])
     raw_text = timed_data.get("text", "")
 
-    # B站字幕通常是中文, 直接返回分段, 无需调用DeepSeek翻译
+    # B站字幕通常是中文, 直接返回分段
     if source == "bilibili":
         return jsonify({
             "translation": raw_text[:2000],
@@ -1273,13 +1283,9 @@ def api_translate():
             "cached": True,
         })
 
-    ck = cache_key("translate", source, video_id or embed_id)
-    if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
-        return jsonify({
-            "translation": cached.get("translation", ""),
-            "segments": segments,
-            "cached": True,
-        })
+    # YouTube 实时翻译
+    if not DEEPSEEK_API_KEY:
+        return jsonify({"error": "DeepSeek API 未配置"}), 400
 
     # 分段翻译
     chunk_size = 2500
