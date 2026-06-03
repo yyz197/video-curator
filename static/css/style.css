@@ -1320,6 +1320,17 @@ body::before {
 }
 .notes-done-btn:hover { border-color: var(--success); color: var(--success); }
 .notes-done-btn.marked { background: var(--success-bg); border-color: var(--success); color: var(--success); }
+.notes-translate-btn {
+    padding: 8px 16px; border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--bg); color: var(--text-secondary); font-size: 13px;
+    cursor: pointer; transition: all 0.15s; white-space: nowrap;
+}
+.notes-translate-btn:hover { border-color: var(--accent); color: var(--accent); }
+.notes-translate-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.notes-translation-section {
+    background: var(--bg); border-radius: var(--radius); padding: 10px 14px;
+    flex-shrink: 0; font-size: 12px; margin-top: 8px; max-height: 250px; overflow-y: auto;
+}
 
 /* ── Follow Button ── */
 .follow-btn {

@@ -32,6 +32,9 @@
     const chatSendBtn = $("#chatSendBtn");
     const videoPlayerContainer = $("#videoPlayerContainer");
     const followBtn = $("#followBtn");
+    const notesTranslateBtn = $("#notesTranslateBtn");
+    const notesTranslationText = $("#notesTranslationText");
+    const notesTranslationSection = $("#notesTranslationSection");
 
     const tabBtns = document.querySelectorAll(".notes-tab");
     const tabContents = document.querySelectorAll(".notes-tab-content");
@@ -61,6 +64,10 @@
         notesSummaryText.innerHTML = "";
         notesSummaryStatus.textContent = "正在深度分析...";
         notesSummaryStatus.style.display = "";
+        notesTranslationSection.style.display = "none";
+        notesTranslationText.innerHTML = "";
+        notesTranslateBtn.disabled = false;
+        notesTranslateBtn.textContent = "🌐 翻译字幕";
         isWatched = isVideoWatched(video.id);
 
         // Header
@@ -506,4 +513,29 @@
         container.appendChild(toast);
         setTimeout(() => toast.remove(), 3200);
     }
+
+    // ── Translate Subtitle ──
+    notesTranslateBtn.addEventListener("click", async () => {
+        if (!currentVideo) return;
+        notesTranslateBtn.disabled = true;
+        notesTranslateBtn.textContent = "⏳ 翻译中...";
+        notesTranslationSection.style.display = "block";
+        notesTranslationText.textContent = "正在获取字幕并翻译...";
+
+        const params = new URLSearchParams({
+            video_id: currentVideo.id,
+            source: currentVideo.source,
+            embed_id: currentVideo.embed_id || currentVideo.youtube_id || "",
+        });
+        const data = await fetchAPI("/api/translate?" + params.toString());
+        if (data && data.translation) {
+            notesTranslationText.textContent = data.translation;
+            notesTranslationText.style.whiteSpace = "pre-wrap";
+            notesTranslateBtn.textContent = data.cached ? "🌐 已翻译(缓存)" : "🌐 翻译完成";
+        } else {
+            notesTranslationText.textContent = data?.error || "无可翻译字幕（可能无英文字幕，或字幕获取失败）";
+            notesTranslateBtn.textContent = "⚠️ 重试";
+            notesTranslateBtn.disabled = false;
+        }
+    });
 })();
