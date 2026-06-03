@@ -1274,11 +1274,15 @@ def api_categories():
 def api_transcript():
     source = request.args.get("source", "")
     embed_id = request.args.get("embed_id", "")
+    timed = request.args.get("timed", "false").lower() == "true"
     if not embed_id:
-        return jsonify({"text": ""})
+        return jsonify({"text": "", "segments": []})
     video = {"source": source, "embed_id": embed_id}
+    if timed:
+        data = get_transcript_timed(video)
+        return jsonify({"text": data["text"] if data else "", "segments": data["segments"] if data else []})
     text = get_transcript_for_video(video)
-    return jsonify({"text": text})
+    return jsonify({"text": text, "segments": []})
 
 
 @app.route("/api/translate")

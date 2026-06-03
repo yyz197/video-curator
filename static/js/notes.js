@@ -363,19 +363,26 @@
     // ── Subtitle Fetch ──
     async function fetchSubtitle(video) {
         currentSubtitle = "";
+        subtitleSegments = [];
+        isSubtitleLoaded = false;
         const embedId = video.embed_id || video.youtube_id || "";
         if (!embedId) return;
         try {
             const params = new URLSearchParams({
                 source: video.source || "",
                 embed_id: embedId,
+                timed: "true",
             });
             const data = await fetchAPI("/api/transcript?" + params.toString());
-            if (data && data.text) {
+            if (data && data.segments && data.segments.length) {
+                subtitleSegments = data.segments;
+                isSubtitleLoaded = true;
+                currentSubtitle = data.text || "";
+            } else if (data && data.text) {
                 currentSubtitle = data.text;
             }
         } catch (e) {
-            console.error("字幕获取失败:", e);
+            console.error("字幕预加载失败:", e);
         }
     }
     async function fetchDeepAnalysis(video) {
@@ -471,6 +478,11 @@
     }
 
     function getPlayerCurrentTime() {
+        // Prefer infoDelivery (automatic) over command polling
+        if (window._ytCurrentTime !== undefined && window._ytCurrentTime > 0) {
+            return window._ytCurrentTime;
+        }
+        // Fallback: send getCurrentTime command
         const iframe = videoPlayerContainer.querySelector("iframe");
         if (!iframe || !iframe.contentWindow) return null;
         try {
@@ -483,16 +495,42 @@
         return window._ytCurrentTime ?? null;
     }
 
-    // Listen for YouTube player command responses
+    // Listen for YouTube player command responses + send init
     (function() {
         window.addEventListener("message", (e) => {
             try {
                 const d = JSON.parse(e.data);
+                if (d.event === "infoDelivery" && d.info && d.info.currentTime !== undefined) {
+                    window._ytCurrentTime = d.info.currentTime;
+                }
                 if (d.event === "commandResult" && d.func === "getCurrentTime" && typeof d.result === "number") {
                     window._ytCurrentTime = d.result;
                 }
+                // Player ready → subscribe to time updates
+                if (d.event === "onReady") {
+                    const iframe = videoPlayerContainer.querySelector("iframe");
+                    if (iframe && iframe.contentWindow) {
+                        // Subscribe to all info delivery events
+                        iframe.contentWindow.postMessage(JSON.stringify({
+                            event: "subscribe",
+                            info: "all"
+                        }), "*");
+                    }
+                }
             } catch {}
         });
+        // Send listening event when iframe loads
+        videoPlayerContainer.addEventListener("load", () => {
+            setTimeout(() => {
+                const iframe = videoPlayerContainer.querySelector("iframe");
+                if (iframe && iframe.contentWindow) {
+                    iframe.contentWindow.postMessage(JSON.stringify({
+                        event: "listening",
+                        id: 1
+                    }), "*");
+                }
+            }, 1000);
+        }, { capture: true });
     })();
 
     // ── Tab Switching ──
@@ -538,7 +576,15 @@
         subtitleList.innerHTML = '<span class="dot-pulse">正在获取字幕</span>';
 
         if (currentVideo.source === "bilibili") {
-            // B站: 直接拉时间轴字幕, 无需翻译
+            // B站: 预加载已有分段, 直接展示
+            if (isSubtitleLoaded && subtitleSegments.length) {
+                renderSubtitleSegments(subtitleSegments, "");
+                notesTranslateBtn.textContent = "📄 查看字幕";
+                notesTranslateBtn.disabled = false;
+                return;
+            }
+            // 回退: 重新请求
+            notesTranslateBtn.textContent = "⏳ 加载中...";
             const params = new URLSearchParams({
                 video_id: currentVideo.id,
                 source: currentVideo.source,
@@ -555,7 +601,15 @@
             return;
         }
 
-        // YouTube: 翻译 + 分段
+        // YouTube: 有预加载 → 直接展示分段; 翻译仍异步
+        if (isSubtitleLoaded && subtitleSegments.length) {
+            renderSubtitleSegments(subtitleSegments, "");
+            notesTranslateBtn.textContent = "⏳ 翻译中...";
+            notesTranslateBtn.disabled = true;
+        } else {
+            subtitleList.innerHTML = '<span class="dot-pulse">正在获取字幕并翻译</span>';
+        }
+
         const params = new URLSearchParams({
             video_id: currentVideo.id,
             source: currentVideo.source,
