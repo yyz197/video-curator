@@ -538,26 +538,17 @@
         subtitleList.innerHTML = '<span class="dot-pulse">正在获取字幕</span>';
 
         if (currentVideo.source === "bilibili") {
-            // B站: 只拉分段字幕, 无需翻译
+            // B站: 直接拉时间轴字幕, 无需翻译
             const params = new URLSearchParams({
+                video_id: currentVideo.id,
                 source: currentVideo.source,
                 embed_id: currentVideo.embed_id || "",
             });
-            const data = await fetchAPI("/api/transcript?" + params.toString());
-            if (data && data.text) {
-                // transcript 返回的是纯文本, 需要重新通过 translate 拿 segments
-                const tData = await fetchAPI("/api/translate?" + new URLSearchParams({
-                    video_id: currentVideo.id,
-                    source: currentVideo.source,
-                    embed_id: currentVideo.embed_id || "",
-                }).toString());
-                if (tData && tData.segments && tData.segments.length) {
-                    renderSubtitleSegments(tData.segments, tData.translation || "");
-                } else {
-                    subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">此视频无可提取的字幕</div>';
-                }
+            const data = await fetchAPI("/api/translate?" + params.toString());
+            if (data && data.segments && data.segments.length) {
+                renderSubtitleSegments(data.segments, "");
             } else {
-                subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">此视频无可提取的字幕</div>';
+                subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">此视频无可提取的字幕（仅部分UP上传字幕）</div>';
             }
             notesTranslateBtn.textContent = "📄 查看字幕";
             notesTranslateBtn.disabled = false;

@@ -1089,7 +1089,7 @@ def api_analyze():
         resp = requests.post(
             f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
             headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 600, "temperature": 0.3},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1200, "temperature": 0.3},
             timeout=45,
         )
         data = resp.json()
