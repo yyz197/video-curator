@@ -724,6 +724,19 @@ def _probe_google_api() -> bool:
         return False
 
 
+def _probe_youtube_web() -> bool:
+    """快速检查 YouTube 网站是否可达（非 API, 走 RSS 用的域名）"""
+    import socket
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(3)
+        sock.connect(("www.youtube.com", 443))
+        sock.close()
+        return True
+    except Exception:
+        return False
+
+
 def fetch_youtube_videos() -> list[dict]:
     """YouTube 视频获取入口"""
     if YOUTUBE_API_KEY:
@@ -735,6 +748,9 @@ def fetch_youtube_videos() -> list[dict]:
                 app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
                 return videos
             app.logger.warning("YouTube API 无结果，回退到 RSS 模式")
+    if not _probe_youtube_web():
+        app.logger.warning("YouTube 网站不可达，跳过 RSS（请检查 VPN/代理）")
+        return []
     return fetch_youtube_videos_rss()
 
 
