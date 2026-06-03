@@ -250,6 +250,7 @@
             <div class="card-thumb">
                 ${video.thumbnail ? `<img src="${escapeHTML(video.thumbnail)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ""}
                 <span class="card-source-tag ${sourceClass}">${sourceLabel}</span>
+                ${video.duration ? `<span class="card-duration-float">${escapeHTML(video.duration)}</span>` : ""}
                 <button class="card-fav-btn ${fav ? 'favorited' : ''}" data-fav-video='${escapeAttr(JSON.stringify({id:video.id,source:video.source,title:video.title,url:video.url,thumbnail:video.thumbnail,author:video.author}))}'>
                     ${fav ? '⭐' : '☆'}
                 </button>
@@ -290,8 +291,14 @@
             return;
         }
         emptyState.style.display = "none";
-        videos.forEach((v) => {
+        videos.forEach((v, i) => {
             videoGrid.insertAdjacentHTML("beforeend", renderVideoCard(v));
+        });
+        // 交错入场动画
+        const newCards = videoGrid.querySelectorAll(".video-card:not(.card-enter)");
+        newCards.forEach((card, i) => {
+            card.style.animationDelay = (i * 40) + "ms";
+            card.classList.add("card-enter");
         });
         bindCardEvents();
         if (window.updateWatchedBadges) window.updateWatchedBadges();
@@ -617,6 +624,15 @@
                 loadVideos(false);
             }
         }, 300);
+    });
+
+    // ── Back to Top ──
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+        backToTop.classList.toggle("visible", window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     // ── Helpers ──
