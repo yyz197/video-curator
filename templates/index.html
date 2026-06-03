@@ -169,8 +169,8 @@
                         :src="'https://player.bilibili.com/player.html?bvid='+currentVideo.embed_id+'&autoplay=0'"
                         allowfullscreen frameborder="0"></iframe>
                 <iframe v-else-if="currentVideo?.source==='youtube' && currentVideo?.embed_id"
-                        :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0&enablejsapi=1&origin='+encodeURIComponent(window.location.origin)"
-                        allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer"></iframe>
+                        :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0'"
+                        allowfullscreen allow="autoplay; encrypted-media" frameborder="0"></iframe>
                 <div v-else style="display:flex;align-items:center;justify-content:center;height:100%;color:#999">暂无嵌入播放地址</div>
                 <!-- 实时字幕叠加 -->
                 <div v-if="currentSubtitleText" style="position:absolute;bottom:50px;left:50%;transform:translateX(-50%);
