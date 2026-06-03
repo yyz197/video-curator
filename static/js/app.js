@@ -239,6 +239,33 @@
     }
 
     // ── Render ──
+    function renderHeroCard(video) {
+        const sourceClass = video.source === "bilibili" ? "bilibili" : "youtube";
+        const sourceLabel = video.source === "bilibili" ? "B站" : "YouTube";
+        const hasSummary = video.summary && video.summary.length > 0;
+        return `
+        <div class="hero-card" data-video-id="${video.id}" data-source="${video.source}" tabindex="0">
+            <div class="hero-thumb">
+                ${video.thumbnail ? `<img src="${escapeHTML(video.thumbnail)}" alt="" loading="eager" onerror="this.style.display='none'">` : ""}
+                <span class="hero-source-badge ${sourceClass}">${sourceLabel}</span>
+                ${video.duration ? `<span class="hero-duration-float">${escapeHTML(video.duration)}</span>` : ""}
+            </div>
+            <div class="hero-body">
+                <h3 class="hero-title">${escapeHTML(video.title)}</h3>
+                <div class="hero-meta">
+                    <span>👤 ${escapeHTML(video.author)}</span>
+                    ${video.published_str ? `<span>📅 ${escapeHTML(video.published_str)}</span>` : ""}
+                    ${video.views ? `<span>👁 ${escapeHTML(video.views)}</span>` : ""}
+                </div>
+                <div class="hero-tags">
+                    <span class="card-category">${escapeHTML(video.category || "未分类")}</span>
+                    ${video.duration_badge ? `<span class="card-duration-badge">${escapeHTML(video.duration_badge)}</span>` : ""}
+                </div>
+                ${hasSummary ? `<div class="hero-summary">${escapeHTML(video.summary)}</div>` : ""}
+            </div>
+        </div>`;
+    }
+
     function renderVideoCard(video) {
         const sourceClass = video.source === "bilibili" ? "source-bilibili" : "source-youtube";
         const sourceLabel = video.source === "bilibili" ? "B站" : "YouTube";
@@ -291,7 +318,20 @@
             return;
         }
         emptyState.style.display = "none";
-        videos.forEach((v, i) => {
+
+        let displayVideos = videos;
+        // Hero card: 只在首页、无搜索、无分类过滤时显示
+        if (!append && state.page === 1 && !state.search && !state.category) {
+            const hero = displayVideos[0];
+            const rest = displayVideos.slice(1);
+            videoGrid.insertAdjacentHTML("beforeend", renderHeroCard(hero));
+            // 分区标题
+            const sortLabel = state.sort === "time" ? "🆕 最新内容" : "✨ 精选推荐";
+            videoGrid.insertAdjacentHTML("beforeend", `<div class="section-header">${sortLabel}</div>`);
+            displayVideos = rest;
+        }
+
+        displayVideos.forEach((v) => {
             videoGrid.insertAdjacentHTML("beforeend", renderVideoCard(v));
         });
         // 交错入场动画
@@ -306,6 +346,18 @@
 
     // ── Card Events ──
     function bindCardEvents() {
+        // Hero card click
+        videoGrid.querySelectorAll(".hero-card").forEach((card) => {
+            if (!card._bound) {
+                card._bound = true;
+                card.addEventListener("click", function (e) {
+                    const vid = this.dataset.videoId;
+                    const video = state.videos.find((v) => v.id === vid);
+                    if (video) openNotesDrawer(video);
+                });
+            }
+        });
+
         videoGrid.querySelectorAll(".video-card").forEach((card) => {
             if (!card._bound) {
                 card._bound = true;
@@ -318,7 +370,7 @@
             }
         });
 
-        videoGrid.querySelectorAll(".card-thumb").forEach((el) => {
+        videoGrid.querySelectorAll(".card-thumb, .hero-thumb").forEach((el) => {
             if (!el._bound2) {
                 el._bound2 = true;
                 el.addEventListener("click", function (e) {
