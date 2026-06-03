@@ -383,8 +383,8 @@ def _fetch_youtube_channel_rss(channel: dict) -> list[dict]:
     try:
         rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel['id']}"
         headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "User-Agent": "Mozilla/5.0 (compatible; VideoCurator/1.0; +https://github.com/yyz197/video-curator)",
+            "Accept": "application/rss+xml, application/xml, text/xml, */*",
         }
         resp = requests.get(rss_url, headers=headers, timeout=YOUTUBE_TIMEOUT)
         if resp.status_code != 200:
