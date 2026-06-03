@@ -558,7 +558,7 @@ def _get_uploads_playlist_id(channel_id: str) -> str:
 
 
 def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
-    """获取单个 YouTube 频道的最新视频 (playlistItems.list, 仅1单位配额)"""
+    """获取单个 YouTube 频道的最新视频 (playlistItems优先, 失败降级search)"""
     ck = cache_key("yt_search", channel["id"])
     if cached := cache_get_with_ttl(ck, 3600):
         return cached.get("videos", [])
@@ -577,6 +577,22 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
             timeout=YOUTUBE_TIMEOUT,
         )
         data = resp.json()
+        if "error" in data or data.get("items") is None:
+            # playlistItems 失败, 降级到 search (仅1单位→100单位, 但能兜底)
+            app.logger.debug(f"YouTube [{channel['name']}]: playlistItems 失败, 降级 search")
+            resp = requests.get(
+                "https://www.googleapis.com/youtube/v3/search",
+                params={
+                    "part": "snippet",
+                    "channelId": channel["id"],
+                    "maxResults": 3,
+                    "order": "date",
+                    "type": "video",
+                    "key": YOUTUBE_API_KEY,
+                },
+                timeout=YOUTUBE_TIMEOUT,
+            )
+            data = resp.json()
         if "error" in data:
             err = data["error"]
             msg = err.get("message", str(err))
@@ -584,7 +600,7 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
             return videos
         for item in data.get("items", []):
             snippet = item.get("snippet", {})
-            vid = snippet.get("resourceId", {}).get("videoId", "")
+            vid = snippet.get("resourceId", {}).get("videoId", "") or item.get("id", {}).get("videoId", "")
             if not vid:
                 continue
             pub_ts = 0
