@@ -520,6 +520,14 @@
     notesEditor.addEventListener("input", () => {
         showEmptyGuide(notesEditor.value.trim().length === 0);
     });
+    // 点击空引导 → 激活编辑器
+    const emptyGuide = document.getElementById("notesEmptyGuide");
+    if (emptyGuide) {
+        emptyGuide.addEventListener("click", () => {
+            showEmptyGuide(false);
+            notesEditor.focus();
+        });
+    }
 
     // ── Transcript / Subtitle ──
     notesTranslateBtn.addEventListener("click", async () => {
