@@ -218,7 +218,7 @@
             <div v-show="activeTab==='subtitle'" class="notes-tab-content" style="flex:1;overflow-y:auto;display:flex;flex-direction:column">
                 <div v-if="subtitleLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在加载字幕</span></div>
                 <div v-else-if="subtitleSegments.length" class="subtitle-container">
-                    <div class="subtitle-translation" v-if="fullTranslation" v-html="fullTranslation.replace(/\n/g,'<br>')"></div>
+                    <div class="subtitle-translation" v-if="fullTranslation" v-text="fullTranslation" style="white-space:pre-wrap"></div>
                     <div class="subtitle-divider" v-if="fullTranslation">━━ 时间轴字幕 ━━</div>
                     <div class="subtitle-list" style="padding:0 4px">
                         <div v-for="(seg, i) in subtitleSegments" :key="i" class="subtitle-row"
@@ -228,7 +228,6 @@
                             <span class="subtitle-time" style="font-size:11px;min-width:42px" v-text="fmtTime(seg.start)"></span>
                             <span style="font-size:14px;line-height:1.6;color:var(--text)" v-text="seg.original"></span>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div v-else style="text-align:center;color:var(--text-muted);padding:20px">点击底部按钮加载字幕</div>
