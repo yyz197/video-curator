@@ -71,6 +71,8 @@
         if (subtitleTimer) { clearInterval(subtitleTimer); subtitleTimer = null; }
         notesTranslateBtn.disabled = false;
         notesTranslateBtn.textContent = "🌐 翻译字幕";
+        // 仅 YouTube 显示翻译按钮
+        notesTranslateBtn.style.display = (video.source === "youtube") ? "" : "none";
         isWatched = isVideoWatched(video.id);
 
         // Header
@@ -129,6 +131,13 @@
     }
 
     window.openNotesDrawer = openNotesDrawer;
+    notesClose.addEventListener("click", closeNotesDrawer);
+    notesOverlay.addEventListener("click", closeNotesDrawer);
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && notesDrawer.classList.contains("open")) {
+            closeNotesDrawer();
+        }
+    });
 
     // ── Video Player ──
     function setupVideoPlayer(video) {
