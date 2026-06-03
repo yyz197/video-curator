@@ -881,24 +881,36 @@ def _get_transcript_cache_path(source: str, embed_id: str) -> Path:
 
 
 def fetch_youtube_transcript(video_id: str) -> str:
-    """YouTube 字幕: 逐语言尝试，缓存结果"""
+    """YouTube 字幕: 逐语言尝试，缓存结果（纯文本）"""
+    result = _fetch_youtube_transcript_raw(video_id)
+    return result["text"] if result else ""
+
+
+def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
+    """YouTube 字幕: 逐语言尝试，返回原始分段（text + segments）"""
     if not video_id:
-        return ""
+        return None
     cache_path = _get_transcript_cache_path("youtube", video_id)
     if cache_path.exists():
-        return cache_path.read_text(encoding="utf-8")[:4000]
+        try:
+            data = json.loads(cache_path.read_text(encoding="utf-8"))
+            return data if isinstance(data, dict) else {"text": str(data), "segments": []}
+        except (json.JSONDecodeError, OSError):
+            pass
 
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
         api = YouTubeTranscriptApi()
         transcript = api.fetch(video_id, languages=["zh-Hans", "zh", "en"])
-        text = " ".join(t.text for t in transcript if t.text)
+        segments = [{"start": round(t.start, 1), "duration": round(t.duration, 1), "original": t.text} for t in transcript if t.text]
+        text = " ".join(t["original"] for t in segments)
         text = " ".join(text.split())
-        cache_path.write_text(text, encoding="utf-8")
-        return text[:4000]
+        data = {"text": text[:4000], "segments": segments[:200]}
+        cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        return data
     except Exception:
         app.logger.debug(f"YouTube 字幕获取失败: {video_id}")
-        return ""
+        return None
 
 
 def fetch_bilibili_transcript(bvid: str) -> str:
@@ -944,7 +956,7 @@ def fetch_bilibili_transcript(bvid: str) -> str:
 
 
 def get_transcript_for_video(video: dict) -> str:
-    """统一入口"""
+    """统一入口 — 纯文本"""
     embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
     source = video.get("source", "")
     if source == "youtube":
@@ -952,6 +964,18 @@ def get_transcript_for_video(video: dict) -> str:
     if source == "bilibili":
         return fetch_bilibili_transcript(embed_id)
     return ""
+
+
+def get_transcript_timed(video: dict) -> dict | None:
+    """统一入口 — 带时间戳分段"""
+    embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
+    source = video.get("source", "")
+    if source == "youtube":
+        return _fetch_youtube_transcript_raw(embed_id)
+    if source == "bilibili":
+        text = fetch_bilibili_transcript(embed_id)
+        return {"text": text, "segments": []} if text else None
+    return None
 
 
 # ──────────────────────────────────────────────
@@ -1241,7 +1265,7 @@ def api_transcript():
 
 @app.route("/api/translate")
 def api_translate():
-    """翻译视频字幕为中文"""
+    """翻译视频字幕为中文，并返回时间轴分段数据"""
     video_id = request.args.get("video_id", "")
     source = request.args.get("source", "")
     embed_id = request.args.get("embed_id", "")
@@ -1251,20 +1275,29 @@ def api_translate():
         return jsonify({"error": "DeepSeek API 未配置"}), 400
 
     video = {"source": source, "embed_id": embed_id or video_id}
-    transcript = get_transcript_for_video(video)
-    if not transcript:
-        return jsonify({"translation": "", "error": "无法获取字幕"})
+
+    # 获取带时间戳的分段字幕
+    timed_data = get_transcript_timed(video)
+    if not timed_data or not timed_data.get("segments"):
+        return jsonify({"translation": "", "segments": [], "error": "无法获取字幕"})
+
+    segments = timed_data.get("segments", [])
+    raw_text = timed_data.get("text", "")
 
     ck = cache_key("translate", source, video_id or embed_id)
     if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
-        return jsonify({"translation": cached.get("translation", ""), "cached": True})
+        return jsonify({
+            "translation": cached.get("translation", ""),
+            "segments": segments,
+            "cached": True,
+        })
 
-    # 分段翻译 (每段 2500 字符)
+    # 分段翻译
     chunk_size = 2500
-    chunks = [transcript[i:i + chunk_size] for i in range(0, len(transcript), chunk_size)]
+    chunks = [raw_text[i:i + chunk_size] for i in range(0, len(raw_text), chunk_size)]
     translations = []
 
-    for idx, chunk in enumerate(chunks[:6]):  # 最多6段(15000字)
+    for idx, chunk in enumerate(chunks[:6]):
         chunk_prompt = f"将以下英文视频字幕翻译为简体中文。要求：自然流畅，保留原意，适合阅读。直接输出译文，不要说明。\n\n{chunk}" if idx == 0 else f"继续翻译（第{idx+1}段/接上文）：\n\n{chunk}"
         try:
             resp = requests.post(
@@ -1283,8 +1316,12 @@ def api_translate():
     full_translation = "\n\n".join(translations)
     if full_translation:
         cache_set(ck, {"translation": full_translation})
-        return jsonify({"translation": full_translation, "cached": False})
-    return jsonify({"translation": "", "error": "翻译生成失败"}), 500
+        return jsonify({
+            "translation": full_translation,
+            "segments": segments[:80],  # 前80条, 字幕最有用
+            "cached": False,
+        })
+    return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500
 
 
 # ──────────────────────────────────────────────

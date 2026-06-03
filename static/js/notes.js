@@ -9,6 +9,9 @@
     let isSaving = false;
     let isWatched = false;
     let currentSubtitle = "";
+    let subtitleSegments = [];
+    let subtitleTimer = null;
+    let isSubtitleLoaded = false;
 
     const $ = (sel) => document.querySelector(sel);
 
@@ -19,7 +22,6 @@
     const notesAuthor = $("#notesAuthor");
     const notesSource = $("#notesSource");
     const notesSummaryText = $("#notesSummaryText");
-    const notesSummaryStatus = $("#notesSummaryStatus");
     const notesEditor = $("#notesEditor");
     const notesSaveBtn = $("#notesSaveBtn");
     const notesExportBtn = $("#notesExportBtn");
@@ -33,10 +35,7 @@
     const videoPlayerContainer = $("#videoPlayerContainer");
     const followBtn = $("#followBtn");
     const notesTranslateBtn = $("#notesTranslateBtn");
-    const notesTranslationText = $("#notesTranslationText");
-    const notesTranslationSection = $("#notesTranslationSection");
-    const notesSummaryHeader = $("#notesSummaryHeader");
-    const notesSummaryBody = $("#notesSummaryBody");
+    const subtitleList = $("#subtitleList");
 
     const tabBtns = document.querySelectorAll(".notes-tab");
     const tabContents = document.querySelectorAll(".notes-tab-content");
@@ -65,10 +64,10 @@
         notesEditor.value = "";
         showEmptyGuide(true);
         notesSummaryText.innerHTML = "";
-        notesSummaryStatus.textContent = "正在深度分析...";
-        notesSummaryStatus.style.display = "";
-        notesTranslationSection.style.display = "none";
-        notesTranslationText.innerHTML = "";
+        subtitleList.innerHTML = '<span class="dot-pulse">正在加载字幕</span>';
+        subtitleSegments = [];
+        isSubtitleLoaded = false;
+        if (subtitleTimer) { clearInterval(subtitleTimer); subtitleTimer = null; }
         notesTranslateBtn.disabled = false;
         notesTranslateBtn.textContent = "🌐 翻译字幕";
         isWatched = isVideoWatched(video.id);
@@ -119,6 +118,7 @@
         notesOverlay.classList.remove("open");
         document.body.style.overflow = "";
         videoPlayerContainer.innerHTML = "";
+        if (subtitleTimer) { clearInterval(subtitleTimer); subtitleTimer = null; }
         currentVideo = null;
     }
 
@@ -136,7 +136,7 @@
         if (video.embed_src === "bilibili" || video.source === "bilibili") {
             embedHtml = '<iframe src="https://player.bilibili.com/player.html?bvid=' + embedId + '&autoplay=0&poster=1" allowfullscreen scrolling="no" frameborder="0"></iframe>';
         } else {
-            embedHtml = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0" allowfullscreen allow="autoplay; encrypted-media" frameborder="0"></iframe>';
+            embedHtml = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="youtubePlayer"></iframe>';
         }
         videoPlayerContainer.innerHTML = embedHtml;
     }
@@ -370,14 +370,10 @@
             const data = await fetchAPI("/api/analyze?" + params.toString());
             if (data && data.analysis) {
                 notesSummaryText.innerHTML = renderMarkdown(data.analysis);
-                notesSummaryStatus.style.display = "none";
             } else {
-                // Fallback to short summary
-                notesSummaryStatus.textContent = "深度分析不可用，尝试快速摘要...";
                 fetchQuickSummary(video);
             }
         } catch (e) {
-            notesSummaryStatus.textContent = "深度分析不可用，尝试快速摘要...";
             fetchQuickSummary(video);
         }
     }
@@ -391,139 +387,96 @@
             const data = await fetchAPI("/api/summarize?" + params.toString());
             if (data && data.summary) {
                 notesSummaryText.textContent = data.summary;
-                notesSummaryStatus.style.display = "none";
             } else {
                 notesSummaryText.textContent = "摘要暂不可用";
-                notesSummaryStatus.style.display = "none";
             }
         } catch (e) {
             notesSummaryText.textContent = "摘要生成失败";
-            notesSummaryStatus.style.display = "none";
         }
     }
 
-    // ── Chat ──
-    chatSendBtn.addEventListener("click", sendChatMessage);
-    chatInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" && !e.shiftKey) {
-            e.preventDefault();
-            sendChatMessage();
+    // ── Subtitle Time Sync ──
+    function renderSubtitleSegments(segments, translation) {
+        subtitleSegments = segments;
+        isSubtitleLoaded = true;
+        if (!segments.length) {
+            subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">无可同步的字幕数据</div>';
+            return;
         }
-    });
-
-    async function sendChatMessage() {
-        if (!currentVideo) return;
-        const message = chatInput.value.trim();
-        if (!message) return;
-
-        chatInput.value = "";
-        chatInput.disabled = true;
-        chatSendBtn.disabled = true;
-
-        addChatBubble("user", message);
-        chatHistory.push({ role: "user", content: message, time: new Date().toISOString() });
-
-        const placeholder = addChatBubble("assistant", "思考中...");
-        const placeholderIdx = chatHistory.length;
-        chatHistory.push({ role: "assistant", content: "", time: "" });
-
-        try {
-            const resp = await fetch("/api/chat", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    message: message,
-                    title: currentVideo.title,
-                    description: currentVideo.description || "",
-                    author: currentVideo.author || "",
-                    subtitle_text: currentSubtitle || "",
-                    chat_history: chatHistory.slice(0, -1),
-                }),
-            });
-            const data = await resp.json();
-            if (data && data.reply) {
-                placeholder.textContent = data.reply;
-                chatHistory[placeholderIdx] = { role: "assistant", content: data.reply, time: new Date().toISOString() };
-            } else {
-                placeholder.textContent = "抱歉，暂时无法回复。";
-                chatHistory[placeholderIdx] = { role: "assistant", content: "回复失败", time: new Date().toISOString() };
-            }
-        } catch (e) {
-            placeholder.textContent = "网络错误，请重试。";
+        let html = '';
+        if (translation) {
+            html += '<div class="subtitle-translation">' + translation.replace(/\n/g, '<br>') + '</div>';
+            html += '<div class="subtitle-divider">━━ 时间轴字幕 ━━</div>';
         }
-
-        chatInput.disabled = false;
-        chatSendBtn.disabled = false;
-        chatInput.focus();
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    function addChatBubble(role, content) {
-        if (chatMessages.querySelector(".chat-empty")) {
-            chatMessages.innerHTML = "";
-        }
-        const el = document.createElement("div");
-        el.className = "chat-message " + role;
-        el.textContent = content;
-        chatMessages.appendChild(el);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-        return el;
-    }
-
-    function renderChatHistory() {
-        chatMessages.innerHTML = "";
-        chatHistory.forEach(h => addChatBubble(h.role, h.content));
-    }
-
-    // ── Tab Switching ──
-    tabBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            switchTab(btn.dataset.notesTab);
+        segments.forEach((seg, i) => {
+            const time = formatTime(seg.start);
+            html += `<div class="subtitle-row" data-index="${i}" data-start="${seg.start}" data-end="${seg.start + (seg.duration || 3)}">
+                <span class="subtitle-time">${time}</span>
+                <span class="subtitle-text">${escapeHTML(seg.original || '')}</span>
+            </div>`;
         });
-    });
-
-    function switchTab(tab) {
-        tabBtns.forEach(b => b.classList.toggle("active", b.dataset.notesTab === tab));
-        tabContents.forEach(c => c.classList.toggle("active", c.id === "notesTab" + tab.charAt(0).toUpperCase() + tab.slice(1)));
+        subtitleList.innerHTML = html;
+        startSubtitleSync();
     }
 
-    // ── Close ──
-    notesClose.addEventListener("click", closeNotesDrawer);
-    notesOverlay.addEventListener("click", closeNotesDrawer);
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && notesDrawer.classList.contains("open")) {
-            closeNotesDrawer();
-        }
-    });
+    function escapeHTML(str) {
+        if (!str) return "";
+        return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+    function formatTime(seconds) {
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return m + ':' + String(s).padStart(2, '0');
+    }
 
-    // ── Helpers ──
-    async function fetchAPI(path) {
+    function startSubtitleSync() {
+        if (subtitleTimer) clearInterval(subtitleTimer);
+        subtitleTimer = setInterval(() => {
+            const time = getPlayerCurrentTime();
+            if (time == null) return;
+            const rows = subtitleList.querySelectorAll(".subtitle-row");
+            let activeIdx = -1;
+            for (const row of rows) {
+                const start = parseFloat(row.dataset.start);
+                const end = parseFloat(row.dataset.end);
+                if (time >= start && time <= end) {
+                    row.classList.add("active");
+                    row.scrollIntoView({ behavior: "smooth", block: "center" });
+                    activeIdx = parseInt(row.dataset.index);
+                } else {
+                    row.classList.remove("active");
+                }
+            }
+        }, 500);
+    }
+
+    function getPlayerCurrentTime() {
+        const iframe = videoPlayerContainer.querySelector("iframe");
+        if (!iframe || !iframe.contentWindow) return null;
         try {
-            const resp = await fetch(path);
-            if (!resp.ok) throw new Error("HTTP " + resp.status);
-            return await resp.json();
-        } catch (err) {
-            console.error("API error:", err);
-            return null;
-        }
+            iframe.contentWindow.postMessage(JSON.stringify({
+                event: "command",
+                func: "getCurrentTime",
+                args: []
+            }), "*");
+        } catch (e) {}
+        return window._ytCurrentTime ?? null;
     }
 
-    function showToast(msg, type) {
-        const container = document.getElementById("toastContainer");
-        if (!container) return;
-        const toast = document.createElement("div");
-        toast.className = "toast " + (type || "");
-        toast.textContent = msg;
-        container.appendChild(toast);
-        setTimeout(() => toast.remove(), 3200);
-    }
+    // Listen for YouTube player command responses
+    (function() {
+        window.addEventListener("message", (e) => {
+            try {
+                const d = JSON.parse(e.data);
+                if (d.event === "commandResult" && d.func === "getCurrentTime" && typeof d.result === "number") {
+                    window._ytCurrentTime = d.result;
+                }
+            } catch {}
+        });
+    })();
 
-    // ── Collapsible Analysis ──
-    notesSummaryHeader.addEventListener("click", () => {
-        const section = document.getElementById("notesSummarySection");
-        section.classList.toggle("collapsed");
-    });
-    document.getElementById("notesSummaryBody").style.maxHeight = "600px";
+    // ── Collapsible / Old Analysis Cleanup ──
+    // (已移至右侧Tab, 不再需要折叠逻辑)
 
     // ── Empty Guide ──
     function showEmptyGuide(show) {
@@ -541,8 +494,8 @@
         if (!currentVideo) return;
         notesTranslateBtn.disabled = true;
         notesTranslateBtn.textContent = "⏳ 翻译中...";
-        notesTranslationSection.style.display = "block";
-        notesTranslationText.textContent = "正在获取字幕并翻译...";
+        switchTab("subtitle");
+        subtitleList.innerHTML = '<span class="dot-pulse">正在获取字幕并翻译</span>';
 
         const params = new URLSearchParams({
             video_id: currentVideo.id,
@@ -550,12 +503,11 @@
             embed_id: currentVideo.embed_id || currentVideo.youtube_id || "",
         });
         const data = await fetchAPI("/api/translate?" + params.toString());
-        if (data && data.translation) {
-            notesTranslationText.textContent = data.translation;
-            notesTranslationText.style.whiteSpace = "pre-wrap";
+        if (data && data.translation && data.segments) {
+            renderSubtitleSegments(data.segments, data.translation);
             notesTranslateBtn.textContent = data.cached ? "🌐 已翻译(缓存)" : "🌐 翻译完成";
         } else {
-            notesTranslationText.textContent = data?.error || "无可翻译字幕（可能无英文字幕，或字幕获取失败）";
+            subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">' + (data?.error || "无可翻译字幕（可能无英文字幕）") + '</div>';
             notesTranslateBtn.textContent = "⚠️ 重试";
             notesTranslateBtn.disabled = false;
         }
