@@ -165,15 +165,19 @@
     <div class="notes-drawer-body">
         <div class="notes-player-column">
             <div class="video-player-container" style="position:relative">
-                <iframe v-if="currentVideo?.source==='bilibili' && currentVideo?.embed_id"
+                <!-- B站播放器 -->
+                <iframe v-if="currentVideo && currentVideo.source==='bilibili' && currentVideo.embed_id"
                         :src="'https://player.bilibili.com/player.html?bvid='+currentVideo.embed_id+'&autoplay=0'"
                         allowfullscreen frameborder="0"
-                        style="display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>
-                <iframe v-else-if="currentVideo?.source==='youtube' && currentVideo?.embed_id"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>
+                <!-- YouTube播放器 -->
+                <iframe v-if="currentVideo && currentVideo.source==='youtube' && currentVideo.embed_id"
                         :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0'"
-                        allowfullscreen allow="autoplay; encrypted-media" frameborder="0"
-                        id="ytPlayer" style="display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>
-                <div v-else style="display:flex;align-items:center;justify-content:center;height:100%;color:#999">暂无嵌入播放地址</div>
+                        allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>
+                <!-- 无播放地址 -->
+                <div v-if="currentVideo && !currentVideo.embed_id"
+                     style="display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-size:14px">暂无嵌入播放地址</div>
                 <!-- 实时字幕叠加 -->
                 <div v-if="currentSubtitleText" style="position:absolute;bottom:50px;left:50%;transform:translateX(-50%);
                     background:rgba(0,0,0,0.78);color:#fff;padding:8px 20px;border-radius:8px;

@@ -1212,7 +1212,6 @@ body::before {
 /* ── Left: Player Column (scrollable) ── */
 .notes-player-column {
     width: 62%; flex-shrink: 0; overflow: hidden;
-    display: flex; align-items: center;
     background: #000; border-right: 1px solid var(--border);
 }
 .video-player-container {
