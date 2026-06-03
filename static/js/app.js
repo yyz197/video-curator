@@ -469,11 +469,18 @@
                 </div>
                 <div class="analysis-content markdown-body" id="analysisContent" style="display:none"></div>
             </div>
+            <div class="modal-translation" id="modalTranslation" style="display:none">
+                <span class="analysis-label">🌐 中文字幕翻译</span>
+                <div class="translation-content" id="translationContent">
+                    <span class="dot-pulse">正在翻译</span>
+                </div>
+            </div>
             <div class="modal-actions">
                 <a href="${escapeHTML(video.url)}" target="_blank" class="modal-link">🔗 前往观看</a>
                 <button class="modal-fav-btn" id="modalFavBtn" data-fav-video='${escapeAttr(JSON.stringify({id:video.id,source:video.source,title:video.title,url:video.url,thumbnail:video.thumbnail,author:video.author}))}'>
                     ${isFavorited(video.id) ? '⭐ 已收藏' : '☆ 收藏'}
                 </button>
+                <button class="modal-translate-btn" id="modalTranslateBtn">🌐 翻译字幕</button>
             </div>
         `;
         modalOverlay.classList.add("open");
@@ -490,6 +497,15 @@
                 const v = JSON.parse(this.dataset.favVideo);
                 toggleFavorite(v);
                 this.textContent = isFavorited(v.id) ? '⭐ 已收藏' : '☆ 收藏';
+            });
+        }
+        // 翻译按钮
+        const translateBtn = document.getElementById("modalTranslateBtn");
+        if (translateBtn) {
+            translateBtn.addEventListener("click", () => {
+                translateBtn.disabled = true;
+                translateBtn.textContent = "⏳ 翻译中...";
+                fetchTranslation(video);
             });
         }
     }
@@ -535,6 +551,37 @@
         html = html.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
         html = html.replace(/⭐/g, '★');
         return html;
+    }
+
+    async function fetchTranslation(video) {
+        const container = document.getElementById("modalTranslation");
+        const content = document.getElementById("translationContent");
+        const btn = document.getElementById("modalTranslateBtn");
+        container.style.display = "block";
+
+        const params = new URLSearchParams({
+            video_id: video.id,
+            source: video.source,
+            embed_id: video.embed_id || video.youtube_id || "",
+        });
+        const data = await fetchAPI(`/api/translate?${params.toString()}`);
+        if (data && data.translation) {
+            content.textContent = data.translation;
+            content.style.whiteSpace = "pre-wrap";
+            content.style.fontSize = "13px";
+            content.style.lineHeight = "1.8";
+            content.style.color = "var(--text)";
+            if (data.cached) {
+                btn.textContent = "🌐 已翻译(缓存)";
+            } else {
+                btn.textContent = "🌐 翻译完成";
+            }
+            btn.disabled = true;
+        } else {
+            content.textContent = data?.error || "翻译失败，可能无可翻译字幕";
+            btn.textContent = "⚠️ 重试";
+            btn.disabled = false;
+        }
     }
 
     // ── Search ──

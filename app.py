@@ -1163,6 +1163,54 @@ def api_transcript():
     return jsonify({"text": text})
 
 
+@app.route("/api/translate")
+def api_translate():
+    """翻译视频字幕为中文"""
+    video_id = request.args.get("video_id", "")
+    source = request.args.get("source", "")
+    embed_id = request.args.get("embed_id", "")
+    if not video_id and not embed_id:
+        return jsonify({"error": "缺少视频信息"}), 400
+    if not DEEPSEEK_API_KEY:
+        return jsonify({"error": "DeepSeek API 未配置"}), 400
+
+    video = {"source": source, "embed_id": embed_id or video_id}
+    transcript = get_transcript_for_video(video)
+    if not transcript:
+        return jsonify({"translation": "", "error": "无法获取字幕"})
+
+    ck = cache_key("translate", source, video_id or embed_id)
+    if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
+        return jsonify({"translation": cached.get("translation", ""), "cached": True})
+
+    # 分段翻译 (每段 2500 字符)
+    chunk_size = 2500
+    chunks = [transcript[i:i + chunk_size] for i in range(0, len(transcript), chunk_size)]
+    translations = []
+
+    for idx, chunk in enumerate(chunks[:6]):  # 最多6段(15000字)
+        chunk_prompt = f"将以下英文视频字幕翻译为简体中文。要求：自然流畅，保留原意，适合阅读。直接输出译文，不要说明。\n\n{chunk}" if idx == 0 else f"继续翻译（第{idx+1}段/接上文）：\n\n{chunk}"
+        try:
+            resp = requests.post(
+                f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+                headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": chunk_prompt}], "max_tokens": 2000, "temperature": 0.3},
+                timeout=45,
+            )
+            data = resp.json()
+            translation = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+            if translation:
+                translations.append(translation)
+        except Exception as e:
+            app.logger.error(f"翻译失败 (段 {idx+1}): {e}")
+
+    full_translation = "\n\n".join(translations)
+    if full_translation:
+        cache_set(ck, {"translation": full_translation})
+        return jsonify({"translation": full_translation, "cached": False})
+    return jsonify({"translation": "", "error": "翻译生成失败"}), 500
+
+
 # ──────────────────────────────────────────────
 #  视频笔记 API
 # ──────────────────────────────────────────────
