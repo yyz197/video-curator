@@ -384,6 +384,7 @@
             const data = await fetchAPI("/api/analyze?" + params.toString());
             if (data && data.analysis) {
                 notesSummaryText.innerHTML = renderMarkdown(data.analysis);
+                switchTab("analysis");  // 自动跳转到分析Tab展示结果
             } else {
                 fetchQuickSummary(video);
             }
