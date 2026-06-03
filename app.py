@@ -386,7 +386,8 @@ def _fetch_youtube_channel_rss(channel: dict) -> list[dict]:
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
         }
-        resp = requests.get(rss_url, headers=headers, timeout=YOUTUBE_TIMEOUT)
+        cookies = {"CONSENT": "YES+cb"}  # 跳过 YouTube GDPR 拦截页
+        resp = requests.get(rss_url, headers=headers, cookies=cookies, timeout=YOUTUBE_TIMEOUT)
         if resp.status_code != 200:
             app.logger.warning(f"YouTube RSS HTTP {resp.status_code} ({channel['name']})")
             return videos
@@ -730,6 +731,7 @@ def _probe_youtube_access() -> bool:
         resp = requests.get(
             "https://www.youtube.com/",
             headers={"User-Agent": "Mozilla/5.0"},
+            cookies={"CONSENT": "YES+cb"},
             timeout=5,
         )
         return resp.status_code < 500
