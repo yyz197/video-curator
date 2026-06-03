@@ -914,12 +914,24 @@ def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
 
 
 def fetch_bilibili_transcript(bvid: str) -> str:
-    """B站字幕: 从 /x/web-interface/view 获取"""
+    """B站字幕: 纯文本"""
+    data = _fetch_bilibili_transcript_raw(bvid)
+    return data["text"] if data else ""
+
+
+def _fetch_bilibili_transcript_raw(bvid: str) -> dict | None:
+    """B站字幕: 返回带时间戳的分段数据"""
     if not bvid:
-        return ""
+        return None
     cache_path = _get_transcript_cache_path("bilibili", bvid)
     if cache_path.exists():
-        return cache_path.read_text(encoding="utf-8")[:4000]
+        try:
+            data = json.loads(cache_path.read_text(encoding="utf-8"))
+            if isinstance(data, dict):
+                return data
+            return {"text": str(data), "segments": []}
+        except (json.JSONDecodeError, OSError):
+            pass
 
     try:
         headers = {
@@ -933,26 +945,33 @@ def fetch_bilibili_transcript(bvid: str) -> str:
         data = resp.json()
         subtitles = data.get("data", {}).get("subtitle", {}).get("list", [])
         if not subtitles:
-            return ""
+            return None
         sub_url = subtitles[0].get("subtitle_url", "")
         if not sub_url:
-            return ""
+            return None
         if sub_url.startswith("//"):
             sub_url = "https:" + sub_url
         sub_resp = requests.get(sub_url, headers=headers, timeout=10)
         sub_data = sub_resp.json()
+        segments = []
         lines = []
         for item in sub_data.get("body", []):
             content = item.get("content", "")
             if content:
+                segments.append({
+                    "start": round(float(item.get("from", 0)), 1),
+                    "duration": round(float(item.get("to", 0)) - float(item.get("from", 0)), 1),
+                    "original": content,
+                })
                 lines.append(content)
         text = " ".join(lines)
         text = " ".join(text.split())
-        cache_path.write_text(text, encoding="utf-8")
-        return text[:4000]
+        result = {"text": text[:4000], "segments": segments[:200]}
+        cache_path.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
+        return result
     except Exception:
         app.logger.debug(f"B站字幕获取失败: {bvid}")
-        return ""
+        return None
 
 
 def get_transcript_for_video(video: dict) -> str:
@@ -973,8 +992,7 @@ def get_transcript_timed(video: dict) -> dict | None:
     if source == "youtube":
         return _fetch_youtube_transcript_raw(embed_id)
     if source == "bilibili":
-        text = fetch_bilibili_transcript(embed_id)
-        return {"text": text, "segments": []} if text else None
+        return _fetch_bilibili_transcript_raw(embed_id)
     return None
 
 
@@ -1283,6 +1301,14 @@ def api_translate():
 
     segments = timed_data.get("segments", [])
     raw_text = timed_data.get("text", "")
+
+    # B站字幕通常是中文, 直接返回分段, 无需调用DeepSeek翻译
+    if source == "bilibili":
+        return jsonify({
+            "translation": raw_text[:2000],
+            "segments": segments[:80],
+            "cached": True,
+        })
 
     ck = cache_key("translate", source, video_id or embed_id)
     if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):

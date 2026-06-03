@@ -70,9 +70,14 @@
         isSubtitleLoaded = false;
         if (subtitleTimer) { clearInterval(subtitleTimer); subtitleTimer = null; }
         notesTranslateBtn.disabled = false;
-        notesTranslateBtn.textContent = "🌐 翻译字幕";
-        // 仅 YouTube 显示翻译按钮
-        notesTranslateBtn.style.display = (video.source === "youtube") ? "" : "none";
+        // 按钮文案随来源变化
+        if (video.source === "bilibili") {
+            notesTranslateBtn.textContent = "📄 查看字幕";
+            notesTranslateBtn.style.display = "";
+        } else {
+            notesTranslateBtn.textContent = "🌐 翻译字幕";
+            notesTranslateBtn.style.display = (video.source === "youtube") ? "" : "none";
+        }
         isWatched = isVideoWatched(video.id);
 
         // Header
@@ -516,14 +521,42 @@
         showEmptyGuide(notesEditor.value.trim().length === 0);
     });
 
-    // ── Translate Subtitle ──
+    // ── Transcript / Subtitle ──
     notesTranslateBtn.addEventListener("click", async () => {
         if (!currentVideo) return;
         notesTranslateBtn.disabled = true;
-        notesTranslateBtn.textContent = "⏳ 翻译中...";
+        notesTranslateBtn.textContent = "⏳ 加载中...";
         switchTab("subtitle");
-        subtitleList.innerHTML = '<span class="dot-pulse">正在获取字幕并翻译</span>';
+        subtitleList.innerHTML = '<span class="dot-pulse">正在获取字幕</span>';
 
+        if (currentVideo.source === "bilibili") {
+            // B站: 只拉分段字幕, 无需翻译
+            const params = new URLSearchParams({
+                source: currentVideo.source,
+                embed_id: currentVideo.embed_id || "",
+            });
+            const data = await fetchAPI("/api/transcript?" + params.toString());
+            if (data && data.text) {
+                // transcript 返回的是纯文本, 需要重新通过 translate 拿 segments
+                const tData = await fetchAPI("/api/translate?" + new URLSearchParams({
+                    video_id: currentVideo.id,
+                    source: currentVideo.source,
+                    embed_id: currentVideo.embed_id || "",
+                }).toString());
+                if (tData && tData.segments && tData.segments.length) {
+                    renderSubtitleSegments(tData.segments, tData.translation || "");
+                } else {
+                    subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">此视频无可提取的字幕</div>';
+                }
+            } else {
+                subtitleList.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">此视频无可提取的字幕</div>';
+            }
+            notesTranslateBtn.textContent = "📄 查看字幕";
+            notesTranslateBtn.disabled = false;
+            return;
+        }
+
+        // YouTube: 翻译 + 分段
         const params = new URLSearchParams({
             video_id: currentVideo.id,
             source: currentVideo.source,
