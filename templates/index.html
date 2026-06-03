@@ -291,12 +291,11 @@
 
 </div><!-- #app -->
 
-<script src="https://cdn.bootcdn.net/ajax/libs/vue/3.4.21/vue.global.prod.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/3.4.21/vue.global.js"></script>
 <script>
 const { createApp, ref, reactive, computed, watch, onMounted, onUnmounted, nextTick } = Vue;
 
-createApp({
-  delimiters: ['[[', ']]'],
+const app = createApp({
   setup() {
     // ── Core State ──
     const videos = ref([]);
@@ -653,7 +652,9 @@ createApp({
         fmtTime, toast,
     };
   },
-}).mount('#app');
+});
+app.config.compilerOptions.delimiters = ['[[', ']]'];
+app.mount('#app');
 </script>
 </body>
 </html>
