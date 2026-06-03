@@ -284,19 +284,27 @@ def _guess_category(tid: int) -> str:
 
 
 def _fetch_bilibili_ranking(rid: int, rank_type: str) -> list[dict]:
-    """获取单个 B站分区的排行榜"""
-    try:
-        resp = requests.get(
-            "https://api.bilibili.com/x/web-interface/ranking/v2",
-            params={"rid": rid, "type": rank_type},
-            headers=_bilibili_headers(),
-            timeout=15,
-        )
-        data = resp.json()
-        if data.get("code") == 0:
-            return data.get("data", {}).get("list", [])
-    except Exception as e:
-        app.logger.error(f"B站分区 {rid} {rank_type}榜失败: {e}")
+    """获取单个 B站分区的排行榜，SSL 错误自动重试一次"""
+    for attempt in range(2):
+        try:
+            resp = requests.get(
+                "https://api.bilibili.com/x/web-interface/ranking/v2",
+                params={"rid": rid, "type": rank_type},
+                headers=_bilibili_headers(),
+                timeout=15,
+            )
+            data = resp.json()
+            if data.get("code") == 0:
+                return data.get("data", {}).get("list", [])
+            return []
+        except (requests.exceptions.SSLError, requests.exceptions.ConnectionError) as e:
+            if attempt == 0:
+                time.sleep(1 + random.random() * 2)  # 1-3s jitter
+                continue
+            app.logger.warning(f"B站分区 {rid} {rank_type}榜 SSL 重试后仍失败: {e}")
+        except Exception as e:
+            app.logger.error(f"B站分区 {rid} {rank_type}榜失败: {e}")
+            break
     return []
 
 
