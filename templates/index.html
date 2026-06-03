@@ -8,190 +8,620 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <div class="logo">
-                <span class="logo-icon">🎬</span>
-                <h1>视频精选</h1>
-                <span class="logo-sub">Video Curator v2</span>
+<div id="app">
+
+<!-- ====== Header ====== -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <span class="logo-icon">🎬</span>
+            <h1>视频精选</h1>
+            <span class="logo-sub">Video Curator</span>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-input" v-model="searchQuery" @input="onSearchInput"
+                   placeholder="搜索视频标题、作者、描述..." @keydown.escape="clearSearch">
+            <button class="search-clear" v-show="searchQuery" @click="clearSearch">&times;</button>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn" @click="toggleDarkMode" title="暗色模式" v-text="darkMode ? '☀️' : '🌙'"></button>
+            <button class="icon-btn" @click="favoritesOpen = !favoritesOpen" title="收藏列表">⭐</button>
+        </div>
+        <nav class="nav-tabs">
+            <button class="tab" :class="{active:source==='all'}" @click="switchSource('all')">全部</button>
+            <button class="tab" :class="{active:source==='bilibili'}" @click="switchSource('bilibili')">B站</button>
+            <button class="tab" :class="{active:source==='youtube'}" @click="switchSource('youtube')">YouTube</button>
+        </nav>
+    </div>
+</header>
+
+<!-- ====== Filter Bar ====== -->
+<div class="filter-bar">
+    <div class="filter-inner">
+        <div class="filter-label">分类：</div>
+        <div class="filter-tags">
+            <button class="filter-tag" :class="{active:category===''}" @click="setCategory('')">全部</button>
+            <button v-for="cat in categories" :key="cat" class="filter-tag"
+                    :class="{active:category===cat}" @click="setCategory(cat)" v-text="cat"></button>
+        </div>
+        <div class="filter-actions">
+            <select class="sort-select" v-model="sort" @change="fetchVideos(true)">
+                <option value="score">综合排序</option>
+                <option value="time">最新发布</option>
+                <option value="views">播放最多</option>
+                <option value="likes">点赞最多</option>
+            </select>
+            <label class="toggle-label" v-if="source!=='youtube'">
+                <input type="checkbox" v-model="essence" @change="fetchVideos(true)"><span>✨ 精华</span>
+            </label>
+            <button class="btn-refresh" @click="prefPanelOpen=true">⚙️ 偏好</button>
+            <button class="btn-refresh" @click="fetchVideos(true)">🔄 刷新</button>
+        </div>
+    </div>
+</div>
+
+<!-- ====== Status Bar ====== -->
+<div class="status-bar">
+    <span class="status-text" v-text="statusMsg"></span>
+</div>
+
+<!-- ====== Video Grid ====== -->
+<main class="video-grid" id="videoGrid">
+    <!-- Skeleton -->
+    <template v-if="isLoading && videos.length===0">
+        <div v-for="n in 8" :key="'s'+n" class="skeleton-card">
+            <div class="skeleton-thumb"></div>
+            <div class="skeleton-body">
+                <div class="skeleton-line wide"></div>
+                <div class="skeleton-line medium"></div>
+                <div class="skeleton-line short"></div>
             </div>
-            <div class="search-box" id="searchBox">
-                <input type="text" class="search-input" id="searchInput" placeholder="搜索视频标题、作者、描述...">
-                <button class="search-clear" id="searchClear" style="display:none">&times;</button>
+        </div>
+    </template>
+
+    <!-- Hero Card -->
+    <div v-if="!isLoading && videos.length && !search && !category && page===1" class="hero-card" @click="openDrawer(videos[0])">
+        <div class="hero-thumb">
+            <img v-if="videos[0].thumbnail" :src="videos[0].thumbnail" loading="eager" alt=""
+                 @error="e => e.target.style.display='none'">
+            <span class="hero-source-badge" :class="videos[0].source==='bilibili'?'bilibili':'youtube'"
+                  v-text="videos[0].source==='bilibili'?'B站':'YouTube'"></span>
+            <span class="hero-duration-float" v-if="videos[0].duration" v-text="videos[0].duration"></span>
+        </div>
+        <div class="hero-body">
+            <h3 class="hero-title" v-text="videos[0].title"></h3>
+            <div class="hero-meta">
+                <span>👤 [[ videos[0].author ]]</span>
+                <span v-if="videos[0].published_str">📅 [[ videos[0].published_str ]]</span>
+                <span v-if="videos[0].views">👁 [[ videos[0].views ]]</span>
             </div>
-            <div class="header-actions">
-                <button class="icon-btn" id="darkModeBtn" title="切换暗色模式">🌙</button>
-                <button class="icon-btn" id="favoritesBtn" title="收藏列表">⭐</button>
+            <div class="hero-tags">
+                <span class="card-category" v-text="videos[0].category||'未分类'"></span>
+                <span class="card-duration-badge" v-if="videos[0].duration_badge" v-text="videos[0].duration_badge"></span>
             </div>
-            <nav class="nav-tabs" id="sourceTabs">
-                <button class="tab active" data-source="all">全部</button>
-                <button class="tab" data-source="bilibili">B站</button>
-                <button class="tab" data-source="youtube">YouTube</button>
-            </nav>
+            <div class="hero-summary" v-if="videos[0].summary" v-text="videos[0].summary"></div>
         </div>
-    </header>
+    </div>
 
-    <div class="filter-bar">
-        <div class="filter-inner">
-            <div class="filter-label">分类：</div>
-            <div class="filter-tags" id="categoryTags">
-                <button class="filter-tag active" data-category="">全部</button>
+    <!-- Section Header -->
+    <div v-if="!isLoading && videos.length" class="section-header" v-text="sort==='time'?'🆕 最新内容':'✨ 精选推荐'"></div>
+
+    <!-- Video Cards -->
+    <div v-for="(v, i) in displayVideos" :key="v.id" class="video-card card-enter"
+         :style="'animation-delay:'+i*40+'ms'" @click="openDrawer(v)" :data-video-id="v.id">
+        <div class="card-thumb">
+            <img v-if="v.thumbnail" :src="v.thumbnail" loading="lazy" alt=""
+                 @error="e => e.target.style.display='none'">
+            <span class="card-source-tag" :class="v.source==='bilibili'?'source-bilibili':'source-youtube'"
+                  v-text="v.source==='bilibili'?'B站':'YouTube'"></span>
+            <button class="card-fav-btn" :class="{favorited:isFaved(v.id)}" @click.stop="toggleFav(v)" v-text="isFaved(v.id)?'⭐':'☆'"></button>
+            <span class="card-duration-float" v-if="v.duration" v-text="v.duration"></span>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title" v-text="v.title"></h3>
+            <div class="card-meta">
+                <span>👤 [[ v.author ]]</span>
+                <span v-if="v.duration">⏱ [[ v.duration ]]</span>
+                <span v-if="v.views">👁 [[ v.views ]]</span>
             </div>
-            <div class="filter-actions">
-                <select class="sort-select" id="sortSelect">
-                    <option value="score">📊 综合排序</option>
-                    <option value="time">🕐 最新发布</option>
-                    <option value="views">👁 播放最多</option>
-                    <option value="likes">👍 点赞最多</option>
-                </select>
-                <label class="toggle-label">
-                    <input type="checkbox" id="essenceToggle">
-                    <span>✨ 精华</span>
-                </label>
-                <label class="toggle-label">
-                    <input type="checkbox" id="summaryToggle">
-                    <span>AI 摘要</span>
-                </label>
-                <button class="btn-refresh" id="prefBtn" title="偏好设置">⚙️ 偏好</button>
-                <button class="btn-refresh" id="refreshBtn" title="刷新视频列表">🔄 刷新</button>
+            <div class="card-tags">
+                <span class="card-category" v-text="v.category||'未分类'"></span>
+                <span class="card-duration-badge" v-if="v.duration_badge" v-text="v.duration_badge"></span>
+                <span class="card-pub-date" v-if="v.published_str" v-text="v.published_str"></span>
             </div>
         </div>
     </div>
+</main>
 
-    <div class="status-bar" id="statusBar">
-        <span class="status-text" id="statusText">正在加载视频...</span>
-        <span class="status-time-dist" id="timeDist" style="display:none"></span>
-    </div>
+<!-- ====== Empty State ====== -->
+<div class="empty-state" v-if="!isLoading && videos.length===0">
+    <div class="empty-icon">📭</div>
+    <h2 v-text="search ? '未找到匹配视频' : '暂无视频'"></h2>
+    <p v-text="search ? '尝试其他关键词' : '换个分类或刷新试试'"></p>
+</div>
 
-    <main class="video-grid" id="videoGrid"></main>
+<!-- ====== Load More ====== -->
+<div class="load-more" v-if="hasMore && !isLoading">
+    <button class="btn-load-more" @click="loadMore">加载更多</button>
+</div>
 
-    <div class="load-more" id="loadMore" style="display:none">
-        <button class="btn-load-more" id="loadMoreBtn">加载更多</button>
-    </div>
+<!-- ====== Back to Top ====== -->
+<button class="back-to-top" :class="{visible:scrollY>600}" @click="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-    <div class="empty-state" id="emptyState" style="display:none">
-        <div class="empty-icon">📭</div>
-        <h2 id="emptyTitle">暂无视频</h2>
-        <p id="emptyDesc">换个分类或刷新试试</p>
-    </div>
-
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal" id="modal">
-            <button class="modal-close" id="modalClose">&times;</button>
-            <div class="modal-body" id="modalBody"></div>
+<!-- ====== Notes Drawer ====== -->
+<div class="notes-overlay" v-if="drawerOpen" @click="closeDrawer"></div>
+<div class="notes-drawer" :class="{open:drawerOpen}">
+    <div class="notes-drawer-header">
+        <div class="notes-drawer-header-info">
+            <h3 v-text="currentVideo?.title"></h3>
+            <div class="notes-drawer-header-meta">
+                <span v-text="currentVideo?.author"></span>
+                <span v-text="currentVideo?.duration"></span>
+                <span v-text="currentVideo?.views"></span>
+            </div>
         </div>
+        <button class="icon-btn notes-drawer-close" @click="closeDrawer">&times;</button>
     </div>
-
-    <div class="toast-container" id="toastContainer"></div>
-
-    <button class="back-to-top" id="backToTop" title="回到顶部">↑</button>
-
-    <div class="favorites-panel" id="favoritesPanel">
-        <div class="favorites-header">
-            <h3>⭐ 我的收藏</h3>
-            <button class="icon-btn" id="favoritesClose">&times;</button>
+    <div class="notes-drawer-body">
+        <div class="notes-player-column">
+            <div class="video-player-container">
+                <iframe v-if="currentVideo?.source==='bilibili' && currentVideo?.embed_id"
+                        :src="'https://player.bilibili.com/player.html?bvid='+currentVideo.embed_id+'&autoplay=0'"
+                        allowfullscreen frameborder="0"></iframe>
+                <iframe v-else-if="currentVideo?.source==='youtube' && currentVideo?.embed_id"
+                        :src="'https://www.youtube.com/embed/'+currentVideo.embed_id+'?autoplay=0&rel=0&enablejsapi=1'"
+                        allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer"></iframe>
+                <div v-else style="display:flex;align-items:center;justify-content:center;height:100%;color:#999">暂无嵌入播放地址</div>
+            </div>
         </div>
-        <div class="favorites-list" id="favoritesList"></div>
-        <div class="favorites-empty" id="favoritesEmpty">暂无收藏</div>
-    </div>
+        <div class="notes-content-column">
+            <div class="notes-tabs">
+                <button class="notes-tab" :class="{active:activeTab==='notes'}" @click="activeTab='notes'">📝 笔记</button>
+                <button class="notes-tab" :class="{active:activeTab==='chat'}" @click="activeTab='chat'">🤖 AI对话</button>
+                <button class="notes-tab" :class="{active:activeTab==='analysis'}" @click="activeTab='analysis'">📊 分析</button>
+                <button class="notes-tab" :class="{active:activeTab==='subtitle'}" @click="activeTab='subtitle'">🌐 字幕</button>
+            </div>
 
-    <!-- 偏好设置面板 -->
-    <div class="pref-overlay" id="prefOverlay"></div>
-    <div class="pref-panel" id="prefPanel">
-        <div class="pref-header">
-            <h3>⚙️ 偏好设置</h3>
-            <button class="icon-btn" id="prefClose">&times;</button>
-        </div>
-        <div class="pref-body">
-            <p class="pref-desc">选择你感兴趣的内容领域，我们会优先推荐相关视频。</p>
-            <div class="pref-grid" id="prefGrid"></div>
-            <button class="pref-save" id="prefSave">保存偏好</button>
-        </div>
-    </div>
+            <!-- Notes Tab -->
+            <div v-show="activeTab==='notes'" class="notes-tab-content" style="flex:1;display:flex;flex-direction:column">
+                <textarea class="notes-editor" v-model="notes" placeholder="在这里记录你的想法...支持 Markdown" style="flex:1;min-height:120px;margin:8px"></textarea>
+            </div>
 
-    <!-- 笔记抽屉遮罩 -->
-    <div class="notes-overlay" id="notesOverlay"></div>
-
-    <!-- 笔记抽屉 — 大屏分栏布局 -->
-    <div class="notes-drawer" id="notesDrawer">
-        <div class="notes-drawer-header">
-            <div class="notes-drawer-header-info">
-                <h3 id="notesTitle">视频标题</h3>
-                <div class="notes-drawer-header-meta">
-                    <span id="notesAuthor"></span>
-                    <span id="notesSource" class="notes-source-tag"></span>
-                    <span id="notesDuration"></span>
-                    <span id="notesViews"></span>
-                    <button class="follow-btn" id="followBtn">🔔 关注</button>
+            <!-- Chat Tab -->
+            <div v-show="activeTab==='chat'" class="notes-tab-content" style="flex:1;display:flex;flex-direction:column">
+                <div class="chat-messages" style="flex:1;overflow-y:auto">
+                    <div v-if="chatHistory.length===0" class="chat-empty">输入问题，AI 将根据视频内容为你解答</div>
+                    <div v-for="(msg, i) in chatHistory" :key="i" class="chat-message" :class="msg.role" v-text="msg.content"></div>
+                    <div v-if="chatLoading" class="chat-message assistant"><span class="dot-pulse">思考中</span></div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" class="chat-input" v-model="chatInput" placeholder="针对这个视频提问..."
+                           @keydown.enter.prevent="sendChat">
+                    <button class="chat-send-btn" @click="sendChat" :disabled="chatLoading">发送</button>
                 </div>
             </div>
-            <button class="icon-btn notes-drawer-close" id="notesClose">&times;</button>
-        </div>
 
-            <div class="notes-drawer-body">
-                <div class="notes-player-column">
-                    <div class="video-player-container" id="videoPlayerContainer"></div>
-                </div>
-
-                <div class="notes-content-column">
-                    <div class="notes-tabs">
-                        <button class="notes-tab active" data-notes-tab="note">📝 笔记</button>
-                        <button class="notes-tab" data-notes-tab="chat">🤖 AI对话</button>
-                        <button class="notes-tab" data-notes-tab="analysis">📊 分析</button>
-                        <button class="notes-tab" data-notes-tab="subtitle">🌐 字幕</button>
-                    </div>
-
-                    <div class="notes-tab-content active" id="notesTabNote">
-                        <div class="notes-editor-section">
-                            <div class="notes-empty-guide" id="notesEmptyGuide">
-                                <div class="notes-empty-icon">💡</div>
-                                <p>视频播放到关键处时，在此记录你的想法</p>
-                                <p class="notes-empty-hint">支持 Markdown · 点击 🤖 AI对话 可向AI提问</p>
-                            </div>
-                            <textarea class="notes-editor" id="notesEditor" placeholder="在这里记录你的想法...支持 Markdown" style="display:none"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="notes-tab-content" id="notesTabChat">
-                        <div class="chat-messages" id="chatMessages">
-                            <div class="chat-empty">输入问题，AI 将根据视频内容为你解答</div>
-                        </div>
-                        <div class="chat-input-area">
-                            <input type="text" class="chat-input" id="chatInput" placeholder="针对这个视频提问...">
-                            <button class="chat-send-btn" id="chatSendBtn">发送</button>
-                        </div>
-                    </div>
-
-                    <div class="notes-tab-content" id="notesTabAnalysis">
-                        <div class="notes-editor-section">
-                            <div class="notes-summary-text" id="notesSummaryText"></div>
-                        </div>
-                    </div>
-
-                    <div class="notes-tab-content" id="notesTabSubtitle">
-                        <div class="subtitle-container">
-                            <div class="subtitle-list" id="subtitleList">
-                                <span class="dot-pulse">正在加载字幕</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Analysis Tab -->
+            <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px">
+                <div v-if="analysisLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在分析</span></div>
+                <div v-else-if="analysis" v-html="renderedAnalysis" class="analysis-content" style="font-size:13px;line-height:1.8"></div>
+                <div v-else style="text-align:center;color:var(--text-muted);padding:20px">分析暂不可用</div>
             </div>
 
-        <div class="notes-actions">
-            <a class="notes-link-btn" id="notesLinkBtn" target="_blank" href="#">🔗 外链观看</a>
-            <button class="notes-save-btn" id="notesSaveBtn">💾 保存</button>
-            <button class="notes-export-btn" id="notesExportBtn">📂 导出到桌面</button>
-            <button class="notes-done-btn" id="notesDoneBtn">✅ 标记已看完</button>
-            <button class="notes-translate-btn" id="notesTranslateBtn">🌐 翻译字幕</button>
+            <!-- Subtitle Tab -->
+            <div v-show="activeTab==='subtitle'" class="notes-tab-content" style="flex:1;overflow-y:auto">
+                <div v-if="subtitleLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在加载字幕</span></div>
+                <div v-else-if="subtitleSegments.length" class="subtitle-container">
+                    <div class="subtitle-translation" v-if="fullTranslation" v-html="fullTranslation.replace(/\n/g,'<br>')"></div>
+                    <div class="subtitle-divider" v-if="fullTranslation">━━ 时间轴字幕 ━━</div>
+                    <div class="subtitle-list">
+                        <div v-for="(seg, i) in subtitleSegments" :key="i" class="subtitle-row"
+                             :class="{active:currentTime>=seg.start&&currentTime<=seg.start+seg.duration}"
+                             :ref="el=>{if(currentTime>=seg.start&&currentTime<=seg.start+seg.duration)el?.scrollIntoView({block:'center',behavior:'smooth'})}">
+                            <span class="subtitle-time">[[ fmtTime(seg.start) ]]</span>
+                            <span class="subtitle-text" v-text="seg.original"></span>
+                        </div>
+                    </div>
+                </div>
+                <div v-else style="text-align:center;color:var(--text-muted);padding:20px">点击底部按钮加载字幕</div>
+            </div>
         </div>
     </div>
+    <div class="notes-actions">
+        <a class="notes-link-btn" :href="currentVideo?.url" target="_blank">🔗 外链观看</a>
+        <button class="notes-save-btn" @click="saveNotes">💾 保存</button>
+        <button class="notes-export-btn" @click="exportNotes">📂 导出</button>
+        <button class="notes-translate-btn" @click="loadSubtitles"
+                v-text="currentVideo?.source==='bilibili'?'📄 查看字幕':'🌐 翻译字幕'"></button>
+    </div>
+</div>
 
-    <footer class="footer">
-        <p>视频精选 · 每日更新 · 聚焦学习与深度内容</p>
-    </footer>
+<!-- ====== Favorites Panel ====== -->
+<div class="favorites-overlay" :class="{open:favoritesOpen}" @click="favoritesOpen=false"></div>
+<div class="favorites-panel" :class="{open:favoritesOpen}">
+    <div class="favorites-header">
+        <h3>⭐ 我的收藏</h3>
+        <button class="icon-btn" @click="favoritesOpen=false">&times;</button>
+    </div>
+    <div class="favorites-list" v-if="favorites.length">
+        <div v-for="fav in favorites" :key="fav.id" class="fav-item" @click="window.open(fav.url,'_blank')">
+            <img v-if="fav.thumbnail" :src="fav.thumbnail" class="fav-item-thumb" @error="e=>e.target.style.display='none'">
+            <div class="fav-item-info">
+                <div class="fav-item-title" v-text="fav.title"></div>
+                <div class="fav-item-author" v-text="fav.author"></div>
+            </div>
+            <button class="fav-item-remove" @click.stop="removeFav(fav.id)">&times;</button>
+        </div>
+    </div>
+    <div class="favorites-empty" v-else>暂无收藏</div>
+</div>
 
-    <script src="/static/js/app.js"></script>
-    <script src="/static/js/notes.js"></script>
+<!-- ====== Preferences Panel ====== -->
+<div class="pref-overlay" :class="{open:prefPanelOpen}" @click="prefPanelOpen=false"></div>
+<div class="pref-panel" :class="{open:prefPanelOpen}">
+    <div class="pref-header">
+        <h3>⚙️ 偏好设置</h3>
+        <button class="icon-btn" @click="prefPanelOpen=false">&times;</button>
+    </div>
+    <div class="pref-body">
+        <p class="pref-desc">选择你感兴趣的内容领域，我们会优先推荐相关视频。</p>
+        <div class="pref-grid">
+            <div v-for="c in allCategories" :key="c" class="pref-chip"
+                 :class="{selected:prefs.includes(c)}" @click="togglePref(c)" v-text="c"></div>
+        </div>
+        <button class="pref-save" @click="savePrefs">保存偏好</button>
+    </div>
+</div>
+
+<!-- ====== Toast ====== -->
+<div class="toast-container">
+    <div v-for="t in toasts" :key="t.id" class="toast" :class="t.type" v-text="t.msg"></div>
+</div>
+
+<!-- ====== Footer ====== -->
+<footer class="footer"><p>视频精选 · 每日更新 · 聚焦学习与深度内容</p></footer>
+
+</div><!-- #app -->
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script>
+const { createApp, ref, reactive, computed, watch, onMounted, onUnmounted, nextTick } = Vue;
+
+createApp({
+  delimiters: ['[[', ']]'],
+  setup() {
+    // ── Core State ──
+    const videos = ref([]);
+    const total = ref(0);
+    const page = ref(1);
+    const source = ref('all');
+    const category = ref('');
+    const search = ref('');
+    const searchQuery = ref('');
+    const sort = ref(localStorage.getItem('vc-sort') || 'score');
+    const prefs = ref(JSON.parse(localStorage.getItem('vc-prefs')||'[]'));
+    const essence = ref(localStorage.getItem('vc-essence')==='true');
+    const isLoading = ref(false);
+    const hasMore = ref(false);
+    const categories = ref([]);
+    const allCategories = ['知识','科学科普','科技','财经商业','人文历史','纪录片','校园学习','社科法律','职业职场','设计创意','计算机技术','数码','资讯'];
+
+    // ── Drawer State ──
+    const drawerOpen = ref(false);
+    const currentVideo = ref(null);
+    const notes = ref('');
+    const analysis = ref('');
+    const analysisLoading = ref(false);
+    const activeTab = ref('notes');
+    const chatHistory = ref([]);
+    const chatInput = ref('');
+    const chatLoading = ref(false);
+    const subtitleSegments = ref([]);
+    const subtitleLoading = ref(false);
+    const fullTranslation = ref('');
+    const currentTime = ref(0);
+
+    // ── UI State ──
+    const darkMode = ref(localStorage.getItem('vc-dark-mode')==='dark' || (!localStorage.getItem('vc-dark-mode') && window.matchMedia('(prefers-color-scheme:dark)').matches));
+    const scrollY = ref(0);
+    const favoritesOpen = ref(false);
+    const prefPanelOpen = ref(false);
+    const favorites = ref(JSON.parse(localStorage.getItem('vc-favorites')||'[]'));
+    const toasts = ref([]);
+
+    // ── Computed ──
+    const displayVideos = computed(() => {
+        if (page.value === 1 && !search.value && !category.value) return videos.value.slice(1);
+        return videos.value;
+    });
+    const statusMsg = computed(() => {
+        let m = `共 ${total.value} 个视频`;
+        if (search.value) m += ` · 搜索: "${search.value}"`;
+        return m;
+    });
+    const renderedAnalysis = computed(() => renderMarkdown(analysis.value));
+
+    // ── Dark Mode ──
+    function toggleDarkMode() { darkMode.value = !darkMode.value; }
+    watch(darkMode, (v) => {
+        document.documentElement.setAttribute('data-theme', v?'dark':'');
+        localStorage.setItem('vc-dark-mode', v?'dark':'light');
+    }, {immediate:true});
+
+    // ── Helpers ──
+    function toast(msg, type='') {
+        const id = Date.now();
+        toasts.value.push({id,msg,type});
+        setTimeout(() => toasts.value = toasts.value.filter(t=>t.id!==id), 3200);
+    }
+    function renderMarkdown(t) {
+        if (!t) return '';
+        let h = t.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        h = h.replace(/^## (.+)$/gm,'<h3>$1</h3>');
+        h = h.replace(/^### (.+)$/gm,'<h4>$1</h4>');
+        h = h.replace(/^- (.+)$/gm,'<li>$1</li>');
+        h = h.replace(/\n/g,'<br>');
+        h = h.replace(/(<li>.*?<\/li>)/gs,'<ul>$1</ul>');
+        h = h.replace(/⭐/g,'★');
+        return h;
+    }
+    function fmtTime(s) {
+        const m = Math.floor(s/60), sec = Math.floor(s%60);
+        return m+':'+String(sec).padStart(2,'0');
+    }
+
+    // ── API ──
+    async function fetchVideos(reset=true) {
+        if (isLoading.value) return;
+        isLoading.value = true;
+        if (reset) { page.value = 1; videos.value = []; }
+
+        const params = new URLSearchParams({
+            source: source.value, page: page.value, sort: sort.value,
+            category: category.value, search: search.value,
+            prefs: prefs.value.join(','), essence: essence.value,
+        });
+        try {
+            const resp = await fetch('/api/videos?'+params);
+            const data = await resp.json();
+            if (reset) {
+                videos.value = data.videos || [];
+                categories.value = data.categories || [];
+            } else {
+                videos.value = [...videos.value, ...(data.videos||[])];
+            }
+            total.value = data.total || 0;
+            hasMore.value = data.has_more || false;
+        } catch(e) { console.error('fetchVideos:', e); }
+        isLoading.value = false;
+    }
+
+    // ── Search debounce ──
+    let searchTimer;
+    function onSearchInput() {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => { search.value = searchQuery.value; fetchVideos(true); }, 400);
+    }
+    function clearSearch() { searchQuery.value = ''; search.value = ''; fetchVideos(true); }
+
+    // ── Source / Category / Sort ──
+    function switchSource(s) {
+        source.value = s;
+        sort.value = s==='bilibili'?'time':'score';
+        category.value = '';
+        fetchVideos(true);
+    }
+    function setCategory(c) { category.value = c===category.value?'':c; fetchVideos(true); }
+    function loadMore() { page.value++; fetchVideos(false); }
+
+    // ── Favorites ──
+    function isFaved(id) { return favorites.value.some(f=>f.id===id); }
+    function toggleFav(v) {
+        const idx = favorites.value.findIndex(f=>f.id===v.id);
+        if (idx>=0) {
+            favorites.value.splice(idx,1);
+            toast('已取消收藏');
+        } else {
+            favorites.value.unshift({id:v.id,source:v.source,title:v.title,url:v.url,thumbnail:v.thumbnail,author:v.author});
+            toast('已加入收藏','success');
+        }
+        localStorage.setItem('vc-favorites', JSON.stringify(favorites.value));
+    }
+    function removeFav(id) {
+        favorites.value = favorites.value.filter(f=>f.id!==id);
+        localStorage.setItem('vc-favorites', JSON.stringify(favorites.value));
+    }
+
+    // ── Preferences ──
+    function togglePref(c) {
+        const idx = prefs.value.indexOf(c);
+        if (idx>=0) prefs.value.splice(idx,1); else prefs.value.push(c);
+    }
+    function savePrefs() {
+        localStorage.setItem('vc-prefs', JSON.stringify(prefs.value));
+        prefPanelOpen.value = false;
+        toast('偏好已保存','success');
+        fetchVideos(true);
+    }
+
+    // ── Drawer ──
+    async function openDrawer(video) {
+        currentVideo.value = video;
+        notes.value = '';
+        analysis.value = '';
+        analysisLoading.value = true;
+        activeTab.value = 'notes';
+        chatHistory.value = [];
+        subtitleSegments.value = [];
+        fullTranslation.value = '';
+        subtitleLoading.value = false;
+        drawerOpen.value = true;
+        document.body.style.overflow = 'hidden';
+
+        // Load notes
+        try {
+            const r = await fetch('/api/notes/'+encodeURIComponent(video.id));
+            const d = await r.json();
+            if (d && d.notes) notes.value = d.notes;
+        } catch(e) {}
+
+        // Load analysis
+        _fetchAnalysis(video);
+    }
+
+    function closeDrawer() {
+        drawerOpen.value = false;
+        document.body.style.overflow = '';
+        currentVideo.value = null;
+    }
+
+    async function _fetchAnalysis(video) {
+        analysisLoading.value = true;
+        try {
+            const params = new URLSearchParams({
+                title:video.title, description:video.description||'',
+                author:video.author, category:video.category||'',
+                duration:video.duration||'', duration_sec:video.duration_seconds||0,
+            });
+            const r = await fetch('/api/analyze?'+params);
+            const d = await r.json();
+            if (d && d.analysis) {
+                analysis.value = d.analysis;
+                activeTab.value = 'analysis';
+            } else {
+                // Fallback to summary
+                const sp = new URLSearchParams({video_id:video.id,source:video.source,title:video.title,description:video.description||'',author:video.author});
+                const sr = await fetch('/api/summarize?'+sp);
+                const sd = await sr.json();
+                analysis.value = sd?.summary || '分析暂不可用';
+            }
+        } catch(e) { analysis.value = '分析生成失败'; }
+        analysisLoading.value = false;
+    }
+
+    async function saveNotes() {
+        if (!currentVideo.value) return;
+        try {
+            await fetch('/api/notes/save', {
+                method:'POST', headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({video_id:currentVideo.value.id,title:currentVideo.value.title,author:currentVideo.value.author,url:currentVideo.value.url,source:currentVideo.value.source,category:currentVideo.value.category,notes:notes.value,ai_summary:analysis.value}),
+            });
+            toast('已保存','success');
+        } catch(e) { toast('保存失败','error'); }
+    }
+
+    async function exportNotes() {
+        if (!currentVideo.value) return;
+        try {
+            const r = await fetch('/api/notes/export', {
+                method:'POST', headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({video_id:currentVideo.value.id,title:currentVideo.value.title,author:currentVideo.value.author,source:currentVideo.value.source,notes:notes.value,ai_summary:analysis.value}),
+            });
+            const d = await r.json();
+            toast(d.status==='ok'?'已导出到桌面':'导出失败', d.status==='ok'?'success':'error');
+        } catch(e) { toast('导出失败','error'); }
+    }
+
+    // ── AI Chat ──
+    async function sendChat() {
+        const msg = chatInput.value.trim();
+        if (!msg || chatLoading.value) return;
+        chatHistory.value.push({role:'user',content:msg});
+        chatInput.value = '';
+        chatLoading.value = true;
+        try {
+            const r = await fetch('/api/chat', {
+                method:'POST', headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({message:msg,title:currentVideo.value?.title,description:currentVideo.value?.description,author:currentVideo.value?.author,subtitle_text:'',chat_history:chatHistory.value.slice(-6)}),
+            });
+            const d = await r.json();
+            chatHistory.value.push({role:'assistant',content:d.reply||'无回复'});
+        } catch(e) { chatHistory.value.push({role:'assistant',content:'对话失败'}); }
+        chatLoading.value = false;
+    }
+
+    // ── Subtitles ──
+    async function loadSubtitles() {
+        if (!currentVideo.value) return;
+        activeTab.value = 'subtitle';
+        subtitleLoading.value = true;
+        subtitleSegments.value = [];
+        fullTranslation.value = '';
+
+        try {
+            const v = currentVideo.value;
+            const embedId = v.embed_id || v.youtube_id || '';
+            const isBili = v.source === 'bilibili';
+
+            const params = new URLSearchParams({video_id:v.id,source:v.source,embed_id:embedId});
+            const r = await fetch('/api/translate?'+params);
+            const d = await r.json();
+            if (d && d.segments) {
+                subtitleSegments.value = d.segments;
+                if (!isBili) fullTranslation.value = d.translation || '';
+                if (!isBili) startTimeSync();
+            }
+        } catch(e) {}
+        subtitleLoading.value = false;
+    }
+
+    // ── YouTube time sync ──
+    let timeSyncTimer;
+    function startTimeSync() {
+        if (timeSyncTimer) clearInterval(timeSyncTimer);
+        timeSyncTimer = setInterval(() => {
+            const iframe = document.querySelector('#ytPlayer');
+            if (!iframe || !iframe.contentWindow) return;
+            try {
+                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'getCurrentTime',args:[]}),'*');
+            } catch(e) {}
+        }, 500);
+    }
+    window.addEventListener('message', (e) => {
+        try {
+            const d = JSON.parse(e.data);
+            if (d.event==='infoDelivery' && d.info?.currentTime) currentTime.value = d.info.currentTime;
+            if (d.func==='getCurrentTime' && typeof d.result==='number') currentTime.value = d.result;
+            if (d.event==='onReady') {
+                const iframe = document.querySelector('#ytPlayer');
+                if (iframe?.contentWindow) iframe.contentWindow.postMessage(JSON.stringify({event:'subscribe',info:'all'}),'*');
+            }
+        } catch {}
+    });
+
+    // ── Scroll ──
+    function onScroll() { scrollY.value = window.scrollY; }
+
+    // ── Keyboard ──
+    function onKeydown(e) {
+        if (e.key==='Escape' && drawerOpen.value) { closeDrawer(); favoritesOpen.value=false; }
+    }
+
+    // ── Lifecycle ──
+    onMounted(() => {
+        window.addEventListener('scroll', onScroll, {passive:true});
+        document.addEventListener('keydown', onKeydown);
+        fetchVideos(true);
+    });
+    onUnmounted(() => {
+        if (timeSyncTimer) clearInterval(timeSyncTimer);
+    });
+
+    return {
+        videos, total, page, source, category, search, searchQuery, sort, prefs, essence,
+        isLoading, hasMore, categories, allCategories,
+        drawerOpen, currentVideo, notes, analysis, analysisLoading, activeTab,
+        chatHistory, chatInput, chatLoading,
+        subtitleSegments, subtitleLoading, fullTranslation, currentTime,
+        darkMode, scrollY, favoritesOpen, prefPanelOpen, favorites, toasts,
+        displayVideos, statusMsg, renderedAnalysis,
+        toggleDarkMode, toggleFav, isFaved, removeFav, togglePref, savePrefs,
+        fetchVideos, onSearchInput, clearSearch, switchSource, setCategory, loadMore,
+        openDrawer, closeDrawer, saveNotes, exportNotes, sendChat, loadSubtitles,
+        fmtTime, toast,
+    };
+  },
+}).mount('#app');
+</script>
 </body>
 </html>

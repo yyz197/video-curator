@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频精选 — Video Curator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">🎬</span>
+                <h1>视频精选</h1>
+                <span class="logo-sub">Video Curator v2</span>
+            </div>
+            <div class="search-box" id="searchBox">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索视频标题、作者、描述...">
+                <button class="search-clear" id="searchClear" style="display:none">&times;</button>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn" id="darkModeBtn" title="切换暗色模式">🌙</button>
+                <button class="icon-btn" id="favoritesBtn" title="收藏列表">⭐</button>
+            </div>
+            <nav class="nav-tabs" id="sourceTabs">
+                <button class="tab active" data-source="all">全部</button>
+                <button class="tab" data-source="bilibili">B站</button>
+                <button class="tab" data-source="youtube">YouTube</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="filter-bar">
+        <div class="filter-inner">
+            <div class="filter-label">分类：</div>
+            <div class="filter-tags" id="categoryTags">
+                <button class="filter-tag active" data-category="">全部</button>
+            </div>
+            <div class="filter-actions">
+                <select class="sort-select" id="sortSelect">
+                    <option value="score">📊 综合排序</option>
+                    <option value="time">🕐 最新发布</option>
+                    <option value="views">👁 播放最多</option>
+                    <option value="likes">👍 点赞最多</option>
+                </select>
+                <label class="toggle-label">
+                    <input type="checkbox" id="essenceToggle">
+                    <span>✨ 精华</span>
+                </label>
+                <label class="toggle-label">
+                    <input type="checkbox" id="summaryToggle">
+                    <span>AI 摘要</span>
+                </label>
+                <button class="btn-refresh" id="prefBtn" title="偏好设置">⚙️ 偏好</button>
+                <button class="btn-refresh" id="refreshBtn" title="刷新视频列表">🔄 刷新</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-bar" id="statusBar">
+        <span class="status-text" id="statusText">正在加载视频...</span>
+        <span class="status-time-dist" id="timeDist" style="display:none"></span>
+    </div>
+
+    <main class="video-grid" id="videoGrid"></main>
+
+    <div class="load-more" id="loadMore" style="display:none">
+        <button class="btn-load-more" id="loadMoreBtn">加载更多</button>
+    </div>
+
+    <div class="empty-state" id="emptyState" style="display:none">
+        <div class="empty-icon">📭</div>
+        <h2 id="emptyTitle">暂无视频</h2>
+        <p id="emptyDesc">换个分类或刷新试试</p>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <button class="back-to-top" id="backToTop" title="回到顶部">↑</button>
+
+    <div class="favorites-panel" id="favoritesPanel">
+        <div class="favorites-header">
+            <h3>⭐ 我的收藏</h3>
+            <button class="icon-btn" id="favoritesClose">&times;</button>
+        </div>
+        <div class="favorites-list" id="favoritesList"></div>
+        <div class="favorites-empty" id="favoritesEmpty">暂无收藏</div>
+    </div>
+
+    <!-- 偏好设置面板 -->
+    <div class="pref-overlay" id="prefOverlay"></div>
+    <div class="pref-panel" id="prefPanel">
+        <div class="pref-header">
+            <h3>⚙️ 偏好设置</h3>
+            <button class="icon-btn" id="prefClose">&times;</button>
+        </div>
+        <div class="pref-body">
+            <p class="pref-desc">选择你感兴趣的内容领域，我们会优先推荐相关视频。</p>
+            <div class="pref-grid" id="prefGrid"></div>
+            <button class="pref-save" id="prefSave">保存偏好</button>
+        </div>
+    </div>
+
+    <!-- 笔记抽屉遮罩 -->
+    <div class="notes-overlay" id="notesOverlay"></div>
+
+    <!-- 笔记抽屉 — 大屏分栏布局 -->
+    <div class="notes-drawer" id="notesDrawer">
+        <div class="notes-drawer-header">
+            <div class="notes-drawer-header-info">
+                <h3 id="notesTitle">视频标题</h3>
+                <div class="notes-drawer-header-meta">
+                    <span id="notesAuthor"></span>
+                    <span id="notesSource" class="notes-source-tag"></span>
+                    <span id="notesDuration"></span>
+                    <span id="notesViews"></span>
+                    <button class="follow-btn" id="followBtn">🔔 关注</button>
+                </div>
+            </div>
+            <button class="icon-btn notes-drawer-close" id="notesClose">&times;</button>
+        </div>
+
+            <div class="notes-drawer-body">
+                <div class="notes-player-column">
+                    <div class="video-player-container" id="videoPlayerContainer"></div>
+                </div>
+                <div class="notes-content-column">
+                    <div class="notes-summary-text" id="notesSummaryText" style="padding:10px 14px;font-size:13px;line-height:1.7"></div>
+                    <textarea class="notes-editor" id="notesEditor" placeholder="在此记录你的想法...支持 Markdown" style="flex:1;margin:8px;min-height:120px"></textarea>
+                </div>
+            </div>
+
+        <div class="notes-actions">
+            <a class="notes-link-btn" id="notesLinkBtn" target="_blank" href="#">🔗 外链观看</a>
+            <button class="notes-save-btn" id="notesSaveBtn">💾 保存</button>
+            <button class="notes-export-btn" id="notesExportBtn">📂 导出到桌面</button>
+            <button class="notes-done-btn" id="notesDoneBtn">✅ 标记已看完</button>
+            <button class="notes-translate-btn" id="notesTranslateBtn">🌐 翻译字幕</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>视频精选 · 每日更新 · 聚焦学习与深度内容</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/notes.js"></script>
+</body>
+</html>
