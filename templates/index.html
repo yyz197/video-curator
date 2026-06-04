@@ -451,12 +451,6 @@ const app = createApp({
         }
     }
 
-    // 字幕叠加层实时更新
-    watch(currentSubtitleText, (txt) => {
-        const overlay = document.getElementById('subtitleOverlay');
-        if (overlay) { overlay.style.display = txt ? 'block' : 'none'; overlay.textContent = txt; }
-    });
-
     function closeDrawer() {
         drawerOpen.value = false;
         document.body.style.overflow = '';
