@@ -603,10 +603,12 @@ const app = createApp({
         const newIdx = currentSubtitleIdx + dir;
         if (newIdx >= 0 && newIdx < subtitleSegments.value.length) {
             showSubtitleInBar(newIdx);
+            const seg = subtitleSegments.value[newIdx];
             const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
             if (iframe) {
-                const seg = subtitleSegments.value[newIdx];
-                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[seg.start]}),'*');
+                // Use YouTube URL fragment for reliable seeking (no API needed)
+                const baseUrl = iframe.src.split('?')[0];
+                iframe.src = baseUrl + '?autoplay=0&rel=0&enablejsapi=1&start=' + Math.floor(seg.start);
             }
         }
     };
