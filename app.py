@@ -1296,10 +1296,11 @@ def api_translate():
     # 1) 先查翻译缓存 (warmup每天预生成)
     ck = cache_key("translate", source, video_id or embed_id)
     if translate_cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
-        timed_data = get_transcript_timed(video)  # 字幕分段可能也缓存了
+        timed_data = get_transcript_timed(video)
+        segments = (timed_data or {}).get("segments", [])
         return jsonify({
             "translation": translate_cached.get("translation", ""),
-            "segments": (timed_data or {}).get("segments", [])[:300],
+            "segments": segments[:300],
             "cached": True,
         })
 

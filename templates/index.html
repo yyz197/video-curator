@@ -573,8 +573,19 @@ const app = createApp({
                 currentSubtitleIdx = 0;
                 showSubtitleInBar(0);
                 if (v.source !== 'bilibili') startTimeSync();
+            } else if (d && d.translation) {
+                // 有翻译但无分段: 显示中文全文
+                fullTranslation.value = d.translation;
+                const bar = document.getElementById('subtitleBar');
+                const en = document.getElementById('subtitleBarEn');
+                const zh = document.getElementById('subtitleBarZh');
+                const tgl = document.getElementById('subtitleBarToggle');
+                if (bar) bar.style.display = 'block';
+                if (en) en.textContent = '(字幕分段未缓存, 点击展开中译查看中文翻译)';
+                if (zh) zh.innerHTML = d.translation.replace(/\n/g, '<br>');
+                if (tgl) { tgl.style.display = ''; tgl.textContent = '查看中译'; }
             } else {
-                toast('此视频无字幕', 'error');
+                toast('此视频无字幕数据', 'error');
             }
         } catch(e) {}
         subtitleLoading.value = false;
