@@ -1176,6 +1176,15 @@ def api_analyze():
     return jsonify({"error": "分析生成失败"}), 500
 
 
+def _attach_summaries(videos: list) -> None:
+    """为视频列表附加预缓存的AI摘要"""
+    for v in videos:
+        if not v.get("summary"):
+            ck_sum = cache_key("summary", v["source"], v["id"])
+            if s_cached := cache_get_with_ttl(ck_sum, SUMMARY_CACHE_TTL):
+                v["summary"] = s_cached.get("summary", "")
+
+
 @app.route("/api/videos")
 def api_videos():
     source = request.args.get("source", "all")
@@ -1204,11 +1213,13 @@ def api_videos():
         # 1) 短期缓存 (无偏好/无精华时)
         if not prefs and not essence and not following:
             if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
+                _attach_summaries(cached.get("videos", []))
                 return jsonify(cached)
         # 2) 预热缓存 (最多4h有效, 避免整天看旧数据)
-        warmup_ttl = 14400 if (prefs or essence) else 86400  # 4h有偏好, 24h无偏好
+        warmup_ttl = 14400 if (prefs or essence) else 86400
         if warmup_cached := cache_get_with_ttl(list_ck, warmup_ttl):
             videos = warmup_cached.get("videos", [])
+            _attach_summaries(videos)
             total = warmup_cached.get("total", len(videos))
             if preferred_cats:
                 for v in videos:

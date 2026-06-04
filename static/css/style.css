@@ -1215,14 +1215,14 @@ body::before {
     background: #000;
 }
 .video-player-container {
-    width: 100%; position: relative; padding-bottom: 52%; flex-shrink: 0;
+    width: 100%; position: relative; padding-bottom: 45%; flex-shrink: 0;
     background: #000; border-radius: 0; overflow: hidden;
 }
 
 .notes-content-column {
     flex: 0 0 auto; display: flex; flex-direction: column;
-    overflow: hidden; min-width: 0; padding: 0;
-    max-height: 35vh;
+    overflow-y: auto; min-width: 0; padding: 0;
+    max-height: 45vh;
 }
 
 /* ── Subtitle Bar (video + subtitle seamless) ── */

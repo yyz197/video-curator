@@ -591,13 +591,14 @@ const app = createApp({
         const zhCol = document.getElementById('subtitleZhCollapse');
         if (!bar) { subtitleLoading.value = false; return; }
 
-        // 显示加载进度
+        // 显示加载进度（即使缓存命中也至少显示500ms）
         bar.style.display = 'block';
         if (zhCol) zhCol.style.display = 'block';
-        if (zh) zh.textContent = '⏳ 正在获取字幕并翻译...';
-        if (en) en.textContent = '';
+        zh.innerHTML = '<span class="dot-pulse">正在获取字幕并翻译</span>';
+        en.textContent = '';
         document.getElementById('subtitleBarTime').textContent = '';
         document.getElementById('subtitleBarIdx').textContent = '';
+        const loadStart = Date.now();
 
         try {
             const v = currentVideo.value;
@@ -605,6 +606,10 @@ const app = createApp({
             const params = new URLSearchParams({video_id:v.id, source:v.source, embed_id:embedId});
             const r = await fetch('/api/translate?'+params);
             const d = await r.json();
+
+            // 至少显示500ms加载状态
+            const elapsed = Date.now() - loadStart;
+            if (elapsed < 500) await new Promise(r => setTimeout(r, 500 - elapsed));
 
             if (d.segments && d.segments.length) {
                 subtitleSegments.value = d.segments;
@@ -617,13 +622,13 @@ const app = createApp({
                 fullTranslation.value = d.translation;
                 subtitleSegments.value = [];
                 chineseChunks = [];
-                if (zh) zh.innerHTML = d.translation.replace(/\n/g, '<br>');
-                if (en) { en.textContent = '(无分段, 显示中文全文)'; en.style.display = 'block'; }
+                zh.innerHTML = d.translation.replace(/\n/g, '<br>');
+                en.textContent = '(无分段, 显示中文全文)'; en.style.display = 'block';
             } else {
-                if (zh) zh.textContent = d.error || '字幕未缓存, 请开VPN后获取';
-                if (en) en.style.display = 'none';
+                zh.textContent = d.error || '字幕未缓存, 请开VPN后获取';
+                en.style.display = 'none';
             }
-        } catch(e) {}
+        } catch(e) { zh.textContent = '加载失败, 请重试'; }
         subtitleLoading.value = false;
     }
 
