@@ -842,6 +842,42 @@ def _get_transcript_cache_path(source: str, embed_id: str) -> Path:
     return TRANSCRIPT_DIR / f"{cache_key(key)}.txt"
 
 
+def _parse_srt_to_segments(srt_text: str) -> list[dict]:
+    """SRT 字幕 → segment 格式"""
+    blocks = [b.strip() for b in srt_text.strip().split('\n\n') if b.strip()]
+    segments = []
+    for block in blocks:
+        lines = block.split('\n')
+        if len(lines) < 2: continue
+        m = re.match(r'(\d+):(\d+):(\d+)[.,](\d+)\s*-->\s*(\d+):(\d+):(\d+)[.,](\d+)', lines[1])
+        if not m: continue
+        h1,m1,s1,ms1 = (int(m.group(i)) for i in range(1,5))
+        h2,m2,s2,ms2 = (int(m.group(i)) for i in range(5,9))
+        start = h1*3600 + m1*60 + s1 + ms1/1000
+        end = h2*3600 + m2*60 + s2 + ms2/1000
+        text = ' '.join(lines[2:]).strip()
+        if text:
+            segments.append({"start": round(start, 1), "duration": round(end - start, 1), "original": text})
+    return segments
+
+
+def _fetch_youtube_transcript_ytdlp(video_id: str) -> list[dict] | None:
+    """用 yt-dlp 提取 YouTube 自动英文字幕"""
+    try:
+        import yt_dlp
+        opts = {"writesubtitles":True,"writeautomaticsub":True,"subtitleslangs":["en"],"skip_download":True,"quiet":True,"no_warnings":True}
+        with yt_dlp.YoutubeDL(opts) as ydl:
+            info = ydl.extract_info(video_id, download=False)
+        subs = info.get("requested_subtitles") or info.get("subtitles") or {}
+        en_sub = subs.get("en") or (list(subs.values())[0] if subs else None)
+        if not en_sub: return None
+        resp = requests.get(en_sub["url"], timeout=15)
+        return _parse_srt_to_segments(resp.text) or None
+    except Exception as e:
+        app.logger.debug(f"yt-dlp 字幕失败: {video_id} — {e}")
+        return None
+
+
 def fetch_youtube_transcript(video_id: str) -> str:
     """YouTube 字幕: 逐语言尝试，缓存结果（纯文本）"""
     result = _fetch_youtube_transcript_raw(video_id)
@@ -849,7 +885,7 @@ def fetch_youtube_transcript(video_id: str) -> str:
 
 
 def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
-    """YouTube 字幕: 逐语言尝试，返回原始分段（text + segments）"""
+    """YouTube 字幕: yt-dlp优先(SRT), youtube-transcript-api兜底"""
     if not video_id:
         return None
     cache_path = _get_transcript_cache_path("youtube", video_id)
@@ -860,19 +896,24 @@ def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
         except (json.JSONDecodeError, OSError):
             pass
 
-    try:
-        from youtube_transcript_api import YouTubeTranscriptApi
-        api = YouTubeTranscriptApi()
-        transcript = api.fetch(video_id, languages=["zh-Hans", "zh", "en"])
-        segments = [{"start": round(t.start, 1), "duration": round(t.duration, 1), "original": t.text} for t in transcript if t.text]
-        text = " ".join(t["original"] for t in segments)
+    segments = _fetch_youtube_transcript_ytdlp(video_id) or []
+
+    if not segments:
+        try:
+            from youtube_transcript_api import YouTubeTranscriptApi
+            api = YouTubeTranscriptApi()
+            transcript = api.fetch(video_id, languages=["zh-Hans", "zh", "en"])
+            segments = [{"start": round(t.start, 1), "duration": round(t.duration, 1), "original": t.text} for t in transcript if t.text]
+        except Exception:
+            app.logger.debug(f"YouTube 字幕获取失败: {video_id}")
+
+    if segments:
+        text = " ".join(s["original"] for s in segments)
         text = " ".join(text.split())
-        data = {"text": text[:4000], "segments": segments[:200]}
+        data = {"text": text[:4000], "segments": segments[:300]}
         cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
         return data
-    except Exception:
-        app.logger.debug(f"YouTube 字幕获取失败: {video_id}")
-        return None
+    return None
 
 
 def fetch_bilibili_transcript(bvid: str) -> str:
@@ -1176,13 +1217,9 @@ def api_videos():
             if q in v["title"].lower() or q in v.get("description", "").lower() or q in v["author"].lower()
         ]
 
-    # 视频质量评分 + 加载缓存摘要
+    # 视频质量评分
     for v in all_videos:
         v["score"] = _video_score(v)
-        # 如果有预缓存的摘要, 附加到视频数据
-        ck_sum = cache_key("summary", v["source"], v["id"])
-        if not v.get("summary") and (s_cached := cache_get_with_ttl(ck_sum, SUMMARY_CACHE_TTL)):
-            v["summary"] = s_cached.get("summary", "")
 
     # 偏好加权
     if preferred_cats:
