@@ -149,7 +149,7 @@ def warmup():
         _save_video_list_cache("youtube", yt_videos, "YouTube", "score")
 
         # ── AI 摘要 (Top 30) ──
-        top_n = min(30, len(all_videos))
+        top_n = min(20, len(all_videos))  # 30→20
         top = all_videos[:top_n]
         print(f"  → 对 Top {len(top)} 视频生成 AI 摘要...")
         try:

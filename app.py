@@ -1047,7 +1047,7 @@ def _translate_text_en_to_zh(text: str) -> str:
         return ""
     translations = []
     chunks = [text[i:i + 2500] for i in range(0, len(text), 2500)]
-    for idx, chunk in enumerate(chunks):
+    for idx, chunk in enumerate(chunks[:8]):  # 最多8段≈20,000字≈40分钟
         prompt = f"将以下英文视频字幕翻译为简体中文，直接输出译文: \n\n{chunk}" if idx == 0 else f"继续翻译: \n\n{chunk}"
         try:
             resp = requests.post(
