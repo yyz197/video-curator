@@ -1379,28 +1379,12 @@ def api_translate():
             "cached": True,
         })
 
-    # 2) 无缓存 → 尝试实时获取 + 翻译
-    timed_data = get_transcript_timed(video)
-    if not timed_data or not timed_data.get("segments"):
-        return jsonify({
-            "translation": "",
-            "segments": [],
-            "error": "无缓存字幕(开VPN后重试, 首次获取后会缓存本地)",
-        })
-
-    segments = timed_data.get("segments", [])
-    raw_text = timed_data.get("text", "")
-
-    # B站字幕直接返回
-    if source == "bilibili":
-        return jsonify({"translation": raw_text, "segments": segments[:800], "cached": True})
-
-    # 翻译
-    full_translation = _translate_text_en_to_zh(raw_text)
-    if full_translation:
-        cache_set(ck, {"translation": full_translation})
-        return jsonify({"translation": full_translation, "segments": segments[:800], "cached": False})
-    return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500
+    # 2) 无翻译缓存 → 不尝试live fetch(会超时), 直接提示
+    return jsonify({
+        "translation": "",
+        "segments": [],
+        "error": "字幕未缓存。请开VPN后点击按钮获取，获取后自动缓存本地。",
+    })
 
 
 # ──────────────────────────────────────────────
