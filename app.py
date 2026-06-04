@@ -216,6 +216,27 @@ def _video_score(v: dict) -> float:
     return round(score, 1)
 
 
+def _pre_score_deep(videos: list) -> None:
+    """预评分：用已知信息（作者权重、缓存时长）排序，决定哪些视频值得 enrichment"""
+    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "Vsauce", "3Blue1Brown", "SmarterEveryDay", "Numberphile", "Computerphile", "MinuteEarth", "National Geographic", "SciShow", "Kyle Hill"}
+    for v in videos:
+        s = 1.0
+        author = v.get("author", "")
+        dur = v.get("duration_seconds", 0) or _get_cached_duration(v.get("youtube_id", ""))
+        if author in top_authors:
+            s *= 1.8
+        if 600 <= dur <= 3600:
+            s *= 1.3
+        pub = v.get("published", 0)
+        if isinstance(pub, (int, float)) and pub > 0:
+            age_hours = (time.time() - pub) / 3600
+            if age_hours <= 168:
+                s *= 1.3
+            elif age_hours <= 720:
+                s *= 1.1
+        v["_pre"] = round(s, 2)
+
+
 def _video_score_featured(v: dict) -> float:
     """精选评分：降低时效性加权，突出内容深度和作者权重，利于挖掘高质量老视频"""
     views = v.get("views_raw", 0) or _parse_view_count(v.get("views", ""))
@@ -792,7 +813,14 @@ def fetch_youtube_videos_api(max_pages: int = 1) -> list[dict]:
     app.logger.info(f"YouTube API 搜索完成 (max_pages={max_pages}): 共 {len(all_videos)} 个视频")
 
     if all_videos:
-        all_videos = _enrich_youtube_videos(all_videos)
+        # 预评分：用作者权重 + 缓存时长排序，避免只 enrichment 最新视频
+        if max_pages >= 2 and len(all_videos) > 300:
+            _pre_score_deep(all_videos)
+            all_videos.sort(key=lambda v: v.get("_pre", 0), reverse=True)
+
+        # 限制 enrichment 批量：深挖时视频多，只取前300条补充详情，避免超时
+        enrich_cap = min(300, len(all_videos))
+        all_videos[:enrich_cap] = _enrich_youtube_videos(all_videos[:enrich_cap])
 
         # 过滤短视频
         all_videos = [
@@ -1320,15 +1348,24 @@ def api_videos():
     # 偏好分类解析（提前，供缓存过滤使用）
     preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
 
-    # 缓存策略: 短期(30min)优先, 预热(12h)兜底, prefs/essence时缩短预热有效期
+    # 缓存策略
+    # 精选(sort=score): 48h预热缓存优先, 命中后直接返回不走live fetch
+    # 最新(sort=latest): 2h预热缓存, 轻量live fetch兜底
+    # 其他: 12h预热缓存
+    if sort == "score":
+        warmup_ttl = 2592000  # 30天 — 精选视频变化慢
+    elif sort == "latest":
+        warmup_ttl = 259200   # 3天
+    else:
+        warmup_ttl = 43200    # 12h
+
     if not with_summary and not search:
         # 1) 短期缓存 (无偏好/无精华时)
         if not prefs and not essence and not following:
             if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
                 _attach_summaries(cached.get("videos", []))
                 return jsonify(cached)
-        # 2) 预热缓存 (最多4h有效, 避免整天看旧数据; 默认12h)
-        warmup_ttl = 14400 if (prefs or essence) else 43200
+        # 2) 预热缓存: 精选直接返回, 最新继续走live兜底
         if warmup_cached := cache_get_with_ttl(list_ck, warmup_ttl):
             videos = warmup_cached.get("videos", [])
             _attach_summaries(videos)
@@ -1343,19 +1380,30 @@ def api_videos():
                 videos.sort(key=lambda v: (v.get("score", 0), v.get("published", 0)), reverse=True)
                 videos = videos[: max(12, len(videos) // 2)]
                 total = len(videos)
-            videos = videos[:VIDEOS_PER_PAGE]
-            result = {
-                "videos": videos, "total": total, "page": page,
-                "per_page": VIDEOS_PER_PAGE, "has_more": total > VIDEOS_PER_PAGE,
-                "categories": CATEGORY_LABELS, "search": None, "cached": True,
-            }
-            return jsonify(result)
+            # 精选+无偏好: 命中预热后直接返回, 不触发 heavy live fetch
+            if sort == "score" and not prefs:
+                videos = videos[:VIDEOS_PER_PAGE]
+                result = {
+                    "videos": videos, "total": total, "page": page,
+                    "per_page": VIDEOS_PER_PAGE, "has_more": total > VIDEOS_PER_PAGE,
+                    "categories": CATEGORY_LABELS, "search": None, "cached": True,
+                }
+                return jsonify(result)
+            # 最新/其他: 继续处理
+            if prefs or essence:
+                videos = videos[:VIDEOS_PER_PAGE]
+                result = {
+                    "videos": videos, "total": total, "page": page,
+                    "per_page": VIDEOS_PER_PAGE, "has_more": total > VIDEOS_PER_PAGE,
+                    "categories": CATEGORY_LABELS, "search": None, "cached": True,
+                }
+                return jsonify(result)
 
     all_videos = []
 
-    # 精选模式: 深挖历史 (每频道翻页3次=150条)
+    # 精选模式: 深挖历史 (每频道翻页2次=100条, warmup做3次)
     if sort == "score":
-        all_videos.extend(fetch_youtube_videos(max_pages=3))
+        all_videos.extend(fetch_youtube_videos(max_pages=2))
     else:
         all_videos.extend(fetch_youtube_videos(max_pages=1))
 
