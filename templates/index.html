@@ -165,7 +165,11 @@
     </div>
     <div class="notes-drawer-body">
         <div class="notes-player-column">
-            <div class="video-player-container" style="position:relative" id="drawerPlayer"></div>
+            <div class="video-player-container" style="position:relative" id="drawerPlayer">
+                <div id="subtitleOverlay" style="display:none;position:absolute;bottom:60px;left:50%;transform:translateX(-50%);
+                    background:rgba(0,0,0,0.78);color:#fff;padding:10px 24px;border-radius:10px;
+                    max-width:90%;text-align:center;z-index:10;pointer-events:none;line-height:1.5"></div>
+            </div>
             <!-- 字幕条 -->
             <div class="subtitle-bar" id="subtitleBar" style="display:none">
                 <div class="subtitle-bar-zh" id="subtitleBarZh"></div>
@@ -528,6 +532,26 @@ const app = createApp({
     // ── Subtitles ──
     let currentSubtitleIdx = 0;
     let chineseChunks = [];
+    let mergedSegments = [];  // 合并后的语义块 (~10秒)
+
+    function mergeSegmentsByTime(raw, minDurationSec = 8) {
+        const merged = [];
+        let group = [];
+        for (let i = 0; i < raw.length; i++) {
+            group.push(raw[i]);
+            const totalDur = group.reduce((s, g) => s + (g.duration || 2), 0);
+            const nextGap = i + 1 < raw.length ? raw[i + 1].start - (raw[i].start + (raw[i].duration || 2)) : 99;
+            if (totalDur >= minDurationSec || nextGap > 2 || i === raw.length - 1) {
+                merged.push({
+                    start: group[0].start,
+                    duration: totalDur,
+                    original: group.map(g => g.original).join(' '),
+                });
+                group = [];
+            }
+        }
+        return merged;
+    }
 
     function splitChineseToChunks(text, count) {
         if (!text || count <= 0) return [];
@@ -541,17 +565,25 @@ const app = createApp({
         return chunks;
     }
 
-    function showSubtitleInBar(idx) {
-        const zh = document.getElementById('subtitleBarZh');
+    function updateOverlay(idx) {
+        const ol = document.getElementById('subtitleOverlay');
+        if (!ol || idx < 0 || idx >= mergedSegments.length) return;
+        const seg = mergedSegments[idx];
+        const zh = chineseChunks[idx] || '';
+        ol.innerHTML = (zh ? `<div style="font-size:18px;font-weight:600;margin-bottom:6px">${zh}</div>` : '')
+            + `<div style="font-size:13px;color:rgba(255,255,255,0.6)">${seg.original}</div>`;
+        ol.style.display = 'block';
+    }
+
+    function showBarInfo(idx) {
         const en = document.getElementById('subtitleBarEn');
         const time = document.getElementById('subtitleBarTime');
         const idxEl = document.getElementById('subtitleBarIdx');
-        const seg = subtitleSegments.value[idx];
+        const seg = mergedSegments[idx];
         if (!seg || !en) return;
         en.textContent = seg.original || '';
-        if (zh && chineseChunks[idx]) zh.innerHTML = chineseChunks[idx];
         if (time) time.textContent = fmtTime(seg.start);
-        if (idxEl) idxEl.textContent = `${idx + 1}/${subtitleSegments.value.length}`;
+        if (idxEl) idxEl.textContent = `${idx + 1}/${mergedSegments.length}`;
         currentSubtitleIdx = idx;
     }
 
@@ -559,15 +591,14 @@ const app = createApp({
         if (!currentVideo.value || subtitleLoading.value) return;
         subtitleLoading.value = true;
         const bar = document.getElementById('subtitleBar');
-        const zh = document.getElementById('subtitleBarZh');
-        const en = document.getElementById('subtitleBarEn');
         if (!bar) { subtitleLoading.value = false; return; }
-
         bar.style.display = 'block';
-        zh.innerHTML = '<span class="dot-pulse">正在获取字幕并翻译</span>';
-        en.textContent = '';
+        document.getElementById('subtitleBarEn').textContent = '';
         document.getElementById('subtitleBarTime').textContent = '';
         document.getElementById('subtitleBarIdx').textContent = '';
+        // Show overlay loading
+        const ol = document.getElementById('subtitleOverlay');
+        if (ol) { ol.style.display = 'block'; ol.innerHTML = '<span class="dot-pulse">翻译中</span>'; }
         const loadStart = Date.now();
 
         try {
@@ -576,37 +607,37 @@ const app = createApp({
             const params = new URLSearchParams({video_id:v.id, source:v.source, embed_id:embedId});
             const r = await fetch('/api/translate?'+params);
             const d = await r.json();
-
             const elapsed = Date.now() - loadStart;
             if (elapsed < 500) await new Promise(r => setTimeout(r, 500 - elapsed));
 
             if (d.segments && d.segments.length) {
-                subtitleSegments.value = d.segments;
+                // 合并为 ~10 秒语义块
+                mergedSegments = mergeSegmentsByTime(d.segments, 8);
                 fullTranslation.value = d.translation || '';
-                chineseChunks = d.translation ? splitChineseToChunks(d.translation, d.segments.length) : [];
+                chineseChunks = d.translation ? splitChineseToChunks(d.translation, mergedSegments.length) : [];
+                subtitleSegments.value = d.segments; // 保留原始segments给时间同步
                 currentSubtitleIdx = 0;
-                showSubtitleInBar(0);
+                updateOverlay(0);
+                showBarInfo(0);
                 if (v.source !== 'bilibili') startTimeSync();
             } else if (d.translation) {
                 fullTranslation.value = d.translation;
-                subtitleSegments.value = []; chineseChunks = [];
-                zh.innerHTML = d.translation.replace(/\n/g, '<br>');
-                en.textContent = '(中文全文翻译)';
-            } else {
-                zh.textContent = d.error || '字幕未缓存, 请开VPN后获取';
+                if (ol) ol.innerHTML = `<div style="font-size:16px;line-height:1.7">${d.translation.replace(/\n/g,'<br>')}</div>`;
+            } else if (ol) {
+                ol.innerHTML = '<div style="color:#aaa">字幕未缓存, 请开VPN后获取</div>';
             }
-        } catch(e) { zh.textContent = '加载失败, 请重试'; }
+        } catch(e) { if (ol) ol.innerHTML = '<div style="color:#aaa">加载失败</div>'; }
         subtitleLoading.value = false;
     }
 
     window._navigateSubtitle = function(dir) {
         const newIdx = currentSubtitleIdx + dir;
-        if (newIdx >= 0 && newIdx < subtitleSegments.value.length) {
-            showSubtitleInBar(newIdx);
-            const seg = subtitleSegments.value[newIdx];
+        if (newIdx >= 0 && newIdx < mergedSegments.length) {
+            updateOverlay(newIdx);
+            showBarInfo(newIdx);
             const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
             if (iframe?.contentWindow) {
-                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[seg.start,true]}),'*');
+                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[mergedSegments[newIdx].start,true]}),'*');
             }
         }
     };
@@ -666,12 +697,13 @@ const app = createApp({
         }
     });
 
-    // Auto-update subtitle bar when currentTime changes
+    // Auto-update overlay when currentTime changes
     watch(currentTime, (t) => {
-        if (!t || t <= 0 || !subtitleSegments.value.length) return;
-        const idx = subtitleSegments.value.findIndex(s => t >= s.start && t <= s.start + (s.duration || 3));
+        if (!t || t <= 0 || !mergedSegments.length) return;
+        const idx = mergedSegments.findIndex(s => t >= s.start && t <= s.start + s.duration);
         if (idx >= 0 && idx !== currentSubtitleIdx) {
-            showSubtitleInBar(idx);
+            updateOverlay(idx);
+            showBarInfo(idx);
         }
     });
 
