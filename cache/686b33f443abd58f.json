@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_gMN2utxJAKQ",
+      "youtube_id": "gMN2utxJAKQ",
+      "source": "youtube",
+      "title": "The Midlife Career Advantage",
+      "url": "https://www.youtube.com/watch?v=gMN2utxJAKQ",
+      "thumbnail": "https://i.ytimg.com/vi/gMN2utxJAKQ/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "教育",
+      "description": "Learn how to be financially free (free workshop): https://go.lifestylebusiness.com/yts260603",
+      "published": 1780480838,
+      "published_str": "2026-06-03",
+      "embed_id": "gMN2utxJAKQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_rZHMzNCIdMU",
       "youtube_id": "rZHMzNCIdMU",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_1TIeBrEUGLo",
-      "youtube_id": "1TIeBrEUGLo",
-      "source": "youtube",
-      "title": "What Would Your 90-Year-Old Self Tell You?",
-      "url": "https://www.youtube.com/watch?v=1TIeBrEUGLo",
-      "thumbnail": "https://i.ytimg.com/vi/1TIeBrEUGLo/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "教育",
-      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260529",
-      "published": 1780048811,
-      "published_str": "2026-05-29",
-      "embed_id": "1TIeBrEUGLo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780476140.3909807
+  "_ts": 1780537297.406689
 }
