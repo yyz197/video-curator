@@ -1417,6 +1417,13 @@ def api_translate():
     # 1) 先查翻译缓存 (warmup每天预生成)
     ck = cache_key("translate", source, video_id or embed_id)
     if translate_cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
+        cached_segs = translate_cached.get("segments", [])
+        if cached_segs:
+            return jsonify({
+                "translation": translate_cached.get("translation", ""),
+                "segments": cached_segs[:800],
+                "cached": True,
+            })
         timed_data = get_transcript_timed(video)
         segments = (timed_data or {}).get("segments", [])
         return jsonify({
@@ -1444,10 +1451,10 @@ def api_translate():
                 cache_set(ck, {"translation": raw_text})
                 return jsonify({"translation": raw_text, "segments": segments[:800], "cached": False})
 
-            translated = _translate_segments(segments[:100])  # 首批100段, ~10分钟
+            translated = _translate_segments(segments[:100])
             if translated:
                 full = "\n".join(s.get("translated", s.get("original", "")) for s in translated)
-                cache_set(ck, {"translation": full})
+                cache_set(ck, {"translation": full, "segments": translated})  # 存完整分段
                 return jsonify({"translation": full, "segments": translated[:800], "cached": False})
             return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500
     except Exception:
