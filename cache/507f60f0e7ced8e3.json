@@ -1,0 +1,606 @@
+{
+  "translation": "- [德里克] 假设你想开车\n从纽约到旧金山。\n你该如何计算\n北美道路系统中有超过6400万个交叉路口，\n因此简化估算下，\n即使你每秒能检查十亿条路线，\n测试所有路线\n仍然需要超过10的200次方年。\n而这不仅仅是导航软件的问题。\n任何需要导航迷宫或障碍赛道的独立系统，\n比如机器人\n或电子游戏角色，\n都面临同样的问题。\n然而，谷歌或苹果地图\n只需四秒就能为你找到路线。\n那么这怎么可能呢？\n我们与频道2swap合作，\n他们制作了精彩的模拟和动画，\n一步步向你展示这些算法的工作原理。\n它们的起源可以追溯到1956年\n在阿姆斯特丹的一次购物之旅。\n（轻快音乐）\n艾兹格·迪杰斯特拉需要一个难题。\n他当时正在为ARMAC开发软件，\n这是一台早期计算机，\n由荷兰数学中心研制。\n它几乎准备就绪要亮相了。\n但当时，公众普遍认为计算机\n几乎毫无用处。\n实际上，如此无用，\n戴克斯特拉在填写结婚证时遇到了麻烦。\n- [卡斯珀模仿戴克斯特拉]\n申报自己的职业，\n而我说自己是一名程序员。\n但阿姆斯特丹市政当局\n拒绝接受这一申报，理由是\n根本没有这个职业。\n信不信由你，在\"职业\"一栏下，\n我的结婚证上写着一个荒谬的条目：\n\"理论物理学家\"。\n- [德里克] 于是戴克斯特拉想找一个具体的演示，\n来证明ARMAC计算机有多强大，即使对普通人来说也是如此。\n- ['戴克斯特拉'] 问题当然在于，\n要为非计算机领域的人做演示，\n你必须提出一个\n非数学专业人士也能理解的问题描述，\n而且他们必须能理解答案。\n- [德里克] 就在那次购物途中，\n他想到了完美的问题。\n- ['戴克斯特拉'] 从鹿特丹到格罗宁根\n最短的路线是什么？\n- [德里克] 换句话说，就是一个最短路径算法。\n这是荷兰的简化路线图。\n节点代表城市，\n连接它们的边代表道路。\n找出从鹿特丹到格罗宁根\n最短路径的最简单方法如下：\n从鹿特丹出发，\n我们首先探索它所有的相邻节点，\n寻找格罗宁根。\n由于格罗宁根并非这些相邻节点之一，\n我们将鹿特丹标记为已探索，并继续搜索。\n现在我们从这四个节点向外延伸，\n探索它们的所有相邻节点。\n我们就这样不断向外扩展，\n探索所有相邻节点，\n直到偶然发现格罗宁根。\n这种算法被称为广度优先搜索。\n它总能找到最短路径，\n因为它会先检查所有一步可达的节点，\n再检查两步可达的节点，以此类推。\n因此，如果存在一条从鹿特丹到格罗宁根的路径，\n且只需四步，\n我们本应在第四次迭代中找到它，但并没有。\n所以最短路径必定是五步。\n但这种方法存在一个问题。\n我的意思是，该算法假设所有道路\n长度相同，这显然不符合实际。\n因此，我们加入权重来表示这些节点之间的\n距离。\n现在最短路径变得难以计算。\n于是迪杰斯特拉需要一种更好的方法。\n- [迪杰斯特拉] 一天早上，我和年轻的未婚妻\n在阿姆斯特丹购物，感到疲惫，\n便坐在咖啡馆的露台上喝杯咖啡。\n我正思考能否解决这个问题。\n- [亨利] 他的想法是这样的。\n首先，他想要记录从起点到每个节点的\n最短距离。\n这也被称为其代价。\n他的目标，嗯，如果能\n找到从起点到某个节点的最短路径，\n那么他就可以从这个新节点出发，\n逐步构建其他最短路径，\n然后下一个，再下一个，依此类推。\n现在，起始节点的成本为零。\n但由于他实际上还没有探索\n图中的其余部分，\n他将所有其他节点的成本\n设为无穷大。",
+  "segments": [
+    {
+      "start": 0.7,
+      "duration": 1.0,
+      "original": "- [Derek] Say you wanna drive",
+      "translated": "- [德里克] 假设你想开车"
+    },
+    {
+      "start": 1.7,
+      "duration": 1.9,
+      "original": "from New York to San Francisco.",
+      "translated": "从纽约到旧金山。"
+    },
+    {
+      "start": 3.6,
+      "duration": 2.9,
+      "original": "How could you calculate\nthe absolute shortest path?",
+      "translated": "你该如何计算"
+    },
+    {
+      "start": 7.7,
+      "duration": 2.5,
+      "original": "There are over 64 million intersections",
+      "translated": "北美道路系统中有超过6400万个交叉路口，"
+    },
+    {
+      "start": 10.3,
+      "duration": 1.5,
+      "original": "in the North American road system,",
+      "translated": "因此简化估算下，"
+    },
+    {
+      "start": 11.8,
+      "duration": 4.7,
+      "original": "so a simplified estimate gives around\n10 to the 220 possible routes.",
+      "translated": "即使你每秒能检查十亿条路线，"
+    },
+    {
+      "start": 16.5,
+      "duration": 2.8,
+      "original": "Even if you could check a\nbillion routes per second,",
+      "translated": "测试所有路线"
+    },
+    {
+      "start": 19.3,
+      "duration": 1.1,
+      "original": "testing all of them",
+      "translated": "仍然需要超过10的200次方年。"
+    },
+    {
+      "start": 20.5,
+      "duration": 3.9,
+      "original": "would still take over 10 to the 200 years.",
+      "translated": "而这不仅仅是导航软件的问题。"
+    },
+    {
+      "start": 24.4,
+      "duration": 2.9,
+      "original": "And this isn't just a problem\nfor navigation software.",
+      "translated": "任何需要导航迷宫或障碍赛道的独立系统，"
+    },
+    {
+      "start": 27.3,
+      "duration": 2.1,
+      "original": "Any independent system like a robot",
+      "translated": "比如机器人"
+    },
+    {
+      "start": 29.4,
+      "duration": 2.8,
+      "original": "or a video game character\nthat needs to navigate a maze,",
+      "translated": "或电子游戏角色，"
+    },
+    {
+      "start": 32.2,
+      "duration": 3.6,
+      "original": "or obstacle course\nfaces this same problem.",
+      "translated": "都面临同样的问题。"
+    },
+    {
+      "start": 35.8,
+      "duration": 2.8,
+      "original": "And yet, Google or Apple\nMaps will find you the route",
+      "translated": "然而，谷歌或苹果地图"
+    },
+    {
+      "start": 38.5,
+      "duration": 1.7,
+      "original": "in only four seconds.",
+      "translated": "只需四秒就能为你找到路线。"
+    },
+    {
+      "start": 41.2,
+      "duration": 1.8,
+      "original": "So how is that possible?",
+      "translated": "那么这怎么可能呢？"
+    },
+    {
+      "start": 44.5,
+      "duration": 1.9,
+      "original": "Well, we teamed up with the channel 2swap,",
+      "translated": "我们与频道2swap合作，"
+    },
+    {
+      "start": 46.4,
+      "duration": 2.6,
+      "original": "who creates incredible\nsimulations and animations",
+      "translated": "他们制作了精彩的模拟和动画，"
+    },
+    {
+      "start": 49.0,
+      "duration": 3.0,
+      "original": "to show you step by step,\nhow these algorithms work.",
+      "translated": "一步步向你展示这些算法的工作原理。"
+    },
+    {
+      "start": 53.0,
+      "duration": 2.5,
+      "original": "They trace their origins\nback to a shopping trip",
+      "translated": "它们的起源可以追溯到1956年"
+    },
+    {
+      "start": 55.6,
+      "duration": 2.4,
+      "original": "in Amsterdam in 1956.",
+      "translated": "在阿姆斯特丹的一次购物之旅。"
+    },
+    {
+      "start": 57.9,
+      "duration": 2.6,
+      "original": "(jaunty music)",
+      "translated": "（轻快音乐）"
+    },
+    {
+      "start": 61.5,
+      "duration": 2.4,
+      "original": "Edsger Dijkstra needed a problem.",
+      "translated": "艾兹格·迪杰斯特拉需要一个难题。"
+    },
+    {
+      "start": 63.9,
+      "duration": 2.2,
+      "original": "He was working on software for ARMAC,",
+      "translated": "他当时正在为ARMAC开发软件，"
+    },
+    {
+      "start": 66.1,
+      "duration": 2.4,
+      "original": "an early computer developed\nat the mathematical center",
+      "translated": "这是一台早期计算机，"
+    },
+    {
+      "start": 68.4,
+      "duration": 1.1,
+      "original": "in the Netherlands.",
+      "translated": "由荷兰数学中心研制。"
+    },
+    {
+      "start": 69.5,
+      "duration": 1.9,
+      "original": "And it was almost ready to debut.",
+      "translated": "它几乎准备就绪要亮相了。"
+    },
+    {
+      "start": 71.5,
+      "duration": 2.3,
+      "original": "But at the time, the general\npublic considered computers",
+      "translated": "但当时，公众普遍认为计算机"
+    },
+    {
+      "start": 73.7,
+      "duration": 2.2,
+      "original": "to be practically useless.",
+      "translated": "几乎毫无用处。"
+    },
+    {
+      "start": 75.9,
+      "duration": 0.9,
+      "original": "So useless, in fact,",
+      "translated": "实际上，如此无用，"
+    },
+    {
+      "start": 76.8,
+      "duration": 3.2,
+      "original": "that Dijkstra ran into issues\nfiling his marriage license.",
+      "translated": "戴克斯特拉在填写结婚证时遇到了麻烦。"
+    },
+    {
+      "start": 80.1,
+      "duration": 2.0,
+      "original": "- [Casper's Dijkstra Impression] \nDutch marriage rights require you",
+      "translated": "- [卡斯珀模仿戴克斯特拉]"
+    },
+    {
+      "start": 82.1,
+      "duration": 1.6,
+      "original": "to state your profession,",
+      "translated": "申报自己的职业，"
+    },
+    {
+      "start": 83.7,
+      "duration": 3.1,
+      "original": "and I said that I was a programmer.",
+      "translated": "而我说自己是一名程序员。"
+    },
+    {
+      "start": 86.8,
+      "duration": 3.9,
+      "original": "But the municipal authorities\nof the town of Amsterdam",
+      "translated": "但阿姆斯特丹市政当局"
+    },
+    {
+      "start": 90.7,
+      "duration": 1.7,
+      "original": "didn't accept it on the ground",
+      "translated": "拒绝接受这一申报，理由是"
+    },
+    {
+      "start": 92.3,
+      "duration": 1.7,
+      "original": "that there was no such profession.",
+      "translated": "根本没有这个职业。"
+    },
+    {
+      "start": 95.2,
+      "duration": 3.4,
+      "original": "And believe it or not, that\nunder the heading \"profession,\"",
+      "translated": "信不信由你，在\"职业\"一栏下，"
+    },
+    {
+      "start": 98.6,
+      "duration": 3.0,
+      "original": "my marriage act shows\nthe ridiculous entry,",
+      "translated": "我的结婚证上写着一个荒谬的条目："
+    },
+    {
+      "start": 101.6,
+      "duration": 1.9,
+      "original": "\"theoretical physicist.\"",
+      "translated": "\"理论物理学家\"。"
+    },
+    {
+      "start": 105.9,
+      "duration": 2.6,
+      "original": "- [Derek] And so Dijkstra was\nlooking for a specific demo",
+      "translated": "- [德里克] 于是戴克斯特拉想找一个具体的演示，"
+    },
+    {
+      "start": 108.5,
+      "duration": 4.1,
+      "original": "to prove just how powerful ARMAC\nwas, even to the layperson.",
+      "translated": "来证明ARMAC计算机有多强大，即使对普通人来说也是如此。"
+    },
+    {
+      "start": 112.7,
+      "duration": 1.3,
+      "original": "- ['Dijkstra'] The problem of course,",
+      "translated": "- ['戴克斯特拉'] 问题当然在于，"
+    },
+    {
+      "start": 114.0,
+      "duration": 3.5,
+      "original": "is that for a demonstration\nfor non-computing people,",
+      "translated": "要为非计算机领域的人做演示，"
+    },
+    {
+      "start": 117.5,
+      "duration": 1.7,
+      "original": "you have to have a problem statement",
+      "translated": "你必须提出一个"
+    },
+    {
+      "start": 119.2,
+      "duration": 2.3,
+      "original": "that non-mathematicians can understand.",
+      "translated": "非数学专业人士也能理解的问题描述，"
+    },
+    {
+      "start": 122.3,
+      "duration": 2.0,
+      "original": "And they have to understand the answer.",
+      "translated": "而且他们必须能理解答案。"
+    },
+    {
+      "start": 125.4,
+      "duration": 1.4,
+      "original": "- [Derek] And during that shopping trip,",
+      "translated": "- [德里克] 就在那次购物途中，"
+    },
+    {
+      "start": 126.8,
+      "duration": 1.8,
+      "original": "he thought of the perfect problem.",
+      "translated": "他想到了完美的问题。"
+    },
+    {
+      "start": 129.5,
+      "duration": 1.1,
+      "original": "- ['Dijkstra'] What's the shortest way",
+      "translated": "- ['戴克斯特拉'] 从鹿特丹到格罗宁根"
+    },
+    {
+      "start": 130.7,
+      "duration": 2.7,
+      "original": "to travel from Rotterdam to Groningen?",
+      "translated": "最短的路线是什么？"
+    },
+    {
+      "start": 133.4,
+      "duration": 3.2,
+      "original": "- [Derek] In other words,\na shortest path algorithm.",
+      "translated": "- [德里克] 换句话说，就是一个最短路径算法。"
+    },
+    {
+      "start": 136.6,
+      "duration": 2.5,
+      "original": "Here's a simplified\ngraph of the Netherlands.",
+      "translated": "这是荷兰的简化路线图。"
+    },
+    {
+      "start": 139.1,
+      "duration": 1.6,
+      "original": "The nodes represent the cities,",
+      "translated": "节点代表城市，"
+    },
+    {
+      "start": 140.8,
+      "duration": 2.6,
+      "original": "and the edges connecting\nthem are the roads.",
+      "translated": "连接它们的边代表道路。"
+    },
+    {
+      "start": 143.3,
+      "duration": 1.7,
+      "original": "The simplest way to find the shortest path",
+      "translated": "找出从鹿特丹到格罗宁根"
+    },
+    {
+      "start": 145.1,
+      "duration": 3.0,
+      "original": "from Rotterdam to\nGroningen looks like this.",
+      "translated": "最短路径的最简单方法如下："
+    },
+    {
+      "start": 148.1,
+      "duration": 1.2,
+      "original": "Starting from Rotterdam,",
+      "translated": "从鹿特丹出发，"
+    },
+    {
+      "start": 149.2,
+      "duration": 2.3,
+      "original": "we're first going to\nexplore all its neighbors",
+      "translated": "我们首先探索它所有的相邻节点，"
+    },
+    {
+      "start": 151.6,
+      "duration": 1.1,
+      "original": "looking for Groningen.",
+      "translated": "寻找格罗宁根。"
+    },
+    {
+      "start": 152.6,
+      "duration": 2.5,
+      "original": "Since Groningen isn't one\nof these neighboring nodes,",
+      "translated": "由于格罗宁根并非这些相邻节点之一，"
+    },
+    {
+      "start": 155.2,
+      "duration": 3.7,
+      "original": "we'll mark Rotterdam as\nexplored, and keep searching.",
+      "translated": "我们将鹿特丹标记为已探索，并继续搜索。"
+    },
+    {
+      "start": 158.8,
+      "duration": 2.5,
+      "original": "So now we'll branch out\nfrom these four nodes",
+      "translated": "现在我们从这四个节点向外延伸，"
+    },
+    {
+      "start": 161.4,
+      "duration": 2.4,
+      "original": "to explore all of their neighbors.",
+      "translated": "探索它们的所有相邻节点。"
+    },
+    {
+      "start": 163.8,
+      "duration": 1.9,
+      "original": "And we keep branching out this way,",
+      "translated": "我们就这样不断向外扩展，"
+    },
+    {
+      "start": 165.7,
+      "duration": 1.6,
+      "original": "exploring all neighboring nodes,",
+      "translated": "探索所有相邻节点，"
+    },
+    {
+      "start": 167.3,
+      "duration": 2.1,
+      "original": "until we stumble upon Groningen.",
+      "translated": "直到偶然发现格罗宁根。"
+    },
+    {
+      "start": 170.7,
+      "duration": 2.4,
+      "original": "This algorithm is known\nas Breadth-First Search.",
+      "translated": "这种算法被称为广度优先搜索。"
+    },
+    {
+      "start": 173.1,
+      "duration": 1.7,
+      "original": "It will always find the shortest path",
+      "translated": "它总能找到最短路径，"
+    },
+    {
+      "start": 174.8,
+      "duration": 2.5,
+      "original": "because it checks all nodes one step away,",
+      "translated": "因为它会先检查所有一步可达的节点，"
+    },
+    {
+      "start": 177.3,
+      "duration": 2.9,
+      "original": "and then two steps away, and so on.",
+      "translated": "再检查两步可达的节点，以此类推。"
+    },
+    {
+      "start": 180.2,
+      "duration": 2.7,
+      "original": "So if there were a path\nfrom Rotterdam to Groningen",
+      "translated": "因此，如果存在一条从鹿特丹到格罗宁根的路径，"
+    },
+    {
+      "start": 182.9,
+      "duration": 0.8,
+      "original": "in four steps,",
+      "translated": "且只需四步，"
+    },
+    {
+      "start": 183.8,
+      "duration": 4.4,
+      "original": "we would've found it on the\nfourth iteration, but we didn't.",
+      "translated": "我们本应在第四次迭代中找到它，但并没有。"
+    },
+    {
+      "start": 188.2,
+      "duration": 2.9,
+      "original": "So the shortest path must be five steps.",
+      "translated": "所以最短路径必定是五步。"
+    },
+    {
+      "start": 191.2,
+      "duration": 2.0,
+      "original": "But there's a problem with this approach.",
+      "translated": "但这种方法存在一个问题。"
+    },
+    {
+      "start": 193.1,
+      "duration": 2.2,
+      "original": "I mean, the algorithm\nconsiders all these roads",
+      "translated": "我的意思是，该算法假设所有道路"
+    },
+    {
+      "start": 195.3,
+      "duration": 2.7,
+      "original": "to be the same length,\nwhich is obviously not true.",
+      "translated": "长度相同，这显然不符合实际。"
+    },
+    {
+      "start": 199.1,
+      "duration": 2.5,
+      "original": "So let's add weights\nto represent distances",
+      "translated": "因此，我们加入权重来表示这些节点之间的"
+    },
+    {
+      "start": 201.6,
+      "duration": 1.4,
+      "original": "between these nodes.",
+      "translated": "距离。"
+    },
+    {
+      "start": 203.0,
+      "duration": 3.1,
+      "original": "Now the shortest path is\nmuch harder to figure out.",
+      "translated": "现在最短路径变得难以计算。"
+    },
+    {
+      "start": 206.1,
+      "duration": 2.1,
+      "original": "So Dijkstra needed a better method.",
+      "translated": "于是迪杰斯特拉需要一种更好的方法。"
+    },
+    {
+      "start": 209.2,
+      "duration": 2.4,
+      "original": "- ['Dijkstra'] One morning I\nwas shopping in Amsterdam",
+      "translated": "- [迪杰斯特拉] 一天早上，我和年轻的未婚妻"
+    },
+    {
+      "start": 211.6,
+      "duration": 2.5,
+      "original": "with my young fiance, and tired,",
+      "translated": "在阿姆斯特丹购物，感到疲惫，"
+    },
+    {
+      "start": 214.1,
+      "duration": 3.4,
+      "original": "we sat down on the cafe terrace\nto drink a cup of coffee.",
+      "translated": "便坐在咖啡馆的露台上喝杯咖啡。"
+    },
+    {
+      "start": 217.5,
+      "duration": 3.1,
+      "original": "And I was just thinking about\nwhether I could do this.",
+      "translated": "我正思考能否解决这个问题。"
+    },
+    {
+      "start": 221.8,
+      "duration": 1.4,
+      "original": "- [Henry] His idea was this.",
+      "translated": "- [亨利] 他的想法是这样的。"
+    },
+    {
+      "start": 223.2,
+      "duration": 2.5,
+      "original": "First he wanted to keep track\nof the shortest distance",
+      "translated": "首先，他想要记录从起点到每个节点的"
+    },
+    {
+      "start": 225.7,
+      "duration": 1.7,
+      "original": "from the source to each node.",
+      "translated": "最短距离。"
+    },
+    {
+      "start": 227.4,
+      "duration": 2.1,
+      "original": "This is also known as its cost.",
+      "translated": "这也被称为其代价。"
+    },
+    {
+      "start": 230.4,
+      "duration": 2.6,
+      "original": "His goal, well, if he could\nfind the shortest path",
+      "translated": "他的目标，嗯，如果能"
+    },
+    {
+      "start": 233.0,
+      "duration": 1.7,
+      "original": "from the source to one node,",
+      "translated": "找到从起点到某个节点的最短路径，"
+    },
+    {
+      "start": 234.7,
+      "duration": 1.8,
+      "original": "then he could build up\nother shortest paths",
+      "translated": "那么他就可以从这个新节点出发，"
+    },
+    {
+      "start": 236.4,
+      "duration": 1.5,
+      "original": "starting from this new node,",
+      "translated": "逐步构建其他最短路径，"
+    },
+    {
+      "start": 237.9,
+      "duration": 2.1,
+      "original": "and then the next, and on and on.",
+      "translated": "然后下一个，再下一个，依此类推。"
+    },
+    {
+      "start": 241.1,
+      "duration": 2.3,
+      "original": "Now, the cost of the\nstarting node was zero.",
+      "translated": "现在，起始节点的成本为零。"
+    },
+    {
+      "start": 243.4,
+      "duration": 1.6,
+      "original": "But since he hadn't actually explored",
+      "translated": "但由于他实际上还没有探索"
+    },
+    {
+      "start": 245.0,
+      "duration": 1.1,
+      "original": "the rest of the graph yet,",
+      "translated": "图中的其余部分，"
+    },
+    {
+      "start": 246.2,
+      "duration": 3.4,
+      "original": "he set all the other nodes\nto a cost of infinity.",
+      "translated": "他将所有其他节点的成本"
+    },
+    {
+      "start": 249.5,
+      "duration": 1.9,
+      "original": "Then just like breadth-first search,",
+      "translated": "设为无穷大。"
+    }
+  ],
+  "_ts": 1780573359.794868
+}
