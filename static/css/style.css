@@ -1244,7 +1244,16 @@ body::before {
     display: flex; gap: 12px;
 }
 .subtitle-bar-zh-collapse {
-    display: block !important; margin-top: 0;
+    display: block !important; margin: 0 0 6px 0;
+    max-height: 50vh; overflow-y: auto;
+}
+.subtitle-bar-zh {
+    font-size: 15px; color: rgba(255,255,255,0.92); line-height: 1.6;
+    font-weight: 500; white-space: pre-wrap;
+}
+.subtitle-bar-en {
+    font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.4;
+    margin-bottom: 4px; padding-top: 6px; border-top: 1px solid #222;
 }
 .subtitle-bar-close {
     position: absolute; top: 6px; right: 12px;
