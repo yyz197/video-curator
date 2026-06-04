@@ -1015,6 +1015,14 @@ def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
     return None
 
 
+def fetch_bilibili_transcript(video_id: str) -> str:
+    return ""
+
+
+def _fetch_bilibili_transcript_raw(video_id: str) -> dict | None:
+    return None
+
+
 def get_transcript_for_video(video: dict) -> str:
     """统一入口 — 纯文本"""
     embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
@@ -1552,6 +1560,8 @@ def api_translate():
 
 NOTES_CACHE_DIR = Path(CACHE_DIR) / "notes"
 NOTES_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+NOTES_EXPORT_DIR = os.environ.get("NOTES_EXPORT_DIR", os.path.join(os.path.expanduser("~"), "Desktop", "视频笔记"))
 
 
 def _notes_json_path(video_id: str) -> Path:
