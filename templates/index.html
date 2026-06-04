@@ -530,26 +530,6 @@ const app = createApp({
     // ── Subtitles ──
     let currentSubtitleIdx = 0;
     let chineseChunks = [];
-    let mergedSegments = [];  // 合并后的语义块 (~10秒)
-
-    function mergeSegmentsByTime(raw, minDurationSec = 8) {
-        const merged = [];
-        let group = [];
-        for (let i = 0; i < raw.length; i++) {
-            group.push(raw[i]);
-            const totalDur = group.reduce((s, g) => s + (g.duration || 2), 0);
-            const nextGap = i + 1 < raw.length ? raw[i + 1].start - (raw[i].start + (raw[i].duration || 2)) : 99;
-            if (totalDur >= minDurationSec || nextGap > 2 || i === raw.length - 1) {
-                merged.push({
-                    start: group[0].start,
-                    duration: totalDur,
-                    original: group.map(g => g.original).join(' '),
-                });
-                group = [];
-            }
-        }
-        return merged;
-    }
 
     function splitChineseToChunks(text, count) {
         if (!text || count <= 0) return [];
@@ -565,8 +545,9 @@ const app = createApp({
 
     function updateOverlay(idx) {
         const ol = document.getElementById('subtitleOverlay');
-        if (!ol || idx < 0 || idx >= mergedSegments.length) return;
-        const seg = mergedSegments[idx];
+        const segs = subtitleSegments.value;
+        if (!ol || idx < 0 || idx >= segs.length) return;
+        const seg = segs[idx];
         const zh = chineseChunks[idx] || '';
         ol.innerHTML = (zh ? `<div style="font-size:18px;font-weight:600;margin-bottom:6px">${zh}</div>` : '')
             + `<div style="font-size:13px;color:rgba(255,255,255,0.6)">${seg.original}</div>`;
@@ -577,11 +558,11 @@ const app = createApp({
         const en = document.getElementById('subtitleBarEn');
         const time = document.getElementById('subtitleBarTime');
         const idxEl = document.getElementById('subtitleBarIdx');
-        const seg = mergedSegments[idx];
-        if (!seg || !en) return;
-        en.textContent = seg.original || '';
-        if (time) time.textContent = fmtTime(seg.start);
-        if (idxEl) idxEl.textContent = `${idx + 1}/${mergedSegments.length}`;
+        const segs = subtitleSegments.value;
+        if (!segs[idx] || !en) return;
+        en.textContent = segs[idx].original || '';
+        if (time) time.textContent = fmtTime(segs[idx].start);
+        if (idxEl) idxEl.textContent = `${idx + 1}/${segs.length}`;
         currentSubtitleIdx = idx;
     }
 
@@ -594,7 +575,6 @@ const app = createApp({
         document.getElementById('subtitleBarEn').textContent = '';
         document.getElementById('subtitleBarTime').textContent = '';
         document.getElementById('subtitleBarIdx').textContent = '';
-        // Show overlay loading
         const ol = document.getElementById('subtitleOverlay');
         if (ol) { ol.style.display = 'block'; ol.innerHTML = '<span class="dot-pulse">翻译中</span>'; }
         const loadStart = Date.now();
@@ -609,11 +589,10 @@ const app = createApp({
             if (elapsed < 500) await new Promise(r => setTimeout(r, 500 - elapsed));
 
             if (d.segments && d.segments.length) {
-                // 合并为 ~10 秒语义块
-                mergedSegments = mergeSegmentsByTime(d.segments, 8);
+                // SRT 块天然句子级, 直接用不合并
+                subtitleSegments.value = d.segments;
                 fullTranslation.value = d.translation || '';
-                chineseChunks = d.translation ? splitChineseToChunks(d.translation, mergedSegments.length) : [];
-                subtitleSegments.value = d.segments; // 保留原始segments给时间同步
+                chineseChunks = d.translation ? splitChineseToChunks(d.translation, d.segments.length) : [];
                 currentSubtitleIdx = 0;
                 updateOverlay(0);
                 showBarInfo(0);
@@ -629,13 +608,14 @@ const app = createApp({
     }
 
     window._navigateSubtitle = function(dir) {
+        const segs = subtitleSegments.value;
         const newIdx = currentSubtitleIdx + dir;
-        if (newIdx >= 0 && newIdx < mergedSegments.length) {
+        if (newIdx >= 0 && newIdx < segs.length) {
             updateOverlay(newIdx);
             showBarInfo(newIdx);
             const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
             if (iframe?.contentWindow) {
-                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[mergedSegments[newIdx].start,true]}),'*');
+                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[segs[newIdx].start,true]}),'*');
             }
         }
     };
@@ -697,8 +677,9 @@ const app = createApp({
 
     // Auto-update overlay when currentTime changes
     watch(currentTime, (t) => {
-        if (!t || t <= 0 || !mergedSegments.length) return;
-        const idx = mergedSegments.findIndex(s => t >= s.start && t <= s.start + s.duration);
+        const segs = subtitleSegments.value;
+        if (!t || t <= 0 || !segs.length) return;
+        const idx = segs.findIndex(s => t >= s.start && t <= s.start + (s.duration || 3));
         if (idx >= 0 && idx !== currentSubtitleIdx) {
             updateOverlay(idx);
             showBarInfo(idx);
