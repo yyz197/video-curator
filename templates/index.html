@@ -168,11 +168,18 @@
             <div class="video-player-container" style="position:relative" id="drawerPlayer"></div>
             <!-- 字幕条 -->
             <div class="subtitle-bar" id="subtitleBar" style="display:none">
-                <div class="subtitle-bar-zh" id="subtitleBarZh"></div>
                 <div class="subtitle-bar-en" id="subtitleBarEn"></div>
+                <div class="subtitle-bar-meta">
+                    <span id="subtitleBarTime"></span>
+                    <span id="subtitleBarIdx"></span>
+                </div>
+                <div class="subtitle-bar-zh-collapse" id="subtitleZhCollapse" style="display:none">
+                    <div class="subtitle-bar-zh" id="subtitleBarZh"></div>
+                </div>
+                <button class="subtitle-bar-toggle" id="subtitleBarToggle" onclick="document.getElementById('subtitleZhCollapse').style.display=document.getElementById('subtitleZhCollapse').style.display==='none'?'block':'none'">展开中译</button>
                 <button class="subtitle-bar-close" onclick="document.getElementById('subtitleBar').style.display='none'">✕</button>
-                <button class="subtitle-bar-prev" onclick="navigateSubtitle(-1)">◀</button>
-                <button class="subtitle-bar-next" onclick="navigateSubtitle(1)">▶</button>
+                <button class="subtitle-bar-prev" onclick="window._navigateSubtitle(-1)">◀</button>
+                <button class="subtitle-bar-next" onclick="window._navigateSubtitle(1)">▶</button>
             </div>
         </div>
         <div class="notes-content-column">
@@ -181,9 +188,9 @@
                 <button class="notes-tab" :class="{active:activeTab==='analysis'}" @click="activeTab='analysis'">📊 分析</button>
             </div>
             <div v-show="activeTab==='notes'" class="notes-tab-content" style="flex:1;display:flex;flex-direction:column">
-                <textarea class="notes-editor" v-model="notes" placeholder="在这里记录你的想法...支持 Markdown" style="flex:1;min-height:120px;margin:8px"></textarea>
+                <textarea class="notes-editor" v-model="notes" placeholder="在这里记录你的想法...支持 Markdown" style="flex:1;min-height:80px;max-height:200px;margin:8px"></textarea>
             </div>
-            <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column">
+            <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;max-height:250px">
                 <div v-if="analysisLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在分析</span></div>
                 <div v-else-if="analysis" v-html="renderedAnalysis" class="analysis-content" style="font-size:13px;line-height:1.8;flex:1"></div>
                 <div v-else style="text-align:center;color:var(--text-muted);padding:20px">分析暂不可用</div>
@@ -575,22 +582,27 @@ const app = createApp({
 
     function showSubtitleInBar(idx) {
         const bar = document.getElementById('subtitleBar');
-        const zh = document.getElementById('subtitleBarZh');
         const en = document.getElementById('subtitleBarEn');
-        if (!bar || idx >= subtitleSegments.value.length) return;
+        const time = document.getElementById('subtitleBarTime');
+        const idxEl = document.getElementById('subtitleBarIdx');
+        const zh = document.getElementById('subtitleBarZh');
+        if (!bar || idx < 0 || idx >= subtitleSegments.value.length) return;
         const seg = subtitleSegments.value[idx];
         bar.style.display = 'block';
-        // 中文翻译: 从fullTranslation中取对应段(简单取N段)
-        const transLines = (fullTranslation.value||'').split('\n').filter(l=>l.trim());
-        zh.textContent = transLines[Math.min(idx, transLines.length-1)] || '';
         en.textContent = seg.original || '';
+        time.textContent = fmtTime(seg.start);
+        idxEl.textContent = `${idx + 1}/${subtitleSegments.value.length}`;
+        // Full Chinese translation (collapsible)
+        if (fullTranslation.value) {
+            zh.innerHTML = fullTranslation.value.replace(/\n/g, '<br>');
+            document.getElementById('subtitleBarToggle').style.display = '';
+        }
         currentSubtitleIdx = idx;
     }
-    window.navigateSubtitle = function(dir) {
+    window._navigateSubtitle = function(dir) {
         const newIdx = currentSubtitleIdx + dir;
         if (newIdx >= 0 && newIdx < subtitleSegments.value.length) {
             showSubtitleInBar(newIdx);
-            // Jump video to segment time
             const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
             if (iframe) {
                 const seg = subtitleSegments.value[newIdx];
