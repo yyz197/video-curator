@@ -1176,9 +1176,13 @@ def api_videos():
             if q in v["title"].lower() or q in v.get("description", "").lower() or q in v["author"].lower()
         ]
 
-    # 视频质量评分
+    # 视频质量评分 + 加载缓存摘要
     for v in all_videos:
         v["score"] = _video_score(v)
+        # 如果有预缓存的摘要, 附加到视频数据
+        ck_sum = cache_key("summary", v["source"], v["id"])
+        if not v.get("summary") and (s_cached := cache_get_with_ttl(ck_sum, SUMMARY_CACHE_TTL)):
+            v["summary"] = s_cached.get("summary", "")
 
     # 偏好加权
     if preferred_cats:

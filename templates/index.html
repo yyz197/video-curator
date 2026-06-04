@@ -652,11 +652,17 @@ const app = createApp({
         if (!bar || idx < 0 || idx >= subtitleSegments.value.length) return;
         const seg = subtitleSegments.value[idx];
         bar.style.display = 'block';
-        // Chinese primary (from merged split)
-        zh.innerHTML = (seg.translated || seg.original || '').replace(/\n/g, '<br>');
-        document.getElementById('subtitleZhCollapse').style.display = 'block';
-        document.getElementById('subtitleBarToggle').textContent = '收起中译';
-        // English secondary (smaller)
+        // Chinese: full translation (auto-scroll to approximate position)
+        if (fullTranslation.value) {
+            zh.innerHTML = fullTranslation.value.replace(/\n/g, '<br>');
+            document.getElementById('subtitleZhCollapse').style.display = 'block';
+            document.getElementById('subtitleBarToggle').textContent = '收起中译';
+        } else {
+            zh.innerHTML = (seg.translated || seg.original || '');
+            document.getElementById('subtitleZhCollapse').style.display = 'block';
+            document.getElementById('subtitleBarToggle').textContent = '收起';
+        }
+        // English: current segment text
         en.textContent = seg.original || '';
         time.textContent = fmtTime(seg.start);
         idxEl.textContent = `${idx + 1}/${subtitleSegments.value.length}`;
