@@ -16,7 +16,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Knuth talked about \"Literate Programming\" over forty years ago, but what does it mean to have code that a developer and a client can agree on? Dr Robert Chatley of Imperial College London demonstrates how it might work. \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting",
       "published": 1780061412,
       "published_str": "2026-05-29",
@@ -41,7 +41,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Long division can be arduous - division in general is something that even computer processors try to avoid with a simple technique. Matt Godbolt demos it and then shows how a simple C program can cause a compiler to employ this trick. \n\nComputerphile is supported by Jane Street. Learn more about the",
       "published": 1779800722,
       "published_str": "2026-05-26",
@@ -66,7 +66,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Learn more and apply to Jane Street’s WiSE program in New York, London or Hong Kong: https://jane-st.co/Computerphile-WiSE-2026 (episode sponsor)\nProfessor Azalea Raad leads the Veritas Lab at Imperial College London... More information about this video in the full description below.\n\nThis video is ",
       "published": 1779111020,
       "published_str": "2026-05-18",
@@ -91,7 +91,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "The PDP1 was a groundbreaking computer from the 1950's - but where does it fit into computing history and how would you use it? Thanks to Angelo Papenhoff from \"Obsolescence Guaranteed\" for demonstrating the PiDP1 emulator!\n\nObsolescence Guaranteed: https://obsolescence.dev/ \n\nMinskytron online: htt",
       "published": 1778078700,
       "published_str": "2026-05-06",
@@ -116,7 +116,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "When you're setting your hardware design out using automated tools is essential, but what if the tools themselves have bugs in them? John P Wickerson is based at Imperial College London.\n\nThe paper that John's team wrote about the work: https://johnwickerson.github.io/papers/fuzzing_pnr.pdf\n\nAn acce",
       "published": 1777467628,
       "published_str": "2026-04-29",
@@ -126,5 +126,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1780572539.11848
+  "_ts": 1780576486.949646
 }

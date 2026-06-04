@@ -16,7 +16,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Numberphile creator Brady Haran sees Gerd Faltings receive the Abel Prize - and goes behind the scenes at this prestigious event in Norway. Playlist from the event (with the longer interviews) at https://www.youtube.com/playlist?list=PLt5AfwLFPxWL4w1j3Xc3hZekFUNHGHCfq\n\nAbel Prize website: https://ab",
       "published": 1780499492,
       "published_str": "2026-06-03",
@@ -41,7 +41,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Featuring Neil Sloane - more details below. Gear Train (episode sponsor) is at https://www.metmo.co.uk/collections/gear-train with discount code NUMBERPHILE10OFF -- More links & stuff in full description below ↓↓↓\n\nMore Neil Sloane videos at: https://www.youtube.com/playlist?list=PLt5AfwLFPxWJXQqPe_",
       "published": 1779890426,
       "published_str": "2026-05-27",
@@ -66,7 +66,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Featuring Neil Sloane, founder of the OEIS... See the extra patterns and variations (including three knights) at https://youtu.be/VgmDuBCayPw\nMore links & stuff in full description below ↓↓↓\n\nWith thanks also to Jonas Karlsson - https://jonka364.github.io/\n\nNeil Sloane is the founder of the On-Line ",
       "published": 1778591101,
       "published_str": "2026-05-12",
@@ -91,7 +91,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Rubik's Cube combinations quickly lead to some unimaginably large numbers. More links & stuff in full description below ↓↓↓\n\nExtra footage on odd-numbered cubes: https://youtu.be/CTb7RyTwoQ0\n\nFeaturing Richard Elwes. More Richard on Numberphile: https://www.youtube.com/playlist?list=PLt5AfwLFPxWI42W",
       "published": 1777900325,
       "published_str": "2026-05-04",
@@ -116,7 +116,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Hannah Fry returns to Numberphile to showcase her art skills (and show us her new portrait at The Royal Society). See the Objectivity video (for more about the REAL artwork) at https://youtu.be/3HLxB5LbrDU\nMore links & stuff in full description below ↓↓↓\n\n(Real) artist Chloe Barnes can be found at: ",
       "published": 1776176837,
       "published_str": "2026-04-14",
@@ -126,5 +126,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1780572538.972589
+  "_ts": 1780576486.791182
 }

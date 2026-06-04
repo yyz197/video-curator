@@ -16,7 +16,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "科学科普",
       "description": "A giant spinning wheel in space sounds like science fiction but engineers are already working on technology that could make artificial gravity a reality. In this video, we explore the future of space stations designed to create gravity through rotation, why the human body struggles to survive in spa",
       "published": 1780531218,
       "published_str": "2026-06-04",
@@ -41,7 +41,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "科学科普",
       "description": "In the 1930s, the United States launched a bold environmental experiment — it built a forest stretching from Canada to Texas. This massive reforestation project was designed to stop deadly dust storms and restore life to the Great Plains after the Dust Bowl crisis. Millions of trees were planted acr",
       "published": 1780527612,
       "published_str": "2026-06-04",
@@ -66,7 +66,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "科学科普",
       "description": "Satellites have detected enormous waves reaching heights of up to 115 feet—and some of them traveled across entire oceans. Unlike ordinary storm waves, these giants can form from powerful weather systems, unusual ocean conditions, and rare wave interactions that concentrate vast amounts of energy in",
       "published": 1780509730,
       "published_str": "2026-06-04",
@@ -91,7 +91,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "科学科普",
       "description": "In 1914, explorer Ernest Shackleton and his crew set out to accomplish one of the most ambitious expeditions in history: crossing Antarctica. Instead, their ship, the Endurance, became trapped in sea ice, was slowly crushed, and eventually sank beneath the frozen waters of the Weddell Sea. New under",
       "published": 1780495205,
       "published_str": "2026-06-03",
@@ -116,7 +116,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "科学科普",
       "description": "Imagine waking up and finding that an entire street, building, or neighborhood has disappeared into a giant hole in the ground.\r\n\r\nAround the world, massive sinkholes are opening without warning, swallowing roads, cars, homes, and even entire sections of cities. Some appear suddenly, while others gr",
       "published": 1780495109,
       "published_str": "2026-06-03",
@@ -126,5 +126,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1780572538.192449
+  "_ts": 1780576484.332583
 }

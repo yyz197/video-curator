@@ -16,7 +16,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Ovetta Sampson, Director of UX for AI compute enablement at Google shares what she hopes the latest AI capabilities can do, from augmenting some of the work that humans are doing thus increasing the speed of how we solve some of the perennial human problems. \n\nWatch more People of AI → https://goo.g",
       "published": 1737162025,
       "published_str": "2025-01-18",
@@ -41,7 +41,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Is AI a medium or tool? Artist Douglas Edrick Stanley and Dean of Research at Geneva University of Art and Design Anthony Masure answers this question. For more information, watch the People of AI podcast episode, “The intersection of AI, art, and design with Douglas Edric Stanley and Anthony Masure",
       "published": 1736892009,
       "published_str": "2025-01-15",
@@ -66,7 +66,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Hear about Dr. Oliver Aalami’s journey on incorporating AI in the healthcare industry and his passion for integrating technology in patient care. For more information, head over to the People of AI podcast episode, “Digital health with Dr. Oliver Aalami.”\n\nWatch more People of AI → https://goo.gle/P",
       "published": 1733504725,
       "published_str": "2024-12-07",
@@ -91,7 +91,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "How can you use NotebookLM outside of your developer projects? Well, maybe our guests on this episode can help fuel your curiosity. \n\nWatch more People of AI → https://goo.gle/PAI\nSubscribe to the TensorFlow channel → https://goo.gle/TensorFlow\n\n#TensorFlow #PeopleofAI\n\nSpeaker: Ashley Oldacre\nProdu",
       "published": 1732222813,
       "published_str": "2024-11-22",
@@ -116,7 +116,7 @@
       "danmaku": "",
       "likes": "",
       "likes_raw": 0,
-      "category": "教育",
+      "category": "数学计算机",
       "description": "Find out what it means to be not only a person of AI, but responsibly. To learn more, head over to the related video “Responsible AI and emerging technology panel at DevFest Silicon Valley.”\n\nWatch more People of AI → https://goo.gle/PAI\nSubscribe to the TensorFlow channel → https://goo.gle/TensorFl",
       "published": 1731690017,
       "published_str": "2024-11-16",
@@ -126,5 +126,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1780572540.218265
+  "_ts": 1780576487.616323
 }
