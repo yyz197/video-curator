@@ -463,7 +463,7 @@ const app = createApp({
         if (video.source === 'bilibili') {
             container.innerHTML = '<iframe src="https://player.bilibili.com/player.html?bvid=' + embedId + '&autoplay=0" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
         } else {
-            container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
+            container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
         }
         // 字幕叠加层
         const overlay = document.createElement('div');
