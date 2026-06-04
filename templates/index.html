@@ -2,118 +2,70 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>视频精选 — Video Curator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>YouTube 精选 — Video Curator</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
 </head>
 <body>
 <div id="app">
 
-<!-- ====== Header ====== -->
 <header class="header">
     <div class="header-inner">
-        <div class="logo">
-            <span class="logo-icon">🎬</span>
-            <h1>视频精选</h1>
-            <span class="logo-sub">Video Curator</span>
-        </div>
+        <div class="logo"><span class="logo-icon">🎬</span><h1>YouTube 精选</h1></div>
         <div class="search-box">
-            <input type="text" class="search-input" v-model="searchQuery" @input="onSearchInput"
-                   placeholder="搜索视频标题、作者、描述..." @keydown.escape="clearSearch">
+            <input type="text" class="search-input" v-model="searchQuery" @input="onSearchInput" placeholder="搜索..." @keydown.escape="clearSearch">
             <button class="search-clear" v-show="searchQuery" @click="clearSearch">&times;</button>
         </div>
         <div class="header-actions">
-            <button class="icon-btn" @click="toggleDarkMode" title="暗色模式" v-text="darkMode ? '☀️' : '🌙'"></button>
-            <button class="icon-btn" @click="favoritesOpen = !favoritesOpen" title="收藏列表">⭐</button>
+            <button class="icon-btn" @click="toggleDarkMode" title="暗色" v-text="darkMode?'☀️':'🌙'"></button>
+            <button class="icon-btn" @click="favoritesOpen=!favoritesOpen" title="收藏">⭐</button>
+            <button class="icon-btn" @click="showWatchedOnly=!showWatchedOnly" :class="{active:showWatchedOnly}" title="未看">👁</button>
         </div>
-        <nav class="nav-tabs">
-            <button class="tab" :class="{active:source==='all'}" @click="switchSource('all')">全部</button>
-            <button class="tab" :class="{active:source==='bilibili'}" @click="switchSource('bilibili')">B站</button>
-            <button class="tab" :class="{active:source==='youtube'}" @click="switchSource('youtube')">YouTube</button>
-        </nav>
     </div>
 </header>
 
-<!-- ====== Filter Bar ====== -->
 <div class="filter-bar">
     <div class="filter-inner">
-        <div class="filter-label">分类：</div>
         <div class="filter-tags">
             <button class="filter-tag" :class="{active:category===''}" @click="setCategory('')">全部</button>
-            <button v-for="cat in categories" :key="cat" class="filter-tag"
-                    :class="{active:category===cat}" @click="setCategory(cat)" v-text="cat"></button>
+            <button v-for="cat in categories" :key="cat" class="filter-tag" :class="{active:category===cat}" @click="setCategory(cat)" v-text="cat"></button>
         </div>
         <div class="filter-actions">
             <select class="sort-select" v-model="sort" @change="fetchVideos(true)">
                 <option value="score">综合排序</option>
                 <option value="time">最新发布</option>
                 <option value="views">播放最多</option>
-                <option value="likes">点赞最多</option>
             </select>
-            <label class="toggle-label" v-if="source!=='youtube'">
-                <input type="checkbox" v-model="essence" @change="fetchVideos(true)"><span>✨ 精华</span>
-            </label>
-            <button class="btn-refresh" @click="prefPanelOpen=true">⚙️ 偏好</button>
             <button class="btn-refresh" @click="fetchVideos(true)">🔄 刷新</button>
         </div>
     </div>
 </div>
 
-<!-- ====== Status Bar ====== -->
-<div class="status-bar">
-    <span class="status-text" v-text="statusMsg"></span>
+<div class="status-bar"><span class="status-text" v-text="statusMsg"></span></div>
+
+<!-- Dual Tab Bar -->
+<div class="dual-tabs">
+    <button class="dual-tab" :class="{active:activeTab==='featured'}" @click="switchTo('featured')">✨ 精选推荐</button>
+    <button class="dual-tab" :class="{active:activeTab==='newest'}" @click="switchTo('newest')">🆕 最新发布</button>
 </div>
 
 <!-- ====== Video Grid ====== -->
 <main class="video-grid" id="videoGrid">
-    <!-- Skeleton -->
-    <template v-if="isLoading && videos.length===0">
-        <div v-for="n in 8" :key="'s'+n" class="skeleton-card">
-            <div class="skeleton-thumb"></div>
-            <div class="skeleton-body">
-                <div class="skeleton-line wide"></div>
-                <div class="skeleton-line medium"></div>
-                <div class="skeleton-line short"></div>
+    <template v-if="isLoading&&videos.length===0">
+        <div v-for="n in 6" :key="'s'+n" class="skeleton-card">
+            <div class="skeleton-thumb"></div><div class="skeleton-body">
+                <div class="skeleton-line wide"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div>
             </div>
         </div>
     </template>
-
-    <!-- Hero Card -->
-    <div v-if="!isLoading && videos.length && !search && !category && page===1" class="hero-card" @click="openDrawer(videos[0])">
-        <div class="hero-thumb">
-            <img v-if="videos[0].thumbnail" :src="videos[0].thumbnail" loading="eager" alt=""
-                 @error="e => e.target.style.display='none'">
-            <span class="hero-source-badge" :class="videos[0].source==='bilibili'?'bilibili':'youtube'"
-                  v-text="videos[0].source==='bilibili'?'B站':'YouTube'"></span>
-            <span class="hero-duration-float" v-if="videos[0].duration" v-text="videos[0].duration"></span>
-        </div>
-        <div class="hero-body">
-            <h3 class="hero-title" v-text="videos[0].title"></h3>
-            <div class="hero-meta">
-                <span>👤 [[ videos[0].author ]]</span>
-                <span v-if="videos[0].published_str">📅 [[ videos[0].published_str ]]</span>
-                <span v-if="videos[0].views">👁 [[ videos[0].views ]]</span>
-            </div>
-            <div class="hero-tags">
-                <span class="card-category" v-text="videos[0].category||'未分类'"></span>
-                <span class="card-duration-badge" v-if="videos[0].duration_badge" v-text="videos[0].duration_badge"></span>
-            </div>
-            <div class="hero-summary" v-if="videos[0].summary" v-text="videos[0].summary"></div>
-        </div>
-    </div>
-
-    <!-- Section Header -->
-    <div v-if="!isLoading && videos.length" class="section-header" v-text="sort==='time'?'🆕 最新内容':'✨ 精选推荐'"></div>
-
-    <!-- Video Cards -->
-    <div v-for="(v, i) in displayVideos" :key="v.id" class="video-card card-enter"
-         :style="'animation-delay:'+i*40+'ms'" @click="openDrawer(v)" :data-video-id="v.id">
+    <div v-if="!isLoading&&videos.length" class="section-header" v-text="activeTab==='featured'?'✨ 精选推荐':'🆕 最新发布'"></div>
+    <div v-for="(v, i) in videos" :key="v.id" class="video-card card-enter"
+         :style="'animation-delay:'+i*40+'ms'" @click="openDrawer(v)">
         <div class="card-thumb">
-            <img v-if="v.thumbnail" :src="v.thumbnail" loading="lazy" alt=""
-                 @error="e => e.target.style.display='none'">
-            <span class="card-source-tag" :class="v.source==='bilibili'?'source-bilibili':'source-youtube'"
-                  v-text="v.source==='bilibili'?'B站':'YouTube'"></span>
+            <img v-if="v.thumbnail" :src="v.thumbnail" loading="lazy" @error="e=>e.target.style.display='none'">
+            <span class="card-source-tag source-youtube">YouTube</span>
+            <span class="card-viewed-badge" v-if="isWatched(v.id)">✅ 已看</span>
             <button class="card-fav-btn" :class="{favorited:isFaved(v.id)}" @click.stop="toggleFav(v)" v-text="isFaved(v.id)?'⭐':'☆'"></button>
             <span class="card-duration-float" v-if="v.duration" v-text="v.duration"></span>
         </div>
@@ -134,46 +86,30 @@
     </div>
 </main>
 
-<!-- ====== Empty State ====== -->
-<div class="empty-state" v-if="!isLoading && videos.length===0">
-    <div class="empty-icon">📭</div>
-    <h2 v-text="search ? '未找到匹配视频' : '暂无视频'"></h2>
-    <p v-text="search ? '尝试其他关键词' : '换个分类或刷新试试'"></p>
+<div class="empty-state" v-if="!isLoading&&videos.length===0">
+    <div class="empty-icon">📭</div><h2>暂无视频</h2><p>换个分类或刷新试试</p>
 </div>
 
-<!-- ====== Load More ====== -->
-<div class="load-more" v-if="hasMore && !isLoading">
-    <button class="btn-load-more" @click="loadMore">加载更多</button>
-</div>
-
-<!-- ====== Back to Top ====== -->
 <button class="back-to-top" :class="{visible:scrollY>600}" @click="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<!-- ====== Notes Drawer ====== -->
+<!-- ====== Drawer ====== -->
 <div class="notes-overlay" v-if="drawerOpen" @click="closeDrawer"></div>
 <div class="notes-drawer" :class="{open:drawerOpen}">
     <div class="notes-drawer-header">
         <div class="notes-drawer-header-info">
             <h3 v-text="currentVideo?.title"></h3>
             <div class="notes-drawer-header-meta">
-                <span v-text="currentVideo?.author"></span>
-                <span v-text="currentVideo?.duration"></span>
-                <span v-text="currentVideo?.views"></span>
+                <span v-text="currentVideo?.author"></span><span v-text="currentVideo?.duration"></span><span v-text="currentVideo?.views"></span>
             </div>
         </div>
         <button class="icon-btn notes-drawer-close" @click="closeDrawer">&times;</button>
     </div>
     <div class="notes-drawer-body">
         <div class="notes-player-column">
-            <div class="video-player-container" style="position:relative" id="drawerPlayer"></div>
-            <!-- 字幕条 -->
+            <div class="video-player-container" id="drawerPlayer"></div>
             <div class="subtitle-bar" id="subtitleBar" style="display:none">
-                <div class="subtitle-bar-zh" id="subtitleBarZh"></div>
                 <div class="subtitle-bar-en" id="subtitleBarEn"></div>
-                <div class="subtitle-bar-meta">
-                    <span id="subtitleBarTime"></span>
-                    <span id="subtitleBarIdx"></span>
-                </div>
+                <div class="subtitle-bar-meta"><span id="subtitleBarTime"></span><span id="subtitleBarIdx"></span></div>
                 <button class="subtitle-bar-close" onclick="document.getElementById('subtitleBar').style.display='none'">✕</button>
                 <button class="subtitle-bar-prev" onclick="window._navigateSubtitle(-1)">◀</button>
                 <button class="subtitle-bar-next" onclick="window._navigateSubtitle(1)">▶</button>
@@ -181,530 +117,157 @@
         </div>
         <div class="notes-content-column">
             <div class="notes-tabs">
-                <button class="notes-tab active" @click="activeTab='analysis'">📊 分析</button>
+                <button class="notes-tab" :class="{active:drawerTab==='analysis'}" @click="drawerTab='analysis'">📊 分析</button>
+                <button class="notes-tab" :class="{active:drawerTab==='mindmap'}" @click="drawerTab='mindmap'">🧠 导图</button>
             </div>
-            <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;max-height:45vh">
+            <div v-show="drawerTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column">
                 <div v-if="analysisLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在分析</span></div>
                 <div v-else-if="analysis" v-html="renderedAnalysis" class="analysis-content" style="font-size:13px;line-height:1.8;flex:1"></div>
                 <div v-else style="text-align:center;color:var(--text-muted);padding:20px">分析暂不可用</div>
+            </div>
+            <div v-show="drawerTab==='mindmap'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column">
+                <div v-if="mindmapLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">生成思维导图</span></div>
+                <div v-else-if="mindmap" v-html="renderedMindmap" style="font-size:13px;line-height:1.8;flex:1;white-space:pre-wrap"></div>
+                <div v-else style="text-align:center;color:var(--text-muted);padding:20px">
+                    <button class="btn-refresh" @click="generateMindmap" :disabled="mindmapLoading">🧠 生成思维导图</button>
+                    <div style="margin-top:8px;font-size:11px">基于字幕生成知识结构</div>
+                </div>
+                <div v-if="mindmap" style="padding:8px;border-top:1px solid var(--border);margin-top:8px">
+                    <button class="btn-refresh" @click="exportMindmap" style="font-size:11px">📥 下载 Markdown</button>
+                </div>
             </div>
         </div>
     </div>
     <div class="notes-actions">
         <a class="notes-link-btn" :href="currentVideo?.url" target="_blank">🔗 外链观看</a>
         <button class="notes-translate-btn" @click="loadSubtitles" :disabled="subtitleLoading">🌐 翻译/字幕</button>
+        <button class="notes-link-btn" @click="markWatched(currentVideo)" v-if="currentVideo&&!isWatched(currentVideo.id)">✅ 标记已看</button>
     </div>
 </div>
 
-<!-- ====== Favorites Panel ====== -->
+<!-- Favorites + Toast -->
 <div class="favorites-overlay" :class="{open:favoritesOpen}" @click="favoritesOpen=false"></div>
 <div class="favorites-panel" :class="{open:favoritesOpen}">
-    <div class="favorites-header">
-        <h3>⭐ 我的收藏</h3>
-        <button class="icon-btn" @click="favoritesOpen=false">&times;</button>
-    </div>
+    <div class="favorites-header"><h3>⭐ 收藏</h3><button class="icon-btn" @click="favoritesOpen=false">&times;</button></div>
     <div class="favorites-list" v-if="favorites.length">
         <div v-for="fav in favorites" :key="fav.id" class="fav-item" @click="window.open(fav.url,'_blank')">
             <img v-if="fav.thumbnail" :src="fav.thumbnail" class="fav-item-thumb" @error="e=>e.target.style.display='none'">
-            <div class="fav-item-info">
-                <div class="fav-item-title" v-text="fav.title"></div>
-                <div class="fav-item-author" v-text="fav.author"></div>
-            </div>
+            <div class="fav-item-info"><div class="fav-item-title" v-text="fav.title"></div><div class="fav-item-author" v-text="fav.author"></div></div>
             <button class="fav-item-remove" @click.stop="removeFav(fav.id)">&times;</button>
         </div>
     </div>
     <div class="favorites-empty" v-else>暂无收藏</div>
 </div>
 
-<!-- ====== Preferences Panel ====== -->
-<div class="pref-overlay" :class="{open:prefPanelOpen}" @click="prefPanelOpen=false"></div>
-<div class="pref-panel" :class="{open:prefPanelOpen}">
-    <div class="pref-header">
-        <h3>⚙️ 偏好设置</h3>
-        <button class="icon-btn" @click="prefPanelOpen=false">&times;</button>
-    </div>
-    <div class="pref-body">
-        <p class="pref-desc">选择你感兴趣的内容领域，我们会优先推荐相关视频。</p>
-        <div class="pref-grid">
-            <div v-for="c in allCategories" :key="c" class="pref-chip"
-                 :class="{selected:prefs.includes(c)}" @click="togglePref(c)" v-text="c"></div>
-        </div>
-        <button class="pref-save" @click="savePrefs">保存偏好</button>
-    </div>
+<div class="toast-container"><div v-for="t in toasts" :key="t.id" class="toast" :class="t.type" v-text="t.msg"></div></div>
+<footer class="footer"><p>YouTube 精选 · 每日更新</p></footer>
+
 </div>
-
-<!-- ====== Toast ====== -->
-<div class="toast-container">
-    <div v-for="t in toasts" :key="t.id" class="toast" :class="t.type" v-text="t.msg"></div>
-</div>
-
-<!-- ====== Footer ====== -->
-<footer class="footer"><p>视频精选 · 每日更新 · 聚焦学习与深度内容</p></footer>
-
-</div><!-- #app -->
 
 <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.4.21/vue.global.js"></script>
 <script>
-const { createApp, ref, reactive, computed, watch, onMounted, onUnmounted, nextTick } = Vue;
+const { createApp, ref, computed, watch, onMounted, onUnmounted } = Vue;
+const app = createApp({ setup() {
 
-const app = createApp({
-  setup() {
-    // ── Core State ──
-    const videos = ref([]);
-    const total = ref(0);
-    const page = ref(1);
-    const source = ref('all');
-    const category = ref('');
-    const search = ref('');
-    const searchQuery = ref('');
-    const sort = ref(localStorage.getItem('vc-sort') || 'score');
-    const prefs = ref(JSON.parse(localStorage.getItem('vc-prefs')||'[]'));
-    const essence = ref(localStorage.getItem('vc-essence')==='true');
-    const isLoading = ref(false);
-    const hasMore = ref(false);
-    const categories = ref([]);
-    const allCategories = ['知识','科学科普','科技','财经商业','人文历史','纪录片','校园学习','社科法律','职业职场','设计创意','计算机技术','数码','资讯'];
+const videos = ref([]); const total = ref(0); const page = ref(1);
+const category = ref(''); const search = ref(''); const searchQuery = ref('');
+const sort = ref(localStorage.getItem('vc-sort')||'score');
+const prefs = ref(JSON.parse(localStorage.getItem('vc-prefs')||'[]'));
+const essence = ref(false); const isLoading = ref(false); const hasMore = ref(false);
+const categories = ref([]); const activeTab = ref('featured');
 
-    // ── Drawer State ──
-    const drawerOpen = ref(false);
-    const currentVideo = ref(null);
-    const notes = ref('');
-    const analysis = ref('');
-    const analysisLoading = ref(false);
-    const activeTab = ref('notes');
-    const chatHistory = ref([]);
-    const chatInput = ref('');
-    const chatLoading = ref(false);
-    const subtitleSegments = ref([]);
-    const subtitleLoading = ref(false);
-    const fullTranslation = ref('');
-    const currentTime = ref(0);
+const drawerOpen = ref(false); const currentVideo = ref(null);
+const notes = ref(''); const analysis = ref(''); const analysisLoading = ref(false);
+const drawerTab = ref('analysis'); const mindmap = ref(''); const mindmapLoading = ref(false);
 
-    // ── UI State ──
-    const darkMode = ref(localStorage.getItem('vc-dark-mode')==='dark' || (!localStorage.getItem('vc-dark-mode') && window.matchMedia('(prefers-color-scheme:dark)').matches));
-    const scrollY = ref(0);
-    const favoritesOpen = ref(false);
-    const prefPanelOpen = ref(false);
-    const favorites = ref(JSON.parse(localStorage.getItem('vc-favorites')||'[]'));
-    const toasts = ref([]);
+const chatHistory = ref([]); const chatInput = ref(''); const chatLoading = ref(false);
+const subtitleSegments = ref([]); const subtitleLoading = ref(false);
+const fullTranslation = ref(''); const currentTime = ref(0);
 
-    // ── Computed ──
-    const displayVideos = computed(() => {
-        if (page.value === 1 && !search.value && !category.value) return videos.value.slice(1);
-        return videos.value;
-    });
-    const statusMsg = computed(() => {
-        let m = `共 ${total.value} 个视频`;
-        if (search.value) m += ` · 搜索: "${search.value}"`;
-        return m;
-    });
-    const renderedAnalysis = computed(() => renderMarkdown(analysis.value));
+const darkMode = ref(localStorage.getItem('vc-dark-mode')==='dark'||(!localStorage.getItem('vc-dark-mode')&&window.matchMedia('(prefers-color-scheme:dark)').matches));
+const scrollY = ref(0); const favoritesOpen = ref(false);
+const favorites = ref(JSON.parse(localStorage.getItem('vc-favorites')||'[]'));
+const toasts = ref([]);
+const watchedIds = ref([]); const showWatchedOnly = ref(false);
 
-    // ── Dark Mode ──
-    function toggleDarkMode() { darkMode.value = !darkMode.value; }
-    watch(darkMode, (v) => {
-        document.documentElement.setAttribute('data-theme', v?'dark':'');
-        localStorage.setItem('vc-dark-mode', v?'dark':'light');
-    }, {immediate:true});
+const statusMsg = computed(()=>{ let m=`共 ${total.value} 个视频`; if(search.value)m+=` · 搜索:"${search.value}"`; return m; });
+const renderedAnalysis = computed(()=>renderMarkdown(analysis.value));
+const renderedMindmap = computed(()=>renderMarkdown(mindmap.value));
 
-    // ── Helpers ──
-    function toast(msg, type='') {
-        const id = Date.now();
-        toasts.value.push({id,msg,type});
-        setTimeout(() => toasts.value = toasts.value.filter(t=>t.id!==id), 3200);
-    }
-    function renderMarkdown(t) {
-        if (!t) return '';
-        let h = t.replace(/</g,'&lt;').replace(/>/g,'&gt;');
-        h = h.replace(/^## (.+)$/gm,'<h3>$1</h3>');
-        h = h.replace(/^### (.+)$/gm,'<h4>$1</h4>');
-        h = h.replace(/^- (.+)$/gm,'<li>$1</li>');
-        h = h.replace(/\n/g,'<br>');
-        h = h.replace(/(<li>.*?<\/li>)/gs,'<ul>$1</ul>');
-        h = h.replace(/⭐/g,'★');
-        return h;
-    }
-    function fmtTime(s) {
-        const m = Math.floor(s/60), sec = Math.floor(s%60);
-        return m+':'+String(sec).padStart(2,'0');
-    }
+function toggleDarkMode(){darkMode.value=!darkMode.value}
+watch(darkMode,(v)=>{document.documentElement.setAttribute('data-theme',v?'dark':'');localStorage.setItem('vc-dark-mode',v?'dark':'light')},{immediate:true});
 
-    // ── API ──
-    async function fetchVideos(reset=true) {
-        if (isLoading.value) return;
-        isLoading.value = true;
-        if (reset) { page.value = 1; videos.value = []; }
+function toast(msg,type=''){const id=Date.now();toasts.value.push({id,msg,type});setTimeout(()=>toasts.value=toasts.value.filter(t=>t.id!==id),3200)}
+function renderMarkdown(t){if(!t)return'';let h=(t||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');h=h.replace(/^## (.+)$/gm,'<h3>$1</h3>');h=h.replace(/^### (.+)$/gm,'<h4>$1</h4>');h=h.replace(/^- (.+)$/gm,'<li>$1</li>');h=h.replace(/\n/g,'<br>');h=h.replace(/(<li>.*?<\/li>)/gs,'<ul>$1</ul>');return h}
+function fmtTime(s){const m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+String(sec).padStart(2,'0')}
 
-        const params = new URLSearchParams({
-            source: source.value, page: page.value, sort: sort.value,
-            category: category.value, search: search.value,
-            prefs: prefs.value.join(','), essence: essence.value,
-        });
-        try {
-            const resp = await fetch('/api/videos?'+params);
-            const data = await resp.json();
-            if (reset) {
-                videos.value = data.videos || [];
-                categories.value = data.categories || [];
-            } else {
-                videos.value = [...videos.value, ...(data.videos||[])];
-            }
-            total.value = data.total || 0;
-            hasMore.value = data.has_more || false;
-        } catch(e) { console.error('fetchVideos:', e); }
-        isLoading.value = false;
-    }
+async function fetchVideos(reset=true){
+    if(isLoading.value)return;isLoading.value=true;
+    if(reset){page.value=1;videos.value=[]}
+    const sortVal=activeTab.value==='featured'?'score':'time';
+    const params=new URLSearchParams({page:page.value,sort:sortVal,category:category.value,search:search.value,prefs:prefs.value.join(','),essence:essence.value});
+    try{const r=await fetch('/api/videos?'+params);const d=await r.json();
+        let vids=d.videos||[];
+        if(showWatchedOnly.value)vids=vids.filter(v=>!isWatched(v.id));
+        if(reset){videos.value=vids;categories.value=d.categories||[]}
+        else videos.value=[...videos.value,...vids];
+        total.value=d.total||0;hasMore.value=d.has_more||false
+    }catch(e){console.error(e)}
+    isLoading.value=false
+}
+let searchTimer;
+function onSearchInput(){clearTimeout(searchTimer);searchTimer=setTimeout(()=>{search.value=searchQuery.value;fetchVideos(true)},400)}
+function clearSearch(){searchQuery.value='';search.value='';fetchVideos(true)}
+function setCategory(c){category.value=c===category.value?'':c;fetchVideos(true)}
+function switchTo(tab){activeTab.value=tab;sort.value=tab==='featured'?'score':'time';fetchVideos(true)}
 
-    // ── Search debounce ──
-    let searchTimer;
-    function onSearchInput() {
-        clearTimeout(searchTimer);
-        searchTimer = setTimeout(() => { search.value = searchQuery.value; fetchVideos(true); }, 400);
-    }
-    function clearSearch() { searchQuery.value = ''; search.value = ''; fetchVideos(true); }
+function isFaved(id){return favorites.value.some(f=>f.id===id)}
+function toggleFav(v){const idx=favorites.value.findIndex(f=>f.id===v.id);if(idx>=0){favorites.value.splice(idx,1);toast('已取消收藏')}else{favorites.value.unshift({id:v.id,source:v.source,title:v.title,url:v.url,thumbnail:v.thumbnail,author:v.author});toast('已收藏','success')}localStorage.setItem('vc-favorites',JSON.stringify(favorites.value))}
+function removeFav(id){favorites.value=favorites.value.filter(f=>f.id!==id);localStorage.setItem('vc-favorites',JSON.stringify(favorites.value))}
 
-    // ── Source / Category / Sort ──
-    function switchSource(s) {
-        source.value = s;
-        sort.value = s==='bilibili'?'time':'score';
-        category.value = '';
-        fetchVideos(true);
-    }
-    function setCategory(c) { category.value = c===category.value?'':c; fetchVideos(true); }
-    function loadMore() { page.value++; fetchVideos(false); }
+// Watched history
+async function loadWatched(){try{const r=await fetch('/api/history');const d=await r.json();watchedIds.value=d.watched||[]}catch(e){}}
+function isWatched(id){return watchedIds.value.includes(id)}
+async function markWatched(video){if(!video)return;try{await fetch('/api/history/mark',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({video_id:video.id})});watchedIds.value.push(video.id);toast('已标记为已看','success')}catch(e){}}
 
-    // ── Favorites ──
-    function isFaved(id) { return favorites.value.some(f=>f.id===id); }
-    function toggleFav(v) {
-        const idx = favorites.value.findIndex(f=>f.id===v.id);
-        if (idx>=0) {
-            favorites.value.splice(idx,1);
-            toast('已取消收藏');
-        } else {
-            favorites.value.unshift({id:v.id,source:v.source,title:v.title,url:v.url,thumbnail:v.thumbnail,author:v.author});
-            toast('已加入收藏','success');
-        }
-        localStorage.setItem('vc-favorites', JSON.stringify(favorites.value));
-    }
-    function removeFav(id) {
-        favorites.value = favorites.value.filter(f=>f.id!==id);
-        localStorage.setItem('vc-favorites', JSON.stringify(favorites.value));
-    }
+// Drawer
+async function openDrawer(video){
+    currentVideo.value=video;analysis.value='';analysisLoading.value=true;drawerTab.value='analysis';
+    mindmap.value='';subtitleSegments.value=[];fullTranslation.value='';subtitleLoading.value=false;
+    drawerOpen.value=true;document.body.style.overflow='hidden';
+    setupPlayer(video);
+    try{const r=await fetch('/api/analyze?'+new URLSearchParams({title:video.title,description:video.description||'',author:video.author,category:video.category||'',duration:video.duration||'',duration_sec:video.duration_seconds||0}));const d=await r.json();if(d?.analysis){analysis.value=d.analysis}}catch(e){analysis.value='分析生成失败'}
+    analysisLoading.value=false
+}
+function closeDrawer(){drawerOpen.value=false;document.body.style.overflow='';currentVideo.value=null}
+function setupPlayer(video){const c=document.getElementById('drawerPlayer');if(!c)return;const eid=video.embed_id||video.youtube_id||'';if(!eid){c.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#999">暂无播放地址</div>';return}c.innerHTML='<iframe src="https://www.youtube.com/embed/'+eid+'?autoplay=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay;encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';c.innerHTML+='<div id="subtitleOverlay" style="display:none;position:absolute;bottom:60px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.78);color:#fff;padding:10px 24px;border-radius:10px;max-width:90%;text-align:center;z-index:10;pointer-events:none;line-height:1.5"></div>'}
 
-    // ── Preferences ──
-    function togglePref(c) {
-        const idx = prefs.value.indexOf(c);
-        if (idx>=0) prefs.value.splice(idx,1); else prefs.value.push(c);
-    }
-    function savePrefs() {
-        localStorage.setItem('vc-prefs', JSON.stringify(prefs.value));
-        prefPanelOpen.value = false;
-        toast('偏好已保存','success');
-        fetchVideos(true);
-    }
+// Mindmap
+async function generateMindmap(){if(!currentVideo.value||mindmapLoading.value)return;mindmapLoading.value=true;mindmap.value='';drawerTab.value='mindmap';try{const v=currentVideo.value;const r=await fetch('/api/mindmap?'+new URLSearchParams({video_id:v.id,source:v.source,embed_id:v.embed_id||v.youtube_id||''}));const d=await r.json();if(d?.mindmap)mindmap.value=d.mindmap}catch(e){mindmap.value='生成失败'}mindmapLoading.value=false}
+function exportMindmap(){if(!mindmap.value)return;const blob=new Blob(['# '+currentVideo.value?.title+'\n\n'+mindmap.value],{type:'text/markdown'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=(currentVideo.value?.title||'mindmap').slice(0,50)+'.md';a.click()}
 
-    // ── Drawer ──
-    async function openDrawer(video) {
-        currentVideo.value = video;
-        notes.value = '';
-        analysis.value = '';
-        analysisLoading.value = true;
-        activeTab.value = 'notes';
-        chatHistory.value = [];
-        subtitleSegments.value = [];
-        fullTranslation.value = '';
-        currentSubtitleIdx = 0;
-        subtitleLoading.value = false;
-        drawerOpen.value = true;
-        document.body.style.overflow = 'hidden';
+// Subtitles
+let currentSubtitleIdx=0;
+function updateOverlay(idx){const ol=document.getElementById('subtitleOverlay');const segs=subtitleSegments.value;if(!ol||idx<0||idx>=segs.length)return;const seg=segs[idx];const zh=seg.translated||'';ol.innerHTML=(zh?`<div style="font-size:18px;font-weight:600;margin-bottom:6px">${zh}</div>`:'')+`<div style="font-size:13px;color:rgba(255,255,255,0.6)">${seg.original}</div>`;ol.style.display='block'}
+function showBarInfo(idx){const en=document.getElementById('subtitleBarEn');const time=document.getElementById('subtitleBarTime');const idxEl=document.getElementById('subtitleBarIdx');const segs=subtitleSegments.value;if(!segs[idx]||!en)return;en.textContent=segs[idx].original||'';if(time)time.textContent=fmtTime(segs[idx].start);if(idxEl)idxEl.textContent=`${idx+1}/${segs.length}`;currentSubtitleIdx=idx}
+async function loadSubtitles(){if(!currentVideo.value||subtitleLoading.value)return;subtitleLoading.value=true;const bar=document.getElementById('subtitleBar');if(!bar){subtitleLoading.value=false;return}bar.style.display='block';document.getElementById('subtitleBarEn').textContent='';document.getElementById('subtitleBarTime').textContent='';document.getElementById('subtitleBarIdx').textContent='';const ol=document.getElementById('subtitleOverlay');if(ol){ol.style.display='block';ol.innerHTML='<span class="dot-pulse">翻译中</span>'}const loadStart=Date.now();try{const v=currentVideo.value;const embedId=v.embed_id||v.youtube_id||'';const params=new URLSearchParams({video_id:v.id,source:v.source,embed_id:embedId});const r=await fetch('/api/translate?'+params);const d=await r.json();const elapsed=Date.now()-loadStart;if(elapsed<500)await new Promise(r=>setTimeout(r,500-elapsed));if(d.segments&&d.segments.length){subtitleSegments.value=d.segments;fullTranslation.value=d.translation||'';currentSubtitleIdx=0;updateOverlay(0);showBarInfo(0);startTimeSync()}else if(d.translation){fullTranslation.value=d.translation;if(ol)ol.innerHTML=`<div style="font-size:16px">${d.translation.replace(/\n/g,'<br>')}</div>`}else if(ol)ol.innerHTML='<div style="color:#aaa">字幕未缓存, 请开VPN后获取</div>'}catch(e){if(ol)ol.innerHTML='<div style="color:#aaa">加载失败</div>'}subtitleLoading.value=false}
+window._navigateSubtitle=function(dir){const segs=subtitleSegments.value;const newIdx=currentSubtitleIdx+dir;if(newIdx>=0&&newIdx<segs.length){updateOverlay(newIdx);showBarInfo(newIdx);const iframe=document.querySelector('#ytPlayer')||document.querySelector('.video-player-container iframe');if(iframe?.contentWindow)iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[segs[newIdx].start,true]}),'*')}};
 
-        // Hide subtitle bar
-        const bar = document.getElementById('subtitleBar');
-        if (bar) bar.style.display = 'none';
+// Time sync
+let timeSyncTimer;
+function startTimeSync(){if(timeSyncTimer)clearInterval(timeSyncTimer);const iframe=document.querySelector('#ytPlayer');if(!iframe)return;const reg=()=>{if(iframe.contentWindow?.postMessage)iframe.contentWindow.postMessage(JSON.stringify({event:'listening',id:'vc-yt'}),'*')};reg();iframe.addEventListener('load',()=>setTimeout(reg,500));timeSyncTimer=setInterval(()=>{const f=document.querySelector('#ytPlayer');if(!f?.contentWindow)return;try{f.contentWindow.postMessage(JSON.stringify({event:'command',func:'getCurrentTime',args:[]}),'*')}catch(e){}},500)}
+window.addEventListener('message',(e)=>{if(!e.data||typeof e.data!=='string')return;let d;try{d=JSON.parse(e.data)}catch(ex){return}if(d.event==='commandResult'&&d.func==='getCurrentTime'&&typeof d.result==='number')currentTime.value=d.result;if(d.event==='infoDelivery'&&d.info&&typeof d.info.currentTime==='number')currentTime.value=d.info.currentTime;if(d.event==='onReady'){const f=document.querySelector('#ytPlayer');if(f?.contentWindow)f.contentWindow.postMessage(JSON.stringify({event:'subscribe',info:'all'}),'*')}});
+watch(currentTime,(t)=>{if(!t||t<=0||!subtitleSegments.value.length)return;const idx=subtitleSegments.value.findIndex(s=>t>=s.start&&t<=s.start+(s.duration||3));if(idx>=0&&idx!==currentSubtitleIdx){updateOverlay(idx);showBarInfo(idx)}});
 
-        // 注入播放器 (innerHTML方式, 与旧版一致)
-        setupPlayer(video);
+function onScroll(){scrollY.value=window.scrollY}
+function onKeydown(e){if(e.key==='Escape'&&drawerOpen.value){closeDrawer();favoritesOpen.value=false}}
 
-        // Load notes
-        try {
-            const r = await fetch('/api/notes/'+encodeURIComponent(video.id));
-            const d = await r.json();
-            if (d && d.notes) notes.value = d.notes;
-        } catch(e) {}
+onMounted(()=>{window.addEventListener('scroll',onScroll,{passive:true});document.addEventListener('keydown',onKeydown);loadWatched();fetchVideos(true)});
+onUnmounted(()=>{if(timeSyncTimer)clearInterval(timeSyncTimer)});
 
-        // 分析
-        _fetchAnalysis(video);
-    }
-
-    function setupPlayer(video) {
-        const container = document.getElementById('drawerPlayer');
-        if (!container) return;
-        const embedId = video.embed_id || video.youtube_id || '';
-        if (!embedId) {
-            container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-size:14px">暂无嵌入播放地址</div>';
-            return;
-        }
-        if (video.source === 'bilibili') {
-            container.innerHTML = '<iframe src="https://player.bilibili.com/player.html?bvid=' + embedId + '&autoplay=0" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
-        } else {
-            container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
-        }
-        // 字幕叠加层
-        container.innerHTML += '<div id="subtitleOverlay" style="display:none;position:absolute;bottom:60px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.78);color:#fff;padding:10px 24px;border-radius:10px;max-width:90%;text-align:center;z-index:10;pointer-events:none;line-height:1.5"></div>';
-    }
-
-    function closeDrawer() {
-        drawerOpen.value = false;
-        document.body.style.overflow = '';
-        currentVideo.value = null;
-    }
-
-    async function _fetchAnalysis(video) {
-        analysisLoading.value = true;
-        // 如果有字幕, 加入分析上下文
-        const subText = subtitleSegments.value.map(s => s.original).join(' ').slice(0, 3000);
-        try {
-            const params = new URLSearchParams({
-                title:video.title, description:video.description||'',
-                author:video.author, category:video.category||'',
-                duration:video.duration||'', duration_sec:video.duration_seconds||0,
-                subtitle_text: subText,
-            });
-            const r = await fetch('/api/analyze?'+params);
-            const d = await r.json();
-            if (d && d.analysis) {
-                analysis.value = d.analysis;
-                activeTab.value = 'analysis';
-            } else {
-                // Fallback to summary
-                const sp = new URLSearchParams({video_id:video.id,source:video.source,title:video.title,description:video.description||'',author:video.author});
-                const sr = await fetch('/api/summarize?'+sp);
-                const sd = await sr.json();
-                analysis.value = sd?.summary || '分析暂不可用';
-            }
-        } catch(e) { analysis.value = '分析生成失败'; }
-        analysisLoading.value = false;
-    }
-
-    async function saveNotes() {
-        if (!currentVideo.value) return;
-        try {
-            await fetch('/api/notes/save', {
-                method:'POST', headers:{'Content-Type':'application/json'},
-                body:JSON.stringify({video_id:currentVideo.value.id,title:currentVideo.value.title,author:currentVideo.value.author,url:currentVideo.value.url,source:currentVideo.value.source,category:currentVideo.value.category,notes:notes.value,ai_summary:analysis.value}),
-            });
-            toast('已保存','success');
-        } catch(e) { toast('保存失败','error'); }
-    }
-
-    async function exportNotes() {
-        if (!currentVideo.value) return;
-        try {
-            const r = await fetch('/api/notes/export', {
-                method:'POST', headers:{'Content-Type':'application/json'},
-                body:JSON.stringify({video_id:currentVideo.value.id,title:currentVideo.value.title,author:currentVideo.value.author,source:currentVideo.value.source,notes:notes.value,ai_summary:analysis.value}),
-            });
-            const d = await r.json();
-            toast(d.status==='ok'?'已导出到桌面':'导出失败', d.status==='ok'?'success':'error');
-        } catch(e) { toast('导出失败','error'); }
-    }
-
-    // ── AI Chat ──
-    async function sendChat() {
-        const msg = chatInput.value.trim();
-        if (!msg || chatLoading.value) return;
-        chatHistory.value.push({role:'user',content:msg});
-        chatInput.value = '';
-        chatLoading.value = true;
-        try {
-            const r = await fetch('/api/chat', {
-                method:'POST', headers:{'Content-Type':'application/json'},
-                body:JSON.stringify({message:msg,title:currentVideo.value?.title,description:currentVideo.value?.description,author:currentVideo.value?.author,subtitle_text:'',chat_history:chatHistory.value.slice(-6)}),
-            });
-            const d = await r.json();
-            chatHistory.value.push({role:'assistant',content:d.reply||'无回复'});
-        } catch(e) { chatHistory.value.push({role:'assistant',content:'对话失败'}); }
-        chatLoading.value = false;
-    }
-
-    // ── Subtitles ──
-    let currentSubtitleIdx = 0;
-
-    function updateOverlay(idx) {
-        const ol = document.getElementById('subtitleOverlay');
-        const segs = subtitleSegments.value;
-        if (!ol || idx < 0 || idx >= segs.length) return;
-        const seg = segs[idx];
-        const zh = seg.translated || '';
-        ol.innerHTML = (zh ? `<div style="font-size:18px;font-weight:600;margin-bottom:6px">${zh}</div>` : '')
-            + `<div style="font-size:13px;color:rgba(255,255,255,0.6)">${seg.original}</div>`;
-        ol.style.display = 'block';
-    }
-
-    function showBarInfo(idx) {
-        const en = document.getElementById('subtitleBarEn');
-        const time = document.getElementById('subtitleBarTime');
-        const idxEl = document.getElementById('subtitleBarIdx');
-        const segs = subtitleSegments.value;
-        if (!segs[idx] || !en) return;
-        en.textContent = segs[idx].original || '';
-        if (time) time.textContent = fmtTime(segs[idx].start);
-        if (idxEl) idxEl.textContent = `${idx + 1}/${segs.length}`;
-        currentSubtitleIdx = idx;
-    }
-
-    async function loadSubtitles() {
-        if (!currentVideo.value || subtitleLoading.value) return;
-        subtitleLoading.value = true;
-        const bar = document.getElementById('subtitleBar');
-        if (!bar) { subtitleLoading.value = false; return; }
-        bar.style.display = 'block';
-        document.getElementById('subtitleBarEn').textContent = '';
-        document.getElementById('subtitleBarTime').textContent = '';
-        document.getElementById('subtitleBarIdx').textContent = '';
-        const ol = document.getElementById('subtitleOverlay');
-        if (ol) { ol.style.display = 'block'; ol.innerHTML = '<span class="dot-pulse">翻译中</span>'; }
-        const loadStart = Date.now();
-
-        try {
-            const v = currentVideo.value;
-            const embedId = v.embed_id || v.youtube_id || '';
-            const params = new URLSearchParams({video_id:v.id, source:v.source, embed_id:embedId});
-            const r = await fetch('/api/translate?'+params);
-            const d = await r.json();
-            const elapsed = Date.now() - loadStart;
-            if (elapsed < 500) await new Promise(r => setTimeout(r, 500 - elapsed));
-
-            if (d.segments && d.segments.length) {
-                subtitleSegments.value = d.segments;
-                fullTranslation.value = d.translation || '';
-                currentSubtitleIdx = 0;
-                updateOverlay(0);
-                showBarInfo(0);
-                if (v.source !== 'bilibili') startTimeSync();
-            } else if (d.translation) {
-                fullTranslation.value = d.translation;
-                if (ol) ol.innerHTML = `<div style="font-size:16px;line-height:1.7">${d.translation.replace(/\n/g,'<br>')}</div>`;
-            } else if (ol) {
-                ol.innerHTML = '<div style="color:#aaa">字幕未缓存, 请开VPN后获取</div>';
-            }
-        } catch(e) { if (ol) ol.innerHTML = '<div style="color:#aaa">加载失败</div>'; }
-        subtitleLoading.value = false;
-    }
-
-    window._navigateSubtitle = function(dir) {
-        const segs = subtitleSegments.value;
-        const newIdx = currentSubtitleIdx + dir;
-        if (newIdx >= 0 && newIdx < segs.length) {
-            updateOverlay(newIdx);
-            showBarInfo(newIdx);
-            const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
-            if (iframe?.contentWindow) {
-                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[segs[newIdx].start,true]}),'*');
-            }
-        }
-    };
-
-    // ── YouTube Time Sync ──
-    let timeSyncTimer = null;
-    let ytPlayerReady = false;
-    function startTimeSync() {
-        if (timeSyncTimer) clearInterval(timeSyncTimer);
-        ytPlayerReady = false;
-        const iframe = document.querySelector('#ytPlayer');
-        if (!iframe) return;
-
-        // Register listener once iframe loads
-        const registerListener = () => {
-            if (iframe.contentWindow && iframe.contentWindow.postMessage) {
-                iframe.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 'vc-yt' }), '*');
-            }
-        };
-        // Try immediately and on load
-        registerListener();
-        iframe.addEventListener('load', () => {
-            setTimeout(registerListener, 500);
-        });
-
-        // Poll currentTime every 500ms
-        timeSyncTimer = setInterval(() => {
-            const f = document.querySelector('#ytPlayer');
-            if (!f || !f.contentWindow) return;
-            try {
-                f.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'getCurrentTime', args: [] }), '*');
-            } catch (e) {}
-        }, 500);
-    }
-
-    // Handle YouTube API messages
-    window.addEventListener('message', (e) => {
-        if (!e.data || typeof e.data !== 'string') return;
-        let d;
-        try { d = JSON.parse(e.data); } catch (ex) { return; }
-
-        // Response to getCurrentTime command
-        if (d.event === 'commandResult' && d.func === 'getCurrentTime' && typeof d.result === 'number') {
-            currentTime.value = d.result;
-        }
-        // YouTube also sends infoDelivery with currentTime
-        if (d.event === 'infoDelivery' && d.info && typeof d.info.currentTime === 'number') {
-            currentTime.value = d.info.currentTime;
-        }
-        // Player ready
-        if (d.event === 'onReady') {
-            ytPlayerReady = true;
-            const f = document.querySelector('#ytPlayer');
-            if (f?.contentWindow) {
-                f.contentWindow.postMessage(JSON.stringify({ event: 'subscribe', info: 'all' }), '*');
-            }
-        }
-    });
-
-    // Auto-update overlay when currentTime changes
-    watch(currentTime, (t) => {
-        const segs = subtitleSegments.value;
-        if (!t || t <= 0 || !segs.length) return;
-        const idx = segs.findIndex(s => t >= s.start && t <= s.start + (s.duration || 3));
-        if (idx >= 0 && idx !== currentSubtitleIdx) {
-            updateOverlay(idx);
-            showBarInfo(idx);
-        }
-    });
-
-    // ── Scroll ──
-    function onScroll() { scrollY.value = window.scrollY; }
-
-    // ── Keyboard ──
-    function onKeydown(e) {
-        if (e.key==='Escape' && drawerOpen.value) { closeDrawer(); favoritesOpen.value=false; }
-    }
-
-    // ── Lifecycle ──
-    onMounted(() => {
-        window.addEventListener('scroll', onScroll, {passive:true});
-        document.addEventListener('keydown', onKeydown);
-        fetchVideos(true);
-    });
-    onUnmounted(() => {
-        if (timeSyncTimer) clearInterval(timeSyncTimer);
-    });
-
-    return {
-        videos, total, page, source, category, search, searchQuery, sort, prefs, essence,
-        isLoading, hasMore, categories, allCategories,
-        drawerOpen, currentVideo, notes, analysis, analysisLoading, activeTab,
-        chatHistory, chatInput, chatLoading,
-        subtitleSegments, subtitleLoading, fullTranslation, currentTime,
-        darkMode, scrollY, favoritesOpen, prefPanelOpen, favorites, toasts,
-        displayVideos, statusMsg, renderedAnalysis,
-        toggleDarkMode, toggleFav, isFaved, removeFav, togglePref, savePrefs,
-        fetchVideos, onSearchInput, clearSearch, switchSource, setCategory, loadMore,
-        openDrawer, closeDrawer, saveNotes, exportNotes, sendChat, loadSubtitles,
-        fmtTime, toast,
-    };
-  },
-});
-app.config.compilerOptions.delimiters = ['[[', ']]'];
+return {videos,total,page,category,search,searchQuery,sort,prefs,essence,isLoading,hasMore,categories,activeTab,drawerOpen,currentVideo,notes,analysis,analysisLoading,drawerTab,mindmap,mindmapLoading,chatHistory,chatInput,chatLoading,subtitleSegments,subtitleLoading,fullTranslation,currentTime,darkMode,scrollY,favoritesOpen,favorites,toasts,watchedIds,showWatchedOnly,statusMsg,renderedAnalysis,renderedMindmap,toggleDarkMode,toast,fetchVideos,onSearchInput,clearSearch,setCategory,switchTo,isFaved,toggleFav,removeFav,loadWatched,isWatched,markWatched,openDrawer,closeDrawer,generateMindmap,exportMindmap,loadSubtitles};
+}});
+app.config.compilerOptions.delimiters=['[[',']]'];
 app.mount('#app');
 </script>
 </body>

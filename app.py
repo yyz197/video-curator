@@ -19,15 +19,12 @@ import requests
 from flask import Flask, Response, jsonify, render_template, request
 
 from config import (
-    BILIBILI_CATEGORIES,
-    BILIBILI_CATEGORY_LABELS,
-    BILIBILI_MAX_WORKERS,
     CACHE_DIR,
+    CATEGORY_LABELS,
     DEEPSEEK_API_KEY,
     DEEPSEEK_BASE_URL,
     DEEPL_API_KEY,
     MIN_DURATION_SECONDS,
-    NOTES_EXPORT_DIR,
     SUMMARY_CACHE_TTL,
     VIDEO_LIST_CACHE_TTL,
     VIDEOS_PER_PAGE,
@@ -220,7 +217,7 @@ def _video_score(v: dict) -> float:
 
 
 # ──────────────────────────────────────────────
-#  B站 视频源
+#  YouTube 视频源 (并发请求)
 # ──────────────────────────────────────────────
 
 # UA 轮换池 — 防 B站 API 限流
@@ -244,7 +241,7 @@ def _bilibili_headers() -> dict:
     }
 
 
-def _parse_bilibili_video(item: dict) -> dict:
+def format_count(n: int) -> str:
     tid = item.get("tid", 0)
     dur_raw = item.get("duration", "")
     dur_sec = parse_duration(dur_raw)
@@ -466,7 +463,7 @@ def _fetch_youtube_channel_rss(channel: dict) -> list[dict]:
                 "danmaku": "",
                 "likes": "",
                 "likes_raw": 0,
-                "category": "教育",
+                "category": channel.get("category", "教育"),
                 "description": description,
                 "published": pub_ts,
                 "published_str": datetime.fromtimestamp(pub_ts).strftime("%Y-%m-%d") if pub_ts else "",
@@ -539,7 +536,7 @@ def _parse_youtube_rss_regex(text: str, channel: dict) -> list[dict]:
             "duration_badge": duration_badge(dur_cached) if dur_cached else "",
             "views": "", "views_raw": 0,
             "danmaku": "", "likes": "", "likes_raw": 0,
-            "category": "教育",
+            "category": channel.get("category", "教育"),
             "description": (desc_match.group(1).strip() if desc_match else "")[:300],
             "published": pub_ts,
             "published_str": datetime.fromtimestamp(pub_ts).strftime("%Y-%m-%d") if pub_ts else "",
@@ -628,7 +625,7 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
                 "danmaku": "",
                 "likes": "",
                 "likes_raw": 0,
-                "category": "教育",
+                "category": channel.get("category", "教育"),
                 "description": strip_html(snippet.get("description", "") or "")[:300],
                 "published": pub_ts,
                 "published_str": datetime.fromtimestamp(pub_ts).strftime("%Y-%m-%d") if pub_ts else "",
@@ -946,67 +943,6 @@ def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
     return None
 
 
-def fetch_bilibili_transcript(bvid: str) -> str:
-    """B站字幕: 纯文本"""
-    data = _fetch_bilibili_transcript_raw(bvid)
-    return data["text"] if data else ""
-
-
-def _fetch_bilibili_transcript_raw(bvid: str) -> dict | None:
-    """B站字幕: 返回带时间戳的分段数据"""
-    if not bvid:
-        return None
-    cache_path = _get_transcript_cache_path("bilibili", bvid)
-    if cache_path.exists():
-        try:
-            data = json.loads(cache_path.read_text(encoding="utf-8"))
-            if isinstance(data, dict):
-                return data
-            return {"text": str(data), "segments": []}
-        except (json.JSONDecodeError, OSError):
-            pass
-
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-            "Referer": "https://www.bilibili.com/",
-        }
-        resp = requests.get(
-            "https://api.bilibili.com/x/web-interface/view",
-            params={"bvid": bvid}, headers=headers, timeout=10,
-        )
-        data = resp.json()
-        subtitles = data.get("data", {}).get("subtitle", {}).get("list", [])
-        if not subtitles:
-            return None
-        sub_url = subtitles[0].get("subtitle_url", "")
-        if not sub_url:
-            return None
-        if sub_url.startswith("//"):
-            sub_url = "https:" + sub_url
-        sub_resp = requests.get(sub_url, headers=headers, timeout=10)
-        sub_data = sub_resp.json()
-        segments = []
-        lines = []
-        for item in sub_data.get("body", []):
-            content = item.get("content", "")
-            if content:
-                segments.append({
-                    "start": round(float(item.get("from", 0)), 1),
-                    "duration": round(float(item.get("to", 0)) - float(item.get("from", 0)), 1),
-                    "original": content,
-                })
-                lines.append(content)
-        text = " ".join(lines)
-        text = " ".join(text.split())
-        result = {"text": text, "segments": segments[:800]}
-        cache_path.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
-        return result
-    except Exception:
-        app.logger.debug(f"B站字幕获取失败: {bvid}")
-        return None
-
-
 def get_transcript_for_video(video: dict) -> str:
     """统一入口 — 纯文本"""
     embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
@@ -1113,21 +1049,86 @@ def api_health():
     return jsonify({"status": "ok", "deepseek": bool(DEEPSEEK_API_KEY), "youtube_key": bool(YOUTUBE_API_KEY)})
 
 
-@app.route("/api/thumbnail")
-def api_thumbnail():
-    """代理外部图片，解决B站防盗链"""
-    url = request.args.get("url", "")
-    if not url:
-        return "", 400
+@app.route("/api/mindmap")
+def api_mindmap():
+    """为已看视频生成思维导图 (基于字幕)"""
+    video_id = request.args.get("video_id", "")
+    source = request.args.get("source", "youtube")
+    embed_id = request.args.get("embed_id", "")
+    if not video_id and not embed_id:
+        return jsonify({"error": "缺少视频信息"}), 400
+    if not DEEPSEEK_API_KEY:
+        return jsonify({"error": "API未配置"}), 400
+
+    ck = cache_key("mindmap", source, video_id or embed_id)
+    if cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL * 2):
+        return jsonify({"mindmap": cached.get("mindmap", ""), "cached": True})
+
+    # 取字幕
+    video = {"source": source, "embed_id": embed_id or video_id}
+    timed = get_transcript_timed(video)
+    subtitle_text = (timed or {}).get("text", "")[:5000] if timed else ""
+
+    prompt = f"""基于以下视频字幕，生成一个简洁的思维导图(Markdown大纲格式)，用###表示一级分支，用-表示二级节点。每个分支提取核心概念。
+
+字幕内容:
+{subtitle_text if subtitle_text else '无字幕可用'}
+
+输出格式:
+# 视频核心主题
+### 分支1: 关键词
+- 要点描述
+- 要点描述
+### 分支2: 关键词
+- 要点描述
+### 分支3: 关键词
+- 要点描述
+(3-5个分支)"""
+
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-            "Referer": "https://www.bilibili.com/",
-        }
-        resp = requests.get(url, headers=headers, timeout=10)
-        return Response(resp.content, mimetype=resp.headers.get("Content-Type", "image/jpeg"))
-    except Exception:
-        return "", 500
+        resp = requests.post(
+            f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+            headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+            json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1500, "temperature": 0.3},
+            timeout=45,
+        )
+        data = resp.json()
+        mindmap = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+        if mindmap:
+            cache_set(ck, {"mindmap": mindmap})
+            return jsonify({"mindmap": mindmap, "cached": False})
+    except Exception as e:
+        app.logger.error(f"思维导图生成失败: {e}")
+    return jsonify({"error": "生成失败"}), 500
+
+
+@app.route("/api/history/mark", methods=["POST"])
+def api_history_mark():
+    """标记视频为已看"""
+    data = request.get_json(force=True)
+    video_id = data.get("video_id", "")
+    if not video_id:
+        return jsonify({"status": "error"}), 400
+    history_path = Path(CACHE_DIR) / "watched.json"
+    try:
+        watched = json.loads(history_path.read_text(encoding="utf-8")) if history_path.exists() else []
+    except (json.JSONDecodeError, OSError):
+        watched = []
+    if video_id not in watched:
+        watched.append(video_id)
+    history_path.write_text(json.dumps(watched), encoding="utf-8")
+    return jsonify({"status": "ok", "count": len(watched)})
+
+
+@app.route("/api/history")
+def api_history():
+    """获取已看列表"""
+    history_path = Path(CACHE_DIR) / "watched.json"
+    try:
+        watched = json.loads(history_path.read_text(encoding="utf-8")) if history_path.exists() else []
+    except (json.JSONDecodeError, OSError):
+        watched = []
+    return jsonify({"watched": watched})
 
 
 @app.route("/api/analyze")
@@ -1222,20 +1223,15 @@ def _attach_summaries(videos: list) -> None:
 
 @app.route("/api/videos")
 def api_videos():
-    source = request.args.get("source", "all")
+    source = "youtube"  # 纯YouTube
     category = request.args.get("category", "")
     page = max(1, int(request.args.get("page", 1)))
     with_summary = request.args.get("with_summary", "false").lower() == "true"
     search = request.args.get("search", "").strip()
-    prefs = request.args.get("prefs", "")  # 逗号分隔的偏好分类
+    prefs = request.args.get("prefs", "")
     essence = request.args.get("essence", "false").lower() == "true"
-    sort = request.args.get("sort", "")
-    following = request.args.get("following", "")  # 逗号分隔的关注作者
-    _sort_explicit = request.args.get("sort") is not None
-
-    # B站默认按时间排序（推新），YouTube/全部默认综合评分（发现优质）
-    if not sort:
-        sort = "time" if source in ("bilibili",) else "score"
+    sort = request.args.get("sort", "score")
+    following = request.args.get("following", "")
 
     # 视频列表短期缓存键
     list_ck = cache_key("videos", source, category, str(page), search[:20], sort)
@@ -1270,20 +1266,13 @@ def api_videos():
             result = {
                 "videos": videos, "total": total, "page": page,
                 "per_page": VIDEOS_PER_PAGE, "has_more": total > VIDEOS_PER_PAGE,
-                "categories": BILIBILI_CATEGORY_LABELS, "search": None, "cached": True,
+                "categories": CATEGORY_LABELS, "search": None, "cached": True,
             }
             return jsonify(result)
 
     all_videos = []
 
-    if source in ("bilibili", "all"):
-        cat_id = None
-        if category:
-            cat_id = next((k for k, v in BILIBILI_CATEGORIES.items() if v == category), None)
-        all_videos.extend(fetch_bilibili_videos(cat_id))
-
-    if source in ("youtube", "all"):
-        all_videos.extend(fetch_youtube_videos())
+    all_videos.extend(fetch_youtube_videos())
 
     # 搜索过滤
     if search:
@@ -1347,7 +1336,7 @@ def api_videos():
         "page": page,
         "per_page": VIDEOS_PER_PAGE,
         "has_more": end < total,
-        "categories": BILIBILI_CATEGORY_LABELS,
+        "categories": CATEGORY_LABELS,
         "search": search if search else None,
         "sort": sort,
         "time_distribution": _time_distribution(all_videos),
@@ -1383,7 +1372,7 @@ def api_summarize():
 
 @app.route("/api/categories")
 def api_categories():
-    return jsonify({"bilibili": BILIBILI_CATEGORY_LABELS, "youtube": ["教育", "科技"]})
+    return jsonify({"categories": CATEGORY_LABELS})
 
 
 @app.route("/api/transcript")

@@ -1,97 +1,95 @@
 {
-  "youtube": [
-    {"id": "UCAuUUnT6oDeKwE6v1NGQxug", "name": "TED"},
-    {"id": "UCsT0YIqwnpJCM-mx7-gSA4Q", "name": "TEDx Talks"},
-    {"id": "UCsooa4yRKGN_zEE8iknghZA", "name": "TED-Ed"},
-    {"id": "UCbmNph6atAoGfqLoCL_duAg", "name": "Talks at Google"},
-    {"id": "UCNdFhJHZYDhFJDi3VQl9JIA", "name": "The Aspen Institute"},
-    {"id": "UCsXVk37bltHxD1rDPwtNM8Q", "name": "Kurzgesagt"},
-    {"id": "UCHnyfMqiRRG1u-2MsSQLbXA", "name": "Veritasium"},
-    {"id": "UC6107grRI4m0o2-emgoDnAA", "name": "SmarterEveryDay"},
-    {"id": "UC7_gcs09iThXybpVgjHZ_7g", "name": "PBS Space Time"},
-    {"id": "UCZYTClx2T1of7BRZ86-8fow", "name": "SciShow"},
-    {"id": "UCUK0lqRq8YSh3npnhQbPR5g", "name": "MinutePhysics"},
-    {"id": "UCYeF244yNGuFefuFKqxIAXw", "name": "The Royal Institution"},
-    {"id": "UC6nSFpj9HTCZ5t-NJa3fO7A", "name": "Physics Girl"},
-    {"id": "UCX6b17PVsYBQ0ip5gyeme-Q", "name": "CrashCourse"},
-    {"id": "UC1zZE_kJ8rQHgLTVfobLi_g", "name": "Mark Rober"},
-    {"id": "UC4a-Gbdw7vLB-NbBGxEw4jw", "name": "Steve Mould"},
-    {"id": "UCm9K6r5hq4z5n5t4zT5vJ0A", "name": "Vsauce"},
-    {"id": "UC5I7ajhwIuPh8dY6ulNyw6A", "name": "Real Engineering"},
-    {"id": "UCvKRFN8xsmjJtL7LKZB2f_g", "name": "Wendover Productions"},
-    {"id": "UCYNlQ8_5Mx_JnO8m0EiA8Tw", "name": "PBS Eons"},
-    {"id": "UC4rlAVgAK0SGk-yTfe48Qpw", "name": "Branch Education"},
-    {"id": "UCYO_jab_esuFRV4b17AJtAw", "name": "3Blue1Brown"},
-    {"id": "UCoxcjq-8xIDTYp3uz647V5A", "name": "Numberphile"},
-    {"id": "UC9-y-6csu5WGm29I7JiwpnA", "name": "Computerphile"},
-    {"id": "UC2C_jShtL-nGq1uW7H5VH_Q", "name": "CGP Grey"},
-    {"id": "UCsBjURrPuezykZ9n3lUvAgg", "name": "Stand-up Maths"},
-    {"id": "UC8butISFwT-Wl7EV0hUK0BQ", "name": "freeCodeCamp.org"},
-    {"id": "UC0rqucBdTuFTjJiefW5t-IQ", "name": "The Coding Train"},
-    {"id": "UCcabW7890RKJMj6A7L2M_Cg", "name": "Fireship"},
-    {"id": "UC4ri3N_FPYRWqHkh-WrZqoQ", "name": "OverSimplified"},
-    {"id": "UC4Ey2LOVGrfmqZzh_ySP-XQ", "name": "Kings and Generals"},
-    {"id": "UC88lvyJe7aHZmcvzvubDFRg", "name": "Timeline - World History"},
-    {"id": "UCfGvzKtFmJ6C6KqZ3F9K_yA", "name": "History Hit"},
-    {"id": "UC7F-LnphfMz2nBj6PhfnK7A", "name": "Then & Now"},
-    {"id": "UCfQDD-pbllOCXHYwiB0kQkQ", "name": "Academy of Ideas"},
-    {"id": "UCXIJgqnII2ZOINSWNOGFThA", "name": "Bloomberg Originals"},
-    {"id": "UCoOae5nYA7VqaXzerajD0lg", "name": "Ali Abdaal"},
-    {"id": "UCWvMmm_sHT2i5N9q7ZzP4Zw", "name": "Economics Explained"},
-    {"id": "UCG1-22fo1sIhXGuXYpTRhaA", "name": "The Plain Bagel"},
-    {"id": "UCbWcXB0PoTg_vHj_qK2gE7A", "name": "CNBC Make It"},
-    {"id": "UCJkMlOu7faDgqh4PfzbpLdg", "name": "Nerdwriter1"},
-    {"id": "UCXMXWGMM7UeDmLW_PdEVQxg", "name": "Vox"},
-    {"id": "UCBa659QWEk1AI4Tg--mrJ5A", "name": "Tom Scott"},
-    {"id": "UCRXiUtWCnQl6pNGjQPQe3Bg", "name": "Every Frame a Painting"},
-    {"id": "UCGBBLrSbhZ6QoJHB8M1nL4g", "name": "Lessons from the Screenplay"},
-    {"id": "UCpVm7bg6pXKo1Pr6k5kxG9A", "name": "National Geographic"},
-    {"id": "UCiMn6TkPYOlMYNOhCgBDf4A", "name": "BBC Earth"},
-    {"id": "UCeiYXex_fwgYDonaTcSIk6w", "name": "MinuteEarth"},
-    {"id": "UCDsElQQt_gCZ9LgnW-7v-cQ", "name": "Kyle Hill"},
-    {"id": "UCsgPO6cNV0wBG-Op3rzmJhA", "name": "SEA"},
-    {"id": "UCvQECJukcUQy8fAB3m_hgKw", "name": "Medlife Crisis"},
-    {"id": "UCk2Oi0gykpdWgOMORu3TCjA", "name": "Khan Academy Medicine"},
-    {"id": "UCt9N5aAJjBj8g7qAMhD_j5w", "name": "12tone"}
-  ],
-  "bilibili_categories": {
-    "36": "知识",
-    "201": "科学科普",
-    "207": "社科法律",
-    "208": "人文历史",
-    "209": "财经商业",
-    "226": "校园学习",
-    "227": "职业职场",
-    "228": "设计创意",
-    "229": "野生技术协会",
-    "230": "演讲公开课",
-    "188": "科技",
-    "95": "数码",
-    "230": "软件应用",
-    "231": "计算机技术",
-    "232": "科工机械",
-    "233": "极客DIY",
-    "177": "纪录片",
-    "37": "人文历史",
-    "178": "科学探索",
-    "179": "军事",
-    "180": "社会美食",
-    "213": "校园学习",
-    "214": "职业职场",
-    "202": "资讯",
-    "203": "热点",
-    "204": "环球",
-    "205": "社会",
-    "206": "综合"
+  "categories": {
+    "科学科普": {
+      "name": "🔬 科学科普",
+      "channels": [
+        {"id": "UCHnyfMqiRRG1u-2MsSQLbXA", "name": "Veritasium", "lang": "en"},
+        {"id": "UCsXVk37bltHxD1rDPwtNM8Q", "name": "Kurzgesagt", "lang": "en"},
+        {"id": "UC6107grRI4m0o2-emgoDnAA", "name": "SmarterEveryDay", "lang": "en"},
+        {"id": "UC7_gcs09iThXybpVgjHZ_7g", "name": "PBS Space Time", "lang": "en"},
+        {"id": "UCZYTClx2T1of7BRZ86-8fow", "name": "SciShow", "lang": "en"},
+        {"id": "UCX6b17PVsYBQ0ip5gyeme-Q", "name": "CrashCourse", "lang": "en"},
+        {"id": "UCYeF244yNGuFefuFKqxIAXw", "name": "The Royal Institution", "lang": "en"},
+        {"id": "UC1zZE_kJ8rQHgLTVfobLi_g", "name": "Mark Rober", "lang": "en"},
+        {"id": "UC6nSFpj9HTCZ5t-NJa3fO7A", "name": "Vsauce", "lang": "en"},
+        {"id": "UCH4BNI0-FOK2dMXoFtViWHw", "name": "Be Smart", "lang": "en"},
+        {"id": "UC4rlAVgAK0SGk-yTfe48Qpw", "name": "Branch Education", "lang": "en"},
+        {"id": "UCpVm7bg6pXKo1Pr6k5kxG9A", "name": "National Geographic", "lang": "en"},
+        {"id": "UCeiYXex_fwgYDonaTcSIk6w", "name": "MinuteEarth", "lang": "en"},
+        {"id": "UCiMn6TkPYOlMYNOhCgBDf4A", "name": "BBC Earth", "lang": "en"}
+      ]
+    },
+    "演讲思想": {
+      "name": "🎤 演讲思想",
+      "channels": [
+        {"id": "UCAuUUnT6oDeKwE6v1NGQxug", "name": "TED", "lang": "en"},
+        {"id": "UCsooa4yRKGN_zEE8iknghZA", "name": "TED-Ed", "lang": "en"},
+        {"id": "UCsT0YIqwnpJCM-mx7-gSA4Q", "name": "TEDx Talks", "lang": "en"},
+        {"id": "UCbmNph6atAoGfqLoCL_duAg", "name": "Talks at Google", "lang": "en"}
+      ]
+    },
+    "数学计算机": {
+      "name": "💻 数学计算机",
+      "channels": [
+        {"id": "UCYO_jab_esuFRV4b17AJtAw", "name": "3Blue1Brown", "lang": "en"},
+        {"id": "UCoxcjq-8xIDTYp3uz647V5A", "name": "Numberphile", "lang": "en"},
+        {"id": "UC9-y-6csu5WGm29I7JiwpnA", "name": "Computerphile", "lang": "en"},
+        {"id": "UC2C_jShtL-nGq1uW7H5VH_Q", "name": "CGP Grey", "lang": "en"},
+        {"id": "UC8butISFwT-Wl7EV0hUK0BQ", "name": "freeCodeCamp", "lang": "en"},
+        {"id": "UC0rqucBdTuFTjJiefW5t-IQ", "name": "The Coding Train", "lang": "en"},
+        {"id": "UCcabW7890RKJMj6A7L2M_Cg", "name": "Fireship", "lang": "en"},
+        {"id": "UCsBjURrPuezykZ9n3lUvAgg", "name": "Stand-up Maths", "lang": "en"},
+        {"id": "UCqZQJzTVJ3PFgZcZQcJ1B_w", "name": "Practical Engineering", "lang": "en"}
+      ]
+    },
+    "历史人文": {
+      "name": "📜 历史人文",
+      "channels": [
+        {"id": "UC4ri3N_FPYRWqHkh-WrZqoQ", "name": "OverSimplified", "lang": "en"},
+        {"id": "UC4Ey2LOVGrfmqZzh_ySP-XQ", "name": "Kings and Generals", "lang": "en"},
+        {"id": "UC88lvyJe7aHZmcvzvubDFRg", "name": "Timeline - World History", "lang": "en"},
+        {"id": "UCfGvzKtFmJ6C6KqZ3F9K_yA", "name": "History Hit", "lang": "en"},
+        {"id": "UC7F-LnphfMz2nBj6PhfnK7A", "name": "Then & Now", "lang": "en"},
+        {"id": "UCfQDD-pbllOCXHYwiB0kQkQ", "name": "Academy of Ideas", "lang": "en"},
+        {"id": "UC88lvyJe7aHZmcvzvubDFRg", "name": "Timeline History", "lang": "en"}
+      ]
+    },
+    "经济商业": {
+      "name": "💰 经济商业",
+      "channels": [
+        {"id": "UCXIJgqnII2ZOINSWNOGFThA", "name": "Bloomberg Originals", "lang": "en"},
+        {"id": "UCoOae5nYA7VqaXzerajD0lg", "name": "Ali Abdaal", "lang": "en"},
+        {"id": "UCWvMmm_sHT2i5N9q7ZzP4Zw", "name": "Economics Explained", "lang": "en"},
+        {"id": "UCG1-22fo1sIhXGuXYpTRhaA", "name": "The Plain Bagel", "lang": "en"},
+        {"id": "UCbWcXB0PoTg_vHj_qK2gE7A", "name": "CNBC Make It", "lang": "en"},
+        {"id": "UCuRZnGjnYhxOqB6j6JNPr2Q", "name": "How Money Works", "lang": "en"},
+        {"id": "UCqD7HeHdZ2ZcKwq5cGJcqgA", "name": "Patrick Boyle", "lang": "en"}
+      ]
+    },
+    "创意设计": {
+      "name": "🎨 创意设计",
+      "channels": [
+        {"id": "UCJkMlOu7faDgqh4PfzbpLdg", "name": "Nerdwriter1", "lang": "en"},
+        {"id": "UCXMXWGMM7UeDmLW_PdEVQxg", "name": "Vox", "lang": "en"},
+        {"id": "UCBa659QWEk1AI4Tg--mrJ5A", "name": "Tom Scott", "lang": "en"},
+        {"id": "UCRXiUtWCnQl6pNGjQPQe3Bg", "name": "Every Frame a Painting", "lang": "en"},
+        {"id": "UCGBBLrSbhZ6QoJHB8M1nL4g", "name": "Lessons from the Screenplay", "lang": "en"},
+        {"id": "UCDsElQQt_gCZ9LgnW-7v-cQ", "name": "Kyle Hill", "lang": "en"}
+      ]
+    },
+    "美食旅游": {
+      "name": "🍜 美食旅游",
+      "channels": [
+        {"id": "UCbEjpjU5Rofj4HfpHFSU8yg", "name": "Eater", "lang": "en"},
+        {"id": "UCsXVk37bltHxD1rDPwtNM8Q", "name": "Munchies", "lang": "en"},
+        {"id": "UCJHA_jMfCvEnv-3kRjTCQXw", "name": "Babish Culinary Universe", "lang": "en"},
+        {"id": "UCqVDpXKLmKeBUxFkOpxBWNg", "name": "Joshua Weissman", "lang": "en"},
+        {"id": "UCQdPoK_4rGBO55AinBUcyyw", "name": "Drew Binsky", "lang": "en"},
+        {"id": "UCVj0O0gJCsTZcYWGbzYTmvQ", "name": "Best Ever Food Review Show", "lang": "en"},
+        {"id": "UCG-qjGnrO32kcuEz_-F8iVQ", "name": "Wolters World", "lang": "en"},
+        {"id": "UChBEbMKI1eCemoMfVJgpd4g", "name": "Rick Steves Europe", "lang": "en"}
+      ]
+    }
   },
-  "bilibili_labels": [
-    "知识", "科学科普", "社科法律", "人文历史", "财经商业",
-    "科技", "数码", "计算机技术", "科工机械", "极客DIY",
-    "纪录片", "科学探索", "校园学习", "演讲公开课",
-    "职业职场", "设计创意", "野生技术协会", "资讯", "环球"
-  ],
-  "title_exclude": [
-    "搞笑", "鬼畜", "娱乐", "综艺", "日常", "vlog",
-    "开箱", "试吃", "测评", "带货", "直播", "翻唱"
-  ]
+  "youtube_labels": ["科学科普","演讲思想","数学计算机","历史人文","经济商业","创意设计","美食旅游"]
 }
