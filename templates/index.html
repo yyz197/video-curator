@@ -552,6 +552,63 @@ const app = createApp({
         chatLoading.value = false;
     }
 
+    // ── Subtitles ──
+    let currentSubtitleIdx = 0;
+
+    async function loadSubtitles() {
+        if (!currentVideo.value || subtitleLoading.value) return;
+        subtitleLoading.value = true;
+
+        try {
+            const v = currentVideo.value;
+            const embedId = v.embed_id || v.youtube_id || '';
+            const params = new URLSearchParams({video_id:v.id, source:v.source, embed_id:embedId});
+            const r = await fetch('/api/translate?'+params);
+            const d = await r.json();
+
+            const bar = document.getElementById('subtitleBar');
+            const zh = document.getElementById('subtitleBarZh');
+            const en = document.getElementById('subtitleBarEn');
+            const zhCol = document.getElementById('subtitleZhCollapse');
+            if (!bar) { subtitleLoading.value = false; return; }
+            bar.style.display = 'block';
+            if (zhCol) zhCol.style.display = 'block';
+
+            if (d.translation && d.translation.trim()) {
+                zh.innerHTML = d.translation.replace(/\n/g, '<br>');
+                zh.style.display = 'block';
+            } else {
+                zh.textContent = d.error || '字幕未缓存, 请开VPN后获取';
+            }
+
+            if (d.segments && d.segments.length) {
+                subtitleSegments.value = d.segments;
+                fullTranslation.value = d.translation || '';
+                currentSubtitleIdx = 0;
+                en.textContent = d.segments[0]?.original || '';
+                en.style.display = 'block';
+                if (v.source !== 'bilibili') startTimeSync();
+            } else {
+                en.style.display = 'none';
+            }
+        } catch(e) {}
+        subtitleLoading.value = false;
+    }
+
+    window._navigateSubtitle = function(dir) {
+        const newIdx = currentSubtitleIdx + dir;
+        if (newIdx >= 0 && newIdx < subtitleSegments.value.length) {
+            currentSubtitleIdx = newIdx;
+            const seg = subtitleSegments.value[newIdx];
+            const en = document.getElementById('subtitleBarEn');
+            if (en) en.textContent = seg.original || '';
+            const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
+            if (iframe) {
+                iframe.src = iframe.src.split('?')[0] + '?autoplay=0&rel=0&enablejsapi=1&start=' + Math.floor(seg.start);
+            }
+        }
+    };
+
     // ── YouTube Time Sync ──
     let timeSyncTimer = null;
     let ytPlayerReady = false;
