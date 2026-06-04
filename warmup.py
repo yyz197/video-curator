@@ -11,10 +11,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 os.environ.setdefault("VC_CACHE_DIR", "/tmp/vc-warmup-cache")
 
 try:
-    from app import app, generate_summary, generate_summaries_parallel, cache_key, cache_set, cache_get
+    from app import app, generate_summary, generate_summaries_parallel, cache_key, cache_set
     from app import fetch_bilibili_videos, fetch_youtube_videos, _video_score
-    from app import get_transcript_timed, _translate_text_en_to_zh
-    from config import VIDEOS_PER_PAGE, BILIBILI_CATEGORY_LABELS, DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, SUMMARY_CACHE_TTL, DEEPL_API_KEY
+    from config import VIDEOS_PER_PAGE, BILIBILI_CATEGORY_LABELS
 except Exception as e:
     print(f"导入失败: {e}")
     traceback.print_exc()
@@ -33,36 +32,6 @@ def _save_video_list_cache(source: str, videos: list, label: str, sort: str = "s
     }
     cache_set(ck, data)
     print(f"     {label}: 缓存 {total} 个视频 (key={ck})")
-
-
-def _prefetch_subtitle_and_translate(video: dict) -> None:
-    """预加载字幕并翻译, 缓存到本地"""
-    embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
-    if not embed_id:
-        return
-    source = video.get("source", "")
-    ck = cache_key("translate", source, video.get("id", ""))
-
-    # 已有缓存跳过
-    if cache_get(ck):
-        return
-
-    # 获取带时间戳的字幕
-    timed = get_transcript_timed({"source": source, "embed_id": embed_id})
-    if not timed or not timed.get("segments"):
-        return
-
-    raw_text = timed.get("text", "")
-
-    # B站字幕已是中文, 直接存
-    if source == "bilibili":
-        cache_set(ck, {"translation": raw_text[:2000]})
-        return
-
-    # YouTube: 使用统一翻译函数 (DeepL优先, DeepSeek兜底, 全量不截断)
-    translation = _translate_text_en_to_zh(raw_text)
-    if translation:
-        cache_set(ck, {"translation": translation})
 
 
 def _prefetch_analysis(video: dict) -> None:
@@ -189,16 +158,6 @@ def warmup():
         except Exception as e:
             print(f"  !! 摘要失败: {e}")
 
-        # ── 字幕 + 翻译 (Top 15 YouTube) ──
-        yt_top = [v for v in all_videos if v.get("source") == "youtube"][:15]
-        print(f"  → 对 Top {len(yt_top)} YouTube 视频预加载字幕...")
-        for i, v in enumerate(yt_top):
-            try:
-                _prefetch_subtitle_and_translate(v)
-                print(f"     [{i+1}/{len(yt_top)}] {v.get('title','')[:40]}")
-            except Exception as e:
-                print(f"     [{i+1}] 失败: {e}")
-
         # ── 深度分析 (Top 20) ──
         top20 = all_videos[:20]
         print(f"  → 对 Top {len(top20)} 视频生成深度分析...")
@@ -209,7 +168,7 @@ def warmup():
             except Exception as e:
                 print(f"     [{i+1}] 失败: {e}")
 
-        print(f"✅ 预热完成: {len(top20)}分析 + {len(yt_top)}字幕 + {len(top)}摘要 + {len(all_videos)}列表")
+        print(f"✅ 预热完成: {len(top20)}分析 + {len(top)}摘要 + {len(all_videos)}列表\n💡 字幕翻译请在本地开VPN后点按钮获取")
 
 
 if __name__ == "__main__":

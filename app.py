@@ -885,9 +885,39 @@ def fetch_youtube_transcript(video_id: str) -> str:
 
 
 def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
-    """YouTube 字幕: yt-dlp优先(SRT), youtube-transcript-api兜底"""
+    """YouTube 字幕: youtube-transcript-api优先, yt-dlp本地备用"""
     if not video_id:
         return None
+    cache_path = _get_transcript_cache_path("youtube", video_id)
+    if cache_path.exists():
+        try:
+            data = json.loads(cache_path.read_text(encoding="utf-8"))
+            return data if isinstance(data, dict) else {"text": str(data), "segments": []}
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    segments = []
+
+    # 1) youtube-transcript-api (更轻量, GitHub Actions也偶尔能过)
+    try:
+        from youtube_transcript_api import YouTubeTranscriptApi
+        api = YouTubeTranscriptApi()
+        transcript = api.fetch(video_id, languages=["zh-Hans", "zh", "en"])
+        segments = [{"start": round(t.start, 1), "duration": round(t.duration, 1), "original": t.text} for t in transcript if t.text]
+    except Exception:
+        app.logger.debug(f"youtube-transcript-api 失败: {video_id}")
+
+    # 2) yt-dlp 本地备用 (GitHub被封, 仅本地VPN环境可用)
+    if not segments:
+        segments = _fetch_youtube_transcript_ytdlp(video_id) or []
+
+    if segments:
+        text = " ".join(s["original"] for s in segments)
+        text = " ".join(text.split())
+        data = {"text": text, "segments": segments[:800]}
+        cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        return data
+    return None
     cache_path = _get_transcript_cache_path("youtube", video_id)
     if cache_path.exists():
         try:
@@ -1348,7 +1378,11 @@ def api_translate():
     # 2) 无缓存 → 尝试实时获取 + 翻译
     timed_data = get_transcript_timed(video)
     if not timed_data or not timed_data.get("segments"):
-        return jsonify({"translation": "", "segments": [], "error": "无法获取字幕(需VPN或warmup预加载)"})
+        return jsonify({
+            "translation": "",
+            "segments": [],
+            "error": "无缓存字幕(开VPN后重试, 首次获取后会缓存本地)",
+        })
 
     segments = timed_data.get("segments", [])
     raw_text = timed_data.get("text", "")
