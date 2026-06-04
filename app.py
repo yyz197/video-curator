@@ -216,6 +216,52 @@ def _video_score(v: dict) -> float:
     return round(score, 1)
 
 
+def _video_score_featured(v: dict) -> float:
+    """精选评分：降低时效性加权，突出内容深度和作者权重，利于挖掘高质量老视频"""
+    views = v.get("views_raw", 0) or _parse_view_count(v.get("views", ""))
+    dur = v.get("duration_seconds", 0)
+    published = v.get("published", 0)
+
+    score = max(1, views) ** 0.45
+
+    # 时长加成：中长视频加权（10-60分钟最佳，长视频+讲座也加分）
+    if 600 <= dur <= 3600:
+        score *= 1.4
+    elif dur > 3600:
+        score *= 1.3
+
+    # 极低时效性：只保留微弱衰减，不奖励新品（和默认评分相反）
+    if isinstance(published, (int, float)) and published > 0:
+        age_hours = (time.time() - published) / 3600
+        if age_hours <= 24:
+            score *= 1.3
+        elif age_hours <= 168:
+            score *= 1.1
+
+    # 作者权重（保留）
+    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online"}
+    if v.get("author", "") in top_authors:
+        score *= 1.5
+
+    return round(score, 2)
+
+
+def _latest_quality_filter(v: dict) -> bool:
+    """最新模式质量过滤：播放量相对频道加权，过滤低质新视频"""
+    views = v.get("views_raw", 0) or _parse_view_count(v.get("views", ""))
+    author = v.get("author", "")
+
+    # 频道公信力基准（知名频道容忍更高新视频）
+    high_trust = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "3Blue1Brown", "SmarterEveryDay", "SciShow", "Vsauce", "National Geographic", "BBC Earth", "Vox"}
+
+    if author in high_trust:
+        min_views = 5000  # 高公信/频道：5000播放保底
+    else:
+        min_views = 20000  # 普通频道：2万播放门槛
+
+    return views >= min_views
+
+
 # ──────────────────────────────────────────────
 #  YouTube 视频源 (并发请求)
 # ──────────────────────────────────────────────
@@ -241,7 +287,7 @@ def _bilibili_headers() -> dict:
     }
 
 
-def format_count(n: int) -> str:
+def _parse_bilibili_video(item: dict) -> dict:
     tid = item.get("tid", 0)
     dur_raw = item.get("duration", "")
     dur_sec = parse_duration(dur_raw)
@@ -256,10 +302,10 @@ def format_count(n: int) -> str:
         "duration": format_duration(dur_sec),
         "duration_seconds": dur_sec,
         "duration_badge": duration_badge(dur_sec),
-        "views": format_count(stat.get("view", 0)),
+        "views": format_count(int(stat.get("view", 0) or 0)),
         "views_raw": int(stat.get("view", 0) or 0),
-        "danmaku": format_count(stat.get("danmaku", 0)),
-        "likes": format_count(stat.get("like", 0)),
+        "danmaku": format_count(int(stat.get("danmaku", 0) or 0)),
+        "likes": format_count(int(stat.get("like", 0) or 0)),
         "likes_raw": int(stat.get("like", 0) or 0),
         "category": BILIBILI_CATEGORIES.get(tid, _guess_category(tid)),
         "description": (item.get("desc", "") or "")[:300],
@@ -270,6 +316,9 @@ def format_count(n: int) -> str:
         "summary": None,
         "favorited": False,
     }
+
+
+BILIBILI_CATEGORIES = {}  # B站已移除, 保留占位防止引用报错
 
 
 def _guess_category(tid: int) -> str:
@@ -556,52 +605,25 @@ def _get_uploads_playlist_id(channel_id: str) -> str:
     return channel_id
 
 
-def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
-    """获取单个 YouTube 频道的最新视频 (playlistItems优先, 失败降级search)"""
-    ck = cache_key("yt_search", channel["id"])
+def _fetch_youtube_channel_search(channel: dict, max_pages: int = 1) -> list[dict]:
+    """获取单个 YouTube 频道的最新视频 (playlistItems优先, 失败降级search)
+    max_pages: 翻页数，每页50条。1页=5条(轻量), 2页=100条(精选深挖)"""
+    max_results = 50 if max_pages >= 2 else 5
+    ck = cache_key("yt_search", channel["id"], str(max_pages))
     if cached := cache_get_with_ttl(ck, 3600):
         return cached.get("videos", [])
 
     videos = []
+    seen = set()
     playlist_id = _get_uploads_playlist_id(channel["id"])
-    try:
-        resp = requests.get(
-            "https://www.googleapis.com/youtube/v3/playlistItems",
-            params={
-                "part": "snippet",
-                "playlistId": playlist_id,
-                "maxResults": 5,
-                "key": YOUTUBE_API_KEY,
-            },
-            timeout=YOUTUBE_TIMEOUT,
-        )
-        data = resp.json()
-        if "error" in data or data.get("items") is None:
-            # playlistItems 失败, 降级到 search (仅1单位→100单位, 但能兜底)
-            app.logger.debug(f"YouTube [{channel['name']}]: playlistItems 失败, 降级 search")
-            resp = requests.get(
-                "https://www.googleapis.com/youtube/v3/search",
-                params={
-                    "part": "snippet",
-                    "channelId": channel["id"],
-                    "maxResults": 3,
-                    "order": "date",
-                    "type": "video",
-                    "key": YOUTUBE_API_KEY,
-                },
-                timeout=YOUTUBE_TIMEOUT,
-            )
-            data = resp.json()
-        if "error" in data:
-            err = data["error"]
-            msg = err.get("message", str(err))
-            app.logger.error(f"YouTube API 错误 ({channel['name']}): HTTP {resp.status_code} — {msg}")
-            return videos
-        for item in data.get("items", []):
+
+    def _parse_items(items):
+        for item in items:
             snippet = item.get("snippet", {})
             vid = snippet.get("resourceId", {}).get("videoId", "") or item.get("id", {}).get("videoId", "")
-            if not vid:
+            if not vid or vid in seen:
                 continue
+            seen.add(vid)
             pub_ts = 0
             pub_str = snippet.get("publishedAt", "")
             if pub_str:
@@ -634,6 +656,55 @@ def _fetch_youtube_channel_search(channel: dict) -> list[dict]:
                 "summary": None,
                 "favorited": False,
             })
+
+    try:
+        page_token = None
+        pages_fetched = 0
+        while pages_fetched < max_pages:
+            params = {
+                "part": "snippet",
+                "playlistId": playlist_id,
+                "maxResults": min(max_results, 50),
+                "key": YOUTUBE_API_KEY,
+            }
+            if page_token:
+                params["pageToken"] = page_token
+            resp = requests.get(
+                "https://www.googleapis.com/youtube/v3/playlistItems",
+                params=params,
+                timeout=YOUTUBE_TIMEOUT,
+            )
+            data = resp.json()
+            if "error" in data or data.get("items") is None:
+                if pages_fetched == 0:
+                    # 首次失败, 降级到 search
+                    app.logger.debug(f"YouTube [{channel['name']}]: playlistItems 失败, 降级 search")
+                    resp = requests.get(
+                        "https://www.googleapis.com/youtube/v3/search",
+                        params={
+                            "part": "snippet",
+                            "channelId": channel["id"],
+                            "maxResults": 3,
+                            "order": "date",
+                            "type": "video",
+                            "key": YOUTUBE_API_KEY,
+                        },
+                        timeout=YOUTUBE_TIMEOUT,
+                    )
+                    data = resp.json()
+                    if "error" not in data:
+                        _parse_items(data.get("items", []))
+                break
+            if "error" in data:
+                err = data["error"]
+                msg = err.get("message", str(err))
+                app.logger.error(f"YouTube API 错误 ({channel['name']}): HTTP {resp.status_code} — {msg}")
+                break
+            _parse_items(data.get("items", []))
+            pages_fetched += 1
+            page_token = data.get("nextPageToken")
+            if not page_token:
+                break
     except Exception as e:
         app.logger.error(f"YouTube 搜索失败 ({channel['name']}): {e}")
     else:
@@ -698,15 +769,16 @@ def _enrich_youtube_videos(videos: list[dict]) -> list[dict]:
     return videos
 
 
-def fetch_youtube_videos_api() -> list[dict]:
-    """YouTube Data API v3 (需要 API Key) — 并发搜索 + 批量详情"""
+def fetch_youtube_videos_api(max_pages: int = 1) -> list[dict]:
+    """YouTube Data API v3 (需要 API Key) — 并发搜索 + 批量详情
+    max_pages=1: 5条/频道 (轻量), max_pages=2+: 50条/页翻页 (精选深挖)"""
     if not YOUTUBE_API_KEY:
         return []
     all_videos = []
 
     # 并发搜索所有频道
     with ThreadPoolExecutor(max_workers=YOUTUBE_MAX_WORKERS_API) as executor:
-        futures = {executor.submit(_fetch_youtube_channel_search, ch): ch for ch in YOUTUBE_EDUCATION_CHANNELS}
+        futures = {executor.submit(_fetch_youtube_channel_search, ch, max_pages): ch for ch in YOUTUBE_EDUCATION_CHANNELS}
         for future in as_completed(futures):
             try:
                 result = future.result()
@@ -717,7 +789,7 @@ def fetch_youtube_videos_api() -> list[dict]:
             except Exception:
                 pass
 
-    app.logger.info(f"YouTube API 搜索完成: 共 {len(all_videos)} 个视频")
+    app.logger.info(f"YouTube API 搜索完成 (max_pages={max_pages}): 共 {len(all_videos)} 个视频")
 
     if all_videos:
         all_videos = _enrich_youtube_videos(all_videos)
@@ -732,10 +804,10 @@ def fetch_youtube_videos_api() -> list[dict]:
     return all_videos
 
 
-def fetch_youtube_videos() -> list[dict]:
+def fetch_youtube_videos(max_pages: int = 1) -> list[dict]:
     """YouTube 视频获取入口"""
     if YOUTUBE_API_KEY:
-        videos = fetch_youtube_videos_api()
+        videos = fetch_youtube_videos_api(max_pages)
         if videos:
             app.logger.info(f"YouTube: 使用 API 模式 — {len(videos)} 个视频")
             return videos
@@ -1232,22 +1304,23 @@ def api_videos():
     essence = request.args.get("essence", "false").lower() == "true"
     sort = request.args.get("sort", "score")
     following = request.args.get("following", "")
+    latest_days = int(request.args.get("latest_days", 7))
 
     # 视频列表短期缓存键
-    list_ck = cache_key("videos", source, category, str(page), search[:20], sort)
+    list_ck = cache_key("videos", source, category, str(page), search[:20], sort, str(latest_days))
 
     # 偏好分类解析（提前，供缓存过滤使用）
     preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
 
-    # 缓存策略: 短期(30min)优先, 预热(24h)兜底, prefs/essence时缩短预热有效期
+    # 缓存策略: 短期(30min)优先, 预热(12h)兜底, prefs/essence时缩短预热有效期
     if not with_summary and not search:
         # 1) 短期缓存 (无偏好/无精华时)
         if not prefs and not essence and not following:
             if cached := cache_get_with_ttl(list_ck, VIDEO_LIST_CACHE_TTL):
                 _attach_summaries(cached.get("videos", []))
                 return jsonify(cached)
-        # 2) 预热缓存 (最多4h有效, 避免整天看旧数据)
-        warmup_ttl = 14400 if (prefs or essence) else 86400
+        # 2) 预热缓存 (最多4h有效, 避免整天看旧数据; 默认12h)
+        warmup_ttl = 14400 if (prefs or essence) else 43200
         if warmup_cached := cache_get_with_ttl(list_ck, warmup_ttl):
             videos = warmup_cached.get("videos", [])
             _attach_summaries(videos)
@@ -1272,7 +1345,11 @@ def api_videos():
 
     all_videos = []
 
-    all_videos.extend(fetch_youtube_videos())
+    # 精选模式: 深挖历史 (每频道翻页3次=150条)
+    if sort == "score":
+        all_videos.extend(fetch_youtube_videos(max_pages=3))
+    else:
+        all_videos.extend(fetch_youtube_videos(max_pages=1))
 
     # 搜索过滤
     if search:
@@ -1282,9 +1359,20 @@ def api_videos():
             if q in v["title"].lower() or q in v.get("description", "").lower() or q in v["author"].lower()
         ]
 
+    # ── 最新算法: 7-14天时间窗口 + 质量过滤 ──
+    if sort == "latest":
+        cutoff = time.time() - latest_days * 86400
+        all_videos = [
+            v for v in all_videos
+            if v.get("published", 0) >= cutoff and _latest_quality_filter(v)
+        ]
+
     # 视频质量评分 + 加载缓存摘要
     for v in all_videos:
-        v["score"] = _video_score(v)
+        if sort in ("score", "latest"):
+            v["score"] = _video_score_featured(v)
+        else:
+            v["score"] = _video_score(v)
         # 附加预缓存的摘要
         ck_sum = cache_key("summary", v["source"], v["id"])
         if not v.get("summary") and (s_cached := cache_get_with_ttl(ck_sum, SUMMARY_CACHE_TTL)):
@@ -1313,6 +1401,8 @@ def api_videos():
     # 排序
     if sort == "time":
         all_videos.sort(key=lambda v: v.get("published", 0), reverse=True)
+    elif sort == "latest":
+        all_videos.sort(key=lambda v: (v["score"], v.get("published", 0)), reverse=True)
     elif sort == "views":
         all_videos.sort(key=lambda v: v.get("views_raw", 0), reverse=True)
     elif sort == "likes":
@@ -1342,8 +1432,8 @@ def api_videos():
         "time_distribution": _time_distribution(all_videos),
     }
 
-    # 缓存非摘要非搜索非偏好非精华非自定义排序的结果
-    if not with_summary and not search and not prefs and not essence and sort == "score":
+    # 缓存非摘要非搜索非偏好非精华的结果 (latest 也需要缓存)
+    if not with_summary and not search and not prefs and not essence and sort in ("score", "latest"):
         cache_set(list_ck, result)
 
     return jsonify(result)

@@ -204,7 +204,7 @@ function fmtTime(s){const m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+S
 async function fetchVideos(reset=true){
     if(isLoading.value)return;isLoading.value=true;
     if(reset){page.value=1;videos.value=[]}
-    const sortVal=activeTab.value==='featured'?'score':'time';
+    const sortVal=activeTab.value==='featured'?'score':'latest';
     const params=new URLSearchParams({page:page.value,sort:sortVal,category:category.value,search:search.value,prefs:prefs.value.join(','),essence:essence.value});
     try{const r=await fetch('/api/videos?'+params);const d=await r.json();
         let vids=d.videos||[];
@@ -219,7 +219,7 @@ let searchTimer;
 function onSearchInput(){clearTimeout(searchTimer);searchTimer=setTimeout(()=>{search.value=searchQuery.value;fetchVideos(true)},400)}
 function clearSearch(){searchQuery.value='';search.value='';fetchVideos(true)}
 function setCategory(c){category.value=c===category.value?'':c;fetchVideos(true)}
-function switchTo(tab){activeTab.value=tab;sort.value=tab==='featured'?'score':'time';fetchVideos(true)}
+function switchTo(tab){activeTab.value=tab;sort.value=tab==='featured'?'score':'latest';fetchVideos(true)}
 
 function isFaved(id){return favorites.value.some(f=>f.id===id)}
 function toggleFav(v){const idx=favorites.value.findIndex(f=>f.id===v.id);if(idx>=0){favorites.value.splice(idx,1);toast('已取消收藏')}else{favorites.value.unshift({id:v.id,source:v.source,title:v.title,url:v.url,thumbnail:v.thumbnail,author:v.author});toast('已收藏','success')}localStorage.setItem('vc-favorites',JSON.stringify(favorites.value))}
