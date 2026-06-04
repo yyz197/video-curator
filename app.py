@@ -910,7 +910,7 @@ def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
     if segments:
         text = " ".join(s["original"] for s in segments)
         text = " ".join(text.split())
-        data = {"text": text[:4000], "segments": segments[:300]}
+        data = {"text": text, "segments": segments[:800]}  # 全量文本 + 足够分段(~40min)
         cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
         return data
     return None
@@ -969,7 +969,7 @@ def _fetch_bilibili_transcript_raw(bvid: str) -> dict | None:
                 lines.append(content)
         text = " ".join(lines)
         text = " ".join(text.split())
-        result = {"text": text[:4000], "segments": segments[:200]}
+        result = {"text": text, "segments": segments[:800]}
         cache_path.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
         return result
     except Exception:
@@ -1337,11 +1337,11 @@ def api_translate():
     # 1) 先查翻译缓存 (warmup每天预生成)
     ck = cache_key("translate", source, video_id or embed_id)
     if translate_cached := cache_get_with_ttl(ck, SUMMARY_CACHE_TTL):
-        timed_data = get_transcript_timed(video)
+         timed_data = get_transcript_timed(video)
         segments = (timed_data or {}).get("segments", [])
         return jsonify({
             "translation": translate_cached.get("translation", ""),
-            "segments": segments[:300],
+            "segments": segments[:800],
             "cached": True,
         })
 
@@ -1355,13 +1355,13 @@ def api_translate():
 
     # B站字幕直接返回
     if source == "bilibili":
-        return jsonify({"translation": raw_text[:2000], "segments": segments[:300], "cached": True})
+        return jsonify({"translation": raw_text, "segments": segments[:800], "cached": True})
 
     # 翻译
     full_translation = _translate_text_en_to_zh(raw_text)
     if full_translation:
         cache_set(ck, {"translation": full_translation})
-        return jsonify({"translation": full_translation, "segments": segments[:300], "cached": False})
+        return jsonify({"translation": full_translation, "segments": segments[:800], "cached": False})
     return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500
 
 

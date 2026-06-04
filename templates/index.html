@@ -652,17 +652,16 @@ const app = createApp({
         if (!bar || idx < 0 || idx >= subtitleSegments.value.length) return;
         const seg = subtitleSegments.value[idx];
         bar.style.display = 'block';
-        // Chinese: full translation (auto-scroll to approximate position)
-        if (fullTranslation.value) {
+        // Chinese: always show if available
+        const hasTranslation = fullTranslation.value && fullTranslation.value.trim().length > 0;
+        if (hasTranslation) {
             zh.innerHTML = fullTranslation.value.replace(/\n/g, '<br>');
-            document.getElementById('subtitleZhCollapse').style.display = 'block';
-            document.getElementById('subtitleBarToggle').textContent = '收起中译';
         } else {
-            zh.innerHTML = (seg.translated || seg.original || '');
-            document.getElementById('subtitleZhCollapse').style.display = 'block';
-            document.getElementById('subtitleBarToggle').textContent = '收起';
+            zh.innerHTML = '(中文翻译未缓存，请等待 GitHub warmup 重新生成)';
         }
-        // English: current segment text
+        document.getElementById('subtitleZhCollapse').style.display = 'block';
+        document.getElementById('subtitleBarToggle').textContent = hasTranslation ? '收起中译' : '暂无中译';
+        // English: current segment
         en.textContent = seg.original || '';
         time.textContent = fmtTime(seg.start);
         idxEl.textContent = `${idx + 1}/${subtitleSegments.value.length}`;
