@@ -554,10 +554,50 @@ const app = createApp({
 
     // ── Subtitles ──
     let currentSubtitleIdx = 0;
+    let chineseChunks = [];
+
+    function splitChineseToChunks(text, count) {
+        if (!text || count <= 0) return [];
+        const sentences = text.split(/(?<=[。！？\n])/).map(s => s.trim()).filter(s => s);
+        if (sentences.length <= count) return sentences;
+        const per = Math.ceil(sentences.length / count);
+        const chunks = [];
+        for (let i = 0; i < count; i++) {
+            chunks.push(sentences.slice(i * per, (i + 1) * per).join(''));
+        }
+        return chunks;
+    }
+
+    function showSubtitleInBar(idx) {
+        const zh = document.getElementById('subtitleBarZh');
+        const en = document.getElementById('subtitleBarEn');
+        const time = document.getElementById('subtitleBarTime');
+        const idxEl = document.getElementById('subtitleBarIdx');
+        const seg = subtitleSegments.value[idx];
+        if (!seg || !en) return;
+        en.textContent = seg.original || '';
+        if (zh && chineseChunks[idx]) zh.innerHTML = chineseChunks[idx];
+        if (time) time.textContent = fmtTime(seg.start);
+        if (idxEl) idxEl.textContent = `${idx + 1}/${subtitleSegments.value.length}`;
+        currentSubtitleIdx = idx;
+    }
 
     async function loadSubtitles() {
         if (!currentVideo.value || subtitleLoading.value) return;
         subtitleLoading.value = true;
+        const bar = document.getElementById('subtitleBar');
+        const zh = document.getElementById('subtitleBarZh');
+        const en = document.getElementById('subtitleBarEn');
+        const zhCol = document.getElementById('subtitleZhCollapse');
+        if (!bar) { subtitleLoading.value = false; return; }
+
+        // 显示加载进度
+        bar.style.display = 'block';
+        if (zhCol) zhCol.style.display = 'block';
+        if (zh) zh.textContent = '⏳ 正在获取字幕并翻译...';
+        if (en) en.textContent = '';
+        document.getElementById('subtitleBarTime').textContent = '';
+        document.getElementById('subtitleBarIdx').textContent = '';
 
         try {
             const v = currentVideo.value;
@@ -566,30 +606,22 @@ const app = createApp({
             const r = await fetch('/api/translate?'+params);
             const d = await r.json();
 
-            const bar = document.getElementById('subtitleBar');
-            const zh = document.getElementById('subtitleBarZh');
-            const en = document.getElementById('subtitleBarEn');
-            const zhCol = document.getElementById('subtitleZhCollapse');
-            if (!bar) { subtitleLoading.value = false; return; }
-            bar.style.display = 'block';
-            if (zhCol) zhCol.style.display = 'block';
-
-            if (d.translation && d.translation.trim()) {
-                zh.innerHTML = d.translation.replace(/\n/g, '<br>');
-                zh.style.display = 'block';
-            } else {
-                zh.textContent = d.error || '字幕未缓存, 请开VPN后获取';
-            }
-
             if (d.segments && d.segments.length) {
                 subtitleSegments.value = d.segments;
                 fullTranslation.value = d.translation || '';
+                chineseChunks = d.translation ? splitChineseToChunks(d.translation, d.segments.length) : [];
                 currentSubtitleIdx = 0;
-                en.textContent = d.segments[0]?.original || '';
-                en.style.display = 'block';
+                showSubtitleInBar(0);
                 if (v.source !== 'bilibili') startTimeSync();
+            } else if (d.translation) {
+                fullTranslation.value = d.translation;
+                subtitleSegments.value = [];
+                chineseChunks = [];
+                if (zh) zh.innerHTML = d.translation.replace(/\n/g, '<br>');
+                if (en) { en.textContent = '(无分段, 显示中文全文)'; en.style.display = 'block'; }
             } else {
-                en.style.display = 'none';
+                if (zh) zh.textContent = d.error || '字幕未缓存, 请开VPN后获取';
+                if (en) en.style.display = 'none';
             }
         } catch(e) {}
         subtitleLoading.value = false;
@@ -598,10 +630,8 @@ const app = createApp({
     window._navigateSubtitle = function(dir) {
         const newIdx = currentSubtitleIdx + dir;
         if (newIdx >= 0 && newIdx < subtitleSegments.value.length) {
-            currentSubtitleIdx = newIdx;
+            showSubtitleInBar(newIdx);
             const seg = subtitleSegments.value[newIdx];
-            const en = document.getElementById('subtitleBarEn');
-            if (en) en.textContent = seg.original || '';
             const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
             if (iframe) {
                 iframe.src = iframe.src.split('?')[0] + '?autoplay=0&rel=0&enablejsapi=1&start=' + Math.floor(seg.start);
@@ -669,9 +699,7 @@ const app = createApp({
         if (!t || t <= 0 || !subtitleSegments.value.length) return;
         const idx = subtitleSegments.value.findIndex(s => t >= s.start && t <= s.start + (s.duration || 3));
         if (idx >= 0 && idx !== currentSubtitleIdx) {
-            currentSubtitleIdx = idx;
-            const en = document.getElementById('subtitleBarEn');
-            if (en) en.textContent = subtitleSegments.value[idx]?.original || '';
+            showSubtitleInBar(idx);
         }
     });
 
