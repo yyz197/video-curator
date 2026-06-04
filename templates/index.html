@@ -552,6 +552,53 @@ const app = createApp({
         chatLoading.value = false;
     }
 
+    // ── Subtitle Merge + Split ──
+    function mergeSegments(rawSegments) {
+        const merged = [];
+        let group = [];
+        const sentenceEnd = /[.?!。？！]$/;
+        for (let i = 0; i < rawSegments.length; i++) {
+            const seg = rawSegments[i];
+            group.push(seg);
+            const text = group.map(s => s.original).join(' ');
+            const prevEnd = i > 0 ? rawSegments[i-1].start + (rawSegments[i-1].duration || 2) : 0;
+            const gap = seg.start - prevEnd;
+            // Break on: sentence end OR big gap OR long text
+            if (sentenceEnd.test(seg.original.trim()) || gap > 3 || text.length > 120) {
+                merged.push({
+                    start: group[0].start,
+                    duration: (seg.start + (seg.duration || 2)) - group[0].start,
+                    original: text.trim(),
+                });
+                group = [];
+            }
+        }
+        if (group.length) {
+            const last = group[group.length - 1];
+            merged.push({
+                start: group[0].start,
+                duration: (last.start + (last.duration || 2)) - group[0].start,
+                original: group.map(s => s.original).join(' ').trim(),
+            });
+        }
+        return merged;
+    }
+
+    function splitTranslation(fullText, count) {
+        if (!fullText || count <= 0) return [];
+        // Split Chinese text into roughly equal chunks matching paragraph count
+        const sentences = fullText.split(/(?<=[。！？\n])/);
+        const clean = sentences.filter(s => s.trim());
+        if (clean.length <= count) return clean.map(s => s.trim());
+        // Distribute: each paragraph gets ~clean.length/count sentences
+        const perChunk = Math.ceil(clean.length / count);
+        const chunks = [];
+        for (let i = 0; i < count; i++) {
+            chunks.push(clean.slice(i * perChunk, (i + 1) * perChunk).join('').trim());
+        }
+        return chunks;
+    }
+
     // ── Subtitles (Show in bar) ──
     let currentSubtitleIdx = 0;
 
@@ -567,23 +614,28 @@ const app = createApp({
             const params = new URLSearchParams({video_id:v.id, source:v.source, embed_id:embedId});
             const r = await fetch('/api/translate?'+params);
             const d = await r.json();
+
             if (d && d.segments && d.segments.length) {
-                subtitleSegments.value = d.segments;
+                // Merge fragments into readable paragraphs
+                const merged = mergeSegments(d.segments);
+                const zhChunks = splitTranslation(d.translation || '', merged.length);
+                // Attach Chinese to each paragraph
+                subtitleSegments.value = merged.map((m, i) => ({
+                    ...m,
+                    translated: zhChunks[i] || '',
+                }));
                 fullTranslation.value = d.translation || '';
                 currentSubtitleIdx = 0;
                 showSubtitleInBar(0);
                 if (v.source !== 'bilibili') startTimeSync();
             } else if (d && d.translation) {
-                // 有翻译但无分段: 显示中文全文
                 fullTranslation.value = d.translation;
                 const bar = document.getElementById('subtitleBar');
-                const en = document.getElementById('subtitleBarEn');
                 const zh = document.getElementById('subtitleBarZh');
-                const tgl = document.getElementById('subtitleBarToggle');
                 if (bar) bar.style.display = 'block';
-                if (en) en.textContent = '(字幕分段未缓存, 点击展开中译查看中文翻译)';
                 if (zh) zh.innerHTML = d.translation.replace(/\n/g, '<br>');
-                if (tgl) { tgl.style.display = ''; tgl.textContent = '查看中译'; }
+                document.getElementById('subtitleBarEn').textContent = '(无分段, 显示中文全文翻译)';
+                document.getElementById('subtitleBarToggle').style.display = 'none';
             } else {
                 toast('此视频无字幕数据', 'error');
             }
@@ -593,21 +645,21 @@ const app = createApp({
 
     function showSubtitleInBar(idx) {
         const bar = document.getElementById('subtitleBar');
+        const zh = document.getElementById('subtitleBarZh');
         const en = document.getElementById('subtitleBarEn');
         const time = document.getElementById('subtitleBarTime');
         const idxEl = document.getElementById('subtitleBarIdx');
-        const zh = document.getElementById('subtitleBarZh');
         if (!bar || idx < 0 || idx >= subtitleSegments.value.length) return;
         const seg = subtitleSegments.value[idx];
         bar.style.display = 'block';
+        // Chinese primary (from merged split)
+        zh.innerHTML = (seg.translated || seg.original || '').replace(/\n/g, '<br>');
+        document.getElementById('subtitleZhCollapse').style.display = 'block';
+        document.getElementById('subtitleBarToggle').textContent = '收起中译';
+        // English secondary (smaller)
         en.textContent = seg.original || '';
         time.textContent = fmtTime(seg.start);
         idxEl.textContent = `${idx + 1}/${subtitleSegments.value.length}`;
-        // Full Chinese translation (collapsible)
-        if (fullTranslation.value) {
-            zh.innerHTML = fullTranslation.value.replace(/\n/g, '<br>');
-            document.getElementById('subtitleBarToggle').style.display = '';
-        }
         currentSubtitleIdx = idx;
     }
     window._navigateSubtitle = function(dir) {
