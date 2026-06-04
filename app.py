@@ -25,6 +25,7 @@ from config import (
     CACHE_DIR,
     DEEPSEEK_API_KEY,
     DEEPSEEK_BASE_URL,
+    DEEPL_API_KEY,
     MIN_DURATION_SECONDS,
     NOTES_EXPORT_DIR,
     SUMMARY_CACHE_TTL,
@@ -957,6 +958,41 @@ def get_transcript_timed(video: dict) -> dict | None:
     return None
 
 
+def _translate_text_en_to_zh(text: str) -> str:
+    """英译中: DeepL优先(一次调用), DeepSeek兜底(全量不分段截断)"""
+    if DEEPL_API_KEY:
+        try:
+            resp = requests.post(
+                "https://api-free.deepl.com/v2/translate",
+                data={"text": text, "target_lang": "ZH", "source_lang": "EN", "auth_key": DEEPL_API_KEY},
+                timeout=60,
+            )
+            data = resp.json()
+            return data.get("translations", [{}])[0].get("text", "")
+        except Exception as e:
+            app.logger.warning(f"DeepL翻译失败, 回退DeepSeek: {e}")
+
+    if not DEEPSEEK_API_KEY:
+        return ""
+    translations = []
+    chunks = [text[i:i + 2500] for i in range(0, len(text), 2500)]
+    for idx, chunk in enumerate(chunks):
+        prompt = f"将以下英文视频字幕翻译为简体中文，直接输出译文: \n\n{chunk}" if idx == 0 else f"继续翻译: \n\n{chunk}"
+        try:
+            resp = requests.post(
+                f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+                headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1000, "temperature": 0.3},
+                timeout=45,
+            )
+            data = resp.json()
+            t = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+            if t: translations.append(t)
+        except Exception as e:
+            app.logger.error(f"DeepSeek翻译失败(段{idx+1}): {e}")
+    return "\n\n".join(translations)
+
+
 # ──────────────────────────────────────────────
 #  API 路由
 # ──────────────────────────────────────────────
@@ -1267,7 +1303,7 @@ def api_translate():
             "cached": True,
         })
 
-    # 2) 无缓存 → 尝试实时获取
+    # 2) 无缓存 → 尝试实时获取 + 翻译
     timed_data = get_transcript_timed(video)
     if not timed_data or not timed_data.get("segments"):
         return jsonify({"translation": "", "segments": [], "error": "无法获取字幕(需VPN或warmup预加载)"})
@@ -1275,47 +1311,15 @@ def api_translate():
     segments = timed_data.get("segments", [])
     raw_text = timed_data.get("text", "")
 
-    # B站字幕通常是中文, 直接返回分段
+    # B站字幕直接返回
     if source == "bilibili":
-        return jsonify({
-            "translation": raw_text[:2000],
-            "segments": segments[:300],
-            "cached": True,
-        })
+        return jsonify({"translation": raw_text[:2000], "segments": segments[:300], "cached": True})
 
-    # YouTube 实时翻译
-    if not DEEPSEEK_API_KEY:
-        return jsonify({"error": "DeepSeek API 未配置"}), 400
-
-    # 分段翻译
-    chunk_size = 2500
-    chunks = [raw_text[i:i + chunk_size] for i in range(0, len(raw_text), chunk_size)]
-    translations = []
-
-    for idx, chunk in enumerate(chunks[:6]):
-        chunk_prompt = f"将以下英文视频字幕翻译为简体中文。要求：自然流畅，保留原意，适合阅读。直接输出译文，不要说明。\n\n{chunk}" if idx == 0 else f"继续翻译（第{idx+1}段/接上文）：\n\n{chunk}"
-        try:
-            resp = requests.post(
-                f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
-                headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": chunk_prompt}], "max_tokens": 1000, "temperature": 0.3},
-                timeout=45,
-            )
-            data = resp.json()
-            translation = data.get("choices", [{}])[0].get("message", {}).get("content", "")
-            if translation:
-                translations.append(translation)
-        except Exception as e:
-            app.logger.error(f"翻译失败 (段 {idx+1}): {e}")
-
-    full_translation = "\n\n".join(translations)
+    # 翻译
+    full_translation = _translate_text_en_to_zh(raw_text)
     if full_translation:
         cache_set(ck, {"translation": full_translation})
-        return jsonify({
-            "translation": full_translation,
-            "segments": segments[:300],  # 完整覆盖视频
-            "cached": False,
-        })
+        return jsonify({"translation": full_translation, "segments": segments[:300], "cached": False})
     return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500
 
 

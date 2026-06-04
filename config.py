@@ -19,6 +19,9 @@ DEEPSEEK_BASE_URL = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.co
 # YouTube Data API v3 (可选，不填则使用 RSS 模式)
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
 
+# DeepL Free API Key (可选, 免费50万字符/月, 不填则走DeepSeek翻译)
+DEEPL_API_KEY = os.environ.get("DEEPL_API_KEY", "")
+
 # 缓存目录
 CACHE_DIR = os.environ.get("VC_CACHE_DIR", os.path.join(PROJECT_DIR, "cache"))
 

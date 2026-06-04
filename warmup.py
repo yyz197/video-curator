@@ -13,8 +13,8 @@ os.environ.setdefault("VC_CACHE_DIR", "/tmp/vc-warmup-cache")
 try:
     from app import app, generate_summary, generate_summaries_parallel, cache_key, cache_set, cache_get
     from app import fetch_bilibili_videos, fetch_youtube_videos, _video_score
-    from app import get_transcript_timed, parse_iso8601_duration, format_duration, duration_badge
-    from config import VIDEOS_PER_PAGE, BILIBILI_CATEGORY_LABELS, DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, SUMMARY_CACHE_TTL
+    from app import get_transcript_timed, _translate_text_en_to_zh
+    from config import VIDEOS_PER_PAGE, BILIBILI_CATEGORY_LABELS, DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, SUMMARY_CACHE_TTL, DEEPL_API_KEY
 except Exception as e:
     print(f"导入失败: {e}")
     traceback.print_exc()
@@ -37,7 +37,6 @@ def _save_video_list_cache(source: str, videos: list, label: str, sort: str = "s
 
 def _prefetch_subtitle_and_translate(video: dict) -> None:
     """预加载字幕并翻译, 缓存到本地"""
-    import requests as req
     embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
     if not embed_id:
         return
@@ -53,37 +52,17 @@ def _prefetch_subtitle_and_translate(video: dict) -> None:
     if not timed or not timed.get("segments"):
         return
 
-    segments = timed.get("segments", [])
     raw_text = timed.get("text", "")
 
-    # B站字幕已是中文, 直接存分段
+    # B站字幕已是中文, 直接存
     if source == "bilibili":
         cache_set(ck, {"translation": raw_text[:2000]})
         return
 
-    # YouTube 翻译
-    if not DEEPSEEK_API_KEY:
-        return
-    translations = []
-    chunk_size = 2500
-    chunks = [raw_text[i:i + chunk_size] for i in range(0, min(len(raw_text), 15000), chunk_size)]
-    for idx, chunk in enumerate(chunks[:6]):
-        prompt = f"将以下英文视频字幕翻译为简体中文。直接输出译文,不要说明。\n\n{chunk}" if idx == 0 else f"继续翻译: \n\n{chunk}"
-        try:
-            resp = req.post(
-                f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
-                headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 1000, "temperature": 0.3},
-                timeout=60,
-            )
-            data = resp.json()
-            t = data.get("choices", [{}])[0].get("message", {}).get("content", "")
-            if t:
-                translations.append(t)
-        except Exception as e:
-            print(f"      翻译失败段{idx+1}: {e}")
-
-    cache_set(ck, {"translation": "\n\n".join(translations)})
+    # YouTube: 使用统一翻译函数 (DeepL优先, DeepSeek兜底, 全量不截断)
+    translation = _translate_text_en_to_zh(raw_text)
+    if translation:
+        cache_set(ck, {"translation": translation})
 
 
 def _prefetch_analysis(video: dict) -> None:
