@@ -529,26 +529,13 @@ const app = createApp({
 
     // ── Subtitles ──
     let currentSubtitleIdx = 0;
-    let chineseChunks = [];
-
-    function splitChineseToChunks(text, count) {
-        if (!text || count <= 0) return [];
-        const sentences = text.split(/(?<=[。！？\n])/).map(s => s.trim()).filter(s => s);
-        if (sentences.length <= count) return sentences;
-        const per = Math.ceil(sentences.length / count);
-        const chunks = [];
-        for (let i = 0; i < count; i++) {
-            chunks.push(sentences.slice(i * per, (i + 1) * per).join(''));
-        }
-        return chunks;
-    }
 
     function updateOverlay(idx) {
         const ol = document.getElementById('subtitleOverlay');
         const segs = subtitleSegments.value;
         if (!ol || idx < 0 || idx >= segs.length) return;
         const seg = segs[idx];
-        const zh = chineseChunks[idx] || '';
+        const zh = seg.translated || '';
         ol.innerHTML = (zh ? `<div style="font-size:18px;font-weight:600;margin-bottom:6px">${zh}</div>` : '')
             + `<div style="font-size:13px;color:rgba(255,255,255,0.6)">${seg.original}</div>`;
         ol.style.display = 'block';
@@ -589,10 +576,8 @@ const app = createApp({
             if (elapsed < 500) await new Promise(r => setTimeout(r, 500 - elapsed));
 
             if (d.segments && d.segments.length) {
-                // SRT 块天然句子级, 直接用不合并
                 subtitleSegments.value = d.segments;
                 fullTranslation.value = d.translation || '';
-                chineseChunks = d.translation ? splitChineseToChunks(d.translation, d.segments.length) : [];
                 currentSubtitleIdx = 0;
                 updateOverlay(0);
                 showBarInfo(0);

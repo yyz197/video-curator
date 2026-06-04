@@ -1029,6 +1029,41 @@ def get_transcript_timed(video: dict) -> dict | None:
     return None
 
 
+def _translate_segments(segments: list[dict]) -> list[dict]:
+    """逐段翻译字幕片段, 保持原始时间边界。批量发送DeepSeek以提高效率"""
+    if not segments or not DEEPSEEK_API_KEY:
+        return segments
+
+    result = [dict(s) for s in segments]
+    batch_size = 30
+    for batch_start in range(0, len(segments), batch_size):
+        batch = segments[batch_start:batch_start + batch_size]
+        # 构建编号的英文文本
+        lines = [f"[{i+1}] {s.get('original','')}" for i, s in enumerate(batch)]
+        prompt = "将以下编号的英文字幕逐条翻译为简体中文。保持编号格式，直接输出译文，不要任何解释。\n\n" + "\n".join(lines)
+
+        try:
+            resp = requests.post(
+                f"{DEEPSEEK_BASE_URL}/v1/chat/completions",
+                headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+                json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "max_tokens": 2000, "temperature": 0.3},
+                timeout=60,
+            )
+            data = resp.json()
+            translation = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+            if translation:
+                # 解析编号的译文
+                for line in translation.strip().split("\n"):
+                    m = re.match(r"\[(\d+)\]\s*(.*)", line.strip())
+                    if m:
+                        idx = int(m.group(1)) - 1
+                        if idx < len(result):
+                            result[batch_start + idx]["translated"] = m.group(2).strip()
+        except Exception as e:
+            app.logger.error(f"DeepSeek分段翻译失败(批次{batch_start}): {e}")
+    return result
+
+
 def _translate_text_en_to_zh(text: str) -> str:
     """英译中: DeepL优先(一次调用), DeepSeek兜底(全量不分段截断)"""
     if DEEPL_API_KEY:
@@ -1409,10 +1444,12 @@ def api_translate():
                 cache_set(ck, {"translation": raw_text})
                 return jsonify({"translation": raw_text, "segments": segments[:800], "cached": False})
 
-            full_translation = _translate_text_en_to_zh(raw_text)
-            if full_translation:
-                cache_set(ck, {"translation": full_translation})
-                return jsonify({"translation": full_translation, "segments": segments[:800], "cached": False})
+            translated = _translate_segments(segments)
+            if translated:
+                full = "\n".join(s.get("translated", s.get("original", "")) for s in translated)
+                cache_set(ck, {"translation": full})
+                return jsonify({"translation": full, "segments": translated[:800], "cached": False})
+            return jsonify({"translation": "", "segments": [], "error": "翻译生成失败"}), 500
     except Exception:
         pass
 
