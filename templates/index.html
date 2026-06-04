@@ -669,7 +669,9 @@ const app = createApp({
         if (!t || t <= 0 || !subtitleSegments.value.length) return;
         const idx = subtitleSegments.value.findIndex(s => t >= s.start && t <= s.start + (s.duration || 3));
         if (idx >= 0 && idx !== currentSubtitleIdx) {
-            showSubtitleInBar(idx);
+            currentSubtitleIdx = idx;
+            const en = document.getElementById('subtitleBarEn');
+            if (en) en.textContent = subtitleSegments.value[idx]?.original || '';
         }
     });
 
