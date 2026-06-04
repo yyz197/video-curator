@@ -129,6 +129,7 @@
                 <span class="card-duration-badge" v-if="v.duration_badge" v-text="v.duration_badge"></span>
                 <span class="card-pub-date" v-if="v.published_str" v-text="v.published_str"></span>
             </div>
+            <div class="card-summary show" v-if="v.summary" v-text="v.summary"></div>
         </div>
     </div>
 </main>
@@ -165,59 +166,27 @@
     <div class="notes-drawer-body">
         <div class="notes-player-column">
             <div class="video-player-container" style="position:relative" id="drawerPlayer"></div>
+            <!-- 字幕条 -->
+            <div class="subtitle-bar" id="subtitleBar" style="display:none">
+                <div class="subtitle-bar-zh" id="subtitleBarZh"></div>
+                <div class="subtitle-bar-en" id="subtitleBarEn"></div>
+                <button class="subtitle-bar-close" onclick="document.getElementById('subtitleBar').style.display='none'">✕</button>
+                <button class="subtitle-bar-prev" onclick="navigateSubtitle(-1)">◀</button>
+                <button class="subtitle-bar-next" onclick="navigateSubtitle(1)">▶</button>
+            </div>
         </div>
         <div class="notes-content-column">
             <div class="notes-tabs">
                 <button class="notes-tab" :class="{active:activeTab==='notes'}" @click="activeTab='notes'">📝 笔记</button>
-                <button class="notes-tab" :class="{active:activeTab==='chat'}" @click="activeTab='chat'">🤖 AI对话</button>
                 <button class="notes-tab" :class="{active:activeTab==='analysis'}" @click="activeTab='analysis'">📊 分析</button>
-                <button class="notes-tab" :class="{active:activeTab==='subtitle'}" @click="activeTab='subtitle'">🌐 字幕</button>
             </div>
-
-            <!-- Notes Tab -->
             <div v-show="activeTab==='notes'" class="notes-tab-content" style="flex:1;display:flex;flex-direction:column">
                 <textarea class="notes-editor" v-model="notes" placeholder="在这里记录你的想法...支持 Markdown" style="flex:1;min-height:120px;margin:8px"></textarea>
             </div>
-
-            <!-- Chat Tab -->
-            <div v-show="activeTab==='chat'" class="notes-tab-content" style="flex:1;display:flex;flex-direction:column">
-                <div class="chat-messages" style="flex:1;overflow-y:auto">
-                    <div v-if="chatHistory.length===0" class="chat-empty">输入问题，AI 将根据视频内容为你解答</div>
-                    <div v-for="(msg, i) in chatHistory" :key="i" class="chat-message" :class="msg.role" v-text="msg.content"></div>
-                    <div v-if="chatLoading" class="chat-message assistant"><span class="dot-pulse">思考中</span></div>
-                </div>
-                <div class="chat-input-area">
-                    <input type="text" class="chat-input" v-model="chatInput" placeholder="针对这个视频提问..."
-                           @keydown.enter.prevent="sendChat">
-                    <button class="chat-send-btn" @click="sendChat" :disabled="chatLoading">发送</button>
-                </div>
-            </div>
-
-        <!-- Note: force display:flex on v-show tabs to override CSS display:none -->
-            <!-- Analysis Tab -->
             <div v-show="activeTab==='analysis'" class="notes-tab-content" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column">
                 <div v-if="analysisLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在分析</span></div>
                 <div v-else-if="analysis" v-html="renderedAnalysis" class="analysis-content" style="font-size:13px;line-height:1.8;flex:1"></div>
                 <div v-else style="text-align:center;color:var(--text-muted);padding:20px">分析暂不可用</div>
-            </div>
-
-            <!-- Subtitle Tab -->
-            <div v-show="activeTab==='subtitle'" class="notes-tab-content" style="flex:1;overflow-y:auto;display:flex;flex-direction:column">
-                <div v-if="subtitleLoading" style="text-align:center;color:var(--text-muted);padding:20px"><span class="dot-pulse">正在加载字幕</span></div>
-                <div v-else-if="subtitleSegments.length" class="subtitle-container">
-                    <div class="subtitle-translation" v-if="fullTranslation" v-text="fullTranslation" style="white-space:pre-wrap"></div>
-                    <div class="subtitle-divider" v-if="fullTranslation">━━ 时间轴字幕 ━━</div>
-                    <div class="subtitle-list" style="padding:0 4px">
-                        <div v-for="(seg, i) in subtitleSegments" :key="i" class="subtitle-row"
-                             :class="{active:currentTime>=seg.start&&currentTime<=seg.start+seg.duration}"
-                             :style="currentTime>=seg.start&&currentTime<=seg.start+seg.duration?'font-size:15px;font-weight:500;padding:8px 6px;background:var(--accent-light);border-left:3px solid var(--accent);margin:2px 0;border-radius:4px':''"
-                             :ref="el=>{if(currentTime>=seg.start&&currentTime<=seg.start+seg.duration)el?.scrollIntoView({block:'center',behavior:'smooth'})}">
-                            <span class="subtitle-time" style="font-size:11px;min-width:42px" v-text="fmtTime(seg.start)"></span>
-                            <span style="font-size:14px;line-height:1.6;color:var(--text)" v-text="seg.original"></span>
-                        </div>
-                    </div>
-                </div>
-                <div v-else style="text-align:center;color:var(--text-muted);padding:20px">点击底部按钮加载字幕</div>
             </div>
         </div>
     </div>
@@ -452,9 +421,14 @@ const app = createApp({
         chatHistory.value = [];
         subtitleSegments.value = [];
         fullTranslation.value = '';
+        currentSubtitleIdx = 0;
         subtitleLoading.value = false;
         drawerOpen.value = true;
         document.body.style.overflow = 'hidden';
+
+        // Hide subtitle bar
+        const bar = document.getElementById('subtitleBar');
+        if (bar) bar.style.display = 'none';
 
         // 注入播放器 (innerHTML方式, 与旧版一致)
         setupPlayer(video);
@@ -482,7 +456,7 @@ const app = createApp({
         if (video.source === 'bilibili') {
             container.innerHTML = '<iframe src="https://player.bilibili.com/player.html?bvid=' + embedId + '&autoplay=0" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
         } else {
-            container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
+            container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
         }
         // 字幕叠加层
         const overlay = document.createElement('div');
@@ -571,10 +545,11 @@ const app = createApp({
         chatLoading.value = false;
     }
 
-    // ── Subtitles ──
+    // ── Subtitles (Show in bar) ──
+    let currentSubtitleIdx = 0;
+
     async function loadSubtitles() {
         if (!currentVideo.value || subtitleLoading.value) return;
-        activeTab.value = 'subtitle';
         subtitleLoading.value = true;
         subtitleSegments.value = [];
         fullTranslation.value = '';
@@ -582,19 +557,47 @@ const app = createApp({
         try {
             const v = currentVideo.value;
             const embedId = v.embed_id || v.youtube_id || '';
-            const isBili = v.source === 'bilibili';
-
-            const params = new URLSearchParams({video_id:v.id,source:v.source,embed_id:embedId});
+            const params = new URLSearchParams({video_id:v.id, source:v.source, embed_id:embedId});
             const r = await fetch('/api/translate?'+params);
             const d = await r.json();
-            if (d && d.segments) {
+            if (d && d.segments && d.segments.length) {
                 subtitleSegments.value = d.segments;
-                if (!isBili) fullTranslation.value = d.translation || '';
-                if (!isBili) startTimeSync();
+                fullTranslation.value = d.translation || '';
+                currentSubtitleIdx = 0;
+                showSubtitleInBar(0);
+                if (v.source !== 'bilibili') startTimeSync();
+            } else {
+                toast('此视频无字幕', 'error');
             }
         } catch(e) {}
         subtitleLoading.value = false;
     }
+
+    function showSubtitleInBar(idx) {
+        const bar = document.getElementById('subtitleBar');
+        const zh = document.getElementById('subtitleBarZh');
+        const en = document.getElementById('subtitleBarEn');
+        if (!bar || idx >= subtitleSegments.value.length) return;
+        const seg = subtitleSegments.value[idx];
+        bar.style.display = 'block';
+        // 中文翻译: 从fullTranslation中取对应段(简单取N段)
+        const transLines = (fullTranslation.value||'').split('\n').filter(l=>l.trim());
+        zh.textContent = transLines[Math.min(idx, transLines.length-1)] || '';
+        en.textContent = seg.original || '';
+        currentSubtitleIdx = idx;
+    }
+    window.navigateSubtitle = function(dir) {
+        const newIdx = currentSubtitleIdx + dir;
+        if (newIdx >= 0 && newIdx < subtitleSegments.value.length) {
+            showSubtitleInBar(newIdx);
+            // Jump video to segment time
+            const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
+            if (iframe) {
+                const seg = subtitleSegments.value[newIdx];
+                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[seg.start]}),'*');
+            }
+        }
+    };
 
     // ── YouTube time sync ──
     let timeSyncTimer;
@@ -618,6 +621,14 @@ const app = createApp({
                 if (iframe?.contentWindow) iframe.contentWindow.postMessage(JSON.stringify({event:'subscribe',info:'all'}),'*');
             }
         } catch {}
+    });
+    // Auto-update subtitle bar from currentTime
+    watch(currentTime, (t) => {
+        if (!t || !subtitleSegments.value.length) return;
+        const idx = subtitleSegments.value.findIndex(s => t >= s.start && t <= s.start + s.duration);
+        if (idx >= 0 && idx !== currentSubtitleIdx) {
+            showSubtitleInBar(idx);
+        }
     });
 
     // ── Scroll ──
