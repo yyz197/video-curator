@@ -4,7 +4,7 @@
       "id": "youtube_rjjES5IsPdg",
       "youtube_id": "rjjES5IsPdg",
       "source": "youtube",
-      "title": "Docker Full Course 2026",
+      "title": "Learn Docker – Full DevOps Course for Deploying Containerized Apps",
       "url": "https://www.youtube.com/watch?v=rjjES5IsPdg",
       "thumbnail": "https://i.ytimg.com/vi/rjjES5IsPdg/mqdefault.jpg",
       "author": "freeCodeCamp.org",
@@ -126,5 +126,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1780556857.6825225
+  "_ts": 1780572539.6832051
 }

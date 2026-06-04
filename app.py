@@ -1444,7 +1444,7 @@ def api_translate():
                 cache_set(ck, {"translation": raw_text})
                 return jsonify({"translation": raw_text, "segments": segments[:800], "cached": False})
 
-            translated = _translate_segments(segments)
+            translated = _translate_segments(segments[:100])  # 首批100段, ~10分钟
             if translated:
                 full = "\n".join(s.get("translated", s.get("original", "")) for s in translated)
                 cache_set(ck, {"translation": full})
