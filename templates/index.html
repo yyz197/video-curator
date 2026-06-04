@@ -613,33 +613,65 @@ const app = createApp({
         }
     };
 
-    // ── YouTube time sync ──
-    let timeSyncTimer;
+    // ── YouTube Time Sync ──
+    let timeSyncTimer = null;
+    let ytPlayerReady = false;
     function startTimeSync() {
         if (timeSyncTimer) clearInterval(timeSyncTimer);
+        ytPlayerReady = false;
+        const iframe = document.querySelector('#ytPlayer');
+        if (!iframe) return;
+
+        // Register listener once iframe loads
+        const registerListener = () => {
+            if (iframe.contentWindow && iframe.contentWindow.postMessage) {
+                iframe.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 'vc-yt' }), '*');
+            }
+        };
+        // Try immediately and on load
+        registerListener();
+        iframe.addEventListener('load', () => {
+            setTimeout(registerListener, 500);
+        });
+
+        // Poll currentTime every 500ms
         timeSyncTimer = setInterval(() => {
-            const iframe = document.querySelector('#ytPlayer');
-            if (!iframe || !iframe.contentWindow) return;
+            const f = document.querySelector('#ytPlayer');
+            if (!f || !f.contentWindow) return;
             try {
-                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'getCurrentTime',args:[]}),'*');
-            } catch(e) {}
+                f.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'getCurrentTime', args: [] }), '*');
+            } catch (e) {}
         }, 500);
     }
+
+    // Handle YouTube API messages
     window.addEventListener('message', (e) => {
-        try {
-            const d = JSON.parse(e.data);
-            if (d.event==='infoDelivery' && d.info?.currentTime) currentTime.value = d.info.currentTime;
-            if (d.func==='getCurrentTime' && typeof d.result==='number') currentTime.value = d.result;
-            if (d.event==='onReady') {
-                const iframe = document.querySelector('#ytPlayer');
-                if (iframe?.contentWindow) iframe.contentWindow.postMessage(JSON.stringify({event:'subscribe',info:'all'}),'*');
+        if (!e.data || typeof e.data !== 'string') return;
+        let d;
+        try { d = JSON.parse(e.data); } catch (ex) { return; }
+
+        // Response to getCurrentTime command
+        if (d.event === 'commandResult' && d.func === 'getCurrentTime' && typeof d.result === 'number') {
+            currentTime.value = d.result;
+        }
+        // YouTube also sends infoDelivery with currentTime
+        if (d.event === 'infoDelivery' && d.info && typeof d.info.currentTime === 'number') {
+            currentTime.value = d.info.currentTime;
+        }
+        // Player ready
+        if (d.event === 'onReady') {
+            ytPlayerReady = true;
+            const f = document.querySelector('#ytPlayer');
+            if (f?.contentWindow) {
+                f.contentWindow.postMessage(JSON.stringify({ event: 'subscribe', info: 'all' }), '*');
             }
-        } catch {}
+        }
     });
-    // Auto-update subtitle bar from currentTime
+
+    // Auto-update subtitle bar when currentTime changes
     watch(currentTime, (t) => {
-        if (!t || !subtitleSegments.value.length) return;
-        const idx = subtitleSegments.value.findIndex(s => t >= s.start && t <= s.start + s.duration);
+        if (!t || t <= 0 || !subtitleSegments.value.length) return;
+        const idx = subtitleSegments.value.findIndex(s => t >= s.start && t <= s.start + (s.duration || 3));
         if (idx >= 0 && idx !== currentSubtitleIdx) {
             showSubtitleInBar(idx);
         }
