@@ -289,12 +289,6 @@ const app = createApp({
     const toasts = ref([]);
 
     // ── Computed ──
-    const currentSubtitleText = computed(() => {
-        if (!subtitleSegments.value.length) return '';
-        const t = currentTime.value;
-        const seg = subtitleSegments.value.find(s => t >= s.start && t <= s.start + s.duration);
-        return seg ? seg.original : '';
-    });
     const displayVideos = computed(() => {
         if (page.value === 1 && !search.value && !category.value) return videos.value.slice(1);
         return videos.value;
@@ -450,17 +444,11 @@ const app = createApp({
             container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-size:14px">暂无嵌入播放地址</div>';
             return;
         }
-        const url = video.url || '';
         if (video.source === 'bilibili') {
             container.innerHTML = '<iframe src="https://player.bilibili.com/player.html?bvid=' + embedId + '&autoplay=0" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
         } else {
             container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay; encrypted-media" frameborder="0" id="ytPlayer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"></iframe>';
         }
-        // 字幕叠加层
-        const overlay = document.createElement('div');
-        overlay.id = 'subtitleOverlay';
-        overlay.style.cssText = 'display:none;position:absolute;bottom:50px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.78);color:#fff;padding:8px 20px;border-radius:8px;font-size:17px;line-height:1.5;max-width:90%;text-align:center;z-index:10;pointer-events:none';
-        container.appendChild(overlay);
     }
 
     // 字幕叠加层实时更新
@@ -623,8 +611,8 @@ const app = createApp({
             showSubtitleInBar(newIdx);
             const seg = subtitleSegments.value[newIdx];
             const iframe = document.querySelector('#ytPlayer') || document.querySelector('.video-player-container iframe');
-            if (iframe) {
-                iframe.src = iframe.src.split('?')[0] + '?autoplay=0&rel=0&enablejsapi=1&start=' + Math.floor(seg.start);
+            if (iframe?.contentWindow) {
+                iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[seg.start,true]}),'*');
             }
         }
     };
@@ -717,7 +705,6 @@ const app = createApp({
         drawerOpen, currentVideo, notes, analysis, analysisLoading, activeTab,
         chatHistory, chatInput, chatLoading,
         subtitleSegments, subtitleLoading, fullTranslation, currentTime,
-        currentSubtitleText,
         darkMode, scrollY, favoritesOpen, prefPanelOpen, favorites, toasts,
         displayVideos, statusMsg, renderedAnalysis,
         toggleDarkMode, toggleFav, isFaved, removeFav, togglePref, savePrefs,
