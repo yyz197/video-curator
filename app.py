@@ -1379,7 +1379,32 @@ def api_translate():
             "cached": True,
         })
 
-    # 2) 无翻译缓存 → 不尝试live fetch(会超时), 直接提示
+    # 2) 无翻译缓存 → 尝试快速live fetch(5s超时), 失败则提示
+    try:
+        timed_data = None
+        def fetch_transcript():
+            nonlocal timed_data
+            timed_data = get_transcript_timed(video)
+        import threading
+        t = threading.Thread(target=fetch_transcript)
+        t.start()
+        t.join(timeout=5)
+
+        if timed_data and timed_data.get("segments"):
+            segments = timed_data.get("segments", [])
+            raw_text = timed_data.get("text", "")
+
+            if source == "bilibili":
+                cache_set(ck, {"translation": raw_text})
+                return jsonify({"translation": raw_text, "segments": segments[:800], "cached": False})
+
+            full_translation = _translate_text_en_to_zh(raw_text)
+            if full_translation:
+                cache_set(ck, {"translation": full_translation})
+                return jsonify({"translation": full_translation, "segments": segments[:800], "cached": False})
+    except Exception:
+        pass
+
     return jsonify({
         "translation": "",
         "segments": [],
