@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_WdH2LsjXZhc",
+      "youtube_id": "WdH2LsjXZhc",
+      "source": "youtube",
+      "title": "My 3 creator rules",
+      "url": "https://www.youtube.com/watch?v=WdH2LsjXZhc",
+      "thumbnail": "https://i.ytimg.com/vi/WdH2LsjXZhc/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Want to get started with YouTube? Join my free 7-day crash course: https://go.aliabdaal.com/yts260607",
+      "published": 1780826416,
+      "published_str": "2026-06-07",
+      "embed_id": "WdH2LsjXZhc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_sNz4k5BQg30",
       "youtube_id": "sNz4k5BQg30",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JBSb3NZVLG8",
-      "youtube_id": "JBSb3NZVLG8",
-      "source": "youtube",
-      "title": "How to stay consistent with your goals",
-      "url": "https://www.youtube.com/watch?v=JBSb3NZVLG8",
-      "thumbnail": "https://i.ytimg.com/vi/JBSb3NZVLG8/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "If you fancy getting more productivity tips and practical life advice, join ProductiveNotes - my free, weekly newsletter - https://go.aliabdaal.com/prodnotesyts",
-      "published": 1767002438,
-      "published_str": "2025-12-29",
-      "embed_id": "JBSb3NZVLG8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780797771.02894
+  "_ts": 1780833707.5571065
 }

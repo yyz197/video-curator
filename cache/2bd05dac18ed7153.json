@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_WdH2LsjXZhc",
+      "youtube_id": "WdH2LsjXZhc",
+      "source": "youtube",
+      "title": "My 3 creator rules",
+      "url": "https://www.youtube.com/watch?v=WdH2LsjXZhc",
+      "thumbnail": "https://i.ytimg.com/vi/WdH2LsjXZhc/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Want to get started with YouTube? Join my free 7-day crash course: https://go.aliabdaal.com/yts260607",
+      "published": 1780826416,
+      "published_str": "2026-06-07",
+      "embed_id": "WdH2LsjXZhc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_sNz4k5BQg30",
       "youtube_id": "sNz4k5BQg30",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_IuhoSd92TFE",
-      "youtube_id": "IuhoSd92TFE",
-      "source": "youtube",
-      "title": "The Odyssey Plan: Stanford's best hack",
-      "url": "https://www.youtube.com/watch?v=IuhoSd92TFE",
-      "thumbnail": "https://i.ytimg.com/vi/IuhoSd92TFE/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260601",
-      "published": 1780308037,
-      "published_str": "2026-06-01",
-      "embed_id": "IuhoSd92TFE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780797779.9196057
+  "_ts": 1780833717.555747
 }

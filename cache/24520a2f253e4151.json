@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_l6DKRf-fAAM",
+      "youtube_id": "l6DKRf-fAAM",
+      "source": "youtube",
+      "title": "Reinventing Entropy | Compression & Intelligence Part 1",
+      "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
+      "thumbnail": "https://i.ytimg.com/vi/l6DKRf-fAAM/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "What is the fundamental compressibility of language?\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderson\nShannon’s story, as well as those for various pi creatures",
+      "published": 1780832991,
+      "published_str": "2026-06-07",
+      "embed_id": "l6DKRf-fAAM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ZHXt0-_gSj4",
       "youtube_id": "ZHXt0-_gSj4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Agbh95KyWxY",
-      "youtube_id": "Agbh95KyWxY",
-      "source": "youtube",
-      "title": "Q&A with Grant, windy walk edition",
-      "url": "https://www.youtube.com/watch?v=Agbh95KyWxY",
-      "thumbnail": "https://i.ytimg.com/vi/Agbh95KyWxY/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Thank you for 2^21 subscribers.\nStore: http://3b1b.co/store\n↓↓Links to things discussed below ↓↓\n\nThe Bit Player\nhttps://thebitplayer.com/\n\nThe Idea Factory\nhttps://amzn.to/325PY6W\n\nThe Information, A History, A Theory, A Flood\nhttps://amzn.to/2QhfUtR\n\nYou can read about Lorenz in \"Chaos\", also by J",
-      "published": 1574470814,
-      "published_str": "2019-11-23",
-      "embed_id": "Agbh95KyWxY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780797768.5762649
+  "_ts": 1780833705.35056
 }

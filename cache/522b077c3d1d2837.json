@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_l6DKRf-fAAM",
+      "youtube_id": "l6DKRf-fAAM",
+      "source": "youtube",
+      "title": "Reinventing Entropy | Compression & Intelligence Part 1",
+      "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
+      "thumbnail": "https://i.ytimg.com/vi/l6DKRf-fAAM/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "What is the fundamental compressibility of language?\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderson\nShannon’s story, as well as those for various pi creatures",
+      "published": 1780832991,
+      "published_str": "2026-06-07",
+      "embed_id": "l6DKRf-fAAM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ZHXt0-_gSj4",
       "youtube_id": "ZHXt0-_gSj4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ldxFjLJ3rVY",
-      "youtube_id": "ldxFjLJ3rVY",
-      "source": "youtube",
-      "title": "How (and why) to take a logarithm of an image",
-      "url": "https://www.youtube.com/watch?v=ldxFjLJ3rVY",
-      "thumbnail": "https://i.ytimg.com/vi/ldxFjLJ3rVY/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Escher's Print Gallery, and the tour of complex analysis it invites.\nExplore our virtual career fair: https://3b1b.co/talent\nJoin channel supporters to see videos early: https://3b1b.co/support\nAn equally valuable form of support is to share the videos.\nHome page: https://www.3blue1brown.com\n\nOrigin",
-      "published": 1774184340,
-      "published_str": "2026-03-22",
-      "embed_id": "ldxFjLJ3rVY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780797778.9277778
+  "_ts": 1780833715.9862669
 }
