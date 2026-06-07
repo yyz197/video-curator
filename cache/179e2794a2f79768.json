@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_5bL1WhHj668",
+      "youtube_id": "5bL1WhHj668",
+      "source": "youtube",
+      "title": "Organizing a huge hackathon like TreeHacks is no small feat...but for Rachel, it was so worth it.",
+      "url": "https://www.youtube.com/watch?v=5bL1WhHj668",
+      "thumbnail": "https://i.ytimg.com/vi/5bL1WhHj668/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Organizing a huge hackathon like TreeHacks is no small feat...but for Rachel, it was so worth it.",
+      "published": 1780749142,
+      "published_str": "2026-06-06",
+      "embed_id": "5bL1WhHj668",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_FVgbs2wvKmE",
       "youtube_id": "FVgbs2wvKmE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_MnG0ugK2JAI",
-      "youtube_id": "MnG0ugK2JAI",
-      "source": "youtube",
-      "title": "Build Your Own AI Agent – Full Course with OpenAI, Langchain, Render Deployment",
-      "url": "https://www.youtube.com/watch?v=MnG0ugK2JAI",
-      "thumbnail": "https://i.ytimg.com/vi/MnG0ugK2JAI/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn to build and deploy intelligent AI agents that bridge the gap between LLMs and real-world automation to handle complex research and data analysis. This comprehensive course takes you from zero to deployment, using OpenAI and Node.js to create a production-ready tool complete with a PostgreSQL ",
-      "published": 1780394409,
-      "published_str": "2026-06-02",
-      "embed_id": "MnG0ugK2JAI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780578811.42372
+  "_ts": 1780797779.0249279
 }
