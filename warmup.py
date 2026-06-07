@@ -142,7 +142,27 @@ def warmup():
             v["score"] = _video_score(v)
         yt_videos.sort(key=lambda v: (v["score"], v.get("published", 0)), reverse=True)
 
-        # ── 缓存精选列表 ──
+        # ── AI 摘要 (Top 30 精选) ──
+        top_n = min(30, len(all_videos))
+        top = all_videos[:top_n]
+        print(f"  → 对 Top {len(top)} 视频生成 AI 摘要...")
+        try:
+            generate_summaries_parallel(top)
+            print(f"  ✅ 摘要完成")
+        except Exception as e:
+            print(f"  !! 摘要失败: {e}")
+
+        # ── 深度分析 (Top 20 精选) ──
+        top20 = all_videos[:20]
+        print(f"  → 对 Top {len(top20)} 视频生成深度分析...")
+        for i, v in enumerate(top20):
+            try:
+                _prefetch_analysis(v)
+                print(f"     [{i+1}/{len(top20)}] {v.get('title','')[:40]}")
+            except Exception as e:
+                print(f"     [{i+1}] 失败: {e}")
+
+        # ── 摘要/分析完成后，再保存视频列表（缓存中已含摘要字段） ──
         print("  → 缓存精选列表...")
         _save_video_list_cache("youtube", all_videos, "精选(score)", "score")
 
