@@ -55,37 +55,23 @@ def _prefetch_analysis(video: dict) -> None:
     except Exception:
         pass
 
-    prompt = f"""你是专业内容策展人。{subtitle_context}请基于以上信息做深度观前分析,帮助观众在观看前了解内容。
+    prompt = f"""基于视频信息做简洁观前分析，帮助了解是否值得观看。
 
 【视频信息】
 标题：{video.get('title','')}
 作者：{video.get('author','')}
 分类：{video.get('category','教育')}
 时长：{video.get('duration','')}
-简介：{(video.get('description','') or '')[:600]}
 
-请严格用以下结构输出(Markdown格式):
-
+格式（Markdown）：
 ## 内容概要
-(3-4句话精炼概括)
+2-3句话
 
 ## 核心知识点
-- 知识1: 详细说明
-- 知识2: 详细说明
-- 知识3: 详细说明
-(3-5个)
-
-## 关键术语
-- **术语1** (原文): 解释
-(提取专业术语, 附英文原文)
-
-## 背景补充
-(相关历史/前沿背景)
+- 列出3-5个
 
 ## 观看建议
-- 知识密度: ⭐1-5星
-- 适看人群: (描述)
-- 一句话建议: (是否值得)"""
+- 适看人群："""
 
     try:
         resp = req.post(

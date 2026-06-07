@@ -855,24 +855,11 @@ def generate_summary(video: dict) -> str | None:
         return cached.get("summary")
 
     title = video.get("title", "")
-    description = video.get("description", "")
     author = video.get("author", "")
     if not title:
         return None
 
-    prompt = f"""请为以下视频生成一个简洁的中文摘要（100-200字），帮助用户判断是否值得观看。
-
-视频标题：{title}
-视频作者：{author}
-视频简介：{description[:500] if description else '无'}
-
-要求：
-1. 用2-3句话概括视频可能涉及的核心内容
-2. 标注视频的深度级别（入门/进阶/专业）
-3. 推荐观看人群（如：适合XX领域学习者）
-4. 语言简洁有力，避免套话
-
-请直接输出摘要，不要加"摘要："等前缀。"""
+    prompt = f"用2-3句中文概括这个视频的核心内容（60字内），标注适合人群:\n\n标题：{title}\n作者：{author}\n\n输出格式：一句话概括 | 适合人群：XX"
 
     try:
         resp = requests.post(
