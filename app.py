@@ -1342,8 +1342,12 @@ def api_videos():
     following = request.args.get("following", "")
     latest_days = int(request.args.get("latest_days", 7))
 
-    # 视频列表短期缓存键
-    list_ck = cache_key("videos", source, category, str(page), search[:20], sort, str(latest_days))
+    # 视频列表短期缓存键 (latest_days 仅在最新模式加入key)
+    list_ck = cache_key("videos", source, category, str(page), search[:20], sort,
+                        str(latest_days) if sort == "latest" else "0")
+    # 预热缓存键不用category: warmup缓存全量, 分类在内存中过滤
+    warmup_ck = cache_key("videos", source, "", str(page), search[:20], sort,
+                          str(latest_days) if sort == "latest" else "0")
 
     # 偏好分类解析（提前，供缓存过滤使用）
     preferred_cats = [p.strip() for p in prefs.split(",") if p.strip()]
@@ -1366,10 +1370,14 @@ def api_videos():
                 _attach_summaries(cached.get("videos", []))
                 return jsonify(cached)
         # 2) 预热缓存: 精选直接返回, 最新继续走live兜底
-        if warmup_cached := cache_get_with_ttl(list_ck, warmup_ttl):
+        # 用无分类key查warmup, 命中后在内存中按分类过滤
+        if warmup_cached := cache_get_with_ttl(warmup_ck, warmup_ttl):
             videos = warmup_cached.get("videos", [])
+            # 按分类在内存中过滤
+            if category:
+                videos = [v for v in videos if v.get("category") == category]
             _attach_summaries(videos)
-            total = warmup_cached.get("total", len(videos))
+            total = len(videos)
             if preferred_cats:
                 for v in videos:
                     if v["category"] in preferred_cats:
@@ -1380,8 +1388,9 @@ def api_videos():
                 videos.sort(key=lambda v: (v.get("score", 0), v.get("published", 0)), reverse=True)
                 videos = videos[: max(12, len(videos) // 2)]
                 total = len(videos)
-            # 精选+无偏好: 命中预热后直接返回, 不触发 heavy live fetch
-            if sort == "score" and not prefs:
+            # 精选直接返回, 不触发 heavy live fetch
+            if sort == "score":
+                videos.sort(key=lambda v: (v.get("score", 0), v.get("published", 0)), reverse=True)
                 videos = videos[:VIDEOS_PER_PAGE]
                 result = {
                     "videos": videos, "total": total, "page": page,
@@ -1389,7 +1398,6 @@ def api_videos():
                     "categories": CATEGORY_LABELS, "search": None, "cached": True,
                 }
                 return jsonify(result)
-            # 最新/其他: 继续处理
             if prefs or essence:
                 videos = videos[:VIDEOS_PER_PAGE]
                 result = {

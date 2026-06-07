@@ -51,6 +51,7 @@
         {"id": "UCfGvzKtFmJ6C6KqZ3F9K_yA", "name": "History Hit", "lang": "en"},
         {"id": "UC7F-LnphfMz2nBj6PhfnK7A", "name": "Then & Now", "lang": "en"},
         {"id": "UCfQDD-pbllOCXHYwiB0kQkQ", "name": "Academy of Ideas", "lang": "en"},
+        {"id": "UCmGSJVG3mCRXVOP4yZrU1Dw", "name": "Johnny Harris", "lang": "en"},
         {"id": "UC88lvyJe7aHZmcvzvubDFRg", "name": "Timeline History", "lang": "en"}
       ]
     },
@@ -63,7 +64,9 @@
         {"id": "UCG1-22fo1sIhXGuXYpTRhaA", "name": "The Plain Bagel", "lang": "en"},
         {"id": "UCbWcXB0PoTg_vHj_qK2gE7A", "name": "CNBC Make It", "lang": "en"},
         {"id": "UCuRZnGjnYhxOqB6j6JNPr2Q", "name": "How Money Works", "lang": "en"},
-        {"id": "UCqD7HeHdZ2ZcKwq5cGJcqgA", "name": "Patrick Boyle", "lang": "en"}
+        {"id": "UCqD7HeHdZ2ZcKwq5cGJcqgA", "name": "Patrick Boyle", "lang": "en"},
+        {"id": "UCISNwEL0xTGBPXwZ8In_w7g", "name": "Graham Stephan", "lang": "en"},
+        {"id": "UCgy7SdE4KQPEs1gAjDSF6Og", "name": "Andrei Jikh", "lang": "en"}
       ]
     },
     "创意设计": {
@@ -87,7 +90,10 @@
         {"id": "UCQdPoK_4rGBO55AinBUcyyw", "name": "Drew Binsky", "lang": "en"},
         {"id": "UCVj0O0gJCsTZcYWGbzYTmvQ", "name": "Best Ever Food Review Show", "lang": "en"},
         {"id": "UCG-qjGnrO32kcuEz_-F8iVQ", "name": "Wolters World", "lang": "en"},
-        {"id": "UChBEbMKI1eCemoMfVJgpd4g", "name": "Rick Steves Europe", "lang": "en"}
+        {"id": "UChBEbMKI1eCemoMfVJgpd4g", "name": "Rick Steves Europe", "lang": "en"},
+        {"id": "UCx1C3I6XGbWDhHzA5wjUAUw", "name": "Mark Wiens", "lang": "en"},
+        {"id": "UCs4ZNFgHTSuGGNoYjU9b3UA", "name": "The Food Ranger", "lang": "en"},
+        {"id": "UCXOKbE2YzBa4XNn3Kb1JiOg", "name": "Strictly Dumpling", "lang": "en"}
       ]
     }
   },

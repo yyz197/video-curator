@@ -62,7 +62,7 @@ CATEGORY_LABELS = _channels.get("youtube_labels") or [
 ]
 
 # 每页视频数量
-VIDEOS_PER_PAGE = 24
+VIDEOS_PER_PAGE = 48
 
 # 摘要缓存过期时间 (秒) = 7 天
 SUMMARY_CACHE_TTL = 86400 * 7
