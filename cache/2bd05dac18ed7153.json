@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9MoI57125pk",
+      "youtube_id": "9MoI57125pk",
+      "source": "youtube",
+      "title": "Start with the lifestyle you want - from Professor @CalNewportMedia",
+      "url": "https://www.youtube.com/watch?v=9MoI57125pk",
+      "thumbnail": "https://i.ytimg.com/vi/9MoI57125pk/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260608",
+      "published": 1780912831,
+      "published_str": "2026-06-08",
+      "embed_id": "9MoI57125pk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_WdH2LsjXZhc",
       "youtube_id": "WdH2LsjXZhc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rZHMzNCIdMU",
-      "youtube_id": "rZHMzNCIdMU",
-      "source": "youtube",
-      "title": "My Typical Tuesday",
-      "url": "https://www.youtube.com/watch?v=rZHMzNCIdMU",
-      "thumbnail": "https://i.ytimg.com/vi/rZHMzNCIdMU/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260602",
-      "published": 1780394425,
-      "published_str": "2026-06-02",
-      "embed_id": "rZHMzNCIdMU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780833717.555747
+  "_ts": 1780928545.6835816
 }

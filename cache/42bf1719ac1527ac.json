@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_w8JW8lP_T9k",
+      "youtube_id": "w8JW8lP_T9k",
+      "source": "youtube",
+      "title": "What my mother’s Alzheimer’s taught me about laughter | Dani Klein Modisett | TEDxCapeMay",
+      "url": "https://www.youtube.com/watch?v=w8JW8lP_T9k",
+      "thumbnail": "https://i.ytimg.com/vi/w8JW8lP_T9k/mqdefault.jpg",
+      "author": "TEDx Talks",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Despite working as a comic for over twenty years and teaching stand-up at UCLA for ten, when my mother became depressed, facing an Alzheimer’s diagnosis, I could not make her laugh. Desperate to recapture this light in her eyes, I had an idea that would not only change her end-of-life experience but",
+      "published": 1780839001,
+      "published_str": "2026-06-07",
+      "embed_id": "w8JW8lP_T9k",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_dfyuPUHv6FY",
       "youtube_id": "dfyuPUHv6FY",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NL6Itjr212I",
-      "youtube_id": "NL6Itjr212I",
-      "source": "youtube",
-      "title": "Why \"find your purpose\" is the wrong advice | Corliss Rassyle | TEDxSugar Creek Women",
-      "url": "https://www.youtube.com/watch?v=NL6Itjr212I",
-      "thumbnail": "https://i.ytimg.com/vi/NL6Itjr212I/mqdefault.jpg",
-      "author": "TEDx Talks",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "What if the reason you haven’t found your purpose is because you’ve been looking for it in the wrong place?\n\nFor decades, we’ve been told to find our purpose as if it’s hidden somewhere outside ourselves, waiting to be discovered. But what if purpose isn’t something you find at all?\n\nIn this poignan",
-      "published": 1780677742,
-      "published_str": "2026-06-05",
-      "embed_id": "NL6Itjr212I",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780833715.9455252
+  "_ts": 1780928544.156911
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Mrtd-lgADQo",
+      "youtube_id": "Mrtd-lgADQo",
+      "source": "youtube",
+      "title": "Spacetime curvature is responsible for gravity | with Katy Clough #space #spacetime #sciencevisuals",
+      "url": "https://www.youtube.com/watch?v=Mrtd-lgADQo",
+      "thumbnail": "https://i.ytimg.com/vi/Mrtd-lgADQo/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Katy Clough demonstrates how stars and planets curve spacetime around them. Did you find this visualisation interesting?\n\nSubscribe for regular science videos: http://bit.ly/RiSubscRibe\n\nSupport the Ri by becoming a channel member and unlock exclusive content:\nhttps://www.youtube.com/channel/UCYeF24",
+      "published": 1780848007,
+      "published_str": "2026-06-07",
+      "embed_id": "Mrtd-lgADQo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_HS10fYHtvQg",
       "youtube_id": "HS10fYHtvQg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0nkuLFWcq9M",
-      "youtube_id": "0nkuLFWcq9M",
-      "source": "youtube",
-      "title": "The Puzzle of the Continents - James Jackson's 1995 Christmas Lectures 4/5",
-      "url": "https://www.youtube.com/watch?v=0nkuLFWcq9M",
-      "thumbnail": "https://i.ytimg.com/vi/0nkuLFWcq9M/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The continental crust is much, much older than the oldest surviving oceanic crust\n\nWatch all the lectures in this series here: https://youtube.com/playlist?list=PLbnrZHfNEDZzN4JcqnWDW02rO0gJU7qBx&si=lmo1ZuOBkecGK5Rq\nWatch our newest Christmas lectures here: https://www.youtube.com/playlist?list=PLbn",
-      "published": 1768509000,
-      "published_str": "2026-01-15",
-      "embed_id": "0nkuLFWcq9M",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780833703.7628357
+  "_ts": 1780928528.8132217
 }

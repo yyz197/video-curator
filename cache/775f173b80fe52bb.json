@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_AUmHqD0lGHo",
+      "youtube_id": "AUmHqD0lGHo",
+      "source": "youtube",
+      "title": "How A Random System Can Actually Be Predictable",
+      "url": "https://www.youtube.com/watch?v=AUmHqD0lGHo",
+      "thumbnail": "https://i.ytimg.com/vi/AUmHqD0lGHo/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The balls in a Galton board fall down randomly. Any time they come to a junction they can take any number of paths and it's almost impossible to accurately predict every ball's trajectory.\n\nHowever, the system as a whole is predictable. \n\nHow can this be? How can random systems actually be predictab",
+      "published": 1780923602,
+      "published_str": "2026-06-08",
+      "embed_id": "AUmHqD0lGHo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_b_SZC8oIsBw",
       "youtube_id": "b_SZC8oIsBw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_fF32B_sOVHA",
-      "youtube_id": "fF32B_sOVHA",
-      "source": "youtube",
-      "title": "Can you solve the hat riddle?",
-      "url": "https://www.youtube.com/watch?v=fF32B_sOVHA",
-      "thumbnail": "https://i.ytimg.com/vi/fF32B_sOVHA/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "You and 3 amigos are buried neck deep in sand in a prison yard.\n\nThe guard says if one of you can guess your own hat colour you can all go free. You know there are two black hats and two white hats and you can only see the hats of the people in front of you.\n\nA minute passes in silence and then one ",
-      "published": 1779541228,
-      "published_str": "2026-05-23",
-      "embed_id": "fF32B_sOVHA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780833715.0987058
+  "_ts": 1780928543.3901672
 }

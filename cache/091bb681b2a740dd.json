@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9MoI57125pk",
+      "youtube_id": "9MoI57125pk",
+      "source": "youtube",
+      "title": "Start with the lifestyle you want - from Professor @CalNewportMedia",
+      "url": "https://www.youtube.com/watch?v=9MoI57125pk",
+      "thumbnail": "https://i.ytimg.com/vi/9MoI57125pk/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260608",
+      "published": 1780912831,
+      "published_str": "2026-06-08",
+      "embed_id": "9MoI57125pk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_WdH2LsjXZhc",
       "youtube_id": "WdH2LsjXZhc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_zFe63nnphWc",
-      "youtube_id": "zFe63nnphWc",
-      "source": "youtube",
-      "title": "The paperback edition of Feel-Good Productivity just dropped",
-      "url": "https://www.youtube.com/watch?v=zFe63nnphWc",
-      "thumbnail": "https://i.ytimg.com/vi/zFe63nnphWc/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Get Feel-Good Productivity: https://go.aliabdaal.com/fgppaperbackyt\n\nExciting News 🥳 My book “Feel-Good Productivity\" Paperback Edition is now available in the US 📚\n\nYou can find the paperback edition at all major retailers, including in-store at Target.\n\nThe paperback is significantly cheaper than ",
-      "published": 1767097890,
-      "published_str": "2025-12-30",
-      "embed_id": "zFe63nnphWc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780833707.5571065
+  "_ts": 1780928533.715631
 }

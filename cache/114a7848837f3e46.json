@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_w8JW8lP_T9k",
+      "youtube_id": "w8JW8lP_T9k",
+      "source": "youtube",
+      "title": "What my mother’s Alzheimer’s taught me about laughter | Dani Klein Modisett | TEDxCapeMay",
+      "url": "https://www.youtube.com/watch?v=w8JW8lP_T9k",
+      "thumbnail": "https://i.ytimg.com/vi/w8JW8lP_T9k/mqdefault.jpg",
+      "author": "TEDx Talks",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Despite working as a comic for over twenty years and teaching stand-up at UCLA for ten, when my mother became depressed, facing an Alzheimer’s diagnosis, I could not make her laugh. Desperate to recapture this light in her eyes, I had an idea that would not only change her end-of-life experience but",
+      "published": 1780839001,
+      "published_str": "2026-06-07",
+      "embed_id": "w8JW8lP_T9k",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_dfyuPUHv6FY",
       "youtube_id": "dfyuPUHv6FY",
       "source": "youtube",
@@ -2026,31 +2051,6 @@
       "favorited": false
     },
     {
-      "id": "youtube_BQGpRYmEVMs",
-      "youtube_id": "BQGpRYmEVMs",
-      "source": "youtube",
-      "title": "In pista corre il talento, non il genere | Maia Meneghin Surano | TEDxLake Como Youth",
-      "url": "https://www.youtube.com/watch?v=BQGpRYmEVMs",
-      "thumbnail": "https://i.ytimg.com/vi/BQGpRYmEVMs/mqdefault.jpg",
-      "author": "TEDx Talks",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Maia sfida i pregiudizi di genere nel motorsport, dimostrando che il talento non ha sesso. Student at Politecnico di Milano. This talk was given at a TEDx event using the TED conference format but independently organized by a local community. Learn more at https://www.ted.com/tedx",
-      "published": 1780674302,
-      "published_str": "2026-06-05",
-      "embed_id": "BQGpRYmEVMs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
-    },
-    {
       "id": "youtube_9CB01ddanhI",
       "youtube_id": "9CB01ddanhI",
       "source": "youtube",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1780833705.2466788
+  "_ts": 1780928530.2686315
 }

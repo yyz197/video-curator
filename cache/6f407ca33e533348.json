@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_AUmHqD0lGHo",
+      "youtube_id": "AUmHqD0lGHo",
+      "source": "youtube",
+      "title": "How A Random System Can Actually Be Predictable",
+      "url": "https://www.youtube.com/watch?v=AUmHqD0lGHo",
+      "thumbnail": "https://i.ytimg.com/vi/AUmHqD0lGHo/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The balls in a Galton board fall down randomly. Any time they come to a junction they can take any number of paths and it's almost impossible to accurately predict every ball's trajectory.\n\nHowever, the system as a whole is predictable. \n\nHow can this be? How can random systems actually be predictab",
+      "published": 1780923602,
+      "published_str": "2026-06-08",
+      "embed_id": "AUmHqD0lGHo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_b_SZC8oIsBw",
       "youtube_id": "b_SZC8oIsBw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_w7yFikRD_iQ",
-      "youtube_id": "w7yFikRD_iQ",
-      "source": "youtube",
-      "title": "The illusion only some can see",
-      "url": "https://www.youtube.com/watch?v=w7yFikRD_iQ",
-      "thumbnail": "https://i.ytimg.com/vi/w7yFikRD_iQ/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "This is the Ames window illusion",
-      "published": 1680399679,
-      "published_str": "2023-04-02",
-      "embed_id": "w7yFikRD_iQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780833702.6064832
+  "_ts": 1780928527.3172565
 }
