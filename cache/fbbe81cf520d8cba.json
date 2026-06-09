@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_jo735x7ZiFI",
+      "youtube_id": "jo735x7ZiFI",
+      "source": "youtube",
+      "title": "Why chip pan fires are so dangerous with Ben Ebbrell #science #sortedfood #shorts #foodscience",
+      "url": "https://www.youtube.com/watch?v=jo735x7ZiFI",
+      "thumbnail": "https://i.ytimg.com/vi/jo735x7ZiFI/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "When you add water to a chip pan fire, it instantly turns to steam under the superheated oil, blasting burning oil droplets into the air 💥⁠\n⁠\nBen Ebbrell and Dan from our Demo team showed exactly why you don't want this to happen, and how to actually put these fires out safely.⁠\n\nWatch the full vide",
+      "published": 1780934428,
+      "published_str": "2026-06-08",
+      "embed_id": "jo735x7ZiFI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Mrtd-lgADQo",
       "youtube_id": "Mrtd-lgADQo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-6aioUkNTE4",
-      "youtube_id": "-6aioUkNTE4",
-      "source": "youtube",
-      "title": "Waterworld - James Jackson's 1995 Christmas Lectures 5/5",
-      "url": "https://www.youtube.com/watch?v=-6aioUkNTE4",
-      "thumbnail": "https://i.ytimg.com/vi/-6aioUkNTE4/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Water is an essential ingredient of the Earth, and without it, we would not be here.\n\nWatch all the lectures in this series here: https://youtube.com/playlist?list=PLbnrZHfNEDZzN4JcqnWDW02rO0gJU7qBx&si=lmo1ZuOBkecGK5Rq\nWatch our newest Christmas lectures here: https://www.youtube.com/playlist?list=P",
-      "published": 1768514401,
-      "published_str": "2026-01-15",
-      "embed_id": "-6aioUkNTE4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928528.8132217
+  "_ts": 1780993865.1482615
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_j6hnjNhx_MM",
+      "youtube_id": "j6hnjNhx_MM",
+      "source": "youtube",
+      "title": "Web Scraping for Beginners –  Extract Data with an API",
+      "url": "https://www.youtube.com/watch?v=j6hnjNhx_MM",
+      "thumbnail": "https://i.ytimg.com/vi/j6hnjNhx_MM/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how web scraping can be utilized for tasks like market research, SEO tracking, and data collection. She will demonstrate how to bypass common obstacles like CAPTCHAs, rate limits, and bot detection by leveraging an efficient API. By the end, you'll learn how to build a simple, effective scrape",
+      "published": 1780961047,
+      "published_str": "2026-06-08",
+      "embed_id": "j6hnjNhx_MM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_JZeJc9Z7dOg",
       "youtube_id": "JZeJc9Z7dOg",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_jNjaBcxaJ7Y",
-      "youtube_id": "jNjaBcxaJ7Y",
-      "source": "youtube",
-      "title": "Can you help a company solve a problem - and will they let you in and learn from you?",
-      "url": "https://www.youtube.com/watch?v=jNjaBcxaJ7Y",
-      "thumbnail": "https://i.ytimg.com/vi/jNjaBcxaJ7Y/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Can you help a company solve a problem - and will they let you in and learn from you? Landon discusses how you can determine if you can actually help someone in his discussion with Quincy on the freeCodeCamp podcast.",
-      "published": 1780489765,
-      "published_str": "2026-06-03",
-      "embed_id": "jNjaBcxaJ7Y",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928544.5250309
+  "_ts": 1780993879.551524
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_j6hnjNhx_MM",
+      "youtube_id": "j6hnjNhx_MM",
+      "source": "youtube",
+      "title": "Web Scraping for Beginners –  Extract Data with an API",
+      "url": "https://www.youtube.com/watch?v=j6hnjNhx_MM",
+      "thumbnail": "https://i.ytimg.com/vi/j6hnjNhx_MM/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how web scraping can be utilized for tasks like market research, SEO tracking, and data collection. She will demonstrate how to bypass common obstacles like CAPTCHAs, rate limits, and bot detection by leveraging an efficient API. By the end, you'll learn how to build a simple, effective scrape",
+      "published": 1780961047,
+      "published_str": "2026-06-08",
+      "embed_id": "j6hnjNhx_MM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_JZeJc9Z7dOg",
       "youtube_id": "JZeJc9Z7dOg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_UsfpzxZNsPo",
-      "youtube_id": "UsfpzxZNsPo",
-      "source": "youtube",
-      "title": "Python Essentials for AI Agents – Tutorial",
-      "url": "https://www.youtube.com/watch?v=UsfpzxZNsPo",
-      "thumbnail": "https://i.ytimg.com/vi/UsfpzxZNsPo/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "This Python course will help you master the technical stack behind autonomous intelligence. This course is designed to take you from the core syntax of Python through the complexities of data handling and API integration, culminating in the deployment of sophisticated Large Language Models. You will",
-      "published": 1772017252,
-      "published_str": "2026-02-25",
-      "embed_id": "UsfpzxZNsPo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928531.899908
+  "_ts": 1780993868.9911551
 }

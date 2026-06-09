@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_RXUUilqk7KA",
+      "youtube_id": "RXUUilqk7KA",
+      "source": "youtube",
+      "title": "Lost suburban home. Won big starting over in little Ozarks homestead",
+      "url": "https://www.youtube.com/watch?v=RXUUilqk7KA",
+      "thumbnail": "https://i.ytimg.com/vi/RXUUilqk7KA/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "After losing their suburban home — buried under three mortgages and then a flood — Catherine and Phillip Lightfoot decided not to start over the same way. They wanted the homestead they'd dreamed of since childhood, and they wanted to build it without owing anyone anything.\n\nFor $37,000, they built ",
+      "published": 1780958108,
+      "published_str": "2026-06-08",
+      "embed_id": "RXUUilqk7KA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_rwrmV2N8QWM",
       "youtube_id": "rwrmV2N8QWM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_T89lDlart4g",
-      "youtube_id": "T89lDlart4g",
-      "source": "youtube",
-      "title": "Tranquil backyard homestudio is natural materials masterclass",
-      "url": "https://www.youtube.com/watch?v=T89lDlart4g",
-      "thumbnail": "https://i.ytimg.com/vi/T89lDlart4g/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Inspired by how birds build their nests, Jack Becker and Andrew Linn wove the partition walls of their Grass House out of willows and built the structure from bamboo. As the first code-compliant bamboo home in the US, the tall and thin ADU feels different. \n\nWhen you enter the space, it smells of dr",
-      "published": 1690758590,
-      "published_str": "2023-07-30",
-      "embed_id": "T89lDlart4g",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928535.892752
+  "_ts": 1780993872.3076665
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_jo735x7ZiFI",
+      "youtube_id": "jo735x7ZiFI",
+      "source": "youtube",
+      "title": "Why chip pan fires are so dangerous with Ben Ebbrell #science #sortedfood #shorts #foodscience",
+      "url": "https://www.youtube.com/watch?v=jo735x7ZiFI",
+      "thumbnail": "https://i.ytimg.com/vi/jo735x7ZiFI/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "When you add water to a chip pan fire, it instantly turns to steam under the superheated oil, blasting burning oil droplets into the air 💥⁠\n⁠\nBen Ebbrell and Dan from our Demo team showed exactly why you don't want this to happen, and how to actually put these fires out safely.⁠\n\nWatch the full vide",
+      "published": 1780934428,
+      "published_str": "2026-06-08",
+      "embed_id": "jo735x7ZiFI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Mrtd-lgADQo",
       "youtube_id": "Mrtd-lgADQo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JtJgveKrHi8",
-      "youtube_id": "JtJgveKrHi8",
-      "source": "youtube",
-      "title": "Liquid metal embrittlement demonstration with the Ri #shorts #science #scienceeducation #liquidmetal",
-      "url": "https://www.youtube.com/watch?v=JtJgveKrHi8",
-      "thumbnail": "https://i.ytimg.com/vi/JtJgveKrHi8/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "This is gallium: a metal that melts in your hand. 💧⁠\n⁠\nWhen you place a drop of it on aluminium, it becomes so brittle that it crumbles between your fingers.⁠\n⁠\nThe culprit is a phenomenon known as liquid metal embrittlement.\n\nSubscribe for regular science videos: http://bit.ly/RiSubscRibe\nThe Ri is",
-      "published": 1780588806,
-      "published_str": "2026-06-04",
-      "embed_id": "JtJgveKrHi8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928543.587761
+  "_ts": 1780993878.744984
 }

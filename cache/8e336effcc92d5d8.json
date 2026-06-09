@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bgYQ6KuRWfw",
+      "youtube_id": "bgYQ6KuRWfw",
+      "source": "youtube",
+      "title": "Robert Scheer: The Muckraking Journalist Who Exposed The US Government For 60 Years",
+      "url": "https://www.youtube.com/watch?v=bgYQ6KuRWfw",
+      "thumbnail": "https://i.ytimg.com/vi/bgYQ6KuRWfw/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "A documentary on the six-decades long career of a muckraking journalist, who was involved with the radical 196os magazine Ramparts, with the Los Angeles Times newspaper, and later with the Internet website Truthdig.\n\nYou can now become a History Hit member right here on YouTube! Join for access to a",
+      "published": 1780952400,
+      "published_str": "2026-06-08",
+      "embed_id": "bgYQ6KuRWfw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_K3VtM7yFn2g",
       "youtube_id": "K3VtM7yFn2g",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_e4q6in_4eag",
-      "youtube_id": "e4q6in_4eag",
-      "source": "youtube",
-      "title": "Hitler's Desert War: Rommel vs Montgomery",
-      "url": "https://www.youtube.com/watch?v=e4q6in_4eag",
-      "thumbnail": "https://i.ytimg.com/vi/e4q6in_4eag/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "As British troops crushed Italian forces, Hitler sent Rommel's Afrika Korps to aid them. Victories followed - until Montgomery's counterattack forced axis surrender in 1943. \n\nYou can now become a History Hit member right here on YouTube! Join for access to a new exclusive documentary every week, an",
-      "published": 1780002005,
-      "published_str": "2026-05-28",
-      "embed_id": "e4q6in_4eag",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928544.8698022
+  "_ts": 1780993879.9643893
 }

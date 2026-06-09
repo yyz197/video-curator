@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_RXUUilqk7KA",
+      "youtube_id": "RXUUilqk7KA",
+      "source": "youtube",
+      "title": "Lost suburban home. Won big starting over in little Ozarks homestead",
+      "url": "https://www.youtube.com/watch?v=RXUUilqk7KA",
+      "thumbnail": "https://i.ytimg.com/vi/RXUUilqk7KA/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "After losing their suburban home — buried under three mortgages and then a flood — Catherine and Phillip Lightfoot decided not to start over the same way. They wanted the homestead they'd dreamed of since childhood, and they wanted to build it without owing anyone anything.\n\nFor $37,000, they built ",
+      "published": 1780958108,
+      "published_str": "2026-06-08",
+      "embed_id": "RXUUilqk7KA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_rwrmV2N8QWM",
       "youtube_id": "rwrmV2N8QWM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HQdpXFZw9HY",
-      "youtube_id": "HQdpXFZw9HY",
-      "source": "youtube",
-      "title": "Leaves rat race, digs himself remote earthen home with underground rotunda",
-      "url": "https://www.youtube.com/watch?v=HQdpXFZw9HY",
-      "thumbnail": "https://i.ytimg.com/vi/HQdpXFZw9HY/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Sammy left his office job in Ohio to teach himself a completely different way of building. He moved to rural Arizona, bought cheap land, and started digging for material and then built part of his own earthbag adobe home directly into one of his earthen quarries.\n\nHe's created a 2-story dome half-bu",
-      "published": 1777841405,
-      "published_str": "2026-05-03",
-      "embed_id": "HQdpXFZw9HY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928546.8675702
+  "_ts": 1780993881.164719
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9XIqVHEUYF4",
+      "youtube_id": "9XIqVHEUYF4",
+      "source": "youtube",
+      "title": "Inside NYC's Tiniest Steakhouse",
+      "url": "https://www.youtube.com/watch?v=9XIqVHEUYF4",
+      "thumbnail": "https://i.ytimg.com/vi/9XIqVHEUYF4/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Chef Michael Vignola gives Bon Appétit a tour of The Eighty Six's very snug setup.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill haven’t subscribed to Bon Appétit on Yo",
+      "published": 1780934402,
+      "published_str": "2026-06-08",
+      "embed_id": "9XIqVHEUYF4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_nBvoe1AjNAk",
       "youtube_id": "nBvoe1AjNAk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_87lSfB8q1W4",
-      "youtube_id": "87lSfB8q1W4",
-      "source": "youtube",
-      "title": "How The World’s Best Buttered Noodles Are Made | Made to Order | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=87lSfB8q1W4",
-      "thumbnail": "https://i.ytimg.com/vi/87lSfB8q1W4/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Bon Appétit joins Chef Mattia Moliterni of Roscioli NYC, the legendary Roman restaurant’s New York outpost, as he makes their award-winning Burro e Parmigiano (Buttered Noodles). Made with just three high-quality ingredients–pasta, creamy butter, and Parmigiano Reggiano–these buttered noodles come t",
-      "published": 1752681606,
-      "published_str": "2025-07-16",
-      "embed_id": "87lSfB8q1W4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928536.4165404
+  "_ts": 1780993873.2521048
 }

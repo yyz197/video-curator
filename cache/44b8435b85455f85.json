@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bgYQ6KuRWfw",
+      "youtube_id": "bgYQ6KuRWfw",
+      "source": "youtube",
+      "title": "Robert Scheer: The Muckraking Journalist Who Exposed The US Government For 60 Years",
+      "url": "https://www.youtube.com/watch?v=bgYQ6KuRWfw",
+      "thumbnail": "https://i.ytimg.com/vi/bgYQ6KuRWfw/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "A documentary on the six-decades long career of a muckraking journalist, who was involved with the radical 196os magazine Ramparts, with the Los Angeles Times newspaper, and later with the Internet website Truthdig.\n\nYou can now become a History Hit member right here on YouTube! Join for access to a",
+      "published": 1780952400,
+      "published_str": "2026-06-08",
+      "embed_id": "bgYQ6KuRWfw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_K3VtM7yFn2g",
       "youtube_id": "K3VtM7yFn2g",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tUklXbCnu5A",
-      "youtube_id": "tUklXbCnu5A",
-      "source": "youtube",
-      "title": "How Espionage Repeatedly Changed The Course Of WW2",
-      "url": "https://www.youtube.com/watch?v=tUklXbCnu5A",
-      "thumbnail": "https://i.ytimg.com/vi/tUklXbCnu5A/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "Uncover the shocking truth behind WW2 deception - the story of the secret weapons that weren't guns or tanks. From colossal camouflage projects, to life-saving espionage and strategic subterfuge. Learn how spies, double agents, and illusionists changed the course of history, saving countless lives b",
-      "published": 1766354463,
-      "published_str": "2025-12-21",
-      "embed_id": "tUklXbCnu5A",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780928533.2421713
+  "_ts": 1780993869.992766
 }
