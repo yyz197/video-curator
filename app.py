@@ -152,6 +152,19 @@ def parse_iso8601_duration(iso_duration: str) -> int:
     return h * 3600 + mi * 60 + s
 
 
+def _parse_view_count(raw: str) -> float:
+    """解析'12.3万'格式为数字"""
+    if not raw:
+        return 0
+    raw = str(raw).strip()
+    if "万" in raw:
+        return float(raw.replace("万", "")) * 10000
+    try:
+        return float(raw)
+    except ValueError:
+        return 0
+
+
 def _video_score(v: dict) -> float:
     """视频质量综合评分（含时效性加权）"""
     views = v.get("views_raw", 0) or _parse_view_count(v.get("views", ""))
