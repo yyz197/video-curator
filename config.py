@@ -13,7 +13,7 @@ try:
     load_dotenv(os.path.join(PROJECT_DIR, ".env"))
 except ImportError:
     pass
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-4bf5537df2a34695bf33162169b8cd82")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 DEEPSEEK_BASE_URL = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
 
 # YouTube Data API v3 (可选，不填则使用 RSS 模式)

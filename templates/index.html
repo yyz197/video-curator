@@ -32,11 +32,6 @@
             <button v-for="cat in categories" :key="cat" class="filter-tag" :class="{active:category===cat}" @click="setCategory(cat)" v-text="cat"></button>
         </div>
         <div class="filter-actions">
-            <select class="sort-select" v-model="sort" @change="fetchVideos(true)">
-                <option value="score">综合排序</option>
-                <option value="time">最新发布</option>
-                <option value="views">播放最多</option>
-            </select>
             <button class="btn-refresh" @click="fetchVideos(true)">🔄 刷新</button>
         </div>
     </div>
@@ -212,7 +207,7 @@ async function fetchVideos(reset=true){
         if(reset){videos.value=vids;categories.value=d.categories||[]}
         else videos.value=[...videos.value,...vids];
         total.value=d.total||0;hasMore.value=d.has_more||false
-    }catch(e){console.error(e)}
+    }catch(e){console.error(e);toast('加载失败，请重试','error')}
     isLoading.value=false
 }
 let searchTimer;

@@ -28,7 +28,6 @@ def _save_video_list_cache(source: str, videos: list, label: str, sort: str = "s
         "_ts": time.time(),
         "videos": videos,
         "total": total, "page": 1, "per_page": VIDEOS_PER_PAGE,
-        "has_more": total > VIDEOS_PER_PAGE,
         "categories": CATEGORY_LABELS, "search": None,
     }
     cache_set(ck, data)

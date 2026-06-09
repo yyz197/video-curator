@@ -5,14 +5,11 @@
 import json
 import hashlib
 import os
-import random
 import re
 import time
 from datetime import datetime
-import urllib.parse
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from io import BytesIO
 from pathlib import Path
 
 import requests
@@ -155,26 +152,6 @@ def parse_iso8601_duration(iso_duration: str) -> int:
     return h * 3600 + mi * 60 + s
 
 
-def _proxy_thumbnail(url: str) -> str:
-    """将外部图片URL转为本地代理URL，解决B站防盗链"""
-    if not url:
-        return ""
-    return f"/api/thumbnail?url={urllib.parse.quote(url, safe='')}"
-
-
-def _parse_view_count(raw: str) -> float:
-    """解析'12.3万'格式为数字"""
-    if not raw:
-        return 0
-    raw = str(raw).strip()
-    if "万" in raw:
-        return float(raw.replace("万", "")) * 10000
-    try:
-        return float(raw)
-    except ValueError:
-        return 0
-
-
 def _video_score(v: dict) -> float:
     """视频质量综合评分（含时效性加权）"""
     views = v.get("views_raw", 0) or _parse_view_count(v.get("views", ""))
@@ -209,7 +186,7 @@ def _video_score(v: dict) -> float:
             score *= 1.5
 
     # 作者权重: 知名作者加成
-    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online"}
+    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "3Blue1Brown", "SmarterEveryDay", "Numberphile", "Computerphile", "SciShow", "Vsauce", "National Geographic", "BBC Earth", "Be Smart", "MinuteEarth", "CGP Grey", "Fireship", "Nerdwriter1", "Vox", "Eater", "Babish Culinary Universe", "Gordon Ramsay", "Bon Appetit", "Bloomberg Originals", "Economics Explained"}
     if v.get("author", "") in top_authors:
         score *= 1.5
 
@@ -218,7 +195,7 @@ def _video_score(v: dict) -> float:
 
 def _pre_score_deep(videos: list) -> None:
     """预评分：用已知信息（作者权重、缓存时长）排序，决定哪些视频值得 enrichment"""
-    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "Vsauce", "3Blue1Brown", "SmarterEveryDay", "Numberphile", "Computerphile", "MinuteEarth", "National Geographic", "SciShow", "Kyle Hill"}
+    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "Vsauce", "3Blue1Brown", "SmarterEveryDay", "Numberphile", "Computerphile", "MinuteEarth", "National Geographic", "SciShow", "Kyle Hill", "Be Smart", "CGP Grey", "Fireship", "Nerdwriter1", "Vox", "Eater", "Babish Culinary Universe", "Gordon Ramsay", "Bon Appetit", "Bloomberg Originals", "Economics Explained", "History Hit", "OverSimplified", "Kings and Generals"}
     for v in videos:
         s = 1.0
         author = v.get("author", "")
@@ -260,7 +237,7 @@ def _video_score_featured(v: dict) -> float:
             score *= 1.1
 
     # 作者权重（保留）
-    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online"}
+    top_authors = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "3Blue1Brown", "SmarterEveryDay", "Numberphile", "Computerphile", "SciShow", "Vsauce", "National Geographic", "BBC Earth", "Be Smart", "MinuteEarth", "CGP Grey", "Fireship", "Nerdwriter1", "Vox", "Eater", "Babish Culinary Universe", "Gordon Ramsay", "Bon Appetit", "Bloomberg Originals", "Economics Explained"}
     if v.get("author", "") in top_authors:
         score *= 1.5
 
@@ -273,7 +250,7 @@ def _latest_quality_filter(v: dict) -> bool:
     author = v.get("author", "")
 
     # 频道公信力基准（知名频道容忍更高新视频）
-    high_trust = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "3Blue1Brown", "SmarterEveryDay", "SciShow", "Vsauce", "National Geographic", "BBC Earth", "Vox"}
+    high_trust = {"TED", "TED-Ed", "TEDx Talks", "Kurzgesagt", "Veritasium", "CrashCourse", "PBS Space Time", "Mark Rober", "The Royal Institution", "Stanford Online", "3Blue1Brown", "SmarterEveryDay", "SciShow", "Vsauce", "National Geographic", "BBC Earth", "Vox", "Be Smart", "MinuteEarth", "CGP Grey", "Fireship", "Nerdwriter1", "Eater", "Babish Culinary Universe", "Gordon Ramsay", "Bon Appetit", "Bloomberg Originals", "Economics Explained", "OverSimplified", "Kings and Generals", "History Hit"}
 
     if author in high_trust:
         min_views = 5000  # 高公信/频道：5000播放保底
@@ -286,155 +263,6 @@ def _latest_quality_filter(v: dict) -> bool:
 # ──────────────────────────────────────────────
 #  YouTube 视频源 (并发请求)
 # ──────────────────────────────────────────────
-
-# UA 轮换池 — 防 B站 API 限流
-_BILIBILI_USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
-]
-
-
-def _bilibili_headers() -> dict:
-    return {
-        "User-Agent": random.choice(_BILIBILI_USER_AGENTS),
-        "Referer": "https://www.bilibili.com/",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Origin": "https://www.bilibili.com",
-    }
-
-
-def _parse_bilibili_video(item: dict) -> dict:
-    tid = item.get("tid", 0)
-    dur_raw = item.get("duration", "")
-    dur_sec = parse_duration(dur_raw)
-    stat = item.get("stat", {})
-    return {
-        "id": f"bilibili_{item.get('aid', item.get('id', ''))}",
-        "source": "bilibili",
-        "title": item.get("title", ""),
-        "url": f"https://www.bilibili.com/video/{item.get('bvid', '')}",
-        "thumbnail": _proxy_thumbnail(item.get("pic", "")),
-        "author": item.get("owner", {}).get("name", ""),
-        "duration": format_duration(dur_sec),
-        "duration_seconds": dur_sec,
-        "duration_badge": duration_badge(dur_sec),
-        "views": format_count(int(stat.get("view", 0) or 0)),
-        "views_raw": int(stat.get("view", 0) or 0),
-        "danmaku": format_count(int(stat.get("danmaku", 0) or 0)),
-        "likes": format_count(int(stat.get("like", 0) or 0)),
-        "likes_raw": int(stat.get("like", 0) or 0),
-        "category": BILIBILI_CATEGORIES.get(tid, _guess_category(tid)),
-        "description": (item.get("desc", "") or "")[:300],
-        "published": item.get("pubdate", 0),
-        "published_str": datetime.fromtimestamp(item.get("pubdate", 0)).strftime("%Y-%m-%d") if item.get("pubdate", 0) else "",
-        "embed_id": item.get("bvid", ""),
-        "embed_src": "bilibili",
-        "summary": None,
-        "favorited": False,
-    }
-
-
-BILIBILI_CATEGORIES = {}  # B站已移除, 保留占位防止引用报错
-
-
-def _guess_category(tid: int) -> str:
-    """对未映射的 tid 猜一个合理的分类名"""
-    guesses = {
-        1: "动画", 13: "番剧", 167: "国创", 3: "音乐", 129: "舞蹈",
-        4: "游戏", 5: "娱乐", 119: "鬼畜", 155: "时尚", 160: "生活",
-        165: "广告", 166: "搞笑", 181: "影视",
-    }
-    return guesses.get(tid, f"分区{tid}")
-
-
-def _fetch_bilibili_ranking(rid: int, rank_type: str) -> list[dict]:
-    """获取单个 B站分区的排行榜，SSL 错误自动重试一次"""
-    for attempt in range(2):
-        try:
-            resp = requests.get(
-                "https://api.bilibili.com/x/web-interface/ranking/v2",
-                params={"rid": rid, "type": rank_type},
-                headers=_bilibili_headers(),
-                timeout=15,
-            )
-            data = resp.json()
-            if data.get("code") == 0:
-                return data.get("data", {}).get("list", [])
-            return []
-        except (requests.exceptions.SSLError, requests.exceptions.ConnectionError) as e:
-            if attempt == 0:
-                time.sleep(1 + random.random() * 2)  # 1-3s jitter
-                continue
-            app.logger.warning(f"B站分区 {rid} {rank_type}榜 SSL 重试后仍失败: {e}")
-        except Exception as e:
-            app.logger.error(f"B站分区 {rid} {rank_type}榜失败: {e}")
-            break
-    return []
-
-
-def fetch_bilibili_videos(category_id: int | None = None) -> list[dict]:
-    """获取 B站教育类视频（热门 + 并发分区排行榜）"""
-    videos = []
-    seen_ids = set()
-
-    def add_video(item):
-        vid = item.get("aid", item.get("id", ""))
-        if vid not in seen_ids:
-            seen_ids.add(vid)
-            v = _parse_bilibili_video(item)
-            if v["category"] in ("动画", "番剧", "游戏", "娱乐", "鬼畜", "搞笑"):
-                return
-            if v["duration_seconds"] < MIN_DURATION_SECONDS:
-                return
-            videos.append(v)
-
-    # 1) 热门榜（单次请求）
-    try:
-        url = "https://api.bilibili.com/x/web-interface/popular"
-        resp = requests.get(url, params={"ps": 50, "pn": 1}, headers=_bilibili_headers(), timeout=15)
-        data = resp.json()
-        if data.get("code") == 0:
-            for item in data.get("data", {}).get("list", []):
-                tid = item.get("tid", 0)
-                if category_id and tid != category_id:
-                    continue
-                if tid in BILIBILI_CATEGORIES:
-                    add_video(item)
-    except Exception as e:
-        app.logger.error(f"B站热门 API 失败: {e}")
-
-    # 2) 并发拉取各分区周榜 + 日榜
-    cats_to_fetch = [category_id] if category_id else [k for k in BILIBILI_CATEGORIES if k < 200]
-    tasks = []
-    for cid in cats_to_fetch[:12]:
-        tasks.append((cid, "weekly"))
-    for cid in cats_to_fetch[:6]:
-        tasks.append((cid, "daily"))
-
-    if tasks:
-        with ThreadPoolExecutor(max_workers=BILIBILI_MAX_WORKERS) as executor:
-            futures = {
-                executor.submit(_fetch_bilibili_ranking, cid, rank_type): (cid, rank_type)
-                for cid, rank_type in tasks
-            }
-            for future in as_completed(futures):
-                cid, rank_type = futures[future]
-                try:
-                    items = future.result()
-                    limit = 6 if rank_type == "weekly" else 3
-                    for item in items[:limit]:
-                        add_video(item)
-                except Exception as e:
-                    app.logger.error(f"B站分区 {cid} {rank_type}榜失败: {e}")
-
-    videos.sort(key=lambda v: v.get("published", 0), reverse=True)
-    return videos
-
 
 def format_count(n: int) -> str:
     if n >= 10000:
@@ -1002,61 +830,22 @@ def _fetch_youtube_transcript_raw(video_id: str) -> dict | None:
         cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
         return data
     return None
-    cache_path = _get_transcript_cache_path("youtube", video_id)
-    if cache_path.exists():
-        try:
-            data = json.loads(cache_path.read_text(encoding="utf-8"))
-            return data if isinstance(data, dict) else {"text": str(data), "segments": []}
-        except (json.JSONDecodeError, OSError):
-            pass
 
-    segments = _fetch_youtube_transcript_ytdlp(video_id) or []
-
-    if not segments:
-        try:
-            from youtube_transcript_api import YouTubeTranscriptApi
-            api = YouTubeTranscriptApi()
-            transcript = api.fetch(video_id, languages=["zh-Hans", "zh", "en"])
-            segments = [{"start": round(t.start, 1), "duration": round(t.duration, 1), "original": t.text} for t in transcript if t.text]
-        except Exception:
-            app.logger.debug(f"YouTube 字幕获取失败: {video_id}")
-
-    if segments:
-        text = " ".join(s["original"] for s in segments)
-        text = " ".join(text.split())
-        data = {"text": text, "segments": segments[:800]}  # 全量文本 + 足够分段(~40min)
-        cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-        return data
-    return None
-
-
-def fetch_bilibili_transcript(video_id: str) -> str:
-    return ""
-
-
-def _fetch_bilibili_transcript_raw(video_id: str) -> dict | None:
-    return None
 
 
 def get_transcript_for_video(video: dict) -> str:
     """统一入口 — 纯文本"""
     embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
-    source = video.get("source", "")
-    if source == "youtube":
+    if embed_id:
         return fetch_youtube_transcript(embed_id)
-    if source == "bilibili":
-        return fetch_bilibili_transcript(embed_id)
     return ""
 
 
 def get_transcript_timed(video: dict) -> dict | None:
     """统一入口 — 带时间戳分段"""
     embed_id = video.get("embed_id", "") or video.get("youtube_id", "")
-    source = video.get("source", "")
-    if source == "youtube":
+    if embed_id:
         return _fetch_youtube_transcript_raw(embed_id)
-    if source == "bilibili":
-        return _fetch_bilibili_transcript_raw(embed_id)
     return None
 
 
