@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_g8hbTcARHeE",
+      "youtube_id": "g8hbTcARHeE",
+      "source": "youtube",
+      "title": "Do These Supplements Work? (Your Questions Answered)",
+      "url": "https://www.youtube.com/watch?v=g8hbTcARHeE",
+      "thumbnail": "https://i.ytimg.com/vi/g8hbTcARHeE/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Get your $5 sign-up bonus at  http://privacy.com/scishow. You can use it on your first purchase!  Privacy has a free plan with no transaction fees for domestic purchases. Protect your financial identity online with virtual cards.\n\nLast time we talked supplements, you guys had questions. And we have ",
+      "published": 1781024415,
+      "published_str": "2026-06-09",
+      "embed_id": "g8hbTcARHeE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_HoYY9J2w75E",
       "youtube_id": "HoYY9J2w75E",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_PlUZv0BV7aw",
-      "youtube_id": "PlUZv0BV7aw",
-      "source": "youtube",
-      "title": "In Defense of Alchemy",
-      "url": "https://www.youtube.com/watch?v=PlUZv0BV7aw",
-      "thumbnail": "https://i.ytimg.com/vi/PlUZv0BV7aw/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Alchemy might seem to us like the dark, shameful side of chemistry. Yet alchemists, through the pursuit of turning lead into gold via transmutation, were sincerely trying to understand how the world works. And no one shows it better than the great Sir Isaac Newton himself. In this SciShow Deep Dive,",
-      "published": 1760720406,
-      "published_str": "2025-10-17",
-      "embed_id": "PlUZv0BV7aw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780993864.454265
+  "_ts": 1781056594.9419842
 }

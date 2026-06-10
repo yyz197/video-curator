@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nW3VObYzcI8",
+      "youtube_id": "nW3VObYzcI8",
+      "source": "youtube",
+      "title": "My favourite walking desk gadget",
+      "url": "https://www.youtube.com/watch?v=nW3VObYzcI8",
+      "thumbnail": "https://i.ytimg.com/vi/nW3VObYzcI8/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260609",
+      "published": 1780999203,
+      "published_str": "2026-06-09",
+      "embed_id": "nW3VObYzcI8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9MoI57125pk",
       "youtube_id": "9MoI57125pk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_thppgFlGU6s",
-      "youtube_id": "thppgFlGU6s",
-      "source": "youtube",
-      "title": "This is actually why you can't focus",
-      "url": "https://www.youtube.com/watch?v=thppgFlGU6s",
-      "thumbnail": "https://i.ytimg.com/vi/thppgFlGU6s/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "If you fancy getting more productivity tips and practical life advice, join ProductiveNotes - my free, weekly newsletter - https://go.aliabdaal.com/prodnotesyts",
-      "published": 1767175289,
-      "published_str": "2025-12-31",
-      "embed_id": "thppgFlGU6s",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780993870.7191317
+  "_ts": 1781056600.6473103
 }

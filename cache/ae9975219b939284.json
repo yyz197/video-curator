@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_S7P2iWzjIJs",
+      "youtube_id": "S7P2iWzjIJs",
+      "source": "youtube",
+      "title": "We Tried the Best Peking Duck in NYC | Street Eats | Bon Appétit",
+      "url": "https://www.youtube.com/watch?v=S7P2iWzjIJs",
+      "thumbnail": "https://i.ytimg.com/vi/S7P2iWzjIJs/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Bon Appétit meets chef Lucas Sin at NYC’s largest Chinatown in Flushing to eat the city’s most traditional Peking Duck. At JUQI inside Tangram Mall, chefs prepare Beijing-style roast duck by air-pumping the skin and roasting in a traditional Míng huǒlú oven to achieve the glassy, crispy duck skin th",
+      "published": 1781020804,
+      "published_str": "2026-06-09",
+      "embed_id": "S7P2iWzjIJs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9XIqVHEUYF4",
       "youtube_id": "9XIqVHEUYF4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_wa_S0ZDt_ZU",
-      "youtube_id": "wa_S0ZDt_ZU",
-      "source": "youtube",
-      "title": "How a New Hawai'i Restaurant is Celebrating Island Flavors | On The Line | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=wa_S0ZDt_ZU",
-      "thumbnail": "https://i.ytimg.com/vi/wa_S0ZDt_ZU/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Today, Bon Appétit spends a day on the line with Chef Keoni Regidor, the head chef of Lehua, a new restaurant bringing fresh energy to Hilo, Hawai'i. At Lehua, traditional Hawaiian ingredients meet modern culinary techniques to create a menu that’s rooted in heritage and innovation. With a focus on ",
-      "published": 1753372827,
-      "published_str": "2025-07-24",
-      "embed_id": "wa_S0ZDt_ZU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780993873.2521048
+  "_ts": 1781056602.8563695
 }

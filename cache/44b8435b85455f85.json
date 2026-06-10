@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BccK-OEwDZc",
+      "youtube_id": "BccK-OEwDZc",
+      "source": "youtube",
+      "title": "1941-42: Inside The Deadliest Turning Points Of Of WW2",
+      "url": "https://www.youtube.com/watch?v=BccK-OEwDZc",
+      "thumbnail": "https://i.ytimg.com/vi/BccK-OEwDZc/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "Discover the critical moments of WW2 when the global balance of power shifted forever. From the surprise attack on Pearl Harbor to the freezing battlefields of Moscow and the scorching sands of El Alamein, this documentary uncovers the triumphs, blunders, and tragedies of 1941 and 1942. Featuring ra",
+      "published": 1781038800,
+      "published_str": "2026-06-09",
+      "embed_id": "BccK-OEwDZc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_bgYQ6KuRWfw",
       "youtube_id": "bgYQ6KuRWfw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_xt-biZBt374",
-      "youtube_id": "xt-biZBt374",
-      "source": "youtube",
-      "title": "The Largest Airborne Failure: Why Operation Market Garden Lost WW2's Biggest Gamble",
-      "url": "https://www.youtube.com/watch?v=xt-biZBt374",
-      "thumbnail": "https://i.ytimg.com/vi/xt-biZBt374/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "Operation Market Garden: September 1944. The Allies launch WW2's biggest airborne assault in a bold plan to seize key bridges in the Netherlands, including Arnhem and Nijmegen, and end the war by Christmas. This documentary details the opening hours of the campaign, from the massive paratrooper drop",
-      "published": 1766527271,
-      "published_str": "2025-12-23",
-      "embed_id": "xt-biZBt374",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780993869.992766
+  "_ts": 1781056599.886236
 }

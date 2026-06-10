@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nW3VObYzcI8",
+      "youtube_id": "nW3VObYzcI8",
+      "source": "youtube",
+      "title": "My favourite walking desk gadget",
+      "url": "https://www.youtube.com/watch?v=nW3VObYzcI8",
+      "thumbnail": "https://i.ytimg.com/vi/nW3VObYzcI8/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260609",
+      "published": 1780999203,
+      "published_str": "2026-06-09",
+      "embed_id": "nW3VObYzcI8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9MoI57125pk",
       "youtube_id": "9MoI57125pk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gMN2utxJAKQ",
-      "youtube_id": "gMN2utxJAKQ",
-      "source": "youtube",
-      "title": "The Midlife Career Advantage",
-      "url": "https://www.youtube.com/watch?v=gMN2utxJAKQ",
-      "thumbnail": "https://i.ytimg.com/vi/gMN2utxJAKQ/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Learn how to be financially free (free workshop): https://go.lifestylebusiness.com/yts260603",
-      "published": 1780480838,
-      "published_str": "2026-06-03",
-      "embed_id": "gMN2utxJAKQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1780993880.3494806
+  "_ts": 1781056610.0569098
 }
