@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pYP1CFr_QLo",
+      "youtube_id": "pYP1CFr_QLo",
+      "source": "youtube",
+      "title": "Scientists Finally Figured Out What Love Is For",
+      "url": "https://www.youtube.com/watch?v=pYP1CFr_QLo",
+      "thumbnail": "https://i.ytimg.com/vi/pYP1CFr_QLo/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The dumb things we do for love make a lot more sense than you think…\n↓↓↓ More info and sources below ↓↓↓\n\nLove makes people do ridiculous things: quit jobs, cross continents, build monuments, and ignore every red flag in sight. But what if that's exactly what love evolved to do? This video explores ",
+      "published": 1781205853,
+      "published_str": "2026-06-11",
+      "embed_id": "pYP1CFr_QLo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ousa8Yy96Y4",
       "youtube_id": "ousa8Yy96Y4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gVZwdYZqCUI",
-      "youtube_id": "gVZwdYZqCUI",
-      "source": "youtube",
-      "title": "Why Some of the Rainbow is Missing",
-      "url": "https://www.youtube.com/watch?v=gVZwdYZqCUI",
-      "thumbnail": "https://i.ytimg.com/vi/gVZwdYZqCUI/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We’re on PATREON! Join the community: https://www.patreon.com/itsokaytobesmart\n↓↓↓ More info and sources below ↓↓↓\n\nOver 200 years ago, scientists were looking at sunlight through a prism when they noticed that part of the rainbow was missing. There were dark lines where there should have been color",
-      "published": 1691683199,
-      "published_str": "2023-08-10",
-      "embed_id": "gVZwdYZqCUI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781056595.7588327
+  "_ts": 1781315838.9494822
 }

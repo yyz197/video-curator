@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_2_Z7FB3vfFg",
+      "youtube_id": "2_Z7FB3vfFg",
+      "source": "youtube",
+      "title": "Zippers are stronger than you think...",
+      "url": "https://www.youtube.com/watch?v=2_Z7FB3vfFg",
+      "thumbnail": "https://i.ytimg.com/vi/2_Z7FB3vfFg/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "How do zippers work? \n\nWe made a giant one to find out!",
+      "published": 1781269218,
+      "published_str": "2026-06-12",
+      "embed_id": "2_Z7FB3vfFg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_AUmHqD0lGHo",
       "youtube_id": "AUmHqD0lGHo",
       "source": "youtube",
@@ -654,7 +679,7 @@
       "id": "youtube_cMx139eTxoc",
       "youtube_id": "cMx139eTxoc",
       "source": "youtube",
-      "title": "The Miracle Material That Killed Millions",
+      "title": "The asbestos problem is worse than we thought",
       "url": "https://www.youtube.com/watch?v=cMx139eTxoc",
       "thumbnail": "https://i.ytimg.com/vi/cMx139eTxoc/mqdefault.jpg",
       "author": "Veritasium",
@@ -2479,7 +2504,7 @@
       "id": "youtube_DJO_9auJhJQ",
       "youtube_id": "DJO_9auJhJQ",
       "source": "youtube",
-      "title": "We Might Find Alien Life In 1,796 Days",
+      "title": "We Might Find Alien Life In 1,743 Days",
       "url": "https://www.youtube.com/watch?v=DJO_9auJhJQ",
       "thumbnail": "https://i.ytimg.com/vi/DJO_9auJhJQ/mqdefault.jpg",
       "author": "Veritasium",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rWVAzS5duAs",
-      "youtube_id": "rWVAzS5duAs",
-      "source": "youtube",
-      "title": "Can you float in concrete?",
-      "url": "https://www.youtube.com/watch?v=rWVAzS5duAs",
-      "thumbnail": "https://i.ytimg.com/vi/rWVAzS5duAs/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Concrete = cement + sand + gravel. Cement is the most important man-made material on Earth. Offset your carbon footprint on Wren: https://wren.co/veritasium . For the first 100 people who sign up, I will personally pay for the first month of your subscription!\n\n▀▀▀\nA huge thank you to Nevada Ready M",
-      "published": 1681493086,
-      "published_str": "2023-04-14",
-      "embed_id": "rWVAzS5duAs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781056594.3484309
+  "_ts": 1781315837.4343312
 }

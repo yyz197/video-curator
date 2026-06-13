@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_AF2eYuAKsao",
+      "youtube_id": "AF2eYuAKsao",
+      "source": "youtube",
+      "title": "Myths About Diamonds: Crash Course Geology #8",
+      "url": "https://www.youtube.com/watch?v=AF2eYuAKsao",
+      "thumbnail": "https://i.ytimg.com/vi/AF2eYuAKsao/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Diamonds are a girl’s best friend. But they’re so much more than that. They’re sources of power, wealth, and conflict. They’re tickets into Earth’s deep, ancient past. (And they’re super duper cursed. Well, some of them. Maybe.) Join us to learn more about where these strange gems come from, and the",
+      "published": 1781194355,
+      "published_str": "2026-06-11",
+      "embed_id": "AF2eYuAKsao",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eKnl_Jp8jsg",
       "youtube_id": "eKnl_Jp8jsg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HCWzzZFCwag",
-      "youtube_id": "HCWzzZFCwag",
-      "source": "youtube",
-      "title": "How Do Religions Use Art?: Crash Course Art History #8",
-      "url": "https://www.youtube.com/watch?v=HCWzzZFCwag",
-      "thumbnail": "https://i.ytimg.com/vi/HCWzzZFCwag/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "From the Egyptian Book of the Dead to Tibetan Buddhist sand mandalas, humans have always reached for art to express religious ideas and impulses. In this episode, we’ll explore how concepts of the divine and spirituality intersect with the history of art.\n\nIntroduction: James Hampton 00:00\nThe Book ",
-      "published": 1718294412,
-      "published_str": "2024-06-13",
-      "embed_id": "HCWzzZFCwag",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781056594.9285066
+  "_ts": 1781315838.1468275
 }
