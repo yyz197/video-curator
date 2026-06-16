@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_XUStGNx45wQ",
+      "youtube_id": "XUStGNx45wQ",
+      "source": "youtube",
+      "title": "The Power of 1%",
+      "url": "https://www.youtube.com/watch?v=XUStGNx45wQ",
+      "thumbnail": "https://i.ytimg.com/vi/XUStGNx45wQ/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "What could 1% of the richest countries’ income achieve? From malaria vaccines and clean water to renewable energy, a surprisingly small fraction of global wealth could transform millions of lives.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#internationalaid \n\nSource",
+      "published": 1781532016,
+      "published_str": "2026-06-15",
+      "embed_id": "XUStGNx45wQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2acc7oyXIZI",
       "youtube_id": "2acc7oyXIZI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_TYhNHX372ek",
-      "youtube_id": "TYhNHX372ek",
-      "source": "youtube",
-      "title": "The Uncomfortable Truth About Ozempic (Updated Version)",
-      "url": "https://www.youtube.com/watch?v=TYhNHX372ek",
-      "thumbnail": "https://i.ytimg.com/vi/TYhNHX372ek/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Do you have a balanced news diet? Go to https://ground.news/nutshell to see reporting from a variety of sources and perspectives around the world. Subscribe for 40% off their unlimited access Vantage plan through our link.\n\nGet your LIMITED EDITION Visiting Comet Pin before they’re gone forever: htt",
-      "published": 1779199215,
-      "published_str": "2026-05-19",
-      "embed_id": "TYhNHX372ek",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315852.4909806
+  "_ts": 1781576093.4406867
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_8BUlJzWLrao",
+      "youtube_id": "8BUlJzWLrao",
+      "source": "youtube",
+      "title": "Archeologists Examine The Mystery Of 3 Egyptian Mummies",
+      "url": "https://www.youtube.com/watch?v=8BUlJzWLrao",
+      "thumbnail": "https://i.ytimg.com/vi/8BUlJzWLrao/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "Join elite Egyptologists and forensic scientists as they use advanced CT scans, chemical analysis, and experimental archeology to unlock three chilling historical mysteries. Discover how a misplaced mummy reveals a blood relative of Ramesses II, uncover the gruesome political assassination of an Egy",
+      "published": 1781384403,
+      "published_str": "2026-06-13",
+      "embed_id": "8BUlJzWLrao",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ePSMVgh9hcs",
       "youtube_id": "ePSMVgh9hcs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_9pkqJGkHdEI",
-      "youtube_id": "9pkqJGkHdEI",
-      "source": "youtube",
-      "title": "Forced Recruitment In The Third Reich: The Brutal Legacy Of The Nazi War Machine",
-      "url": "https://www.youtube.com/watch?v=9pkqJGkHdEI",
-      "thumbnail": "https://i.ytimg.com/vi/9pkqJGkHdEI/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "Explore the devastating, forgotten history of forced labor in the Third Reich, where over 13 million people across Europe were exploited to power the Nazi war machine. This documentary, rich with testimony from survivors and their descendants, unveils the brutality of mass abductions, the complicity",
-      "published": 1766700014,
-      "published_str": "2025-12-25",
-      "embed_id": "9pkqJGkHdEI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315843.6857781
+  "_ts": 1781576083.499597
 }

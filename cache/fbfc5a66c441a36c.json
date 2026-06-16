@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_PtuZD2bjFPQ",
+      "youtube_id": "PtuZD2bjFPQ",
+      "source": "youtube",
+      "title": "How Laundry Detergent Caused an Environmental Disaster",
+      "url": "https://www.youtube.com/watch?v=PtuZD2bjFPQ",
+      "thumbnail": "https://i.ytimg.com/vi/PtuZD2bjFPQ/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The introduction of domestic laundry machines came with unexpected, and massive, consequences: the suds from new synthetic detergents were just too good at their job. Bubbles started clogging freshwater sources, spiraling into a full blown environmental disaster that took decades to clean up.\n\nHoste",
+      "published": 1781542832,
+      "published_str": "2026-06-15",
+      "embed_id": "PtuZD2bjFPQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_UzN6eHeaJj4",
       "youtube_id": "UzN6eHeaJj4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_wlqA8W5yhqo",
-      "youtube_id": "wlqA8W5yhqo",
-      "source": "youtube",
-      "title": "Where Did The Moon Come From?",
-      "url": "https://www.youtube.com/watch?v=wlqA8W5yhqo",
-      "thumbnail": "https://i.ytimg.com/vi/wlqA8W5yhqo/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "JMP offers a 30-day free trial for anyone, anywhere. Go to https://www.jmp.com/scishow  to see the benefits of visual statistics for yourself. \n\nFor decades, the Giant Impact Hypothesis has been the leading theory for the Moon's formation. But there's a lot of weird Moon things it still can't explai",
-      "published": 1780592421,
-      "published_str": "2026-06-04",
-      "embed_id": "wlqA8W5yhqo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315852.5863686
+  "_ts": 1781576093.5590937
 }

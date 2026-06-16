@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_PtuZD2bjFPQ",
+      "youtube_id": "PtuZD2bjFPQ",
+      "source": "youtube",
+      "title": "How Laundry Detergent Caused an Environmental Disaster",
+      "url": "https://www.youtube.com/watch?v=PtuZD2bjFPQ",
+      "thumbnail": "https://i.ytimg.com/vi/PtuZD2bjFPQ/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The introduction of domestic laundry machines came with unexpected, and massive, consequences: the suds from new synthetic detergents were just too good at their job. Bubbles started clogging freshwater sources, spiraling into a full blown environmental disaster that took decades to clean up.\n\nHoste",
+      "published": 1781542832,
+      "published_str": "2026-06-15",
+      "embed_id": "PtuZD2bjFPQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_UzN6eHeaJj4",
       "youtube_id": "UzN6eHeaJj4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-j9ZSmvoicM",
-      "youtube_id": "-j9ZSmvoicM",
-      "source": "youtube",
-      "title": "5 Animals That Are Thriving in the Human Hellscape",
-      "url": "https://www.youtube.com/watch?v=-j9ZSmvoicM",
-      "thumbnail": "https://i.ytimg.com/vi/-j9ZSmvoicM/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Visit https://brilliant.org/scishow/ to get started learning STEM for free and get 20% off their annual premium subscription.\n\nHumans have made a hellscape on Earth with climate change, deforestation, and everything else we've done to this planet. Many animals are going extinct from those effects. B",
-      "published": 1761152400,
-      "published_str": "2025-10-22",
-      "embed_id": "-j9ZSmvoicM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315837.887069
+  "_ts": 1781576077.1658285
 }

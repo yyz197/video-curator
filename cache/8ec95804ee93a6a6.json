@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_EOuaAvNTWx8",
+      "youtube_id": "EOuaAvNTWx8",
+      "source": "youtube",
+      "title": "The Wisdom of African Proverbs",
+      "url": "https://www.youtube.com/watch?v=EOuaAvNTWx8",
+      "thumbnail": "https://i.ytimg.com/vi/EOuaAvNTWx8/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nWisdom is often lost in translation—or worse, in repetition. This film explores why \"homely\" Western sayings like \"look before you leap\" have lost their bite through over-exposure, and why we must turn to the vi",
+      "published": 1781442028,
+      "published_str": "2026-06-14",
+      "embed_id": "EOuaAvNTWx8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0KQOrJ_K6ps",
       "youtube_id": "0KQOrJ_K6ps",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ZkKv8MTpKAE",
-      "youtube_id": "ZkKv8MTpKAE",
-      "source": "youtube",
-      "title": "How Wounded People Seek Out further Punishment",
-      "url": "https://www.youtube.com/watch?v=ZkKv8MTpKAE",
-      "thumbnail": "https://i.ytimg.com/vi/ZkKv8MTpKAE/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nWhy do we choose partners who punish us? This film dissects how childhood wounds lead to unhealthy adult relationships. Break the cycle, understand attachment trauma, and seek true connection. #Trauma #Relations",
-      "published": 1749042065,
-      "published_str": "2025-06-04",
-      "embed_id": "ZkKv8MTpKAE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315841.0171776
+  "_ts": 1781576080.4735315
 }

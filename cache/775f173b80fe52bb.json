@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_8HBDE-msUjw",
+      "youtube_id": "8HBDE-msUjw",
+      "source": "youtube",
+      "title": "If Prime Numbers Become Increasingly Rare, Then Why Do They Keep Showing Up In Pairs?",
+      "url": "https://www.youtube.com/watch?v=8HBDE-msUjw",
+      "thumbnail": "https://i.ytimg.com/vi/8HBDE-msUjw/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Do twin primes go on forever? Sponsored by Brilliant - Head to https://brilliant.org/veritasium to try Brilliant’s tutor for free, plus receive 20% off an annual Premium subscription\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magneti",
+      "published": 1781450325,
+      "published_str": "2026-06-14",
+      "embed_id": "8HBDE-msUjw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2_Z7FB3vfFg",
       "youtube_id": "2_Z7FB3vfFg",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_kS-CGkiPetQ",
-      "youtube_id": "kS-CGkiPetQ",
-      "source": "youtube",
-      "title": "Google Maps is unreasonably fast. Let me explain",
-      "url": "https://www.youtube.com/watch?v=kS-CGkiPetQ",
-      "thumbnail": "https://i.ytimg.com/vi/kS-CGkiPetQ/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The math behind Google Maps. Sponsored by boot.dev - Click this link https://boot.dev/?promo=VERITASIUM and use our code VERITASIUM to get 25% off your first payment for boot.dev. \n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetica",
-      "published": 1780152403,
-      "published_str": "2026-05-30",
-      "embed_id": "kS-CGkiPetQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315852.4809628
+  "_ts": 1781576093.415788
 }

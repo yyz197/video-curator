@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_7knce4Eh7xU",
+      "youtube_id": "7knce4Eh7xU",
+      "source": "youtube",
+      "title": "Solo on river shantyboat: quits city to live free at edge of society",
+      "url": "https://www.youtube.com/watch?v=7knce4Eh7xU",
+      "thumbnail": "https://i.ytimg.com/vi/7knce4Eh7xU/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Seven years ago, Martin Haseman set out to find a way to live for free in America. He tried RV life, vanlife, a sailboat — but even on BLM land, finding a free long-term parking spot is harder than it sounds. The water turned out to be the loophole.\n\nOn the Tennessee River and its tributaries, there",
+      "published": 1781475911,
+      "published_str": "2026-06-14",
+      "embed_id": "7knce4Eh7xU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_RXUUilqk7KA",
       "youtube_id": "RXUUilqk7KA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_v6QUGJpzEvU",
-      "youtube_id": "v6QUGJpzEvU",
-      "source": "youtube",
-      "title": "Handcrafted minimalist studio inspired by Japanese & shaker design",
-      "url": "https://www.youtube.com/watch?v=v6QUGJpzEvU",
-      "thumbnail": "https://i.ytimg.com/vi/v6QUGJpzEvU/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "As suggested by one of the commenters in our community, this video is the other book-end of Kirsten's earlier Thoreauvian simple living story with Diana and Michael Lorence's unelectrified, timeless tiny home in California. \n\n(Re)Watch it here: https://www.youtube.com/watch?v=lDbrUk2xYBo\n\nWhen Sebas",
-      "published": 1691346943,
-      "published_str": "2023-08-06",
-      "embed_id": "v6QUGJpzEvU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315845.8230326
+  "_ts": 1781576086.008511
 }

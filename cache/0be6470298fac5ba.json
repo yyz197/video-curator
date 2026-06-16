@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_fwLsCgibGw4",
+      "youtube_id": "fwLsCgibGw4",
+      "source": "youtube",
+      "title": "Palindrome Ages - Numberphile",
+      "url": "https://www.youtube.com/watch?v=fwLsCgibGw4",
+      "thumbnail": "https://i.ytimg.com/vi/fwLsCgibGw4/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Kat Phillips tumbles down a numerical rabbit hole after a text message from her mother. Extra footage at: https://youtu.be/bIbTfdbQaSE -- More links & stuff in full description below ↓↓↓\n\nMore about Kat, including links to her work and streaming and other stuff: https://katdoesmaths.me/\nShe's on Twi",
+      "published": 1781535735,
+      "published_str": "2026-06-15",
+      "embed_id": "fwLsCgibGw4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_e1_NXWjmwhc",
       "youtube_id": "e1_NXWjmwhc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3V84Bi-mzQM",
-      "youtube_id": "3V84Bi-mzQM",
-      "source": "youtube",
-      "title": "The Nescafé Equation (43 coffee beans) - Numberphile",
-      "url": "https://www.youtube.com/watch?v=3V84Bi-mzQM",
-      "thumbnail": "https://i.ytimg.com/vi/3V84Bi-mzQM/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Featuring Cliff Stoll. Check https://brilliant.org/numberphile for Brilliant and get 20% off their premium service (episode sponsor)\nMore links & stuff in full description below ↓↓↓\n\nCliff scrutinizes the lyrics of a Nescafé advertisement dealing with the brand's famed 43 beans.\n\nAlternative ending ",
-      "published": 1660403969,
-      "published_str": "2022-08-13",
-      "embed_id": "3V84Bi-mzQM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781315842.165147
+  "_ts": 1781576081.4152024
 }
