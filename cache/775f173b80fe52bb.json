@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_RxIsjweAAdE",
+      "youtube_id": "RxIsjweAAdE",
+      "source": "youtube",
+      "title": "This tiny magnetic blob could change how we treat brain tumors forever...",
+      "url": "https://www.youtube.com/watch?v=RxIsjweAAdE",
+      "thumbnail": "https://i.ytimg.com/vi/RxIsjweAAdE/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Scientists have developed a new way to provide treatment for brain tumours.\n\nCurrently we use chemotherapy, but that's like throwing a grenade at a mosquito, you end up damaging a lot more than you mean to.\n\nThis magnetic blob will help change that.",
+      "published": 1781787614,
+      "published_str": "2026-06-18",
+      "embed_id": "RxIsjweAAdE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_8HBDE-msUjw",
       "youtube_id": "8HBDE-msUjw",
       "source": "youtube",
-      "title": "If Prime Numbers Become Increasingly Rare, Then Why Do They Keep Showing Up In Pairs?",
+      "title": "We're 99.9% sure this pattern is true, but no one can prove it",
       "url": "https://www.youtube.com/watch?v=8HBDE-msUjw",
       "thumbnail": "https://i.ytimg.com/vi/8HBDE-msUjw/mqdefault.jpg",
       "author": "Veritasium",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tz23G_UXCGA",
-      "youtube_id": "tz23G_UXCGA",
-      "source": "youtube",
-      "title": "Something is jamming GPS over Europe. Here's what we found",
-      "url": "https://www.youtube.com/watch?v=tz23G_UXCGA",
-      "thumbnail": "https://i.ytimg.com/vi/tz23G_UXCGA/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Something is disrupting GPS signals across Europe. Sponsored by Ground News. Go to https://ground.news/Ve for 40% off the unlimited Vantage plan. \n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nSi",
-      "published": 1780643357,
-      "published_str": "2026-06-05",
-      "embed_id": "tz23G_UXCGA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781576093.415788
+  "_ts": 1781836558.435928
 }

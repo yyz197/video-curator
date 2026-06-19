@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xDll-p5g2EQ",
+      "youtube_id": "xDll-p5g2EQ",
+      "source": "youtube",
+      "title": "How Water Shapes the Land: Crash Course Geology #9",
+      "url": "https://www.youtube.com/watch?v=xDll-p5g2EQ",
+      "thumbnail": "https://i.ytimg.com/vi/xDll-p5g2EQ/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Drop by drop, water has the power to break rock and create whole new landforms. But how? In this episode of Crash Course Geology, we’ll trace how the water cycle works and how this humble geological force sculpts the land as we know it—faster than you might think.\n\nIntroduction: Channeled Scablands ",
+      "published": 1781798419,
+      "published_str": "2026-06-18",
+      "embed_id": "xDll-p5g2EQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_AF2eYuAKsao",
       "youtube_id": "AF2eYuAKsao",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_kYSW890YFeU",
-      "youtube_id": "kYSW890YFeU",
-      "source": "youtube",
-      "title": "Lily Gladstone Reads Comments",
-      "url": "https://www.youtube.com/watch?v=kYSW890YFeU",
-      "thumbnail": "https://i.ytimg.com/vi/kYSW890YFeU/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Crash Course is a community of those of us who make it, and it's YOU. If you want to support trustworthy, accessible education, head to crashcoursecoin.com to make a donation and receive a beautifully crafted token of our appreciation. \n\nYour support helps us to continue to teach what needs to be ta",
-      "published": 1779726300,
-      "published_str": "2026-05-25",
-      "embed_id": "kYSW890YFeU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781576093.5902934
+  "_ts": 1781836558.6077642
 }

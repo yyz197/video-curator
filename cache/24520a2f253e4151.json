@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wGffBCfrAsE",
+      "youtube_id": "wGffBCfrAsE",
+      "source": "youtube",
+      "title": "100 random chords, how many intersections?",
+      "url": "https://www.youtube.com/watch?v=wGffBCfrAsE",
+      "thumbnail": "https://i.ytimg.com/vi/wGffBCfrAsE/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Part of a series of monthly puzzles done in collaboration with MoMath.",
+      "published": 1781633045,
+      "published_str": "2026-06-16",
+      "embed_id": "wGffBCfrAsE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-7etvZSBxlk",
       "youtube_id": "-7etvZSBxlk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Kas0tIxDvrg",
-      "youtube_id": "Kas0tIxDvrg",
-      "source": "youtube",
-      "title": "Exponential growth and epidemics",
-      "url": "https://www.youtube.com/watch?v=Kas0tIxDvrg",
-      "thumbnail": "https://i.ytimg.com/vi/Kas0tIxDvrg/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "A primer on exponential and logistic growth\nHelp fund future projects: https://www.patreon.com/3blue1brown\nAn equally valuable form of support is to simply share some of the videos.\nSpecial thanks to these supporters: http://3b1b.co/covid-thanks\nHome page: https://www.3blue1brown.com\r\n\nExcellent vis",
-      "published": 1583686699,
-      "published_str": "2020-03-08",
-      "embed_id": "Kas0tIxDvrg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781576081.0860102
+  "_ts": 1781836546.1599958
 }

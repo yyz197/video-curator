@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xDll-p5g2EQ",
+      "youtube_id": "xDll-p5g2EQ",
+      "source": "youtube",
+      "title": "How Water Shapes the Land: Crash Course Geology #9",
+      "url": "https://www.youtube.com/watch?v=xDll-p5g2EQ",
+      "thumbnail": "https://i.ytimg.com/vi/xDll-p5g2EQ/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Drop by drop, water has the power to break rock and create whole new landforms. But how? In this episode of Crash Course Geology, we’ll trace how the water cycle works and how this humble geological force sculpts the land as we know it—faster than you might think.\n\nIntroduction: Channeled Scablands ",
+      "published": 1781798419,
+      "published_str": "2026-06-18",
+      "embed_id": "xDll-p5g2EQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_AF2eYuAKsao",
       "youtube_id": "AF2eYuAKsao",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ruZqnWHINWE",
-      "youtube_id": "ruZqnWHINWE",
-      "source": "youtube",
-      "title": "Sexual & Asexual Reproduction: How Animals Do It: Crash Course Biology #47",
-      "url": "https://www.youtube.com/watch?v=ruZqnWHINWE",
-      "thumbnail": "https://i.ytimg.com/vi/ruZqnWHINWE/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "When it comes to animal reproduction, there’s no one-size-fits-all strategy. Some animals need a mate, others don’t, and for some, it depends! In this episode, we’ll learn about sexual and asexual reproduction, internal and external fertilization, and all the ways that life, uh… finds a way.\n\nIntrod",
-      "published": 1718726449,
-      "published_str": "2024-06-18",
-      "embed_id": "ruZqnWHINWE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781576077.2320387
+  "_ts": 1781836542.8507566
 }
