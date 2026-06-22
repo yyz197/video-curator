@@ -17,7 +17,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "Scientists have developed a new way to provide treatment for brain tumours.\n\nCurrently we use chemotherapy, but that's like throwing a grenade at a mosquito, you end up damaging a lot more than you mean to.\n\nThis magnetic blob will help change that.",
+      "description": "Scientists have developed a new way to provide treatment for brain tumours.\n\nCurrently we use chemotherapy, but that's like throwing a grenade at a mosquito, you end up damaging a lot more than you mean to.\n\nThis magnetic blob will help change that.\n\nReferences:\nMicrorobots: https://www.science.org/",
       "published": 1781787614,
       "published_str": "2026-06-18",
       "embed_id": "RxIsjweAAdE",
@@ -29,7 +29,7 @@
       "id": "youtube_8HBDE-msUjw",
       "youtube_id": "8HBDE-msUjw",
       "source": "youtube",
-      "title": "We're 99.9% sure this pattern is true, but no one can prove it",
+      "title": "He Once Worked at Subway. At 58, He Solved An \"Impossible\" Problem",
       "url": "https://www.youtube.com/watch?v=8HBDE-msUjw",
       "thumbnail": "https://i.ytimg.com/vi/8HBDE-msUjw/mqdefault.jpg",
       "author": "Veritasium",
@@ -2579,7 +2579,7 @@
       "id": "youtube_cUBz04LlLVk",
       "youtube_id": "cUBz04LlLVk",
       "source": "youtube",
-      "title": "People said this experiment was impossible, so I tried it - Thermite Part 1",
+      "title": "People said this experiment was impossible, so we tested it",
       "url": "https://www.youtube.com/watch?v=cUBz04LlLVk",
       "thumbnail": "https://i.ytimg.com/vi/cUBz04LlLVk/mqdefault.jpg",
       "author": "Veritasium",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1781836542.201651
+  "_ts": 1782094392.1562257
 }

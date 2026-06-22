@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hIh2O9OL69o",
+      "youtube_id": "hIh2O9OL69o",
+      "source": "youtube",
+      "title": "Build Your Own OpenClaw Using Vercel, Composio, Supermemory",
+      "url": "https://www.youtube.com/watch?v=hIh2O9OL69o",
+      "thumbnail": "https://i.ytimg.com/vi/hIh2O9OL69o/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Build your own OpenClaw-like AI agent from scratch using the Vercel AI SDK, Composio, Supermemory, Telegram, and Vercel Cron.\n\nIn this free full course, you'll start with the Vercel AI SDK Chatbot template, connect your agent to real apps like Gmail with Composio, add long-term memory with Supermemo",
+      "published": 1781865588,
+      "published_str": "2026-06-19",
+      "embed_id": "hIh2O9OL69o",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_JoX93gO6eko",
       "youtube_id": "JoX93gO6eko",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_c1Op7YSTwhg",
-      "youtube_id": "c1Op7YSTwhg",
-      "source": "youtube",
-      "title": "How do you monetize open source? Evan You shares his tips.",
-      "url": "https://www.youtube.com/watch?v=c1Op7YSTwhg",
-      "thumbnail": "https://i.ytimg.com/vi/c1Op7YSTwhg/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "If you want to monetize an open source project, you have to define the problem you're solving and find the right incentives to get people to give you money. Evan discusses this with Quincy on the freeCodeCamp podcast.",
-      "published": 1772372605,
-      "published_str": "2026-03-01",
-      "embed_id": "c1Op7YSTwhg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781836547.2255013
+  "_ts": 1782094398.9456007
 }

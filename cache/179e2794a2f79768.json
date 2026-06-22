@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hIh2O9OL69o",
+      "youtube_id": "hIh2O9OL69o",
+      "source": "youtube",
+      "title": "Build Your Own OpenClaw Using Vercel, Composio, Supermemory",
+      "url": "https://www.youtube.com/watch?v=hIh2O9OL69o",
+      "thumbnail": "https://i.ytimg.com/vi/hIh2O9OL69o/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Build your own OpenClaw-like AI agent from scratch using the Vercel AI SDK, Composio, Supermemory, Telegram, and Vercel Cron.\n\nIn this free full course, you'll start with the Vercel AI SDK Chatbot template, connect your agent to real apps like Gmail with Composio, add long-term memory with Supermemo",
+      "published": 1781865588,
+      "published_str": "2026-06-19",
+      "embed_id": "hIh2O9OL69o",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_JoX93gO6eko",
       "youtube_id": "JoX93gO6eko",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_9z_7WC8n5sY",
-      "youtube_id": "9z_7WC8n5sY",
-      "source": "youtube",
-      "title": "\"I just like computers\" - sounds like reason enough to work in tech, doesn't it?",
-      "url": "https://www.youtube.com/watch?v=9z_7WC8n5sY",
-      "thumbnail": "https://i.ytimg.com/vi/9z_7WC8n5sY/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "\"I just like computers\" - sounds like reason enough to work in tech, doesn't it? Mike chats with Quincy how he defied expectations and got into programming instead.",
-      "published": 1781441003,
-      "published_str": "2026-06-14",
-      "embed_id": "9z_7WC8n5sY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781836559.7270627
+  "_ts": 1782094412.1504536
 }

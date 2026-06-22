@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_AWJ2BEN3z2o",
+      "youtube_id": "AWJ2BEN3z2o",
+      "source": "youtube",
+      "title": "Why This Chef Thinks Filet Mignon Is Boring",
+      "url": "https://www.youtube.com/watch?v=AWJ2BEN3z2o",
+      "thumbnail": "https://i.ytimg.com/vi/AWJ2BEN3z2o/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Is filet mignon really the best cut for steak au poivre? This chef says no.\n\n\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill haven’t subscribed to Bon Appétit on YouTube",
+      "published": 1781884809,
+      "published_str": "2026-06-19",
+      "embed_id": "AWJ2BEN3z2o",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_o8IRME56EL0",
       "youtube_id": "o8IRME56EL0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ESsBC9PIKaU",
-      "youtube_id": "ESsBC9PIKaU",
-      "source": "youtube",
-      "title": "\"Coffee and a Cigarette\" Inspired This Steak",
-      "url": "https://www.youtube.com/watch?v=ESsBC9PIKaU",
-      "thumbnail": "https://i.ytimg.com/vi/ESsBC9PIKaU/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Chef Michael Vignola of The Eighty Six takes us inside the aging box to show off a stunning 107-day dry-aged American Wagyu with a coffee and tobacco crust.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm",
-      "published": 1781280006,
-      "published_str": "2026-06-12",
-      "embed_id": "ESsBC9PIKaU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781836562.9719453
+  "_ts": 1782094415.915165
 }

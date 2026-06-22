@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__k3q_KhCndE",
+      "youtube_id": "_k3q_KhCndE",
+      "source": "youtube",
+      "title": "Underground mansion built in ancient cave maze has water spring inside",
+      "url": "https://www.youtube.com/watch?v=_k3q_KhCndE",
+      "thumbnail": "https://i.ytimg.com/vi/_k3q_KhCndE/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Deep in the Arkansas Ozarks, past a flooded creek crossing and down a long limestone driveway, a door opens into a mountain, and behind it is a 6,000-square-foot home that the cave is slowly, quietly reclaiming.\n\nNate and Randee have lived here, on and off, for years. In the deepest part of winter, ",
+      "published": 1782079479,
+      "published_str": "2026-06-21",
+      "embed_id": "_k3q_KhCndE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_7knce4Eh7xU",
       "youtube_id": "7knce4Eh7xU",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rSFSnOBYlbM",
-      "youtube_id": "rSFSnOBYlbM",
-      "source": "youtube",
-      "title": "Living 35 ft underground: inside a preserved Titan II nuclear missile silo",
-      "url": "https://www.youtube.com/watch?v=rSFSnOBYlbM",
-      "thumbnail": "https://i.ytimg.com/vi/rSFSnOBYlbM/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "For decades, four missileers at a time lived 35 feet underground in this Titan II command complex outside Tucson, Arizona - working shifts that took them even deeper, 145 feet down into the earth. It tested the limits of both body and mind.\n\nWhen the Cold War ended, nearly every missile silo in the ",
-      "published": 1779053039,
-      "published_str": "2026-05-17",
-      "embed_id": "rSFSnOBYlbM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781836561.9132695
+  "_ts": 1782094414.9207184
 }

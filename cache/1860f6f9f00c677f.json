@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__k3q_KhCndE",
+      "youtube_id": "_k3q_KhCndE",
+      "source": "youtube",
+      "title": "Underground mansion built in ancient cave maze has water spring inside",
+      "url": "https://www.youtube.com/watch?v=_k3q_KhCndE",
+      "thumbnail": "https://i.ytimg.com/vi/_k3q_KhCndE/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Deep in the Arkansas Ozarks, past a flooded creek crossing and down a long limestone driveway, a door opens into a mountain, and behind it is a 6,000-square-foot home that the cave is slowly, quietly reclaiming.\n\nNate and Randee have lived here, on and off, for years. In the deepest part of winter, ",
+      "published": 1782079479,
+      "published_str": "2026-06-21",
+      "embed_id": "_k3q_KhCndE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_7knce4Eh7xU",
       "youtube_id": "7knce4Eh7xU",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_D95_lwvMtwY",
-      "youtube_id": "D95_lwvMtwY",
-      "source": "youtube",
-      "title": "Neighbors didn't like quirky home. Then they visited & fell in love",
-      "url": "https://www.youtube.com/watch?v=D95_lwvMtwY",
-      "thumbnail": "https://i.ytimg.com/vi/D95_lwvMtwY/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Breeze Braunschweig and her husband Kartik Ramachandran don't see their home as an asset, but as an experience, so when they bought a 1920s home in Berkeley, California, they transformed it with Breeze’s decades-long collection of rescued items like stained-glass windows, antique doors and 200-lb ut",
-      "published": 1691949917,
-      "published_str": "2023-08-13",
-      "embed_id": "D95_lwvMtwY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781836551.1369886
+  "_ts": 1782094403.3635352
 }

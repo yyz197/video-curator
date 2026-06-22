@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_AWJ2BEN3z2o",
+      "youtube_id": "AWJ2BEN3z2o",
+      "source": "youtube",
+      "title": "Why This Chef Thinks Filet Mignon Is Boring",
+      "url": "https://www.youtube.com/watch?v=AWJ2BEN3z2o",
+      "thumbnail": "https://i.ytimg.com/vi/AWJ2BEN3z2o/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Is filet mignon really the best cut for steak au poivre? This chef says no.\n\n\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill haven’t subscribed to Bon Appétit on YouTube",
+      "published": 1781884809,
+      "published_str": "2026-06-19",
+      "embed_id": "AWJ2BEN3z2o",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_o8IRME56EL0",
       "youtube_id": "o8IRME56EL0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_YA3CH8_YRus",
-      "youtube_id": "YA3CH8_YRus",
-      "source": "youtube",
-      "title": "How One NYC Butcher Serves Thousands of Restaurants Every Day | On The Line | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=YA3CH8_YRus",
-      "thumbnail": "https://i.ytimg.com/vi/YA3CH8_YRus/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Bon Appétit spends a day on the line with Pat LaFrieda, head butcher at Pat LaFrieda Meat Purveyors. Supplying meat to the most notable restaurants and hotels for over a century, Pat LaFrieda processes hundreds of thousands of pounds of meat a day and is home to the world’s largest dry-aging room. T",
-      "published": 1756396809,
-      "published_str": "2025-08-28",
-      "embed_id": "YA3CH8_YRus",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1781836552.0815885
+  "_ts": 1782094404.5270228
 }
