@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_rixcd95VVuM",
+      "youtube_id": "rixcd95VVuM",
+      "source": "youtube",
+      "title": "Leo Ku  | From Passion to Profession | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=rixcd95VVuM",
+      "thumbnail": "https://i.ytimg.com/vi/rixcd95VVuM/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "HKG, singer, actor, model, MV director, producer and designer, Leo Ku, shares his stories around how he’s been able to turn his passion into a remarkable career, how he has overcome the challenges faced along the way, and how he's using his influence to discover and mentor the next generation of asp",
+      "published": 1782273626,
+      "published_str": "2026-06-24",
+      "embed_id": "rixcd95VVuM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cgPAAt9Nd7o",
       "youtube_id": "cgPAAt9Nd7o",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_8rUm46mk0Yo",
-      "youtube_id": "8rUm46mk0Yo",
-      "source": "youtube",
-      "title": "Allen Downey | Probably Overthinking It | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=8rUm46mk0Yo",
-      "thumbnail": "https://i.ytimg.com/vi/8rUm46mk0Yo/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Professor, computer scientist and author, Allen Downey, discusses his book “Probably Overthinking It: How to Use Data to Answer Questions, Avoid Statistical Traps, and Make Better Decisions,” an essential guide to the ways data can improve decision making.\n\nBy using data visualizations instead of eq",
-      "published": 1714768200,
-      "published_str": "2024-05-03",
-      "embed_id": "8rUm46mk0Yo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094397.8219554
+  "_ts": 1782352474.5971715
 }

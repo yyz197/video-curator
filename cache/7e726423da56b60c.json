@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_SWGFVNQNLm4",
+      "youtube_id": "SWGFVNQNLm4",
+      "source": "youtube",
+      "title": "Notion Workers – Full Tutorial 2026",
+      "url": "https://www.youtube.com/watch?v=SWGFVNQNLm4",
+      "thumbnail": "https://i.ytimg.com/vi/SWGFVNQNLm4/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Notion Workers are one of the biggest updates Notion has ever shipped, but most people can't use them because they think you need to know how to code. You don't. Not anymore.\n\nWorkers solve three problems that Notion users have run into forever: getting external data into Notion, pushing data out to",
+      "published": 1782214211,
+      "published_str": "2026-06-23",
+      "embed_id": "SWGFVNQNLm4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hIh2O9OL69o",
       "youtube_id": "hIh2O9OL69o",
       "source": "youtube",
-      "title": "Build Your Own OpenClaw Using Vercel, Composio, Supermemory",
+      "title": "Build an AI Agent in Telegram with Vercel, Cursor, Composio",
       "url": "https://www.youtube.com/watch?v=hIh2O9OL69o",
       "thumbnail": "https://i.ytimg.com/vi/hIh2O9OL69o/mqdefault.jpg",
       "author": "freeCodeCamp.org",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_IBTx5aGj-6U",
-      "youtube_id": "IBTx5aGj-6U",
-      "source": "youtube",
-      "title": "Build Your Own Video Sharing App – Loom Clone with Next.js and Mux JavaScript Tutorial",
-      "url": "https://www.youtube.com/watch?v=IBTx5aGj-6U",
-      "thumbnail": "https://i.ytimg.com/vi/IBTx5aGj-6U/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to build a video sharing Loom clone using Next.js and Mux.\n\nCode: https://github.com/beaucarnes/screen-recorder\n\n✏️ Course created by @beau \n\nCheck out Mux: https://www.mux.com/\n\nMux provided a grant to make this course possible.\n\n⭐️ Contents ⭐️\n– 0:00:00 Course Introduction & Building a L",
-      "published": 1772449233,
-      "published_str": "2026-03-02",
-      "embed_id": "IBTx5aGj-6U",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094398.9456007
+  "_ts": 1782352476.6986759
 }

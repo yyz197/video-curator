@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-CLOSj8TRGI",
+      "youtube_id": "-CLOSj8TRGI",
+      "source": "youtube",
+      "title": "Let's Dig a Little Deeper",
+      "url": "https://www.youtube.com/watch?v=-CLOSj8TRGI",
+      "thumbnail": "https://i.ytimg.com/vi/-CLOSj8TRGI/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Can't get enough geology? Dig deeper on topics we've covered on Crash Course Geology with related videos from our fellow Complexly channels, SciShow and Eons. You'll learn about Earth's fiery beginnings, Earth's core, minerals, rocks, gems, and more! \n\n@SciShow  @eons  @BadNaturalist",
+      "published": 1782340097,
+      "published_str": "2026-06-24",
+      "embed_id": "-CLOSj8TRGI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_xDll-p5g2EQ",
       "youtube_id": "xDll-p5g2EQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_56mHhm0TCak",
-      "youtube_id": "56mHhm0TCak",
-      "source": "youtube",
-      "title": "Black Holes | Crash Course Pods: The Universe #5",
-      "url": "https://www.youtube.com/watch?v=56mHhm0TCak",
-      "thumbnail": "https://i.ytimg.com/vi/56mHhm0TCak/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "\"The Big Sink\"\n\nIn this episode, John and Katie take a break from talking through the universe's timeline to focus on a mystery of our cosmos: black holes.\n\nHead to https://policygenius.com/crashcourse to get your free life insurance quotes and see how much you could save.\n\n***\nSupport us for $5/mon",
-      "published": 1718820003,
-      "published_str": "2024-06-19",
-      "embed_id": "56mHhm0TCak",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094392.7417197
+  "_ts": 1782352471.81561
 }

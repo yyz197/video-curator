@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_rixcd95VVuM",
+      "youtube_id": "rixcd95VVuM",
+      "source": "youtube",
+      "title": "Leo Ku  | From Passion to Profession | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=rixcd95VVuM",
+      "thumbnail": "https://i.ytimg.com/vi/rixcd95VVuM/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "HKG, singer, actor, model, MV director, producer and designer, Leo Ku, shares his stories around how he’s been able to turn his passion into a remarkable career, how he has overcome the challenges faced along the way, and how he's using his influence to discover and mentor the next generation of asp",
+      "published": 1782273626,
+      "published_str": "2026-06-24",
+      "embed_id": "rixcd95VVuM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cgPAAt9Nd7o",
       "youtube_id": "cgPAAt9Nd7o",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_057mnWzLBcA",
-      "youtube_id": "057mnWzLBcA",
-      "source": "youtube",
-      "title": "Nir Eyal | Beyond Belief | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=057mnWzLBcA",
-      "thumbnail": "https://i.ytimg.com/vi/057mnWzLBcA/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Bestselling author and leading thinker on the psychology of behavior change and human potential, Nir Eyal, discusses his New York Times bestselling book Beyond Belief: The Science-Backed Way to Stop Limiting Yourself and Achieve Breakthrough Results, which reveals how the hidden assumptions you carr",
-      "published": 1775232001,
-      "published_str": "2026-04-03",
-      "embed_id": "057mnWzLBcA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094412.0345776
+  "_ts": 1782352488.6457975
 }

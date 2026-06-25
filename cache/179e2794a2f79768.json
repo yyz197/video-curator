@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_SWGFVNQNLm4",
+      "youtube_id": "SWGFVNQNLm4",
+      "source": "youtube",
+      "title": "Notion Workers – Full Tutorial 2026",
+      "url": "https://www.youtube.com/watch?v=SWGFVNQNLm4",
+      "thumbnail": "https://i.ytimg.com/vi/SWGFVNQNLm4/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Notion Workers are one of the biggest updates Notion has ever shipped, but most people can't use them because they think you need to know how to code. You don't. Not anymore.\n\nWorkers solve three problems that Notion users have run into forever: getting external data into Notion, pushing data out to",
+      "published": 1782214211,
+      "published_str": "2026-06-23",
+      "embed_id": "SWGFVNQNLm4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hIh2O9OL69o",
       "youtube_id": "hIh2O9OL69o",
       "source": "youtube",
-      "title": "Build Your Own OpenClaw Using Vercel, Composio, Supermemory",
+      "title": "Build an AI Agent in Telegram with Vercel, Cursor, Composio",
       "url": "https://www.youtube.com/watch?v=hIh2O9OL69o",
       "thumbnail": "https://i.ytimg.com/vi/hIh2O9OL69o/mqdefault.jpg",
       "author": "freeCodeCamp.org",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_vj68el9hRvU",
-      "youtube_id": "vj68el9hRvU",
-      "source": "youtube",
-      "title": "Build a Self-Healing CI/CD Pipeline with AI",
-      "url": "https://www.youtube.com/watch?v=vj68el9hRvU",
-      "thumbnail": "https://i.ytimg.com/vi/vj68el9hRvU/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Stop manually debugging your code and learn how to leverage AI to automatically detect, analyze, and resolve CI/CD pipeline failures. In this course, you will bridge the gap between DevOps and automation by integrating N8N, OpenAI, and GitHub Actions to create a fully autonomous, self-healing workfl",
-      "published": 1781524043,
-      "published_str": "2026-06-15",
-      "embed_id": "vj68el9hRvU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094412.1504536
+  "_ts": 1782352489.1858485
 }

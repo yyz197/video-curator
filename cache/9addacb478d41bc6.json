@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-CLOSj8TRGI",
+      "youtube_id": "-CLOSj8TRGI",
+      "source": "youtube",
+      "title": "Let's Dig a Little Deeper",
+      "url": "https://www.youtube.com/watch?v=-CLOSj8TRGI",
+      "thumbnail": "https://i.ytimg.com/vi/-CLOSj8TRGI/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Can't get enough geology? Dig deeper on topics we've covered on Crash Course Geology with related videos from our fellow Complexly channels, SciShow and Eons. You'll learn about Earth's fiery beginnings, Earth's core, minerals, rocks, gems, and more! \n\n@SciShow  @eons  @BadNaturalist",
+      "published": 1782340097,
+      "published_str": "2026-06-24",
+      "embed_id": "-CLOSj8TRGI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_xDll-p5g2EQ",
       "youtube_id": "xDll-p5g2EQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_M8r8FH4GTCw",
-      "youtube_id": "M8r8FH4GTCw",
-      "source": "youtube",
-      "title": "We've Been At It",
-      "url": "https://www.youtube.com/watch?v=M8r8FH4GTCw",
-      "thumbnail": "https://i.ytimg.com/vi/M8r8FH4GTCw/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Obviously, we think Crash Course is great. But you don't have to take it from us. Thousands of people are helped by Crash Course because it's a high-quality, FREE resource. \n\nHelp keep Crash Course free for everyone forever at crashcoursecoin.com and get a beautiful token of our thanks for your tax-",
-      "published": 1779901211,
-      "published_str": "2026-05-27",
-      "embed_id": "M8r8FH4GTCw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094410.7086961
+  "_ts": 1782352488.0198848
 }

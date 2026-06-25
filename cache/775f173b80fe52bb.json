@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_mvcesPWvUIc",
+      "youtube_id": "mvcesPWvUIc",
+      "source": "youtube",
+      "title": "The Problem With Fingerprint Analysis",
+      "url": "https://www.youtube.com/watch?v=mvcesPWvUIc",
+      "thumbnail": "https://i.ytimg.com/vi/mvcesPWvUIc/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "How accurate is modern forensics? Sponsored by Saily - Get an exclusive 15% discount on Saily data plans! Use code veritasium at checkout. Download the Saily app or go to https://saily.com/veritasium\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response.",
+      "published": 1782139250,
+      "published_str": "2026-06-22",
+      "embed_id": "mvcesPWvUIc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_RxIsjweAAdE",
       "youtube_id": "RxIsjweAAdE",
       "source": "youtube",
@@ -29,7 +54,7 @@
       "id": "youtube_8HBDE-msUjw",
       "youtube_id": "8HBDE-msUjw",
       "source": "youtube",
-      "title": "He Once Worked at Subway. At 58, He Solved An \"Impossible\" Problem",
+      "title": "We're 99.9% sure this pattern is true, but no one can prove it",
       "url": "https://www.youtube.com/watch?v=8HBDE-msUjw",
       "thumbnail": "https://i.ytimg.com/vi/8HBDE-msUjw/mqdefault.jpg",
       "author": "Veritasium",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_b_SZC8oIsBw",
-      "youtube_id": "b_SZC8oIsBw",
-      "source": "youtube",
-      "title": "AD - How do cities control traffic? We partnered with Anker to find out…",
-      "url": "https://www.youtube.com/watch?v=b_SZC8oIsBw",
-      "thumbnail": "https://i.ytimg.com/vi/b_SZC8oIsBw/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How does a traffic light know when a car is there?\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
-      "published": 1780663011,
-      "published_str": "2026-06-05",
-      "embed_id": "b_SZC8oIsBw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782094410.5935657
+  "_ts": 1782352487.9069586
 }
