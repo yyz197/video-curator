@@ -1454,7 +1454,7 @@
       "id": "youtube_piJkuavhV50",
       "youtube_id": "piJkuavhV50",
       "source": "youtube",
-      "title": "When the insight is to add more dimensions",
+      "title": "Solving problems by adding a dimension",
       "url": "https://www.youtube.com/watch?v=piJkuavhV50",
       "thumbnail": "https://i.ytimg.com/vi/piJkuavhV50/mqdefault.jpg",
       "author": "3Blue1Brown",
@@ -1467,7 +1467,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "Geometry puzzles that benefit from shifting the dimension.\nBonus video with extra puzzles: https://www.patreon.com/posts/115570453\n\nThe artwork at the end is by Kurt Bruns\n\nThanks to Daniel Kim for sharing the first two puzzles with me. He mentioned the earliest reference he knows for the tile puzzl",
+      "description": "Five geometry puzzles solved by a clever shift in perspective.\nBonus video with extra puzzles: https://www.patreon.com/posts/115570453\n\nThe artwork at the end is by Kurt Bruns\n\nThanks to Daniel Kim for sharing the first two puzzles with me. He mentioned the earliest reference he knows for the tile p",
       "published": 1731072890,
       "published_str": "2024-11-08",
       "embed_id": "piJkuavhV50",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1782352475.1235685
+  "_ts": 1782611990.1778567
 }

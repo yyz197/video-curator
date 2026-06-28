@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_0GQ2RP-25gM",
+      "youtube_id": "0GQ2RP-25gM",
+      "source": "youtube",
+      "title": "Why AI is like a (Clever Hans) Horse - Computerphile",
+      "url": "https://www.youtube.com/watch?v=0GQ2RP-25gM",
+      "thumbnail": "https://i.ytimg.com/vi/0GQ2RP-25gM/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601.16675    \n\nComputerphile is supported by Jane Street. Learn",
+      "published": 1782398711,
+      "published_str": "2026-06-25",
+      "embed_id": "0GQ2RP-25gM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2jJeSgO_MGo",
       "youtube_id": "2jJeSgO_MGo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_flWqmB4UaBA",
-      "youtube_id": "flWqmB4UaBA",
-      "source": "youtube",
-      "title": "MDE under the Hood (Model Driven Engineering) - Computerphile",
-      "url": "https://www.youtube.com/watch?v=flWqmB4UaBA",
-      "thumbnail": "https://i.ytimg.com/vi/flWqmB4UaBA/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "How does Model Driven Engineering work? Dr Steffen Zschaler, Reader in Computer Science at Kings College London takes us through it. \n\nhttps://www.facebook.com/computerphile\r\nhttps://twitter.com/computer_phile\r\n\r\nThis video was filmed and edited by Sean Riley.\r\n\r\nComputer Science at the University o",
-      "published": 1671546718,
-      "published_str": "2022-12-20",
-      "embed_id": "flWqmB4UaBA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352475.4680278
+  "_ts": 1782611990.763194
 }

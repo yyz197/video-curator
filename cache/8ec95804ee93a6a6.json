@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_4lW_Rbbl4MI",
+      "youtube_id": "4lW_Rbbl4MI",
+      "source": "youtube",
+      "title": "How Do You Like to be Comforted?  #theschooloflife",
+      "url": "https://www.youtube.com/watch?v=4lW_Rbbl4MI",
+      "thumbnail": "https://i.ytimg.com/vi/4lW_Rbbl4MI/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "To make a relationship work, it’s vital to try to understand how your partner wants you to behave when they are sad and down. Surprisingly, all of us want to be comforted in quite different ways. \n\nEnjoying our Youtube videos? Get full access to all our audio content, videos, and thousands of though",
+      "published": 1782565210,
+      "published_str": "2026-06-27",
+      "embed_id": "4lW_Rbbl4MI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_htdnDSpp4mA",
       "youtube_id": "htdnDSpp4mA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Wsk2_8d8fVY",
-      "youtube_id": "Wsk2_8d8fVY",
-      "source": "youtube",
-      "title": "Why Hurt People Hurt People",
-      "url": "https://www.youtube.com/watch?v=Wsk2_8d8fVY",
-      "thumbnail": "https://i.ytimg.com/vi/Wsk2_8d8fVY/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nExplore the profound paradox of \"Why Hurt People Hurt People.\" This film unpicks how past pain can unconsciously manifest as aggression in relationships, turning kindness into a trigger. A vital inquiry into att",
-      "published": 1750856460,
-      "published_str": "2025-06-25",
-      "embed_id": "Wsk2_8d8fVY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352474.9702616
+  "_ts": 1782611989.0168917
 }

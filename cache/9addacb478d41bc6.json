@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_krXXSCb_P9Y",
+      "youtube_id": "krXXSCb_P9Y",
+      "source": "youtube",
+      "title": "What is Plate Tectonics: Crash Course Geology #10",
+      "url": "https://www.youtube.com/watch?v=krXXSCb_P9Y",
+      "thumbnail": "https://i.ytimg.com/vi/krXXSCb_P9Y/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "A long, long time ago, Earth was home to one giant super continent. So, what happened? In this episode of Crash Course Geology, we’ll break down plate tectonics and how it shapes Earth’s past, present, and future.\n\nIntroduction: The Ring of Fire 00:00\nPlate Tectonics 0:34\nContinental Drift 4:39\nFutu",
+      "published": 1782403232,
+      "published_str": "2026-06-25",
+      "embed_id": "krXXSCb_P9Y",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-CLOSj8TRGI",
       "youtube_id": "-CLOSj8TRGI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_O0l98jV6W1Q",
-      "youtube_id": "O0l98jV6W1Q",
-      "source": "youtube",
-      "title": "This Is Your Last Chance!",
-      "url": "https://www.youtube.com/watch?v=O0l98jV6W1Q",
-      "thumbnail": "https://i.ytimg.com/vi/O0l98jV6W1Q/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "If Hank can eat raw garlic, you can take a moment to consider if you're a person who can help Crash Course reach thousands of learners with high-quality educational resources. If you realize you're one of those people, go to crashcoursecoin.com while you still can!",
-      "published": 1780067618,
-      "published_str": "2026-05-29",
-      "embed_id": "O0l98jV6W1Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352488.0198848
+  "_ts": 1782612002.8168216
 }

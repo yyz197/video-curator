@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__2f6lMhqSWw",
+      "youtube_id": "_2f6lMhqSWw",
+      "source": "youtube",
+      "title": "We just found a MASSIVE whale graveyard",
+      "url": "https://www.youtube.com/watch?v=_2f6lMhqSWw",
+      "thumbnail": "https://i.ytimg.com/vi/_2f6lMhqSWw/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1782397940,
+      "published_str": "2026-06-25",
+      "embed_id": "_2f6lMhqSWw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9D9z__2fW5I",
       "youtube_id": "9D9z__2fW5I",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_u_gEKlg993s",
-      "youtube_id": "u_gEKlg993s",
-      "source": "youtube",
-      "title": "Why getting BACK from space is harder than getting there",
-      "url": "https://www.youtube.com/watch?v=u_gEKlg993s",
-      "thumbnail": "https://i.ytimg.com/vi/u_gEKlg993s/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "NOTE: A previous version of this video contained an omission. We have corrected the error.\n\nAnother YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.",
-      "published": 1780678736,
-      "published_str": "2026-06-05",
-      "embed_id": "u_gEKlg993s",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352488.2062259
+  "_ts": 1782612002.967153
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_0GQ2RP-25gM",
+      "youtube_id": "0GQ2RP-25gM",
+      "source": "youtube",
+      "title": "Why AI is like a (Clever Hans) Horse - Computerphile",
+      "url": "https://www.youtube.com/watch?v=0GQ2RP-25gM",
+      "thumbnail": "https://i.ytimg.com/vi/0GQ2RP-25gM/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601.16675    \n\nComputerphile is supported by Jane Street. Learn",
+      "published": 1782398711,
+      "published_str": "2026-06-25",
+      "embed_id": "0GQ2RP-25gM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2jJeSgO_MGo",
       "youtube_id": "2jJeSgO_MGo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_SJocPm2E8eQ",
-      "youtube_id": "SJocPm2E8eQ",
-      "source": "youtube",
-      "title": "Human Readable Code - Computerphile",
-      "url": "https://www.youtube.com/watch?v=SJocPm2E8eQ",
-      "thumbnail": "https://i.ytimg.com/vi/SJocPm2E8eQ/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Knuth talked about \"Literate Programming\" over forty years ago, but what does it mean to have code that a developer and a client can agree on? Dr Robert Chatley of Imperial College London demonstrates how it might work. \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting",
-      "published": 1780061412,
-      "published_str": "2026-05-29",
-      "embed_id": "SJocPm2E8eQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352489.0432434
+  "_ts": 1782612003.729194
 }

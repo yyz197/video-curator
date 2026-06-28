@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_VT2zNo5MQVQ",
+      "youtube_id": "VT2zNo5MQVQ",
+      "source": "youtube",
+      "title": "The First Trip To Earth’s Stratosphere Was A Disaster",
+      "url": "https://www.youtube.com/watch?v=VT2zNo5MQVQ",
+      "thumbnail": "https://i.ytimg.com/vi/VT2zNo5MQVQ/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Check out the Rocks Box store and subscribe here: https://complexly.info/rocks \n\nIn 1931, Professor Auguste Piccard and his assistant Dr. Kipfer took a trip to Earth's stratosphere. Despite setback after setback (and being presumed dead by everyone back on the ground), they were able to both set a n",
+      "published": 1782406805,
+      "published_str": "2026-06-25",
+      "embed_id": "VT2zNo5MQVQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_XpoNMkfoQIQ",
       "youtube_id": "XpoNMkfoQIQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_MedC_v-dEbY",
-      "youtube_id": "MedC_v-dEbY",
-      "source": "youtube",
-      "title": "5 Scary Science Headlines You Don't Need To Worry About",
-      "url": "https://www.youtube.com/watch?v=MedC_v-dEbY",
-      "thumbnail": "https://i.ytimg.com/vi/MedC_v-dEbY/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Visit https://brilliant.org/scishow/ to get started learning STEM for free and get 20% off their annual premium subscription.\n\nThere are a lot of scary science stories that go around the Internet. It's easy for a single paper to get spun up into a media frenzy, and harder for the level-headed truth ",
-      "published": 1761757229,
-      "published_str": "2025-10-29",
-      "embed_id": "MedC_v-dEbY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352471.4465358
+  "_ts": 1782611984.189366
 }

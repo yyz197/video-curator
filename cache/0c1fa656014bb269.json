@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6PmuWFWVKDE",
+      "youtube_id": "6PmuWFWVKDE",
+      "source": "youtube",
+      "title": "The Fixed Point Theorem - Numberphile",
+      "url": "https://www.youtube.com/watch?v=6PmuWFWVKDE",
+      "thumbnail": "https://i.ytimg.com/vi/6PmuWFWVKDE/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Featuring Chelsea Tucker and Ben Sparks discussing Brouwer's Fixed Point Theorem. More links & stuff in full description below ↓↓↓\n\nPlay around with Ben's Geogebra file at: https://www.geogebra.org/m/mbfvuqyy\n\nChelsea Tucker is at the likes of https://www.instagram.com/mathschelsea/ and https://www.",
+      "published": 1782399699,
+      "published_str": "2026-06-25",
+      "embed_id": "6PmuWFWVKDE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_fwLsCgibGw4",
       "youtube_id": "fwLsCgibGw4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_SAtFZPtbMpI",
-      "youtube_id": "SAtFZPtbMpI",
-      "source": "youtube",
-      "title": "Entirely Ridiculously Big Numbers - Numberphile",
-      "url": "https://www.youtube.com/watch?v=SAtFZPtbMpI",
-      "thumbnail": "https://i.ytimg.com/vi/SAtFZPtbMpI/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Rubik's Cube combinations quickly lead to some unimaginably large numbers. More links & stuff in full description below ↓↓↓\n\nExtra footage on odd-numbered cubes: https://youtu.be/CTb7RyTwoQ0\n\nFeaturing Richard Elwes. More Richard on Numberphile: https://www.youtube.com/playlist?list=PLt5AfwLFPxWI42W",
-      "published": 1777900325,
-      "published_str": "2026-05-04",
-      "embed_id": "SAtFZPtbMpI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352489.0202303
+  "_ts": 1782612003.6618161
 }

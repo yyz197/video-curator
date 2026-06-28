@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6PmuWFWVKDE",
+      "youtube_id": "6PmuWFWVKDE",
+      "source": "youtube",
+      "title": "The Fixed Point Theorem - Numberphile",
+      "url": "https://www.youtube.com/watch?v=6PmuWFWVKDE",
+      "thumbnail": "https://i.ytimg.com/vi/6PmuWFWVKDE/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Featuring Chelsea Tucker and Ben Sparks discussing Brouwer's Fixed Point Theorem. More links & stuff in full description below ↓↓↓\n\nPlay around with Ben's Geogebra file at: https://www.geogebra.org/m/mbfvuqyy\n\nChelsea Tucker is at the likes of https://www.instagram.com/mathschelsea/ and https://www.",
+      "published": 1782399699,
+      "published_str": "2026-06-25",
+      "embed_id": "6PmuWFWVKDE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_fwLsCgibGw4",
       "youtube_id": "fwLsCgibGw4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_UDQjn_-pDSs",
-      "youtube_id": "UDQjn_-pDSs",
-      "source": "youtube",
-      "title": "Why 7 is Weird - Numberphile",
-      "url": "https://www.youtube.com/watch?v=UDQjn_-pDSs",
-      "thumbnail": "https://i.ytimg.com/vi/UDQjn_-pDSs/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Thanks to Jane Street for their support... Check out internships here: https://www.janestreet.com/join-jane-street/internships/ \nMore links & stuff in full description below ↓↓↓\n\nThis video features Dr James Grime on divisibility.\nJames Grime: https://www.singingbanana.com\nHis YouTube channel: https",
-      "published": 1661178795,
-      "published_str": "2022-08-22",
-      "embed_id": "UDQjn_-pDSs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782352475.5181224
+  "_ts": 1782611990.5990212
 }
