@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_mABpAI-pCw0",
+      "youtube_id": "mABpAI-pCw0",
+      "source": "youtube",
+      "title": "Command Line Basics for Beginners - Full Course",
+      "url": "https://www.youtube.com/watch?v=mABpAI-pCw0",
+      "thumbnail": "https://i.ytimg.com/vi/mABpAI-pCw0/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "In this command line tutorial for beginners, you'll learn terminal basics, bash commands, and essential CLI skills used by developers, DevOps engineers, and data analysts.\n\n✏️ Study this course interactively on Scrimba: \nhttps://scrimba.com/command-line-basics-c08b87ogl0?via=scrimbafcc \n\nCode is ava",
+      "published": 1782813623,
+      "published_str": "2026-06-30",
+      "embed_id": "mABpAI-pCw0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lz9bQm3nZIM",
       "youtube_id": "lz9bQm3nZIM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JoX93gO6eko",
-      "youtube_id": "JoX93gO6eko",
-      "source": "youtube",
-      "title": "Why apps designed by AI look like apps designed by AI - and why skilled designers still matter",
-      "url": "https://www.youtube.com/watch?v=JoX93gO6eko",
-      "thumbnail": "https://i.ytimg.com/vi/JoX93gO6eko/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Here, Chris Coyier talks about why apps designed by AI look like apps designed by AI - and why skilled designers still matter.",
-      "published": 1781783558,
-      "published_str": "2026-06-18",
-      "embed_id": "JoX93gO6eko",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782612003.8258126
+  "_ts": 1782871247.4986503
 }

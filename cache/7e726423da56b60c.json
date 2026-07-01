@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_mABpAI-pCw0",
+      "youtube_id": "mABpAI-pCw0",
+      "source": "youtube",
+      "title": "Command Line Basics for Beginners - Full Course",
+      "url": "https://www.youtube.com/watch?v=mABpAI-pCw0",
+      "thumbnail": "https://i.ytimg.com/vi/mABpAI-pCw0/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "In this command line tutorial for beginners, you'll learn terminal basics, bash commands, and essential CLI skills used by developers, DevOps engineers, and data analysts.\n\n✏️ Study this course interactively on Scrimba: \nhttps://scrimba.com/command-line-basics-c08b87ogl0?via=scrimbafcc \n\nCode is ava",
+      "published": 1782813623,
+      "published_str": "2026-06-30",
+      "embed_id": "mABpAI-pCw0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lz9bQm3nZIM",
       "youtube_id": "lz9bQm3nZIM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0WjfKQdfeMU",
-      "youtube_id": "0WjfKQdfeMU",
-      "source": "youtube",
-      "title": "NVIDIA-Certified Associate AI Infrastructure and Operations (NCA AIIO) Free Study Course",
-      "url": "https://www.youtube.com/watch?v=0WjfKQdfeMU",
-      "thumbnail": "https://i.ytimg.com/vi/0WjfKQdfeMU/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "The NCA-AIIO certification is an entry-level credential that validates the foundational concepts of AI computing related to infrastructure and operations. In this course you will learn everything you need to know to pass the certification exam.\n\nAndrew Brown developed this course.\n\n🔗 More resources:",
-      "published": 1772622002,
-      "published_str": "2026-03-04",
-      "embed_id": "0WjfKQdfeMU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782611991.935387
+  "_ts": 1782871233.9465926
 }

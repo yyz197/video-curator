@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_J1QTnQecz-s",
+      "youtube_id": "J1QTnQecz-s",
+      "source": "youtube",
+      "title": "He turned Titan II nuclear missile silo into 3-story underground home",
+      "url": "https://www.youtube.com/watch?v=J1QTnQecz-s",
+      "thumbnail": "https://i.ytimg.com/vi/J1QTnQecz-s/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "In 2010, GT Hill paid $90,000 for an abandoned, flooded Titan II Cold War missile complex buried in the Arkansas hills. He called the outlandish project Titan Ranch: the idea was to create a homestead for the ages.\n\nHe didn't know exactly what he was getting into... the government had sealed it, flo",
+      "published": 1782686296,
+      "published_str": "2026-06-28",
+      "embed_id": "J1QTnQecz-s",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube__k3q_KhCndE",
       "youtube_id": "_k3q_KhCndE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_UkzKW1jsWqk",
-      "youtube_id": "UkzKW1jsWqk",
-      "source": "youtube",
-      "title": "Was told not to build underground. Ravaging tornado proved him right",
-      "url": "https://www.youtube.com/watch?v=UkzKW1jsWqk",
-      "thumbnail": "https://i.ytimg.com/vi/UkzKW1jsWqk/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "When Tim and Monica open the front door of their underground home buried beneath a Missouri hillside, they step into a world most people can't fathom. Only one corner of the structure is visible. Everything else has disappeared into the earth.\n\nFifty years ago, architect and builder Dennis Spencer p",
-      "published": 1779752939,
-      "published_str": "2026-05-25",
-      "embed_id": "UkzKW1jsWqk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782612005.9489992
+  "_ts": 1782871250.0969183
 }

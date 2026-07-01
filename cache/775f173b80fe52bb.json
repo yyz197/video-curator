@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_dquI8khH1Zk",
+      "youtube_id": "dquI8khH1Zk",
+      "source": "youtube",
+      "title": "AD - Why do I get this spark when I unplug my hair dryer?",
+      "url": "https://www.youtube.com/watch?v=dquI8khH1Zk",
+      "thumbnail": "https://i.ytimg.com/vi/dquI8khH1Zk/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Why does a charger sometimes spark when you unplug it, even when it's switched off at the wall? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
+      "published": 1782828019,
+      "published_str": "2026-06-30",
+      "embed_id": "dquI8khH1Zk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_uPGBcVCrdg8",
       "youtube_id": "uPGBcVCrdg8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_2_Z7FB3vfFg",
-      "youtube_id": "2_Z7FB3vfFg",
-      "source": "youtube",
-      "title": "Zippers are stronger than you think...",
-      "url": "https://www.youtube.com/watch?v=2_Z7FB3vfFg",
-      "thumbnail": "https://i.ytimg.com/vi/2_Z7FB3vfFg/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How do zippers work? \n\nWe made a giant one to find out!",
-      "published": 1781269218,
-      "published_str": "2026-06-12",
-      "embed_id": "2_Z7FB3vfFg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782612002.6269393
+  "_ts": 1782871246.0616102
 }

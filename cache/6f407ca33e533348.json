@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_dquI8khH1Zk",
+      "youtube_id": "dquI8khH1Zk",
+      "source": "youtube",
+      "title": "AD - Why do I get this spark when I unplug my hair dryer?",
+      "url": "https://www.youtube.com/watch?v=dquI8khH1Zk",
+      "thumbnail": "https://i.ytimg.com/vi/dquI8khH1Zk/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Why does a charger sometimes spark when you unplug it, even when it's switched off at the wall? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
+      "published": 1782828019,
+      "published_str": "2026-06-30",
+      "embed_id": "dquI8khH1Zk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_uPGBcVCrdg8",
       "youtube_id": "uPGBcVCrdg8",
       "source": "youtube",
@@ -2604,7 +2629,7 @@
       "id": "youtube_DJO_9auJhJQ",
       "youtube_id": "DJO_9auJhJQ",
       "source": "youtube",
-      "title": "We Might Find Alien Life In 1,730 Days",
+      "title": "We Might Find Alien Life In 1,725 Days",
       "url": "https://www.youtube.com/watch?v=DJO_9auJhJQ",
       "thumbnail": "https://i.ytimg.com/vi/DJO_9auJhJQ/mqdefault.jpg",
       "author": "Veritasium",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_6bgNm9l_3qU",
-      "youtube_id": "6bgNm9l_3qU",
-      "source": "youtube",
-      "title": "I Vacuum Venom from the World's Deadliest Spider",
-      "url": "https://www.youtube.com/watch?v=6bgNm9l_3qU",
-      "thumbnail": "https://i.ytimg.com/vi/6bgNm9l_3qU/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Go to our sponsor https://betterhelp.com/veritasium to get matched with a professional therapist who will listen and help.\n\n▀▀▀\nHuge thanks to the Australian Reptile Park for having us over to film – special thanks to Jake Meney for showing us the spiders and Caitlin Vine for organizing the shoot. h",
-      "published": 1687356116,
-      "published_str": "2023-06-21",
-      "embed_id": "6bgNm9l_3qU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782611983.6493309
+  "_ts": 1782871228.5478904
 }
