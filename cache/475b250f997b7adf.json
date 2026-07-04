@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-0HRzXk8vlk",
+      "youtube_id": "-0HRzXk8vlk",
+      "source": "youtube",
+      "title": "Why AI Tokens are so Expensive - Computerphile",
+      "url": "https://www.youtube.com/watch?v=-0HRzXk8vlk",
+      "thumbnail": "https://i.ytimg.com/vi/-0HRzXk8vlk/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "After changes to pricing structures for LLM powered code assistants, Mike looks at how a seemingly simple task can burn through tokens when an agent 'looks after it' for you. \n\nPublished with three potential titles on a YouTube test:\nExtreme Token Use of Agentic AI - Computerphile\nWhy AI Tokens are ",
+      "published": 1783002397,
+      "published_str": "2026-07-02",
+      "embed_id": "-0HRzXk8vlk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0GQ2RP-25gM",
       "youtube_id": "0GQ2RP-25gM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_kaD54VXxGrI",
-      "youtube_id": "kaD54VXxGrI",
-      "source": "youtube",
-      "title": "Fuzzing Programs to Find Bugs - Computerphile",
-      "url": "https://www.youtube.com/watch?v=kaD54VXxGrI",
-      "thumbnail": "https://i.ytimg.com/vi/kaD54VXxGrI/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Fuzzing is a technique to find programming bugs by testing with random inputs - but there are smarter ways to go about it! Professor Alastair F Donaldson leads the Multicore Programming research group at Imperial College. \n\nComputerphile is supported by Jane Street. Learn more about them (and exciti",
-      "published": 1780579815,
-      "published_str": "2026-06-04",
-      "embed_id": "kaD54VXxGrI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782871247.3792303
+  "_ts": 1783128242.723642
 }

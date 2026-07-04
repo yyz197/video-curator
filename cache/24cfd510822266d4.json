@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_8sURT_P4VY8",
+      "youtube_id": "8sURT_P4VY8",
+      "source": "youtube",
+      "title": "The New Kind of Heat Humans Can’t Handle",
+      "url": "https://www.youtube.com/watch?v=8sURT_P4VY8",
+      "thumbnail": "https://i.ytimg.com/vi/8sURT_P4VY8/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "It's getting hot in here… can we survive it?\n↓↓↓ More info and sources below ↓↓↓\n\nI pushed my body to the edge in a climate & sports research lab to discover what extreme heat really does to us. Why humidity, not just temperature, can make heat deadly, and how climate change and city design are maki",
+      "published": 1783000877,
+      "published_str": "2026-07-02",
+      "embed_id": "8sURT_P4VY8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube__2f6lMhqSWw",
       "youtube_id": "_2f6lMhqSWw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ousa8Yy96Y4",
-      "youtube_id": "ousa8Yy96Y4",
-      "source": "youtube",
-      "title": "Why don't humans walk like THAT?",
-      "url": "https://www.youtube.com/watch?v=ousa8Yy96Y4",
-      "thumbnail": "https://i.ytimg.com/vi/ousa8Yy96Y4/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
-      "published": 1781032524,
-      "published_str": "2026-06-09",
-      "embed_id": "ousa8Yy96Y4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782871246.3906653
+  "_ts": 1783128241.7473943
 }

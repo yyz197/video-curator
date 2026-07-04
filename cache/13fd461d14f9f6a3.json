@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-0HRzXk8vlk",
+      "youtube_id": "-0HRzXk8vlk",
+      "source": "youtube",
+      "title": "Why AI Tokens are so Expensive - Computerphile",
+      "url": "https://www.youtube.com/watch?v=-0HRzXk8vlk",
+      "thumbnail": "https://i.ytimg.com/vi/-0HRzXk8vlk/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "After changes to pricing structures for LLM powered code assistants, Mike looks at how a seemingly simple task can burn through tokens when an agent 'looks after it' for you. \n\nPublished with three potential titles on a YouTube test:\nExtreme Token Use of Agentic AI - Computerphile\nWhy AI Tokens are ",
+      "published": 1783002397,
+      "published_str": "2026-07-02",
+      "embed_id": "-0HRzXk8vlk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0GQ2RP-25gM",
       "youtube_id": "0GQ2RP-25gM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_dMYgY5FhO3M",
-      "youtube_id": "dMYgY5FhO3M",
-      "source": "youtube",
-      "title": "What do Computer Scientists Read? - Computerphile",
-      "url": "https://www.youtube.com/watch?v=dMYgY5FhO3M",
-      "thumbnail": "https://i.ytimg.com/vi/dMYgY5FhO3M/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Throughout 2022 we asked the sound-check question \"what's your favourite book?\" \n\nAnswers:\nStructured Computer Organization\nAndrew S. Tanenbaum\n\nUNIX: A History and a Memoir\nBrian W Kernighan\n\nThe Mythical Man-Month: Essays on Software Engineering \nFred Brooks\n\nUnderstanding Cryptography: A Textbook",
-      "published": 1671890416,
-      "published_str": "2022-12-24",
-      "embed_id": "dMYgY5FhO3M",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1782871233.3264353
+  "_ts": 1783128229.2118146
 }
