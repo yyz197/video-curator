@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_L7vrYf-Mgdg",
+      "youtube_id": "L7vrYf-Mgdg",
+      "source": "youtube",
+      "title": "Time-Saving Habits",
+      "url": "https://www.youtube.com/watch?v=L7vrYf-Mgdg",
+      "thumbnail": "https://i.ytimg.com/vi/L7vrYf-Mgdg/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260704",
+      "published": 1783159207,
+      "published_str": "2026-07-04",
+      "embed_id": "L7vrYf-Mgdg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6LZMamuYjjs",
       "youtube_id": "6LZMamuYjjs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Ig2zcKJQWig",
-      "youtube_id": "Ig2zcKJQWig",
-      "source": "youtube",
-      "title": "The Dark Side Of Getting Rich On Youtube w/ @mattdavella",
-      "url": "https://www.youtube.com/watch?v=Ig2zcKJQWig",
-      "thumbnail": "https://i.ytimg.com/vi/Ig2zcKJQWig/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Use the promo code ALI or visit http://ref.wisprflow.ai/ali_youtube  to unlock your free month with Flow. #wisprflowpartner \n\nJoin the Summer Reset Workshop: https://go.aliabdaal.com/summer_reset\n\nMY COURSES\n🚀 Build a $100k/year lifestyle business without quitting your day job → https://go.aliabdaal",
-      "published": 1782754725,
-      "published_str": "2026-06-29",
-      "embed_id": "Ig2zcKJQWig",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128244.2839432
+  "_ts": 1783387859.6680288
 }

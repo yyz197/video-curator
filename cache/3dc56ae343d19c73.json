@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_uVlMWVP5GJk",
+      "youtube_id": "uVlMWVP5GJk",
+      "source": "youtube",
+      "title": "The True Cost of War",
+      "url": "https://www.youtube.com/watch?v=uVlMWVP5GJk",
+      "thumbnail": "https://i.ytimg.com/vi/uVlMWVP5GJk/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "War costs far more than weapons and destroyed buildings. It leaves countries poorer, disrupts education, drives migration, and passes trauma to future generations. Some of its highest costs are paid decades later.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#warfare ",
+      "published": 1783346409,
+      "published_str": "2026-07-06",
+      "embed_id": "uVlMWVP5GJk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_N2FOxjtv5ns",
       "youtube_id": "N2FOxjtv5ns",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XUStGNx45wQ",
-      "youtube_id": "XUStGNx45wQ",
-      "source": "youtube",
-      "title": "The Power of 1%",
-      "url": "https://www.youtube.com/watch?v=XUStGNx45wQ",
-      "thumbnail": "https://i.ytimg.com/vi/XUStGNx45wQ/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "What could 1% of the richest countries’ income achieve? From malaria vaccines and clean water to renewable energy, a surprisingly small fraction of global wealth could transform millions of lives.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#internationalaid \n\nSource",
-      "published": 1781532016,
-      "published_str": "2026-06-15",
-      "embed_id": "XUStGNx45wQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128241.373402
+  "_ts": 1783387857.0584266
 }

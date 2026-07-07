@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_oZDByvhf3Ik",
+      "youtube_id": "oZDByvhf3Ik",
+      "source": "youtube",
+      "title": "This Gorgeous Rock Was Made by a Supercontinent",
+      "url": "https://www.youtube.com/watch?v=oZDByvhf3Ik",
+      "thumbnail": "https://i.ytimg.com/vi/oZDByvhf3Ik/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Labradorites are such beautiful stones that they've been the subject of legends for thousands of years. And the way we got them is pretty legendary too, because it basically shouldn't have been possible. Here's the weird way these flashy rocks came to be. \n\nIf you want to learn more about Rocks Box,",
+      "published": 1783358330,
+      "published_str": "2026-07-06",
+      "embed_id": "oZDByvhf3Ik",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_VT2zNo5MQVQ",
       "youtube_id": "VT2zNo5MQVQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_OYzTQh1jxpI",
-      "youtube_id": "OYzTQh1jxpI",
-      "source": "youtube",
-      "title": "The Science Behind The Odyssey's Greatest Challenge",
-      "url": "https://www.youtube.com/watch?v=OYzTQh1jxpI",
-      "thumbnail": "https://i.ytimg.com/vi/OYzTQh1jxpI/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The Strait of Messina is thought to be the place in Homer's Odyssey where Odysseus faces the mythical monsters Scylla and Charybdis. But science can explain this treacherous strait, including why it's high tide on one side and low tide on the other.\n\nHosted by: Reid Reimers (he/him)\n----------\nSuppo",
-      "published": 1781802021,
-      "published_str": "2026-06-18",
-      "embed_id": "OYzTQh1jxpI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128241.581525
+  "_ts": 1783387857.1794975
 }

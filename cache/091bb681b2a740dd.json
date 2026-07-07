@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_L7vrYf-Mgdg",
+      "youtube_id": "L7vrYf-Mgdg",
+      "source": "youtube",
+      "title": "Time-Saving Habits",
+      "url": "https://www.youtube.com/watch?v=L7vrYf-Mgdg",
+      "thumbnail": "https://i.ytimg.com/vi/L7vrYf-Mgdg/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260704",
+      "published": 1783159207,
+      "published_str": "2026-07-04",
+      "embed_id": "L7vrYf-Mgdg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6LZMamuYjjs",
       "youtube_id": "6LZMamuYjjs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_DDzQTEiEOWk",
-      "youtube_id": "DDzQTEiEOWk",
-      "source": "youtube",
-      "title": "5 Productivity Apps I Use Every Day",
-      "url": "https://www.youtube.com/watch?v=DDzQTEiEOWk",
-      "thumbnail": "https://i.ytimg.com/vi/DDzQTEiEOWk/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "👻 Voicepal: AI Writing App (iOS/Android) - Download for Free → https://go.aliabdaal.com/voicepal/ytd",
-      "published": 1769594418,
-      "published_str": "2026-01-28",
-      "embed_id": "DDzQTEiEOWk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128232.0316586
+  "_ts": 1783387847.7495544
 }

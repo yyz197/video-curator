@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_uVlMWVP5GJk",
+      "youtube_id": "uVlMWVP5GJk",
+      "source": "youtube",
+      "title": "The True Cost of War",
+      "url": "https://www.youtube.com/watch?v=uVlMWVP5GJk",
+      "thumbnail": "https://i.ytimg.com/vi/uVlMWVP5GJk/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "War costs far more than weapons and destroyed buildings. It leaves countries poorer, disrupts education, drives migration, and passes trauma to future generations. Some of its highest costs are paid decades later.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#warfare ",
+      "published": 1783346409,
+      "published_str": "2026-07-06",
+      "embed_id": "uVlMWVP5GJk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_N2FOxjtv5ns",
       "youtube_id": "N2FOxjtv5ns",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_W6-BGkuA2Gc",
-      "youtube_id": "W6-BGkuA2Gc",
-      "source": "youtube",
-      "title": "Why You Need a Space Elevator And How You Can Build One",
-      "url": "https://www.youtube.com/watch?v=W6-BGkuA2Gc",
-      "thumbnail": "https://i.ytimg.com/vi/W6-BGkuA2Gc/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Here's a simple DIY – just make sure you have all of the parts ready before you start, ok?\n\n#kurzgesagt\n#inanutshell #kurzgesagt #kurzgesagt_inanutshell #learnwithshorts #science #spaceelevator #spaceexploration #spaceshorts #spacelovers \n\nSources & further reading: \nhttps://sites.google.com/view/kg",
-      "published": 1714658415,
-      "published_str": "2024-05-02",
-      "embed_id": "W6-BGkuA2Gc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128224.4879286
+  "_ts": 1783387840.6190922
 }

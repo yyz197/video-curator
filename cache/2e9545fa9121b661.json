@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_jojDzG4ZCZs",
+      "youtube_id": "jojDzG4ZCZs",
+      "source": "youtube",
+      "title": "He sold roadside gas station. Then built mountain homestead to live freely",
+      "url": "https://www.youtube.com/watch?v=jojDzG4ZCZs",
+      "thumbnail": "https://i.ytimg.com/vi/jojDzG4ZCZs/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Ryan grew up hunting and fishing in the Ouachita Mountains of Arkansas - food from the land, and life in nature, was never a hobby, it was just life. Then came years of long-hours work, the last of it running a roadside convenience store. \n\nWhen he saw a listing for raw land in the mountains, cheap ",
+      "published": 1783373900,
+      "published_str": "2026-07-06",
+      "embed_id": "jojDzG4ZCZs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_J1QTnQecz-s",
       "youtube_id": "J1QTnQecz-s",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rwrmV2N8QWM",
-      "youtube_id": "rwrmV2N8QWM",
-      "source": "youtube",
-      "title": "Couldn’t afford a house. Now he builds his own underground Missouri home",
-      "url": "https://www.youtube.com/watch?v=rwrmV2N8QWM",
-      "thumbnail": "https://i.ytimg.com/vi/rwrmV2N8QWM/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Kyle Yoder couldn't afford to buy a home, so he's been building one himself — by hand, with earth, rubble, and reclaimed materials — on a shared piece of land in northern Missouri.\n\nHis first structure was the Gnome Dome: an 80-square-foot earthbag igloo he rescued from demolition after it was aband",
-      "published": 1780267802,
-      "published_str": "2026-05-31",
-      "embed_id": "rwrmV2N8QWM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128245.6922684
+  "_ts": 1783387860.7082455
 }

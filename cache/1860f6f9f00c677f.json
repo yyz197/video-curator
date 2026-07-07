@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_jojDzG4ZCZs",
+      "youtube_id": "jojDzG4ZCZs",
+      "source": "youtube",
+      "title": "He sold roadside gas station. Then built mountain homestead to live freely",
+      "url": "https://www.youtube.com/watch?v=jojDzG4ZCZs",
+      "thumbnail": "https://i.ytimg.com/vi/jojDzG4ZCZs/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Ryan grew up hunting and fishing in the Ouachita Mountains of Arkansas - food from the land, and life in nature, was never a hobby, it was just life. Then came years of long-hours work, the last of it running a roadside convenience store. \n\nWhen he saw a listing for raw land in the mountains, cheap ",
+      "published": 1783373900,
+      "published_str": "2026-07-06",
+      "embed_id": "jojDzG4ZCZs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_J1QTnQecz-s",
       "youtube_id": "J1QTnQecz-s",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_URMSgRM1lOA",
-      "youtube_id": "URMSgRM1lOA",
-      "source": "youtube",
-      "title": "Steep lot was unbuildable. He raised retro-futuristic home over lake",
-      "url": "https://www.youtube.com/watch?v=URMSgRM1lOA",
-      "thumbnail": "https://i.ytimg.com/vi/URMSgRM1lOA/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Robert Oshatz believes a house should fit the land and its residents, so his homes are all a bit fantastic. His own home seems to defy gravity, floating above a very steep hillside on a lot that was cheap because it was deemed unbuildable. Perched on a 30° degree incline, his funnel-shaped home soar",
-      "published": 1693161816,
-      "published_str": "2023-08-27",
-      "embed_id": "URMSgRM1lOA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128233.9844892
+  "_ts": 1783387849.8911884
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_3KWwMzSxB1Y",
+      "youtube_id": "3KWwMzSxB1Y",
+      "source": "youtube",
+      "title": "Long Legged Letters - Numberphile",
+      "url": "https://www.youtube.com/watch?v=3KWwMzSxB1Y",
+      "thumbnail": "https://i.ytimg.com/vi/3KWwMzSxB1Y/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The legendary Neil Sloane discusses the use of 'long-legged letters' to chop infinite pancakes. More links & stuff in full description below ↓↓↓\n\nSee more Neil Sloane videos on Numberphile: https://www.youtube.com/playlist?list=PLt5AfwLFPxWJXQqPe_llzWmTHMPb9QvV2\n\nNeil is the founder of the On-Line E",
+      "published": 1783178190,
+      "published_str": "2026-07-04",
+      "embed_id": "3KWwMzSxB1Y",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6PmuWFWVKDE",
       "youtube_id": "6PmuWFWVKDE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_UiX4CFIiegM",
-      "youtube_id": "UiX4CFIiegM",
-      "source": "youtube",
-      "title": "Red & Black Knights (extraordinary result) - Numberphile",
-      "url": "https://www.youtube.com/watch?v=UiX4CFIiegM",
-      "thumbnail": "https://i.ytimg.com/vi/UiX4CFIiegM/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Featuring Neil Sloane, founder of the OEIS... See the extra patterns and variations (including three knights) at https://youtu.be/VgmDuBCayPw\nMore links & stuff in full description below ↓↓↓\n\nWith thanks also to Jonas Karlsson - https://jonka364.github.io/\n\nNeil Sloane is the founder of the On-Line ",
-      "published": 1778591101,
-      "published_str": "2026-05-12",
-      "embed_id": "UiX4CFIiegM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783128242.6790843
+  "_ts": 1783387858.191142
 }
