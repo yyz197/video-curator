@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_kxx_40JldCs",
+      "youtube_id": "kxx_40JldCs",
+      "source": "youtube",
+      "title": "Medicine Practices Throughout History (Full Episode) | Mysteries of Ancient Medicine | Nat Geo",
+      "url": "https://www.youtube.com/watch?v=kxx_40JldCs",
+      "thumbnail": "https://i.ytimg.com/vi/kxx_40JldCs/mqdefault.jpg",
+      "author": "National Geographic",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In this full episode of Mysteries of Ancient Medicine from National Geographic, journey throughout history, from ancient China to Renaissance Europe and the plague-stricken world of the 14th century, to learn about fascinating ancient medicine practices. In China, the first emperor embraces a glitte",
+      "published": 1783602032,
+      "published_str": "2026-07-09",
+      "embed_id": "kxx_40JldCs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_tTop25WhY9Q",
       "youtube_id": "tTop25WhY9Q",
       "source": "youtube",
@@ -54,7 +79,7 @@
       "id": "youtube_ySRLqdmyP7A",
       "youtube_id": "ySRLqdmyP7A",
       "source": "youtube",
-      "title": "Bertie Gregory's Surprise Whale Encounter | Hammerhead Sharks Up Close | National Geographic",
+      "title": "Whale Encounter Caught on Camera | Hammerhead Sharks Up Close with Bertie Gregory | Nat Geo",
       "url": "https://www.youtube.com/watch?v=ySRLqdmyP7A",
       "thumbnail": "https://i.ytimg.com/vi/ySRLqdmyP7A/mqdefault.jpg",
       "author": "National Geographic",
@@ -79,7 +104,7 @@
       "id": "youtube_I6oI9in0oaM",
       "youtube_id": "I6oI9in0oaM",
       "source": "youtube",
-      "title": "Sharks Up Close with Bertie Gregory (Full Episode) | SHARKFEST SPECIAL | National Geographic",
+      "title": "Bertie Gregory Films Great Whites Unprotected (Full Episode) | Sharkfest Special | Nat Geo",
       "url": "https://www.youtube.com/watch?v=I6oI9in0oaM",
       "thumbnail": "https://i.ytimg.com/vi/I6oI9in0oaM/mqdefault.jpg",
       "author": "National Geographic",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_CiMeBPS7S1k",
-      "youtube_id": "CiMeBPS7S1k",
-      "source": "youtube",
-      "title": "Mark Wiens discovers the flavors of Jamaica #EpicFoodJourneys #MarkWiens",
-      "url": "https://www.youtube.com/watch?v=CiMeBPS7S1k",
-      "thumbnail": "https://i.ytimg.com/vi/CiMeBPS7S1k/mqdefault.jpg",
-      "author": "National Geographic",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In the final episode of #EpicFoodJourneys Season 2, Mark Wiens heads to Jamaica to prove that there's more to this island's cuisine than jerk! \n\nWatch all of Epic Food Journeys with Mark Wiens on Nat Geo's YouTube Channel.\n\nExplore the World with National Geographic subscriptions: https://natgeo.com",
-      "published": 1773169223,
-      "published_str": "2026-03-10",
-      "embed_id": "CiMeBPS7S1k",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783387842.6081743
+  "_ts": 1783646444.8209214
 }

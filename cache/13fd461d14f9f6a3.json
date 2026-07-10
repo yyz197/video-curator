@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_k_kyepATqB8",
+      "youtube_id": "k_kyepATqB8",
+      "source": "youtube",
+      "title": "Shor's Algorithm for Quantum Computing - Computerphile",
+      "url": "https://www.youtube.com/watch?v=k_kyepATqB8",
+      "thumbnail": "https://i.ytimg.com/vi/k_kyepATqB8/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "We brought a computer scientist and a physicist together to talk about Shor's algorithm - a famous factorisation algorithm for that can break some currently used encryption techniques if implemented in the quantum realm. \n\nPhil's accompanying blog post: https://muircheartblog.wpcomstaging.com/2026/0",
+      "published": 1783605430,
+      "published_str": "2026-07-09",
+      "embed_id": "k_kyepATqB8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-0HRzXk8vlk",
       "youtube_id": "-0HRzXk8vlk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rjYUeh3tlpc",
-      "youtube_id": "rjYUeh3tlpc",
-      "source": "youtube",
-      "title": "Malware and Machine Learning - Computerphile",
-      "url": "https://www.youtube.com/watch?v=rjYUeh3tlpc",
-      "thumbnail": "https://i.ytimg.com/vi/rjYUeh3tlpc/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Do anti virus programs use machine learning? Dr Fabio Pierazzi looks at the trends and challenges.\n\nFabio's website: https://fabio.pierazzi.com\n\n \n\nMain paper: Arp et al., “Dos and Don’ts of Machine Learning for Computer Security”, USENIX Security 2022 – Distinguished Paper Award – Project website: ",
-      "published": 1673010300,
-      "published_str": "2023-01-06",
-      "embed_id": "rjYUeh3tlpc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783387845.4260569
+  "_ts": 1783646447.8161094
 }

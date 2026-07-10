@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_k_kyepATqB8",
+      "youtube_id": "k_kyepATqB8",
+      "source": "youtube",
+      "title": "Shor's Algorithm for Quantum Computing - Computerphile",
+      "url": "https://www.youtube.com/watch?v=k_kyepATqB8",
+      "thumbnail": "https://i.ytimg.com/vi/k_kyepATqB8/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "We brought a computer scientist and a physicist together to talk about Shor's algorithm - a famous factorisation algorithm for that can break some currently used encryption techniques if implemented in the quantum realm. \n\nPhil's accompanying blog post: https://muircheartblog.wpcomstaging.com/2026/0",
+      "published": 1783605430,
+      "published_str": "2026-07-09",
+      "embed_id": "k_kyepATqB8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-0HRzXk8vlk",
       "youtube_id": "-0HRzXk8vlk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_IADOV8UZO34",
-      "youtube_id": "IADOV8UZO34",
-      "source": "youtube",
-      "title": "TCP a : Ensuring Your Data Gets There & in the Right Order! - Computerphile",
-      "url": "https://www.youtube.com/watch?v=IADOV8UZO34",
-      "thumbnail": "https://i.ytimg.com/vi/IADOV8UZO34/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Continuing the deep dive down the network stack, Richard begins the story of TCP. Richard G Clegg is based at Queen Mary University London. \n\nNext in the playlist: https://youtu.be/nKVML4YaBqs \n\nRFC793 https://datatracker.ietf.org/doc/html/rfc793 \nRFC 9293 https://datatracker.ietf.org/doc/html/rfc92",
-      "published": 1781355635,
-      "published_str": "2026-06-13",
-      "embed_id": "IADOV8UZO34",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783387858.1523097
+  "_ts": 1783646460.7554336
 }
