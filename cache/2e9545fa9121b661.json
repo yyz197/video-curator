@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_89ePp8Z9f5Q",
+      "youtube_id": "89ePp8Z9f5Q",
+      "source": "youtube",
+      "title": "Inspired by shantyboat youtuber, they built their budget floating homes",
+      "url": "https://www.youtube.com/watch?v=89ePp8Z9f5Q",
+      "thumbnail": "https://i.ytimg.com/vi/89ePp8Z9f5Q/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "On a quiet stretch of the Tennessee River, Arthur and Steve have traded conventional life for something simpler: floating homes they built themselves, for a fraction of what most people pay just to park a car. Both were inspired by the same source — shantyboat YouTuber Martin Haseman's river journey",
+      "published": 1783891305,
+      "published_str": "2026-07-12",
+      "embed_id": "89ePp8Z9f5Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_jojDzG4ZCZs",
       "youtube_id": "jojDzG4ZCZs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_RXUUilqk7KA",
-      "youtube_id": "RXUUilqk7KA",
-      "source": "youtube",
-      "title": "Couple lost suburban home, then built a better life on Ozarks homestead",
-      "url": "https://www.youtube.com/watch?v=RXUUilqk7KA",
-      "thumbnail": "https://i.ytimg.com/vi/RXUUilqk7KA/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "After losing their suburban home — buried under three mortgages and then a flood — Catherine and Phillip Lightfoot decided not to start over the same way. They wanted the homestead they'd dreamed of since childhood, and they wanted to build it without owing anyone anything.\n\nFor $37,000, they built ",
-      "published": 1780958108,
-      "published_str": "2026-06-08",
-      "embed_id": "RXUUilqk7KA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783646462.9348547
+  "_ts": 1783905447.0241346
 }

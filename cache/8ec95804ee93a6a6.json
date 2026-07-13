@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_8rFhG8RrpnY",
+      "youtube_id": "8rFhG8RrpnY",
+      "source": "youtube",
+      "title": "Why we need to feel heard",
+      "url": "https://www.youtube.com/watch?v=8rFhG8RrpnY",
+      "thumbnail": "https://i.ytimg.com/vi/8rFhG8RrpnY/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Though we all long to have our feelings and needs acknowledged, it seems that nothing is more common than for these to be neglected by people around us. We take so little time to listen to one another and to show that we have absorbed what people have told us. As a result, everyone gets increasingly",
+      "published": 1783861218,
+      "published_str": "2026-07-12",
+      "embed_id": "8rFhG8RrpnY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_5Ir36fo_R-I",
       "youtube_id": "5Ir36fo_R-I",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ktbniq2OUOA",
-      "youtube_id": "ktbniq2OUOA",
-      "source": "youtube",
-      "title": "Self-Hatred & Anxiety",
-      "url": "https://www.youtube.com/watch?v=ktbniq2OUOA",
-      "thumbnail": "https://i.ytimg.com/vi/ktbniq2OUOA/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "The reason we may feel more anxious than we should lies in an unusual place: Self-hatred. If we think of ourselves as 'bad', then surely bad things must happen to bad people. One of the ways of calming down is to learn to unpack the origins of our self-suspicion and lay the ground for a more self-lo",
-      "published": 1752066094,
-      "published_str": "2025-07-09",
-      "embed_id": "ktbniq2OUOA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783646446.5588353
+  "_ts": 1783905430.6408093
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_89ePp8Z9f5Q",
+      "youtube_id": "89ePp8Z9f5Q",
+      "source": "youtube",
+      "title": "Inspired by shantyboat youtuber, they built their budget floating homes",
+      "url": "https://www.youtube.com/watch?v=89ePp8Z9f5Q",
+      "thumbnail": "https://i.ytimg.com/vi/89ePp8Z9f5Q/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "On a quiet stretch of the Tennessee River, Arthur and Steve have traded conventional life for something simpler: floating homes they built themselves, for a fraction of what most people pay just to park a car. Both were inspired by the same source — shantyboat YouTuber Martin Haseman's river journey",
+      "published": 1783891305,
+      "published_str": "2026-07-12",
+      "embed_id": "89ePp8Z9f5Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_jojDzG4ZCZs",
       "youtube_id": "jojDzG4ZCZs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_o23oTURCbEw",
-      "youtube_id": "o23oTURCbEw",
-      "source": "youtube",
-      "title": "Granny felt lonely. Her new backyard home has her relatives knocking",
-      "url": "https://www.youtube.com/watch?v=o23oTURCbEw",
-      "thumbnail": "https://i.ytimg.com/vi/o23oTURCbEw/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Alice Marozas had been living alone in a 5-bedroom home since the death of her husband 7 years earlier when her daughter suggested that instead of finding a retirement community, she move into a prefab in their Los Angeles backyard. Alice had loved growing up in a multi-generational household (after",
-      "published": 1693760685,
-      "published_str": "2023-09-03",
-      "embed_id": "o23oTURCbEw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783646451.9584486
+  "_ts": 1783905435.8184528
 }

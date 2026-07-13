@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_8rFhG8RrpnY",
+      "youtube_id": "8rFhG8RrpnY",
+      "source": "youtube",
+      "title": "Why we need to feel heard",
+      "url": "https://www.youtube.com/watch?v=8rFhG8RrpnY",
+      "thumbnail": "https://i.ytimg.com/vi/8rFhG8RrpnY/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Though we all long to have our feelings and needs acknowledged, it seems that nothing is more common than for these to be neglected by people around us. We take so little time to listen to one another and to show that we have absorbed what people have told us. As a result, everyone gets increasingly",
+      "published": 1783861218,
+      "published_str": "2026-07-12",
+      "embed_id": "8rFhG8RrpnY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_5Ir36fo_R-I",
       "youtube_id": "5Ir36fo_R-I",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_7SSHksM3qrs",
-      "youtube_id": "7SSHksM3qrs",
-      "source": "youtube",
-      "title": "Why You Deserve a Tantrum: The Truth About Adult Rage",
-      "url": "https://www.youtube.com/watch?v=7SSHksM3qrs",
-      "thumbnail": "https://i.ytimg.com/vi/7SSHksM3qrs/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ We look at a toddler screaming in a supermarket and feel pity or judgment. But what if that child is the only honest person in the aisle? As adults, we are constantly told to practice Stoicism, mindfulness, and c",
-      "published": 1782910813,
-      "published_str": "2026-07-01",
-      "embed_id": "7SSHksM3qrs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783646460.5274153
+  "_ts": 1783905444.0193546
 }
