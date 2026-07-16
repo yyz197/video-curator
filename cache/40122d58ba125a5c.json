@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zKMWLs3S9yg",
+      "youtube_id": "zKMWLs3S9yg",
+      "source": "youtube",
+      "title": "Dr. Robert Wachter | A Giant Leap: How AI Is Transforming Healthcare... | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=zKMWLs3S9yg",
+      "thumbnail": "https://i.ytimg.com/vi/zKMWLs3S9yg/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Physician and thought leader Dr. Robert Wachter discusses his book \"A Giant Leap: How AI Is Transforming Healthcare and What That Means for Our Future,\" an engaging, clear-eyed, and ultimately hopeful examination of healthcare’s efforts to embrace generative artificial intelligence.\n\nDr. Wachter sha",
+      "published": 1784044807,
+      "published_str": "2026-07-14",
+      "embed_id": "zKMWLs3S9yg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_rixcd95VVuM",
       "youtube_id": "rixcd95VVuM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_MGY_OM8u42A",
-      "youtube_id": "MGY_OM8u42A",
-      "source": "youtube",
-      "title": "Nelson Dellis | Everyday Genius: Hacks to Boost Your Memory, Focus... | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=MGY_OM8u42A",
-      "thumbnail": "https://i.ytimg.com/vi/MGY_OM8u42A/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Six-time USA Memory Champion, two-time Guinness World Record holder, Grandmaster of Memory, keynote speaker, and world-renowned memory coach, Nelson Dellis, discusses his book \"Everyday Genius: Hacks to Boost Your Memory, Focus, Problem-Solving, and Much More,\" where he shows you how to reclaim and ",
-      "published": 1777478440,
-      "published_str": "2026-04-29",
-      "embed_id": "MGY_OM8u42A",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783905443.921665
+  "_ts": 1784164389.2669766
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_XUmgIQIpg-E",
+      "youtube_id": "XUmgIQIpg-E",
+      "source": "youtube",
+      "title": "The Art World Couldn't Understand Him",
+      "url": "https://www.youtube.com/watch?v=XUmgIQIpg-E",
+      "thumbnail": "https://i.ytimg.com/vi/XUmgIQIpg-E/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Go to https://www.squarespace.com/nerdwriter for 10% off your first purchase.\n\nProduced in collaboration with the National Gallery of Art Production Studio. For more National Gallery of Art videos: https://www.youtube.com/@UC416BswuE2ItX23GySxZcRQ \n\nSOURCES\n\nAckroyd, Peter. Blake. Alfred A. Knopf, 1",
+      "published": 1784124039,
+      "published_str": "2026-07-15",
+      "embed_id": "XUmgIQIpg-E",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_KWtfuHNaF8Q",
       "youtube_id": "KWtfuHNaF8Q",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_38Cy_Qlh7VM",
-      "youtube_id": "38Cy_Qlh7VM",
-      "source": "youtube",
-      "title": "Batman v Superman: The Fundamental Flaw",
-      "url": "https://www.youtube.com/watch?v=38Cy_Qlh7VM",
-      "thumbnail": "https://i.ytimg.com/vi/38Cy_Qlh7VM/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "GET MY BOOK: https://amzn.to/3ymfQPV\n\n\nSupport Nerdwriter videos: https://patreon.com/nerdwriter\nSubscribe: http://bit.ly/SubNerdwriter\n\nFacebook: https://facebook.com/The-Nerdwriter-314141501931192/\nTwitter: https://twitter.com/TheeNerdwriter",
-      "published": 1469628000,
-      "published_str": "2016-07-27",
-      "embed_id": "38Cy_Qlh7VM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783905434.9255137
+  "_ts": 1784164379.9408848
 }

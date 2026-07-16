@@ -51,31 +51,6 @@
       "favorited": false
     },
     {
-      "id": "youtube_-CLOSj8TRGI",
-      "youtube_id": "-CLOSj8TRGI",
-      "source": "youtube",
-      "title": "Let's Dig a Little Deeper",
-      "url": "https://www.youtube.com/watch?v=-CLOSj8TRGI",
-      "thumbnail": "https://i.ytimg.com/vi/-CLOSj8TRGI/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Can't get enough geology? Dig deeper on topics we've covered on Crash Course Geology with related videos from our fellow Complexly channels, SciShow and Eons. You'll learn about Earth's fiery beginnings, Earth's core, minerals, rocks, gems, and more! \n\n@SciShow  @eons  @BadNaturalist",
-      "published": 1782340097,
-      "published_str": "2026-06-24",
-      "embed_id": "-CLOSj8TRGI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
-    },
-    {
       "id": "youtube_xDll-p5g2EQ",
       "youtube_id": "xDll-p5g2EQ",
       "source": "youtube",
@@ -124,7 +99,32 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
+    },
+    {
+      "id": "youtube_eKnl_Jp8jsg",
+      "youtube_id": "eKnl_Jp8jsg",
+      "source": "youtube",
+      "title": "How Do Gems Form?: Crash Course Geology #7",
+      "url": "https://www.youtube.com/watch?v=eKnl_Jp8jsg",
+      "thumbnail": "https://i.ytimg.com/vi/eKnl_Jp8jsg/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "For most of human history, one thing has been true  – we LOVE shiny things. Gems are the crown jewels (pun intended) of geology, and for thousands of years, we’ve wanted to know all about them. In today’s episode of Crash Course Geology, we’ll explore some of those burning questions, like, what are ",
+      "published": 1780588820,
+      "published_str": "2026-06-04",
+      "embed_id": "eKnl_Jp8jsg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
     }
   ],
-  "_ts": 1783905443.176616
+  "_ts": 1784164388.4090576
 }

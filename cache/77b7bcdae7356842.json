@@ -51,31 +51,6 @@
       "favorited": false
     },
     {
-      "id": "youtube_-CLOSj8TRGI",
-      "youtube_id": "-CLOSj8TRGI",
-      "source": "youtube",
-      "title": "Let's Dig a Little Deeper",
-      "url": "https://www.youtube.com/watch?v=-CLOSj8TRGI",
-      "thumbnail": "https://i.ytimg.com/vi/-CLOSj8TRGI/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Can't get enough geology? Dig deeper on topics we've covered on Crash Course Geology with related videos from our fellow Complexly channels, SciShow and Eons. You'll learn about Earth's fiery beginnings, Earth's core, minerals, rocks, gems, and more! \n\n@SciShow  @eons  @BadNaturalist",
-      "published": 1782340097,
-      "published_str": "2026-06-24",
-      "embed_id": "-CLOSj8TRGI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
-    },
-    {
       "id": "youtube_xDll-p5g2EQ",
       "youtube_id": "xDll-p5g2EQ",
       "source": "youtube",
@@ -3749,7 +3724,32 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
+    },
+    {
+      "id": "youtube_P8scg_XAgZQ",
+      "youtube_id": "P8scg_XAgZQ",
+      "source": "youtube",
+      "title": "Gender, Sex, & Sexuality: What’s the Difference?: Crash Course Biology #48",
+      "url": "https://www.youtube.com/watch?v=P8scg_XAgZQ",
+      "thumbnail": "https://i.ytimg.com/vi/P8scg_XAgZQ/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "We tend to think life fits in two tidy categories: male or female, XX or XY. But it’s so much more diverse and complicated! In this episode of Crash Course Biology, we’ll discover sex and sexuality as a continuum across life. We’ll learn why humans are the only species with gender, and why same-sex ",
+      "published": 1719331222,
+      "published_str": "2024-06-25",
+      "embed_id": "P8scg_XAgZQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
     }
   ],
-  "_ts": 1783905426.6583745
+  "_ts": 1784164371.6511118
 }

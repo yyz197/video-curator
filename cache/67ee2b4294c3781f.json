@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zKMWLs3S9yg",
+      "youtube_id": "zKMWLs3S9yg",
+      "source": "youtube",
+      "title": "Dr. Robert Wachter | A Giant Leap: How AI Is Transforming Healthcare... | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=zKMWLs3S9yg",
+      "thumbnail": "https://i.ytimg.com/vi/zKMWLs3S9yg/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Physician and thought leader Dr. Robert Wachter discusses his book \"A Giant Leap: How AI Is Transforming Healthcare and What That Means for Our Future,\" an engaging, clear-eyed, and ultimately hopeful examination of healthcare’s efforts to embrace generative artificial intelligence.\n\nDr. Wachter sha",
+      "published": 1784044807,
+      "published_str": "2026-07-14",
+      "embed_id": "zKMWLs3S9yg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_rixcd95VVuM",
       "youtube_id": "rixcd95VVuM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_h_TvzVO7LVk",
-      "youtube_id": "h_TvzVO7LVk",
-      "source": "youtube",
-      "title": "Ali Abdaal | Feel-Good Productivity: How to Do More of What Matters to You | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=h_TvzVO7LVk",
-      "thumbnail": "https://i.ytimg.com/vi/h_TvzVO7LVk/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "The world's most-followed productivity expert, entrepreneur, creator, and New York Times bestselling author, Ali Abdaal, discusses his book “Feel-Good Productivity: How to Do More of What Matters to You.” We think that productivity is all about hard work. That the road to success is lined with endle",
-      "published": 1714924835,
-      "published_str": "2024-05-05",
-      "embed_id": "h_TvzVO7LVk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1783905430.191441
+  "_ts": 1784164375.4388628
 }
