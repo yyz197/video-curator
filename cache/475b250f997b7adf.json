@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_2Q6OvYjOJi0",
+      "youtube_id": "2Q6OvYjOJi0",
+      "source": "youtube",
+      "title": "GPS Hidden Messages - Computerphile",
+      "url": "https://www.youtube.com/watch?v=2Q6OvYjOJi0",
+      "thumbnail": "https://i.ytimg.com/vi/2Q6OvYjOJi0/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Something odd was going on with the signals broadcast by the GPS satellites. Steven Murdoch of University College London explains how he used statistical analysis to work out what might be going on. \n\nTo read more about Steven's findings:   https://sjmurdoch.github.io/gps-special-messages/ \n\nCompute",
+      "published": 1784212343,
+      "published_str": "2026-07-16",
+      "embed_id": "2Q6OvYjOJi0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_k_kyepATqB8",
       "youtube_id": "k_kyepATqB8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_nKVML4YaBqs",
-      "youtube_id": "nKVML4YaBqs",
-      "source": "youtube",
-      "title": "TCP b : Additive Increase Multiplicative Decrease & 'Slow Start' - Computerphile",
-      "url": "https://www.youtube.com/watch?v=nKVML4YaBqs",
-      "thumbnail": "https://i.ytimg.com/vi/nKVML4YaBqs/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Network Basics story continues with the second part of the TCP segment. Richard G Clegg is based at Queen Mary University London.\n\nRichard's Code: https://github.com/richardclegg/computerphile_demos/\nRFC 5681 https://datatracker.ietf.org/doc/html/rfc5681 \n\nComputerphile is supported by Jane Street. ",
-      "published": 1781534038,
-      "published_str": "2026-06-15",
-      "embed_id": "nKVML4YaBqs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164389.825839
+  "_ts": 1784423638.5567605
 }

@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_RmHcX5oVzvs",
+      "youtube_id": "RmHcX5oVzvs",
+      "source": "youtube",
+      "title": "Why Waves Travel Faster At The Top",
+      "url": "https://www.youtube.com/watch?v=RmHcX5oVzvs",
+      "thumbnail": "https://i.ytimg.com/vi/RmHcX5oVzvs/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Why do objects travel with waves?\n\nWe're taught waves only transfer energy, not material, but objects wash ashore all the time.\n\nHow does this work?\n\n#veritasium #science #physics",
+      "published": 1784294918,
+      "published_str": "2026-07-17",
+      "embed_id": "RmHcX5oVzvs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_GK2pZ_oVU1o",
       "youtube_id": "GK2pZ_oVU1o",
       "source": "youtube",
-      "title": "The Scariest Chart In Electrical Engineering",
+      "title": "The Scariest Chart in Electrical Engineering",
       "url": "https://www.youtube.com/watch?v=GK2pZ_oVU1o",
       "thumbnail": "https://i.ytimg.com/vi/GK2pZ_oVU1o/mqdefault.jpg",
       "author": "Veritasium",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_dquI8khH1Zk",
-      "youtube_id": "dquI8khH1Zk",
-      "source": "youtube",
-      "title": "AD - Why do I get this spark when I unplug my hair dryer?",
-      "url": "https://www.youtube.com/watch?v=dquI8khH1Zk",
-      "thumbnail": "https://i.ytimg.com/vi/dquI8khH1Zk/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Why does a charger sometimes spark when you unplug it, even when it's switched off at the wall? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\n\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
-      "published": 1782828019,
-      "published_str": "2026-06-30",
-      "embed_id": "dquI8khH1Zk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164388.2336242
+  "_ts": 1784423637.3463383
 }

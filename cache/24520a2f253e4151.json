@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_GlYgs6v2YfU",
+      "youtube_id": "GlYgs6v2YfU",
+      "source": "youtube",
+      "title": "But what is cross-entropy? | Compression is Intelligence Part 2",
+      "url": "https://www.youtube.com/watch?v=GlYgs6v2YfU",
+      "thumbnail": "https://i.ytimg.com/vi/GlYgs6v2YfU/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Where the loss function for training LLMs comes from.\nJob opportunities aligned to this audience: https://3b1b.co/talent\nEarly views and other perks for supporters: https://3b1b.co/support\nHome page: https://www.3blue1brown.com\n\nPart 1: https://youtu.be/l6DKRf-fAAM\n\nManim animations by Aaron Gostein",
+      "published": 1784202964,
+      "published_str": "2026-07-16",
+      "embed_id": "GlYgs6v2YfU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wGffBCfrAsE",
       "youtube_id": "wGffBCfrAsE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_8idr1WZ1A7Q",
-      "youtube_id": "8idr1WZ1A7Q",
-      "source": "youtube",
-      "title": "Binomial distributions | Probabilities of probabilities, part 1",
-      "url": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
-      "thumbnail": "https://i.ytimg.com/vi/8idr1WZ1A7Q/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Part 2: https://youtu.be/ZA4JkHKZM50\nHelp fund future projects: https://www.patreon.com/3blue1brown\nAn equally valuable form of support is to simply share some of the videos.\nSpecial thanks to these supporters: http://3b1b.co/beta1-thanks\n\nJohn Cook post: https://www.johndcook.com/blog/2011/09/27/ba",
-      "published": 1584296896,
-      "published_str": "2020-03-15",
-      "embed_id": "8idr1WZ1A7Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164375.8194873
+  "_ts": 1784423625.2894306
 }

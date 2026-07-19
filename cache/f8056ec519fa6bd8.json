@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_61bgzr1LE8A",
+      "youtube_id": "61bgzr1LE8A",
+      "source": "youtube",
+      "title": "How HIV Started a Century Before Anyone Noticed",
+      "url": "https://www.youtube.com/watch?v=61bgzr1LE8A",
+      "thumbnail": "https://i.ytimg.com/vi/61bgzr1LE8A/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "↓↓↓ More info and sources below ↓↓↓\n\nFor decades, one man was blamed for bringing AIDS to America. But the \"Patient Zero\" story was wrong. This is the story of how genetic detective work traced HIV's true origins—from chimpanzees in Central Africa to a global pandemic—and how science unraveled one o",
+      "published": 1784220393,
+      "published_str": "2026-07-16",
+      "embed_id": "61bgzr1LE8A",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Oj4qAWfTJE0",
       "youtube_id": "Oj4qAWfTJE0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Bq_ZgV4OURI",
-      "youtube_id": "Bq_ZgV4OURI",
-      "source": "youtube",
-      "title": "How did X come to mean \"The UNKNOWN\"?",
-      "url": "https://www.youtube.com/watch?v=Bq_ZgV4OURI",
-      "thumbnail": "https://i.ytimg.com/vi/Bq_ZgV4OURI/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "A truly X-cellent and X-ceptional video…\nJoin our Patreon community: https://www.patreon.com/itsokaytobesmart\n↓↓↓ More info and sources below ↓↓↓\n\nDespite being one of the rarest letters in English, the letter X is everywhere. We sign letters with it, we rate movies with it, we name all sorts of thi",
-      "published": 1695302036,
-      "published_str": "2023-09-21",
-      "embed_id": "Bq_ZgV4OURI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164372.6438484
+  "_ts": 1784423622.6708596
 }

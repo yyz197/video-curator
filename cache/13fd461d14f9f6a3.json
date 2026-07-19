@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_2Q6OvYjOJi0",
+      "youtube_id": "2Q6OvYjOJi0",
+      "source": "youtube",
+      "title": "GPS Hidden Messages - Computerphile",
+      "url": "https://www.youtube.com/watch?v=2Q6OvYjOJi0",
+      "thumbnail": "https://i.ytimg.com/vi/2Q6OvYjOJi0/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Something odd was going on with the signals broadcast by the GPS satellites. Steven Murdoch of University College London explains how he used statistical analysis to work out what might be going on. \n\nTo read more about Steven's findings:   https://sjmurdoch.github.io/gps-special-messages/ \n\nCompute",
+      "published": 1784212343,
+      "published_str": "2026-07-16",
+      "embed_id": "2Q6OvYjOJi0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_k_kyepATqB8",
       "youtube_id": "k_kyepATqB8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_m6l3Elk7-Hg",
-      "youtube_id": "m6l3Elk7-Hg",
-      "source": "youtube",
-      "title": "Emulation - Computerphile",
-      "url": "https://www.youtube.com/watch?v=m6l3Elk7-Hg",
-      "thumbnail": "https://i.ytimg.com/vi/m6l3Elk7-Hg/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Emulation sounds difficult, begins to look simple and then ends up being difficult after all! Dr Steve Bagley explains. \n\nhttps://www.facebook.com/computerphile\r\nhttps://twitter.com/computer_phile\r\n\r\nThis video was filmed and edited by Sean Riley.\r\n\r\nComputer Science at the University of Nottingham:",
-      "published": 1673534547,
-      "published_str": "2023-01-12",
-      "embed_id": "m6l3Elk7-Hg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164375.9618604
+  "_ts": 1784423625.6678498
 }

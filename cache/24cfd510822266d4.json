@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_61bgzr1LE8A",
+      "youtube_id": "61bgzr1LE8A",
+      "source": "youtube",
+      "title": "How HIV Started a Century Before Anyone Noticed",
+      "url": "https://www.youtube.com/watch?v=61bgzr1LE8A",
+      "thumbnail": "https://i.ytimg.com/vi/61bgzr1LE8A/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "↓↓↓ More info and sources below ↓↓↓\n\nFor decades, one man was blamed for bringing AIDS to America. But the \"Patient Zero\" story was wrong. This is the story of how genetic detective work traced HIV's true origins—from chimpanzees in Central Africa to a global pandemic—and how science unraveled one o",
+      "published": 1784220393,
+      "published_str": "2026-07-16",
+      "embed_id": "61bgzr1LE8A",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Oj4qAWfTJE0",
       "youtube_id": "Oj4qAWfTJE0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3yeHmW4ygOc",
-      "youtube_id": "3yeHmW4ygOc",
-      "source": "youtube",
-      "title": "There’s a secret history hidden in a whale's ear",
-      "url": "https://www.youtube.com/watch?v=3yeHmW4ygOc",
-      "thumbnail": "https://i.ytimg.com/vi/3yeHmW4ygOc/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
-      "published": 1781558873,
-      "published_str": "2026-06-15",
-      "embed_id": "3yeHmW4ygOc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164388.5949433
+  "_ts": 1784423637.725111
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_cOTf_YEmSOU",
+      "youtube_id": "cOTf_YEmSOU",
+      "source": "youtube",
+      "title": "1³+2³+3³+4³+5³+6³+7³+8³+9³+10³+11³+12³+13³+14³+15³+16³+17³+18³+19³+20³+21³+22³+23³+24³+25³+26³+...",
+      "url": "https://www.youtube.com/watch?v=cOTf_YEmSOU",
+      "thumbnail": "https://i.ytimg.com/vi/cOTf_YEmSOU/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Ben Sparks with stunning visual proofs of some famous sums of series. More links & stuff in full description below ↓↓↓\n\nMore Ben on Numberphile: https://www.youtube.com/playlist?list=PLt5AfwLFPxWLDKmnxLg8477hrxY33LL6q\n\nBen Sparks: http://www.bensparks.co.uk/\n\nSum of the Integers (if you dare): https",
+      "published": 1784380720,
+      "published_str": "2026-07-18",
+      "embed_id": "cOTf_YEmSOU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_1cvKGqgOx_8",
       "youtube_id": "1cvKGqgOx_8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-JR9-dgU7tU",
-      "youtube_id": "-JR9-dgU7tU",
-      "source": "youtube",
-      "title": "An Integration Conundrum - Numberphile",
-      "url": "https://www.youtube.com/watch?v=-JR9-dgU7tU",
-      "thumbnail": "https://i.ytimg.com/vi/-JR9-dgU7tU/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Featuring Ben Sparks doing some calculus. See https://brilliant.org/numberphile for Brilliant and get 20% off their premium service (episode sponsor)\nMore links & stuff in full description below ↓↓↓\n\nBen Sparks on the Numberphile Podcast: https://youtu.be/-tGni9ObJWk\nMore Ben Sparks on Numberphile: ",
-      "published": 1666189737,
-      "published_str": "2022-10-19",
-      "embed_id": "-JR9-dgU7tU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784164375.8780825
+  "_ts": 1784423625.7277792
 }
