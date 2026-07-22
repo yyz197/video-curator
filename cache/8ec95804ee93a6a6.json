@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_yNmTV0jAQXo",
+      "youtube_id": "yNmTV0jAQXo",
+      "source": "youtube",
+      "title": "The Psychology of Anxious Attachment",
+      "url": "https://www.youtube.com/watch?v=yNmTV0jAQXo",
+      "thumbnail": "https://i.ytimg.com/vi/yNmTV0jAQXo/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nSpot red flags early. This film reveals 6+2 key questions to assess a partner's emotional maturity. Avoid relationship pitfalls and find a truly grown-up connection. #EmotionalMaturity #Relationships #DatingAdvi",
+      "published": 1784466017,
+      "published_str": "2026-07-19",
+      "embed_id": "yNmTV0jAQXo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DnKQ7Wc9A0w",
       "youtube_id": "DnKQ7Wc9A0w",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_bcNr9SXdsMQ",
-      "youtube_id": "bcNr9SXdsMQ",
-      "source": "youtube",
-      "title": "The Mistake 90% of People Make in Dating",
-      "url": "https://www.youtube.com/watch?v=bcNr9SXdsMQ",
-      "thumbnail": "https://i.ytimg.com/vi/bcNr9SXdsMQ/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nWhy do we often gravitate towards emotionally unavailable partners? This film challenges our romantic narratives, arguing that true love isn't about overcoming obstacles or chasing hesitant affections. Discover ",
-      "published": 1752670876,
-      "published_str": "2025-07-16",
-      "embed_id": "bcNr9SXdsMQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423624.7843173
+  "_ts": 1784682793.1091528
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_2_VB-oc_pmk",
+      "youtube_id": "2_VB-oc_pmk",
+      "source": "youtube",
+      "title": "What happens to Schrödinger's cat?",
+      "url": "https://www.youtube.com/watch?v=2_VB-oc_pmk",
+      "thumbnail": "https://i.ytimg.com/vi/2_VB-oc_pmk/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Put a cat in a box with a radioactive atom. Add a radiation detector that triggers the release of poisonous cyanide gas.\n\nSchrödinger's thought experiment was supposed to be a criticism of quantum mechanics and is now one of it's best explainers.\n\nHere's why and what happens to the cat...",
+      "published": 1784647878,
+      "published_str": "2026-07-21",
+      "embed_id": "2_VB-oc_pmk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_RmHcX5oVzvs",
       "youtube_id": "RmHcX5oVzvs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_8DBhTXM_Br4",
-      "youtube_id": "8DBhTXM_Br4",
-      "source": "youtube",
-      "title": "The Insane Math Of Knot Theory",
-      "url": "https://www.youtube.com/watch?v=8DBhTXM_Br4",
-      "thumbnail": "https://i.ytimg.com/vi/8DBhTXM_Br4/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "There is an entire branch of math simply devoted to knots – and it has changed the world. We’ll rope you in. Head to https://brilliant.org/veritasium to start your free 30-day trial, and the first 200 people get 20% off an annual premium subscription.\n\nSpecial thanks to our Patreon supporters! Join ",
-      "published": 1693749254,
-      "published_str": "2023-09-03",
-      "embed_id": "8DBhTXM_Br4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423621.3328524
+  "_ts": 1784682790.186416
 }

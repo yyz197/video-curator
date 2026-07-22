@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_tG47av4O3nI",
+      "youtube_id": "tG47av4O3nI",
+      "source": "youtube",
+      "title": "How to make potato pierogis at home!",
+      "url": "https://www.youtube.com/watch?v=tG47av4O3nI",
+      "thumbnail": "https://i.ytimg.com/vi/tG47av4O3nI/mqdefault.jpg",
+      "author": "Binging with Babish",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "",
+      "published": 1784660408,
+      "published_str": "2026-07-21",
+      "embed_id": "tG47av4O3nI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eDKuE-LNddY",
       "youtube_id": "eDKuE-LNddY",
       "source": "youtube",
@@ -242,7 +267,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "美食旅游",
-      "description": "This episode is sponsored by Squarespace. Head to http://bit.ly/squarespacebabish to save 10% off your first purchase of a website or domain using code BABISH.\n\nOn this episode, we're making Brazil's most famous street food snacks: coxinhas!\n\nSpotify:\nhttps://open.spotify.com/track/5QxY7F5XUMg7RKHPp",
+      "description": "This episode is sponsored by Squarespace. Head to http://bit.ly/squarespacebabish to save 10% off your first purchase of a website or domain using code BABISH.\n\nOn this episode, we're making Brazil's most famous street food snacks: coxinhas!\n\nIntro Song Info\nArtist: Bear Garden\nSong: Electric Butter",
       "published": 1782565206,
       "published_str": "2026-06-27",
       "embed_id": "6wxIGsk1BFM",
@@ -342,7 +367,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "美食旅游",
-      "description": "This episode is sponsored by Cometeer. Get $20 off your first order here: http://cometeer.com/babish20\n\nOn this episode of With Babish, we're testing every ground meat hack!\n\nSpotify:\nhttps://open.spotify.com/track/5QxY7F5XUMg7RKHPpVSymc?si=vBvKt6YXSR-MRwOIbwSJdA\n\nBabish Cookware on Amazon: http://b",
+      "description": "This episode is sponsored by Cometeer. Get $20 off your first order here: http://cometeer.com/babish20\n\nOn this episode of With Babish, we're testing every ground meat hack!\n\nIntro Song Info\nArtist: Bear Garden\nSong: Electric Butterfly\nLabel: Bolero Recordings\n\nSpotify:\nhttps://open.spotify.com/trac",
       "published": 1781960403,
       "published_str": "2026-06-20",
       "embed_id": "MSc2l27unbY",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_xWiLl1A-BN8",
-      "youtube_id": "xWiLl1A-BN8",
-      "source": "youtube",
-      "title": "Classic American chicken fried steak",
-      "url": "https://www.youtube.com/watch?v=xWiLl1A-BN8",
-      "thumbnail": "https://i.ytimg.com/vi/xWiLl1A-BN8/mqdefault.jpg",
-      "author": "Binging with Babish",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "",
-      "published": 1754679665,
-      "published_str": "2025-08-08",
-      "embed_id": "xWiLl1A-BN8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423629.9241464
+  "_ts": 1784682797.7202804
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_sHnty7Zg0bY",
+      "youtube_id": "sHnty7Zg0bY",
+      "source": "youtube",
+      "title": "How political agendas influenced evolutionary biology | Adam Rutherford #shorts #evolutionarybiology",
+      "url": "https://www.youtube.com/watch?v=sHnty7Zg0bY",
+      "thumbnail": "https://i.ytimg.com/vi/sHnty7Zg0bY/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "🗣️ The field of biology as a broad discipline, but more specifically evolutionary biology and ultimately genetics, was founded not in parallel with political ideologies, but in service of them.\n\nThis clip is taken from Adam Rutherford's lecture, The dark history of genetics, which is available to wa",
+      "published": 1784563206,
+      "published_str": "2026-07-20",
+      "embed_id": "sHnty7Zg0bY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_s1h6hkFwZzY",
       "youtube_id": "s1h6hkFwZzY",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_WCj2qoHmC9E",
-      "youtube_id": "WCj2qoHmC9E",
-      "source": "youtube",
-      "title": "How AI Transformer Architecture works #aiexplained #transformerarchitecture #technology #shorts",
-      "url": "https://www.youtube.com/watch?v=WCj2qoHmC9E",
-      "thumbnail": "https://i.ytimg.com/vi/WCj2qoHmC9E/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Claire Malone joins us at the Ri to break down how AI can, and cannot, influence scientific discoveries. Full talk linked above.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCYeF244yNGuFefuFKqxIAXw/join\n\nSubscribe for regular science videos: http://bit.ly/RiSubscRibe\n\n",
-      "published": 1783958433,
-      "published_str": "2026-07-13",
-      "embed_id": "WCj2qoHmC9E",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423637.5912595
+  "_ts": 1784682805.2760332
 }

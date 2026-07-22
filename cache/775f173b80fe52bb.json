@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_2_VB-oc_pmk",
+      "youtube_id": "2_VB-oc_pmk",
+      "source": "youtube",
+      "title": "What happens to Schrödinger's cat?",
+      "url": "https://www.youtube.com/watch?v=2_VB-oc_pmk",
+      "thumbnail": "https://i.ytimg.com/vi/2_VB-oc_pmk/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Put a cat in a box with a radioactive atom. Add a radiation detector that triggers the release of poisonous cyanide gas.\n\nSchrödinger's thought experiment was supposed to be a criticism of quantum mechanics and is now one of it's best explainers.\n\nHere's why and what happens to the cat...",
+      "published": 1784647878,
+      "published_str": "2026-07-21",
+      "embed_id": "2_VB-oc_pmk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_RmHcX5oVzvs",
       "youtube_id": "RmHcX5oVzvs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Xhl5TzKZbpw",
-      "youtube_id": "Xhl5TzKZbpw",
-      "source": "youtube",
-      "title": "AD - Why are plants colder than their surroundings?",
-      "url": "https://www.youtube.com/watch?v=Xhl5TzKZbpw",
-      "thumbnail": "https://i.ytimg.com/vi/Xhl5TzKZbpw/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Plants can stay cooler than the air around them, even in full sun. How is that possible? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
-      "published": 1783429475,
-      "published_str": "2026-07-07",
-      "embed_id": "Xhl5TzKZbpw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423637.3463383
+  "_ts": 1784682804.9897234
 }

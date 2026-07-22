@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_yNmTV0jAQXo",
+      "youtube_id": "yNmTV0jAQXo",
+      "source": "youtube",
+      "title": "The Psychology of Anxious Attachment",
+      "url": "https://www.youtube.com/watch?v=yNmTV0jAQXo",
+      "thumbnail": "https://i.ytimg.com/vi/yNmTV0jAQXo/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nSpot red flags early. This film reveals 6+2 key questions to assess a partner's emotional maturity. Avoid relationship pitfalls and find a truly grown-up connection. #EmotionalMaturity #Relationships #DatingAdvi",
+      "published": 1784466017,
+      "published_str": "2026-07-19",
+      "embed_id": "yNmTV0jAQXo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DnKQ7Wc9A0w",
       "youtube_id": "DnKQ7Wc9A0w",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_LRvydNSQNsc",
-      "youtube_id": "LRvydNSQNsc",
-      "source": "youtube",
-      "title": "Are You Neurotic or Psychotic? How to Tell the Difference",
-      "url": "https://www.youtube.com/watch?v=LRvydNSQNsc",
-      "thumbnail": "https://i.ytimg.com/vi/LRvydNSQNsc/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nWe hear the terms \"neurotic\" and \"psychotic\" used casually in daily conversation, often to describe someone’s behavior or mood. But beyond the stigma, what do these clinical terms actually tell us about the huma",
-      "published": 1783515617,
-      "published_str": "2026-07-08",
-      "embed_id": "LRvydNSQNsc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423638.2969694
+  "_ts": 1784682805.8029778
 }

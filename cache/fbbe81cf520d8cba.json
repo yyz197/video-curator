@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_sHnty7Zg0bY",
+      "youtube_id": "sHnty7Zg0bY",
+      "source": "youtube",
+      "title": "How political agendas influenced evolutionary biology | Adam Rutherford #shorts #evolutionarybiology",
+      "url": "https://www.youtube.com/watch?v=sHnty7Zg0bY",
+      "thumbnail": "https://i.ytimg.com/vi/sHnty7Zg0bY/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "🗣️ The field of biology as a broad discipline, but more specifically evolutionary biology and ultimately genetics, was founded not in parallel with political ideologies, but in service of them.\n\nThis clip is taken from Adam Rutherford's lecture, The dark history of genetics, which is available to wa",
+      "published": 1784563206,
+      "published_str": "2026-07-20",
+      "embed_id": "sHnty7Zg0bY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_s1h6hkFwZzY",
       "youtube_id": "s1h6hkFwZzY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gzsLajj1yZQ",
-      "youtube_id": "gzsLajj1yZQ",
-      "source": "youtube",
-      "title": "Quantum tunnelling with Jim Al Khalili #shorts  #science #quantumphysicsexplained #quantumphysics",
-      "url": "https://www.youtube.com/watch?v=gzsLajj1yZQ",
-      "thumbnail": "https://i.ytimg.com/vi/gzsLajj1yZQ/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Jim Al-Khalili explores emerging technologies powering the future of quantum, and looks at how we got here.\n\nThis Discourse was recorded at the Ri on 7 November 2025, in partnership with the Institute of Physics.\n---\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCYeF244y",
-      "published": 1773673273,
-      "published_str": "2026-03-16",
-      "embed_id": "gzsLajj1yZQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784423622.7772877
+  "_ts": 1784682791.5912817
 }
