@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6XPlmCDNLNc",
+      "youtube_id": "6XPlmCDNLNc",
+      "source": "youtube",
+      "title": "The 64 sugar cubes puzzle",
+      "url": "https://www.youtube.com/watch?v=6XPlmCDNLNc",
+      "thumbnail": "https://i.ytimg.com/vi/6XPlmCDNLNc/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "See all monthly puzzles: https://momath.org/mindbenders/",
+      "published": 1784905539,
+      "published_str": "2026-07-24",
+      "embed_id": "6XPlmCDNLNc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_GlYgs6v2YfU",
       "youtube_id": "GlYgs6v2YfU",
       "source": "youtube",
@@ -17,7 +42,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "Where the loss function for training LLMs comes from.\nJob opportunities aligned to this audience: https://3b1b.co/talent\nEarly views and other perks for supporters: https://3b1b.co/support\nHome page: https://www.3blue1brown.com\n\nPart 1: https://youtu.be/l6DKRf-fAAM\n\nManim animations by Aaron Gostein",
+      "description": "Where the loss function for training LLMs comes from.\nJob opportunities aligned to this audience: https://3b1b.co/talent\nEarly views and other perks for supporters: https://3b1b.co/support\nHome page: https://www.3blue1brown.com\n\nPart 1: https://youtu.be/l6DKRf-fAAM\n\nIf you want to learn more about L",
       "published": 1784202964,
       "published_str": "2026-07-16",
       "embed_id": "GlYgs6v2YfU",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gxAaO2rsdIs",
-      "youtube_id": "gxAaO2rsdIs",
-      "source": "youtube",
-      "title": "Simulating an epidemic",
-      "url": "https://www.youtube.com/watch?v=gxAaO2rsdIs",
-      "thumbnail": "https://i.ytimg.com/vi/gxAaO2rsdIs/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Experiments with toy SIR models\nHelp fund future projects: https://www.patreon.com/3blue1brown\nAn equally valuable form of support is to simply share some of the videos.\nSpecial thanks to these supporters: http://3b1b.co/sir-thanks\nHome page: https://www.3blue1brown.com\r\n\r\nAwesome fan-made interacti",
-      "published": 1585338450,
-      "published_str": "2020-03-27",
-      "embed_id": "gxAaO2rsdIs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784682793.5644193
+  "_ts": 1784942233.2006176
 }

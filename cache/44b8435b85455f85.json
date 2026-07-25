@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nejA_fqBcSA",
+      "youtube_id": "nejA_fqBcSA",
+      "source": "youtube",
+      "title": "Hitler's Death Army: The Complete Story Of The Das Reich SS Division",
+      "url": "https://www.youtube.com/watch?v=nejA_fqBcSA",
+      "thumbnail": "https://i.ytimg.com/vi/nejA_fqBcSA/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "On June 6, 1944, the elite Second SS Panzer Division Das Reich was ordered to the Normandy front. As they marched across France, they left a horrific trail of massacres, including the complete destruction of Oradour-sur-Glane. Delayed by courageous French Resistance and SOE operatives like Violette ",
+      "published": 1784840431,
+      "published_str": "2026-07-23",
+      "embed_id": "nejA_fqBcSA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_c_giUVK6bR8",
       "youtube_id": "c_giUVK6bR8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_fW5qky7QKI8",
-      "youtube_id": "fW5qky7QKI8",
-      "source": "youtube",
-      "title": "Uncensored Footage From The Battle Of The Bulge",
-      "url": "https://www.youtube.com/watch?v=fW5qky7QKI8",
-      "thumbnail": "https://i.ytimg.com/vi/fW5qky7QKI8/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "By December 1944, the Allies believed the German Army was broken. While US troops prepared for a quiet Christmas in the Ardennes, Hitler was secretly massing 46,000 men and 500 tanks for a final, desperate gamble. From the supply struggles of the Red Ball Express to the brutal stalemate in the Huert",
-      "published": 1768946447,
-      "published_str": "2026-01-20",
-      "embed_id": "fW5qky7QKI8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784682795.3309221
+  "_ts": 1784942236.112774
 }

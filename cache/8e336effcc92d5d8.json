@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nejA_fqBcSA",
+      "youtube_id": "nejA_fqBcSA",
+      "source": "youtube",
+      "title": "Hitler's Death Army: The Complete Story Of The Das Reich SS Division",
+      "url": "https://www.youtube.com/watch?v=nejA_fqBcSA",
+      "thumbnail": "https://i.ytimg.com/vi/nejA_fqBcSA/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "On June 6, 1944, the elite Second SS Panzer Division Das Reich was ordered to the Normandy front. As they marched across France, they left a horrific trail of massacres, including the complete destruction of Oradour-sur-Glane. Delayed by courageous French Resistance and SOE operatives like Violette ",
+      "published": 1784840431,
+      "published_str": "2026-07-23",
+      "embed_id": "nejA_fqBcSA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_c_giUVK6bR8",
       "youtube_id": "c_giUVK6bR8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_9GOJVBQ1jUs",
-      "youtube_id": "9GOJVBQ1jUs",
-      "source": "youtube",
-      "title": "The Complex Legacy Of Alexander The Great: Conquering The Known World In 12 Years",
-      "url": "https://www.youtube.com/watch?v=9GOJVBQ1jUs",
-      "thumbnail": "https://i.ytimg.com/vi/9GOJVBQ1jUs/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "Discover the epic rise and sudden fall of history's ultimate military mastermind: Alexander the Great. From the brutal assassination of his father, King Philip II, to outmaneuvering massive Persian armies at Gaugamela against five-to-one odds, this premium documentary uncovers the tactical genius be",
-      "published": 1784322031,
-      "published_str": "2026-07-17",
-      "embed_id": "9GOJVBQ1jUs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784682806.7222834
+  "_ts": 1784942247.947264
 }

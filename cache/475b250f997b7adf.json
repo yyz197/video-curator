@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_CnSYsUhlx14",
+      "youtube_id": "CnSYsUhlx14",
+      "source": "youtube",
+      "title": "Quantum Machine Learning - Computerphile",
+      "url": "https://www.youtube.com/watch?v=CnSYsUhlx14",
+      "thumbnail": "https://i.ytimg.com/vi/CnSYsUhlx14/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Exploring how quantum computing can have an impact on the established area of Machine Learning. Professor Mohammad Reza Mousavi is a Professor of Software Engineering in the Department of Informatics at King's College London.\n\nComputerphile is supported by Jane Street. Learn more about them (and exc",
+      "published": 1784811632,
+      "published_str": "2026-07-23",
+      "embed_id": "CnSYsUhlx14",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2Q6OvYjOJi0",
       "youtube_id": "2Q6OvYjOJi0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_2jJeSgO_MGo",
-      "youtube_id": "2jJeSgO_MGo",
-      "source": "youtube",
-      "title": "Is it Possible to Block Childrens' Access to Social Media? - Computerphile",
-      "url": "https://www.youtube.com/watch?v=2jJeSgO_MGo",
-      "thumbnail": "https://i.ytimg.com/vi/2jJeSgO_MGo/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "With the UK planning to follow Australia in a ban on social media for under 16s, we ask how it might work? Dr Mike Pound is an Associate Professor at the University of Nottingham.\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://jane-s",
-      "published": 1781620204,
-      "published_str": "2026-06-16",
-      "embed_id": "2jJeSgO_MGo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784682806.0201619
+  "_ts": 1784942247.1552017
 }

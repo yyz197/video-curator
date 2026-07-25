@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_EIk395a-tds",
+      "youtube_id": "EIk395a-tds",
+      "source": "youtube",
+      "title": "Why You’re Not Financially Free (Yet)",
+      "url": "https://www.youtube.com/watch?v=EIk395a-tds",
+      "thumbnail": "https://i.ytimg.com/vi/EIk395a-tds/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Music by Epidemic Sound. Click the link: https://share.epidemicsound.com/aliJUL26\nUse code ALI50 at checkout to get 50% off for 2 months (valid until Aug 30)\n\n🚀 Lifestyle Business Academy: Our MBA alternative to build a 6-figure online business → https://lifestylebusiness.com/academy?utm_source=yout",
+      "published": 1784821366,
+      "published_str": "2026-07-23",
+      "embed_id": "EIk395a-tds",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_FktgMN390Xo",
       "youtube_id": "FktgMN390Xo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_hJfJMT-yfr0",
-      "youtube_id": "hJfJMT-yfr0",
-      "source": "youtube",
-      "title": "Top 3 in the world for typing 🤯",
-      "url": "https://www.youtube.com/watch?v=hJfJMT-yfr0",
-      "thumbnail": "https://i.ytimg.com/vi/hJfJMT-yfr0/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "I type at 157 words per minute. That's top 3 in the world (in the last 24 hours, at least).\n\nBut speaking is still more than twice as fast 🤯\n\nI raced myself typing vs dictating the exact same message, and typing took ~45 seconds while speaking took about 20 seconds. Even with absurdly fast typing, y",
-      "published": 1783062020,
-      "published_str": "2026-07-03",
-      "embed_id": "hJfJMT-yfr0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784682807.3701804
+  "_ts": 1784942248.6671271
 }

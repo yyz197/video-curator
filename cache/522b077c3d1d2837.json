@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6XPlmCDNLNc",
+      "youtube_id": "6XPlmCDNLNc",
+      "source": "youtube",
+      "title": "The 64 sugar cubes puzzle",
+      "url": "https://www.youtube.com/watch?v=6XPlmCDNLNc",
+      "thumbnail": "https://i.ytimg.com/vi/6XPlmCDNLNc/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "See all monthly puzzles: https://momath.org/mindbenders/",
+      "published": 1784905539,
+      "published_str": "2026-07-24",
+      "embed_id": "6XPlmCDNLNc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_GlYgs6v2YfU",
       "youtube_id": "GlYgs6v2YfU",
       "source": "youtube",
@@ -17,7 +42,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "Where the loss function for training LLMs comes from.\nJob opportunities aligned to this audience: https://3b1b.co/talent\nEarly views and other perks for supporters: https://3b1b.co/support\nHome page: https://www.3blue1brown.com\n\nPart 1: https://youtu.be/l6DKRf-fAAM\n\nManim animations by Aaron Gostein",
+      "description": "Where the loss function for training LLMs comes from.\nJob opportunities aligned to this audience: https://3b1b.co/talent\nEarly views and other perks for supporters: https://3b1b.co/support\nHome page: https://www.3blue1brown.com\n\nPart 1: https://youtu.be/l6DKRf-fAAM\n\nIf you want to learn more about L",
       "published": 1784202964,
       "published_str": "2026-07-16",
       "embed_id": "GlYgs6v2YfU",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_l6DKRf-fAAM",
-      "youtube_id": "l6DKRf-fAAM",
-      "source": "youtube",
-      "title": "Reinventing Entropy | Compression is Intelligence Part 1",
-      "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
-      "thumbnail": "https://i.ytimg.com/vi/l6DKRf-fAAM/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "How to study the compressibility of language.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderson\nShannon’s story, as well as those for various pi creatures, by Mi",
-      "published": 1780832991,
-      "published_str": "2026-06-07",
-      "embed_id": "l6DKRf-fAAM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784682805.863447
+  "_ts": 1784942246.6915753
 }
