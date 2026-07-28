@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_tqnBeuWoOEk",
+      "youtube_id": "tqnBeuWoOEk",
+      "source": "youtube",
+      "title": "Shingles Vaccines Prevent Dementia",
+      "url": "https://www.youtube.com/watch?v=tqnBeuWoOEk",
+      "thumbnail": "https://i.ytimg.com/vi/tqnBeuWoOEk/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "For decades, scientists have known that there was a weird link between shingles and dementia. But recent studies have made the connection clearer than ever—and established that the shingles vaccine may prevent the cognitive decline. \n\nHosted by: @okidokiboki (she/her)\n----------\nSupport us for $8/mo",
+      "published": 1785171630,
+      "published_str": "2026-07-27",
+      "embed_id": "tqnBeuWoOEk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ZPoKkl4dvZo",
       "youtube_id": "ZPoKkl4dvZo",
       "source": "youtube",
@@ -42,7 +67,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "This video was sponsored by Breakthrough Energy Ventures.\n\nWindow technology has made some major advances over the millennia. Like adding screens to keep bugs out, and double glazing to keep heat in. But scientists and engineers are still iterating and innovating to make windows even better (and als",
+      "description": "This video was sponsored by Breakthrough Energy.\n\nWindow technology has made some major advances over the millennia. Like adding screens to keep bugs out, and double glazing to keep heat in. But scientists and engineers are still iterating and innovating to make windows even better (and also making ",
       "published": 1784739604,
       "published_str": "2026-07-22",
       "embed_id": "yi90GFBgQ60",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_6ig3Zp-Mxp0",
-      "youtube_id": "6ig3Zp-Mxp0",
-      "source": "youtube",
-      "title": "The Time England Ran Out of Bones",
-      "url": "https://www.youtube.com/watch?v=6ig3Zp-Mxp0",
-      "thumbnail": "https://i.ytimg.com/vi/6ig3Zp-Mxp0/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Get your $5 sign-up bonus at  http://privacy.com/scishow. You can use it on your first purchase!  Privacy has a free plan with no transaction fees for domestic purchases. Protect your financial identity online with virtual cards.\n\nBritain's population exploded during the Industrial Revolution. To su",
-      "published": 1784221213,
-      "published_str": "2026-07-16",
-      "embed_id": "6ig3Zp-Mxp0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942245.5039706
+  "_ts": 1785201124.0156834
 }

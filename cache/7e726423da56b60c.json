@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_O3foXkb1Zos",
+      "youtube_id": "O3foXkb1Zos",
+      "source": "youtube",
+      "title": "AI won't necessarily displace skilled devs - it'll just move their value up the chain",
+      "url": "https://www.youtube.com/watch?v=O3foXkb1Zos",
+      "thumbnail": "https://i.ytimg.com/vi/O3foXkb1Zos/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "AI won't necessarily displace skilled devs - it'll just move their value up the chain. Zubin discusses this with Quincy on the freeCodeCamp podcast.",
+      "published": 1784982754,
+      "published_str": "2026-07-25",
+      "embed_id": "O3foXkb1Zos",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_bYgphDEWwvs",
       "youtube_id": "bYgphDEWwvs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NCfxtLZQSzA",
-      "youtube_id": "NCfxtLZQSzA",
-      "source": "youtube",
-      "title": "As a freelance dev, treat every email or phone call as if it could become 10 more",
-      "url": "https://www.youtube.com/watch?v=NCfxtLZQSzA",
-      "thumbnail": "https://i.ytimg.com/vi/NCfxtLZQSzA/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "As a freelance dev, treat every email or phone call as if it could become 10 more",
-      "published": 1773578601,
-      "published_str": "2026-03-15",
-      "embed_id": "NCfxtLZQSzA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942234.5655363
+  "_ts": 1785201110.5313928
 }

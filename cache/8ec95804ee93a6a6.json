@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nGriC9oEz9w",
+      "youtube_id": "nGriC9oEz9w",
+      "source": "youtube",
+      "title": "The Need to Process Our Emotions",
+      "url": "https://www.youtube.com/watch?v=nGriC9oEz9w",
+      "thumbnail": "https://i.ytimg.com/vi/nGriC9oEz9w/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1785070807,
+      "published_str": "2026-07-26",
+      "embed_id": "nGriC9oEz9w",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_EyHPvu4aIJY",
       "youtube_id": "EyHPvu4aIJY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ZBB3RW3mAWU",
-      "youtube_id": "ZBB3RW3mAWU",
-      "source": "youtube",
-      "title": "A Test to Work Out if You're a Good Person #animation #psychology #theschooloflife",
-      "url": "https://www.youtube.com/watch?v=ZBB3RW3mAWU",
-      "thumbnail": "https://i.ytimg.com/vi/ZBB3RW3mAWU/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Whether or not we count as a good person depends on an unexpected but crucial ingredient. Find out more about whether you qualify by watching the film.\n\nEnjoying our Youtube videos? Get full access to all our audio content, videos, and thousands of thought-provoking articles, conversation cards and ",
-      "published": 1753275671,
-      "published_str": "2025-07-23",
-      "embed_id": "ZBB3RW3mAWU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942232.6838918
+  "_ts": 1785201109.204679
 }

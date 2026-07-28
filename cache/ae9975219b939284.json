@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_dGwLD9SMcFI",
+      "youtube_id": "dGwLD9SMcFI",
+      "source": "youtube",
+      "title": "This Step is a Non-Negotiable When Making Peking Duck",
+      "url": "https://www.youtube.com/watch?v=dGwLD9SMcFI",
+      "thumbnail": "https://i.ytimg.com/vi/dGwLD9SMcFI/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "What makes Peking duck so incredibly crispy? It starts long before roasting. Watch as the duck is blanched to tighten the skin, remove impurities, and prepare it for even drying, one of the most important steps behind perfectly crisp, golden Peking duck.\n\nWant Bon Appétit shirts, hats and more? http",
+      "published": 1785168001,
+      "published_str": "2026-07-27",
+      "embed_id": "dGwLD9SMcFI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_n1-RIQYlKUU",
       "youtube_id": "n1-RIQYlKUU",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_yXmXmEhVlgA",
-      "youtube_id": "yXmXmEhVlgA",
-      "source": "youtube",
-      "title": "You've Never Seen Fish Cut This Clean",
-      "url": "https://www.youtube.com/watch?v=yXmXmEhVlgA",
-      "thumbnail": "https://i.ytimg.com/vi/yXmXmEhVlgA/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "You've never seen anyone cut up a fish as clean Lam Law Ping–one of the last chefs making fish balls by hand in Hong Kong at Tak Hing Fish Ball Company.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_con",
-      "published": 1762189209,
-      "published_str": "2025-11-03",
-      "embed_id": "yXmXmEhVlgA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942239.9055717
+  "_ts": 1785201116.5021276
 }

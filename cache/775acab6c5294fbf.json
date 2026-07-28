@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_vS6HEes8daw",
+      "youtube_id": "vS6HEes8daw",
+      "source": "youtube",
+      "title": "The PROBLEM with Capitalism - Smarter Every Day 316",
+      "url": "https://www.youtube.com/watch?v=vS6HEes8daw",
+      "thumbnail": "https://i.ytimg.com/vi/vS6HEes8daw/mqdefault.jpg",
+      "author": "SmarterEveryDay",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Get a Smarter Scrubber Here: http://smarterscrubber.com\n\nInterested in Wholesale, or helping us tell the story? Here's a link:\nhttps://forms.gle/XFrLTa5b8kxSvPnu8\n\nI would like to thank the Patrons of Smarter Every Day. They knew about this project early and helped make it happen.\nhttp://www.patreon",
+      "published": 1785074436,
+      "published_str": "2026-07-26",
+      "embed_id": "vS6HEes8daw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_5lCWqEFVzbY",
       "youtube_id": "5lCWqEFVzbY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_cK2YzUONFVw",
-      "youtube_id": "cK2YzUONFVw",
-      "source": "youtube",
-      "title": "My Sister Got Malaria ....(And I Didn't) - Smarter Every Day 167",
-      "url": "https://www.youtube.com/watch?v=cK2YzUONFVw",
-      "thumbnail": "https://i.ytimg.com/vi/cK2YzUONFVw/mqdefault.jpg",
-      "author": "SmarterEveryDay",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Behind the Scenes: https://youtu.be/kGv4wD1vpBA\nSecond Channel: http://bit.ly/Subscribe2SED2\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nAlso, if you’re interested in a Smarter Every Day shirt etc. they’re really soft and you can get there here: https://www.smartereveryday.com/store\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nM",
-      "published": 1487090811,
-      "published_str": "2017-02-14",
-      "embed_id": "cK2YzUONFVw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942228.695355
+  "_ts": 1785201105.8129065
 }

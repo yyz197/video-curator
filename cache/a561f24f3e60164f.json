@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nGriC9oEz9w",
+      "youtube_id": "nGriC9oEz9w",
+      "source": "youtube",
+      "title": "The Need to Process Our Emotions",
+      "url": "https://www.youtube.com/watch?v=nGriC9oEz9w",
+      "thumbnail": "https://i.ytimg.com/vi/nGriC9oEz9w/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1785070807,
+      "published_str": "2026-07-26",
+      "embed_id": "nGriC9oEz9w",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_EyHPvu4aIJY",
       "youtube_id": "EyHPvu4aIJY",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__HqfzLk0QxU",
-      "youtube_id": "_HqfzLk0QxU",
-      "source": "youtube",
-      "title": "Why You Want to Run Away From a Good Relationship",
-      "url": "https://www.youtube.com/watch?v=_HqfzLk0QxU",
-      "thumbnail": "https://i.ytimg.com/vi/_HqfzLk0QxU/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ Everything is perfect. You’ve met someone wonderful, the connection is deep, and the future looks bright—so why does the sudden urge to run away feel so overwhelming? You aren't crazy, and you aren't alone. For m",
-      "published": 1784120407,
-      "published_str": "2026-07-15",
-      "embed_id": "_HqfzLk0QxU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942246.4598992
+  "_ts": 1785201124.721622
 }

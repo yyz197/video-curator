@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_VFCfvlJ2g3c",
+      "youtube_id": "VFCfvlJ2g3c",
+      "source": "youtube",
+      "title": "Making money online basically comes down to two things...",
+      "url": "https://www.youtube.com/watch?v=VFCfvlJ2g3c",
+      "thumbnail": "https://i.ytimg.com/vi/VFCfvlJ2g3c/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Making money online basically comes down to two things - building something people want, and then actually selling it to them.\n\nMost of us love the building part. It's fun, it's creative, you can use AI, whatever. But it's the selling that determines whether you're making money or just doing a hobby",
+      "published": 1785069030,
+      "published_str": "2026-07-26",
+      "embed_id": "VFCfvlJ2g3c",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_EIk395a-tds",
       "youtube_id": "EIk395a-tds",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_6LZMamuYjjs",
-      "youtube_id": "6LZMamuYjjs",
-      "source": "youtube",
-      "title": "The Surprising Truth About Money and Luck",
-      "url": "https://www.youtube.com/watch?v=6LZMamuYjjs",
-      "thumbnail": "https://i.ytimg.com/vi/6LZMamuYjjs/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Learn how to be financially free (free workshop): https://go.lifestylebusiness.com/yts260703",
-      "published": 1783072838,
-      "published_str": "2026-07-03",
-      "embed_id": "6LZMamuYjjs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942248.6671271
+  "_ts": 1785201126.8380866
 }

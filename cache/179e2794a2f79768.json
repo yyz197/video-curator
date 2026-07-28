@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_O3foXkb1Zos",
+      "youtube_id": "O3foXkb1Zos",
+      "source": "youtube",
+      "title": "AI won't necessarily displace skilled devs - it'll just move their value up the chain",
+      "url": "https://www.youtube.com/watch?v=O3foXkb1Zos",
+      "thumbnail": "https://i.ytimg.com/vi/O3foXkb1Zos/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "AI won't necessarily displace skilled devs - it'll just move their value up the chain. Zubin discusses this with Quincy on the freeCodeCamp podcast.",
+      "published": 1784982754,
+      "published_str": "2026-07-25",
+      "embed_id": "O3foXkb1Zos",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_bYgphDEWwvs",
       "youtube_id": "bYgphDEWwvs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XgqWCiOVh7A",
-      "youtube_id": "XgqWCiOVh7A",
-      "source": "youtube",
-      "title": "You've likely heard \"fake it til you make it\"...well, Mark has done that, and talks about it here.",
-      "url": "https://www.youtube.com/watch?v=XgqWCiOVh7A",
-      "thumbnail": "https://i.ytimg.com/vi/XgqWCiOVh7A/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "You've probably heard the phrase \"fake it 'til you make it\", right? Well, Mark was once asked to teach a college course...that started the next day. He decided to go for it, and the students thought he'd been doing it for years. The lesson: sometimes you say yes and then figure out how to do it.",
-      "published": 1784290716,
-      "published_str": "2026-07-17",
-      "embed_id": "XgqWCiOVh7A",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942247.1933217
+  "_ts": 1785201125.1404974
 }

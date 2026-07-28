@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_tqnBeuWoOEk",
+      "youtube_id": "tqnBeuWoOEk",
+      "source": "youtube",
+      "title": "Shingles Vaccines Prevent Dementia",
+      "url": "https://www.youtube.com/watch?v=tqnBeuWoOEk",
+      "thumbnail": "https://i.ytimg.com/vi/tqnBeuWoOEk/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "For decades, scientists have known that there was a weird link between shingles and dementia. But recent studies have made the connection clearer than ever—and established that the shingles vaccine may prevent the cognitive decline. \n\nHosted by: @okidokiboki (she/her)\n----------\nSupport us for $8/mo",
+      "published": 1785171630,
+      "published_str": "2026-07-27",
+      "embed_id": "tqnBeuWoOEk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ZPoKkl4dvZo",
       "youtube_id": "ZPoKkl4dvZo",
       "source": "youtube",
@@ -42,7 +67,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "This video was sponsored by Breakthrough Energy Ventures.\n\nWindow technology has made some major advances over the millennia. Like adding screens to keep bugs out, and double glazing to keep heat in. But scientists and engineers are still iterating and innovating to make windows even better (and als",
+      "description": "This video was sponsored by Breakthrough Energy.\n\nWindow technology has made some major advances over the millennia. Like adding screens to keep bugs out, and double glazing to keep heat in. But scientists and engineers are still iterating and innovating to make windows even better (and also making ",
       "published": 1784739604,
       "published_str": "2026-07-22",
       "embed_id": "yi90GFBgQ60",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_pbgtGJIlcBU",
-      "youtube_id": "pbgtGJIlcBU",
-      "source": "youtube",
-      "title": "Live-stream SciShow TTRPG",
-      "url": "https://www.youtube.com/watch?v=pbgtGJIlcBU",
-      "thumbnail": "https://i.ytimg.com/vi/pbgtGJIlcBU/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Adventure called, and valiant members of Team SciShow and Friends have answered! Tune in for a special TTRPG event featuring some of the crew behind your favorite SciShow (and Crash Course!) videos as we explore, puzzle, and fight our way through a custom one-shot. Who knows what curiosities we may ",
-      "published": 1763239314,
-      "published_str": "2025-11-15",
-      "embed_id": "pbgtGJIlcBU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942229.2749376
+  "_ts": 1785201106.4340098
 }

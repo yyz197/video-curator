@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_dGwLD9SMcFI",
+      "youtube_id": "dGwLD9SMcFI",
+      "source": "youtube",
+      "title": "This Step is a Non-Negotiable When Making Peking Duck",
+      "url": "https://www.youtube.com/watch?v=dGwLD9SMcFI",
+      "thumbnail": "https://i.ytimg.com/vi/dGwLD9SMcFI/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "What makes Peking duck so incredibly crispy? It starts long before roasting. Watch as the duck is blanched to tighten the skin, remove impurities, and prepare it for even drying, one of the most important steps behind perfectly crisp, golden Peking duck.\n\nWant Bon Appétit shirts, hats and more? http",
+      "published": 1785168001,
+      "published_str": "2026-07-27",
+      "embed_id": "dGwLD9SMcFI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_n1-RIQYlKUU",
       "youtube_id": "n1-RIQYlKUU",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-na4KkuoUVo",
-      "youtube_id": "-na4KkuoUVo",
-      "source": "youtube",
-      "title": "Why Chefs Inflate Peking Ducks",
-      "url": "https://www.youtube.com/watch?v=-na4KkuoUVo",
-      "thumbnail": "https://i.ytimg.com/vi/-na4KkuoUVo/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Why do chefs pump air underneath the skin of a Peking duck? This traditional technique helps separate the skin from the meat so the fat can render during roasting, creating the signature glassy, crispy skin that makes authentic Peking duck so famous.\n\nWant Bon Appétit shirts, hats and more? https://",
-      "published": 1784304009,
-      "published_str": "2026-07-17",
-      "embed_id": "-na4KkuoUVo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1784942250.6588218
+  "_ts": 1785201128.9929364
 }
