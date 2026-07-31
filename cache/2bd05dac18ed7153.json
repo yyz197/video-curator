@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6XONgUfvoBo",
+      "youtube_id": "6XONgUfvoBo",
+      "source": "youtube",
+      "title": "Meet the team member we never talk about",
+      "url": "https://www.youtube.com/watch?v=6XONgUfvoBo",
+      "thumbnail": "https://i.ytimg.com/vi/6XONgUfvoBo/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Our team had a role that nobody could fill.\n\nWe needed someone who could pull data across all our apps, chase team members for numbers they weren't submitting, and handle all the operational stuff that just piles up. Basically do the boring work no one else wanted to do 😅\n\nSo we hired Viktor. Viktor",
+      "published": 1785416981,
+      "published_str": "2026-07-30",
+      "embed_id": "6XONgUfvoBo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_VFCfvlJ2g3c",
       "youtube_id": "VFCfvlJ2g3c",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_L7vrYf-Mgdg",
-      "youtube_id": "L7vrYf-Mgdg",
-      "source": "youtube",
-      "title": "Time-Saving Habits",
-      "url": "https://www.youtube.com/watch?v=L7vrYf-Mgdg",
-      "thumbnail": "https://i.ytimg.com/vi/L7vrYf-Mgdg/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Master deep focus in 7 days - my free crash course to transform your productivity: https://go.aliabdaal.com/yts260704",
-      "published": 1783159207,
-      "published_str": "2026-07-04",
-      "embed_id": "L7vrYf-Mgdg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785201126.8380866
+  "_ts": 1785460842.8493073
 }

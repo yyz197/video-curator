@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_43FZtdF2RcY",
+      "youtube_id": "43FZtdF2RcY",
+      "source": "youtube",
+      "title": "Rebecca Winthrop | Rethinking the Purpose of Education in the Age of AI | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=43FZtdF2RcY",
+      "thumbnail": "https://i.ytimg.com/vi/43FZtdF2RcY/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Leading global authority on education, Brookings scholar and an adjunct professor at Georgetown University Rebecca Winthrop discusses the intersection of AI and technology in learning through a balanced and deeply considered lens. \n\nAs an expert on the fundamental purpose of education, she speaks wi",
+      "published": 1785427224,
+      "published_str": "2026-07-30",
+      "embed_id": "43FZtdF2RcY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_zKMWLs3S9yg",
       "youtube_id": "zKMWLs3S9yg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3_tHELe8NUg",
-      "youtube_id": "3_tHELe8NUg",
-      "source": "youtube",
-      "title": "Allen Downey on using data visualizations instead of equations to help you recognize errors",
-      "url": "https://www.youtube.com/watch?v=3_tHELe8NUg",
-      "thumbnail": "https://i.ytimg.com/vi/3_tHELe8NUg/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Watch the full video here: https://youtu.be/8rUm46mk0Yo #shorts",
-      "published": 1715025601,
-      "published_str": "2024-05-06",
-      "embed_id": "3_tHELe8NUg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785201109.0163136
+  "_ts": 1785460828.9521744
 }

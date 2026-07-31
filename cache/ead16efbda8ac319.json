@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_jmuaFh8YFcI",
+      "youtube_id": "jmuaFh8YFcI",
+      "source": "youtube",
+      "title": "It's been 7 years...",
+      "url": "https://www.youtube.com/watch?v=jmuaFh8YFcI",
+      "thumbnail": "https://i.ytimg.com/vi/jmuaFh8YFcI/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Today marks 7 years since the passing of Grant. This year we wanted to do something different in his memory and we have something else special to share with you all.\n\n\nGrab your Dare to Live Merch : https://healingheartsgetaways.org/tkorshop\n\nHealing Hearts Getaways Foundation: https://healinghearts",
+      "published": 1785357004,
+      "published_str": "2026-07-29",
+      "embed_id": "jmuaFh8YFcI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_tF2vKwj_dks",
       "youtube_id": "tF2vKwj_dks",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_hbA8CguZDZ4",
-      "youtube_id": "hbA8CguZDZ4",
-      "source": "youtube",
-      "title": "SUPER SIMPLE MAGNET MOTOR GUIDE",
-      "url": "https://www.youtube.com/watch?v=hbA8CguZDZ4",
-      "thumbnail": "https://i.ytimg.com/vi/hbA8CguZDZ4/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In this video we show a quick demonstration on how you can create your very own magnet motor. \n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.",
-      "published": 1739574043,
-      "published_str": "2025-02-14",
-      "embed_id": "hbA8CguZDZ4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785201107.007964
+  "_ts": 1785460826.7324703
 }

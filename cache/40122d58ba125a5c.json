@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_43FZtdF2RcY",
+      "youtube_id": "43FZtdF2RcY",
+      "source": "youtube",
+      "title": "Rebecca Winthrop | Rethinking the Purpose of Education in the Age of AI | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=43FZtdF2RcY",
+      "thumbnail": "https://i.ytimg.com/vi/43FZtdF2RcY/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Leading global authority on education, Brookings scholar and an adjunct professor at Georgetown University Rebecca Winthrop discusses the intersection of AI and technology in learning through a balanced and deeply considered lens. \n\nAs an expert on the fundamental purpose of education, she speaks wi",
+      "published": 1785427224,
+      "published_str": "2026-07-30",
+      "embed_id": "43FZtdF2RcY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_zKMWLs3S9yg",
       "youtube_id": "zKMWLs3S9yg",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_YG5w939A9yQ",
-      "youtube_id": "YG5w939A9yQ",
-      "source": "youtube",
-      "title": "Susie Wolff | Driven | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=YG5w939A9yQ",
-      "thumbnail": "https://i.ytimg.com/vi/YG5w939A9yQ/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "F1 Academy’s Managing Director, former professional racing driver and one of the most respected women in motorsport Susie Wolff discusses her book Driven, an inside look at the competitive world of Formula One and trailblazer Susie Wolff's 20-year career, taking readers from the driver’s seat and th",
-      "published": 1778688050,
-      "published_str": "2026-05-13",
-      "embed_id": "YG5w939A9yQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785201124.6974928
+  "_ts": 1785460841.0791895
 }
