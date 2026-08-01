@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_cDKPbMaLTA4",
+      "youtube_id": "cDKPbMaLTA4",
+      "source": "youtube",
+      "title": "Recreating ITS - Computerphile",
+      "url": "https://www.youtube.com/watch?v=cDKPbMaLTA4",
+      "thumbnail": "https://i.ytimg.com/vi/cDKPbMaLTA4/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The DEC PDP computers from decades ago now comfortably run on a cheap computer such as a Raspberry Pi. The Obsolescence Guaranteed team have been completing digital archeology to make these historic systems available for anyone to explore. \n\nLars Brinkhoff and Oscar Vermeulen are part of Obsolescenc",
+      "published": 1785510010,
+      "published_str": "2026-07-31",
+      "embed_id": "cDKPbMaLTA4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_tJMqVauWsjk",
       "youtube_id": "tJMqVauWsjk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_2Q6OvYjOJi0",
-      "youtube_id": "2Q6OvYjOJi0",
-      "source": "youtube",
-      "title": "GPS Hidden Messages - Computerphile",
-      "url": "https://www.youtube.com/watch?v=2Q6OvYjOJi0",
-      "thumbnail": "https://i.ytimg.com/vi/2Q6OvYjOJi0/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Something odd was going on with the signals broadcast by the GPS satellites. Steven Murdoch of University College London explains how he used statistical analysis to work out what might be going on. \n\nTo read more about Steven's findings:   https://sjmurdoch.github.io/gps-special-messages/ \n\nCompute",
-      "published": 1784212343,
-      "published_str": "2026-07-16",
-      "embed_id": "2Q6OvYjOJi0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785460841.485454
+  "_ts": 1785547304.4233787
 }

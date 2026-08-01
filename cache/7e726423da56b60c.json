@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hAsz5GAbBQE",
+      "youtube_id": "hAsz5GAbBQE",
+      "source": "youtube",
+      "title": "Kubernetes Operator Best Practices – Kubebuilder Deep Dive",
+      "url": "https://www.youtube.com/watch?v=hAsz5GAbBQE",
+      "thumbnail": "https://i.ytimg.com/vi/hAsz5GAbBQE/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn the best practices for building robust and scalable Kubernetes operators using Kubebuilder. This course covers critical techniques, including managing multiple controllers for parallelism, implementing efficient retry logic, and resolving custom resource update conflicts. You will also discove",
+      "published": 1785513546,
+      "published_str": "2026-07-31",
+      "embed_id": "hAsz5GAbBQE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Zy7EXDONlTY",
       "youtube_id": "Zy7EXDONlTY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_BiA08jfr4RU",
-      "youtube_id": "BiA08jfr4RU",
-      "source": "youtube",
-      "title": "19 Web Dev Projects – HTML, CSS, JavaScript Tutorial",
-      "url": "https://www.youtube.com/watch?v=BiA08jfr4RU",
-      "thumbnail": "https://i.ytimg.com/vi/BiA08jfr4RU/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Improve your web development skills by building 19 different projects. In this course, you will use HTML, CSS, and JavaScript to make all sorts of web sites.\n\nCourse created by @codesistency \n\nFull Course On Udemy: https://dub.sh/udemy-launch\nSource Code: https://github.com/burakorkmez/html-css-js-p",
-      "published": 1773840399,
-      "published_str": "2026-03-18",
-      "embed_id": "BiA08jfr4RU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785460830.0657647
+  "_ts": 1785547291.8462744
 }

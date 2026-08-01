@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_cDKPbMaLTA4",
+      "youtube_id": "cDKPbMaLTA4",
+      "source": "youtube",
+      "title": "Recreating ITS - Computerphile",
+      "url": "https://www.youtube.com/watch?v=cDKPbMaLTA4",
+      "thumbnail": "https://i.ytimg.com/vi/cDKPbMaLTA4/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The DEC PDP computers from decades ago now comfortably run on a cheap computer such as a Raspberry Pi. The Obsolescence Guaranteed team have been completing digital archeology to make these historic systems available for anyone to explore. \n\nLars Brinkhoff and Oscar Vermeulen are part of Obsolescenc",
+      "published": 1785510010,
+      "published_str": "2026-07-31",
+      "embed_id": "cDKPbMaLTA4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_tJMqVauWsjk",
       "youtube_id": "tJMqVauWsjk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_pTMvh6VzDls",
-      "youtube_id": "pTMvh6VzDls",
-      "source": "youtube",
-      "title": "Rust and RAII Memory Management - Computerphile",
-      "url": "https://www.youtube.com/watch?v=pTMvh6VzDls",
-      "thumbnail": "https://i.ytimg.com/vi/pTMvh6VzDls/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Rust has memory management built in. Ian Knight takes us through some of its features.\n\nGarbage Collection video: https://youtu.be/c32zXYAK7CI \n\nhttps://www.facebook.com/computerphile\r\nhttps://twitter.com/computer_phile\r\n\r\nThis video was filmed and edited by Sean Riley.\r\n\r\nComputer Science at the Un",
-      "published": 1677156805,
-      "published_str": "2023-02-23",
-      "embed_id": "pTMvh6VzDls",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785460829.4967704
+  "_ts": 1785547291.2561753
 }
