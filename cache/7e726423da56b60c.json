@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wDWKUvTKCaw",
+      "youtube_id": "wDWKUvTKCaw",
+      "source": "youtube",
+      "title": "Low-Level Graphics in C – Pixel Manipulation and Frame Buffers",
+      "url": "https://www.youtube.com/watch?v=wDWKUvTKCaw",
+      "thumbnail": "https://i.ytimg.com/vi/wDWKUvTKCaw/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "This C programming course teaches you about direct pixel manipulation and graphics. By leveraging the cross-platform power of the SDL3 library, you will learn how to safely navigate modern operating system restrictions to build a low-level software renderer from scratch. This hands-on approach will ",
+      "published": 1785756972,
+      "published_str": "2026-08-03",
+      "embed_id": "wDWKUvTKCaw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hAsz5GAbBQE",
       "youtube_id": "hAsz5GAbBQE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_jydYq7oAtD8",
-      "youtube_id": "jydYq7oAtD8",
-      "source": "youtube",
-      "title": "Software Testing Course – Playwright, E2E, and AI Agents",
-      "url": "https://www.youtube.com/watch?v=jydYq7oAtD8",
-      "thumbnail": "https://i.ytimg.com/vi/jydYq7oAtD8/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn the essentials of software testing, from fundamental concepts like the testing pyramid to hands-on automation using Playwright. You will explore real-world case studies of software failures and learn advanced techniques such as mocking, edge case testing, and accessibility. Finally, discover h",
-      "published": 1773914480,
-      "published_str": "2026-03-19",
-      "embed_id": "jydYq7oAtD8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547291.8462744
+  "_ts": 1785805906.4181545
 }

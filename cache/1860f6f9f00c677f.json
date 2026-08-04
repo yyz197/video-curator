@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9r8W25OO4wk",
+      "youtube_id": "9r8W25OO4wk",
+      "source": "youtube",
+      "title": "Visionary dad built underground home. Son restored it to former glory",
+      "url": "https://www.youtube.com/watch?v=9r8W25OO4wk",
+      "thumbnail": "https://i.ytimg.com/vi/9r8W25OO4wk/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "For decades, Conway worked mostly alone, crafting a one-of-a-kind underground home into a Missouri Ozarks mountainside — no permits, no architect, just him and his son growing up right alongside him, and an occasional friend.\n\nConway was an engineer who spent his career in the region's lead mining i",
+      "published": 1785719678,
+      "published_str": "2026-08-03",
+      "embed_id": "9r8W25OO4wk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_S2MH-3JauJM",
       "youtube_id": "S2MH-3JauJM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_TBNyURT1bkU",
-      "youtube_id": "TBNyURT1bkU",
-      "source": "youtube",
-      "title": "Couple builds dream natural Roundhouse with hempcrete, cob & lime 🐚",
-      "url": "https://www.youtube.com/watch?v=TBNyURT1bkU",
-      "thumbnail": "https://i.ytimg.com/vi/TBNyURT1bkU/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Concerned about indoor air quality, Neil Decker and Stella Michaels wanted their home to be chemical-free, so they decided to build it out of hempcrete (hemp, lime, and sand). \n\nThe couple didn’t think they could afford to live in California but found a rundown property in Gold Rush old country on t",
-      "published": 1695577965,
-      "published_str": "2023-09-24",
-      "embed_id": "TBNyURT1bkU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547295.477512
+  "_ts": 1785805910.1724837
 }

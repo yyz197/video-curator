@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wDWKUvTKCaw",
+      "youtube_id": "wDWKUvTKCaw",
+      "source": "youtube",
+      "title": "Low-Level Graphics in C – Pixel Manipulation and Frame Buffers",
+      "url": "https://www.youtube.com/watch?v=wDWKUvTKCaw",
+      "thumbnail": "https://i.ytimg.com/vi/wDWKUvTKCaw/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "This C programming course teaches you about direct pixel manipulation and graphics. By leveraging the cross-platform power of the SDL3 library, you will learn how to safely navigate modern operating system restrictions to build a low-level software renderer from scratch. This hands-on approach will ",
+      "published": 1785756972,
+      "published_str": "2026-08-03",
+      "embed_id": "wDWKUvTKCaw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hAsz5GAbBQE",
       "youtube_id": "hAsz5GAbBQE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XMnRj4ooYz8",
-      "youtube_id": "XMnRj4ooYz8",
-      "source": "youtube",
-      "title": "3D Printing & Additive Manufacturing – Full Course",
-      "url": "https://www.youtube.com/watch?v=XMnRj4ooYz8",
-      "thumbnail": "https://i.ytimg.com/vi/XMnRj4ooYz8/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn the basics of 3D printing and additive manufacturing. The video covers foundational printing technologies, CAD data preparation, material selection, Design for Additive Manufacturing (DFAM), digital warehousing, and quality control workflows.\n\nCreated by https://gaugehow.com/\n\n❤️ Support for t",
-      "published": 1785232806,
-      "published_str": "2026-07-28",
-      "embed_id": "XMnRj4ooYz8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547304.5443304
+  "_ts": 1785805919.59087
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ODcBdk38ck0",
+      "youtube_id": "ODcBdk38ck0",
+      "source": "youtube",
+      "title": "The Difficulty of being in the present",
+      "url": "https://www.youtube.com/watch?v=ODcBdk38ck0",
+      "thumbnail": "https://i.ytimg.com/vi/ODcBdk38ck0/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1785675627,
+      "published_str": "2026-08-02",
+      "embed_id": "ODcBdk38ck0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_QUxxeMnKuGA",
       "youtube_id": "QUxxeMnKuGA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_sBW2pfSXfzM",
-      "youtube_id": "sBW2pfSXfzM",
-      "source": "youtube",
-      "title": "Being Free  #animation #theschooloflife #freedom",
-      "url": "https://www.youtube.com/watch?v=sBW2pfSXfzM",
-      "thumbnail": "https://i.ytimg.com/vi/sBW2pfSXfzM/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily.\nUnlock all the content of The School of Life with a subscription to our exclusive podcast, articles, videos, and exercises, specially tailored to your needs.\nWork out what drives you, what choices you need to make around love and work – and how to grow your confidence,",
-      "published": 1753880504,
-      "published_str": "2025-07-30",
-      "embed_id": "sBW2pfSXfzM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547290.5678613
+  "_ts": 1785805905.0772681
 }

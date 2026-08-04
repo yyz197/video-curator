@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xc2NnKThTX0",
+      "youtube_id": "xc2NnKThTX0",
+      "source": "youtube",
+      "title": "Rachel Glennerster | Innovation and the Center for Global Development | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=xc2NnKThTX0",
+      "thumbnail": "https://i.ytimg.com/vi/xc2NnKThTX0/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "President of the Center for Global Development,  Dr. Rachel Glennerster, discusses the CGD and why the future of global progress depends on simple, scalable, and evidence-based solutions. \n\nDiscover how targeted innovations in health, education, agriculture, and social protection can overcome the de",
+      "published": 1785769210,
+      "published_str": "2026-08-03",
+      "embed_id": "xc2NnKThTX0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_43FZtdF2RcY",
       "youtube_id": "43FZtdF2RcY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_o18vAZWxMQM",
-      "youtube_id": "o18vAZWxMQM",
-      "source": "youtube",
-      "title": "benny blanco | Open Wide: A Cookbook for Friends | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=o18vAZWxMQM",
-      "thumbnail": "https://i.ytimg.com/vi/o18vAZWxMQM/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Record producer & executive, songwriter, artist, and actor, benny blanco, discusses his cookbook “Open Wide: A Cookbook for Friends,” where he teaches you everything you need to know about cooking, enjoying life, and throwing the greatest dinner party of all time.\n\nGet the book here: https://goo.gle",
-      "published": 1715108417,
-      "published_str": "2024-05-07",
-      "embed_id": "o18vAZWxMQM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547290.2735345
+  "_ts": 1785805905.3632905
 }

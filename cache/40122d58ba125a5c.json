@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xc2NnKThTX0",
+      "youtube_id": "xc2NnKThTX0",
+      "source": "youtube",
+      "title": "Rachel Glennerster | Innovation and the Center for Global Development | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=xc2NnKThTX0",
+      "thumbnail": "https://i.ytimg.com/vi/xc2NnKThTX0/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "President of the Center for Global Development,  Dr. Rachel Glennerster, discusses the CGD and why the future of global progress depends on simple, scalable, and evidence-based solutions. \n\nDiscover how targeted innovations in health, education, agriculture, and social protection can overcome the de",
+      "published": 1785769210,
+      "published_str": "2026-08-03",
+      "embed_id": "xc2NnKThTX0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_43FZtdF2RcY",
       "youtube_id": "43FZtdF2RcY",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_t8ZUiinrksw",
-      "youtube_id": "t8ZUiinrksw",
-      "source": "youtube",
-      "title": "Jeff Kinney | Diary of a Wimpy Kid: Partypooper | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=t8ZUiinrksw",
-      "thumbnail": "https://i.ytimg.com/vi/t8ZUiinrksw/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "New York Times bestselling author, Jeff Kinney, talks about \"Partypooper\" his global smash-hit series, \"Diary of a Wimpy Kid\" which has sold over 300 million copies!\n\nIn Partypooper ,Greg Heffley is planning the ultimate party—for himself. But when the guest list grows, the decorations flop, and the",
-      "published": 1778860882,
-      "published_str": "2026-05-15",
-      "embed_id": "t8ZUiinrksw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547304.0904973
+  "_ts": 1785805919.1286678
 }

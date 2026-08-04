@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wt4p2oalmRY",
+      "youtube_id": "wt4p2oalmRY",
+      "source": "youtube",
+      "title": "Is spider silk really stronger than steel?",
+      "url": "https://www.youtube.com/watch?v=wt4p2oalmRY",
+      "thumbnail": "https://i.ytimg.com/vi/wt4p2oalmRY/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Can you really swing from spider silk? Sponsored by Henson Shaving - Head to https://hensonshaving.com/veritasium and use code “veritasium” for 100 free blades with any razor purchase. Just add both the razor and blades to your cart.\n\nLast year, we launched the Elements of Truth game on Kickstarter ",
+      "published": 1785676871,
+      "published_str": "2026-08-02",
+      "embed_id": "wt4p2oalmRY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_3HQkVfZ4DNY",
       "youtube_id": "3HQkVfZ4DNY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_QQkmJI63ykI",
-      "youtube_id": "QQkmJI63ykI",
-      "source": "youtube",
-      "title": "The Man Who Killed Millions and Saved Billions (Clean Version)",
-      "url": "https://www.youtube.com/watch?v=QQkmJI63ykI",
-      "thumbnail": "https://i.ytimg.com/vi/QQkmJI63ykI/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "YES, THIS IS A REUPLOAD. The original was age-restricted and demonetized. To support the channel directly, you can buy Snatoms: https://ve42.co/snatoms1 https://ve42.co/amzn or support on Patreon: https://ve42.co/p\n\nFritz Haber is the scientist who arguably most transformed the world. \n▀▀▀▀▀▀▀▀▀▀▀▀▀",
-      "published": 1696700744,
-      "published_str": "2023-10-07",
-      "embed_id": "QQkmJI63ykI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547286.297947
+  "_ts": 1785805900.9671998
 }

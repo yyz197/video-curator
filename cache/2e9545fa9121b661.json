@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9r8W25OO4wk",
+      "youtube_id": "9r8W25OO4wk",
+      "source": "youtube",
+      "title": "Visionary dad built underground home. Son restored it to former glory",
+      "url": "https://www.youtube.com/watch?v=9r8W25OO4wk",
+      "thumbnail": "https://i.ytimg.com/vi/9r8W25OO4wk/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "For decades, Conway worked mostly alone, crafting a one-of-a-kind underground home into a Missouri Ozarks mountainside — no permits, no architect, just him and his son growing up right alongside him, and an occasional friend.\n\nConway was an engineer who spent his career in the region's lead mining i",
+      "published": 1785719678,
+      "published_str": "2026-08-03",
+      "embed_id": "9r8W25OO4wk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_S2MH-3JauJM",
       "youtube_id": "S2MH-3JauJM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_J1QTnQecz-s",
-      "youtube_id": "J1QTnQecz-s",
-      "source": "youtube",
-      "title": "He turned Titan II nuclear missile silo into 3-story underground home",
-      "url": "https://www.youtube.com/watch?v=J1QTnQecz-s",
-      "thumbnail": "https://i.ytimg.com/vi/J1QTnQecz-s/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "In 2010, GT Hill paid $90,000 for an abandoned, flooded Titan II Cold War missile complex buried in the Arkansas hills. He called the outlandish project Titan Ranch: the idea was to create a homestead for the ages.\n\nHe didn't know exactly what he was getting into... the government had sealed it, flo",
-      "published": 1782686296,
-      "published_str": "2026-06-28",
-      "embed_id": "J1QTnQecz-s",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785547306.680622
+  "_ts": 1785805921.9010618
 }
