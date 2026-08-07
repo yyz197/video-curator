@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-61qDRPG3to",
+      "youtube_id": "-61qDRPG3to",
+      "source": "youtube",
+      "title": "The fastest way to board a plane, according to mathematics - Rachel Yang",
+      "url": "https://www.youtube.com/watch?v=-61qDRPG3to",
+      "thumbnail": "https://i.ytimg.com/vi/-61qDRPG3to/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into our two biggest plane-loading bottlenecks and the potential methods to alleviate this common travel headache.\n\n--\n\nAfter hours of delay, your flight is finally boarding. But as the line grinds to a halt, you can’t help but think — there must be a faster way to board this plane. Mathematicia",
+      "published": 1785855609,
+      "published_str": "2026-08-04",
+      "embed_id": "-61qDRPG3to",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_krNP8RlDsbw",
       "youtube_id": "krNP8RlDsbw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_K-p1z2uKJBg",
-      "youtube_id": "K-p1z2uKJBg",
-      "source": "youtube",
-      "title": "Can we actually control superintelligent AI? | Ada, Ep. 4",
-      "url": "https://www.youtube.com/watch?v=K-p1z2uKJBg",
-      "thumbnail": "https://i.ytimg.com/vi/K-p1z2uKJBg/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Ada imagines what an AI librarian system could be capable of. What are the consequences of creating superintelligent AI systems?\n\n--\n\nThis is episode 4 of the animated series, “Ada.” This 5-episode narrative follows the young library assistant Ada as she juggles two worlds: her daily mundane reality",
-      "published": 1740067241,
-      "published_str": "2025-02-20",
-      "embed_id": "K-p1z2uKJBg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785805904.1559248
+  "_ts": 1786067662.848198
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_7l6bXLAKyEI",
+      "youtube_id": "7l6bXLAKyEI",
+      "source": "youtube",
+      "title": "Claude Code Full Course – Autonomous Goals, MCP, and VS Code Setup",
+      "url": "https://www.youtube.com/watch?v=7l6bXLAKyEI",
+      "thumbnail": "https://i.ytimg.com/vi/7l6bXLAKyEI/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn Claude Code with this comprehensive crash course taught by a former senior software engineer. You will learn everything from setting up your local environment in VS Code to executing autonomous tasks with goals and seamlessly deploying your applications. By mastering file structures, custom sk",
+      "published": 1785927627,
+      "published_str": "2026-08-05",
+      "embed_id": "7l6bXLAKyEI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wDWKUvTKCaw",
       "youtube_id": "wDWKUvTKCaw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_v7Butot2fHY",
-      "youtube_id": "v7Butot2fHY",
-      "source": "youtube",
-      "title": "How to get started using Three.js",
-      "url": "https://www.youtube.com/watch?v=v7Butot2fHY",
-      "thumbnail": "https://i.ytimg.com/vi/v7Butot2fHY/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "How to get started using Three.js - Ania walks you through the first steps here.",
-      "published": 1773921155,
-      "published_str": "2026-03-19",
-      "embed_id": "v7Butot2fHY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785805906.4181545
+  "_ts": 1786067665.4180264
 }

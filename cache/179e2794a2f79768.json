@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_7l6bXLAKyEI",
+      "youtube_id": "7l6bXLAKyEI",
+      "source": "youtube",
+      "title": "Claude Code Full Course – Autonomous Goals, MCP, and VS Code Setup",
+      "url": "https://www.youtube.com/watch?v=7l6bXLAKyEI",
+      "thumbnail": "https://i.ytimg.com/vi/7l6bXLAKyEI/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn Claude Code with this comprehensive crash course taught by a former senior software engineer. You will learn everything from setting up your local environment in VS Code to executing autonomous tasks with goals and seamlessly deploying your applications. By mastering file structures, custom sk",
+      "published": 1785927627,
+      "published_str": "2026-08-05",
+      "embed_id": "7l6bXLAKyEI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wDWKUvTKCaw",
       "youtube_id": "wDWKUvTKCaw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_lFXt6mBEiTQ",
-      "youtube_id": "lFXt6mBEiTQ",
-      "source": "youtube",
-      "title": "Behind the popular AI tools lies a crucial bit of tech called a transformer.",
-      "url": "https://www.youtube.com/watch?v=lFXt6mBEiTQ",
-      "thumbnail": "https://i.ytimg.com/vi/lFXt6mBEiTQ/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Behind the popular AI tools lies a crucial bit of tech called a transformer. It's what the \"T\" stands for in ChatGPT, just FYI. Ania tells you all about it here.",
-      "published": 1785240332,
-      "published_str": "2026-07-28",
-      "embed_id": "lFXt6mBEiTQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785805919.59087
+  "_ts": 1786067679.3202522
 }

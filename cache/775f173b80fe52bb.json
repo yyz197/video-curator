@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube__1G8nrmBKeY",
+      "youtube_id": "_1G8nrmBKeY",
+      "source": "youtube",
+      "title": "How do submarines know where they are?",
+      "url": "https://www.youtube.com/watch?v=_1G8nrmBKeY",
+      "thumbnail": "https://i.ytimg.com/vi/_1G8nrmBKeY/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "How does a submarine find its way 600m deep in the ocean?\n\nSurfacing is obviously the easiest way but not when you want to stay hidden.\n\nSo how do a crew balance concealment and pathfinding?",
+      "published": 1786021234,
+      "published_str": "2026-08-06",
+      "embed_id": "_1G8nrmBKeY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wt4p2oalmRY",
       "youtube_id": "wt4p2oalmRY",
       "source": "youtube",
-      "title": "Is spider silk really stronger than steel?",
+      "title": "Is spider web really stronger than steel?",
       "url": "https://www.youtube.com/watch?v=wt4p2oalmRY",
       "thumbnail": "https://i.ytimg.com/vi/wt4p2oalmRY/mqdefault.jpg",
       "author": "Veritasium",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_RmHcX5oVzvs",
-      "youtube_id": "RmHcX5oVzvs",
-      "source": "youtube",
-      "title": "Why Waves Travel Faster At The Top",
-      "url": "https://www.youtube.com/watch?v=RmHcX5oVzvs",
-      "thumbnail": "https://i.ytimg.com/vi/RmHcX5oVzvs/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Why do objects travel with waves?\n\nWe're taught waves only transfer energy, not material, but objects wash ashore all the time.\n\nHow does this work?\n\n#veritasium #science #physics",
-      "published": 1784294918,
-      "published_str": "2026-07-17",
-      "embed_id": "RmHcX5oVzvs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1785805918.3762567
+  "_ts": 1786067677.9393432
 }
