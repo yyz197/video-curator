@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_tRkFBv3lCtg",
+      "youtube_id": "tRkFBv3lCtg",
+      "source": "youtube",
+      "title": "Singapore's Legendary Fish Head Curry Starts in a Giant Vat",
+      "url": "https://www.youtube.com/watch?v=tRkFBv3lCtg",
+      "thumbnail": "https://i.ytimg.com/vi/tRkFBv3lCtg/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Lucas Sin visits Samy's Curry in Singapore to see how their legendary fish head curry is made. It starts in an enormous simmering vat before finishing in a blazing hot clay pot, where bubbling curry, caramelization, and smoke create incredible layers of flavor.\n\nWant Bon Appétit shirts, hats and mor",
+      "published": 1786118413,
+      "published_str": "2026-08-07",
+      "embed_id": "tRkFBv3lCtg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_J8GVt8j1bT4",
       "youtube_id": "J8GVt8j1bT4",
       "source": "youtube",
@@ -17,7 +42,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "美食旅游",
-      "description": "Bon Appétit’s Chris Morocco is in the test kitchen to recreate his 2018 best lasagne recipe for half the cost. Using smart ingredient swaps, Chris transforms his recipe into a more budget-friendly dinner that pleases a crowd, fights inflation, and is rich, cheesy and packed with flavour. \n\n00:00 Int",
+      "description": "Bon Appétit’s Chris Morocco is in the test kitchen to recreate his 2018 best lasagna recipe for half the cost. Using smart ingredient swaps, Chris transforms his recipe into a more budget-friendly dinner that pleases a crowd, fights inflation, and is rich, cheesy and packed with flavour. \n\n00:00 Int",
       "published": 1786032013,
       "published_str": "2026-08-06",
       "embed_id": "J8GVt8j1bT4",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_sZl-doueWNY",
-      "youtube_id": "sZl-doueWNY",
-      "source": "youtube",
-      "title": "How NYC’s Best Mac and Cheese is Made | Made To Order | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=sZl-doueWNY",
-      "thumbnail": "https://i.ytimg.com/vi/sZl-doueWNY/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Chef Clare Malfitano of Murray's Cheese shares how to make the ultimate baked mac and cheese. From building a silky Mornay sauce from scratch and choosing the best pasta shape for maximum cheese coverage, to creating a crispy, golden cheese crust, discover the secrets behind one of New York's most p",
-      "published": 1785340803,
-      "published_str": "2026-07-29",
-      "embed_id": "sZl-doueWNY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786067682.9690828
+  "_ts": 1786322442.2463362
 }

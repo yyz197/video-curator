@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_tRkFBv3lCtg",
+      "youtube_id": "tRkFBv3lCtg",
+      "source": "youtube",
+      "title": "Singapore's Legendary Fish Head Curry Starts in a Giant Vat",
+      "url": "https://www.youtube.com/watch?v=tRkFBv3lCtg",
+      "thumbnail": "https://i.ytimg.com/vi/tRkFBv3lCtg/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Lucas Sin visits Samy's Curry in Singapore to see how their legendary fish head curry is made. It starts in an enormous simmering vat before finishing in a blazing hot clay pot, where bubbling curry, caramelization, and smoke create incredible layers of flavor.\n\nWant Bon Appétit shirts, hats and mor",
+      "published": 1786118413,
+      "published_str": "2026-08-07",
+      "embed_id": "tRkFBv3lCtg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_J8GVt8j1bT4",
       "youtube_id": "J8GVt8j1bT4",
       "source": "youtube",
@@ -17,7 +42,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "美食旅游",
-      "description": "Bon Appétit’s Chris Morocco is in the test kitchen to recreate his 2018 best lasagne recipe for half the cost. Using smart ingredient swaps, Chris transforms his recipe into a more budget-friendly dinner that pleases a crowd, fights inflation, and is rich, cheesy and packed with flavour. \n\n00:00 Int",
+      "description": "Bon Appétit’s Chris Morocco is in the test kitchen to recreate his 2018 best lasagna recipe for half the cost. Using smart ingredient swaps, Chris transforms his recipe into a more budget-friendly dinner that pleases a crowd, fights inflation, and is rich, cheesy and packed with flavour. \n\n00:00 Int",
       "published": 1786032013,
       "published_str": "2026-08-06",
       "embed_id": "J8GVt8j1bT4",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NL3Focg_xqQ",
-      "youtube_id": "NL3Focg_xqQ",
-      "source": "youtube",
-      "title": "The Burger That Made George Motz Famous",
-      "url": "https://www.youtube.com/watch?v=NL3Focg_xqQ",
-      "thumbnail": "https://i.ytimg.com/vi/NL3Focg_xqQ/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "George Motz makes the burger that made him and Hamburger America famous: the fried onion smash burger.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill haven’t subscribed ",
-      "published": 1762966808,
-      "published_str": "2025-11-12",
-      "embed_id": "NL3Focg_xqQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786067670.8479257
+  "_ts": 1786322431.598769
 }

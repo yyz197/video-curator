@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_41ZhEniIlU4",
+      "youtube_id": "41ZhEniIlU4",
+      "source": "youtube",
+      "title": "How to Soothe Ourselves and Others",
+      "url": "https://www.youtube.com/watch?v=41ZhEniIlU4",
+      "thumbnail": "https://i.ytimg.com/vi/41ZhEniIlU4/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "One of the most vital of all life skills is soothing; the art of calming oneself down, restoring perspective and remembering to be kind to oneself. Too often, because we were never properly soothed by others as children, we have no idea how to soothe ourselves as adults. We need to learn the signifi",
+      "published": 1786280410,
+      "published_str": "2026-08-09",
+      "embed_id": "41ZhEniIlU4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cUHzgaULtPA",
       "youtube_id": "cUHzgaULtPA",
       "source": "youtube",
@@ -29,7 +54,7 @@
       "id": "youtube_FbS1hO2dQPM",
       "youtube_id": "FbS1hO2dQPM",
       "source": "youtube",
-      "title": "The Book of Tea",
+      "title": "The Japanese Philosophy That Turns Everyday Life Into Art",
       "url": "https://www.youtube.com/watch?v=FbS1hO2dQPM",
       "thumbnail": "https://i.ytimg.com/vi/FbS1hO2dQPM/mqdefault.jpg",
       "author": "The School of Life",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_zRp_0hc-ZgQ",
-      "youtube_id": "zRp_0hc-ZgQ",
-      "source": "youtube",
-      "title": "Ancient Chinese Wisdom to Calm Your Modern Mind",
-      "url": "https://www.youtube.com/watch?v=zRp_0hc-ZgQ",
-      "thumbnail": "https://i.ytimg.com/vi/zRp_0hc-ZgQ/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ In a world that demands constant achievement and relentless optimism, we often find ourselves exhausted and alone. But we aren't the first to face these pressures. Classical Chinese culture—through its sublime pa",
-      "published": 1785330001,
-      "published_str": "2026-07-29",
-      "embed_id": "zRp_0hc-ZgQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786067678.8970728
+  "_ts": 1786322437.4274542
 }
