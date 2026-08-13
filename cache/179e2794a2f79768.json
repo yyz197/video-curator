@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_eDqVqVyCo6k",
+      "youtube_id": "eDqVqVyCo6k",
+      "source": "youtube",
+      "title": "Python for Engineers & Robotics – Master NumPy, Pandas, and ChatGPT Automation",
+      "url": "https://www.youtube.com/watch?v=eDqVqVyCo6k",
+      "thumbnail": "https://i.ytimg.com/vi/eDqVqVyCo6k/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "In this comprehensive course, you will learn Python programming from scratch specifically tailored for mechanical engineering and robotics using ChatGPT. You'll start with fundamental concepts like variables, operators, and control flow before mastering essential scientific libraries including NumPy",
+      "published": 1786443325,
+      "published_str": "2026-08-11",
+      "embed_id": "eDqVqVyCo6k",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_7l6bXLAKyEI",
       "youtube_id": "7l6bXLAKyEI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_YHQWuLG78Hw",
-      "youtube_id": "YHQWuLG78Hw",
-      "source": "youtube",
-      "title": "Project-based learning is a popular way to teach these days",
-      "url": "https://www.youtube.com/watch?v=YHQWuLG78Hw",
-      "thumbnail": "https://i.ytimg.com/vi/YHQWuLG78Hw/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Project-based learning is a popular way to teach these days. Mark tells Quincy about his approach with his students and how he lays out the goals for the class.",
-      "published": 1785412346,
-      "published_str": "2026-07-30",
-      "embed_id": "YHQWuLG78Hw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786322438.1195717
+  "_ts": 1786582132.5227678
 }

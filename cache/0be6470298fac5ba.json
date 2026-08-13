@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_0aTUTxOiRgU",
+      "youtube_id": "0aTUTxOiRgU",
+      "source": "youtube",
+      "title": "291 Holes - Numberphile",
+      "url": "https://www.youtube.com/watch?v=0aTUTxOiRgU",
+      "thumbnail": "https://i.ytimg.com/vi/0aTUTxOiRgU/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Here's the original 'Holey Monster' video for full background: https://www.youtube.com/watch?v=BhSlqIe1CRQ\nMore links & stuff in full description below ↓↓↓\n\nThis video features Richard Elwes.\nMore info, including his books: https://richardelwes.co.uk/\n\nMore videos with Richard: https://www.youtube.c",
+      "published": 1786363140,
+      "published_str": "2026-08-10",
+      "embed_id": "0aTUTxOiRgU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_oYGBRhS1Ujo",
       "youtube_id": "oYGBRhS1Ujo",
       "source": "youtube",
@@ -992,7 +1017,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "Richard Elwes explores the world of polyhedra and toroids, including the legendary Holey Monster. More links & stuff in full description below ↓↓↓\n\nPatrons can see an out-take and bonus footage here: https://www.patreon.com/posts/135312036 (or why not become a supporter today and see all our patron-",
+      "description": "Richard Elwes explores the world of polyhedra and toroids, including the legendary Holey Monster. More links & stuff in full description below ↓↓↓\n\nUPDATE: This video was published some time later when the record was extended... https://youtu.be/0aTUTxOiRgU\n\nPatrons can see an out-take and bonus foo",
       "published": 1753963789,
       "published_str": "2025-07-31",
       "embed_id": "BhSlqIe1CRQ",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NsjsLwYRW8o",
-      "youtube_id": "NsjsLwYRW8o",
-      "source": "youtube",
-      "title": "Prime Pyramid (with 3Blue1Brown) - Numberphile",
-      "url": "https://www.youtube.com/watch?v=NsjsLwYRW8o",
-      "thumbnail": "https://i.ytimg.com/vi/NsjsLwYRW8o/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Grant Sanderson (from 3Blue1Brown) shows us a pyramid that spits out prime numbers - and then we dig deeper.\nMore links & stuff in full description below ↓↓↓\n\nSee all three videos in this series - Grant's Prime Pattern Trilogy: https://bit.ly/PrimePatternTrilogy\n\nGrant's own false pattern video: htt",
-      "published": 1667731354,
-      "published_str": "2022-11-06",
-      "embed_id": "NsjsLwYRW8o",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786322425.5403094
+  "_ts": 1786582119.6832454
 }

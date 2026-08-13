@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_swrez2ZA0cc",
+      "youtube_id": "swrez2ZA0cc",
+      "source": "youtube",
+      "title": "Veteran saw collapse abroad. Now builds antifragile family homestead",
+      "url": "https://www.youtube.com/watch?v=swrez2ZA0cc",
+      "thumbnail": "https://i.ytimg.com/vi/swrez2ZA0cc/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "For the past 20 years, Josh and Chiara Morris have built a 360-acre homestead in the Missouri Ozarks that today provides their family with all its own food, water, shelter, and energy, and even its income. It's a fully engineered system for self-reliance, first inspired by Josh's years as an Army Ra",
+      "published": 1786407788,
+      "published_str": "2026-08-11",
+      "embed_id": "swrez2ZA0cc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9r8W25OO4wk",
       "youtube_id": "9r8W25OO4wk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_jojDzG4ZCZs",
-      "youtube_id": "jojDzG4ZCZs",
-      "source": "youtube",
-      "title": "He sold roadside gas station. Then built mountain homestead to live freely",
-      "url": "https://www.youtube.com/watch?v=jojDzG4ZCZs",
-      "thumbnail": "https://i.ytimg.com/vi/jojDzG4ZCZs/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Ryan grew up hunting and fishing in the Ouachita Mountains of Arkansas - food from the land, and life in nature, was never a hobby, it was just life. Then came years of long-hours work, the last of it running a roadside convenience store. \n\nWhen he saw a listing for raw land in the mountains, cheap ",
-      "published": 1783373900,
-      "published_str": "2026-07-06",
-      "embed_id": "jojDzG4ZCZs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786322441.3930814
+  "_ts": 1786582135.054529
 }

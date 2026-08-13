@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_swrez2ZA0cc",
+      "youtube_id": "swrez2ZA0cc",
+      "source": "youtube",
+      "title": "Veteran saw collapse abroad. Now builds antifragile family homestead",
+      "url": "https://www.youtube.com/watch?v=swrez2ZA0cc",
+      "thumbnail": "https://i.ytimg.com/vi/swrez2ZA0cc/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "For the past 20 years, Josh and Chiara Morris have built a 360-acre homestead in the Missouri Ozarks that today provides their family with all its own food, water, shelter, and energy, and even its income. It's a fully engineered system for self-reliance, first inspired by Josh's years as an Army Ra",
+      "published": 1786407788,
+      "published_str": "2026-08-11",
+      "embed_id": "swrez2ZA0cc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9r8W25OO4wk",
       "youtube_id": "9r8W25OO4wk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_PDWUsu2-sog",
-      "youtube_id": "PDWUsu2-sog",
-      "source": "youtube",
-      "title": "She used commercial materials to build dream 2-story ADU for $30K",
-      "url": "https://www.youtube.com/watch?v=PDWUsu2-sog",
-      "thumbnail": "https://i.ytimg.com/vi/PDWUsu2-sog/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Christi Azevedo has spent years machining metal to make furniture so when she wanted to build a fast, fire-resistant, easily-configurable backyard home, she created a prototype from insulated metal panels.\n\n\"The furniture business gave me the skills for working at a scale that is half furniture half",
-      "published": 1696184592,
-      "published_str": "2023-10-01",
-      "embed_id": "PDWUsu2-sog",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786322430.0475848
+  "_ts": 1786582124.7567837
 }
