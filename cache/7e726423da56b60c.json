@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iqRcGCah0Kw",
+      "youtube_id": "iqRcGCah0Kw",
+      "source": "youtube",
+      "title": "System Design for AI Agents – Building a Multi-Agent PR Reviewer",
+      "url": "https://www.youtube.com/watch?v=iqRcGCah0Kw",
+      "thumbnail": "https://i.ytimg.com/vi/iqRcGCah0Kw/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to design and build a production-ready, multi-agent AI system that automates pull request reviews with senior-level engineering judgment. This comprehensive tutorial covers everything from fault-tolerant system architecture and database modeling to utilizing the Genesis kit for reliable, A",
+      "published": 1786701624,
+      "published_str": "2026-08-14",
+      "embed_id": "iqRcGCah0Kw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eDqVqVyCo6k",
       "youtube_id": "eDqVqVyCo6k",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_uJrh9GHrC38",
-      "youtube_id": "uJrh9GHrC38",
-      "source": "youtube",
-      "title": "The world still needs people who care - CodePen founder Chris Coyier interview [Podcast #212]",
-      "url": "https://www.youtube.com/watch?v=uJrh9GHrC38",
-      "thumbnail": "https://i.ytimg.com/vi/uJrh9GHrC38/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Today Quincy Larson interviews Chris Coyier. He's a front-end developer and co-founder of CodePen and the CSS Tricks blog. He has also recorded more than 700 podcasts about software engineering.\n\nWe talk about:\n- How he thinks front-end development tools are 90% of the way to where they need to be\n-",
-      "published": 1774017393,
-      "published_str": "2026-03-20",
-      "embed_id": "uJrh9GHrC38",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786582120.460761
+  "_ts": 1786839985.1220577
 }

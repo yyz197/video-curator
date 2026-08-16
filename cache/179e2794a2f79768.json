@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iqRcGCah0Kw",
+      "youtube_id": "iqRcGCah0Kw",
+      "source": "youtube",
+      "title": "System Design for AI Agents – Building a Multi-Agent PR Reviewer",
+      "url": "https://www.youtube.com/watch?v=iqRcGCah0Kw",
+      "thumbnail": "https://i.ytimg.com/vi/iqRcGCah0Kw/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to design and build a production-ready, multi-agent AI system that automates pull request reviews with senior-level engineering judgment. This comprehensive tutorial covers everything from fault-tolerant system architecture and database modeling to utilizing the Genesis kit for reliable, A",
+      "published": 1786701624,
+      "published_str": "2026-08-14",
+      "embed_id": "iqRcGCah0Kw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eDqVqVyCo6k",
       "youtube_id": "eDqVqVyCo6k",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Zy7EXDONlTY",
-      "youtube_id": "Zy7EXDONlTY",
-      "source": "youtube",
-      "title": "Agentic AI – Complete Course for Beginners",
-      "url": "https://www.youtube.com/watch?v=Zy7EXDONlTY",
-      "thumbnail": "https://i.ytimg.com/vi/Zy7EXDONlTY/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to build production-ready multi-agent systems and automate workflows using LangChain and LangGraph. You'll master everything from core agentic fundamentals and Pydantic validation to advanced sequential, parallel, and conditional LangGraph workflows. Along the way, you'll implement chat me",
-      "published": 1785420248,
-      "published_str": "2026-07-30",
-      "embed_id": "Zy7EXDONlTY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786582132.5227678
+  "_ts": 1786839995.2854233
 }
