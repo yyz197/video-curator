@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_KLmtn_xwgS4",
+      "youtube_id": "KLmtn_xwgS4",
+      "source": "youtube",
+      "title": "The Very Weird Reason Hot Water Freezes Faster",
+      "url": "https://www.youtube.com/watch?v=KLmtn_xwgS4",
+      "thumbnail": "https://i.ytimg.com/vi/KLmtn_xwgS4/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Visit https://displate.com/l/besmart and use discount code BESMART for up to 33% off high-resolution metal prints! Not valid on Limited Edition items.\n↓↓↓ More info and sources below ↓↓↓\n\nWhy can hot water sometimes freeze faster than cold water? In 1963, Erasto Mpemba noticed this while making ice ",
+      "published": 1787068831,
+      "published_str": "2026-08-18",
+      "embed_id": "KLmtn_xwgS4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-5BQXNxDQXg",
       "youtube_id": "-5BQXNxDQXg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_fOMEwrilIdw",
-      "youtube_id": "fOMEwrilIdw",
-      "source": "youtube",
-      "title": "This is what space sounds like",
-      "url": "https://www.youtube.com/watch?v=fOMEwrilIdw",
-      "thumbnail": "https://i.ytimg.com/vi/fOMEwrilIdw/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "",
-      "published": 1697049076,
-      "published_str": "2023-10-11",
-      "embed_id": "fOMEwrilIdw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839981.4653556
+  "_ts": 1787099079.7103248
 }

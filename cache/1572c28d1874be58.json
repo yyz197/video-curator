@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_t_3KkbWCFdo",
+      "youtube_id": "t_3KkbWCFdo",
+      "source": "youtube",
+      "title": "We’ll Never Stop Missing You, Grant!",
+      "url": "https://www.youtube.com/watch?v=t_3KkbWCFdo",
+      "thumbnail": "https://i.ytimg.com/vi/t_3KkbWCFdo/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "This year, we wanted to honor him in a way that felt personal — celebrating his love of adventure, flying, fire, and most of all, his boys.\n\nWe miss you every day, Grant. Your boys are growing up, and we see pieces of you in all of them. ❤️\n\nIn honor of Grant and his legacy, you can support Healing ",
+      "published": 1787090505,
+      "published_str": "2026-08-18",
+      "embed_id": "t_3KkbWCFdo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_jmuaFh8YFcI",
       "youtube_id": "jmuaFh8YFcI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-GUpKm2c6pg",
-      "youtube_id": "-GUpKm2c6pg",
-      "source": "youtube",
-      "title": "How to make Christmas Lego Gummy Candy!",
-      "url": "https://www.youtube.com/watch?v=-GUpKm2c6pg",
-      "thumbnail": "https://i.ytimg.com/vi/-GUpKm2c6pg/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In this video we wanted to incorporate a project that Grant did years ago and take it the Christmas route. So today we show you how to turn your gummy candy into an edible extravaganza. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If ",
-      "published": 1766599200,
-      "published_str": "2025-12-24",
-      "embed_id": "-GUpKm2c6pg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839994.3730674
+  "_ts": 1787099091.6435184
 }

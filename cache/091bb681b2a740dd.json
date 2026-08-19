@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nH-sP5Afyxk",
+      "youtube_id": "nH-sP5Afyxk",
+      "source": "youtube",
+      "title": "Our new AI employee can give you $100 of free work - link in description!",
+      "url": "https://www.youtube.com/watch?v=nH-sP5Afyxk",
+      "thumbnail": "https://i.ytimg.com/vi/nH-sP5Afyxk/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "If you want to give Viktor a go and get $100 of his work completely free, no credit card required, copy and paste this link: ref.viktor.com/vik-aa-aug-reel\n\nWhen we hired Viktor last month, I genuinely didn't know if the team would actually use him.\n\nHere's what one week with an AI employee actually",
+      "published": 1786960808,
+      "published_str": "2026-08-17",
+      "embed_id": "nH-sP5Afyxk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_fEMHMd7fovM",
       "youtube_id": "fEMHMd7fovM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_M2M7tb2mTuM",
-      "youtube_id": "M2M7tb2mTuM",
-      "source": "youtube",
-      "title": "You don't need to be famous to get rich",
-      "url": "https://www.youtube.com/watch?v=M2M7tb2mTuM",
-      "thumbnail": "https://i.ytimg.com/vi/M2M7tb2mTuM/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Learn how to be financially free (free workshop): https://go.aliabdaal.com/financiallyfreeyts",
-      "published": 1770544834,
-      "published_str": "2026-02-08",
-      "embed_id": "M2M7tb2mTuM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839986.6988313
+  "_ts": 1787099084.055742
 }

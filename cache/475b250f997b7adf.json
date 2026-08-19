@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pg7fntKLNak",
+      "youtube_id": "pg7fntKLNak",
+      "source": "youtube",
+      "title": "Quantum Simulation & Nature - Computerphile",
+      "url": "https://www.youtube.com/watch?v=pg7fntKLNak",
+      "thumbnail": "https://i.ytimg.com/vi/pg7fntKLNak/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn more about the Jane Street internship at: https://jane-st.co/internships2027-Computerphile\n\nSimulations of nature and physics are a potential application of quantum computing. Ella and Alex take us through how using quantum techniques could supersede classical options. \n\nDr Eleanor Crane is a ",
+      "published": 1786979883,
+      "published_str": "2026-08-17",
+      "embed_id": "pg7fntKLNak",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cDKPbMaLTA4",
       "youtube_id": "cDKPbMaLTA4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_CnSYsUhlx14",
-      "youtube_id": "CnSYsUhlx14",
-      "source": "youtube",
-      "title": "Quantum Machine Learning - Computerphile",
-      "url": "https://www.youtube.com/watch?v=CnSYsUhlx14",
-      "thumbnail": "https://i.ytimg.com/vi/CnSYsUhlx14/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Exploring how quantum computing can have an impact on the established area of Machine Learning. Professor Mohammad Reza Mousavi is a Professor of Software Engineering in the Department of Informatics at King's College London.\n\nComputerphile is supported by Jane Street. Learn more about them (and exc",
-      "published": 1784811632,
-      "published_str": "2026-07-23",
-      "embed_id": "CnSYsUhlx14",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839995.2282739
+  "_ts": 1787099092.6602223
 }

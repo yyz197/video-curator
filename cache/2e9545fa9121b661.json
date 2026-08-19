@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_eq0vL1cvRRc",
+      "youtube_id": "eq0vL1cvRRc",
+      "source": "youtube",
+      "title": "FDR's floating White House sank. Descendants spent 15 years restoring it",
+      "url": "https://www.youtube.com/watch?v=eq0vL1cvRRc",
+      "thumbnail": "https://i.ytimg.com/vi/eq0vL1cvRRc/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "The USS Potomac was FDR's \"Floating White House\" — the boat where he ran the country, secretly slipped away in the fog to meet Winston Churchill mid-ocean, and could move freely without the world seeing that he couldn't walk. \n\nBut after his death in 1945, it fell into decades of neglect (save for a",
+      "published": 1786922750,
+      "published_str": "2026-08-16",
+      "embed_id": "eq0vL1cvRRc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_swrez2ZA0cc",
       "youtube_id": "swrez2ZA0cc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_89ePp8Z9f5Q",
-      "youtube_id": "89ePp8Z9f5Q",
-      "source": "youtube",
-      "title": "Inspired by shantyboat youtuber, they built their budget floating homes",
-      "url": "https://www.youtube.com/watch?v=89ePp8Z9f5Q",
-      "thumbnail": "https://i.ytimg.com/vi/89ePp8Z9f5Q/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "On a quiet stretch of the Tennessee River, Arthur and Steve have traded conventional life for something simpler: floating homes they built themselves, for a fraction of what most people pay just to park a car. \n\nBoth were inspired by the same source (shantyboat YouTuber Martin Haseman's river journe",
-      "published": 1783891305,
-      "published_str": "2026-07-12",
-      "embed_id": "89ePp8Z9f5Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839997.3322499
+  "_ts": 1787099095.155405
 }

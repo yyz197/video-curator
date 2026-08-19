@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pg7fntKLNak",
+      "youtube_id": "pg7fntKLNak",
+      "source": "youtube",
+      "title": "Quantum Simulation & Nature - Computerphile",
+      "url": "https://www.youtube.com/watch?v=pg7fntKLNak",
+      "thumbnail": "https://i.ytimg.com/vi/pg7fntKLNak/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn more about the Jane Street internship at: https://jane-st.co/internships2027-Computerphile\n\nSimulations of nature and physics are a potential application of quantum computing. Ella and Alex take us through how using quantum techniques could supersede classical options. \n\nDr Eleanor Crane is a ",
+      "published": 1786979883,
+      "published_str": "2026-08-17",
+      "embed_id": "pg7fntKLNak",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cDKPbMaLTA4",
       "youtube_id": "cDKPbMaLTA4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_lSCbt_N_Oao",
-      "youtube_id": "lSCbt_N_Oao",
-      "source": "youtube",
-      "title": "SenseMaking (Data Visualisation) - Computerphile",
-      "url": "https://www.youtube.com/watch?v=lSCbt_N_Oao",
-      "thumbnail": "https://i.ytimg.com/vi/lSCbt_N_Oao/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Turning data into something visual helps humans make sense of things. Kai explains and shows an open source tool for tracking your research.\n\nMore information about SenseMap: https://vis4sense.github.io/sensemap/\nGitHub repository for HistoryMap (the new version of the chrome extension): https://git",
-      "published": 1677838959,
-      "published_str": "2023-03-03",
-      "embed_id": "lSCbt_N_Oao",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839984.720782
+  "_ts": 1787099082.0206418
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_rYyJm1tD3d0",
+      "youtube_id": "rYyJm1tD3d0",
+      "source": "youtube",
+      "title": "The jumping pegs puzzle",
+      "url": "https://www.youtube.com/watch?v=rYyJm1tD3d0",
+      "thumbnail": "https://i.ytimg.com/vi/rYyJm1tD3d0/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Part of a series of monthly puzzles with MoMath.",
+      "published": 1787064857,
+      "published_str": "2026-08-18",
+      "embed_id": "rYyJm1tD3d0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6XPlmCDNLNc",
       "youtube_id": "6XPlmCDNLNc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ZA4JkHKZM50",
-      "youtube_id": "ZA4JkHKZM50",
-      "source": "youtube",
-      "title": "Why “probability of 0” does not mean “impossible” | Probabilities of probabilities, part 2",
-      "url": "https://www.youtube.com/watch?v=ZA4JkHKZM50",
-      "thumbnail": "https://i.ytimg.com/vi/ZA4JkHKZM50/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "An introduction to probability density functions\nHelp fund future projects: https://www.patreon.com/3blue1brown\nAn equally valuable form of support is to simply share some of the videos.\nSpecial thanks to these supporters: http://3b1b.co/thanks\r\n\r\nCurious about measure theory?  This does require som",
-      "published": 1586706090,
-      "published_str": "2020-04-12",
-      "embed_id": "ZA4JkHKZM50",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839984.2661161
+  "_ts": 1787099081.656858
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_l29K-ZkARmE",
+      "youtube_id": "l29K-ZkARmE",
+      "source": "youtube",
+      "title": "The tragedy of Cassandra, the princess who predicted the fall of Troy - Iseult Gillespie",
+      "url": "https://www.youtube.com/watch?v=l29K-ZkARmE",
+      "thumbnail": "https://i.ytimg.com/vi/l29K-ZkARmE/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into the Greek tragedy of Cassandra, who received the gift of prophecy but was cursed by Apollo to never be believed.\n\n--\n\nAs a young woman, Cassandra of Troy had been pursued by the god Apollo, who offered her the gift of prophecy. But when she withdrew from his advances, he twisted his gift in",
+      "published": 1787065237,
+      "published_str": "2026-08-18",
+      "embed_id": "l29K-ZkARmE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2A1IEBFt6Xg",
       "youtube_id": "2A1IEBFt6Xg",
       "source": "youtube",
@@ -79,7 +104,7 @@
       "id": "youtube_5jPCAlE0z7I",
       "youtube_id": "5jPCAlE0z7I",
       "source": "youtube",
-      "title": "The mystery of the giant kelp forest - Luka Seamus Wright and Salomé Buglass",
+      "title": "What's that touching your leg?! - Luka Seamus Wright and Salomé Buglass",
       "url": "https://www.youtube.com/watch?v=5jPCAlE0z7I",
       "thumbnail": "https://i.ytimg.com/vi/5jPCAlE0z7I/mqdefault.jpg",
       "author": "TED-Ed",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_iEFz9KzOB1g",
-      "youtube_id": "iEFz9KzOB1g",
-      "source": "youtube",
-      "title": "Which species would you get rid of? | Ada, Ep. 5",
-      "url": "https://www.youtube.com/watch?v=iEFz9KzOB1g",
-      "thumbnail": "https://i.ytimg.com/vi/iEFz9KzOB1g/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Ada imagines how eradicating invasive species would impact our ecosystems. Who decides which species, and how many are too many?\n\n--\n\nThis is episode 5 of the animated series, “Ada.” This 5-episode narrative follows the young library assistant Ada as she juggles two worlds: her daily mundane reality",
-      "published": 1740672048,
-      "published_str": "2025-02-27",
-      "embed_id": "iEFz9KzOB1g",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839982.4431746
+  "_ts": 1787099080.6028898
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_eq0vL1cvRRc",
+      "youtube_id": "eq0vL1cvRRc",
+      "source": "youtube",
+      "title": "FDR's floating White House sank. Descendants spent 15 years restoring it",
+      "url": "https://www.youtube.com/watch?v=eq0vL1cvRRc",
+      "thumbnail": "https://i.ytimg.com/vi/eq0vL1cvRRc/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "The USS Potomac was FDR's \"Floating White House\" — the boat where he ran the country, secretly slipped away in the fog to meet Winston Churchill mid-ocean, and could move freely without the world seeing that he couldn't walk. \n\nBut after his death in 1945, it fell into decades of neglect (save for a",
+      "published": 1786922750,
+      "published_str": "2026-08-16",
+      "embed_id": "eq0vL1cvRRc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_swrez2ZA0cc",
       "youtube_id": "swrez2ZA0cc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_1u_jPBtEoxw",
-      "youtube_id": "1u_jPBtEoxw",
-      "source": "youtube",
-      "title": "NJ retiree builds off-grid Wood Tower homestead in remote Andes",
-      "url": "https://www.youtube.com/watch?v=1u_jPBtEoxw",
-      "thumbnail": "https://i.ytimg.com/vi/1u_jPBtEoxw/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Wendy Green had spent most of her life in suburban New Jersey long days as a yoga teacher, so when she turned 50, she sold her house and used the proceeds to buy remote land in the Andes. Wendy became an advocate of the Financial Independence, Retire Early movement (FIRE) before it even existed —and",
-      "published": 1696789346,
-      "published_str": "2023-10-08",
-      "embed_id": "1u_jPBtEoxw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839988.0592477
+  "_ts": 1787099085.7010784
 }

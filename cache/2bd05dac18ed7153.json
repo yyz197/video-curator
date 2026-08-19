@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_nH-sP5Afyxk",
+      "youtube_id": "nH-sP5Afyxk",
+      "source": "youtube",
+      "title": "Our new AI employee can give you $100 of free work - link in description!",
+      "url": "https://www.youtube.com/watch?v=nH-sP5Afyxk",
+      "thumbnail": "https://i.ytimg.com/vi/nH-sP5Afyxk/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "If you want to give Viktor a go and get $100 of his work completely free, no credit card required, copy and paste this link: ref.viktor.com/vik-aa-aug-reel\n\nWhen we hired Viktor last month, I genuinely didn't know if the team would actually use him.\n\nHere's what one week with an AI employee actually",
+      "published": 1786960808,
+      "published_str": "2026-08-17",
+      "embed_id": "nH-sP5Afyxk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_fEMHMd7fovM",
       "youtube_id": "fEMHMd7fovM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_FE6VL7jpfCs",
-      "youtube_id": "FE6VL7jpfCs",
-      "source": "youtube",
-      "title": "I asked Hormozi how to make $100k a year",
-      "url": "https://www.youtube.com/watch?v=FE6VL7jpfCs",
-      "thumbnail": "https://i.ytimg.com/vi/FE6VL7jpfCs/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "I asked @AlexHormozi  how he'd make $100k a year doing what he loves.\n\nHis answer was basically, find one super valuable service you can do for a business, charge them $100K for it, then figure out what to do with the other 364 days of the year 😂\n\nWhat hit me was how casually he said it. He wasn't b",
-      "published": 1785837616,
-      "published_str": "2026-08-04",
-      "embed_id": "FE6VL7jpfCs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1786839996.4323978
+  "_ts": 1787099094.2785168
 }
