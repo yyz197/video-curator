@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ZLc9udbCaeI",
+      "youtube_id": "ZLc9udbCaeI",
+      "source": "youtube",
+      "title": "The Mystery Behind Earth’s Missing Rocks: Crash Course Geology #16",
+      "url": "https://www.youtube.com/watch?v=ZLc9udbCaeI",
+      "thumbnail": "https://i.ytimg.com/vi/ZLc9udbCaeI/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "How did over one billion years of history go missing? In this episode of Crash Course Geology, we’ll tour the Grand Canyon and discover how geologists read its rocky layers like chapters in Earth’s biography. We’ll also explore theories about why some of those chapters have disappeared.  \n\n\nIntroduc",
+      "published": 1787241621,
+      "published_str": "2026-08-20",
+      "embed_id": "ZLc9udbCaeI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Ksq2Fq69Yl8",
       "youtube_id": "Ksq2Fq69Yl8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gCnbYzYZRjg",
-      "youtube_id": "gCnbYzYZRjg",
-      "source": "youtube",
-      "title": "The Ring of Fire",
-      "url": "https://www.youtube.com/watch?v=gCnbYzYZRjg",
-      "thumbnail": "https://i.ytimg.com/vi/gCnbYzYZRjg/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Almost all the planet’s earthquakes and volcanic eruptions happen in one place: the Ring of Fire! Nearly the whole Pacific Ocean is bordered by \n\nthis treacherous region where some of the biggest earthquakes ever recorded. But why? What makes the Ring of Fire so… fiery? Check out Crash Course Geolog",
-      "published": 1785859239,
-      "published_str": "2026-08-04",
-      "embed_id": "gCnbYzYZRjg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787099091.534318
+  "_ts": 1787358352.699072
 }

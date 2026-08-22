@@ -1,31 +1,6 @@
 {
   "videos": [
     {
-      "id": "youtube_t_3KkbWCFdo",
-      "youtube_id": "t_3KkbWCFdo",
-      "source": "youtube",
-      "title": "We’ll Never Stop Missing You, Grant!",
-      "url": "https://www.youtube.com/watch?v=t_3KkbWCFdo",
-      "thumbnail": "https://i.ytimg.com/vi/t_3KkbWCFdo/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "This year, we wanted to honor him in a way that felt personal — celebrating his love of adventure, flying, fire, and most of all, his boys.\n\nWe miss you every day, Grant. Your boys are growing up, and we see pieces of you in all of them. ❤️\n\nIn honor of Grant and his legacy, you can support Healing ",
-      "published": 1787090505,
-      "published_str": "2026-08-18",
-      "embed_id": "t_3KkbWCFdo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
-    },
-    {
       "id": "youtube_jmuaFh8YFcI",
       "youtube_id": "jmuaFh8YFcI",
       "source": "youtube",
@@ -3749,7 +3724,32 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
+    },
+    {
+      "id": "youtube_uY8TvtZNguU",
+      "youtube_id": "uY8TvtZNguU",
+      "source": "youtube",
+      "title": "Experimental GREEN Flash Powder",
+      "url": "https://www.youtube.com/watch?v=uY8TvtZNguU",
+      "thumbnail": "https://i.ytimg.com/vi/uY8TvtZNguU/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "We made a bright green flash powder out of only two ingredients. \n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.\n\nWARNING:\n\nThis video is onl",
+      "published": 1739660447,
+      "published_str": "2025-02-15",
+      "embed_id": "uY8TvtZNguU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
     }
   ],
-  "_ts": 1787099079.2636027
+  "_ts": 1787358338.2179716
 }

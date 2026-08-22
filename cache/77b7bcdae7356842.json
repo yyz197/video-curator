@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ZLc9udbCaeI",
+      "youtube_id": "ZLc9udbCaeI",
+      "source": "youtube",
+      "title": "The Mystery Behind Earth’s Missing Rocks: Crash Course Geology #16",
+      "url": "https://www.youtube.com/watch?v=ZLc9udbCaeI",
+      "thumbnail": "https://i.ytimg.com/vi/ZLc9udbCaeI/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "How did over one billion years of history go missing? In this episode of Crash Course Geology, we’ll tour the Grand Canyon and discover how geologists read its rocky layers like chapters in Earth’s biography. We’ll also explore theories about why some of those chapters have disappeared.  \n\n\nIntroduc",
+      "published": 1787241621,
+      "published_str": "2026-08-20",
+      "embed_id": "ZLc9udbCaeI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Ksq2Fq69Yl8",
       "youtube_id": "Ksq2Fq69Yl8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_WFO8iUyXlCQ",
-      "youtube_id": "WFO8iUyXlCQ",
-      "source": "youtube",
-      "title": "Origins of Color (Trade & Exchange): Crash Course Art History #12",
-      "url": "https://www.youtube.com/watch?v=WFO8iUyXlCQ",
-      "thumbnail": "https://i.ytimg.com/vi/WFO8iUyXlCQ/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How can the color “red” be a global commodity? How can the way a statue stands be a sign of cultural exchange? In this episode of Crash Course Art History, we’ll explore how trade networks have moved both materials and ideas — and how art reflects a multi-directional flow of influences.\n\nIntroductio",
-      "published": 1721318424,
-      "published_str": "2024-07-18",
-      "embed_id": "WFO8iUyXlCQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787099078.816299
+  "_ts": 1787358337.7328134
 }

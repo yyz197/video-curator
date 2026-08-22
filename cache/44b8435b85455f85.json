@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_gyQwMjhbiGI",
+      "youtube_id": "gyQwMjhbiGI",
+      "source": "youtube",
+      "title": "Operation Show Of Force: The Complete Story Of The Raid In Tunis",
+      "url": "https://www.youtube.com/watch?v=gyQwMjhbiGI",
+      "thumbnail": "https://i.ytimg.com/vi/gyQwMjhbiGI/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "In 1988, following a deadly attack on a bus near Israel's nuclear facility, Defense Minister Yitzhak Rabin ordered a high-stakes secret mission. Operating 1,500 miles from home, Israel’s elite special forces unit, Sayeret Matkal, alongside Mossad, planned \"Operation Show of Force.\" Disguised as tour",
+      "published": 1787259638,
+      "published_str": "2026-08-20",
+      "embed_id": "gyQwMjhbiGI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_SxN3k2yngsc",
       "youtube_id": "SxN3k2yngsc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_9_B4GeELC0c",
-      "youtube_id": "9_B4GeELC0c",
-      "source": "youtube",
-      "title": "The Trojan Horse: History's Greatest Deception?",
-      "url": "https://www.youtube.com/watch?v=9_B4GeELC0c",
-      "thumbnail": "https://i.ytimg.com/vi/9_B4GeELC0c/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "The history of the Trojan horse is probably one of the most famous stories ever told. A gigantic wooden horse is loaded with Greek soldiers and presented to the Trojans as a gift. Unsuspecting, they swallow the bait and pull the horse into the city. Under cover of darkness the Greeks slip out of the",
-      "published": 1770588006,
-      "published_str": "2026-02-08",
-      "embed_id": "9_B4GeELC0c",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787099083.396112
+  "_ts": 1787358343.097275
 }

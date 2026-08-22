@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_D11PMo1JVU4",
+      "youtube_id": "D11PMo1JVU4",
+      "source": "youtube",
+      "title": "30 days free of Manychat Pro in the description :)",
+      "url": "https://www.youtube.com/watch?v=D11PMo1JVU4",
+      "thumbnail": "https://i.ytimg.com/vi/D11PMo1JVU4/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Click this link for a free 30-day Manychat Pro trial: get.manychat.com/course-creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalEmpireYTS&utm_content=YTS or use the coupon code: ALIABDAAL\n\nOver the last few years I've made over $10 million selling stuff online.\n\nYou'd probably thi",
+      "published": 1787226308,
+      "published_str": "2026-08-20",
+      "embed_id": "D11PMo1JVU4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_nH-sP5Afyxk",
       "youtube_id": "nH-sP5Afyxk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_oCVq-wAPqSs",
-      "youtube_id": "oCVq-wAPqSs",
-      "source": "youtube",
-      "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
-      "url": "https://www.youtube.com/watch?v=oCVq-wAPqSs",
-      "thumbnail": "https://i.ytimg.com/vi/oCVq-wAPqSs/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Sponsored Link. To get free fractional shares worth up to £100, you can open an account with Trading 212 through this link - https://www.trading212.com/join/ALI\n\nThis video does not represent financial advice, and I am not a financial advisor. When investing, your capital is at risk and you may get ",
-      "published": 1785848406,
-      "published_str": "2026-08-04",
-      "embed_id": "oCVq-wAPqSs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787099094.2785168
+  "_ts": 1787358354.8688917
 }

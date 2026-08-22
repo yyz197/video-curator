@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_D11PMo1JVU4",
+      "youtube_id": "D11PMo1JVU4",
+      "source": "youtube",
+      "title": "30 days free of Manychat Pro in the description :)",
+      "url": "https://www.youtube.com/watch?v=D11PMo1JVU4",
+      "thumbnail": "https://i.ytimg.com/vi/D11PMo1JVU4/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Click this link for a free 30-day Manychat Pro trial: get.manychat.com/course-creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalEmpireYTS&utm_content=YTS or use the coupon code: ALIABDAAL\n\nOver the last few years I've made over $10 million selling stuff online.\n\nYou'd probably thi",
+      "published": 1787226308,
+      "published_str": "2026-08-20",
+      "embed_id": "D11PMo1JVU4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_nH-sP5Afyxk",
       "youtube_id": "nH-sP5Afyxk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XQjjlGpsuLY",
-      "youtube_id": "XQjjlGpsuLY",
-      "source": "youtube",
-      "title": "What would you do if you didn't care what people thought?",
-      "url": "https://www.youtube.com/watch?v=XQjjlGpsuLY",
-      "thumbnail": "https://i.ytimg.com/vi/XQjjlGpsuLY/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Learn how to be financially free (free workshop): https://go.aliabdaal.com/financiallyfreeyts",
-      "published": 1770631250,
-      "published_str": "2026-02-09",
-      "embed_id": "XQjjlGpsuLY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787099084.055742
+  "_ts": 1787358343.7179708
 }
