@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_lSflLzfWTUs",
+      "youtube_id": "lSflLzfWTUs",
+      "source": "youtube",
+      "title": "Knowing Things Intellectually vs  Knowing Them Emotionally #theschooloflife #animation #vs",
+      "url": "https://www.youtube.com/watch?v=lSflLzfWTUs",
+      "thumbnail": "https://i.ytimg.com/vi/lSflLzfWTUs/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1787490027,
+      "published_str": "2026-08-23",
+      "embed_id": "lSflLzfWTUs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_E6Alr7PX7Ps",
       "youtube_id": "E6Alr7PX7Ps",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_OTZP1XEsKoE",
-      "youtube_id": "OTZP1XEsKoE",
-      "source": "youtube",
-      "title": "Why You Keep Having The Same Fight",
-      "url": "https://www.youtube.com/watch?v=OTZP1XEsKoE",
-      "thumbnail": "https://i.ytimg.com/vi/OTZP1XEsKoE/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nThe same fight, everywhere. This film dissects the toxic cycle of feeling controlled vs. abandoned in relationships. Learn to break the pattern, communicate hurt, and build empathy. #Relationships #Communication",
-      "published": 1755694854,
-      "published_str": "2025-08-20",
-      "embed_id": "OTZP1XEsKoE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358340.6455562
+  "_ts": 1787617599.2430642
 }

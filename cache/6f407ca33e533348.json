@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_5U-V0y-fkSw",
+      "youtube_id": "5U-V0y-fkSw",
+      "source": "youtube",
+      "title": "It's impossible to choose a number at random",
+      "url": "https://www.youtube.com/watch?v=5U-V0y-fkSw",
+      "thumbnail": "https://i.ytimg.com/vi/5U-V0y-fkSw/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In math you can't truly pick things at random because formulas always give the same result.\n\nSo if we can't pick randomly, how do we select anything in math?",
+      "published": 1787576914,
+      "published_str": "2026-08-24",
+      "embed_id": "5U-V0y-fkSw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_nHAFnH3xRl4",
       "youtube_id": "nHAFnH3xRl4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_vSQjk9jKarg",
-      "youtube_id": "vSQjk9jKarg",
-      "source": "youtube",
-      "title": "What is the secret of a good life? Lessons from the longest study on happiness",
-      "url": "https://www.youtube.com/watch?v=vSQjk9jKarg",
-      "thumbnail": "https://i.ytimg.com/vi/vSQjk9jKarg/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How to lead a happier, healthier and longer life. Check out our sponsor: https://betterhelp.com/veritasium to get matched with a professional therapist who will listen and help.\n\n▀▀▀\nA huge thanks to Prof. Robert Waldinger for all his help with this video. \n\nTo learn more about what makes for a good",
-      "published": 1700087761,
-      "published_str": "2023-11-15",
-      "embed_id": "vSQjk9jKarg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358337.1700568
+  "_ts": 1787617595.7256083
 }

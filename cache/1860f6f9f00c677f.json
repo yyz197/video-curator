@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_DfDag17yGXE",
+      "youtube_id": "DfDag17yGXE",
+      "source": "youtube",
+      "title": "He built dirt-cheap homestead in sweet spot: beats city, suburb, country",
+      "url": "https://www.youtube.com/watch?v=DfDag17yGXE",
+      "thumbnail": "https://i.ytimg.com/vi/DfDag17yGXE/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "He built his off-grid straw bale home for just $15,000, including solar panels and batteries, and 20 years later he's still refining the system.\n\nDan Durica has lived at Dancing Rabbit Ecovillage in Missouri for two decades, in a home he built himself out of local straw bale and earth. \n\nToday his m",
+      "published": 1787521232,
+      "published_str": "2026-08-23",
+      "embed_id": "DfDag17yGXE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eq0vL1cvRRc",
       "youtube_id": "eq0vL1cvRRc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_1YFdMLDU6Fc",
-      "youtube_id": "1YFdMLDU6Fc",
-      "source": "youtube",
-      "title": "Got abandoned bunker network. They're building underground village",
-      "url": "https://www.youtube.com/watch?v=1YFdMLDU6Fc",
-      "thumbnail": "https://i.ytimg.com/vi/1YFdMLDU6Fc/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "In Paradise Valley (Montana) there are 52 underground bunkers, capable of housing hundreds of people. They were built in the 1980s to prepare for nuclear fallout. When Dean Anderson found one for sale by owner, he snapped it up for a good price since it was filled with 45,000 pounds of dried food.\n\n",
-      "published": 1697400516,
-      "published_str": "2023-10-15",
-      "embed_id": "1YFdMLDU6Fc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358345.4178743
+  "_ts": 1787617604.4139073
 }

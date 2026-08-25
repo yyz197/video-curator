@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_DfDag17yGXE",
+      "youtube_id": "DfDag17yGXE",
+      "source": "youtube",
+      "title": "He built dirt-cheap homestead in sweet spot: beats city, suburb, country",
+      "url": "https://www.youtube.com/watch?v=DfDag17yGXE",
+      "thumbnail": "https://i.ytimg.com/vi/DfDag17yGXE/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "He built his off-grid straw bale home for just $15,000, including solar panels and batteries, and 20 years later he's still refining the system.\n\nDan Durica has lived at Dancing Rabbit Ecovillage in Missouri for two decades, in a home he built himself out of local straw bale and earth. \n\nToday his m",
+      "published": 1787521232,
+      "published_str": "2026-08-23",
+      "embed_id": "DfDag17yGXE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eq0vL1cvRRc",
       "youtube_id": "eq0vL1cvRRc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_5KMTPjEXaSY",
-      "youtube_id": "5KMTPjEXaSY",
-      "source": "youtube",
-      "title": "Family wraps 2-container homestead in greenhouse to improve health & mood",
-      "url": "https://www.youtube.com/watch?v=5KMTPjEXaSY",
-      "thumbnail": "https://i.ytimg.com/vi/5KMTPjEXaSY/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Anki lives inside a greenhouse. It started with two affordable prefab containers on a plot of land at the edge of a Swedish national park, but what came next changed everything: she wrapped the whole structure in glass, creating her own warm, Mediterranean climate inside a cold Nordic forest.\n\nInsid",
-      "published": 1784499448,
-      "published_str": "2026-07-19",
-      "embed_id": "5KMTPjEXaSY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358356.012028
+  "_ts": 1787617614.216628
 }

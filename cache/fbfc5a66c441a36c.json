@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hy-IbuXXUYk",
+      "youtube_id": "hy-IbuXXUYk",
+      "source": "youtube",
+      "title": "Do Penguins Control the Weather?",
+      "url": "https://www.youtube.com/watch?v=hy-IbuXXUYk",
+      "thumbnail": "https://i.ytimg.com/vi/hy-IbuXXUYk/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Check out JMP’s workshop here: https://www.jmp.com/scishow-dataviz \n\nStudies have revealed that penguins, and we are not joking, can control the weather. To really understand and manage climate change in Antarctica, we’ll need help from funny little guys in suits.\n\nHosted by: Savannah Geary (they/th",
+      "published": 1787590829,
+      "published_str": "2026-08-24",
+      "embed_id": "hy-IbuXXUYk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lkMtbeU2NyQ",
       "youtube_id": "lkMtbeU2NyQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_5okDacdZ2sc",
-      "youtube_id": "5okDacdZ2sc",
-      "source": "youtube",
-      "title": "Cameroon’s Deadly Lake Bomb Has Been Defused",
-      "url": "https://www.youtube.com/watch?v=5okDacdZ2sc",
-      "thumbnail": "https://i.ytimg.com/vi/5okDacdZ2sc/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Get 20% off DeleteMe by going to https://joindeleteme.com/SCISHOW and use code SCISHOW to protect your privacy!  \n\nIn 1986, the residents of a Cameroonian village called Nyos experienced a natural disaster that had only happened one other time in recorded history. Their local lake expelled a giganti",
-      "published": 1786640410,
-      "published_str": "2026-08-13",
-      "embed_id": "5okDacdZ2sc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358352.672299
+  "_ts": 1787617611.006701
 }

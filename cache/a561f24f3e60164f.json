@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_lSflLzfWTUs",
+      "youtube_id": "lSflLzfWTUs",
+      "source": "youtube",
+      "title": "Knowing Things Intellectually vs  Knowing Them Emotionally #theschooloflife #animation #vs",
+      "url": "https://www.youtube.com/watch?v=lSflLzfWTUs",
+      "thumbnail": "https://i.ytimg.com/vi/lSflLzfWTUs/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1787490027,
+      "published_str": "2026-08-23",
+      "embed_id": "lSflLzfWTUs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_E6Alr7PX7Ps",
       "youtube_id": "E6Alr7PX7Ps",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_156C-c48ezU",
-      "youtube_id": "156C-c48ezU",
-      "source": "youtube",
-      "title": "What Do I Project onto Other People?",
-      "url": "https://www.youtube.com/watch?v=156C-c48ezU",
-      "thumbnail": "https://i.ytimg.com/vi/156C-c48ezU/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Why do we so often expect people to be judgmental, hostile, or unreliable? While we like to think our judgments of others are based on objective reality, psychotherapy reveals a different truth: we are constantly projecting our forgotten pasts onto the present. Start your free Membership trial – 2,0",
-      "published": 1786539611,
-      "published_str": "2026-08-12",
-      "embed_id": "156C-c48ezU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358353.3008523
+  "_ts": 1787617611.6876566
 }

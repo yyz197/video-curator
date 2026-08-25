@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-mXaU3N9e8Y",
+      "youtube_id": "-mXaU3N9e8Y",
+      "source": "youtube",
+      "title": "2.685 is (almost) everywhere - Numberphile",
+      "url": "https://www.youtube.com/watch?v=-mXaU3N9e8Y",
+      "thumbnail": "https://i.ytimg.com/vi/-mXaU3N9e8Y/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Richard Elwes discusses Khinchin's constant which underlies 100% of numbers (but not every number). More about Jane Street Internships at https://jane-st.co/internships2027-Numberphile (episode sponsor). More links & stuff in full description below ↓↓↓\n\nExtra footage from this interview: https://you",
+      "published": 1787407797,
+      "published_str": "2026-08-22",
+      "embed_id": "-mXaU3N9e8Y",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0aTUTxOiRgU",
       "youtube_id": "0aTUTxOiRgU",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rBU9E-ZOZAI",
-      "youtube_id": "rBU9E-ZOZAI",
-      "source": "youtube",
-      "title": "A Number Sequence with Everything - Numberphile",
-      "url": "https://www.youtube.com/watch?v=rBU9E-ZOZAI",
-      "thumbnail": "https://i.ytimg.com/vi/rBU9E-ZOZAI/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Neil Sloane discusses The Inventory Sequence... See also Jane Street's special page: https://www.janestreet.com/numberphile2022\nMore links & stuff in full description below ↓↓↓\n\nNeil Sloane is founder of the legendary OEIS: https://oeis.org/\n\nInventory Sequence at: https://oeis.org/A342585\n\nJane Str",
-      "published": 1668077945,
-      "published_str": "2022-11-10",
-      "embed_id": "rBU9E-ZOZAI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358341.18684
+  "_ts": 1787617600.03293
 }

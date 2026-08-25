@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hy-IbuXXUYk",
+      "youtube_id": "hy-IbuXXUYk",
+      "source": "youtube",
+      "title": "Do Penguins Control the Weather?",
+      "url": "https://www.youtube.com/watch?v=hy-IbuXXUYk",
+      "thumbnail": "https://i.ytimg.com/vi/hy-IbuXXUYk/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Check out JMP’s workshop here: https://www.jmp.com/scishow-dataviz \n\nStudies have revealed that penguins, and we are not joking, can control the weather. To really understand and manage climate change in Antarctica, we’ll need help from funny little guys in suits.\n\nHosted by: Savannah Geary (they/th",
+      "published": 1787590829,
+      "published_str": "2026-08-24",
+      "embed_id": "hy-IbuXXUYk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lkMtbeU2NyQ",
       "youtube_id": "lkMtbeU2NyQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_GckqMcaz-3M",
-      "youtube_id": "GckqMcaz-3M",
-      "source": "youtube",
-      "title": "We Didn’t Evolve Color Vision to See Color",
-      "url": "https://www.youtube.com/watch?v=GckqMcaz-3M",
-      "thumbnail": "https://i.ytimg.com/vi/GckqMcaz-3M/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Use code scishow at https://incogni.com/scishow to get an exclusive 60% off.   \n\nFrom birds of paradise (the bird) to birds of paradise (the flower), nature is full of colorful life. And these colors can communicate a bunch of different messages. But if no animal had eyes capable of perceiving those",
-      "published": 1765216827,
-      "published_str": "2025-12-08",
-      "embed_id": "GckqMcaz-3M",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787358337.6901264
+  "_ts": 1787617596.2148964
 }
