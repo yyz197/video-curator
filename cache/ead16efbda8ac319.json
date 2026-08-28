@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hJDd0aXWd2w",
+      "youtube_id": "hJDd0aXWd2w",
+      "source": "youtube",
+      "title": "I Know You’re Up There Somewhere  | A Letter to Grant",
+      "url": "https://www.youtube.com/watch?v=hJDd0aXWd2w",
+      "thumbnail": "https://i.ytimg.com/vi/hJDd0aXWd2w/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "This year, we wanted to honor Grant in a way that felt personal — celebrating his love of adventure, flying, fire, and most of all, his boys.\n\nAs they continue to grow, we see pieces of Grant in all of them. His spirit, his curiosity, his love for adventure, and the way he made every moment feel lik",
+      "published": 1787757040,
+      "published_str": "2026-08-26",
+      "embed_id": "hJDd0aXWd2w",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_jmuaFh8YFcI",
       "youtube_id": "jmuaFh8YFcI",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_uY8TvtZNguU",
-      "youtube_id": "uY8TvtZNguU",
-      "source": "youtube",
-      "title": "Experimental GREEN Flash Powder",
-      "url": "https://www.youtube.com/watch?v=uY8TvtZNguU",
-      "thumbnail": "https://i.ytimg.com/vi/uY8TvtZNguU/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We made a bright green flash powder out of only two ingredients. \n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.\n\nWARNING:\n\nThis video is onl",
-      "published": 1739660447,
-      "published_str": "2025-02-15",
-      "embed_id": "uY8TvtZNguU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617596.755403
+  "_ts": 1787900966.8058121
 }

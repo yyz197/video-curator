@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_mxpuV33vpNk",
+      "youtube_id": "mxpuV33vpNk",
+      "source": "youtube",
+      "title": "JWST May Have Discovered a New Cosmic Object: The Black Hole Star",
+      "url": "https://www.youtube.com/watch?v=mxpuV33vpNk",
+      "thumbnail": "https://i.ytimg.com/vi/mxpuV33vpNk/mqdefault.jpg",
+      "author": "PBS Space Time",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Sign Up on Patreon to get access to the Space Time Discord!\nhttps://www.patreon.com/pbsspacetime\n\nGigantic black holes existed in a cosmic eyeblink after the Big Bang. That should be impossible. The James Webb Space Telescope has either made the problem much worse, or solved it by discovering the fi",
+      "published": 1787861717,
+      "published_str": "2026-08-27",
+      "embed_id": "mxpuV33vpNk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Yid9cO7peXg",
       "youtube_id": "Yid9cO7peXg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Q_CQDSlmboA",
-      "youtube_id": "Q_CQDSlmboA",
-      "source": "youtube",
-      "title": "Is ACTION The Most Fundamental Property in Physics?",
-      "url": "https://www.youtube.com/watch?v=Q_CQDSlmboA",
-      "thumbnail": "https://i.ytimg.com/vi/Q_CQDSlmboA/mqdefault.jpg",
-      "author": "PBS Space Time",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Learn More About NordVPN at: https://nordvpn.com/spacetime\n\nIt’s about time we discussed an obscure concept in physics that may be more fundamental than energy and entropy and perhaps time itself. That’s right - the time has come for Action. \n\nSign Up on Patreon to get access to the Space Time Disco",
-      "published": 1635884101,
-      "published_str": "2021-11-02",
-      "embed_id": "Q_CQDSlmboA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617596.1715503
+  "_ts": 1787900966.2831383
 }

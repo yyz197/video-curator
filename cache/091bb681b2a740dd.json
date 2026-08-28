@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_TsU00pg6dmY",
+      "youtube_id": "TsU00pg6dmY",
+      "source": "youtube",
+      "title": "I speak faster than I type - Free Month of Wispr Flow Pro in the description :)",
+      "url": "https://www.youtube.com/watch?v=TsU00pg6dmY",
+      "thumbnail": "https://i.ytimg.com/vi/TsU00pg6dmY/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "For a free month of Wispr Flow Pro: ref.wisprflow.ai/ali_shorts\n\nI run an online business school, and a big chunk of my week is replying to students on Slack.\n\nThat used to be an hour of context switching and typing, but now, I just talk into my computer.\n\nOne of our students was struggling to drive",
+      "published": 1787662841,
+      "published_str": "2026-08-25",
+      "embed_id": "TsU00pg6dmY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_D11PMo1JVU4",
       "youtube_id": "D11PMo1JVU4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rkorr-tHPTM",
-      "youtube_id": "rkorr-tHPTM",
-      "source": "youtube",
-      "title": "Feeling Lost? Try These Journaling Prompts",
-      "url": "https://www.youtube.com/watch?v=rkorr-tHPTM",
-      "thumbnail": "https://i.ytimg.com/vi/rkorr-tHPTM/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Get more prompts in my free journaling hub: https://go.aliabdaal.com/yts260212",
-      "published": 1770717689,
-      "published_str": "2026-02-10",
-      "embed_id": "rkorr-tHPTM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617602.6071296
+  "_ts": 1787900972.3581324
 }

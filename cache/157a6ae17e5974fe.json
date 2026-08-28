@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_QyRqlTV60zM",
+      "youtube_id": "QyRqlTV60zM",
+      "source": "youtube",
+      "title": "Plato’s infamous Ship of State thought experiment - Michael Vazquez",
+      "url": "https://www.youtube.com/watch?v=QyRqlTV60zM",
+      "thumbnail": "https://i.ytimg.com/vi/QyRqlTV60zM/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into Plato’s infamous Ship of State thought experiment, which explores how democratic societies handle leadership and power.\n\n--\n\nImagine a ship struggling in an endless storm. Its captain, though strong and commanding, is a terrible navigator. Neither he nor his crew have been trained to sail, ",
+      "published": 1787670069,
+      "published_str": "2026-08-25",
+      "embed_id": "QyRqlTV60zM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_l29K-ZkARmE",
       "youtube_id": "l29K-ZkARmE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_q5WEuoxYIac",
-      "youtube_id": "q5WEuoxYIac",
-      "source": "youtube",
-      "title": "The tale of the brothers who outwitted the demon queen - Malay Bera",
-      "url": "https://www.youtube.com/watch?v=q5WEuoxYIac",
-      "thumbnail": "https://i.ytimg.com/vi/q5WEuoxYIac/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Dig into the Bengali tale of brothers Neelkamal and Lalkamal, two princes seeking to end the reign of demons in their kingdom.\n\n--\n\nAchinpur was on the precipice of demonic takeover. A mysterious woman beguiled the king and infiltrated the royal family. But she wasn’t human; under her beautiful faça",
-      "published": 1741104039,
-      "published_str": "2025-03-04",
-      "embed_id": "q5WEuoxYIac",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617598.2604904
+  "_ts": 1787900968.2046385
 }

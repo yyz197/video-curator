@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_mxpuV33vpNk",
+      "youtube_id": "mxpuV33vpNk",
+      "source": "youtube",
+      "title": "JWST May Have Discovered a New Cosmic Object: The Black Hole Star",
+      "url": "https://www.youtube.com/watch?v=mxpuV33vpNk",
+      "thumbnail": "https://i.ytimg.com/vi/mxpuV33vpNk/mqdefault.jpg",
+      "author": "PBS Space Time",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Sign Up on Patreon to get access to the Space Time Discord!\nhttps://www.patreon.com/pbsspacetime\n\nGigantic black holes existed in a cosmic eyeblink after the Big Bang. That should be impossible. The James Webb Space Telescope has either made the problem much worse, or solved it by discovering the fi",
+      "published": 1787861717,
+      "published_str": "2026-08-27",
+      "embed_id": "mxpuV33vpNk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Yid9cO7peXg",
       "youtube_id": "Yid9cO7peXg",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_x4TdColoIu8",
-      "youtube_id": "x4TdColoIu8",
-      "source": "youtube",
-      "title": "We Thought Black Holes Created Event Horizons. It Might Be the Opposite",
-      "url": "https://www.youtube.com/watch?v=x4TdColoIu8",
-      "thumbnail": "https://i.ytimg.com/vi/x4TdColoIu8/mqdefault.jpg",
-      "author": "PBS Space Time",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Start speaking a new language in 3 weeks with Babbel 🎉. Get up to 50% OFF ➡️ Here: https://bit.ly/PBSJun26 \n\nDon’t panic, but it's possible that an event horizon is forming right behind you right now. Don’t bother looking—you won’t see it. You won’t know that it’s growing to envelop you until it’s w",
-      "published": 1781813732,
-      "published_str": "2026-06-18",
-      "embed_id": "x4TdColoIu8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617611.0199058
+  "_ts": 1787900980.5709894
 }

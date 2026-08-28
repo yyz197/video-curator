@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_41UQ1JIvXtI",
+      "youtube_id": "41UQ1JIvXtI",
+      "source": "youtube",
+      "title": "Mary Cassatt: The Impressionist Who Painted The Mind",
+      "url": "https://www.youtube.com/watch?v=41UQ1JIvXtI",
+      "thumbnail": "https://i.ytimg.com/vi/41UQ1JIvXtI/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Go to https://www.squarespace.com/nerdwriter for 10% off your first purchase.\n\nProduced in collaboration with the National Gallery of Art Production Studio. For more National Gallery of Art videos: https://www.youtube.com/@UC416BswuE2ItX23GySxZcRQ \n\nSOURCES\n\nMathews, Nancy Mowll. Mary Cassatt: A Lif",
+      "published": 1787839236,
+      "published_str": "2026-08-27",
+      "embed_id": "41UQ1JIvXtI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_XUmgIQIpg-E",
       "youtube_id": "XUmgIQIpg-E",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JbiJqTBCQuw",
-      "youtube_id": "JbiJqTBCQuw",
-      "source": "youtube",
-      "title": "CASEY NEISTAT: WHAT YOU DON'T SEE",
-      "url": "https://www.youtube.com/watch?v=JbiJqTBCQuw",
-      "thumbnail": "https://i.ytimg.com/vi/JbiJqTBCQuw/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "GET MY BOOK: https://amzn.to/3ymfQPV\n\n\nSupport Nerdwriter videos: https://patreon.com/nerdwriter\nSubscribe: http://bit.ly/SubNerdwriter\n\nFacebook: https://facebook.com/The-Nerdwriter-314141501931192/\nTwitter: https://twitter.com/TheeNerdwriter\n\nMUSIC\n\nBlue Wednesday: https://soundcloud.com/bluewedne",
-      "published": 1470232800,
-      "published_str": "2016-08-03",
-      "embed_id": "JbiJqTBCQuw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617603.795754
+  "_ts": 1787900973.3123262
 }

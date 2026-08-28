@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_41UQ1JIvXtI",
+      "youtube_id": "41UQ1JIvXtI",
+      "source": "youtube",
+      "title": "Mary Cassatt: The Impressionist Who Painted The Mind",
+      "url": "https://www.youtube.com/watch?v=41UQ1JIvXtI",
+      "thumbnail": "https://i.ytimg.com/vi/41UQ1JIvXtI/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Go to https://www.squarespace.com/nerdwriter for 10% off your first purchase.\n\nProduced in collaboration with the National Gallery of Art Production Studio. For more National Gallery of Art videos: https://www.youtube.com/@UC416BswuE2ItX23GySxZcRQ \n\nSOURCES\n\nMathews, Nancy Mowll. Mary Cassatt: A Lif",
+      "published": 1787839236,
+      "published_str": "2026-08-27",
+      "embed_id": "41UQ1JIvXtI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_XUmgIQIpg-E",
       "youtube_id": "XUmgIQIpg-E",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_fqVm6mr5b-w",
-      "youtube_id": "fqVm6mr5b-w",
-      "source": "youtube",
-      "title": "What's Jazz Doing In A Knight Of The Seven Kingdoms?",
-      "url": "https://www.youtube.com/watch?v=fqVm6mr5b-w",
-      "thumbnail": "https://i.ytimg.com/vi/fqVm6mr5b-w/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Go to https://www.squarespace.com/nerdwriter for 10% off your first purchase.\nMY BOOK: https://amzn.to/3ymfQPV\n\nSOURCES\n\nGenette, Gérard. Narrative Discourse: An Essay in Method. Translated by Jane E. Lewin, Foreword by Jonathan Culler, Cornell University Press, 1980.\n\nGenette, Gérard. Paratexts: Th",
-      "published": 1772292623,
-      "published_str": "2026-02-28",
-      "embed_id": "fqVm6mr5b-w",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617613.9028885
+  "_ts": 1787900983.6561651
 }

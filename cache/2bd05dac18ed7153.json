@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_TsU00pg6dmY",
+      "youtube_id": "TsU00pg6dmY",
+      "source": "youtube",
+      "title": "I speak faster than I type - Free Month of Wispr Flow Pro in the description :)",
+      "url": "https://www.youtube.com/watch?v=TsU00pg6dmY",
+      "thumbnail": "https://i.ytimg.com/vi/TsU00pg6dmY/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "For a free month of Wispr Flow Pro: ref.wisprflow.ai/ali_shorts\n\nI run an online business school, and a big chunk of my week is replying to students on Slack.\n\nThat used to be an hour of context switching and typing, but now, I just talk into my computer.\n\nOne of our students was struggling to drive",
+      "published": 1787662841,
+      "published_str": "2026-08-25",
+      "embed_id": "TsU00pg6dmY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_D11PMo1JVU4",
       "youtube_id": "D11PMo1JVU4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tddojhU-atQ",
-      "youtube_id": "tddojhU-atQ",
-      "source": "youtube",
-      "title": "Watch this if you're wanting a business idea suited to your skills...",
-      "url": "https://www.youtube.com/watch?v=tddojhU-atQ",
-      "thumbnail": "https://i.ytimg.com/vi/tddojhU-atQ/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Try out the FREE tool here: https://pplx.ai/ali-abdaal-youtube \n\nOne of the most common questions I get is \"I want to start a business but I have no idea what I'd actually build”. \n\nHonestly, figuring out your niche is one of the hardest parts - you definitely have skills and expertise, but you're u",
-      "published": 1785848408,
-      "published_str": "2026-08-04",
-      "embed_id": "tddojhU-atQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617613.192867
+  "_ts": 1787900982.990129
 }

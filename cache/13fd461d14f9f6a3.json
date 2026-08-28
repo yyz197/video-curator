@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xs5iOwkX9fU",
+      "youtube_id": "xs5iOwkX9fU",
+      "source": "youtube",
+      "title": "Why CPU Time ≠ Wall Clock Time! - Computerphile",
+      "url": "https://www.youtube.com/watch?v=xs5iOwkX9fU",
+      "thumbnail": "https://i.ytimg.com/vi/xs5iOwkX9fU/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The CPU can take time to find out the time, so how does it know the time? Matt Godbolt is the genius behind Compiler Explorer and the Godbolt BBC Micro Emulator, find more from him at godbolt.org \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) a",
+      "published": 1787835619,
+      "published_str": "2026-08-27",
+      "embed_id": "xs5iOwkX9fU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pg7fntKLNak",
       "youtube_id": "pg7fntKLNak",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_WO2X3oZEJOA",
-      "youtube_id": "WO2X3oZEJOA",
-      "source": "youtube",
-      "title": "Glitch Tokens - Computerphile",
-      "url": "https://www.youtube.com/watch?v=WO2X3oZEJOA",
-      "thumbnail": "https://i.ytimg.com/vi/WO2X3oZEJOA/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Language Models' Achilles heel: Rob Miles talks about \"glitch\" tokens, those mysterious words which, which result in gibberish when entered into some large language models.\n\nMore from Rob Miles: http://bit.ly/Rob_Miles_YouTube   \n\nThe AI safety/alignment post: https://www.alignmentforum.org/posts/aP",
-      "published": 1678205455,
-      "published_str": "2023-03-07",
-      "embed_id": "WO2X3oZEJOA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617599.8669436
+  "_ts": 1787900969.7799397
 }

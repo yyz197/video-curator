@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_uwCbFDsma7Q",
+      "youtube_id": "uwCbFDsma7Q",
+      "source": "youtube",
+      "title": "Earthquake Resistant Buildings",
+      "url": "https://www.youtube.com/watch?v=uwCbFDsma7Q",
+      "thumbnail": "https://i.ytimg.com/vi/uwCbFDsma7Q/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Earthquakes can happen anywhere on Earth, at any time—and unfortunately, we have no way of predicting exactly when or where. But by studying and tracking seismic data, scientists continue to refine forecasts, better assess the risks, and even research how to prevent and protect us from the most dama",
+      "published": 1787684425,
+      "published_str": "2026-08-25",
+      "embed_id": "uwCbFDsma7Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ZLc9udbCaeI",
       "youtube_id": "ZLc9udbCaeI",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_KGYy7UBf3mQ",
-      "youtube_id": "KGYy7UBf3mQ",
-      "source": "youtube",
-      "title": "Who Gets to Be a \"Real\" Artist? (Amateur & Outsider Art): Crash Course Art History #13",
-      "url": "https://www.youtube.com/watch?v=KGYy7UBf3mQ",
-      "thumbnail": "https://i.ytimg.com/vi/KGYy7UBf3mQ/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "For centuries, “official” art spaces have shaped whose work gets taken seriously. But there are no required qualifications for making art! In this episode of Crash Course Art History, we’ll explore amateurs and outsiders. We’ll learn how the line separating who’s in and who’s out has shifted over ti",
-      "published": 1721923216,
-      "published_str": "2024-07-25",
-      "embed_id": "KGYy7UBf3mQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617596.2927365
+  "_ts": 1787900966.3929694
 }

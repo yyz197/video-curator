@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_QyRqlTV60zM",
+      "youtube_id": "QyRqlTV60zM",
+      "source": "youtube",
+      "title": "Plato’s infamous Ship of State thought experiment - Michael Vazquez",
+      "url": "https://www.youtube.com/watch?v=QyRqlTV60zM",
+      "thumbnail": "https://i.ytimg.com/vi/QyRqlTV60zM/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into Plato’s infamous Ship of State thought experiment, which explores how democratic societies handle leadership and power.\n\n--\n\nImagine a ship struggling in an endless storm. Its captain, though strong and commanding, is a terrible navigator. Neither he nor his crew have been trained to sail, ",
+      "published": 1787670069,
+      "published_str": "2026-08-25",
+      "embed_id": "QyRqlTV60zM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_l29K-ZkARmE",
       "youtube_id": "l29K-ZkARmE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_5jPCAlE0z7I",
-      "youtube_id": "5jPCAlE0z7I",
-      "source": "youtube",
-      "title": "The magical forest realm hiding at the bottom of the ocean - Luka Seamus Wright and Salomé Buglass",
-      "url": "https://www.youtube.com/watch?v=5jPCAlE0z7I",
-      "thumbnail": "https://i.ytimg.com/vi/5jPCAlE0z7I/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Discover the ocean’s hidden kelp forests, and explore how these light-dependent organisms evolved to survive at dark depths.\n\n--\n\nLike any other plant, kelps require light to grow. Yet kelps found nearly 90 meters below the ocean's surface, where sometimes only 0.1% of sunlight can reach, grow as la",
-      "published": 1784646061,
-      "published_str": "2026-07-21",
-      "embed_id": "5jPCAlE0z7I",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617611.4791217
+  "_ts": 1787900981.0441287
 }

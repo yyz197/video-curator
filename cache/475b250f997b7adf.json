@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xs5iOwkX9fU",
+      "youtube_id": "xs5iOwkX9fU",
+      "source": "youtube",
+      "title": "Why CPU Time ≠ Wall Clock Time! - Computerphile",
+      "url": "https://www.youtube.com/watch?v=xs5iOwkX9fU",
+      "thumbnail": "https://i.ytimg.com/vi/xs5iOwkX9fU/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The CPU can take time to find out the time, so how does it know the time? Matt Godbolt is the genius behind Compiler Explorer and the Godbolt BBC Micro Emulator, find more from him at godbolt.org \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) a",
+      "published": 1787835619,
+      "published_str": "2026-08-27",
+      "embed_id": "xs5iOwkX9fU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pg7fntKLNak",
       "youtube_id": "pg7fntKLNak",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_dXBmCIfb92k",
-      "youtube_id": "dXBmCIfb92k",
-      "source": "youtube",
-      "title": "PiDP6 & Lisp - Computerphile",
-      "url": "https://www.youtube.com/watch?v=dXBmCIfb92k",
-      "thumbnail": "https://i.ytimg.com/vi/dXBmCIfb92k/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "The PDP6 was a DEC computer from the early 1960's - Angelo Papenhoff takes us through the machine and shows us some Lisp 'Poetry'\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://jane-st.co/computerphile\n\nThis video was filmed and edit",
-      "published": 1785250839,
-      "published_str": "2026-07-28",
-      "embed_id": "dXBmCIfb92k",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787617611.968521
+  "_ts": 1787900981.5654104
 }
