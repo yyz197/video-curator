@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hwRBTeNY3Oo",
+      "youtube_id": "hwRBTeNY3Oo",
+      "source": "youtube",
+      "title": "After NYC, she moved to village dug underground: fixing 4 caves in 15 years",
+      "url": "https://www.youtube.com/watch?v=hwRBTeNY3Oo",
+      "thumbnail": "https://i.ytimg.com/vi/hwRBTeNY3Oo/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "After growing up in Manhattan, Thea Carini landed in Bourré - a tiny French stone-mining town with dozens of homes built into the mountainside.\n \nFifteen years ago, she moved into her first cave home in France (a rental she nicknamed \"the hobbit house\") and never really left. \n\nSince then, she's res",
+      "published": 1788139866,
+      "published_str": "2026-08-31",
+      "embed_id": "hwRBTeNY3Oo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DfDag17yGXE",
       "youtube_id": "DfDag17yGXE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_oOWpG2S7fxA",
-      "youtube_id": "oOWpG2S7fxA",
-      "source": "youtube",
-      "title": "Strawbale-and-Plaster Home couple built after fire is bioclimatic marvel",
-      "url": "https://www.youtube.com/watch?v=oOWpG2S7fxA",
-      "thumbnail": "https://i.ytimg.com/vi/oOWpG2S7fxA/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Ken Haggard and Polly Cooper have built natural homes with passive solar techniques and powered by renewables since the seventies, so when in August 1994 a wildfire destroyed their property and home, they decided to rebuild them back, only better.\n\nThey used fire-resistive strawbale walls for their ",
-      "published": 1698003041,
-      "published_str": "2023-10-22",
-      "embed_id": "oOWpG2S7fxA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787900974.2067988
+  "_ts": 1788140623.9881933
 }

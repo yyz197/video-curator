@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_KTiUpr2Mfsc",
+      "youtube_id": "KTiUpr2Mfsc",
+      "source": "youtube",
+      "title": "Those of Us Who Don’t Expect Kindness in Love #theschooloflife #animation #relationships",
+      "url": "https://www.youtube.com/watch?v=KTiUpr2Mfsc",
+      "thumbnail": "https://i.ytimg.com/vi/KTiUpr2Mfsc/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1788094814,
+      "published_str": "2026-08-30",
+      "embed_id": "KTiUpr2Mfsc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ct9bdqkNbfk",
       "youtube_id": "ct9bdqkNbfk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_iJupq1d8YsQ",
-      "youtube_id": "iJupq1d8YsQ",
-      "source": "youtube",
-      "title": "A Theory on the Overly Cheerful",
-      "url": "https://www.youtube.com/watch?v=iJupq1d8YsQ",
-      "thumbnail": "https://i.ytimg.com/vi/iJupq1d8YsQ/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nGet weekly insights for better relationships, deeper self-knowledge, and inner calm straight to your inbox: https://www.theschooloflife.com/signup/",
-      "published": 1756299691,
-      "published_str": "2025-08-27",
-      "embed_id": "iJupq1d8YsQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787900968.8072193
+  "_ts": 1788140617.7431223
 }

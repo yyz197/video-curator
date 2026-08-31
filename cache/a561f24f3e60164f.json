@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_KTiUpr2Mfsc",
+      "youtube_id": "KTiUpr2Mfsc",
+      "source": "youtube",
+      "title": "Those of Us Who Don’t Expect Kindness in Love #theschooloflife #animation #relationships",
+      "url": "https://www.youtube.com/watch?v=KTiUpr2Mfsc",
+      "thumbnail": "https://i.ytimg.com/vi/KTiUpr2Mfsc/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \n\nSOCIAL MEDIA \n\nFeel free to follow us at the links below: \nFacebook: https://www.facebook.com/theschooloflifelondon/   Twitter: https://twitter.com/TheSchoolOfLife  \nInstagram: https://www.instagram.com/thescho",
+      "published": 1788094814,
+      "published_str": "2026-08-30",
+      "embed_id": "KTiUpr2Mfsc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ct9bdqkNbfk",
       "youtube_id": "ct9bdqkNbfk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_OwiuTWfFK2c",
-      "youtube_id": "OwiuTWfFK2c",
-      "source": "youtube",
-      "title": "Why You Can’t Force Your Mind to Change (The Toilet Philosophy)",
-      "url": "https://www.youtube.com/watch?v=OwiuTWfFK2c",
-      "thumbnail": "https://i.ytimg.com/vi/OwiuTWfFK2c/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "High culture loves to pretend we are pure intellects, airbrushing out the messy, biological realities of the human condition. Yet each morning on the toilet, we encounter one of life's greatest puzzles\nStart your free Membership trial – 2,000+ articles, 1,000+ videos,\n50+ courses, free for a week: h",
-      "published": 1787144415,
-      "published_str": "2026-08-19",
-      "embed_id": "OwiuTWfFK2c",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787900981.2922819
+  "_ts": 1788140632.2561054
 }

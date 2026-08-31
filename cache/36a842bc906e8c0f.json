@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_TY3s3VOHB9s",
+      "youtube_id": "TY3s3VOHB9s",
+      "source": "youtube",
+      "title": "Rabies isn't trying to kill - it's trying to control!",
+      "url": "https://www.youtube.com/watch?v=TY3s3VOHB9s",
+      "thumbnail": "https://i.ytimg.com/vi/TY3s3VOHB9s/mqdefault.jpg",
+      "author": "MinuteEarth",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Rabies is a strange disease, it travels through the nerves and tries to take control of the brain. The changes in behavior make the creature more likely to spread the disease!",
+      "published": 1787928318,
+      "published_str": "2026-08-28",
+      "embed_id": "TY3s3VOHB9s",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ubPmwKeVLpo",
       "youtube_id": "ubPmwKeVLpo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_GusCS8CEmDQ",
-      "youtube_id": "GusCS8CEmDQ",
-      "source": "youtube",
-      "title": "Eclipse pun battle 💥🥊",
-      "url": "https://www.youtube.com/watch?v=GusCS8CEmDQ",
-      "thumbnail": "https://i.ytimg.com/vi/GusCS8CEmDQ/mqdefault.jpg",
-      "author": "MinuteEarth",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Who will win? \nJasper from @Minutelabsio  or Asa Stahl from @planetarysociety ?",
-      "published": 1712941217,
-      "published_str": "2024-04-12",
-      "embed_id": "GusCS8CEmDQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787900967.7482722
+  "_ts": 1788140615.6663365
 }

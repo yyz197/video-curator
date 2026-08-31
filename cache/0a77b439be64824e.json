@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_TY3s3VOHB9s",
+      "youtube_id": "TY3s3VOHB9s",
+      "source": "youtube",
+      "title": "Rabies isn't trying to kill - it's trying to control!",
+      "url": "https://www.youtube.com/watch?v=TY3s3VOHB9s",
+      "thumbnail": "https://i.ytimg.com/vi/TY3s3VOHB9s/mqdefault.jpg",
+      "author": "MinuteEarth",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Rabies is a strange disease, it travels through the nerves and tries to take control of the brain. The changes in behavior make the creature more likely to spread the disease!",
+      "published": 1787928318,
+      "published_str": "2026-08-28",
+      "embed_id": "TY3s3VOHB9s",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ubPmwKeVLpo",
       "youtube_id": "ubPmwKeVLpo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Iuj-Ha3u074",
-      "youtube_id": "Iuj-Ha3u074",
-      "source": "youtube",
-      "title": "The Heaviest Part of a Forest Is NOT What You Think",
-      "url": "https://www.youtube.com/watch?v=Iuj-Ha3u074",
-      "thumbnail": "https://i.ytimg.com/vi/Iuj-Ha3u074/mqdefault.jpg",
-      "author": "MinuteEarth",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "You might not be able to eat this garlic plushie, but you CAN pull apart its cloves to reveal aliin, one of the main chemical ingredients behind allicin's garlic-y deliciousness! https://www.makeship.com/products/garlic-plushie (brought to you by @MinuteFood )\n\nIn the 1850s, German scientists were t",
-      "published": 1786132340,
-      "published_str": "2026-08-07",
-      "embed_id": "Iuj-Ha3u074",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1787900980.9263864
+  "_ts": 1788140631.5575716
 }
