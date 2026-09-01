@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_x2ZwueHtnSs",
+      "youtube_id": "x2ZwueHtnSs",
+      "source": "youtube",
+      "title": "What Were Hitler's Secret WW2 Super Weapons?",
+      "url": "https://www.youtube.com/watch?v=x2ZwueHtnSs",
+      "thumbnail": "https://i.ytimg.com/vi/x2ZwueHtnSs/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "During WW2, Nazi Germany developed some of the most advanced, terrifying, and colossal military technology in history. From the 1,350-ton Gustav railway gun and the 190-ton Maus super-heavy tank to revolutionary jet fighters like the ME262 and the V2 rocket, Hitler believed engineering breakthroughs",
+      "published": 1788210036,
+      "published_str": "2026-08-31",
+      "embed_id": "x2ZwueHtnSs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_u6MWpQi-paU",
       "youtube_id": "u6MWpQi-paU",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_B1qzrMI4cjk",
-      "youtube_id": "B1qzrMI4cjk",
-      "source": "youtube",
-      "title": "Inside The US Military’s Secret Cold War Sky Weapons",
-      "url": "https://www.youtube.com/watch?v=B1qzrMI4cjk",
-      "thumbnail": "https://i.ytimg.com/vi/B1qzrMI4cjk/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "During the Cold War, the US military launched a top-secret quest to revolutionize battlefield mobility by putting individual soldiers in the sky. From dangerous platform rotors and flying jeeps to Bell's iconic hydrogen-peroxide rocket belt and jet-powered backpacks, engineers raced to create a leth",
-      "published": 1787605213,
-      "published_str": "2026-08-24",
-      "embed_id": "B1qzrMI4cjk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788140633.3642573
+  "_ts": 1788228476.9332259
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_uSfJXecof4M",
+      "youtube_id": "uSfJXecof4M",
+      "source": "youtube",
+      "title": "Why You Should Get Your DNA Sequenced After You Die",
+      "url": "https://www.youtube.com/watch?v=uSfJXecof4M",
+      "thumbnail": "https://i.ytimg.com/vi/uSfJXecof4M/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Visit https://brilliant.org/scishow/ to get started with Brilliant’s tutor for free and get 20% off your annual premium subscription\n\nSometimes, death can be unexpected and unexplained. In cases of sudden unexplained death or sudden cardiac death, a molecular autopsy can reveal the cause when a regu",
+      "published": 1788195624,
+      "published_str": "2026-08-31",
+      "embed_id": "uSfJXecof4M",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_7gFgl9ijlDg",
       "youtube_id": "7gFgl9ijlDg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_bRrj14hnqeo",
-      "youtube_id": "bRrj14hnqeo",
-      "source": "youtube",
-      "title": "What’s the Truth about Acetaminophen and Autism?",
-      "url": "https://www.youtube.com/watch?v=bRrj14hnqeo",
-      "thumbnail": "https://i.ytimg.com/vi/bRrj14hnqeo/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "You've probably heard the claim that there's a link between acetaminophen aka Tylenol and autism. And there are a lot of conflicting takes about what that claim means, which research is “right”, and what different studies really show. So here’s some of the major studies that are being talked about, ",
-      "published": 1765555200,
-      "published_str": "2025-12-12",
-      "embed_id": "bRrj14hnqeo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788140613.621217
+  "_ts": 1788228455.6940725
 }
