@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_kVXp6UNVPTo",
+      "youtube_id": "kVXp6UNVPTo",
+      "source": "youtube",
+      "title": "How Watermarks Track AI Generated Content - Computerphile",
+      "url": "https://www.youtube.com/watch?v=kVXp6UNVPTo",
+      "thumbnail": "https://i.ytimg.com/vi/kVXp6UNVPTo/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "This AI Watermarking Deep Dive by Dr Mike Pound includes an explanation of the idea behind the latest AI Watermarking plus a demo of Mike's own implementation of the system. \n\nSynthID Paper: https://www.nature.com/articles/s41586-024-08025-4 \n\nComputerphile is supported by Jane Street. Learn more ab",
+      "published": 1788442204,
+      "published_str": "2026-09-03",
+      "embed_id": "kVXp6UNVPTo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_xs5iOwkX9fU",
       "youtube_id": "xs5iOwkX9fU",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_32bC33nJR3A",
-      "youtube_id": "32bC33nJR3A",
-      "source": "youtube",
-      "title": "Automata & Python - Computerphile",
-      "url": "https://www.youtube.com/watch?v=32bC33nJR3A",
-      "thumbnail": "https://i.ytimg.com/vi/32bC33nJR3A/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Taking the theory of Deterministic Finite Automata and plugging it into Python with Professor Thorsten Altenkirch of the University of Nottingham. \n\nLonger version of this video with more examples: https://youtu.be/oHVHkkah3MY \n\nThe professor's code: https://bit.ly/C_Thor_DFA_Code (may be easier to ",
-      "published": 1678982981,
-      "published_str": "2023-03-16",
-      "embed_id": "32bC33nJR3A",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788228461.7612724
+  "_ts": 1788485270.7532616
 }

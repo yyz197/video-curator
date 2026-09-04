@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bLX4CSzjRAg",
+      "youtube_id": "bLX4CSzjRAg",
+      "source": "youtube",
+      "title": "Why don't you remember being a baby?",
+      "url": "https://www.youtube.com/watch?v=bLX4CSzjRAg",
+      "thumbnail": "https://i.ytimg.com/vi/bLX4CSzjRAg/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1788456740,
+      "published_str": "2026-09-03",
+      "embed_id": "bLX4CSzjRAg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_1oMfwA4cSLs",
       "youtube_id": "1oMfwA4cSLs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_t-opWvv-QUY",
-      "youtube_id": "t-opWvv-QUY",
-      "source": "youtube",
-      "title": "Is this mammal actually an insect?",
-      "url": "https://www.youtube.com/watch?v=t-opWvv-QUY",
-      "thumbnail": "https://i.ytimg.com/vi/t-opWvv-QUY/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
-      "published": 1784823444,
-      "published_str": "2026-07-23",
-      "embed_id": "t-opWvv-QUY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788228475.051297
+  "_ts": 1788485281.566673
 }

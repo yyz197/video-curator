@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_F5_G0AHfYhI",
+      "youtube_id": "F5_G0AHfYhI",
+      "source": "youtube",
+      "title": "A Physics Professor Bet Me $10,000 I'm Wrong...",
+      "url": "https://www.youtube.com/watch?v=F5_G0AHfYhI",
+      "thumbnail": "https://i.ytimg.com/vi/F5_G0AHfYhI/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "A UCLA Physics Professor bet me $10,000 that my video (https://youtu.be/jyQwgBAaBag) about going downwind faster than the wind was wrong.\n\nHere's how we proved it...",
+      "published": 1788354004,
+      "published_str": "2026-09-02",
+      "embed_id": "F5_G0AHfYhI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_b3KpFdb1pW8",
       "youtube_id": "b3KpFdb1pW8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__1G8nrmBKeY",
-      "youtube_id": "_1G8nrmBKeY",
-      "source": "youtube",
-      "title": "How do submarines know where they are?",
-      "url": "https://www.youtube.com/watch?v=_1G8nrmBKeY",
-      "thumbnail": "https://i.ytimg.com/vi/_1G8nrmBKeY/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How does a submarine find its way 600m deep in the ocean?\n\nSurfacing is obviously the easiest way but not when you want to stay hidden.\n\nSo how do a crew balance concealment and pathfinding?",
-      "published": 1786021234,
-      "published_str": "2026-08-06",
-      "embed_id": "_1G8nrmBKeY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788228474.6391168
+  "_ts": 1788485281.2634754
 }

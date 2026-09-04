@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bLX4CSzjRAg",
+      "youtube_id": "bLX4CSzjRAg",
+      "source": "youtube",
+      "title": "Why don't you remember being a baby?",
+      "url": "https://www.youtube.com/watch?v=bLX4CSzjRAg",
+      "thumbnail": "https://i.ytimg.com/vi/bLX4CSzjRAg/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1788456740,
+      "published_str": "2026-09-03",
+      "embed_id": "bLX4CSzjRAg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_1oMfwA4cSLs",
       "youtube_id": "1oMfwA4cSLs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_SnAhWHv9TM8",
-      "youtube_id": "SnAhWHv9TM8",
-      "source": "youtube",
-      "title": "Inside the Lab That Keeps Your Car From Killing You",
-      "url": "https://www.youtube.com/watch?v=SnAhWHv9TM8",
-      "thumbnail": "https://i.ytimg.com/vi/SnAhWHv9TM8/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Crashing a car is usually not a good idea. But sometimes, it can save lives.\n↓↓↓ More info and sources below ↓↓↓\n\nNo one ever wants to get in a car crash. But if you ever do, be very thankful for the engineers who crash test cars. You may have seen crash test simulations on TikTok using physics engi",
-      "published": 1697721218,
-      "published_str": "2023-10-19",
-      "embed_id": "SnAhWHv9TM8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788228457.0934224
+  "_ts": 1788485267.7609723
 }
