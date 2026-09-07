@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_A020pGO5MBs",
+      "youtube_id": "A020pGO5MBs",
+      "source": "youtube",
+      "title": "The Immortal Kangaroo Sequence - Numberphile",
+      "url": "https://www.youtube.com/watch?v=A020pGO5MBs",
+      "thumbnail": "https://i.ytimg.com/vi/A020pGO5MBs/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Neil Sloane shares the comma sequence. Then thoughts turn to immortal kangaroos leaping through minefields. More links & stuff in full description below ↓↓↓\n\nBONUS MATERIAL\nA digital curiosity associated with this video - https://www.patreon.com/numberphile/posts/168587472 (open access)\nBTS timelaps",
+      "published": 1788527195,
+      "published_str": "2026-09-04",
+      "embed_id": "A020pGO5MBs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-mXaU3N9e8Y",
       "youtube_id": "-mXaU3N9e8Y",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_cOTf_YEmSOU",
-      "youtube_id": "cOTf_YEmSOU",
-      "source": "youtube",
-      "title": "1³+2³+3³+4³+5³+6³+7³+8³+9³+10³+11³+12³+13³+14³+15³+16³+17³+18³+19³+20³+21³+22³+23³+24³+25³+26³+...",
-      "url": "https://www.youtube.com/watch?v=cOTf_YEmSOU",
-      "thumbnail": "https://i.ytimg.com/vi/cOTf_YEmSOU/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Ben Sparks with stunning visual proofs of some famous sums of series. More links & stuff in full description below ↓↓↓\n\nMore Ben on Numberphile: https://www.youtube.com/playlist?list=PLt5AfwLFPxWLDKmnxLg8477hrxY33LL6q\n\nBen Sparks: http://www.bensparks.co.uk/\n\nSum of the Integers (if you dare): https",
-      "published": 1784380720,
-      "published_str": "2026-07-18",
-      "embed_id": "cOTf_YEmSOU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788485282.351226
+  "_ts": 1788744136.018306
 }

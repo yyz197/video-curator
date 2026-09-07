@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_yWp_p6YYzt8",
+      "youtube_id": "yWp_p6YYzt8",
+      "source": "youtube",
+      "title": "Why Your Web Scraper Gets Blocked (And How to Fix It)",
+      "url": "https://www.youtube.com/watch?v=yWp_p6YYzt8",
+      "thumbnail": "https://i.ytimg.com/vi/yWp_p6YYzt8/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Tired of having your web scraper get blocked after only a few requests? In this tutorial, we build a Node.js scraper to track multi-region storefront prices and look at why standard scrapers run directly into strict rate limits. You'll learn how adding a simple three-line residential proxy configura",
+      "published": 1788531207,
+      "published_str": "2026-09-04",
+      "embed_id": "yWp_p6YYzt8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_FGT7LZbZe-g",
       "youtube_id": "FGT7LZbZe-g",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tchN4xa4pfg",
-      "youtube_id": "tchN4xa4pfg",
-      "source": "youtube",
-      "title": "AI Foundations for Absolute Beginners",
-      "url": "https://www.youtube.com/watch?v=tchN4xa4pfg",
-      "thumbnail": "https://i.ytimg.com/vi/tchN4xa4pfg/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn the basics of artificial intelligence. This course is for absolute beginners. \n\nThis course was created by learnaianywhere.org and released to support the goals of National AI Literacy Day.\n\nYou can learn more at https://learnaianywhere.org and download the resources used.\n\nFor more on AI Lite",
-      "published": 1774519287,
-      "published_str": "2026-03-26",
-      "embed_id": "tchN4xa4pfg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788485271.4865844
+  "_ts": 1788744125.5601017
 }

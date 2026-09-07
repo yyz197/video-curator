@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_WTmqhOOMbw4",
+      "youtube_id": "WTmqhOOMbw4",
+      "source": "youtube",
+      "title": "The Importance of Dancing like an Idiot #theschooloflife #animation #facts",
+      "url": "https://www.youtube.com/watch?v=WTmqhOOMbw4",
+      "thumbnail": "https://i.ytimg.com/vi/WTmqhOOMbw4/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dancing is one of the most releasing and necessary of all activities - but we too frequently hold back from the worry that we 'can't dance.' This film usefully reminds us that there's no such thing as not being able to dance, that the whole point is to move about wildly without shame - and that in d",
+      "published": 1788699638,
+      "published_str": "2026-09-06",
+      "embed_id": "WTmqhOOMbw4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_G_ATGHMKEZA",
       "youtube_id": "G_ATGHMKEZA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_op77gGdFY1g",
-      "youtube_id": "op77gGdFY1g",
-      "source": "youtube",
-      "title": "Are We Rejecting Them Because They’re Wrong—or Because We’re Unwell?",
-      "url": "https://www.youtube.com/watch?v=op77gGdFY1g",
-      "thumbnail": "https://i.ytimg.com/vi/op77gGdFY1g/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "We've all been on terrible dates where a person's laugh, chin, or conversation style is an instant turn-off. But after your 20th or 87th fruitless date, a tougher question emerges: is it really them, or is it you? Start your free Membership trial – 2,000+ articles, 1,000+ videos, 50+ courses, free f",
-      "published": 1787749204,
-      "published_str": "2026-08-26",
-      "embed_id": "op77gGdFY1g",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788485282.0715678
+  "_ts": 1788744135.7633815
 }

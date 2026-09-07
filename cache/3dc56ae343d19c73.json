@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_NIifnIP_NnQ",
+      "youtube_id": "NIifnIP_NnQ",
+      "source": "youtube",
+      "title": "How ADHD Medication Works",
+      "url": "https://www.youtube.com/watch?v=NIifnIP_NnQ",
+      "thumbnail": "https://i.ytimg.com/vi/NIifnIP_NnQ/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "ADHD medication doesn’t simply give your brain more dopamine. It changes how dopamine signals are processed, making it easier to resist immediate distractions and stick with rewards that take longer to reach.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#adhdawareness",
+      "published": 1788616806,
+      "published_str": "2026-09-05",
+      "embed_id": "NIifnIP_NnQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hiIIGMeMEuE",
       "youtube_id": "hiIIGMeMEuE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_OKsWuqNjomQ",
-      "youtube_id": "OKsWuqNjomQ",
-      "source": "youtube",
-      "title": "Why Ebola Keeps Coming Back",
-      "url": "https://www.youtube.com/watch?v=OKsWuqNjomQ",
-      "thumbnail": "https://i.ytimg.com/vi/OKsWuqNjomQ/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Ebola outbreaks can be contained, but ending them is another story. Conflict, fragile healthcare systems, and limited access to vaccines give the virus new chances to spread. Stopping one outbreak helps prevent the next.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#e",
-      "published": 1787580033,
-      "published_str": "2026-08-24",
-      "embed_id": "OKsWuqNjomQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788485281.2508445
+  "_ts": 1788744135.082499
 }

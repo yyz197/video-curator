@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_A020pGO5MBs",
+      "youtube_id": "A020pGO5MBs",
+      "source": "youtube",
+      "title": "The Immortal Kangaroo Sequence - Numberphile",
+      "url": "https://www.youtube.com/watch?v=A020pGO5MBs",
+      "thumbnail": "https://i.ytimg.com/vi/A020pGO5MBs/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Neil Sloane shares the comma sequence. Then thoughts turn to immortal kangaroos leaping through minefields. More links & stuff in full description below ↓↓↓\n\nBONUS MATERIAL\nA digital curiosity associated with this video - https://www.patreon.com/numberphile/posts/168587472 (open access)\nBTS timelaps",
+      "published": 1788527195,
+      "published_str": "2026-09-04",
+      "embed_id": "A020pGO5MBs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_-mXaU3N9e8Y",
       "youtube_id": "-mXaU3N9e8Y",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0SI3_XbItHo",
-      "youtube_id": "0SI3_XbItHo",
-      "source": "youtube",
-      "title": "Cow-culus and Elegant Geometry - Numberphile",
-      "url": "https://www.youtube.com/watch?v=0SI3_XbItHo",
-      "thumbnail": "https://i.ytimg.com/vi/0SI3_XbItHo/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Zvezdelina Stankova with two solutions (one messy, one beautiful) to a problem involving an injured cow. Extra footage at: https://youtu.be/aW7R1U6FMLs --- More links & stuff in full description below ↓↓↓\n\nMore videos with Zvezda: http://bit.ly/zvezda_videos\n\nZvezda's Berkeley website: https://math.",
-      "published": 1668433400,
-      "published_str": "2022-11-14",
-      "embed_id": "0SI3_XbItHo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788485271.096938
+  "_ts": 1788744124.5804787
 }

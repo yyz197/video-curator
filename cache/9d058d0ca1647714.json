@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_NIifnIP_NnQ",
+      "youtube_id": "NIifnIP_NnQ",
+      "source": "youtube",
+      "title": "How ADHD Medication Works",
+      "url": "https://www.youtube.com/watch?v=NIifnIP_NnQ",
+      "thumbnail": "https://i.ytimg.com/vi/NIifnIP_NnQ/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "ADHD medication doesn’t simply give your brain more dopamine. It changes how dopamine signals are processed, making it easier to resist immediate distractions and stick with rewards that take longer to reach.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#adhdawareness",
+      "published": 1788616806,
+      "published_str": "2026-09-05",
+      "embed_id": "NIifnIP_NnQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hiIIGMeMEuE",
       "youtube_id": "hiIIGMeMEuE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_n2sn4kkkGQM",
-      "youtube_id": "n2sn4kkkGQM",
-      "source": "youtube",
-      "title": "The Deadly Power of a Coin-Sized Black Hole",
-      "url": "https://www.youtube.com/watch?v=n2sn4kkkGQM",
-      "thumbnail": "https://i.ytimg.com/vi/n2sn4kkkGQM/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We're back answering questions that no one has asked. You're welcome. 😌💅\n\n#inanutshell #kurzgesagt #kurzgesagt_inanutshell #learnwithshorts #science #spaceshorts #astronerds #astrophysics #astronomyshorts #outerspace #blackholes #blackhole #astrophysics #astrophysicist #astronomyfacts\n\nSources & fur",
-      "published": 1720101642,
-      "published_str": "2024-07-04",
-      "embed_id": "n2sn4kkkGQM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788485266.0409343
+  "_ts": 1788744120.317414
 }
