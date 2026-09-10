@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_kLZgQWjnUz0",
+      "youtube_id": "kLZgQWjnUz0",
+      "source": "youtube",
+      "title": "Learn Python – Interactive Course 2026",
+      "url": "https://www.youtube.com/watch?v=kLZgQWjnUz0",
+      "thumbnail": "https://i.ytimg.com/vi/kLZgQWjnUz0/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Discover Python, one of the most in-demand programming languages, from the ground up, building three real projects along the way.\n\n💻 Study this course interactively on Scrimba: https://scrimba.com/learn-python-c03?via=scrimbafcc\n\nCode is available on the Scrimba course page for each lesson.\n\nPython ",
+      "published": 1788961564,
+      "published_str": "2026-09-09",
+      "embed_id": "kLZgQWjnUz0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_yWp_p6YYzt8",
       "youtube_id": "yWp_p6YYzt8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_GMytb7LNGOI",
-      "youtube_id": "GMytb7LNGOI",
-      "source": "youtube",
-      "title": "Learn a bit about camera position in Three.js",
-      "url": "https://www.youtube.com/watch?v=GMytb7LNGOI",
-      "thumbnail": "https://i.ytimg.com/vi/GMytb7LNGOI/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn a bit about camera position in Three.js",
-      "published": 1774525949,
-      "published_str": "2026-03-26",
-      "embed_id": "GMytb7LNGOI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788744125.5601017
+  "_ts": 1789004031.2247658
 }

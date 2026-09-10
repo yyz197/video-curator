@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_kLZgQWjnUz0",
+      "youtube_id": "kLZgQWjnUz0",
+      "source": "youtube",
+      "title": "Learn Python – Interactive Course 2026",
+      "url": "https://www.youtube.com/watch?v=kLZgQWjnUz0",
+      "thumbnail": "https://i.ytimg.com/vi/kLZgQWjnUz0/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Discover Python, one of the most in-demand programming languages, from the ground up, building three real projects along the way.\n\n💻 Study this course interactively on Scrimba: https://scrimba.com/learn-python-c03?via=scrimbafcc\n\nCode is available on the Scrimba course page for each lesson.\n\nPython ",
+      "published": 1788961564,
+      "published_str": "2026-09-09",
+      "embed_id": "kLZgQWjnUz0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_yWp_p6YYzt8",
       "youtube_id": "yWp_p6YYzt8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_g3X8JauSWTM",
-      "youtube_id": "g3X8JauSWTM",
-      "source": "youtube",
-      "title": "Stop Building AI Slop – Build High-End Web Apps with AI",
-      "url": "https://www.youtube.com/watch?v=g3X8JauSWTM",
-      "thumbnail": "https://i.ytimg.com/vi/g3X8JauSWTM/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to move past generic AI-generated interfaces and ship high-end, production-ready web applications using modern AI coding workflows. In this hands-on course, you will gather deep project context, clone and restyle proven UI architectures, and implement dynamic, Apple-style scroll animations",
-      "published": 1787660046,
-      "published_str": "2026-08-25",
-      "embed_id": "g3X8JauSWTM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788744136.1300726
+  "_ts": 1789004043.6274064
 }

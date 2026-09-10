@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__gP3aXvNmv8",
+      "youtube_id": "_gP3aXvNmv8",
+      "source": "youtube",
+      "title": "Ever walk into a room and forget what you were doing? - Gabriel Radvansky",
+      "url": "https://www.youtube.com/watch?v=_gP3aXvNmv8",
+      "thumbnail": "https://i.ytimg.com/vi/_gP3aXvNmv8/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into the phenomenon known as the doorway effect, where walking into a new space can make you forget what you were doing.\n\n--\n\nYou enter your living room, then pause. Uh-oh, what was it that you were doing? You feel your mission’s momentum wane, and its aim is suddenly lost. So, what just happene",
+      "published": 1788879617,
+      "published_str": "2026-09-08",
+      "embed_id": "_gP3aXvNmv8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BSdEiOYvKpE",
       "youtube_id": "BSdEiOYvKpE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_s-EEp5xiF6Q",
-      "youtube_id": "s-EEp5xiF6Q",
-      "source": "youtube",
-      "title": "This is the most common way to get head lice - Nazzy Pakpour",
-      "url": "https://www.youtube.com/watch?v=s-EEp5xiF6Q",
-      "thumbnail": "https://i.ytimg.com/vi/s-EEp5xiF6Q/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Dig into what makes head lice so difficult to get rid of, and the effectiveness of our most common treatments.\n\n--\n\nFor as long as humans have had lice, we’ve fought hard to get rid of them. Nit combs, the fine-tooth brushes used to remove lice and their sticky eggs, have been found among the ancien",
-      "published": 1741878037,
-      "published_str": "2025-03-13",
-      "embed_id": "s-EEp5xiF6Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788744122.782947
+  "_ts": 1789004028.263922
 }

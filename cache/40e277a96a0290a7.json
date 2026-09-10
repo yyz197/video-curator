@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__gP3aXvNmv8",
+      "youtube_id": "_gP3aXvNmv8",
+      "source": "youtube",
+      "title": "Ever walk into a room and forget what you were doing? - Gabriel Radvansky",
+      "url": "https://www.youtube.com/watch?v=_gP3aXvNmv8",
+      "thumbnail": "https://i.ytimg.com/vi/_gP3aXvNmv8/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into the phenomenon known as the doorway effect, where walking into a new space can make you forget what you were doing.\n\n--\n\nYou enter your living room, then pause. Uh-oh, what was it that you were doing? You feel your mission’s momentum wane, and its aim is suddenly lost. So, what just happene",
+      "published": 1788879617,
+      "published_str": "2026-09-08",
+      "embed_id": "_gP3aXvNmv8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BSdEiOYvKpE",
       "youtube_id": "BSdEiOYvKpE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_2A1IEBFt6Xg",
-      "youtube_id": "2A1IEBFt6Xg",
-      "source": "youtube",
-      "title": "How do Maglev trains work? - Ning Zhao",
-      "url": "https://www.youtube.com/watch?v=2A1IEBFt6Xg",
-      "thumbnail": "https://i.ytimg.com/vi/2A1IEBFt6Xg/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Learn more at https://brilliant.org/TedEd\n\n--\n\nTo coincide with the 1964 Tokyo Olympics, Japan launched a groundbreaking bullet train that inspired countries around the world to invest in high-speed rail. Today, high-speed trains regularly travel at over 300 km/h, on par with the take-off speed of a",
-      "published": 1786460470,
-      "published_str": "2026-08-11",
-      "embed_id": "2A1IEBFt6Xg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788744135.6680324
+  "_ts": 1789004043.2721722
 }

@@ -3676,31 +3676,6 @@
       "favorited": false
     },
     {
-      "id": "youtube_LFpki7v4xiI",
-      "youtube_id": "LFpki7v4xiI",
-      "source": "youtube",
-      "title": "Saving Private Ryan: How Spielberg Constructs A Battle Scene",
-      "url": "https://www.youtube.com/watch?v=LFpki7v4xiI",
-      "thumbnail": "https://i.ytimg.com/vi/LFpki7v4xiI/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "MY BOOK OF ESSAYS IS OUT NOW! \nAMAZON: https://amzn.to/3dk14yu\nEVERYWHERE ELSE: https://bit.ly/3qJEbHT\n\n\n. HELP ME MAKE MORE VIDEOS: http://www.patreon.com/nerdwriter\n\nSOURCES AND FURTHER READING:\n\n Toby Haggith, \"D-Day Filming: For Real. A Comparison of 'Truth' and 'Reality' in \"Saving Private Ryan",
-      "published": 1473256802,
-      "published_str": "2016-09-07",
-      "embed_id": "LFpki7v4xiI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
-    },
-    {
       "id": "youtube_cLJAXu5OD-c",
       "youtube_id": "cLJAXu5OD-c",
       "source": "youtube",
@@ -3749,7 +3724,32 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
+    },
+    {
+      "id": "youtube_GKiQs1dE0Tc",
+      "youtube_id": "GKiQs1dE0Tc",
+      "source": "youtube",
+      "title": "Movie Violence Done Right",
+      "url": "https://www.youtube.com/watch?v=GKiQs1dE0Tc",
+      "thumbnail": "https://i.ytimg.com/vi/GKiQs1dE0Tc/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "GET MY BOOK: https://amzn.to/3ymfQPV\n\n\nSupport Nerdwriter videos: https://patreon.com/nerdwriter\nSubscribe: http://bit.ly/SubNerdwriter\n\nFacebook: https://facebook.com/The-Nerdwriter-314141501931192/\nTwitter: https://twitter.com/TheeNerdwriter",
+      "published": 1470837601,
+      "published_str": "2016-08-10",
+      "embed_id": "GKiQs1dE0Tc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
     }
   ],
-  "_ts": 1788744127.796215
+  "_ts": 1789004034.3606985
 }

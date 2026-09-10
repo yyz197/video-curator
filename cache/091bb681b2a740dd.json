@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_CzDTaLqozlQ",
+      "youtube_id": "CzDTaLqozlQ",
+      "source": "youtube",
+      "title": "How to make your first $1,000 online",
+      "url": "https://www.youtube.com/watch?v=CzDTaLqozlQ",
+      "thumbnail": "https://i.ytimg.com/vi/CzDTaLqozlQ/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Try Stanley and turn one video into posts for every platform. Get started here 👉 https://x.getstanley.ai/r/aliabdaal #StanleyPartner\n\n🤖 Free Custom GPT to help you find your first digital product idea: https://lifestylebusiness.com/the-product-coach-gpt/\n\n\n🚀 Lifestyle Business Academy: Our MBA alter",
+      "published": 1788796822,
+      "published_str": "2026-09-07",
+      "embed_id": "CzDTaLqozlQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_TsU00pg6dmY",
       "youtube_id": "TsU00pg6dmY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__AnPfMhkTUM",
-      "youtube_id": "_AnPfMhkTUM",
-      "source": "youtube",
-      "title": "5 years from now, today won't matter",
-      "url": "https://www.youtube.com/watch?v=_AnPfMhkTUM",
-      "thumbnail": "https://i.ytimg.com/vi/_AnPfMhkTUM/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "If you fancy getting more productivity tips and practical life advice, join ProductiveNotes - my free, weekly newsletter - https://go.aliabdaal.com/yts260211",
-      "published": 1770804061,
-      "published_str": "2026-02-11",
-      "embed_id": "_AnPfMhkTUM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1788744126.7363415
+  "_ts": 1789004033.3010452
 }
