@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_YSwRqNCeP9k",
+      "youtube_id": "YSwRqNCeP9k",
+      "source": "youtube",
+      "title": "So You Want to Understand Quantum Mechanics…",
+      "url": "https://www.youtube.com/watch?v=YSwRqNCeP9k",
+      "thumbnail": "https://i.ytimg.com/vi/YSwRqNCeP9k/mqdefault.jpg",
+      "author": "PBS Space Time",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Sign Up on Patreon to get access to the Space Time Discord!\nhttps://www.patreon.com/pbsspacetime\n\nSpend two hours exploring the strange, counterintuitive world of quantum mechanics, where particles can exist in multiple states, reality becomes uncertain, and observation itself seems to matter. We’ll",
+      "published": 1789071318,
+      "published_str": "2026-09-10",
+      "embed_id": "YSwRqNCeP9k",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_mxpuV33vpNk",
       "youtube_id": "mxpuV33vpNk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_7Wiw42ZlBKs",
-      "youtube_id": "7Wiw42ZlBKs",
-      "source": "youtube",
-      "title": "The Quantum Experiment That Breaks Time",
-      "url": "https://www.youtube.com/watch?v=7Wiw42ZlBKs",
-      "thumbnail": "https://i.ytimg.com/vi/7Wiw42ZlBKs/mqdefault.jpg",
-      "author": "PBS Space Time",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Sign Up on Patreon to get access to the Space Time Discord!\nhttps://www.patreon.com/pbsspacetime\n\nModern physics is weird. In quantum mechanics we have the Schrodinger’s cat thought experiment, a cat in a quantum superposition of being simultaneously alive and dead. And in relativity the twin parado",
-      "published": 1783023336,
-      "published_str": "2026-07-02",
-      "embed_id": "7Wiw42ZlBKs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004042.3537815
+  "_ts": 1789263000.1731913
 }

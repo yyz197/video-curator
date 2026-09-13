@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iWUp2kMCv6o",
+      "youtube_id": "iWUp2kMCv6o",
+      "source": "youtube",
+      "title": "How Do Fossils Form?: Crash Course Geology #18",
+      "url": "https://www.youtube.com/watch?v=iWUp2kMCv6o",
+      "thumbnail": "https://i.ytimg.com/vi/iWUp2kMCv6o/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Everybody dies, but few fossilize. In this episode of Crash Course Geology, we’ll learn how fossils form and why they’re so rare. Although very few living things ever become fossils, those that /do/ help us understand Earth’s history and how life came to be as it is today. \n\nIntroduction: Nodosaur 0",
+      "published": 1789056025,
+      "published_str": "2026-09-10",
+      "embed_id": "iWUp2kMCv6o",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_mIIJd66Ycr8",
       "youtube_id": "mIIJd66Ycr8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_VbfIGVhRups",
-      "youtube_id": "VbfIGVhRups",
-      "source": "youtube",
-      "title": "How a Banana Sold for $150,000 : Modern Art",
-      "url": "https://www.youtube.com/watch?v=VbfIGVhRups",
-      "thumbnail": "https://i.ytimg.com/vi/VbfIGVhRups/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Our cultural perspectives shape how we perceive art, including who we see as contributing to its most important movements. In this episode of Crash Course Art History, we’ll get to the truth behind the creation of modernism and bust the myth of its European beginning. We’ll show how modernism was a ",
-      "published": 1723132826,
-      "published_str": "2024-08-08",
-      "embed_id": "VbfIGVhRups",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004024.932305
+  "_ts": 1789262983.1522558
 }

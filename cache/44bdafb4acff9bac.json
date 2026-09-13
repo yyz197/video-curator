@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_ECyqrLRmC70",
+      "youtube_id": "ECyqrLRmC70",
+      "source": "youtube",
+      "title": "A Day at One of NYC's Oldest Italian Restaurants | On The Line | Bon Appétit",
+      "url": "https://www.youtube.com/watch?v=ECyqrLRmC70",
+      "thumbnail": "https://i.ytimg.com/vi/ECyqrLRmC70/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Bon Appétit spends a day on the line with Maurizio Asperti, owner of Staten Island’s oldest restaurant, Basilio Inn. At this 105-year-old institution, Maurizio harvests homegrown vegetables for stuffed zucchini blossoms and prepares homemade pasta, branzino, and more ahead of dinner service. See wha",
+      "published": 1789056002,
+      "published_str": "2026-09-10",
+      "embed_id": "ECyqrLRmC70",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_vcHZymQ8wso",
       "youtube_id": "vcHZymQ8wso",
       "source": "youtube",
-      "title": "3 Sheet Pan Dinners to Make Your Week Easier | Made in House | Bon Appétit",
+      "title": "Our 3 Favorite Sheet Pan Recipes | Made in House | Bon Appétit",
       "url": "https://www.youtube.com/watch?v=vcHZymQ8wso",
       "thumbnail": "https://i.ytimg.com/vi/vcHZymQ8wso/mqdefault.jpg",
       "author": "Bon Appétit",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_2PVosB7BUX8",
-      "youtube_id": "2PVosB7BUX8",
-      "source": "youtube",
-      "title": "Inside America’s Best Michelin Star Restaurants | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=2PVosB7BUX8",
-      "thumbnail": "https://i.ytimg.com/vi/2PVosB7BUX8/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Go behind the scenes at some of America’s best Michelin-starred restaurants to see what it takes to run these ambitious kitchens. From three-Michelin-starred Eleven Madison Park in NYC to Emeril’s in New Orleans, run by a 22-year-old chef, spend the day with chefs and restaurant teams as they prep i",
-      "published": 1788364919,
-      "published_str": "2026-09-02",
-      "embed_id": "2PVosB7BUX8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004047.0396512
+  "_ts": 1789263005.8952754
 }

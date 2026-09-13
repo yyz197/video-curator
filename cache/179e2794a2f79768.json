@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_o3CX_Y59_74",
+      "youtube_id": "o3CX_Y59_74",
+      "source": "youtube",
+      "title": "OpenAI Codex Crash Course – Build & Deploy Apps with Autonomous AI",
+      "url": "https://www.youtube.com/watch?v=o3CX_Y59_74",
+      "thumbnail": "https://i.ytimg.com/vi/o3CX_Y59_74/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn the core fundamentals of OpenAI Codex, from setting up scheduled automations and custom skills to mastering Plan and Go modes. Follow along step-by-step as we build, test, and deploy a voice-controlled Flappy Bird game built entirely with Codex.\n\nCourse developed by @SkyrocketingTech \n\n❤️ Supp",
+      "published": 1789052662,
+      "published_str": "2026-09-10",
+      "embed_id": "o3CX_Y59_74",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_kLZgQWjnUz0",
       "youtube_id": "kLZgQWjnUz0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_b-P5ZQ1NxxE",
-      "youtube_id": "b-P5ZQ1NxxE",
-      "source": "youtube",
-      "title": "Meta Muse Code & Muse Spark Course – Build AI Agents, APIs, and Full-Stack Apps",
-      "url": "https://www.youtube.com/watch?v=b-P5ZQ1NxxE",
-      "thumbnail": "https://i.ytimg.com/vi/b-P5ZQ1NxxE/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to build full-stack applications and autonomous AI workflows using Meta's Muse models and the Muse Code coding harness. Andrew Brown guides you through model architecture, structured outputs, search grounding, and programmatic API integrations with SDKs like LangChain. You will also master",
-      "published": 1787756883,
-      "published_str": "2026-08-26",
-      "embed_id": "b-P5ZQ1NxxE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004043.6274064
+  "_ts": 1789263001.8565686
 }

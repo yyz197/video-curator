@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iuHddnIzKRA",
+      "youtube_id": "iuHddnIzKRA",
+      "source": "youtube",
+      "title": "The AI Language We Can't Read: Neuralese ft. Rob Miles - Computerphile",
+      "url": "https://www.youtube.com/watch?v=iuHddnIzKRA",
+      "thumbnail": "https://i.ytimg.com/vi/iuHddnIzKRA/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "So far, 'Chain of Thought' has allowed us a glimpse at the processes by which Large Language Models work their way through problems. What if these LLMs begin to talk in a language only they understand?\n\nRob Miles is a passionate AI Safety advocate, find out more about him here: https://www.youtube.c",
+      "published": 1789044977,
+      "published_str": "2026-09-10",
+      "embed_id": "iuHddnIzKRA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_kVXp6UNVPTo",
       "youtube_id": "kVXp6UNVPTo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tJMqVauWsjk",
-      "youtube_id": "tJMqVauWsjk",
-      "source": "youtube",
-      "title": "ITS, Eliza & MiT's AI Lab - Computerphile",
-      "url": "https://www.youtube.com/watch?v=tJMqVauWsjk",
-      "thumbnail": "https://i.ytimg.com/vi/tJMqVauWsjk/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "ITS is the Incompatible Timesharing System. Academics at the MIT AI Lab didn't like earlier incarnations of time-sharing so they invented their own.\n\nLars Brinkhoff and Oscar Vermeulen explain and demonstrate this segment of Computing history which they've worked to bring back in simulation for ever",
-      "published": 1785423628,
-      "published_str": "2026-07-30",
-      "embed_id": "tJMqVauWsjk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004043.5036306
+  "_ts": 1789263001.6904225
 }

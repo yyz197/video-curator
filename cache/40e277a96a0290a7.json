@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_I8XaYkRW1tA",
+      "youtube_id": "I8XaYkRW1tA",
+      "source": "youtube",
+      "title": "Why do some people have a better sense of direction than others? - Oliver Baumann",
+      "url": "https://www.youtube.com/watch?v=I8XaYkRW1tA",
+      "thumbnail": "https://i.ytimg.com/vi/I8XaYkRW1tA/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into the neuroscience behind our sense of direction and find out why some people are better at navigating than others.\n\n--\n\nWhether you identify as a wayfinding whiz or get lost returning from the grocery store, your brain has a built-in navigation system that facilitates spatial skills, from se",
+      "published": 1789052458,
+      "published_str": "2026-09-10",
+      "embed_id": "I8XaYkRW1tA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube__gP3aXvNmv8",
       "youtube_id": "_gP3aXvNmv8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_l29K-ZkARmE",
-      "youtube_id": "l29K-ZkARmE",
-      "source": "youtube",
-      "title": "The tragedy of Cassandra, the princess who predicted the fall of Troy - Iseult Gillespie",
-      "url": "https://www.youtube.com/watch?v=l29K-ZkARmE",
-      "thumbnail": "https://i.ytimg.com/vi/l29K-ZkARmE/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Dig into the Greek tragedy of Cassandra, who received the gift of prophecy but was cursed by Apollo to never be believed.\n\n--\n\nAs a young woman, Cassandra of Troy had been pursued by the god Apollo, who offered her the gift of prophecy. But when she withdrew from his advances, he twisted his gift in",
-      "published": 1787065237,
-      "published_str": "2026-08-18",
-      "embed_id": "l29K-ZkARmE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004043.2721722
+  "_ts": 1789263001.02128
 }

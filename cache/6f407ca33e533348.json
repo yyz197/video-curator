@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_O3a99HNskNk",
+      "youtube_id": "O3a99HNskNk",
+      "source": "youtube",
+      "title": "The Scariest Chart In Engineering",
+      "url": "https://www.youtube.com/watch?v=O3a99HNskNk",
+      "thumbnail": "https://i.ytimg.com/vi/O3a99HNskNk/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Why is the Smith Chart one of the scariest charts in electrical engineering?\n\nWe printed the largest one in the world to explain how it works and why it's so terrifying (to engineers at least).",
+      "published": 1789045212,
+      "published_str": "2026-09-10",
+      "embed_id": "O3a99HNskNk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_oR94cicO7xM",
       "youtube_id": "oR94cicO7xM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_mScpHTIi-kM",
-      "youtube_id": "mScpHTIi-kM",
-      "source": "youtube",
-      "title": "This game theory problem will change the way you see the world",
-      "url": "https://www.youtube.com/watch?v=mScpHTIi-kM",
-      "thumbnail": "https://i.ytimg.com/vi/mScpHTIi-kM/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "This is a video about the most famous problem in Game Theory, the Prisoner’s Dilemma. Head to https://brilliant.org/veritasium  to start your free 30-day trial, and the first 200 people get 20% off an annual premium subscription.\n\nIn 2025, we launched the Elements of Truth game on Kickstarter and we",
-      "published": 1703350808,
-      "published_str": "2023-12-23",
-      "embed_id": "mScpHTIi-kM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004024.1247935
+  "_ts": 1789262982.3372972
 }

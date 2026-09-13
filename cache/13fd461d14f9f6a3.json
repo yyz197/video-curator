@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iuHddnIzKRA",
+      "youtube_id": "iuHddnIzKRA",
+      "source": "youtube",
+      "title": "The AI Language We Can't Read: Neuralese ft. Rob Miles - Computerphile",
+      "url": "https://www.youtube.com/watch?v=iuHddnIzKRA",
+      "thumbnail": "https://i.ytimg.com/vi/iuHddnIzKRA/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "So far, 'Chain of Thought' has allowed us a glimpse at the processes by which Large Language Models work their way through problems. What if these LLMs begin to talk in a language only they understand?\n\nRob Miles is a passionate AI Safety advocate, find out more about him here: https://www.youtube.c",
+      "published": 1789044977,
+      "published_str": "2026-09-10",
+      "embed_id": "iuHddnIzKRA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_kVXp6UNVPTo",
       "youtube_id": "kVXp6UNVPTo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_jHwHPyWkShk",
-      "youtube_id": "jHwHPyWkShk",
-      "source": "youtube",
-      "title": "Bing Chat Behaving Badly - Computerphile",
-      "url": "https://www.youtube.com/watch?v=jHwHPyWkShk",
-      "thumbnail": "https://i.ytimg.com/vi/jHwHPyWkShk/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "AI moves quickly, this conversation was recorded March 3rd 2023. Microsoft have incorporated a large language model into the Bing search engine. Rob Miles discusses how it's been going. \n\nMore from Rob Miles: http://bit.ly/Rob_Miles_YouTube   \n\nhttps://www.facebook.com/computerphile\r\nhttps://twitter",
-      "published": 1679661736,
-      "published_str": "2023-03-24",
-      "embed_id": "jHwHPyWkShk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004030.5800097
+  "_ts": 1789262987.0148141
 }

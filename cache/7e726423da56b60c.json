@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_o3CX_Y59_74",
+      "youtube_id": "o3CX_Y59_74",
+      "source": "youtube",
+      "title": "OpenAI Codex Crash Course – Build & Deploy Apps with Autonomous AI",
+      "url": "https://www.youtube.com/watch?v=o3CX_Y59_74",
+      "thumbnail": "https://i.ytimg.com/vi/o3CX_Y59_74/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn the core fundamentals of OpenAI Codex, from setting up scheduled automations and custom skills to mastering Plan and Go modes. Follow along step-by-step as we build, test, and deploy a voice-controlled Flappy Bird game built entirely with Codex.\n\nCourse developed by @SkyrocketingTech \n\n❤️ Supp",
+      "published": 1789052662,
+      "published_str": "2026-09-10",
+      "embed_id": "o3CX_Y59_74",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_kLZgQWjnUz0",
       "youtube_id": "kLZgQWjnUz0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tZef2ZzbyuQ",
-      "youtube_id": "tZef2ZzbyuQ",
-      "source": "youtube",
-      "title": "What happens when the model CAN'T fix it? Interview w/ software engineer Landon Gray [Podcast #213]",
-      "url": "https://www.youtube.com/watch?v=tZef2ZzbyuQ",
-      "thumbnail": "https://i.ytimg.com/vi/tZef2ZzbyuQ/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Today Quincy Larson interviews Landon Gray. He's a software engineer who worked at agencies for years. Then he taught himself AI assisted software development. And now he's helping other devs do the same. \n\nLandon's famous for proving that RAG pipelines can be written in Ruby and popularizing Ruby a",
-      "published": 1774605657,
-      "published_str": "2026-03-27",
-      "embed_id": "tZef2ZzbyuQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789004031.2247658
+  "_ts": 1789262988.0928586
 }
