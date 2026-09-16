@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wY5pQOTsGaA",
+      "youtube_id": "wY5pQOTsGaA",
+      "source": "youtube",
+      "title": "How to Deploy, Secure, and Automate Full-Stack Web Apps – Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=wY5pQOTsGaA",
+      "thumbnail": "https://i.ytimg.com/vi/wY5pQOTsGaA/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to take a web application from local development to a secure, live production environment. You will learn how to manually configure an Ubuntu server, set up essential runtimes, establish automated CI/CD pipelines, and secure your site using HTTPS and Cloudflare. By tackling everything hand",
+      "published": 1789476084,
+      "published_str": "2026-09-15",
+      "embed_id": "wY5pQOTsGaA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_o3CX_Y59_74",
       "youtube_id": "o3CX_Y59_74",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_GC5CLCgnvm0",
-      "youtube_id": "GC5CLCgnvm0",
-      "source": "youtube",
-      "title": "When things are new and a little scary, embracing a beginner's mindset can help",
-      "url": "https://www.youtube.com/watch?v=GC5CLCgnvm0",
-      "thumbnail": "https://i.ytimg.com/vi/GC5CLCgnvm0/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "When things are new and a little scary, embracing a beginner's mindset can help. Justin explains why and how in his chat with Quincy on the freeCodeCamp podcast.",
-      "published": 1774613902,
-      "published_str": "2026-03-27",
-      "embed_id": "GC5CLCgnvm0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789262988.0928586
+  "_ts": 1789523299.9036565
 }

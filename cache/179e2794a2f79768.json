@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wY5pQOTsGaA",
+      "youtube_id": "wY5pQOTsGaA",
+      "source": "youtube",
+      "title": "How to Deploy, Secure, and Automate Full-Stack Web Apps – Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=wY5pQOTsGaA",
+      "thumbnail": "https://i.ytimg.com/vi/wY5pQOTsGaA/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to take a web application from local development to a secure, live production environment. You will learn how to manually configure an Ubuntu server, set up essential runtimes, establish automated CI/CD pipelines, and secure your site using HTTPS and Cloudflare. By tackling everything hand",
+      "published": 1789476084,
+      "published_str": "2026-09-15",
+      "embed_id": "wY5pQOTsGaA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_o3CX_Y59_74",
       "youtube_id": "o3CX_Y59_74",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gvhsKtjAmgc",
-      "youtube_id": "gvhsKtjAmgc",
-      "source": "youtube",
-      "title": "Excel Formulas & Functions – Full Course",
-      "url": "https://www.youtube.com/watch?v=gvhsKtjAmgc",
-      "thumbnail": "https://i.ytimg.com/vi/gvhsKtjAmgc/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Master Excel formulas & functions. Learn the theory first, then immediately put it into practice with the free companion Formula Wars quiz and practice problem material.\n\nTo gain access to this companion material for free, signup here: https://formulawars.com/signup/excel-formulas-and-functions-cour",
-      "published": 1788274673,
-      "published_str": "2026-09-01",
-      "embed_id": "gvhsKtjAmgc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789263001.8565686
+  "_ts": 1789523313.709078
 }

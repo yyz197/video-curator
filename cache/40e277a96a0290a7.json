@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_EMbZ72cCAzI",
+      "youtube_id": "EMbZ72cCAzI",
+      "source": "youtube",
+      "title": "How to explain something complicated",
+      "url": "https://www.youtube.com/watch?v=EMbZ72cCAzI",
+      "thumbnail": "https://i.ytimg.com/vi/EMbZ72cCAzI/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Episode 8: Explore what building blocks you need to best explain complex ideas in ways your audience will understand and engage with.\n\n--\n\nThis is episode 8 of the animated series, “Public Speaking 101.” Ideas change everything — and since language lets us share our ideas, learning how to use it wel",
+      "published": 1789484440,
+      "published_str": "2026-09-15",
+      "embed_id": "EMbZ72cCAzI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_I8XaYkRW1tA",
       "youtube_id": "I8XaYkRW1tA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_QyRqlTV60zM",
-      "youtube_id": "QyRqlTV60zM",
-      "source": "youtube",
-      "title": "Plato’s infamous Ship of State thought experiment - Michael Vazquez",
-      "url": "https://www.youtube.com/watch?v=QyRqlTV60zM",
-      "thumbnail": "https://i.ytimg.com/vi/QyRqlTV60zM/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Dig into Plato’s infamous Ship of State thought experiment, which explores how democratic societies handle leadership and power.\n\n--\n\nImagine a ship struggling in an endless storm. Its captain, though strong and commanding, is a terrible navigator. Neither he nor his crew have been trained to sail, ",
-      "published": 1787670069,
-      "published_str": "2026-08-25",
-      "embed_id": "QyRqlTV60zM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789263001.02128
+  "_ts": 1789523312.932668
 }

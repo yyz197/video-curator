@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LZ6u1AXCefQ",
+      "youtube_id": "LZ6u1AXCefQ",
+      "source": "youtube",
+      "title": "Steelworker quits at 50, builds $50K cordwood home lit by colorful bottles",
+      "url": "https://www.youtube.com/watch?v=LZ6u1AXCefQ",
+      "thumbnail": "https://i.ytimg.com/vi/LZ6u1AXCefQ/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "At 50, Jason Fine walked away from his union boilermaker job and cashed out his retirement to buy 29 acres of cheap land in the Missouri Ozarks. \n\nHe and his wife Sunni moved into a tiny shack on the property and started building their forever home from scratch without buying a single piece of wood.",
+      "published": 1789341468,
+      "published_str": "2026-09-13",
+      "embed_id": "LZ6u1AXCefQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_S5KGV4NAE3A",
       "youtube_id": "S5KGV4NAE3A",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_swrez2ZA0cc",
-      "youtube_id": "swrez2ZA0cc",
-      "source": "youtube",
-      "title": "Veteran saw collapse abroad. Now builds antifragile family homestead",
-      "url": "https://www.youtube.com/watch?v=swrez2ZA0cc",
-      "thumbnail": "https://i.ytimg.com/vi/swrez2ZA0cc/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "For the past 20 years, Josh and Chiara Morris have built a 360-acre homestead in the Missouri Ozarks that today provides their family with all its own food, water, shelter, and energy, and even its income. It's a fully engineered system for self-reliance, first inspired by Josh's years as an Army Ra",
-      "published": 1786407788,
-      "published_str": "2026-08-11",
-      "embed_id": "swrez2ZA0cc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789263004.679054
+  "_ts": 1789523316.775644
 }

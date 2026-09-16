@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LZ6u1AXCefQ",
+      "youtube_id": "LZ6u1AXCefQ",
+      "source": "youtube",
+      "title": "Steelworker quits at 50, builds $50K cordwood home lit by colorful bottles",
+      "url": "https://www.youtube.com/watch?v=LZ6u1AXCefQ",
+      "thumbnail": "https://i.ytimg.com/vi/LZ6u1AXCefQ/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "At 50, Jason Fine walked away from his union boilermaker job and cashed out his retirement to buy 29 acres of cheap land in the Missouri Ozarks. \n\nHe and his wife Sunni moved into a tiny shack on the property and started building their forever home from scratch without buying a single piece of wood.",
+      "published": 1789341468,
+      "published_str": "2026-09-13",
+      "embed_id": "LZ6u1AXCefQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_S5KGV4NAE3A",
       "youtube_id": "S5KGV4NAE3A",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_s9E95fUrsAw",
-      "youtube_id": "s9E95fUrsAw",
-      "source": "youtube",
-      "title": "Veteran coder builds stone-covered Dome Home into Texas hill",
-      "url": "https://www.youtube.com/watch?v=s9E95fUrsAw",
-      "thumbnail": "https://i.ytimg.com/vi/s9E95fUrsAw/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "When Al Schwarz moved from upstate NY near Dallas, TX, he wanted a home with low energy bills and protection from extreme weather, so he dug into a hillside, inserted cement domes and buried them again with enough earth and rock to guarantee protection.\n\nHe spent 10 years stacking 230 tons of rock a",
-      "published": 1699215179,
-      "published_str": "2023-11-05",
-      "embed_id": "s9E95fUrsAw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789262992.1679606
+  "_ts": 1789523304.7089455
 }

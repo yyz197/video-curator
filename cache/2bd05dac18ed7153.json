@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_w0q7fsLa26E",
+      "youtube_id": "w0q7fsLa26E",
+      "source": "youtube",
+      "title": "I Asked 5 Business Owners How They Got Their First Client",
+      "url": "https://www.youtube.com/watch?v=w0q7fsLa26E",
+      "thumbnail": "https://i.ytimg.com/vi/w0q7fsLa26E/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Get a free 30-day trial of Manychat Pro with the code ALIABDAAL at checkout 👉 https://manychat.com/creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalYT&utm_content=Youtube\n\n🚀 Lifestyle Business Academy: Our MBA alternative to build a 6-figure online business → https://lifestylebus",
+      "published": 1789405428,
+      "published_str": "2026-09-14",
+      "embed_id": "w0q7fsLa26E",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_K8AMhj-ImMI",
       "youtube_id": "K8AMhj-ImMI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_nH-sP5Afyxk",
-      "youtube_id": "nH-sP5Afyxk",
-      "source": "youtube",
-      "title": "Our new AI employee can give you $100 of free work - link in description!",
-      "url": "https://www.youtube.com/watch?v=nH-sP5Afyxk",
-      "thumbnail": "https://i.ytimg.com/vi/nH-sP5Afyxk/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "If you want to give Viktor a go and get $100 of his work completely free, no credit card required, copy and paste this link: ref.viktor.com/vik-aa-aug-reel\n\nWhen we hired Viktor last month, I genuinely didn't know if the team would actually use him.\n\nHere's what one week with an AI employee actually",
-      "published": 1786960808,
-      "published_str": "2026-08-17",
-      "embed_id": "nH-sP5Afyxk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789263003.4535413
+  "_ts": 1789523315.4495986
 }

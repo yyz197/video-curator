@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_w0q7fsLa26E",
+      "youtube_id": "w0q7fsLa26E",
+      "source": "youtube",
+      "title": "I Asked 5 Business Owners How They Got Their First Client",
+      "url": "https://www.youtube.com/watch?v=w0q7fsLa26E",
+      "thumbnail": "https://i.ytimg.com/vi/w0q7fsLa26E/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Get a free 30-day trial of Manychat Pro with the code ALIABDAAL at checkout 👉 https://manychat.com/creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalYT&utm_content=Youtube\n\n🚀 Lifestyle Business Academy: Our MBA alternative to build a 6-figure online business → https://lifestylebus",
+      "published": 1789405428,
+      "published_str": "2026-09-14",
+      "embed_id": "w0q7fsLa26E",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_K8AMhj-ImMI",
       "youtube_id": "K8AMhj-ImMI",
       "source": "youtube",
@@ -1304,7 +1329,7 @@
       "id": "youtube_Z9iksIAXcbk",
       "youtube_id": "Z9iksIAXcbk",
       "source": "youtube",
-      "title": "if you’re applying for jobs, watch this",
+      "title": "I See 800 Applications. Here's What Gets Hired.",
       "url": "https://www.youtube.com/watch?v=Z9iksIAXcbk",
       "thumbnail": "https://i.ytimg.com/vi/Z9iksIAXcbk/mqdefault.jpg",
       "author": "Ali Abdaal",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_OsQ4LK19KXw",
-      "youtube_id": "OsQ4LK19KXw",
-      "source": "youtube",
-      "title": "Managing 3 girls in their 20s be like...",
-      "url": "https://www.youtube.com/watch?v=OsQ4LK19KXw",
-      "thumbnail": "https://i.ytimg.com/vi/OsQ4LK19KXw/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "If you fancy getting more productivity tips and practical life advice, join LifeNotes - my free, weekly newsletter - https://go.aliabdaal.com/yts260213",
-      "published": 1770976838,
-      "published_str": "2026-02-13",
-      "embed_id": "OsQ4LK19KXw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789262990.286937
+  "_ts": 1789523302.0567188
 }
