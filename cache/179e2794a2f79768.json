@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BMYvfVk8Ar0",
+      "youtube_id": "BMYvfVk8Ar0",
+      "source": "youtube",
+      "title": "Hands-On Evolution of Deep Learning – Geoffrey Hinton’s AI Legacy",
+      "url": "https://www.youtube.com/watch?v=BMYvfVk8Ar0",
+      "thumbnail": "https://i.ytimg.com/vi/BMYvfVk8Ar0/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Master modern neural networks by recreating the groundbreaking discoveries of Geoffrey Hinton, the visionary whose research redefined computer science and deep learning. Covering his defining papers, this course directly bridges historical breakthroughs to readable PyTorch code. This hands on coding",
+      "published": 1789651931,
+      "published_str": "2026-09-17",
+      "embed_id": "BMYvfVk8Ar0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wY5pQOTsGaA",
       "youtube_id": "wY5pQOTsGaA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_FGT7LZbZe-g",
-      "youtube_id": "FGT7LZbZe-g",
-      "source": "youtube",
-      "title": "Inside the AI Hardware Engine – Full Semiconductor Supply Chain Course",
-      "url": "https://www.youtube.com/watch?v=FGT7LZbZe-g",
-      "thumbnail": "https://i.ytimg.com/vi/FGT7LZbZe-g/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Welcome to this comprehensive course on the semiconductor supply chain, where you will learn how a chip moves from design to the data center. You will learn all about semiconductor physics, design, fabrication, memory, packaging, and rack-scale integration. Your instructor, Kian, will guide you thro",
-      "published": 1788442723,
-      "published_str": "2026-09-03",
-      "embed_id": "FGT7LZbZe-g",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523313.709078
+  "_ts": 1789782234.0214674
 }

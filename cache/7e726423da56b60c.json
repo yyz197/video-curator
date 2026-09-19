@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BMYvfVk8Ar0",
+      "youtube_id": "BMYvfVk8Ar0",
+      "source": "youtube",
+      "title": "Hands-On Evolution of Deep Learning – Geoffrey Hinton’s AI Legacy",
+      "url": "https://www.youtube.com/watch?v=BMYvfVk8Ar0",
+      "thumbnail": "https://i.ytimg.com/vi/BMYvfVk8Ar0/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Master modern neural networks by recreating the groundbreaking discoveries of Geoffrey Hinton, the visionary whose research redefined computer science and deep learning. Covering his defining papers, this course directly bridges historical breakthroughs to readable PyTorch code. This hands on coding",
+      "published": 1789651931,
+      "published_str": "2026-09-17",
+      "embed_id": "BMYvfVk8Ar0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wY5pQOTsGaA",
       "youtube_id": "wY5pQOTsGaA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_uWRdzJTpcpI",
-      "youtube_id": "uWRdzJTpcpI",
-      "source": "youtube",
-      "title": "Do web devs NEED to understand low-level programming concepts? Chris doesn't think so...",
-      "url": "https://www.youtube.com/watch?v=uWRdzJTpcpI",
-      "thumbnail": "https://i.ytimg.com/vi/uWRdzJTpcpI/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Do web devs NEED to understand low-level programming concepts? Chris doesn't think so...and he discusses why on the freeCodeCamp podcast.",
-      "published": 1774701160,
-      "published_str": "2026-03-28",
-      "embed_id": "uWRdzJTpcpI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523299.9036565
+  "_ts": 1789782222.2234387
 }

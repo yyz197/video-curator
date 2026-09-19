@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_HICDzXfCAs4",
+      "youtube_id": "HICDzXfCAs4",
+      "source": "youtube",
+      "title": "Crash Course Astronomy Marathon • Full Series",
+      "url": "https://www.youtube.com/watch?v=HICDzXfCAs4",
+      "thumbnail": "https://i.ytimg.com/vi/HICDzXfCAs4/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In Crash Course Marathons, we’re revisiting the series you love, in long-form videos that cover entire subjects from back to front. Crash Course Astronomy covers outer space, from the stars and nearby planets we can see with the naked eye, to the mysterious dark matter no one can see at all. With de",
+      "published": 1789660814,
+      "published_str": "2026-09-17",
+      "embed_id": "HICDzXfCAs4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_KibgDxh68I8",
       "youtube_id": "KibgDxh68I8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_KHhM8WIlijc",
-      "youtube_id": "KHhM8WIlijc",
-      "source": "youtube",
-      "title": "Why Is Everyone So Mad About Public Art?",
-      "url": "https://www.youtube.com/watch?v=KHhM8WIlijc",
-      "thumbnail": "https://i.ytimg.com/vi/KHhM8WIlijc/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "From giant rock sculptures to Confederate statues, there’s something about public art that cranks up the temperature of debate. In this episode of Crash Course Art History, we’ll learn about public art’s diversity of media, how it shapes collective identity, and why it seems to cause such intense co",
-      "published": 1723737618,
-      "published_str": "2024-08-15",
-      "embed_id": "KHhM8WIlijc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523294.07394
+  "_ts": 1789782217.6222613
 }

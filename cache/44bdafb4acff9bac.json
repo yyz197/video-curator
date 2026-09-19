@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BIN2fo9nfaE",
+      "youtube_id": "BIN2fo9nfaE",
+      "source": "youtube",
+      "title": "How America’s Best Pork Chop is Made at NYC's #1 Restaurant | Made to Order | Bon Appétit",
+      "url": "https://www.youtube.com/watch?v=BIN2fo9nfaE",
+      "thumbnail": "https://i.ytimg.com/vi/BIN2fo9nfaE/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Chef Paul Carmichael of Kabawa in NYC shares how to make their Chuletas Can-Can. Weighing roughly a kilo, this impressive Puerto Rican pork chop combines rib, loin, and belly in one massive cut that is seared, seasoned, and roasted until juicy and crisp. And since Kabawa was named America’s Best Res",
+      "published": 1789660813,
+      "published_str": "2026-09-17",
+      "embed_id": "BIN2fo9nfaE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DmPmaF9aONo",
       "youtube_id": "DmPmaF9aONo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_FhtqFWZxEKg",
-      "youtube_id": "FhtqFWZxEKg",
-      "source": "youtube",
-      "title": "3 French Potato Recipes Every Cook Should Know | French Fundamentals | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=FhtqFWZxEKg",
-      "thumbnail": "https://i.ytimg.com/vi/FhtqFWZxEKg/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Chef Alexia Duchêne shares three French potato recipes every cook should know. Learn how to make crispy, buttery Pommes Anna, light and pillowy pommes dauphine, and ultra-silky pommes purée. From achieving perfectly golden layers to mastering restaurant-quality mashed potatoes, Alexia breaks down th",
-      "published": 1788451211,
-      "published_str": "2026-09-03",
-      "embed_id": "FhtqFWZxEKg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523317.8811493
+  "_ts": 1789782236.714542
 }

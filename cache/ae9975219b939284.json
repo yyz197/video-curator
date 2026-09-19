@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BIN2fo9nfaE",
+      "youtube_id": "BIN2fo9nfaE",
+      "source": "youtube",
+      "title": "How America’s Best Pork Chop is Made at NYC's #1 Restaurant | Made to Order | Bon Appétit",
+      "url": "https://www.youtube.com/watch?v=BIN2fo9nfaE",
+      "thumbnail": "https://i.ytimg.com/vi/BIN2fo9nfaE/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Chef Paul Carmichael of Kabawa in NYC shares how to make their Chuletas Can-Can. Weighing roughly a kilo, this impressive Puerto Rican pork chop combines rib, loin, and belly in one massive cut that is seared, seasoned, and roasted until juicy and crisp. And since Kabawa was named America’s Best Res",
+      "published": 1789660813,
+      "published_str": "2026-09-17",
+      "embed_id": "BIN2fo9nfaE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DmPmaF9aONo",
       "youtube_id": "DmPmaF9aONo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_nRsQbmeuiAA",
-      "youtube_id": "nRsQbmeuiAA",
-      "source": "youtube",
-      "title": "Making Scrapple From Scratch with a Hawaiian Twist",
-      "url": "https://www.youtube.com/watch?v=nRsQbmeuiAA",
-      "thumbnail": "https://i.ytimg.com/vi/nRsQbmeuiAA/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "The Local General Store in Honolulu makes scrapple using locally sourced Ulu to give it a Hawaiian twist.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill haven’t subscrib",
-      "published": 1765558811,
-      "published_str": "2025-12-12",
-      "embed_id": "nRsQbmeuiAA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523306.3111699
+  "_ts": 1789782226.6202264
 }

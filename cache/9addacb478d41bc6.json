@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_HICDzXfCAs4",
+      "youtube_id": "HICDzXfCAs4",
+      "source": "youtube",
+      "title": "Crash Course Astronomy Marathon • Full Series",
+      "url": "https://www.youtube.com/watch?v=HICDzXfCAs4",
+      "thumbnail": "https://i.ytimg.com/vi/HICDzXfCAs4/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In Crash Course Marathons, we’re revisiting the series you love, in long-form videos that cover entire subjects from back to front. Crash Course Astronomy covers outer space, from the stars and nearby planets we can see with the naked eye, to the mysterious dark matter no one can see at all. With de",
+      "published": 1789660814,
+      "published_str": "2026-09-17",
+      "embed_id": "HICDzXfCAs4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_KibgDxh68I8",
       "youtube_id": "KibgDxh68I8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_uwCbFDsma7Q",
-      "youtube_id": "uwCbFDsma7Q",
-      "source": "youtube",
-      "title": "Earthquake Resistant Buildings",
-      "url": "https://www.youtube.com/watch?v=uwCbFDsma7Q",
-      "thumbnail": "https://i.ytimg.com/vi/uwCbFDsma7Q/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Earthquakes can happen anywhere on Earth, at any time—and unfortunately, we have no way of predicting exactly when or where. But by studying and tracking seismic data, scientists continue to refine forecasts, better assess the risks, and even research how to prevent and protect us from the most dama",
-      "published": 1787684425,
-      "published_str": "2026-08-25",
-      "embed_id": "uwCbFDsma7Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523312.2899692
+  "_ts": 1789782233.009448
 }

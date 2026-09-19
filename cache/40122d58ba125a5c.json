@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_jezPMP_ODZk",
+      "youtube_id": "jezPMP_ODZk",
+      "source": "youtube",
+      "title": "Ethan Kross | Chatter | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=jezPMP_ODZk",
+      "thumbnail": "https://i.ytimg.com/vi/jezPMP_ODZk/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "One of the world’s leading experts on the science of emotion regulation, Dr. Ethan Kross, discusses his workbook \"Chatter The Workbook: How to Stop Overthinking and Harness the Voice in Your Head,\" a companion to his acclaimed book \"Chatter,\" which offers tools for understanding and harnessing the v",
+      "published": 1789574433,
+      "published_str": "2026-09-16",
+      "embed_id": "jezPMP_ODZk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_xc2NnKThTX0",
       "youtube_id": "xc2NnKThTX0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_cgPAAt9Nd7o",
-      "youtube_id": "cgPAAt9Nd7o",
-      "source": "youtube",
-      "title": "Dr. Deepika Chopra | The Power of Real Optimism | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=cgPAAt9Nd7o",
-      "thumbnail": "https://i.ytimg.com/vi/cgPAAt9Nd7o/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Psychologist and visual imagery expert, Dr. Deepika Chopra,  known as the The Optimism Doctor®,  discusses her book \"The Power of Real Optimism: A Practical, Science-Based Guide to Staying Resilient, Curious, and Open Even When Life Is Hard,\" which shows us how to build the kind of optimism that can",
-      "published": 1779897634,
-      "published_str": "2026-05-27",
-      "embed_id": "cgPAAt9Nd7o",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789523313.0598388
+  "_ts": 1789782233.5501592
 }
