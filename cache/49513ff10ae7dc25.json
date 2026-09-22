@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_oWhnytD3QoA",
+      "youtube_id": "oWhnytD3QoA",
+      "source": "youtube",
+      "title": "10 Levels of Nachos | With Babish",
+      "url": "https://www.youtube.com/watch?v=oWhnytD3QoA",
+      "thumbnail": "https://i.ytimg.com/vi/oWhnytD3QoA/mqdefault.jpg",
+      "author": "Binging with Babish",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "This episode is sponsored by Squarespace. Head to https://squarespace.syuh.net/babish to save 10% off your first purchase of a website or domain using code BABISH.\n\nOn this episode of With Babish, we're making 10 levels of nachos!\n\nLevel 10 Recipe: https://www.babi.sh/recipes/level-10-nachos\n\nIntro ",
+      "published": 1789822837,
+      "published_str": "2026-09-19",
+      "embed_id": "oWhnytD3QoA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_iZi0yEY60zE",
       "youtube_id": "iZi0yEY60zE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_yjvqi-0slTA",
-      "youtube_id": "yjvqi-0slTA",
-      "source": "youtube",
-      "title": "Babish Meals: Behind The Scenes",
-      "url": "https://www.youtube.com/watch?v=yjvqi-0slTA",
-      "thumbnail": "https://i.ytimg.com/vi/yjvqi-0slTA/mqdefault.jpg",
-      "author": "Binging with Babish",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Creating this menu has been a blast, and my meals are now available in 30 states!\n\nHead to CookUnity.com/Babish or the link in bio to grab one of the limited meals available to order without a subscription.\n[4:50 PM]",
-      "published": 1786051815,
-      "published_str": "2026-08-06",
-      "embed_id": "yjvqi-0slTA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789782236.2467284
+  "_ts": 1790042276.5541716
 }

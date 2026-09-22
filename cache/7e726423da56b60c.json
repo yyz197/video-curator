@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_C_1QKZAcJjk",
+      "youtube_id": "C_1QKZAcJjk",
+      "source": "youtube",
+      "title": "Claude Certified Developer Foundations (CCDV-F) Certification Course",
+      "url": "https://www.youtube.com/watch?v=C_1QKZAcJjk",
+      "thumbnail": "https://i.ytimg.com/vi/C_1QKZAcJjk/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Prepare to pass the Claude Certified Developer - Foundations (CCDV-F) exam. This exam is Anthropic's official hands-on certification for engineers who build, integrate, and ship production-grade applications using Claude APIs, agents, and workflows.\n\nCourse page: https://www.exampro.co/ccdv-f\n\nDevel",
+      "published": 1789992762,
+      "published_str": "2026-09-21",
+      "embed_id": "C_1QKZAcJjk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BMYvfVk8Ar0",
       "youtube_id": "BMYvfVk8Ar0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ehkDsePv3W8",
-      "youtube_id": "ehkDsePv3W8",
-      "source": "youtube",
-      "title": "Here's a cool and easy way to work with colors in your Three.js projects",
-      "url": "https://www.youtube.com/watch?v=ehkDsePv3W8",
-      "thumbnail": "https://i.ytimg.com/vi/ehkDsePv3W8/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Here's a cool and easy way to work with colors in your Three.js projects",
-      "published": 1774788204,
-      "published_str": "2026-03-29",
-      "embed_id": "ehkDsePv3W8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789782222.2234387
+  "_ts": 1790042263.4347444
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_oWhnytD3QoA",
+      "youtube_id": "oWhnytD3QoA",
+      "source": "youtube",
+      "title": "10 Levels of Nachos | With Babish",
+      "url": "https://www.youtube.com/watch?v=oWhnytD3QoA",
+      "thumbnail": "https://i.ytimg.com/vi/oWhnytD3QoA/mqdefault.jpg",
+      "author": "Binging with Babish",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "This episode is sponsored by Squarespace. Head to https://squarespace.syuh.net/babish to save 10% off your first purchase of a website or domain using code BABISH.\n\nOn this episode of With Babish, we're making 10 levels of nachos!\n\nLevel 10 Recipe: https://www.babi.sh/recipes/level-10-nachos\n\nIntro ",
+      "published": 1789822837,
+      "published_str": "2026-09-19",
+      "embed_id": "oWhnytD3QoA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_iZi0yEY60zE",
       "youtube_id": "iZi0yEY60zE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_O07WPra11NU",
-      "youtube_id": "O07WPra11NU",
-      "source": "youtube",
-      "title": "Binging with Babish: Tossed Salad and Scrambled Eggs from Frasier",
-      "url": "https://www.youtube.com/watch?v=O07WPra11NU",
-      "thumbnail": "https://i.ytimg.com/vi/O07WPra11NU/mqdefault.jpg",
-      "author": "Binging with Babish",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "This week, we're recreating the never-seen, entirely-conceptual tossed salad and scrambled eggs from the theme song to the greatest sitcom of all time, Frasier. What will this Babish fellow dream up next? Stay tuned after the episode to find out!\n\nBabish Cookware on Amazon: http://bit.ly/babishstore",
-      "published": 1757433642,
-      "published_str": "2025-09-09",
-      "embed_id": "O07WPra11NU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789782225.7982402
+  "_ts": 1790042267.6941936
 }

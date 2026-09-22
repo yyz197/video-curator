@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_2QOztTk8C0Q",
+      "youtube_id": "2QOztTk8C0Q",
+      "source": "youtube",
+      "title": "Soy Sauce Makes Everything Better, Even Roast Pork",
+      "url": "https://www.youtube.com/watch?v=2QOztTk8C0Q",
+      "thumbnail": "https://i.ytimg.com/vi/2QOztTk8C0Q/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "What’s the secret to more flavorful Philly roast pork? Tommy DiNic’s adds a splash of soy sauce for extra depth and richness.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nSt",
+      "published": 1790006404,
+      "published_str": "2026-09-21",
+      "embed_id": "2QOztTk8C0Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BIN2fo9nfaE",
       "youtube_id": "BIN2fo9nfaE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_vKPbL3_xEAw",
-      "youtube_id": "vKPbL3_xEAw",
-      "source": "youtube",
-      "title": "A Day at NYC’s Most Exciting French Restaurant | On The Line | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=vKPbL3_xEAw",
-      "thumbnail": "https://i.ytimg.com/vi/vKPbL3_xEAw/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Bon Appétit spends a day on the line with Chef Alexia Duchêne, co-owner and chef at Le Chêne in New York City. Nestled in the West Village, Le Chêne is making New Yorkers fall in love with Parisian cuisine all over again.\r\n\r\n00:00 Intro\r\n00:50 Restocking ingredients\r\n02:06 Breaking down proteins\r\n06",
-      "published": 1765818014,
-      "published_str": "2025-12-15",
-      "embed_id": "vKPbL3_xEAw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789782226.6202264
+  "_ts": 1790042268.657047
 }

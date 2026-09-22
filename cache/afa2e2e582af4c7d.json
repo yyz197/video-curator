@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pzTyAqobXRI",
+      "youtube_id": "pzTyAqobXRI",
+      "source": "youtube",
+      "title": "You're Washing Your Dishes Wrong",
+      "url": "https://www.youtube.com/watch?v=pzTyAqobXRI",
+      "thumbnail": "https://i.ytimg.com/vi/pzTyAqobXRI/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Visit https://brilliant.org/scishow/ to get started with Brilliant’s tutor for free and get 20% off your annual premium subscription.\n\n\nWe all do dishes. And we think we do it the best way. But should you rinse the suds off? Is hand-washing better on germs and the environment than machines? Does the",
+      "published": 1790010039,
+      "published_str": "2026-09-21",
+      "embed_id": "pzTyAqobXRI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_kBTa41cK4wM",
       "youtube_id": "kBTa41cK4wM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_DclgyWq3HU4",
-      "youtube_id": "DclgyWq3HU4",
-      "source": "youtube",
-      "title": "10 Mysteries We Solved with Archeology | Compilation",
-      "url": "https://www.youtube.com/watch?v=DclgyWq3HU4",
-      "thumbnail": "https://i.ytimg.com/vi/DclgyWq3HU4/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Archeology is all about uncovering ancient mysteries. There are so many that we made this compilation with our favorite ones.\n\nHosted by: Savannah Geary (they/them)\n\n----------\nSupport us for $8/month on Patreon and keep SciShow going!\nhttps://www.patreon.com/scishow\nOr support us directly: https://",
-      "published": 1766685613,
-      "published_str": "2025-12-25",
-      "embed_id": "DclgyWq3HU4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1789782217.6659813
+  "_ts": 1790042258.6201124
 }
