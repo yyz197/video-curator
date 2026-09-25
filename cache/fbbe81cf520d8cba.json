@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ZK-unZshaTA",
+      "youtube_id": "ZK-unZshaTA",
+      "source": "youtube",
+      "title": "Your brain is predicting what you see 👀 #Shorts #Neuroscience #Psychology #Science #OpticalIllusion",
+      "url": "https://www.youtube.com/watch?v=ZK-unZshaTA",
+      "thumbnail": "https://i.ytimg.com/vi/ZK-unZshaTA/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Your brain doesn’t simply react to the world around you — it’s constantly making predictions about what’s happening next.\n\nThe flash-lag effect reveals this in action. Even when you know the moving bar and flashing bar are actually aligned, your brain makes the moving bar appear slightly ahead.\n\nSo ",
+      "published": 1790175618,
+      "published_str": "2026-09-23",
+      "embed_id": "ZK-unZshaTA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_5y9g684jvtI",
       "youtube_id": "5y9g684jvtI",
       "source": "youtube",
@@ -79,7 +104,7 @@
       "id": "youtube_pISdCeZCYEg",
       "youtube_id": "pISdCeZCYEg",
       "source": "youtube",
-      "title": "Should we bring extinct species back? | with Sadiah Qureshi",
+      "title": "The problem with de-extinction | with Sadiah Qureshi",
       "url": "https://www.youtube.com/watch?v=pISdCeZCYEg",
       "thumbnail": "https://i.ytimg.com/vi/pISdCeZCYEg/mqdefault.jpg",
       "author": "The Royal Institution",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ezJSw0BRrTA",
-      "youtube_id": "ezJSw0BRrTA",
-      "source": "youtube",
-      "title": "How does your brain create your sense of self? Part 1 with Anil Seth and Michael Pollan",
-      "url": "https://www.youtube.com/watch?v=ezJSw0BRrTA",
-      "thumbnail": "https://i.ytimg.com/vi/ezJSw0BRrTA/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "What is it that makes you you? The fact that you are having a subjective experience right now — that there is something it feels like to be you — remains one of the deepest unsolved mysteries in all of science.\n\nWatch Part 2 here: https://www.youtube.com/watch?v=ujyXgVMNwsA\n\nIn this conversation, ne",
-      "published": 1777395655,
-      "published_str": "2026-04-28",
-      "embed_id": "ezJSw0BRrTA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042259.428255
+  "_ts": 1790301582.0520487
 }

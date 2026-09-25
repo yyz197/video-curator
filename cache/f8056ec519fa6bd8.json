@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hf2b2EVa_F8",
+      "youtube_id": "hf2b2EVa_F8",
+      "source": "youtube",
+      "title": "You go blind every few seconds",
+      "url": "https://www.youtube.com/watch?v=hf2b2EVa_F8",
+      "thumbnail": "https://i.ytimg.com/vi/hf2b2EVa_F8/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1790271433,
+      "published_str": "2026-09-24",
+      "embed_id": "hf2b2EVa_F8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_w6hK2PML6Uc",
       "youtube_id": "w6hK2PML6Uc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_IRctXLrUkwM",
-      "youtube_id": "IRctXLrUkwM",
-      "source": "youtube",
-      "title": "Do space rocks ever actually hit people?! ☄️",
-      "url": "https://www.youtube.com/watch?v=IRctXLrUkwM",
-      "thumbnail": "https://i.ytimg.com/vi/IRctXLrUkwM/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Meteors, asteroids, and other space rocks sometimes fall to Earth as meteorites. Should you be worried?",
-      "published": 1700240360,
-      "published_str": "2023-11-17",
-      "embed_id": "IRctXLrUkwM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042259.621019
+  "_ts": 1790301582.0615077
 }

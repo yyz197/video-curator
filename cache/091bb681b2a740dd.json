@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LhHBU4Zq_2I",
+      "youtube_id": "LhHBU4Zq_2I",
+      "source": "youtube",
+      "title": "I hired an AI employee 90 days ago...here's what happened",
+      "url": "https://www.youtube.com/watch?v=LhHBU4Zq_2I",
+      "thumbnail": "https://i.ytimg.com/vi/LhHBU4Zq_2I/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Click this link for $100 worth of free work: ref.viktor.com/vik-aa-sep-reel\n\nWe hired an AI employee 90 days ago - here’s what happened 👇\n\nWhen you hire a human employee, you screen resumes, do interviews, and cross your fingers hoping they can actually do the job.\n\nWith an AI employee like Viktor, ",
+      "published": 1790152201,
+      "published_str": "2026-09-23",
+      "embed_id": "LhHBU4Zq_2I",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_J5U3t6-zVz0",
       "youtube_id": "J5U3t6-zVz0",
       "source": "youtube",
@@ -79,7 +104,7 @@
       "id": "youtube_w0q7fsLa26E",
       "youtube_id": "w0q7fsLa26E",
       "source": "youtube",
-      "title": "I Asked 5 Business Owners How They Got Their First Client",
+      "title": "Give Me 22 Minutes, I’ll Show You How to Get Your First Client",
       "url": "https://www.youtube.com/watch?v=w0q7fsLa26E",
       "thumbnail": "https://i.ytimg.com/vi/w0q7fsLa26E/mqdefault.jpg",
       "author": "Ali Abdaal",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ashOd3ovM90",
-      "youtube_id": "ashOd3ovM90",
-      "source": "youtube",
-      "title": "The Productivity App I Use To Get Clarity & Stay Organised",
-      "url": "https://www.youtube.com/watch?v=ashOd3ovM90",
-      "thumbnail": "https://i.ytimg.com/vi/ashOd3ovM90/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Sign up for Superhuman Mail today at http://superhuman.com/abdaal\n\nYou know that feeling when you've got everything under control? \n\nTo-do list done. Plan in place. Life feels organised. It doesn't happen often for most people – but I get it every day.\n\nI've been using Superhuman Mail since 2019. I'",
-      "published": 1771416398,
-      "published_str": "2026-02-18",
-      "embed_id": "ashOd3ovM90",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042265.6713116
+  "_ts": 1790301587.431923
 }

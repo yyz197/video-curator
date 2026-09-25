@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LhHBU4Zq_2I",
+      "youtube_id": "LhHBU4Zq_2I",
+      "source": "youtube",
+      "title": "I hired an AI employee 90 days ago...here's what happened",
+      "url": "https://www.youtube.com/watch?v=LhHBU4Zq_2I",
+      "thumbnail": "https://i.ytimg.com/vi/LhHBU4Zq_2I/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Click this link for $100 worth of free work: ref.viktor.com/vik-aa-sep-reel\n\nWe hired an AI employee 90 days ago - here’s what happened 👇\n\nWhen you hire a human employee, you screen resumes, do interviews, and cross your fingers hoping they can actually do the job.\n\nWith an AI employee like Viktor, ",
+      "published": 1790152201,
+      "published_str": "2026-09-23",
+      "embed_id": "LhHBU4Zq_2I",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_J5U3t6-zVz0",
       "youtube_id": "J5U3t6-zVz0",
       "source": "youtube",
@@ -79,7 +104,7 @@
       "id": "youtube_w0q7fsLa26E",
       "youtube_id": "w0q7fsLa26E",
       "source": "youtube",
-      "title": "I Asked 5 Business Owners How They Got Their First Client",
+      "title": "Give Me 22 Minutes, I’ll Show You How to Get Your First Client",
       "url": "https://www.youtube.com/watch?v=w0q7fsLa26E",
       "thumbnail": "https://i.ytimg.com/vi/w0q7fsLa26E/mqdefault.jpg",
       "author": "Ali Abdaal",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_K8AMhj-ImMI",
-      "youtube_id": "K8AMhj-ImMI",
-      "source": "youtube",
-      "title": "If you’re ambitious but inconsistent, please watch this",
-      "url": "https://www.youtube.com/watch?v=K8AMhj-ImMI",
-      "thumbnail": "https://i.ytimg.com/vi/K8AMhj-ImMI/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Get 1 month of Wispr Flow Pro completely free here 👉 http://ref.wisprflow.ai/ali_youtube\n\n🍂 Join my free Autumn Reset Workshop, live Sat 26th Sept at 1pm UTC → https://go.aliabdaal.com/autumnreset_desc\n\n🧠 Superfocus: Our Ultimate Productivity System for People with More Ambition than Time → https://",
-      "published": 1789056468,
-      "published_str": "2026-09-10",
-      "embed_id": "K8AMhj-ImMI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042275.2027304
+  "_ts": 1790301597.7900317
 }

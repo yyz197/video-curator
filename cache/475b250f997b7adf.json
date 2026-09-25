@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_giTmBaNGaHw",
+      "youtube_id": "giTmBaNGaHw",
+      "source": "youtube",
+      "title": "What the Labs Kept Secret: The German Wiki & RubyGems Hacks - Computerphile",
+      "url": "https://www.youtube.com/watch?v=giTmBaNGaHw",
+      "thumbnail": "https://i.ytimg.com/vi/giTmBaNGaHw/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. From secretly taking over a German wiki to flooding the RubyGe",
+      "published": 1790168420,
+      "published_str": "2026-09-23",
+      "embed_id": "giTmBaNGaHw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_iuHddnIzKRA",
       "youtube_id": "iuHddnIzKRA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_cDKPbMaLTA4",
-      "youtube_id": "cDKPbMaLTA4",
-      "source": "youtube",
-      "title": "Recreating ITS - Computerphile",
-      "url": "https://www.youtube.com/watch?v=cDKPbMaLTA4",
-      "thumbnail": "https://i.ytimg.com/vi/cDKPbMaLTA4/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "The DEC PDP computers from decades ago now comfortably run on a cheap computer such as a Raspberry Pi. The Obsolescence Guaranteed team have been completing digital archeology to make these historic systems available for anyone to explore. \n\nLars Brinkhoff and Oscar Vermeulen are part of Obsolescenc",
-      "published": 1785510010,
-      "published_str": "2026-07-31",
-      "embed_id": "cDKPbMaLTA4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042273.776432
+  "_ts": 1790301596.5384674
 }

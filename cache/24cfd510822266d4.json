@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hf2b2EVa_F8",
+      "youtube_id": "hf2b2EVa_F8",
+      "source": "youtube",
+      "title": "You go blind every few seconds",
+      "url": "https://www.youtube.com/watch?v=hf2b2EVa_F8",
+      "thumbnail": "https://i.ytimg.com/vi/hf2b2EVa_F8/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1790271433,
+      "published_str": "2026-09-24",
+      "embed_id": "hf2b2EVa_F8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_w6hK2PML6Uc",
       "youtube_id": "w6hK2PML6Uc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_KLmtn_xwgS4",
-      "youtube_id": "KLmtn_xwgS4",
-      "source": "youtube",
-      "title": "The Very Weird Reason Hot Water Freezes Faster",
-      "url": "https://www.youtube.com/watch?v=KLmtn_xwgS4",
-      "thumbnail": "https://i.ytimg.com/vi/KLmtn_xwgS4/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Visit https://displate.com/l/besmart and use discount code BESMART for up to 33% off high-resolution metal prints! Not valid on Limited Edition items.\n↓↓↓ More info and sources below ↓↓↓\n\nWhy can hot water sometimes freeze faster than cold water? In 1963, Erasto Mpemba noticed this while making ice ",
-      "published": 1787068831,
-      "published_str": "2026-08-18",
-      "embed_id": "KLmtn_xwgS4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042272.884991
+  "_ts": 1790301595.601058
 }

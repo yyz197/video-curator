@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__fin6BuM8Wk",
+      "youtube_id": "_fin6BuM8Wk",
+      "source": "youtube",
+      "title": "2nd act, fresh start: couple builds 4-generation mud-&-clay family village",
+      "url": "https://www.youtube.com/watch?v=_fin6BuM8Wk",
+      "thumbnail": "https://i.ytimg.com/vi/_fin6BuM8Wk/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Athena Steen learned to build with earth as a kid on her mother's pueblo in New Mexico, where if someone needed a house or a room, the family built it from mud and clay. \n\nAlmost four decades ago, she and her husband Bill Steen took that knowledge to an old homestead in Canelo, Arizona, with no mone",
+      "published": 1790199544,
+      "published_str": "2026-09-23",
+      "embed_id": "_fin6BuM8Wk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_LZ6u1AXCefQ",
       "youtube_id": "LZ6u1AXCefQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Dj5Q4w1v0_Q",
-      "youtube_id": "Dj5Q4w1v0_Q",
-      "source": "youtube",
-      "title": "Retro-futuristic ADU sits atop old Austin bungalow, freeing backyard",
-      "url": "https://www.youtube.com/watch?v=Dj5Q4w1v0_Q",
-      "thumbnail": "https://i.ytimg.com/vi/Dj5Q4w1v0_Q/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "An Austin couple wanted to add on to their two-bedroom bungalow, but they didn’t want to move out and they didn’t want to use backyard space, so architect Nicole Blair decided to attach an ADU (accessory dwelling unit) to their roof.\n\nThe steel structure was prefabbed off-site, and in less than 24 h",
-      "published": 1699817152,
-      "published_str": "2023-11-12",
-      "embed_id": "Dj5Q4w1v0_Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042267.4492118
+  "_ts": 1790301589.490182
 }

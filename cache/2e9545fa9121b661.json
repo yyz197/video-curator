@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube__fin6BuM8Wk",
+      "youtube_id": "_fin6BuM8Wk",
+      "source": "youtube",
+      "title": "2nd act, fresh start: couple builds 4-generation mud-&-clay family village",
+      "url": "https://www.youtube.com/watch?v=_fin6BuM8Wk",
+      "thumbnail": "https://i.ytimg.com/vi/_fin6BuM8Wk/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Athena Steen learned to build with earth as a kid on her mother's pueblo in New Mexico, where if someone needed a house or a room, the family built it from mud and clay. \n\nAlmost four decades ago, she and her husband Bill Steen took that knowledge to an old homestead in Canelo, Arizona, with no mone",
+      "published": 1790199544,
+      "published_str": "2026-09-23",
+      "embed_id": "_fin6BuM8Wk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_LZ6u1AXCefQ",
       "youtube_id": "LZ6u1AXCefQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_eq0vL1cvRRc",
-      "youtube_id": "eq0vL1cvRRc",
-      "source": "youtube",
-      "title": "FDR's floating White House sank. Descendants spent 15 years restoring it",
-      "url": "https://www.youtube.com/watch?v=eq0vL1cvRRc",
-      "thumbnail": "https://i.ytimg.com/vi/eq0vL1cvRRc/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "The USS Potomac was FDR's \"Floating White House\" — the boat where he ran the country, secretly slipped away in the fog to meet Winston Churchill mid-ocean, and could move freely without the world seeing that he couldn't walk. \n\nBut after his death in 1945, it fell into decades of neglect (save for a",
-      "published": 1786922750,
-      "published_str": "2026-08-16",
-      "embed_id": "eq0vL1cvRRc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042276.057015
+  "_ts": 1790301598.796431
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_giTmBaNGaHw",
+      "youtube_id": "giTmBaNGaHw",
+      "source": "youtube",
+      "title": "What the Labs Kept Secret: The German Wiki & RubyGems Hacks - Computerphile",
+      "url": "https://www.youtube.com/watch?v=giTmBaNGaHw",
+      "thumbnail": "https://i.ytimg.com/vi/giTmBaNGaHw/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. From secretly taking over a German wiki to flooding the RubyGe",
+      "published": 1790168420,
+      "published_str": "2026-09-23",
+      "embed_id": "giTmBaNGaHw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_iuHddnIzKRA",
       "youtube_id": "iuHddnIzKRA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_95ovjnMhUq0",
-      "youtube_id": "95ovjnMhUq0",
-      "source": "youtube",
-      "title": "Acropalypse Now - Computerphile",
-      "url": "https://www.youtube.com/watch?v=95ovjnMhUq0",
-      "thumbnail": "https://i.ytimg.com/vi/95ovjnMhUq0/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Researchers stumbled upon a simple but worrying bug. Cropped images from Pixel phones contained a great deal of the original image in the cropped file. Drs Steve Bagley & Mike Pound explain. \n\nMike's sources:\nhttps://twitter.com/itssimontime\nhttps://twitter.com/david3141593\nhttps://www.da.vidbuchana",
-      "published": 1680029201,
-      "published_str": "2023-03-28",
-      "embed_id": "95ovjnMhUq0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790042262.8625326
+  "_ts": 1790301584.9403574
 }
