@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Cc1C7u8FdE8",
+      "youtube_id": "Cc1C7u8FdE8",
+      "source": "youtube",
+      "title": "What Is It to Be Emotionally Mature #theschooloflife #animation #facts",
+      "url": "https://www.youtube.com/watch?v=Cc1C7u8FdE8",
+      "thumbnail": "https://i.ytimg.com/vi/Cc1C7u8FdE8/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Enjoying our Youtube videos? Get full access to all our audio content, videos, and thousands of thought-provoking articles, conversation cards and more with The School of Life Subscription: https://t.ly/s_nMb \n\nBe more mindful, present and inspired. Get the best of The School of Life delivered strai",
+      "published": 1790514002,
+      "published_str": "2026-09-27",
+      "embed_id": "Cc1C7u8FdE8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_VMqJHctl2g4",
       "youtube_id": "VMqJHctl2g4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_qX4eHPxGBCk",
-      "youtube_id": "qX4eHPxGBCk",
-      "source": "youtube",
-      "title": "What Does the Child in You Need Today?",
-      "url": "https://www.youtube.com/watch?v=qX4eHPxGBCk",
-      "thumbnail": "https://i.ytimg.com/vi/qX4eHPxGBCk/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nFeeling overwhelmed by adult life? This film explores the inner child concept, revealing how our childhood selves influence daily struggles. Learn to reconnect with your emotional needs and practice radical self",
-      "published": 1758373310,
-      "published_str": "2025-09-20",
-      "embed_id": "qX4eHPxGBCk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301583.9654763
+  "_ts": 1790560967.5070903
 }

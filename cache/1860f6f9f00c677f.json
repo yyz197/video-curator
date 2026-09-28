@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_tcU2ygXoOU0",
+      "youtube_id": "tcU2ygXoOU0",
+      "source": "youtube",
+      "title": "Couple goes round, builds cordwood home lit by colorful bottles for $35K",
+      "url": "https://www.youtube.com/watch?v=tcU2ygXoOU0",
+      "thumbnail": "https://i.ytimg.com/vi/tcU2ygXoOU0/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "When Danielle Williams and her partner Hassan Hall moved to Missouri in 2012, they needed shelter before winter hit, and they had almost no money. So Hassan set to work designing a circular earthen home using whatever their community had on hand: pallet wood, recycled bottles, local clay, and cedar ",
+      "published": 1790553555,
+      "published_str": "2026-09-27",
+      "embed_id": "tcU2ygXoOU0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube__fin6BuM8Wk",
       "youtube_id": "_fin6BuM8Wk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3UVzeDhCpRI",
-      "youtube_id": "3UVzeDhCpRI",
-      "source": "youtube",
-      "title": "He built $2K remote dome cabin amid freezing Siberian wilderness (step-by-step)",
-      "url": "https://www.youtube.com/watch?v=3UVzeDhCpRI",
-      "thumbnail": "https://i.ytimg.com/vi/3UVzeDhCpRI/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Bio-architect and handyman Alosha Lynov has experienced his own Tolstoyan Odyssey: interested in natural building, he taught himself to design and build shelters with materials and shapes inspired by Nature that resemble an Arctic version of Antoni Gaudí's designs.\n\nAlosha pushes his version of eco-",
-      "published": 1700412726,
-      "published_str": "2023-11-19",
-      "embed_id": "3UVzeDhCpRI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301589.490182
+  "_ts": 1790560973.5253959
 }

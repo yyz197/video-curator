@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Fbxn6OBOkg4",
+      "youtube_id": "Fbxn6OBOkg4",
+      "source": "youtube",
+      "title": "Hank Green Asks a Volcanologist Anything",
+      "url": "https://www.youtube.com/watch?v=Fbxn6OBOkg4",
+      "thumbnail": "https://i.ytimg.com/vi/Fbxn6OBOkg4/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Hosted by: Denali Kincaid (they/them), Hank Green (he/him)\n\nDenali's socials:\nhttps://www.instagram.com/dykanite?stkn=bmw4MGN0cHRmaTF1\nhttps://www.tiktok.com/@dykanite?_r=1&_t=ZP-9A2r5av0gdr\n\n----------\nSupport us for $8/month on Patreon and keep SciShow going!\nhttps://www.patreon.com/scishow\nOr sup",
+      "published": 1790355634,
+      "published_str": "2026-09-25",
+      "embed_id": "Fbxn6OBOkg4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_qpc6pWnqNxk",
       "youtube_id": "qpc6pWnqNxk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_kBTa41cK4wM",
-      "youtube_id": "kBTa41cK4wM",
-      "source": "youtube",
-      "title": "Scientists Can't Agree On The First Ancient City",
-      "url": "https://www.youtube.com/watch?v=kBTa41cK4wM",
-      "thumbnail": "https://i.ytimg.com/vi/kBTa41cK4wM/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Get 20% off DeleteMe by going to https://joindeleteme.com/SCISHOW and use code SCISHOW to protect your privacy!\n\n“Where and when did people build the first city?” sounds like a simple enough question. But archaeologists have been arguing about it for more than 70 years. Lots of people came up with t",
-      "published": 1789664437,
-      "published_str": "2026-09-17",
-      "embed_id": "kBTa41cK4wM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301595.3993907
+  "_ts": 1790560979.3730953
 }

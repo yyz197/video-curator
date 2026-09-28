@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pXypQ6d_iDg",
+      "youtube_id": "pXypQ6d_iDg",
+      "source": "youtube",
+      "title": "INSIDE a Nuclear Reactor Core - Smarter Every Day 317",
+      "url": "https://www.youtube.com/watch?v=pXypQ6d_iDg",
+      "thumbnail": "https://i.ytimg.com/vi/pXypQ6d_iDg/mqdefault.jpg",
+      "author": "SmarterEveryDay",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "You can try AnyDesk for free.  It's good.  https://anydesk.com/smarter \nhttp://www.patreon.com/smartereveryday\nGet Email Updates: https://www.smartereveryday.com/email\n\nCheck out the 50x50 Science Across America!\nhttps://5050science.com/\n\n50x50: Science Across America is a national series uncovering",
+      "published": 1790433243,
+      "published_str": "2026-09-26",
+      "embed_id": "pXypQ6d_iDg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_vS6HEes8daw",
       "youtube_id": "vS6HEes8daw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_L5cAnxNVWkw",
-      "youtube_id": "L5cAnxNVWkw",
-      "source": "youtube",
-      "title": "TALKING BACKWARDS (Backwards Banter Brain Testing) - Smarter Every Day 168",
-      "url": "https://www.youtube.com/watch?v=L5cAnxNVWkw",
-      "thumbnail": "https://i.ytimg.com/vi/L5cAnxNVWkw/mqdefault.jpg",
-      "author": "SmarterEveryDay",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Get a free audio book! http://www.audible.com/Smarter \nhttps://www.youtube.com/user/kurtTHEquinn\nDetailed interview via podcast: https://www.nodumbquestions.fm/listen/2017/3/26/306dveaa6vup9c2ci3t1y5xc05q4ia \n ⇊  Click below for more links!  ⇊\nClick here if you're interested in subscribing: http://b",
-      "published": 1490970257,
-      "published_str": "2017-03-31",
-      "embed_id": "L5cAnxNVWkw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301580.6189764
+  "_ts": 1790560963.7523985
 }

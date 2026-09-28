@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pXypQ6d_iDg",
+      "youtube_id": "pXypQ6d_iDg",
+      "source": "youtube",
+      "title": "INSIDE a Nuclear Reactor Core - Smarter Every Day 317",
+      "url": "https://www.youtube.com/watch?v=pXypQ6d_iDg",
+      "thumbnail": "https://i.ytimg.com/vi/pXypQ6d_iDg/mqdefault.jpg",
+      "author": "SmarterEveryDay",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "You can try AnyDesk for free.  It's good.  https://anydesk.com/smarter \nhttp://www.patreon.com/smartereveryday\nGet Email Updates: https://www.smartereveryday.com/email\n\nCheck out the 50x50 Science Across America!\nhttps://5050science.com/\n\n50x50: Science Across America is a national series uncovering",
+      "published": 1790433243,
+      "published_str": "2026-09-26",
+      "embed_id": "pXypQ6d_iDg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_vS6HEes8daw",
       "youtube_id": "vS6HEes8daw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XwBZx1cXEdM",
-      "youtube_id": "XwBZx1cXEdM",
-      "source": "youtube",
-      "title": "Why Do Spinning Things Do This? - Smarter Every Day 312",
-      "url": "https://www.youtube.com/watch?v=XwBZx1cXEdM",
-      "thumbnail": "https://i.ytimg.com/vi/XwBZx1cXEdM/mqdefault.jpg",
-      "author": "SmarterEveryDay",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "WeeEEeeee!!! Thanks for considering joining the Smarter Every Day sticker team, now's a good time! (we're about to send them out) 👉 https://www.patreon.com/smartereveryday 👈\n\n⇊  Click below for more links!  ⇊\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nGET SMARTER SECTION\nhttps://en.wikipedia.org/wiki/Precession\n\n",
-      "published": 1768143610,
-      "published_str": "2026-01-11",
-      "embed_id": "XwBZx1cXEdM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301595.2662442
+  "_ts": 1790560979.2466843
 }

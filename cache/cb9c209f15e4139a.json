@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_1AdRE5qFzuE",
+      "youtube_id": "1AdRE5qFzuE",
+      "source": "youtube",
+      "title": "Why Rich People Used to Collect Unicorn Horns",
+      "url": "https://www.youtube.com/watch?v=1AdRE5qFzuE",
+      "thumbnail": "https://i.ytimg.com/vi/1AdRE5qFzuE/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Support The Nerdwriter on PATREON: https://www.patreon.com/c/nerdwriter\n\nProduced in collaboration with the National Gallery of Art Production Studio. For more National Gallery of Art videos: https://www.youtube.com/@UC416BswuE2ItX23GySxZcRQ \n\nSOURCES\n\nLorraine Daston and Katharine Park, Wonders and",
+      "published": 1790344806,
+      "published_str": "2026-09-25",
+      "embed_id": "1AdRE5qFzuE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_41UQ1JIvXtI",
       "youtube_id": "41UQ1JIvXtI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_RjkoCg0Yd4w",
-      "youtube_id": "RjkoCg0Yd4w",
-      "source": "youtube",
-      "title": "How Shakespeare Manipulates An Audience",
-      "url": "https://www.youtube.com/watch?v=RjkoCg0Yd4w",
-      "thumbnail": "https://i.ytimg.com/vi/RjkoCg0Yd4w/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Go to https://www.squarespace.com/nerdwriter for 10% off your first purchase.\nMY BOOK: https://amzn.to/3ymfQPV\n\nSOURCES\n\nHere's the key scene for both Brutus and Antony's speeches:\nhttps://www.folger.edu/explore/shakespeares-works/julius-caesar/read/3/2/\n\nWills, Gary. Rome and Rhetoric: Shakespeare’",
-      "published": 1774962028,
-      "published_str": "2026-03-31",
-      "embed_id": "RjkoCg0Yd4w",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301598.6089044
+  "_ts": 1790560982.7773182
 }

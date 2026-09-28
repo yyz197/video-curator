@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_1AdRE5qFzuE",
+      "youtube_id": "1AdRE5qFzuE",
+      "source": "youtube",
+      "title": "Why Rich People Used to Collect Unicorn Horns",
+      "url": "https://www.youtube.com/watch?v=1AdRE5qFzuE",
+      "thumbnail": "https://i.ytimg.com/vi/1AdRE5qFzuE/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Support The Nerdwriter on PATREON: https://www.patreon.com/c/nerdwriter\n\nProduced in collaboration with the National Gallery of Art Production Studio. For more National Gallery of Art videos: https://www.youtube.com/@UC416BswuE2ItX23GySxZcRQ \n\nSOURCES\n\nLorraine Daston and Katharine Park, Wonders and",
+      "published": 1790344806,
+      "published_str": "2026-09-25",
+      "embed_id": "1AdRE5qFzuE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_41UQ1JIvXtI",
       "youtube_id": "41UQ1JIvXtI",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_GKiQs1dE0Tc",
-      "youtube_id": "GKiQs1dE0Tc",
-      "source": "youtube",
-      "title": "Movie Violence Done Right",
-      "url": "https://www.youtube.com/watch?v=GKiQs1dE0Tc",
-      "thumbnail": "https://i.ytimg.com/vi/GKiQs1dE0Tc/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "GET MY BOOK: https://amzn.to/3ymfQPV\n\n\nSupport Nerdwriter videos: https://patreon.com/nerdwriter\nSubscribe: http://bit.ly/SubNerdwriter\n\nFacebook: https://facebook.com/The-Nerdwriter-314141501931192/\nTwitter: https://twitter.com/TheeNerdwriter",
-      "published": 1470837601,
-      "published_str": "2016-08-10",
-      "embed_id": "GKiQs1dE0Tc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301588.4361372
+  "_ts": 1790560972.9807787
 }

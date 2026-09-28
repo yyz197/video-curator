@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ausLKMojXaY",
+      "youtube_id": "ausLKMojXaY",
+      "source": "youtube",
+      "title": "The Phone Number puzzle",
+      "url": "https://www.youtube.com/watch?v=ausLKMojXaY",
+      "thumbnail": "https://i.ytimg.com/vi/ausLKMojXaY/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Part of a monthly series of puzzles: https://momath.org/mindbenders/",
+      "published": 1790343302,
+      "published_str": "2026-09-25",
+      "embed_id": "ausLKMojXaY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_bRQEWPA832A",
       "youtube_id": "bRQEWPA832A",
       "source": "youtube",
@@ -42,7 +67,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nGuest post I referenced",
+      "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nNote for the quote at t",
       "published": 1789751573,
       "published_str": "2026-09-18",
       "embed_id": "Nbwv5wHQoj0",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_yBw67Fb31Cs",
-      "youtube_id": "yBw67Fb31Cs",
-      "source": "youtube",
-      "title": "Trigonometry fundamentals | Ep. 2 Lockdown live math",
-      "url": "https://www.youtube.com/watch?v=yBw67Fb31Cs",
-      "thumbnail": "https://i.ytimg.com/vi/yBw67Fb31Cs/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Intro to trig with a lurking mystery about cos(x)^2\nFull playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev\nHome page: https://www.3blue1brown.com\nBrought to you by you: https://3b1b.co/ldm-thanks\n\nThanks to these viewers for their contributions to translations\nHebrew",
-      "published": 1587502304,
-      "published_str": "2020-04-21",
-      "embed_id": "yBw67Fb31Cs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301584.5112696
+  "_ts": 1790560968.4187608
 }

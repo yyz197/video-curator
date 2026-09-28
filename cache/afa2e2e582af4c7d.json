@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Fbxn6OBOkg4",
+      "youtube_id": "Fbxn6OBOkg4",
+      "source": "youtube",
+      "title": "Hank Green Asks a Volcanologist Anything",
+      "url": "https://www.youtube.com/watch?v=Fbxn6OBOkg4",
+      "thumbnail": "https://i.ytimg.com/vi/Fbxn6OBOkg4/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Hosted by: Denali Kincaid (they/them), Hank Green (he/him)\n\nDenali's socials:\nhttps://www.instagram.com/dykanite?stkn=bmw4MGN0cHRmaTF1\nhttps://www.tiktok.com/@dykanite?_r=1&_t=ZP-9A2r5av0gdr\n\n----------\nSupport us for $8/month on Patreon and keep SciShow going!\nhttps://www.patreon.com/scishow\nOr sup",
+      "published": 1790355634,
+      "published_str": "2026-09-25",
+      "embed_id": "Fbxn6OBOkg4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_qpc6pWnqNxk",
       "youtube_id": "qpc6pWnqNxk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_KVXWidca_Mw",
-      "youtube_id": "KVXWidca_Mw",
-      "source": "youtube",
-      "title": "The Coolest Fossils of 2025",
-      "url": "https://www.youtube.com/watch?v=KVXWidca_Mw",
-      "thumbnail": "https://i.ytimg.com/vi/KVXWidca_Mw/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Visit https://brilliant.org/scishow/ to get started learning STEM for free and get 20% off their annual premium subscription.\n\nEvery year, we dig up the most amazing fossil discoveries and explore what they reveal about the ancient past. Here are the winners from 2025!\n\nHosted by: Savannah Geary (th",
-      "published": 1767204023,
-      "published_str": "2025-12-31",
-      "embed_id": "KVXWidca_Mw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790301581.1554527
+  "_ts": 1790560964.2257888
 }
