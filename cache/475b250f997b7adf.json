@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_S6PqsZ65Mg4",
+      "youtube_id": "S6PqsZ65Mg4",
+      "source": "youtube",
+      "title": "Implementing Undo - Computerphile",
+      "url": "https://www.youtube.com/watch?v=S6PqsZ65Mg4",
+      "thumbnail": "https://i.ytimg.com/vi/S6PqsZ65Mg4/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "We use undo daily, but have you thought about what goes into making a functional undo in a program? Dr Steve Bagley takes us through some of the things we need to think about if we're implementing it ourselves!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career op",
+      "published": 1790773236,
+      "published_str": "2026-09-30",
+      "embed_id": "S6PqsZ65Mg4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_giTmBaNGaHw",
       "youtube_id": "giTmBaNGaHw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_pg7fntKLNak",
-      "youtube_id": "pg7fntKLNak",
-      "source": "youtube",
-      "title": "Quantum Simulation & Nature - Computerphile",
-      "url": "https://www.youtube.com/watch?v=pg7fntKLNak",
-      "thumbnail": "https://i.ytimg.com/vi/pg7fntKLNak/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn more about the Jane Street internship at: https://jane-st.co/internships2027-Computerphile\n\nSimulations of nature and physics are a potential application of quantum computing. Ella and Alex take us through how using quantum techniques could supersede classical options. \n\nDr Eleanor Crane is a ",
-      "published": 1786979883,
-      "published_str": "2026-08-17",
-      "embed_id": "pg7fntKLNak",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560980.4866533
+  "_ts": 1790821972.685062
 }

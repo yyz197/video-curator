@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zH2Mg782XhA",
+      "youtube_id": "zH2Mg782XhA",
+      "source": "youtube",
+      "title": "Python Algorithmic Trading Course – Massive, SnapTrade & Alpaca Integrations",
+      "url": "https://www.youtube.com/watch?v=zH2Mg782XhA",
+      "thumbnail": "https://i.ytimg.com/vi/zH2Mg782XhA/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to build a complete algorithmic paper trading system from the ground up using Python and Django. This hands-on course guides you through configuring a pipeline that connects market data from Massive, manages portfolios securely via SnapTrade, and routes automated signals to a simulated Alp",
+      "published": 1790689649,
+      "published_str": "2026-09-29",
+      "embed_id": "zH2Mg782XhA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_FVN0t1vb7k8",
       "youtube_id": "FVN0t1vb7k8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_5e9J47H9EFE",
-      "youtube_id": "5e9J47H9EFE",
-      "source": "youtube",
-      "title": "If you can contribute to an open source project and collaborate with others, you can work anywhere",
-      "url": "https://www.youtube.com/watch?v=5e9J47H9EFE",
-      "thumbnail": "https://i.ytimg.com/vi/5e9J47H9EFE/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "If you can successfully contribute to an open source project and collaborate well with others, you can work just about anywhere. Tapas discusses this with Quincy on the freeCodeCamp podcast.",
-      "published": 1774958720,
-      "published_str": "2026-03-31",
-      "embed_id": "5e9J47H9EFE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560969.4142604
+  "_ts": 1790821962.120887
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ONAuUyml0yI",
+      "youtube_id": "ONAuUyml0yI",
+      "source": "youtube",
+      "title": "We're trying something new...",
+      "url": "https://www.youtube.com/watch?v=ONAuUyml0yI",
+      "thumbnail": "https://i.ytimg.com/vi/ONAuUyml0yI/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Veritasium's mission has always been to get to the truth - to understand how and why things work the way they do. We love the variety of topics we're able to cover - from the real to the abstract - and the heart of that is always hard science.\n\nBut as our world is getting more complex and interestin",
+      "published": 1790795950,
+      "published_str": "2026-09-30",
+      "embed_id": "ONAuUyml0yI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_VKlulHwMxgU",
       "youtube_id": "VKlulHwMxgU",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_AF8d72mA41M",
-      "youtube_id": "AF8d72mA41M",
-      "source": "youtube",
-      "title": "Why It Was Almost Impossible to Make the Blue LED",
-      "url": "https://www.youtube.com/watch?v=AF8d72mA41M",
-      "thumbnail": "https://i.ytimg.com/vi/AF8d72mA41M/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The blue LED was supposed to be impossible—until a young engineer proposed a moonshot idea. Head to https://brilliant.org/veritasium to start your free 30-day trial, and the first 200 people get 20% off an annual premium subscription.\n\nIn 2025, we launched the Elements of Truth game on Kickstarter a",
-      "published": 1707408729,
-      "published_str": "2024-02-08",
-      "embed_id": "AF8d72mA41M",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560963.6009827
+  "_ts": 1790821957.6096785
 }

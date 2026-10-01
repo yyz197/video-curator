@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zH2Mg782XhA",
+      "youtube_id": "zH2Mg782XhA",
+      "source": "youtube",
+      "title": "Python Algorithmic Trading Course – Massive, SnapTrade & Alpaca Integrations",
+      "url": "https://www.youtube.com/watch?v=zH2Mg782XhA",
+      "thumbnail": "https://i.ytimg.com/vi/zH2Mg782XhA/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to build a complete algorithmic paper trading system from the ground up using Python and Django. This hands-on course guides you through configuring a pipeline that connects market data from Massive, manages portfolios securely via SnapTrade, and routes automated signals to a simulated Alp",
+      "published": 1790689649,
+      "published_str": "2026-09-29",
+      "embed_id": "zH2Mg782XhA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_FVN0t1vb7k8",
       "youtube_id": "FVN0t1vb7k8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_wY5pQOTsGaA",
-      "youtube_id": "wY5pQOTsGaA",
-      "source": "youtube",
-      "title": "How to Deploy, Secure, and Automate Full-Stack Web Apps – Course for Beginners",
-      "url": "https://www.youtube.com/watch?v=wY5pQOTsGaA",
-      "thumbnail": "https://i.ytimg.com/vi/wY5pQOTsGaA/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to take a web application from local development to a secure, live production environment. You will learn how to manually configure an Ubuntu server, set up essential runtimes, establish automated CI/CD pipelines, and secure your site using HTTPS and Cloudflare. By tackling everything hand",
-      "published": 1789476084,
-      "published_str": "2026-09-15",
-      "embed_id": "wY5pQOTsGaA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560980.7225285
+  "_ts": 1790821972.7815094
 }

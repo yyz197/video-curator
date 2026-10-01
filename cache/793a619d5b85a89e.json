@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_7y71NLFPezY",
+      "youtube_id": "7y71NLFPezY",
+      "source": "youtube",
+      "title": "World’s Ultimate Destinations: Guizhou Season 2 | National Geographic",
+      "url": "https://www.youtube.com/watch?v=7y71NLFPezY",
+      "thumbnail": "https://i.ytimg.com/vi/7y71NLFPezY/mqdefault.jpg",
+      "author": "National Geographic",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Paid content for @liveinguizhou604. Join National Geographic photographer and Explorer Chris Burkard on an illuminating journey through Guizhou, China—a province voted by National Geographic twice as one of the world's best destinations. Now, see it like never before as Chris travels through the pro",
+      "published": 1790778828,
+      "published_str": "2026-09-30",
+      "embed_id": "7y71NLFPezY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_mFqEuafQwD8",
       "youtube_id": "mFqEuafQwD8",
       "source": "youtube",
@@ -104,7 +129,7 @@
       "id": "youtube_O-WDn8qtfKQ",
       "youtube_id": "O-WDn8qtfKQ",
       "source": "youtube",
-      "title": "Uncovering the History of the American West | Drain the Oceans MEGA Episode | National Geographic",
+      "title": "Buried Secrets of the Alamo, Gold Rush, & More | Drain the Oceans MEGA Episode | Nat Geo",
       "url": "https://www.youtube.com/watch?v=O-WDn8qtfKQ",
       "thumbnail": "https://i.ytimg.com/vi/O-WDn8qtfKQ/mqdefault.jpg",
       "author": "National Geographic",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_BjJvp10BVQs",
-      "youtube_id": "BjJvp10BVQs",
-      "source": "youtube",
-      "title": "Ancient Egypt’s Lost Secrets: Tutankhamun, Pyramids & Ramses | MEGA Episode | National Geographic",
-      "url": "https://www.youtube.com/watch?v=BjJvp10BVQs",
-      "thumbnail": "https://i.ytimg.com/vi/BjJvp10BVQs/mqdefault.jpg",
-      "author": "National Geographic",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Explore ancient Egypt’s greatest mysteries in this Lost Treasures of Egypt Season 2 MEGA Episode from National Geographic. Archaeologists investigate the secrets of Tutankhamun, the evolution of Egypt’s pyramids, and the powerful dynasties of pharaohs including Ramses. From hidden tombs and lost cha",
-      "published": 1780232408,
-      "published_str": "2026-05-31",
-      "embed_id": "BjJvp10BVQs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560966.1194334
+  "_ts": 1790821959.5265806
 }

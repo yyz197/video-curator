@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_b1EMX3wyqCY",
+      "youtube_id": "b1EMX3wyqCY",
+      "source": "youtube",
+      "title": "Your Brain on Magic Mushrooms",
+      "url": "https://www.youtube.com/watch?v=b1EMX3wyqCY",
+      "thumbnail": "https://i.ytimg.com/vi/b1EMX3wyqCY/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Magic mushrooms temporarily change how different parts of your brain communicate, loosening the filters that construct your everyday reality. The result can be profound, strange,  and sometimes dangerous. But in medical settings with controlled doses, psilocybin is being trialed to help those suffer",
+      "published": 1790604034,
+      "published_str": "2026-09-28",
+      "embed_id": "b1EMX3wyqCY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_oNTaHYXQ4MM",
       "youtube_id": "oNTaHYXQ4MM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NIifnIP_NnQ",
-      "youtube_id": "NIifnIP_NnQ",
-      "source": "youtube",
-      "title": "How ADHD Medication Works",
-      "url": "https://www.youtube.com/watch?v=NIifnIP_NnQ",
-      "thumbnail": "https://i.ytimg.com/vi/NIifnIP_NnQ/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "ADHD medication doesn’t simply give your brain more dopamine. It changes how dopamine signals are processed, making it easier to resist immediate distractions and stick with rewards that take longer to reach.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#adhdawareness",
-      "published": 1788616806,
-      "published_str": "2026-09-05",
-      "embed_id": "NIifnIP_NnQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560979.214187
+  "_ts": 1790821971.463137
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_b1EMX3wyqCY",
+      "youtube_id": "b1EMX3wyqCY",
+      "source": "youtube",
+      "title": "Your Brain on Magic Mushrooms",
+      "url": "https://www.youtube.com/watch?v=b1EMX3wyqCY",
+      "thumbnail": "https://i.ytimg.com/vi/b1EMX3wyqCY/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Magic mushrooms temporarily change how different parts of your brain communicate, loosening the filters that construct your everyday reality. The result can be profound, strange,  and sometimes dangerous. But in medical settings with controlled doses, psilocybin is being trialed to help those suffer",
+      "published": 1790604034,
+      "published_str": "2026-09-28",
+      "embed_id": "b1EMX3wyqCY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_oNTaHYXQ4MM",
       "youtube_id": "oNTaHYXQ4MM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_cRZOUcpiOxY",
-      "youtube_id": "cRZOUcpiOxY",
-      "source": "youtube",
-      "title": "Fever Feels Horrible, but is Actually Awesome!",
-      "url": "https://www.youtube.com/watch?v=cRZOUcpiOxY",
-      "thumbnail": "https://i.ytimg.com/vi/cRZOUcpiOxY/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "To get started planning a fulfilling career that does a lot of good, go to https://80000hours.org/inanutshell for your free career guide.\n\nTime’s running out! Secure your Survival Kit for the Future before it’s too late! Only on the kurzgesagt shop: https://shop.kgs.link/SurvivalKit\n\nSources & furth",
-      "published": 1723557601,
-      "published_str": "2024-08-13",
-      "embed_id": "cRZOUcpiOxY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560963.5946543
+  "_ts": 1790821957.6610918
 }

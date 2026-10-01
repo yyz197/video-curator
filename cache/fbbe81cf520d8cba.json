@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_5QbwWNZdAi0",
+      "youtube_id": "5QbwWNZdAi0",
+      "source": "youtube",
+      "title": "Do cells have goals? | with Melanie Challenger, Nick Lane & Philip Ball",
+      "url": "https://www.youtube.com/watch?v=5QbwWNZdAi0",
+      "thumbnail": "https://i.ytimg.com/vi/5QbwWNZdAi0/mqdefault.jpg",
+      "author": "The Royal Institution",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Is purpose something our brains invented, or is it built into life itself?\n\nThree thinkers take on one of science's oldest unresolved questions: what does it mean to be alive? Author Melanie Challenger is joined by biochemist Nick Lane and science writer Philip Ball for a live inquiry that begins wi",
+      "published": 1790611235,
+      "published_str": "2026-09-28",
+      "embed_id": "5QbwWNZdAi0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_GYiXYpfhq8M",
       "youtube_id": "GYiXYpfhq8M",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NiMrUm2pzQQ",
-      "youtube_id": "NiMrUm2pzQQ",
-      "source": "youtube",
-      "title": "How does Potassium and Calcium react in water? with Andrew Szydlo #scienceexperiment #chemistry",
-      "url": "https://www.youtube.com/watch?v=NiMrUm2pzQQ",
-      "thumbnail": "https://i.ytimg.com/vi/NiMrUm2pzQQ/mqdefault.jpg",
-      "author": "The Royal Institution",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Potassium and calcium are both metals, but they produce extremely different reactions with water 🫧💥\n\nChemistry demonstration virtuoso Andrew Szydlo shows these two elements in action. Watch the full lecture here: https://www.youtube.com/watch?v=w2wi6T4P9-U&t=15s\n\nBecome a member to support more scie",
-      "published": 1777564908,
-      "published_str": "2026-04-30",
-      "embed_id": "NiMrUm2pzQQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560965.4000988
+  "_ts": 1790821959.03216
 }

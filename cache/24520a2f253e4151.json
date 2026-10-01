@@ -1017,7 +1017,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "The physics behind one of the most surprising occurrences of pi\nNext video on Grover's Algorithm: https://youtu.be/RQWpF2Gb-gU\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\n\nNext",
+      "description": "The physics behind one of the most surprising occurrences of pi\n\nNext video on Grover's Algorithm: https://youtu.be/RQWpF2Gb-gU\n\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\n\nTh",
       "published": 1741880212,
       "published_str": "2025-03-13",
       "embed_id": "6dTyOl1fmDo",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1790560968.4187608
+  "_ts": 1790821961.2353063
 }

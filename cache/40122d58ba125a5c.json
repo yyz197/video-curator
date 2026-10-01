@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_PC85VEyoxVE",
+      "youtube_id": "PC85VEyoxVE",
+      "source": "youtube",
+      "title": "Olajuwon Ajanaku | Eastside Golf | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=PC85VEyoxVE",
+      "thumbnail": "https://i.ytimg.com/vi/PC85VEyoxVE/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Professional golfer, entrepreneur, and the founder and creative director of Eastside Golf, Olajuwom Ajanaku discusses his journey and how he disrupted the traditional golf industry. What began as a strategy to fund his own professional golf career evolved into a highly scalable business model by ble",
+      "published": 1790697621,
+      "published_str": "2026-09-29",
+      "embed_id": "PC85VEyoxVE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_jezPMP_ODZk",
       "youtube_id": "jezPMP_ODZk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rixcd95VVuM",
-      "youtube_id": "rixcd95VVuM",
-      "source": "youtube",
-      "title": "Leo Ku  | From Passion to Profession | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=rixcd95VVuM",
-      "thumbnail": "https://i.ytimg.com/vi/rixcd95VVuM/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "HKG, singer, actor, model, MV director, producer and designer, Leo Ku, shares his stories around how he’s been able to turn his passion into a remarkable career, how he has overcome the challenges faced along the way, and how he's using his influence to discover and mentor the next generation of asp",
-      "published": 1782273626,
-      "published_str": "2026-06-24",
-      "embed_id": "rixcd95VVuM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560980.0465753
+  "_ts": 1790821972.2330863
 }

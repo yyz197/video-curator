@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_S6PqsZ65Mg4",
+      "youtube_id": "S6PqsZ65Mg4",
+      "source": "youtube",
+      "title": "Implementing Undo - Computerphile",
+      "url": "https://www.youtube.com/watch?v=S6PqsZ65Mg4",
+      "thumbnail": "https://i.ytimg.com/vi/S6PqsZ65Mg4/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "We use undo daily, but have you thought about what goes into making a functional undo in a program? Dr Steve Bagley takes us through some of the things we need to think about if we're implementing it ourselves!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career op",
+      "published": 1790773236,
+      "published_str": "2026-09-30",
+      "embed_id": "S6PqsZ65Mg4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_giTmBaNGaHw",
       "youtube_id": "giTmBaNGaHw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_qQ9Wu1IxsYw",
-      "youtube_id": "qQ9Wu1IxsYw",
-      "source": "youtube",
-      "title": "Foundations of Data Visualisation - Computerphile",
-      "url": "https://www.youtube.com/watch?v=qQ9Wu1IxsYw",
-      "thumbnail": "https://i.ytimg.com/vi/qQ9Wu1IxsYw/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Following a look at 'Sensemaking' Associate Professor Dr Kai Xu delves into some more tricks of the visualisation trade.\n\nKai's presentation: \n https://docs.google.com/presentation/d/1DmONIomQGc-SSJ8QNkdbxLZG88ltP-l6vSa25dMUT5o/edit?usp=sharing\n\nhttps://www.facebook.com/computerphile\r\nhttps://twitte",
-      "published": 1681377742,
-      "published_str": "2023-04-13",
-      "embed_id": "qQ9Wu1IxsYw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560968.8138945
+  "_ts": 1790821961.4360504
 }

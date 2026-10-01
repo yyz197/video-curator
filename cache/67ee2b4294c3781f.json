@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_PC85VEyoxVE",
+      "youtube_id": "PC85VEyoxVE",
+      "source": "youtube",
+      "title": "Olajuwon Ajanaku | Eastside Golf | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=PC85VEyoxVE",
+      "thumbnail": "https://i.ytimg.com/vi/PC85VEyoxVE/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Professional golfer, entrepreneur, and the founder and creative director of Eastside Golf, Olajuwom Ajanaku discusses his journey and how he disrupted the traditional golf industry. What began as a strategy to fund his own professional golf career evolved into a highly scalable business model by ble",
+      "published": 1790697621,
+      "published_str": "2026-09-29",
+      "embed_id": "PC85VEyoxVE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_jezPMP_ODZk",
       "youtube_id": "jezPMP_ODZk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_MvEE_jEdTH8",
-      "youtube_id": "MvEE_jEdTH8",
-      "source": "youtube",
-      "title": "Stefano Puntoni | Decision-Driven Analytics | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=MvEE_jEdTH8",
-      "thumbnail": "https://i.ytimg.com/vi/MvEE_jEdTH8/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Professor Stefano Puntoni discusses “Decision-Driven Analytics: Leveraging Human Intelligence to Unlock the Power of Data,” a must-read for anyone who wants to harness the power of data for competitive advantage. Stefano will equip you with the skills and tools you need to more effectively use data ",
-      "published": 1715356829,
-      "published_str": "2024-05-10",
-      "embed_id": "MvEE_jEdTH8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560968.2236462
+  "_ts": 1790821960.5522184
 }

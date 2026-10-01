@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6-ZxPvpV8ec",
+      "youtube_id": "6-ZxPvpV8ec",
+      "source": "youtube",
+      "title": "My CEO Coach Destroys My Limiting Beliefs",
+      "url": "https://www.youtube.com/watch?v=6-ZxPvpV8ec",
+      "thumbnail": "https://i.ytimg.com/vi/6-ZxPvpV8ec/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Get access to all of the top AI models in one place with Perplexity Computer 👉 https://pplx.ai/ali-abdaal-youtube-1\n#PerplexityPartner\n\n📈 Get the free 10x Growth Guide: https://ericpartaker.com/how-to-10x-your-business?utm_source=ali_abdaal&utm_medium=referral&utm_campaign=10x_guide\n🚀 Book a call wi",
+      "published": 1790785833,
+      "published_str": "2026-09-30",
+      "embed_id": "6-ZxPvpV8ec",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_LhHBU4Zq_2I",
       "youtube_id": "LhHBU4Zq_2I",
       "source": "youtube",
@@ -42,7 +67,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "经济商业",
-      "description": "Book a tour at WeWork. Use 10ALIWORKS for 10% off a monthly membership, or \nuse ALIWORKS25 for 25% off pay-as-you-go bookings 👉 https://we.co/aliabdaal\n\n🍂 Join my free Autumn Reset workshop, Saturday 26 September: we reflect on how 2026 has gone and set goals for the final 90 days →  https://go.alia",
+      "description": "Book a tour at WeWork. Use 10ALIWORKS for 10% off a monthly membership, or \nuse ALIWORKS25 for 25% off pay-as-you-go bookings 👉 https://we.co/aliabdaal\n\n\n🚀 Lifestyle Business Academy: Our MBA alternative to build a 6-figure online business → https://lifestylebusiness.com/academy?utm_source=youtube&u",
       "published": 1790010685,
       "published_str": "2026-09-21",
       "embed_id": "J5U3t6-zVz0",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_w0q7fsLa26E",
-      "youtube_id": "w0q7fsLa26E",
-      "source": "youtube",
-      "title": "Give Me 22 Minutes, I’ll Show You How to Get Your First Client",
-      "url": "https://www.youtube.com/watch?v=w0q7fsLa26E",
-      "thumbnail": "https://i.ytimg.com/vi/w0q7fsLa26E/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Get a free 30-day trial of Manychat Pro with the code ALIABDAAL at checkout 👉 https://manychat.com/creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalYT&utm_content=Youtube\n\n🍂 Join my free Autumn Reset Workshop, live Sat 26th Sept at 1pm UTC → https://go.aliabdaal.com/autumnreset_d",
-      "published": 1789405428,
-      "published_str": "2026-09-14",
-      "embed_id": "w0q7fsLa26E",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790560982.0516536
+  "_ts": 1790821973.8609738
 }
