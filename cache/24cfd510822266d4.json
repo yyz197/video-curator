@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_lotjFwfnWN8",
+      "youtube_id": "lotjFwfnWN8",
+      "source": "youtube",
+      "title": "Why don’t you feel your clothes?",
+      "url": "https://www.youtube.com/watch?v=lotjFwfnWN8",
+      "thumbnail": "https://i.ytimg.com/vi/lotjFwfnWN8/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1790883265,
+      "published_str": "2026-10-01",
+      "embed_id": "lotjFwfnWN8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hf2b2EVa_F8",
       "youtube_id": "hf2b2EVa_F8",
       "source": "youtube",
-      "title": "You go blind every few seconds?!",
+      "title": "Do you go blind every time you blink?",
       "url": "https://www.youtube.com/watch?v=hf2b2EVa_F8",
       "thumbnail": "https://i.ytimg.com/vi/hf2b2EVa_F8/mqdefault.jpg",
       "author": "Be Smart",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_1oMfwA4cSLs",
-      "youtube_id": "1oMfwA4cSLs",
-      "source": "youtube",
-      "title": "You shrink every day",
-      "url": "https://www.youtube.com/watch?v=1oMfwA4cSLs",
-      "thumbnail": "https://i.ytimg.com/vi/1oMfwA4cSLs/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
-      "published": 1787867538,
-      "published_str": "2026-08-27",
-      "embed_id": "1oMfwA4cSLs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821971.7743397
+  "_ts": 1791082507.02318
 }

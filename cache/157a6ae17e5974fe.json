@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_G3hXvByzLHs",
+      "youtube_id": "G3hXvByzLHs",
+      "source": "youtube",
+      "title": "6 ways to be more persuasive",
+      "url": "https://www.youtube.com/watch?v=G3hXvByzLHs",
+      "thumbnail": "https://i.ytimg.com/vi/G3hXvByzLHs/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Episode 9: Unlock 6 strategies you can use to persuade an audience to accept and understand your argument or perspective.\n\n--\n\nThis is episode 9 of the animated series, “Public Speaking 101.” Ideas change everything — and since language lets us share our ideas, learning how to use it well gives spea",
+      "published": 1790866832,
+      "published_str": "2026-10-01",
+      "embed_id": "G3hXvByzLHs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_z3Y-gsBKChc",
       "youtube_id": "z3Y-gsBKChc",
       "source": "youtube",
@@ -254,7 +279,7 @@
       "id": "youtube_l29K-ZkARmE",
       "youtube_id": "l29K-ZkARmE",
       "source": "youtube",
-      "title": "The tragedy of Cassandra, the princess who predicted the fall of Troy - Iseult Gillespie",
+      "title": "The Greek myth of Apollo's curse - Iseult Gillespie",
       "url": "https://www.youtube.com/watch?v=l29K-ZkARmE",
       "thumbnail": "https://i.ytimg.com/vi/l29K-ZkARmE/mqdefault.jpg",
       "author": "TED-Ed",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_43qXqa8Q8o4",
-      "youtube_id": "43qXqa8Q8o4",
-      "source": "youtube",
-      "title": "The epic Nordic legend of the monster slayer - Iseult Gillespie",
-      "url": "https://www.youtube.com/watch?v=43qXqa8Q8o4",
-      "thumbnail": "https://i.ytimg.com/vi/43qXqa8Q8o4/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Explore the classic poem, “Beowulf,” which follows a heroic prince as he fights to free a kingdom from the monster Grendel.\n\n--\n\nAn epic written in Old English, “Beowulf” is known for its haunting monsters, dream-like language, and paranoid perspective, where violent threats are always waiting on th",
-      "published": 1743692465,
-      "published_str": "2025-04-03",
-      "embed_id": "43qXqa8Q8o4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821960.1038253
+  "_ts": 1791082493.096538
 }

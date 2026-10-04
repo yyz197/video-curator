@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_XIYkIWRXAtA",
+      "youtube_id": "XIYkIWRXAtA",
+      "source": "youtube",
+      "title": "Cheryl Strauss Einhorn | The Human Edge: Smarter Decisions in the Age of AI | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=XIYkIWRXAtA",
+      "thumbnail": "https://i.ytimg.com/vi/XIYkIWRXAtA/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Award-winning author, educator, and Decisive CEO Cheryl Strauss Einhorn discusses her book, \"The Human Edge: Smarter Decisions in the Age of AI,\" where she shares how you and your organization can confidently leverage AI for smart decision-making.\n\nThe Human Edge is an approachable guide for profess",
+      "published": 1790870426,
+      "published_str": "2026-10-01",
+      "embed_id": "XIYkIWRXAtA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_PC85VEyoxVE",
       "youtube_id": "PC85VEyoxVE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_fwQdUFmOCFU",
-      "youtube_id": "fwQdUFmOCFU",
-      "source": "youtube",
-      "title": "Productivity expert on the most effective way to do multiple tasks at once",
-      "url": "https://www.youtube.com/watch?v=fwQdUFmOCFU",
-      "thumbnail": "https://i.ytimg.com/vi/fwQdUFmOCFU/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Watch the full video here: https://youtu.be/h_TvzVO7LVk #shorts",
-      "published": 1715630411,
-      "published_str": "2024-05-13",
-      "embed_id": "fwQdUFmOCFU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821960.5522184
+  "_ts": 1791082494.2125866
 }

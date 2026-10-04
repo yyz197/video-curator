@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hA5vdAtz-g0",
+      "youtube_id": "hA5vdAtz-g0",
+      "source": "youtube",
+      "title": "Keep Grant Thompson’s Legacy Alive | TKOR Memorial Merch",
+      "url": "https://www.youtube.com/watch?v=hA5vdAtz-g0",
+      "thumbnail": "https://i.ytimg.com/vi/hA5vdAtz-g0/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Thank you to everyone who has supported TKOR Memorial Merch in honor of Grant Thompson, the founder of The King of Random.\n\nIf TKOR or Grant ever inspired you, taught you something, or simply brought some fun into your life, this is one way you can help keep his legacy alive.\n\nA portion of all proce",
+      "published": 1791040348,
+      "published_str": "2026-10-03",
+      "embed_id": "hA5vdAtz-g0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hJDd0aXWd2w",
       "youtube_id": "hJDd0aXWd2w",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_AqqJEGfwIGk",
-      "youtube_id": "AqqJEGfwIGk",
-      "source": "youtube",
-      "title": "How to Make Mini Pen Rockets",
-      "url": "https://www.youtube.com/watch?v=AqqJEGfwIGk",
-      "thumbnail": "https://i.ytimg.com/vi/AqqJEGfwIGk/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In this video we show a quick demonstration on how to make a mini pen rocket. \n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.\n\nWARNING:\n\nThis",
-      "published": 1739746814,
-      "published_str": "2025-02-16",
-      "embed_id": "AqqJEGfwIGk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821958.6789234
+  "_ts": 1791082491.600809
 }

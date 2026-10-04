@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_XIYkIWRXAtA",
+      "youtube_id": "XIYkIWRXAtA",
+      "source": "youtube",
+      "title": "Cheryl Strauss Einhorn | The Human Edge: Smarter Decisions in the Age of AI | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=XIYkIWRXAtA",
+      "thumbnail": "https://i.ytimg.com/vi/XIYkIWRXAtA/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Award-winning author, educator, and Decisive CEO Cheryl Strauss Einhorn discusses her book, \"The Human Edge: Smarter Decisions in the Age of AI,\" where she shares how you and your organization can confidently leverage AI for smart decision-making.\n\nThe Human Edge is an approachable guide for profess",
+      "published": 1790870426,
+      "published_str": "2026-10-01",
+      "embed_id": "XIYkIWRXAtA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_PC85VEyoxVE",
       "youtube_id": "PC85VEyoxVE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_zKMWLs3S9yg",
-      "youtube_id": "zKMWLs3S9yg",
-      "source": "youtube",
-      "title": "Dr. Robert Wachter | A Giant Leap: How AI Is Transforming Healthcare... | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=zKMWLs3S9yg",
-      "thumbnail": "https://i.ytimg.com/vi/zKMWLs3S9yg/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Physician and thought leader Dr. Robert Wachter discusses his book \"A Giant Leap: How AI Is Transforming Healthcare and What That Means for Our Future,\" an engaging, clear-eyed, and ultimately hopeful examination of healthcare’s efforts to embrace generative artificial intelligence.\n\nDr. Wachter sha",
-      "published": 1784044807,
-      "published_str": "2026-07-14",
-      "embed_id": "zKMWLs3S9yg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821972.2330863
+  "_ts": 1791082507.4480765
 }

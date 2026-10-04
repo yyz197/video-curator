@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bwr0ch8OPcU",
+      "youtube_id": "bwr0ch8OPcU",
+      "source": "youtube",
+      "title": "Wispr Flow's Notetaker is Game-Changing",
+      "url": "https://www.youtube.com/watch?v=bwr0ch8OPcU",
+      "thumbnail": "https://i.ytimg.com/vi/bwr0ch8OPcU/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Have you ever zoned out on a Zoom call, then realised you’ve missed the last two minutes?\n\nI’ve been trying Wispr Flow’s Notetaker, which records and transcribes meetings in real time. You can ask it what you missed, search previous meetings for specific decisions, and use the transcripts with tools",
+      "published": 1790946030,
+      "published_str": "2026-10-02",
+      "embed_id": "bwr0ch8OPcU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6-ZxPvpV8ec",
       "youtube_id": "6-ZxPvpV8ec",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_MBPHU7aaklM",
-      "youtube_id": "MBPHU7aaklM",
-      "source": "youtube",
-      "title": "Success Is Hard Until You Build Systems Like This",
-      "url": "https://www.youtube.com/watch?v=MBPHU7aaklM",
-      "thumbnail": "https://i.ytimg.com/vi/MBPHU7aaklM/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "Sponsored Link. To get free fractional shares worth up to £100, you can open an account with Trading 212 through this link - https://www.trading212.com/join/ALI\n\nThis video does not represent financial advice, and I am not a financial advisor. When investing, your capital is at risk and you may get ",
-      "published": 1771506042,
-      "published_str": "2026-02-19",
-      "embed_id": "MBPHU7aaklM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821964.218569
+  "_ts": 1791082497.8418062
 }

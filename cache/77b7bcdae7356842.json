@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_0GGPe_Oum6c",
+      "youtube_id": "0GGPe_Oum6c",
+      "source": "youtube",
+      "title": "How Often do Asteroids Hit the Earth?: Crash Course Geology #20",
+      "url": "https://www.youtube.com/watch?v=0GGPe_Oum6c",
+      "thumbnail": "https://i.ytimg.com/vi/0GGPe_Oum6c/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "How worried should we be about giant asteroid impacts? In this episode of Crash Course Geology, we’ll learn how to tell an asteroid from a meteorite, what happens when space rocks approach the Earth, and how scientists track potential threats before they reach us.\n\nIntroduction: Rocks from Space 00:",
+      "published": 1790870408,
+      "published_str": "2026-10-01",
+      "embed_id": "0GGPe_Oum6c",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_HT8ikFog_pQ",
       "youtube_id": "HT8ikFog_pQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_O77IFewBxcg",
-      "youtube_id": "O77IFewBxcg",
-      "source": "youtube",
-      "title": "Crash Course Religions Preview",
-      "url": "https://www.youtube.com/watch?v=O77IFewBxcg",
-      "thumbnail": "https://i.ytimg.com/vi/O77IFewBxcg/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Welcome to Crash Course Religions! Over the next 24 episodes, John Green will explore the history and culture of religions and how they offer frameworks for making sense of our lives — while being incredibly slippery things to pin down. We’ll discover how we define, debate, and contest what religion",
-      "published": 1725379226,
-      "published_str": "2024-09-03",
-      "embed_id": "O77IFewBxcg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821958.3480263
+  "_ts": 1791082490.6862226
 }

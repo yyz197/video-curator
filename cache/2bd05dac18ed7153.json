@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bwr0ch8OPcU",
+      "youtube_id": "bwr0ch8OPcU",
+      "source": "youtube",
+      "title": "Wispr Flow's Notetaker is Game-Changing",
+      "url": "https://www.youtube.com/watch?v=bwr0ch8OPcU",
+      "thumbnail": "https://i.ytimg.com/vi/bwr0ch8OPcU/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Have you ever zoned out on a Zoom call, then realised you’ve missed the last two minutes?\n\nI’ve been trying Wispr Flow’s Notetaker, which records and transcribes meetings in real time. You can ask it what you missed, search previous meetings for specific decisions, and use the transcripts with tools",
+      "published": 1790946030,
+      "published_str": "2026-10-02",
+      "embed_id": "bwr0ch8OPcU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6-ZxPvpV8ec",
       "youtube_id": "6-ZxPvpV8ec",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_7wR41pLPoy0",
-      "youtube_id": "7wR41pLPoy0",
-      "source": "youtube",
-      "title": "I used to think meditation was pointless…",
-      "url": "https://www.youtube.com/watch?v=7wR41pLPoy0",
-      "thumbnail": "https://i.ytimg.com/vi/7wR41pLPoy0/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "I used to think meditation was pointless…\n\nBut a few years ago, I finally tried the 28-day course on the Waking Up app, and it completely changed how I view my mind and focus.\n\nOur quality of life is determined by our attention, not our external circumstances.\n\nIf you want to try it out, I’ve got a ",
-      "published": 1789687801,
-      "published_str": "2026-09-17",
-      "embed_id": "7wR41pLPoy0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821973.8609738
+  "_ts": 1791082509.7035828
 }

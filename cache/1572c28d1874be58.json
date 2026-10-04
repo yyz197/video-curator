@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hA5vdAtz-g0",
+      "youtube_id": "hA5vdAtz-g0",
+      "source": "youtube",
+      "title": "Keep Grant Thompson’s Legacy Alive | TKOR Memorial Merch",
+      "url": "https://www.youtube.com/watch?v=hA5vdAtz-g0",
+      "thumbnail": "https://i.ytimg.com/vi/hA5vdAtz-g0/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Thank you to everyone who has supported TKOR Memorial Merch in honor of Grant Thompson, the founder of The King of Random.\n\nIf TKOR or Grant ever inspired you, taught you something, or simply brought some fun into your life, this is one way you can help keep his legacy alive.\n\nA portion of all proce",
+      "published": 1791040348,
+      "published_str": "2026-10-03",
+      "embed_id": "hA5vdAtz-g0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hJDd0aXWd2w",
       "youtube_id": "hJDd0aXWd2w",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_4dFwK8rBImw",
-      "youtube_id": "4dFwK8rBImw",
-      "source": "youtube",
-      "title": "WE 3D PRINTED CHRISTMAS THIS YEAR",
-      "url": "https://www.youtube.com/watch?v=4dFwK8rBImw",
-      "thumbnail": "https://i.ytimg.com/vi/4dFwK8rBImw/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We decided to do Christmas a little different this year and 3D print all of our decorations!\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the responsibility for the res",
-      "published": 1766682013,
-      "published_str": "2025-12-25",
-      "embed_id": "4dFwK8rBImw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821972.0296206
+  "_ts": 1791082506.908363
 }

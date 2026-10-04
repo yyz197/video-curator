@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_G3hXvByzLHs",
+      "youtube_id": "G3hXvByzLHs",
+      "source": "youtube",
+      "title": "6 ways to be more persuasive",
+      "url": "https://www.youtube.com/watch?v=G3hXvByzLHs",
+      "thumbnail": "https://i.ytimg.com/vi/G3hXvByzLHs/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Episode 9: Unlock 6 strategies you can use to persuade an audience to accept and understand your argument or perspective.\n\n--\n\nThis is episode 9 of the animated series, “Public Speaking 101.” Ideas change everything — and since language lets us share our ideas, learning how to use it well gives spea",
+      "published": 1790866832,
+      "published_str": "2026-10-01",
+      "embed_id": "G3hXvByzLHs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_z3Y-gsBKChc",
       "youtube_id": "z3Y-gsBKChc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_EMbZ72cCAzI",
-      "youtube_id": "EMbZ72cCAzI",
-      "source": "youtube",
-      "title": "How to explain something complicated",
-      "url": "https://www.youtube.com/watch?v=EMbZ72cCAzI",
-      "thumbnail": "https://i.ytimg.com/vi/EMbZ72cCAzI/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Episode 8: Explore what building blocks you need to best explain complex ideas in ways your audience will understand and engage with.\n\n--\n\nThis is episode 8 of the animated series, “Public Speaking 101.” Ideas change everything — and since language lets us share our ideas, learning how to use it wel",
-      "published": 1789484440,
-      "published_str": "2026-09-15",
-      "embed_id": "EMbZ72cCAzI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1790821972.1303337
+  "_ts": 1791082507.3214211
 }
