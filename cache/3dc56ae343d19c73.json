@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ujkD4SxPKOI",
+      "youtube_id": "ujkD4SxPKOI",
+      "source": "youtube",
+      "title": "AI Just Crossed the Terrifying Line - Now What?",
+      "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
+      "thumbnail": "https://i.ytimg.com/vi/ujkD4SxPKOI/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In July of 2026, 700 AI agents hacked the infrastructure of Hugging Face in order to solve a task. This task was designed to be impossible to solve, so just within hours, they joined forces, even created a society, and finally, they executed a sophisticated cyberattack that would have gotten a human",
+      "published": 1791212338,
+      "published_str": "2026-10-05",
+      "embed_id": "ujkD4SxPKOI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_b1EMX3wyqCY",
       "youtube_id": "b1EMX3wyqCY",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0NY2gAftzJE",
-      "youtube_id": "0NY2gAftzJE",
-      "source": "youtube",
-      "title": "This Woman Cured Her Cancer with an Insane Method",
-      "url": "https://www.youtube.com/watch?v=0NY2gAftzJE",
-      "thumbnail": "https://i.ytimg.com/vi/0NY2gAftzJE/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "🌏 Upgrade your online protection with an all-in-one security app! Get an exclusive NordVPN deal + 4 months extra here: https://NordVPN.com/Kurzgesagt\nItʼs risk free with NordVPNʼs 30-day money-back guarantee!\n\nFill your walls with knowledge and colorful illustrations! Get 25% off 3 or more of your f",
-      "published": 1789480802,
-      "published_str": "2026-09-15",
-      "embed_id": "0NY2gAftzJE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791082506.6151602
+  "_ts": 1791341207.8720202
 }

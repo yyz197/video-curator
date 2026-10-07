@@ -92,7 +92,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "How was the \"unbreakable\" enigma cracked? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - ht",
+      "description": "How did Bletchley Park's codebreakers crack the \"unbreakable\" enigma? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms sna",
       "published": 1790012997,
       "published_str": "2026-09-21",
       "embed_id": "JsBZOcqZerk",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1791082489.7636733
+  "_ts": 1791341191.2860456
 }

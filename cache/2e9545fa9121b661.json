@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_NP_ugJHuY6w",
+      "youtube_id": "NP_ugJHuY6w",
+      "source": "youtube",
+      "title": "He turned fixer-upper hidden in French village maze into foot-only oasis",
+      "url": "https://www.youtube.com/watch?v=NP_ugJHuY6w",
+      "thumbnail": "https://i.ytimg.com/vi/NP_ugJHuY6w/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "After starting a family, Olivier Neveu left city life and bought an old townhouse hidden in his historic village's maze of lanes, 50 steps up from the street, with no car access. \n\nNestled in the old center of Vals-les-Bains, France, the house is tall and skinny, with four levels (including a cellar",
+      "published": 1791235498,
+      "published_str": "2026-10-05",
+      "embed_id": "NP_ugJHuY6w",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_tcU2ygXoOU0",
       "youtube_id": "tcU2ygXoOU0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_hwRBTeNY3Oo",
-      "youtube_id": "hwRBTeNY3Oo",
-      "source": "youtube",
-      "title": "After NYC, she moved to village dug underground: fixing 4 caves in 15 years",
-      "url": "https://www.youtube.com/watch?v=hwRBTeNY3Oo",
-      "thumbnail": "https://i.ytimg.com/vi/hwRBTeNY3Oo/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "After growing up in Manhattan, Thea Carini landed in Bourré - a tiny French stone-mining town with dozens of homes built into the mountainside.\n \nFifteen years ago, she moved into her first cave home in France (a rental she nicknamed \"the hobbit house\") and never really left. \n\nSince then, she's liv",
-      "published": 1788139866,
-      "published_str": "2026-08-31",
-      "embed_id": "hwRBTeNY3Oo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791082510.9033163
+  "_ts": 1791341211.3810546
 }

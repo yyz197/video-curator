@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_g9Exz_tR-nU",
+      "youtube_id": "g9Exz_tR-nU",
+      "source": "youtube",
+      "title": "Blind Ranking Numbers (Matt Parker)",
+      "url": "https://www.youtube.com/watch?v=g9Exz_tR-nU",
+      "thumbnail": "https://i.ytimg.com/vi/g9Exz_tR-nU/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Matt Parker blind ranks five numbers and constants. More links & stuff in full description below ↓↓↓\n\nRelated videos\nThe Parker Square (featuring 3051) - https://www.youtube.com/watch?v=aOT_bG-vWyg\nMile of Pi with Matt Parker - https://www.youtube.com/watch?v=0r3cEKZiLmg\nGraham's Number with Matt Pa",
+      "published": 1791306527,
+      "published_str": "2026-10-06",
+      "embed_id": "g9Exz_tR-nU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_VydHKLBXdVQ",
       "youtube_id": "VydHKLBXdVQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_DUaqiM1bGX4",
-      "youtube_id": "DUaqiM1bGX4",
-      "source": "youtube",
-      "title": "The Yellowstone Permutation - Numberphile",
-      "url": "https://www.youtube.com/watch?v=DUaqiM1bGX4",
-      "thumbnail": "https://i.ytimg.com/vi/DUaqiM1bGX4/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Featuring Neil Sloane. See https://brilliant.org/numberphile for Brilliant and get 20% off their premium service (episode sponsor)\nMore links & stuff in full description below ↓↓↓\n\nCorrection at 4:08… Neil says “then we get twice 61\" instead of “about twice 61\". The actual result is 120, not 122 as ",
-      "published": 1675008234,
-      "published_str": "2023-01-29",
-      "embed_id": "DUaqiM1bGX4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791082494.9668472
+  "_ts": 1791341196.09426
 }

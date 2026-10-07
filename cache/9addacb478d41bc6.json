@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Y22FuMI7vXI",
+      "youtube_id": "Y22FuMI7vXI",
+      "source": "youtube",
+      "title": "Where Does Campaign Money Really Come From?: Crash Course US Government #3",
+      "url": "https://www.youtube.com/watch?v=Y22FuMI7vXI",
+      "thumbnail": "https://i.ytimg.com/vi/Y22FuMI7vXI/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Where do campaigns get all their money, and where does it go? In this episode of Crash Course Big Questions on U.S. Government, we’ll dig into the limits of campaign financing and the rising influence of super PACs, dark money, and independent spending. We’ll also look at why special interest groups",
+      "published": 1791302421,
+      "published_str": "2026-10-06",
+      "embed_id": "Y22FuMI7vXI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0GGPe_Oum6c",
       "youtube_id": "0GGPe_Oum6c",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HICDzXfCAs4",
-      "youtube_id": "HICDzXfCAs4",
-      "source": "youtube",
-      "title": "Crash Course Astronomy Marathon • Full Series",
-      "url": "https://www.youtube.com/watch?v=HICDzXfCAs4",
-      "thumbnail": "https://i.ytimg.com/vi/HICDzXfCAs4/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In Crash Course Marathons, we’re revisiting the series you love, in long-form videos that cover entire subjects from back to front. Crash Course Astronomy covers outer space, from the stars and nearby planets we can see with the naked eye, to the mysterious dark matter no one can see at all. With de",
-      "published": 1789660814,
-      "published_str": "2026-09-17",
-      "embed_id": "HICDzXfCAs4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791082506.758332
+  "_ts": 1791341207.9696145
 }

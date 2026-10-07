@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_-gfgQfw2g_E",
+      "youtube_id": "-gfgQfw2g_E",
+      "source": "youtube",
+      "title": "Build & Train a GLM-5.3-Flash Model From Scratch with Python",
+      "url": "https://www.youtube.com/watch?v=-gfgQfw2g_E",
+      "thumbnail": "https://i.ytimg.com/vi/-gfgQfw2g_E/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to design, build, and train an advanced multimodal language model from scratch using modern techniques like mixture-of-experts, sparse attention, and reinforcement learning. This hands-on guide walks you through the entire lifecycle from tokenization and pre-training to post-training optim",
+      "published": 1791305756,
+      "published_str": "2026-10-06",
+      "embed_id": "-gfgQfw2g_E",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_nqK3oJ682mQ",
       "youtube_id": "nqK3oJ682mQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gYTA8nQN030",
-      "youtube_id": "gYTA8nQN030",
-      "source": "youtube",
-      "title": "TimescaleDB Course – PostgreSQL for Time-Series Data",
-      "url": "https://www.youtube.com/watch?v=gYTA8nQN030",
-      "thumbnail": "https://i.ytimg.com/vi/gYTA8nQN030/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to supercharge PostgreSQL for time-series data and heavy analytics workloads using the TimescaleDB extension. In this comprehensive course, you will master hypertables, continuous aggregates, and columnar storage by building real-world projects like an AI agent flight recorder and an EV fl",
-      "published": 1790159404,
-      "published_str": "2026-09-23",
-      "embed_id": "gYTA8nQN030",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791082508.0948522
+  "_ts": 1791341209.1063123
 }

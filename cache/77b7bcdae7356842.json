@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Y22FuMI7vXI",
+      "youtube_id": "Y22FuMI7vXI",
+      "source": "youtube",
+      "title": "Where Does Campaign Money Really Come From?: Crash Course US Government #3",
+      "url": "https://www.youtube.com/watch?v=Y22FuMI7vXI",
+      "thumbnail": "https://i.ytimg.com/vi/Y22FuMI7vXI/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Where do campaigns get all their money, and where does it go? In this episode of Crash Course Big Questions on U.S. Government, we’ll dig into the limits of campaign financing and the rising influence of super PACs, dark money, and independent spending. We’ll also look at why special interest groups",
+      "published": 1791302421,
+      "published_str": "2026-10-06",
+      "embed_id": "Y22FuMI7vXI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0GGPe_Oum6c",
       "youtube_id": "0GGPe_Oum6c",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Zb60nWtmFpA",
-      "youtube_id": "Zb60nWtmFpA",
-      "source": "youtube",
-      "title": "Making of Crash Course: Live Sound Design with the Team! #Learnathon2024",
-      "url": "https://www.youtube.com/watch?v=Zb60nWtmFpA",
-      "thumbnail": "https://i.ytimg.com/vi/Zb60nWtmFpA/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Some of our Crash Course production team will take you through the process of sound designing an episode of Crash Course: Art History!\r\n\r\nThis is one of our events for the first ever Complexly Learn-a-thon, an event created to celebrate SciShow, Study Hall, Crash Course - all of the shows that we ma",
-      "published": 1725473103,
-      "published_str": "2024-09-04",
-      "embed_id": "Zb60nWtmFpA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791082490.6862226
+  "_ts": 1791341192.1240897
 }
