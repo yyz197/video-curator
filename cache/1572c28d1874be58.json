@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bYrb1nCCjwo",
+      "youtube_id": "bYrb1nCCjwo",
+      "source": "youtube",
+      "title": "The Story You Never Knew About Grant Thompson | Legacy Doc Episode 0",
+      "url": "https://www.youtube.com/watch?v=bYrb1nCCjwo",
+      "thumbnail": "https://i.ytimg.com/vi/bYrb1nCCjwo/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Today we begin our journey in talking about the story of Grant Thompson, from a young boy to building one of the largest YouTube communities of all time.\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portr",
+      "published": 1791478801,
+      "published_str": "2026-10-08",
+      "embed_id": "bYrb1nCCjwo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hA5vdAtz-g0",
       "youtube_id": "hA5vdAtz-g0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HXp4rRHhGuE",
-      "youtube_id": "HXp4rRHhGuE",
-      "source": "youtube",
-      "title": "Can You Build an Indoor Rock Climbing Wall?",
-      "url": "https://www.youtube.com/watch?v=HXp4rRHhGuE",
-      "thumbnail": "https://i.ytimg.com/vi/HXp4rRHhGuE/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Can you build a Climbing Wall INDOORS? We figured that with all the cognitive benefits that the kids should be able to play with their own Climbing wall, but how do we do that inside? \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If yo",
-      "published": 1769263222,
-      "published_str": "2026-01-24",
-      "embed_id": "HXp4rRHhGuE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341208.104811
+  "_ts": 1791600625.3377461
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_W0jPTqIo5oE",
+      "youtube_id": "W0jPTqIo5oE",
+      "source": "youtube",
+      "title": "Race Conditions on a Human Scale - Computerphile",
+      "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
+      "thumbnail": "https://i.ytimg.com/vi/W0jPTqIo5oE/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "When two threads or processes clash, a race condition can occur. Matt Godbolt demonstrates different kinds of race conditions by equating these to real-life human situations. \n\nFind out more about Matt from his blog: https://bit.ly/C_MGodbolt \n\nComputerphile is supported by Jane Street. Learn more a",
+      "published": 1791464425,
+      "published_str": "2026-10-08",
+      "embed_id": "W0jPTqIo5oE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_S6PqsZ65Mg4",
       "youtube_id": "S6PqsZ65Mg4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gVtjsd00fWo",
-      "youtube_id": "gVtjsd00fWo",
-      "source": "youtube",
-      "title": "LogJam Attack - Computerphile",
-      "url": "https://www.youtube.com/watch?v=gVtjsd00fWo",
-      "thumbnail": "https://i.ytimg.com/vi/gVtjsd00fWo/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "An oldie but a goodie, Dr Mike Pound revisits the Log-Jam attack. \n\nOriginal Log Jam paper: https://bit.ly/C_LogJamPaper \n\nThanks to David Domminney Fowler for his help with the woeful framerate of the second camera footage. \n\nhttps://www.facebook.com/computerphile\r\nhttps://twitter.com/computer_phil",
-      "published": 1683128932,
-      "published_str": "2023-05-03",
-      "embed_id": "gVtjsd00fWo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341196.1386654
+  "_ts": 1791600613.4817245
 }

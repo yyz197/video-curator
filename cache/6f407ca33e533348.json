@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_j9p3Sn8ROL4",
+      "youtube_id": "j9p3Sn8ROL4",
+      "source": "youtube",
+      "title": "What is edge dislocation?",
+      "url": "https://www.youtube.com/watch?v=j9p3Sn8ROL4",
+      "thumbnail": "https://i.ytimg.com/vi/j9p3Sn8ROL4/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "We demonstrated a crystal lattice of atoms using bubbles.",
+      "published": 1791550803,
+      "published_str": "2026-10-09",
+      "embed_id": "j9p3Sn8ROL4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_IHkp5Kq72ro",
       "youtube_id": "IHkp5Kq72ro",
       "source": "youtube",
@@ -2504,7 +2529,7 @@
       "id": "youtube_Q56PMJbCFXQ",
       "youtube_id": "Q56PMJbCFXQ",
       "source": "youtube",
-      "title": "How A Student's Question Saved This NYC Skyscraper",
+      "title": "This Skyscraper Was Days From Collapsing And No One Knew",
       "url": "https://www.youtube.com/watch?v=Q56PMJbCFXQ",
       "thumbnail": "https://i.ytimg.com/vi/Q56PMJbCFXQ/mqdefault.jpg",
       "author": "Veritasium",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_A5w-dEgIU1M",
-      "youtube_id": "A5w-dEgIU1M",
-      "source": "youtube",
-      "title": "The Equation That Beat Wall Street",
-      "url": "https://www.youtube.com/watch?v=A5w-dEgIU1M",
-      "thumbnail": "https://i.ytimg.com/vi/A5w-dEgIU1M/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How the Black-Scholes/Merton equation made trillions of dollars. Sponsored by Henson Shaving - Don’t forget to check out http://hensonshaving.com/derek and enter code “derek” at checkout to get a FREE pack of 100 blades (2+ years worth) with the purchase of a razor. Just make sure both products are ",
-      "published": 1709048819,
-      "published_str": "2024-02-27",
-      "embed_id": "A5w-dEgIU1M",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341191.2860456
+  "_ts": 1791600608.5088263
 }

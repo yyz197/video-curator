@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_s6UBugpwFxE",
+      "youtube_id": "s6UBugpwFxE",
+      "source": "youtube",
+      "title": "Archeologists Unearth A Crashed WW2 Bomber",
+      "url": "https://www.youtube.com/watch?v=s6UBugpwFxE",
+      "thumbnail": "https://i.ytimg.com/vi/s6UBugpwFxE/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "In November 1944, two brand-new American A26 Invader bombers took off from Warton Air Base bound for France. Minutes later, both aircraft crashed into coastal marshland, killing all three crew members. For decades, official reports left the cause unknown. In this episode, archaeologists and aviation",
+      "published": 1791493203,
+      "published_str": "2026-10-08",
+      "embed_id": "s6UBugpwFxE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_sdufXidpVWk",
       "youtube_id": "sdufXidpVWk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_IYLzLWjK3Vo",
-      "youtube_id": "IYLzLWjK3Vo",
-      "source": "youtube",
-      "title": "Joachim Peiper: The Murderous Nazi War Criminal Who Never Saw Justice",
-      "url": "https://www.youtube.com/watch?v=IYLzLWjK3Vo",
-      "thumbnail": "https://i.ytimg.com/vi/IYLzLWjK3Vo/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "January 1945: The Allies discover the frozen bodies of 82 American POWs - victims of the Malmedy Massacre. Attention quickly focused on SS commander Joachim Peiper, whose infamous unit, the \"Blowtorch Battalion,\" carried out the cold-blooded execution during the Battle of the Bulge. This premium doc",
-      "published": 1773612030,
-      "published_str": "2026-03-15",
-      "embed_id": "IYLzLWjK3Vo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341197.981566
+  "_ts": 1791600615.2735019
 }

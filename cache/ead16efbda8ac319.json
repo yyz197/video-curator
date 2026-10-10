@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bYrb1nCCjwo",
+      "youtube_id": "bYrb1nCCjwo",
+      "source": "youtube",
+      "title": "The Story You Never Knew About Grant Thompson | Legacy Doc Episode 0",
+      "url": "https://www.youtube.com/watch?v=bYrb1nCCjwo",
+      "thumbnail": "https://i.ytimg.com/vi/bYrb1nCCjwo/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Today we begin our journey in talking about the story of Grant Thompson, from a young boy to building one of the largest YouTube communities of all time.\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portr",
+      "published": 1791478801,
+      "published_str": "2026-10-08",
+      "embed_id": "bYrb1nCCjwo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hA5vdAtz-g0",
       "youtube_id": "hA5vdAtz-g0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_OT2suPGNOiA",
-      "youtube_id": "OT2suPGNOiA",
-      "source": "youtube",
-      "title": "We Put Dry Ice In A Metal Foundry",
-      "url": "https://www.youtube.com/watch?v=OT2suPGNOiA",
-      "thumbnail": "https://i.ytimg.com/vi/OT2suPGNOiA/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We were asked to put some dry ice into our backyard foundry and the results were shocking!\n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.\n\nWA",
-      "published": 1739833218,
-      "published_str": "2025-02-17",
-      "embed_id": "OT2suPGNOiA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341192.4941123
+  "_ts": 1791600609.8227444
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_sj3Z999TJqM",
+      "youtube_id": "sj3Z999TJqM",
+      "source": "youtube",
+      "title": "Your blood is never blue?",
+      "url": "https://www.youtube.com/watch?v=sj3Z999TJqM",
+      "thumbnail": "https://i.ytimg.com/vi/sj3Z999TJqM/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1791486279,
+      "published_str": "2026-10-08",
+      "embed_id": "sj3Z999TJqM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lotjFwfnWN8",
       "youtube_id": "lotjFwfnWN8",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_O_mk-YJxwLw",
-      "youtube_id": "O_mk-YJxwLw",
-      "source": "youtube",
-      "title": "Can a Billion Oysters Save New York City?",
-      "url": "https://www.youtube.com/watch?v=O_mk-YJxwLw",
-      "thumbnail": "https://i.ytimg.com/vi/O_mk-YJxwLw/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Heroes on the half shell… Oyster power?\nSUBSCRIBE so you don’t miss a video! ►► http://bit.ly/iotbs_sub \n↓↓↓ More info and sources below ↓↓↓\n\nWhen people picture New York City they see skyscrapers, subways, and a concrete jungle. But the Big Apple is really a seaside city built on an archipelago. In",
-      "published": 1701357804,
-      "published_str": "2023-11-30",
-      "embed_id": "O_mk-YJxwLw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341192.9239886
+  "_ts": 1791600610.4078014
 }

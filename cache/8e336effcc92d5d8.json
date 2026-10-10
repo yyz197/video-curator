@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_s6UBugpwFxE",
+      "youtube_id": "s6UBugpwFxE",
+      "source": "youtube",
+      "title": "Archeologists Unearth A Crashed WW2 Bomber",
+      "url": "https://www.youtube.com/watch?v=s6UBugpwFxE",
+      "thumbnail": "https://i.ytimg.com/vi/s6UBugpwFxE/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "In November 1944, two brand-new American A26 Invader bombers took off from Warton Air Base bound for France. Minutes later, both aircraft crashed into coastal marshland, killing all three crew members. For decades, official reports left the cause unknown. In this episode, archaeologists and aviation",
+      "published": 1791493203,
+      "published_str": "2026-10-08",
+      "embed_id": "s6UBugpwFxE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_sdufXidpVWk",
       "youtube_id": "sdufXidpVWk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0-m0r3Ljagk",
-      "youtube_id": "0-m0r3Ljagk",
-      "source": "youtube",
-      "title": "Archeologists Investigate King George III’s Lost White House Palace",
-      "url": "https://www.youtube.com/watch?v=0-m0r3Ljagk",
-      "thumbnail": "https://i.ytimg.com/vi/0-m0r3Ljagk/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "Join the Time Team as they embark on an intensive three-day archaeological excavation at Kew Gardens to locate the lost White House Palace, the preferred residence of King George III. Armed with ground-penetrating radar, historical survey plans, and excavation tools, the team battles conflicting 18t",
-      "published": 1790888432,
-      "published_str": "2026-10-01",
-      "embed_id": "0-m0r3Ljagk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791341209.7303371
+  "_ts": 1791600627.4101076
 }
