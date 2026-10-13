@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_NiCgcUTL9_Q",
+      "youtube_id": "NiCgcUTL9_Q",
+      "source": "youtube",
+      "title": "The Clearest Material Ever Made",
+      "url": "https://www.youtube.com/watch?v=NiCgcUTL9_Q",
+      "thumbnail": "https://i.ytimg.com/vi/NiCgcUTL9_Q/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Why making glass fibers to send signals was almost impossible. Sponsored by Saily - 🌎 Get an exclusive 15% discount on Saily data plans!  Download Saily app go to https://saily.com/veritasium Use code veritasium at checkout ⛵\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I inv",
+      "published": 1791825105,
+      "published_str": "2026-10-12",
+      "embed_id": "NiCgcUTL9_Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_j9p3Sn8ROL4",
       "youtube_id": "j9p3Sn8ROL4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JsBZOcqZerk",
-      "youtube_id": "JsBZOcqZerk",
-      "source": "youtube",
-      "title": "The Insane Real Engineering of the Nazi Enigma Machine",
-      "url": "https://www.youtube.com/watch?v=JsBZOcqZerk",
-      "thumbnail": "https://i.ytimg.com/vi/JsBZOcqZerk/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How did Bletchley Park's codebreakers crack the \"unbreakable\" enigma? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms sna",
-      "published": 1790012997,
-      "published_str": "2026-09-21",
-      "embed_id": "JsBZOcqZerk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600624.8621762
+  "_ts": 1791864029.7951264
 }

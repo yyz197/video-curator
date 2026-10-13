@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wxfARKaQyDE",
+      "youtube_id": "wxfARKaQyDE",
+      "source": "youtube",
+      "title": "The Cure for Ulcers Is ... Cabbage",
+      "url": "https://www.youtube.com/watch?v=wxfARKaQyDE",
+      "thumbnail": "https://i.ytimg.com/vi/wxfARKaQyDE/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "If your ulcer is caused by a bacteria instead of stress, that means you need an anti-bacterial drug to treat it, right? Well, there's a lot of research supporting the simple fix of cabbage juice, thanks to it's secret ingredient: vitamin U.\n\nHosted by: @NotesByNiba (she/her)\n----------\nSupport us fo",
+      "published": 1791824432,
+      "published_str": "2026-10-12",
+      "embed_id": "wxfARKaQyDE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9yYQHUTv9t4",
       "youtube_id": "9yYQHUTv9t4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_RuN5HxSew7w",
-      "youtube_id": "RuN5HxSew7w",
-      "source": "youtube",
-      "title": "You Had A Cell That Was Larger Than A Bedsheet",
-      "url": "https://www.youtube.com/watch?v=RuN5HxSew7w",
-      "thumbnail": "https://i.ytimg.com/vi/RuN5HxSew7w/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "When she was pregnant a few years ago, Hannah Yevick was reading about the placenta and learned it contained a cell whose surface spanned a whopping 13 square meters—larger than a King-sized bed sheet. The Brandeis University biophysicist was immediately fascinated, and her research on this giant ce",
-      "published": 1769018400,
-      "published_str": "2026-01-21",
-      "embed_id": "RuN5HxSew7w",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600609.2695677
+  "_ts": 1791864016.1042671
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wxfARKaQyDE",
+      "youtube_id": "wxfARKaQyDE",
+      "source": "youtube",
+      "title": "The Cure for Ulcers Is ... Cabbage",
+      "url": "https://www.youtube.com/watch?v=wxfARKaQyDE",
+      "thumbnail": "https://i.ytimg.com/vi/wxfARKaQyDE/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "If your ulcer is caused by a bacteria instead of stress, that means you need an anti-bacterial drug to treat it, right? Well, there's a lot of research supporting the simple fix of cabbage juice, thanks to it's secret ingredient: vitamin U.\n\nHosted by: @NotesByNiba (she/her)\n----------\nSupport us fo",
+      "published": 1791824432,
+      "published_str": "2026-10-12",
+      "embed_id": "wxfARKaQyDE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9yYQHUTv9t4",
       "youtube_id": "9yYQHUTv9t4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__6ronpDQY2o",
-      "youtube_id": "_6ronpDQY2o",
-      "source": "youtube",
-      "title": "This Green Beach Shouldn't Exist",
-      "url": "https://www.youtube.com/watch?v=_6ronpDQY2o",
-      "thumbnail": "https://i.ytimg.com/vi/_6ronpDQY2o/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Check out the Rocks Box store and subscribe here!: https://complexly.info/rocks \n\nThere's a beach in Hawaii with green sand, a phenomenon that exists almost nowhere else on Earth. And the geologic events that formed it are as unlikely as the beach itself. \n\nHosted by: Denali Kincaid (they/them)\n----",
-      "published": 1790960421,
-      "published_str": "2026-10-02",
-      "embed_id": "_6ronpDQY2o",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600625.0456502
+  "_ts": 1791864029.873598
 }

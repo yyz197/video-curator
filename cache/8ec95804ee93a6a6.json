@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BRi3b8itAUs",
+      "youtube_id": "BRi3b8itAUs",
+      "source": "youtube",
+      "title": "Why We Pick Difficult Partners  #theschooloflife #facts #love",
+      "url": "https://www.youtube.com/watch?v=BRi3b8itAUs",
+      "thumbnail": "https://i.ytimg.com/vi/BRi3b8itAUs/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "In theory, we're nowadays allowed to get together with pretty much anyone we like. And yet, at a psychological level, we aren't free to love just any suitable person. We have a type - and strangely and awkwardly, these types are often not those who stand a chance of making us maximally happy.  \n\nEnj",
+      "published": 1791723628,
+      "published_str": "2026-10-11",
+      "embed_id": "BRi3b8itAUs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_uk3wUnCEghw",
       "youtube_id": "uk3wUnCEghw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JViyD5dKM8k",
-      "youtube_id": "JViyD5dKM8k",
-      "source": "youtube",
-      "title": "The Only Relationship Rule That Matters",
-      "url": "https://www.youtube.com/watch?v=JViyD5dKM8k",
-      "thumbnail": "https://i.ytimg.com/vi/JViyD5dKM8k/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nAre you mistaking pain for passion? This film delivers a vital lesson: the only love worthy of the name is reciprocal love. We explore why we settle for ambiguity and emotional unavailability, tracing this self-",
-      "published": 1759928440,
-      "published_str": "2025-10-08",
-      "embed_id": "JViyD5dKM8k",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600612.808589
+  "_ts": 1791864018.5884273
 }

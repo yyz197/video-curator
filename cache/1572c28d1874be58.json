@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_y0wpGpo1dDs",
+      "youtube_id": "y0wpGpo1dDs",
+      "source": "youtube",
+      "title": "The Goal Of Sharing Grant's Life Story",
+      "url": "https://www.youtube.com/watch?v=y0wpGpo1dDs",
+      "thumbnail": "https://i.ytimg.com/vi/y0wpGpo1dDs/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Healing doesn’t mean getting over the loss of someone you love. ❤️\n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. 👑❤️\n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite: https://www.scottbuckley.com",
+      "published": 1791723639,
+      "published_str": "2026-10-11",
+      "embed_id": "y0wpGpo1dDs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_bYrb1nCCjwo",
       "youtube_id": "bYrb1nCCjwo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tF2vKwj_dks",
-      "youtube_id": "tF2vKwj_dks",
-      "source": "youtube",
-      "title": "Can You Make Fireproof Paint from Household Materials?",
-      "url": "https://www.youtube.com/watch?v=tF2vKwj_dks",
-      "thumbnail": "https://i.ytimg.com/vi/tF2vKwj_dks/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In this video we took items from around our house to see if we could make fireproof paint. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the responsibility for the resu",
-      "published": 1771336891,
-      "published_str": "2026-02-17",
-      "embed_id": "tF2vKwj_dks",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600625.3377461
+  "_ts": 1791864029.9548874
 }

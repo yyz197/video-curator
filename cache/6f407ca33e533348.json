@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_NiCgcUTL9_Q",
+      "youtube_id": "NiCgcUTL9_Q",
+      "source": "youtube",
+      "title": "The Clearest Material Ever Made",
+      "url": "https://www.youtube.com/watch?v=NiCgcUTL9_Q",
+      "thumbnail": "https://i.ytimg.com/vi/NiCgcUTL9_Q/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Why making glass fibers to send signals was almost impossible. Sponsored by Saily - 🌎 Get an exclusive 15% discount on Saily data plans!  Download Saily app go to https://saily.com/veritasium Use code veritasium at checkout ⛵\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I inv",
+      "published": 1791825105,
+      "published_str": "2026-10-12",
+      "embed_id": "NiCgcUTL9_Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_j9p3Sn8ROL4",
       "youtube_id": "j9p3Sn8ROL4",
       "source": "youtube",
@@ -2379,7 +2404,7 @@
       "id": "youtube_-QTkPfq7w1A",
       "youtube_id": "-QTkPfq7w1A",
       "source": "youtube",
-      "title": "This mechanism shrinks when pulled",
+      "title": "The most counterintuitive device you'll ever see",
       "url": "https://www.youtube.com/watch?v=-QTkPfq7w1A",
       "thumbnail": "https://i.ytimg.com/vi/-QTkPfq7w1A/mqdefault.jpg",
       "author": "Veritasium",
@@ -2504,7 +2529,7 @@
       "id": "youtube_SC2eSujzrUY",
       "youtube_id": "SC2eSujzrUY",
       "source": "youtube",
-      "title": "How One Company Secretly Poisoned The Planet",
+      "title": "The Biggest Chemical Coverup In History",
       "url": "https://www.youtube.com/watch?v=SC2eSujzrUY",
       "thumbnail": "https://i.ytimg.com/vi/SC2eSujzrUY/mqdefault.jpg",
       "author": "Veritasium",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Zrv1EDIqHkY",
-      "youtube_id": "Zrv1EDIqHkY",
-      "source": "youtube",
-      "title": "The Oldest Unsolved Problem in Math",
-      "url": "https://www.youtube.com/watch?v=Zrv1EDIqHkY",
-      "thumbnail": "https://i.ytimg.com/vi/Zrv1EDIqHkY/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Do odd perfect numbers exist? Head to https://brilliant.org/veritasium to start your free 30-day trial, and the first 200 people get 20% off an annual premium subscription.\n\nSpecial thanks to our Patreon supporters! Join this list to help us keep our videos free, forever: \nhttps://ve42.co/PatreonDEB",
-      "published": 1709858167,
-      "published_str": "2024-03-08",
-      "embed_id": "Zrv1EDIqHkY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600608.5088263
+  "_ts": 1791864015.6220403
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Lpz6Tws3his",
+      "youtube_id": "Lpz6Tws3his",
+      "source": "youtube",
+      "title": "What Makes the Perfect British Scone?",
+      "url": "https://www.youtube.com/watch?v=Lpz6Tws3his",
+      "thumbnail": "https://i.ytimg.com/vi/Lpz6Tws3his/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "What's the secret to making perfect British scones? At The Langham London, they chill the dough to create beautifully light, fluffy scones with the perfect texture for cream and jam.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=au",
+      "published": 1791820804,
+      "published_str": "2026-10-12",
+      "embed_id": "Lpz6Tws3his",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_giEcZhP5PcQ",
       "youtube_id": "giEcZhP5PcQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HXBHyAGZLys",
-      "youtube_id": "HXBHyAGZLys",
-      "source": "youtube",
-      "title": "Dairy Butter Is Out, Vegan Butter Is In at This 3-Michelin-Star Restaurant",
-      "url": "https://www.youtube.com/watch?v=HXBHyAGZLys",
-      "thumbnail": "https://i.ytimg.com/vi/HXBHyAGZLys/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "At Eleven Madison Park, dairy butter is out, and vegan butter is so in.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill haven’t subscribed to Bon Appétit on YouTube? ►► h",
-      "published": 1767978016,
-      "published_str": "2026-01-09",
-      "embed_id": "HXBHyAGZLys",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600619.706202
+  "_ts": 1791864024.1952724
 }

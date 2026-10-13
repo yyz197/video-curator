@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BRi3b8itAUs",
+      "youtube_id": "BRi3b8itAUs",
+      "source": "youtube",
+      "title": "Why We Pick Difficult Partners  #theschooloflife #facts #love",
+      "url": "https://www.youtube.com/watch?v=BRi3b8itAUs",
+      "thumbnail": "https://i.ytimg.com/vi/BRi3b8itAUs/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "In theory, we're nowadays allowed to get together with pretty much anyone we like. And yet, at a psychological level, we aren't free to love just any suitable person. We have a type - and strangely and awkwardly, these types are often not those who stand a chance of making us maximally happy.  \n\nEnj",
+      "published": 1791723628,
+      "published_str": "2026-10-11",
+      "embed_id": "BRi3b8itAUs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_uk3wUnCEghw",
       "youtube_id": "uk3wUnCEghw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3_uOA2K78M8",
-      "youtube_id": "3_uOA2K78M8",
-      "source": "youtube",
-      "title": "What Years of Heartbreak Actually Teach Us",
-      "url": "https://www.youtube.com/watch?v=3_uOA2K78M8",
-      "thumbnail": "https://i.ytimg.com/vi/3_uOA2K78M8/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Relationships are profoundly complicated, but when they finally end, we often find we can summarize years of turmoil into a single, compact sentence on a Post-it note. Start your free Membership trial – 2,000+ articles, 1,000+ videos, 50+ courses, free for a week: https://www.theschooloflife.com/mem",
-      "published": 1790773207,
-      "published_str": "2026-09-30",
-      "embed_id": "3_uOA2K78M8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791600626.0676792
+  "_ts": 1791864030.5078483
 }
