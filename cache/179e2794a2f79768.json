@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_soTfFFIQQ8U",
+      "youtube_id": "soTfFFIQQ8U",
+      "source": "youtube",
+      "title": "Design Software Systems Like a Senior Engineer – Complete Course",
+      "url": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
+      "thumbnail": "https://i.ytimg.com/vi/soTfFFIQQ8U/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn software system design and pass interviews. This course provides a practical five-step framework for structuring your thinking and tackling vague requirements under pressure. Additionally, the course walks through real-world examples, designing systems similar to Spotify, Booking.com, WhatsApp",
+      "published": 1791904101,
+      "published_str": "2026-10-13",
+      "embed_id": "soTfFFIQQ8U",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_YY-egxTQirA",
       "youtube_id": "YY-egxTQirA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_bGALxRWI10A",
-      "youtube_id": "bGALxRWI10A",
-      "source": "youtube",
-      "title": "Build your own Mobile App with Codex GPT-6 Astra - Full iOS and Android Course",
-      "url": "https://www.youtube.com/watch?v=bGALxRWI10A",
-      "thumbnail": "https://i.ytimg.com/vi/bGALxRWI10A/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to build an Instagram-style mobile application from scratch using Expo, Codex, Convex, and Clerk. The video covers the entire end-to-end development cycle, from project planning and AI-assisted UI design to testing development builds on physical devices and preparing mandatory legal pages ",
-      "published": 1790864684,
-      "published_str": "2026-10-01",
-      "embed_id": "bGALxRWI10A",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791864031.0617604
+  "_ts": 1792115167.4163141
 }

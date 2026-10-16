@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_soTfFFIQQ8U",
+      "youtube_id": "soTfFFIQQ8U",
+      "source": "youtube",
+      "title": "Design Software Systems Like a Senior Engineer – Complete Course",
+      "url": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
+      "thumbnail": "https://i.ytimg.com/vi/soTfFFIQQ8U/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn software system design and pass interviews. This course provides a practical five-step framework for structuring your thinking and tackling vague requirements under pressure. Additionally, the course walks through real-world examples, designing systems similar to Spotify, Booking.com, WhatsApp",
+      "published": 1791904101,
+      "published_str": "2026-10-13",
+      "embed_id": "soTfFFIQQ8U",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_YY-egxTQirA",
       "youtube_id": "YY-egxTQirA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gLm8i6ryFmA",
-      "youtube_id": "gLm8i6ryFmA",
-      "source": "youtube",
-      "title": "When you're trying to learn a new deep skill, a structured approach is everything.",
-      "url": "https://www.youtube.com/watch?v=gLm8i6ryFmA",
-      "thumbnail": "https://i.ytimg.com/vi/gLm8i6ryFmA/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "When you're trying to learn a new deep skill, a structured approach is everything. Zubin discusses this with Quincy on the freeCodeCamp podcast, and shares lessons from his own learning journey.",
-      "published": 1775218714,
-      "published_str": "2026-04-03",
-      "embed_id": "gLm8i6ryFmA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791864019.7754245
+  "_ts": 1792115155.615768
 }

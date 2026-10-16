@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_pBLPsvOdPSE",
+      "youtube_id": "pBLPsvOdPSE",
+      "source": "youtube",
+      "title": "Where have humans never been?",
+      "url": "https://www.youtube.com/watch?v=pBLPsvOdPSE",
+      "thumbnail": "https://i.ytimg.com/vi/pBLPsvOdPSE/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1792085177,
+      "published_str": "2026-10-15",
+      "embed_id": "pBLPsvOdPSE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_sj3Z999TJqM",
       "youtube_id": "sj3Z999TJqM",
       "source": "youtube",
@@ -3104,7 +3129,7 @@
       "id": "youtube_9s3fgnkNkaA",
       "youtube_id": "9s3fgnkNkaA",
       "source": "youtube",
-      "title": "Can You Predict When You're Going to Die?",
+      "title": "Right Now a Computer is Predicting When You'll Die (and It Might Be Right)",
       "url": "https://www.youtube.com/watch?v=9s3fgnkNkaA",
       "thumbnail": "https://i.ytimg.com/vi/9s3fgnkNkaA/mqdefault.jpg",
       "author": "Be Smart",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_aUKkovEQxTI",
-      "youtube_id": "aUKkovEQxTI",
-      "source": "youtube",
-      "title": "It’s autumn everywhere except under this streetlight",
-      "url": "https://www.youtube.com/watch?v=aUKkovEQxTI",
-      "thumbnail": "https://i.ytimg.com/vi/aUKkovEQxTI/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from your favorite science dad, Dr. Joe!\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart",
-      "published": 1701525601,
-      "published_str": "2023-12-02",
-      "embed_id": "aUKkovEQxTI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791864017.0677361
+  "_ts": 1792115152.5089953
 }

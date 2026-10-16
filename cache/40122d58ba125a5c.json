@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_lHai_qaI3HI",
+      "youtube_id": "lHai_qaI3HI",
+      "source": "youtube",
+      "title": "Alexis Nikole Nelson | Happy Snacking, Don't Die! | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=lHai_qaI3HI",
+      "thumbnail": "https://i.ytimg.com/vi/lHai_qaI3HI/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Beloved social media creator, vegan, urban forager, and outdoor educator Alexis Nikole Nelson—better known as Black Forager— discusses her New York Times bestselling book, \"Happy Snacking, Don't Die!: Foraging and Vegan Recipes with Black Forager.\" In her guide to foraging and vegan cooking, she sho",
+      "published": 1791907220,
+      "published_str": "2026-10-13",
+      "embed_id": "lHai_qaI3HI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_XIYkIWRXAtA",
       "youtube_id": "XIYkIWRXAtA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_43FZtdF2RcY",
-      "youtube_id": "43FZtdF2RcY",
-      "source": "youtube",
-      "title": "Rebecca Winthrop | Rethinking the Purpose of Education in the Age of AI | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=43FZtdF2RcY",
-      "thumbnail": "https://i.ytimg.com/vi/43FZtdF2RcY/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Leading global authority on education, Brookings scholar and an adjunct professor at Georgetown University Rebecca Winthrop discusses the intersection of AI and technology in learning through a balanced and deeply considered lens. \n\nAs an expert on the fundamental purpose of education, she speaks wi",
-      "published": 1785427224,
-      "published_str": "2026-07-30",
-      "embed_id": "43FZtdF2RcY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791864030.9823565
+  "_ts": 1792115166.9182398
 }

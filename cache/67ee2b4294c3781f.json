@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_lHai_qaI3HI",
+      "youtube_id": "lHai_qaI3HI",
+      "source": "youtube",
+      "title": "Alexis Nikole Nelson | Happy Snacking, Don't Die! | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=lHai_qaI3HI",
+      "thumbnail": "https://i.ytimg.com/vi/lHai_qaI3HI/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Beloved social media creator, vegan, urban forager, and outdoor educator Alexis Nikole Nelson—better known as Black Forager— discusses her New York Times bestselling book, \"Happy Snacking, Don't Die!: Foraging and Vegan Recipes with Black Forager.\" In her guide to foraging and vegan cooking, she sho",
+      "published": 1791907220,
+      "published_str": "2026-10-13",
+      "embed_id": "lHai_qaI3HI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_XIYkIWRXAtA",
       "youtube_id": "XIYkIWRXAtA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_UQnkeOreARI",
-      "youtube_id": "UQnkeOreARI",
-      "source": "youtube",
-      "title": "Co-director of AI at Wharton on why diversity is important in decision making",
-      "url": "https://www.youtube.com/watch?v=UQnkeOreARI",
-      "thumbnail": "https://i.ytimg.com/vi/UQnkeOreARI/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Watch the full video here: https://youtu.be/MvEE_jEdTH8 #shorts",
-      "published": 1715803209,
-      "published_str": "2024-05-15",
-      "embed_id": "UQnkeOreARI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1791864018.4770699
+  "_ts": 1792115154.1109858
 }
