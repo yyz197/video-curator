@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LKrwhjOI8Nc",
+      "youtube_id": "LKrwhjOI8Nc",
+      "source": "youtube",
+      "title": "There's never been a better time to go into math",
+      "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+      "thumbnail": "https://i.ytimg.com/vi/LKrwhjOI8Nc/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Sharing a few thoughts on the future of math\nThese videos are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nIf you want a finger on the pulse of how mathematicians are feeling right now, ",
+      "published": 1792167320,
+      "published_str": "2026-10-16",
+      "embed_id": "LKrwhjOI8Nc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ausLKMojXaY",
       "youtube_id": "ausLKMojXaY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_5PcpBw5Hbwo",
-      "youtube_id": "5PcpBw5Hbwo",
-      "source": "youtube",
-      "title": "Complex number fundamentals | Ep. 3 Lockdown live math",
-      "url": "https://www.youtube.com/watch?v=5PcpBw5Hbwo",
-      "thumbnail": "https://i.ytimg.com/vi/5PcpBw5Hbwo/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Intro to the geometry complex numbers.\nFull playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev\nHome page: https://www.3blue1brown.com\nBrought to you by you: https://3b1b.co/ldm-thanks\n\nBeautiful pictorial summary by @ThuyNganVu:\nhttps://twitter.com/ThuyNganVu/status/1",
-      "published": 1587760286,
-      "published_str": "2020-04-24",
-      "embed_id": "5PcpBw5Hbwo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792115154.672417
+  "_ts": 1792374862.8621104
 }

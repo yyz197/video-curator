@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_QKNsHZatiWU",
+      "youtube_id": "QKNsHZatiWU",
+      "source": "youtube",
+      "title": "Inside an AI Factory – Power, Cooling, and GPUs Explained",
+      "url": "https://www.youtube.com/watch?v=QKNsHZatiWU",
+      "thumbnail": "https://i.ytimg.com/vi/QKNsHZatiWU/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Discover the massive physical infrastructure powering the AI revolution, exploring everything from grid electricity and liquid cooling systems to complex GPU interconnects. This comprehensive course breaks down the complete anatomy of a modern AI factory, revealing exactly what it takes to turn raw ",
+      "published": 1792151628,
+      "published_str": "2026-10-16",
+      "embed_id": "QKNsHZatiWU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_soTfFFIQQ8U",
       "youtube_id": "soTfFFIQQ8U",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gM2Ra8GpGuU",
-      "youtube_id": "gM2Ra8GpGuU",
-      "source": "youtube",
-      "title": "Why was the developer unhappy at their job...?",
-      "url": "https://www.youtube.com/watch?v=gM2Ra8GpGuU",
-      "thumbnail": "https://i.ytimg.com/vi/gM2Ra8GpGuU/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Why was the developer unhappy at their job...? (We all need jokes sometimes.)",
-      "published": 1775305935,
-      "published_str": "2026-04-04",
-      "embed_id": "gM2Ra8GpGuU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792115155.615768
+  "_ts": 1792374863.7758512
 }

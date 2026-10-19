@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_QKNsHZatiWU",
+      "youtube_id": "QKNsHZatiWU",
+      "source": "youtube",
+      "title": "Inside an AI Factory – Power, Cooling, and GPUs Explained",
+      "url": "https://www.youtube.com/watch?v=QKNsHZatiWU",
+      "thumbnail": "https://i.ytimg.com/vi/QKNsHZatiWU/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Discover the massive physical infrastructure powering the AI revolution, exploring everything from grid electricity and liquid cooling systems to complex GPU interconnects. This comprehensive course breaks down the complete anatomy of a modern AI factory, revealing exactly what it takes to turn raw ",
+      "published": 1792151628,
+      "published_str": "2026-10-16",
+      "embed_id": "QKNsHZatiWU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_soTfFFIQQ8U",
       "youtube_id": "soTfFFIQQ8U",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_nqK3oJ682mQ",
-      "youtube_id": "nqK3oJ682mQ",
-      "source": "youtube",
-      "title": "Kotlin Course For Beginners – Full Tutorial",
-      "url": "https://www.youtube.com/watch?v=nqK3oJ682mQ",
-      "thumbnail": "https://i.ytimg.com/vi/nqK3oJ682mQ/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Master modern, expressive software development with Kotlin, taking you from core syntax and type safety to advanced coroutines and multiplatform architecture. Through hands-on projects, you will build robust, production-ready applications for Android, backend systems, and beyond.\n\n74-Hour Kotlin Mas",
-      "published": 1790946336,
-      "published_str": "2026-10-02",
-      "embed_id": "nqK3oJ682mQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792115167.4163141
+  "_ts": 1792374875.2223606
 }

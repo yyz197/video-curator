@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_HJbN1th6YmM",
+      "youtube_id": "HJbN1th6YmM",
+      "source": "youtube",
+      "title": "The Grant Thompson Legacy Documentary",
+      "url": "https://www.youtube.com/watch?v=HJbN1th6YmM",
+      "thumbnail": "https://i.ytimg.com/vi/HJbN1th6YmM/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "There was so much more to Grant than what you saw on YouTube. \n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. 👑❤️\n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite: https://www.scottbuckley.com.au/",
+      "published": 1792162804,
+      "published_str": "2026-10-16",
+      "embed_id": "HJbN1th6YmM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_y0wpGpo1dDs",
       "youtube_id": "y0wpGpo1dDs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_jmuaFh8YFcI",
-      "youtube_id": "jmuaFh8YFcI",
-      "source": "youtube",
-      "title": "It's been 7 years...",
-      "url": "https://www.youtube.com/watch?v=jmuaFh8YFcI",
-      "thumbnail": "https://i.ytimg.com/vi/jmuaFh8YFcI/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Today marks 7 years since the passing of Grant. This year we wanted to do something different in his memory and we have something else special to share with you all.\n\n\nGrab your Dare to Live Merch : https://healingheartsgetaways.org/tkorshop\n\nHealing Hearts Getaways Foundation: https://healinghearts",
-      "published": 1785357004,
-      "published_str": "2026-07-29",
-      "embed_id": "jmuaFh8YFcI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792115166.5037906
+  "_ts": 1792374874.2981308
 }

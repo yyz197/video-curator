@@ -2979,7 +2979,7 @@
       "id": "youtube_rjXZzB5bUAo",
       "youtube_id": "rjXZzB5bUAo",
       "source": "youtube",
-      "title": "This Is the Oldest, Weirdest Instrument On Earth",
+      "title": "This instrument took 400,000+ years to build",
       "url": "https://www.youtube.com/watch?v=rjXZzB5bUAo",
       "thumbnail": "https://i.ytimg.com/vi/rjXZzB5bUAo/mqdefault.jpg",
       "author": "Veritasium",
@@ -3179,7 +3179,7 @@
       "id": "youtube_zB_OApdxcno",
       "youtube_id": "zB_OApdxcno",
       "source": "youtube",
-      "title": "How Well Do People Actually Understand Statistics",
+      "title": "How well do people actually understand statistics?",
       "url": "https://www.youtube.com/watch?v=zB_OApdxcno",
       "thumbnail": "https://i.ytimg.com/vi/zB_OApdxcno/mqdefault.jpg",
       "author": "Veritasium",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1792115150.778293
+  "_ts": 1792374859.0549092
 }
