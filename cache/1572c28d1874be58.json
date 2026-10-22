@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_GikRxjrSaCA",
+      "youtube_id": "GikRxjrSaCA",
+      "source": "youtube",
+      "title": "The Moment I Knew I Would Tell Grant's Story",
+      "url": "https://www.youtube.com/watch?v=GikRxjrSaCA",
+      "thumbnail": "https://i.ytimg.com/vi/GikRxjrSaCA/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "I knew Grant’s life held a story worth sharing long before The King of Random began. ❤️\n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. 👑❤️\n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite: https:/",
+      "published": 1792432733,
+      "published_str": "2026-10-19",
+      "embed_id": "GikRxjrSaCA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_HJbN1th6YmM",
       "youtube_id": "HJbN1th6YmM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_hJDd0aXWd2w",
-      "youtube_id": "hJDd0aXWd2w",
-      "source": "youtube",
-      "title": "I Know You’re Up There Somewhere  | A Letter to Grant",
-      "url": "https://www.youtube.com/watch?v=hJDd0aXWd2w",
-      "thumbnail": "https://i.ytimg.com/vi/hJDd0aXWd2w/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "This year, we wanted to honor Grant in a way that felt personal — celebrating his love of adventure, flying, fire, and most of all, his boys.\n\nAs they continue to grow, we see pieces of Grant in all of them. His spirit, his curiosity, his love for adventure, and the way he made every moment feel lik",
-      "published": 1787757040,
-      "published_str": "2026-08-26",
-      "embed_id": "hJDd0aXWd2w",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792374874.2981308
+  "_ts": 1792634419.090518
 }

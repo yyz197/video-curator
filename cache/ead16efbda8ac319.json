@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_GikRxjrSaCA",
+      "youtube_id": "GikRxjrSaCA",
+      "source": "youtube",
+      "title": "The Moment I Knew I Would Tell Grant's Story",
+      "url": "https://www.youtube.com/watch?v=GikRxjrSaCA",
+      "thumbnail": "https://i.ytimg.com/vi/GikRxjrSaCA/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "I knew Grant’s life held a story worth sharing long before The King of Random began. ❤️\n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. 👑❤️\n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite: https:/",
+      "published": 1792432733,
+      "published_str": "2026-10-19",
+      "embed_id": "GikRxjrSaCA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_HJbN1th6YmM",
       "youtube_id": "HJbN1th6YmM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gZ4pB3Hc7ps",
-      "youtube_id": "gZ4pB3Hc7ps",
-      "source": "youtube",
-      "title": "WE UPGRADED OUR GIANT VORTEX CANNON",
-      "url": "https://www.youtube.com/watch?v=gZ4pB3Hc7ps",
-      "thumbnail": "https://i.ytimg.com/vi/gZ4pB3Hc7ps/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We took our original vortex cannon and supersized it even bigger\n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.\n\nWARNING:\n\nThis video is only",
-      "published": 1740092441,
-      "published_str": "2025-02-20",
-      "embed_id": "gZ4pB3Hc7ps",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792374860.3133013
+  "_ts": 1792634404.738681
 }

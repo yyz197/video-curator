@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9Q9WAe_aqPs",
+      "youtube_id": "9Q9WAe_aqPs",
+      "source": "youtube",
+      "title": "Is the Electoral College Broken?: Crash Course US Government #5",
+      "url": "https://www.youtube.com/watch?v=9Q9WAe_aqPs",
+      "thumbnail": "https://i.ytimg.com/vi/9Q9WAe_aqPs/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Is the Electoral College broken? More and more people in the U.S. are voicing dissatisfaction with the way we elect presidents. In this episode, we’ll unpack how the Electoral College works, why some people think it doesn’t work, and possible solutions to make our elections work better.\n\nChapter 1 -",
+      "published": 1792512023,
+      "published_str": "2026-10-20",
+      "embed_id": "9Q9WAe_aqPs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9-JFgpMIb_I",
       "youtube_id": "9-JFgpMIb_I",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JYomnAwVgl0",
-      "youtube_id": "JYomnAwVgl0",
-      "source": "youtube",
-      "title": "How It All Ends | Crash Course Pods: The Universe #11",
-      "url": "https://www.youtube.com/watch?v=JYomnAwVgl0",
-      "thumbnail": "https://i.ytimg.com/vi/JYomnAwVgl0/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In our last episode, Dr. Katie Mack and John Green discuss what the ultimate fate of the universe might look like. \n\nHead to https://policygenius.com/crashcourse to get your free life insurance quotes and see how much you could save.\n\nThis show is a production of Complexly. If you want to help keep ",
-      "published": 1726066872,
-      "published_str": "2024-09-11",
-      "embed_id": "JYomnAwVgl0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792374859.7844822
+  "_ts": 1792634404.2872548
 }

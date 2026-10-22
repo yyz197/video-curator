@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_9Q9WAe_aqPs",
+      "youtube_id": "9Q9WAe_aqPs",
+      "source": "youtube",
+      "title": "Is the Electoral College Broken?: Crash Course US Government #5",
+      "url": "https://www.youtube.com/watch?v=9Q9WAe_aqPs",
+      "thumbnail": "https://i.ytimg.com/vi/9Q9WAe_aqPs/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Is the Electoral College broken? More and more people in the U.S. are voicing dissatisfaction with the way we elect presidents. In this episode, we’ll unpack how the Electoral College works, why some people think it doesn’t work, and possible solutions to make our elections work better.\n\nChapter 1 -",
+      "published": 1792512023,
+      "published_str": "2026-10-20",
+      "embed_id": "9Q9WAe_aqPs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9-JFgpMIb_I",
       "youtube_id": "9-JFgpMIb_I",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HT8ikFog_pQ",
-      "youtube_id": "HT8ikFog_pQ",
-      "source": "youtube",
-      "title": "Why Does the US Only Have Two Major Parties?: Crash Course US Government #2",
-      "url": "https://www.youtube.com/watch?v=HT8ikFog_pQ",
-      "thumbnail": "https://i.ytimg.com/vi/HT8ikFog_pQ/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Does the U.S. need a competitive third party? And would anyone even vote for one? In this episode of Crash Course Big Questions on U.S. Government we’ll investigate why it feels like the U.S. is trapped in a two-party system. The answer comes down to two things – our systems and ourselves. \n\nChapter",
-      "published": 1790697767,
-      "published_str": "2026-09-29",
-      "embed_id": "HT8ikFog_pQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792374874.2261581
+  "_ts": 1792634419.0278008
 }

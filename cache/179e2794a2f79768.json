@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_kT7nXO32L-Q",
+      "youtube_id": "kT7nXO32L-Q",
+      "source": "youtube",
+      "title": "PostgreSQL Hybrid Search Course – Keyword (BM25) + Vector Retrieval",
+      "url": "https://www.youtube.com/watch?v=kT7nXO32L-Q",
+      "thumbnail": "https://i.ytimg.com/vi/kT7nXO32L-Q/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to build a complete Wikipedia search engine entirely within PostgreSQL using BM25 keyword matching, vector embeddings, and reciprocal rank fusion. This step-by-step course covers setting up `pg_textsearch` and `pgvector-scale`, analyzing query plans, tuning hybrid weights, and serving resu",
+      "published": 1792578636,
+      "published_str": "2026-10-21",
+      "embed_id": "kT7nXO32L-Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_QKNsHZatiWU",
       "youtube_id": "QKNsHZatiWU",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-gfgQfw2g_E",
-      "youtube_id": "-gfgQfw2g_E",
-      "source": "youtube",
-      "title": "Build & Train a GLM-5.3-Flash Model From Scratch with Python",
-      "url": "https://www.youtube.com/watch?v=-gfgQfw2g_E",
-      "thumbnail": "https://i.ytimg.com/vi/-gfgQfw2g_E/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to design, build, and train an advanced multimodal language model from scratch using modern techniques like mixture-of-experts, sparse attention, and reinforcement learning. This hands-on guide walks you through the entire lifecycle from tokenization and pre-training to post-training optim",
-      "published": 1791305756,
-      "published_str": "2026-10-06",
-      "embed_id": "-gfgQfw2g_E",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792374875.2223606
+  "_ts": 1792634420.1333916
 }

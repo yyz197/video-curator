@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_kT7nXO32L-Q",
+      "youtube_id": "kT7nXO32L-Q",
+      "source": "youtube",
+      "title": "PostgreSQL Hybrid Search Course – Keyword (BM25) + Vector Retrieval",
+      "url": "https://www.youtube.com/watch?v=kT7nXO32L-Q",
+      "thumbnail": "https://i.ytimg.com/vi/kT7nXO32L-Q/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to build a complete Wikipedia search engine entirely within PostgreSQL using BM25 keyword matching, vector embeddings, and reciprocal rank fusion. This step-by-step course covers setting up `pg_textsearch` and `pgvector-scale`, analyzing query plans, tuning hybrid weights, and serving resu",
+      "published": 1792578636,
+      "published_str": "2026-10-21",
+      "embed_id": "kT7nXO32L-Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_QKNsHZatiWU",
       "youtube_id": "QKNsHZatiWU",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_T8PMKaNP_UA",
-      "youtube_id": "T8PMKaNP_UA",
-      "source": "youtube",
-      "title": "To keep clients: Do what you promise, communicate clearly, listen closely, and show you really care",
-      "url": "https://www.youtube.com/watch?v=T8PMKaNP_UA",
-      "thumbnail": "https://i.ytimg.com/vi/T8PMKaNP_UA/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "To keep clients: Do what you promise, communicate clearly, listen closely, and show you really care. Quincy recaps Luke's sage freelancing advice on the freeCodeCamp podcast.",
-      "published": 1775393008,
-      "published_str": "2026-04-05",
-      "embed_id": "T8PMKaNP_UA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792374863.7758512
+  "_ts": 1792634409.5904343
 }
