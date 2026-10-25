@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_uJA1qZirWVc",
+      "youtube_id": "uJA1qZirWVc",
+      "source": "youtube",
+      "title": "How do we Mine Minerals?: Crash Course Geology #22",
+      "url": "https://www.youtube.com/watch?v=uJA1qZirWVc",
+      "thumbnail": "https://i.ytimg.com/vi/uJA1qZirWVc/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Minerals—they’re in our homes and our smartphones. But can we meet the demand for them without hurting the places and communities they come from? In this episode of Crash Course Geology, we’ll learn about mining, the critical minerals that power our technologies, and efforts to meet our mineral need",
+      "published": 1792684805,
+      "published_str": "2026-10-22",
+      "embed_id": "uJA1qZirWVc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9Q9WAe_aqPs",
       "youtube_id": "9Q9WAe_aqPs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0GGPe_Oum6c",
-      "youtube_id": "0GGPe_Oum6c",
-      "source": "youtube",
-      "title": "How Often do Asteroids Hit the Earth?: Crash Course Geology #20",
-      "url": "https://www.youtube.com/watch?v=0GGPe_Oum6c",
-      "thumbnail": "https://i.ytimg.com/vi/0GGPe_Oum6c/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "How worried should we be about giant asteroid impacts? In this episode of Crash Course Geology, we’ll learn how to tell an asteroid from a meteorite, what happens when space rocks approach the Earth, and how scientists track potential threats before they reach us.\n\nIntroduction: Rocks from Space 00:",
-      "published": 1790870408,
-      "published_str": "2026-10-01",
-      "embed_id": "0GGPe_Oum6c",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634419.0278008
+  "_ts": 1792892995.1857164
 }

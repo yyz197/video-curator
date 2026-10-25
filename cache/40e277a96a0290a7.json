@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_a_4eFB8pPwI",
+      "youtube_id": "a_4eFB8pPwI",
+      "source": "youtube",
+      "title": "5 sneaky ways stores get you to spend more",
+      "url": "https://www.youtube.com/watch?v=a_4eFB8pPwI",
+      "thumbnail": "https://i.ytimg.com/vi/a_4eFB8pPwI/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Explore 5 tactics that retailers use to influence what you buy and what you’re willing to pay, and how to avoid being tricked.\n\n--\n\nYou’re about to buy some bargain bin headphones when you spot another sale. A different pair that is more expensive, but selling for half their usual price. Which is th",
+      "published": 1792681265,
+      "published_str": "2026-10-22",
+      "embed_id": "a_4eFB8pPwI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_NPJ9KZqrl50",
       "youtube_id": "NPJ9KZqrl50",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JjhrN0FcHpM",
-      "youtube_id": "JjhrN0FcHpM",
-      "source": "youtube",
-      "title": "Why is Queen Victoria so controversial? - Carolyn Harris",
-      "url": "https://www.youtube.com/watch?v=JjhrN0FcHpM",
-      "thumbnail": "https://i.ytimg.com/vi/JjhrN0FcHpM/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Queen Victoria presided over a golden age of the British Empire — but was she its moral compass or obsessed with her reputation?\n\n--\n\nDuring her 63-year reign, Queen Victoria was a model of morality and restraint. So much so that the 19th century is called the “Victorian Age” and is still associated",
-      "published": 1791298917,
-      "published_str": "2026-10-06",
-      "embed_id": "JjhrN0FcHpM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634419.462723
+  "_ts": 1792892995.5986543
 }

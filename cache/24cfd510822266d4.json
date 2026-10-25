@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_YgoiujmwLKI",
+      "youtube_id": "YgoiujmwLKI",
+      "source": "youtube",
+      "title": "The Real Cost of AI Will Shock You",
+      "url": "https://www.youtube.com/watch?v=YgoiujmwLKI",
+      "thumbnail": "https://i.ytimg.com/vi/YgoiujmwLKI/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Take the PBS Digital Studios Annual Survey: https://to.pbs.org/2026SurveyBeSmart \n↓↓↓ More info and sources below ↓↓↓\n\nIf you ask what is the environmental impact of AI, you’ll get two answers. One says it’s minimal and worth it. The other says it’s an environmental catastrophe. So what's the truth?",
+      "published": 1792682730,
+      "published_str": "2026-10-22",
+      "embed_id": "YgoiujmwLKI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pBLPsvOdPSE",
       "youtube_id": "pBLPsvOdPSE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_w6hK2PML6Uc",
-      "youtube_id": "w6hK2PML6Uc",
-      "source": "youtube",
-      "title": "This Weird Pattern Will Let Us Reshape Matter",
-      "url": "https://www.youtube.com/watch?v=w6hK2PML6Uc",
-      "thumbnail": "https://i.ytimg.com/vi/w6hK2PML6Uc/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Science Across America is a national series uncovering exceptional science in all 50 states. It is presented by the Independent Media Initiative, HHMI Tangled Bank Studios, Alfred P. Sloan Foundation, and the Winn Family Foundation. See all the states at http://5050science.com/\n↓↓↓ More info and sou",
-      "published": 1789484975,
-      "published_str": "2026-09-15",
-      "embed_id": "w6hK2PML6Uc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634419.163573
+  "_ts": 1792892995.379362
 }

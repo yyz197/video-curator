@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_v6hCm5QxgBY",
+      "youtube_id": "v6hCm5QxgBY",
+      "source": "youtube",
+      "title": "The Boy Without a Home | Grant Thompson Legacy Doc Episode 1",
+      "url": "https://www.youtube.com/watch?v=v6hCm5QxgBY",
+      "thumbnail": "https://i.ytimg.com/vi/v6hCm5QxgBY/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In this video we take a deep dive into the early life of Grant Thompson and what home like was for him growing up\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the respo",
+      "published": 1792774811,
+      "published_str": "2026-10-23",
+      "embed_id": "v6hCm5QxgBY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_GikRxjrSaCA",
       "youtube_id": "GikRxjrSaCA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_hA5vdAtz-g0",
-      "youtube_id": "hA5vdAtz-g0",
-      "source": "youtube",
-      "title": "Keep Grant Thompson’s Legacy Alive | TKOR Memorial Merch",
-      "url": "https://www.youtube.com/watch?v=hA5vdAtz-g0",
-      "thumbnail": "https://i.ytimg.com/vi/hA5vdAtz-g0/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Thank you to everyone who has supported TKOR Memorial Merch in honor of Grant Thompson, the founder of The King of Random.\n\nIf TKOR or Grant ever inspired you, taught you something, or simply brought some fun into your life, this is one way you can help keep his legacy alive.\n\nA portion of all proce",
-      "published": 1791040348,
-      "published_str": "2026-10-03",
-      "embed_id": "hA5vdAtz-g0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634419.090518
+  "_ts": 1792892995.2867162
 }

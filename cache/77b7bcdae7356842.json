@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_uJA1qZirWVc",
+      "youtube_id": "uJA1qZirWVc",
+      "source": "youtube",
+      "title": "How do we Mine Minerals?: Crash Course Geology #22",
+      "url": "https://www.youtube.com/watch?v=uJA1qZirWVc",
+      "thumbnail": "https://i.ytimg.com/vi/uJA1qZirWVc/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Minerals—they’re in our homes and our smartphones. But can we meet the demand for them without hurting the places and communities they come from? In this episode of Crash Course Geology, we’ll learn about mining, the critical minerals that power our technologies, and efforts to meet our mineral need",
+      "published": 1792684805,
+      "published_str": "2026-10-22",
+      "embed_id": "uJA1qZirWVc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_9Q9WAe_aqPs",
       "youtube_id": "9Q9WAe_aqPs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_KmwQn-8nsyE",
-      "youtube_id": "KmwQn-8nsyE",
-      "source": "youtube",
-      "title": "Does Defacing Art = Activism?",
-      "url": "https://www.youtube.com/watch?v=KmwQn-8nsyE",
-      "thumbnail": "https://i.ytimg.com/vi/KmwQn-8nsyE/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Art is the perfect tool for activists to get across their message and make people pay attention. In this episode of Crash Course Art History, we’ll learn about the centuries-long practice of iconoclasm, how art intersects with protest movements, and what happens to artists when the authorities aren’",
-      "published": 1726156826,
-      "published_str": "2024-09-12",
-      "embed_id": "KmwQn-8nsyE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634404.2872548
+  "_ts": 1792892978.8605137
 }

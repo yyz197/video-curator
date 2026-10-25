@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_a_4eFB8pPwI",
+      "youtube_id": "a_4eFB8pPwI",
+      "source": "youtube",
+      "title": "5 sneaky ways stores get you to spend more",
+      "url": "https://www.youtube.com/watch?v=a_4eFB8pPwI",
+      "thumbnail": "https://i.ytimg.com/vi/a_4eFB8pPwI/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Explore 5 tactics that retailers use to influence what you buy and what you’re willing to pay, and how to avoid being tricked.\n\n--\n\nYou’re about to buy some bargain bin headphones when you spot another sale. A different pair that is more expensive, but selling for half their usual price. Which is th",
+      "published": 1792681265,
+      "published_str": "2026-10-22",
+      "embed_id": "a_4eFB8pPwI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_NPJ9KZqrl50",
       "youtube_id": "NPJ9KZqrl50",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube___nlupHISg0",
-      "youtube_id": "__nlupHISg0",
-      "source": "youtube",
-      "title": "How did detectives solve the case of the bloody fingerprints? - Theodore E. Yeshion",
-      "url": "https://www.youtube.com/watch?v=__nlupHISg0",
-      "thumbnail": "https://i.ytimg.com/vi/__nlupHISg0/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Learn more at https://brilliant.org/TedEd\n\n--\n\nIn 1902, detectives arrived at a grisly murder scene and found a shard of broken glass with several bloody fingerprints. They painstakingly searched the police station’s records and eventually found a match— a man who later confessed to the crime. Today",
-      "published": 1745507017,
-      "published_str": "2025-04-24",
-      "embed_id": "__nlupHISg0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634406.4364958
+  "_ts": 1792892981.2041368
 }

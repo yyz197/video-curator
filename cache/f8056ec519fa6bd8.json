@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_YgoiujmwLKI",
+      "youtube_id": "YgoiujmwLKI",
+      "source": "youtube",
+      "title": "The Real Cost of AI Will Shock You",
+      "url": "https://www.youtube.com/watch?v=YgoiujmwLKI",
+      "thumbnail": "https://i.ytimg.com/vi/YgoiujmwLKI/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Take the PBS Digital Studios Annual Survey: https://to.pbs.org/2026SurveyBeSmart \n↓↓↓ More info and sources below ↓↓↓\n\nIf you ask what is the environmental impact of AI, you’ll get two answers. One says it’s minimal and worth it. The other says it’s an environmental catastrophe. So what's the truth?",
+      "published": 1792682730,
+      "published_str": "2026-10-22",
+      "embed_id": "YgoiujmwLKI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pBLPsvOdPSE",
       "youtube_id": "pBLPsvOdPSE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_zIqM3zNqLFc",
-      "youtube_id": "zIqM3zNqLFc",
-      "source": "youtube",
-      "title": "The revolution that saved a BILLION lives",
-      "url": "https://www.youtube.com/watch?v=zIqM3zNqLFc",
-      "thumbnail": "https://i.ytimg.com/vi/zIqM3zNqLFc/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from your favorite science dad, Dr. Joe!\n\nDiscover the fascinating history of the Green Revolution and how it saved billions from famine. Find out how scientists are now tackling the next challenge: climate change\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nIn",
-      "published": 1701878594,
-      "published_str": "2023-12-06",
-      "embed_id": "zIqM3zNqLFc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634405.0986848
+  "_ts": 1792892979.5990741
 }

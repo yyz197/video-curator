@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_h6j_ixGnpiY",
+      "youtube_id": "h6j_ixGnpiY",
+      "source": "youtube",
+      "title": "How Image Watermarking Works - Computerphile",
+      "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
+      "thumbnail": "https://i.ytimg.com/vi/h6j_ixGnpiY/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganography vs Watermarking & Metadata Limitations\n01:39 - Why Least",
+      "published": 1792674006,
+      "published_str": "2026-10-22",
+      "embed_id": "h6j_ixGnpiY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_WqrwAFs-fq0",
       "youtube_id": "WqrwAFs-fq0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_iuHddnIzKRA",
-      "youtube_id": "iuHddnIzKRA",
-      "source": "youtube",
-      "title": "The AI Language We Can't Read: Neuralese ft. Rob Miles - Computerphile",
-      "url": "https://www.youtube.com/watch?v=iuHddnIzKRA",
-      "thumbnail": "https://i.ytimg.com/vi/iuHddnIzKRA/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "So far, 'Chain of Thought' has allowed us a glimpse at the processes by which Large Language Models work their way through problems. What if these LLMs begin to talk in a language only they understand?\n\nRob Miles is a passionate AI Safety advocate, find out more about him here: https://www.youtube.c",
-      "published": 1789044977,
-      "published_str": "2026-09-10",
-      "embed_id": "iuHddnIzKRA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634419.989504
+  "_ts": 1792892996.0328333
 }

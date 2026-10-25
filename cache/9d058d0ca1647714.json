@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_35No369rmq0",
+      "youtube_id": "35No369rmq0",
+      "source": "youtube",
+      "title": "What If We Cool Down the Sun?",
+      "url": "https://www.youtube.com/watch?v=35No369rmq0",
+      "thumbnail": "https://i.ytimg.com/vi/35No369rmq0/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The sunlight and the heat coming from Sun are essential for nearly all of life on Earth. So, what would happen if we cool down our star by 30%?\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#sun #astrophysics \n\nSources & further reading: \nhttps://sites.google.com/view/",
+      "published": 1792850415,
+      "published_str": "2026-10-24",
+      "embed_id": "35No369rmq0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_PXbVn-f_wuM",
       "youtube_id": "PXbVn-f_wuM",
       "source": "youtube",
@@ -442,7 +467,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "🌎 Get an exclusive 15% discount on Saily data plans! Use the code \"kurzgesagt\" at checkout. Download the Saily app or go to: https://saily.com/kurzgesagt ⛵\n\nWatch the Universe ✨die✨. The LIMITED EDITION Vanishing Stars Pin just dropped on the kurzgesagt shop: https://shop.kgs.link/VanishingStars\nOnl",
+      "description": "🌎 Get an exclusive 15% discount on Saily data plans! Use the code \"kurzgesagt\" at checkout. Download the Saily app or go to: https://saily.com/kurzgesagt ⛵\n\nSources & further reading:\nhttps://sites.google.com/view/sources-the-barrier/\n\nAfter exploring most of Earth, venturing into space and explorin",
       "published": 1785851993,
       "published_str": "2026-08-04",
       "embed_id": "Cyl3X88KEgg",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__kelDJFjhOo",
-      "youtube_id": "_kelDJFjhOo",
-      "source": "youtube",
-      "title": "The Perfect Sofa – According to Science",
-      "url": "https://www.youtube.com/watch?v=_kelDJFjhOo",
-      "thumbnail": "https://i.ytimg.com/vi/_kelDJFjhOo/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Mathematicians have spent over fifty years trying to find the magic formula for the sofa with the largest sitting area that can be moved along an L-shaped corridor in one piece without lifting it. \nWelcome to the Sofa Problem.\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #scien",
-      "published": 1725544837,
-      "published_str": "2024-09-05",
-      "embed_id": "_kelDJFjhOo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634403.4955287
+  "_ts": 1792892978.2183647
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_xXNChSrvZHc",
+      "youtube_id": "xXNChSrvZHc",
+      "source": "youtube",
+      "title": "benny blanco | F*ck Failure | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=xXNChSrvZHc",
+      "thumbnail": "https://i.ytimg.com/vi/xXNChSrvZHc/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Grammy Award–winning producer, artist, actor, and New York Times bestselling author, benny blanco, discusses his book, \"F*ck Failure,\" which teaches you how to achieve your wildest dreams by seizing the most powerful opportunity you’ll ever be handed: failure.\n\nOffering the \"non-shortcut shortcuts\" ",
+      "published": 1792684817,
+      "published_str": "2026-10-22",
+      "embed_id": "xXNChSrvZHc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lHai_qaI3HI",
       "youtube_id": "lHai_qaI3HI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_xc2NnKThTX0",
-      "youtube_id": "xc2NnKThTX0",
-      "source": "youtube",
-      "title": "Rachel Glennerster | Innovation and the Center for Global Development | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=xc2NnKThTX0",
-      "thumbnail": "https://i.ytimg.com/vi/xc2NnKThTX0/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "President of the Center for Global Development,  Dr. Rachel Glennerster, discusses the CGD and why the future of global progress depends on simple, scalable, and evidence-based solutions. \n\nDiscover how targeted innovations in health, education, agriculture, and social protection can overcome the de",
-      "published": 1785769210,
-      "published_str": "2026-08-03",
-      "embed_id": "xc2NnKThTX0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792634419.650796
+  "_ts": 1792892995.7125573
 }
