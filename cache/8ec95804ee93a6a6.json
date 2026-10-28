@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_JfFMQ3W2P9Y",
+      "youtube_id": "JfFMQ3W2P9Y",
+      "source": "youtube",
+      "title": "Why We Get Triggered",
+      "url": "https://www.youtube.com/watch?v=JfFMQ3W2P9Y",
+      "thumbnail": "https://i.ytimg.com/vi/JfFMQ3W2P9Y/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "The concept of being triggered, though it may at times be overused, sits on top of a hugely important concept in psychological life. One moment we are calm, the next we are catapulted into despair and terror. It may be important to know how to be scared or incensed when situations actually demand it",
+      "published": 1792936825,
+      "published_str": "2026-10-25",
+      "embed_id": "JfFMQ3W2P9Y",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_O4FjeAYDRMQ",
       "youtube_id": "O4FjeAYDRMQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_k7z215VLu9I",
-      "youtube_id": "k7z215VLu9I",
-      "source": "youtube",
-      "title": "How to Know When You've Found a Great Partner",
-      "url": "https://www.youtube.com/watch?v=k7z215VLu9I",
-      "thumbnail": "https://i.ytimg.com/vi/k7z215VLu9I/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nWant to know your partner's true character? This film explores the paradox that we often only see a person's authentic self when the relationship ends. Discover why the breakup reveals more than years of marriag",
-      "published": 1761138098,
-      "published_str": "2025-10-22",
-      "embed_id": "k7z215VLu9I",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892982.158364
+  "_ts": 1793155138.4371493
 }

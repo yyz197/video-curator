@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_1bjkZYmQefA",
+      "youtube_id": "1bjkZYmQefA",
+      "source": "youtube",
+      "title": "How to Tame Your Pet AI Dragon",
+      "url": "https://www.youtube.com/watch?v=1bjkZYmQefA",
+      "thumbnail": "https://i.ytimg.com/vi/1bjkZYmQefA/mqdefault.jpg",
+      "author": "MinuteEarth",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Join the movement to keep humans in control of AI. Head on over to teamhuman.org and sign their petition. Every signature will be hand-delivered to lawmakers in DC and Brussels!\n\n#TeamHuman",
+      "published": 1793055701,
+      "published_str": "2026-10-26",
+      "embed_id": "1bjkZYmQefA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Tl-5u1AHQjo",
       "youtube_id": "Tl-5u1AHQjo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__skYZFmr0Lg",
-      "youtube_id": "_skYZFmr0Lg",
-      "source": "youtube",
-      "title": "The Species That Broke Evolution?",
-      "url": "https://www.youtube.com/watch?v=_skYZFmr0Lg",
-      "thumbnail": "https://i.ytimg.com/vi/_skYZFmr0Lg/mqdefault.jpg",
-      "author": "MinuteEarth",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The first 500 people to use this link will get a 1 month free trial of Skillshare: https://skl.sh/minuteearth08241\n\nThe ancestors of gars, horseshoe crabs and coelacanths looked almost the same as their modern relatives. Darwin called species like these “living fossils'' because they seem like they ",
-      "published": 1723749199,
-      "published_str": "2024-08-15",
-      "embed_id": "_skYZFmr0Lg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892980.6941783
+  "_ts": 1793155134.3862667
 }

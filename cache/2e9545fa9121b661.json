@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_R4WxHWQ-i_g",
+      "youtube_id": "R4WxHWQ-i_g",
+      "source": "youtube",
+      "title": "Three-sided greenhouse house masters heat & cold in tranquil Nordic village",
+      "url": "https://www.youtube.com/watch?v=R4WxHWQ-i_g",
+      "thumbnail": "https://i.ytimg.com/vi/R4WxHWQ-i_g/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Svend Buchardt is a light lover. Light, he says, makes him breathe, eat, digest, sleep, and live better. \n\nSo he built a three-sided greenhouse house in a tranquil Nordic village, where he lives with his two teenage sons, to get a Mediterranean climate all year round.\n\nHis reasoning is simple. Denma",
+      "published": 1792961225,
+      "published_str": "2026-10-25",
+      "embed_id": "R4WxHWQ-i_g",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pcHEMy7uN2Q",
       "youtube_id": "pcHEMy7uN2Q",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_LZ6u1AXCefQ",
-      "youtube_id": "LZ6u1AXCefQ",
-      "source": "youtube",
-      "title": "Steelworker quits at 50, builds $50K cordwood home lit by colorful bottles",
-      "url": "https://www.youtube.com/watch?v=LZ6u1AXCefQ",
-      "thumbnail": "https://i.ytimg.com/vi/LZ6u1AXCefQ/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "At 50, Jason Fine walked away from his union boilermaker job and cashed out his retirement to buy 29 acres of cheap land in the Missouri Ozarks. \n\nHe and his wife Sunni moved into a tiny shack on the property and started building their forever home from scratch without buying a single piece of wood.",
-      "published": 1789341468,
-      "published_str": "2026-09-13",
-      "embed_id": "LZ6u1AXCefQ",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892998.140596
+  "_ts": 1793155155.9545424
 }

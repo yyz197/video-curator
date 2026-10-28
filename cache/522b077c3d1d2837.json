@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_V_uq3v6xK-4",
+      "youtube_id": "V_uq3v6xK-4",
+      "source": "youtube",
+      "title": "The Sphere Intersection Puzzle",
+      "url": "https://www.youtube.com/watch?v=V_uq3v6xK-4",
+      "thumbnail": "https://i.ytimg.com/vi/V_uq3v6xK-4/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Part of a series of monthly puzzles\nEarly view of some other solutions:\nhttps://members.3blue1brown.com/posts/solution-to-10-158885046\nhttps://members.3blue1brown.com/posts/solution-to-sum-156593740",
+      "published": 1792938646,
+      "published_str": "2026-10-25",
+      "embed_id": "V_uq3v6xK-4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_LKrwhjOI8Nc",
       "youtube_id": "LKrwhjOI8Nc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rYyJm1tD3d0",
-      "youtube_id": "rYyJm1tD3d0",
-      "source": "youtube",
-      "title": "The jumping pegs puzzle",
-      "url": "https://www.youtube.com/watch?v=rYyJm1tD3d0",
-      "thumbnail": "https://i.ytimg.com/vi/rYyJm1tD3d0/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Part of a series of monthly puzzles with MoMath.",
-      "published": 1787064857,
-      "published_str": "2026-08-18",
-      "embed_id": "rYyJm1tD3d0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892995.9282897
+  "_ts": 1793155153.042651
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_JfFMQ3W2P9Y",
+      "youtube_id": "JfFMQ3W2P9Y",
+      "source": "youtube",
+      "title": "Why We Get Triggered",
+      "url": "https://www.youtube.com/watch?v=JfFMQ3W2P9Y",
+      "thumbnail": "https://i.ytimg.com/vi/JfFMQ3W2P9Y/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "The concept of being triggered, though it may at times be overused, sits on top of a hugely important concept in psychological life. One moment we are calm, the next we are catapulted into despair and terror. It may be important to know how to be scared or incensed when situations actually demand it",
+      "published": 1792936825,
+      "published_str": "2026-10-25",
+      "embed_id": "JfFMQ3W2P9Y",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_O4FjeAYDRMQ",
       "youtube_id": "O4FjeAYDRMQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_fTrF-6hI8i8",
-      "youtube_id": "fTrF-6hI8i8",
-      "source": "youtube",
-      "title": "How to See the Miraculous Beauty in Everyday Life",
-      "url": "https://www.youtube.com/watch?v=fTrF-6hI8i8",
-      "thumbnail": "https://i.ytimg.com/vi/fTrF-6hI8i8/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "What if the everyday objects filling our homes—our toasters, sneakers, and packaging—are actually the artifacts of a future museum? Andy Warhol famously pointed out that if you lock a department store for a hundred years, it becomes a museum. \nStart your free Membership trial – 2,000+ articles, 1,00",
-      "published": 1791982805,
-      "published_str": "2026-10-14",
-      "embed_id": "fTrF-6hI8i8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892995.78079
+  "_ts": 1793155152.8527915
 }

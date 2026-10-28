@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_4NEdVmPFP7g",
+      "youtube_id": "4NEdVmPFP7g",
+      "source": "youtube",
+      "title": "Why are there no green mammals?",
+      "url": "https://www.youtube.com/watch?v=4NEdVmPFP7g",
+      "thumbnail": "https://i.ytimg.com/vi/4NEdVmPFP7g/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1793114607,
+      "published_str": "2026-10-27",
+      "embed_id": "4NEdVmPFP7g",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_YgoiujmwLKI",
       "youtube_id": "YgoiujmwLKI",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_42orkHXmLdI",
-      "youtube_id": "42orkHXmLdI",
-      "source": "youtube",
-      "title": "This is how air conditioners ❄️ make Earth warmer 🔥",
-      "url": "https://www.youtube.com/watch?v=42orkHXmLdI",
-      "thumbnail": "https://i.ytimg.com/vi/42orkHXmLdI/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from your favorite science dad, Dr. Joe!\n\nDiscover the fascinating story of the \"Air Conditioned Village\" in Austin, Texas, where builders conducted a remarkable social experiment almost 70 years ago. Learn how this experiment paved the way for the widespread use of central a",
-      "published": 1702304831,
-      "published_str": "2023-12-11",
-      "embed_id": "42orkHXmLdI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892979.5990741
+  "_ts": 1793155133.231118
 }

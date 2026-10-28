@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_R4WxHWQ-i_g",
+      "youtube_id": "R4WxHWQ-i_g",
+      "source": "youtube",
+      "title": "Three-sided greenhouse house masters heat & cold in tranquil Nordic village",
+      "url": "https://www.youtube.com/watch?v=R4WxHWQ-i_g",
+      "thumbnail": "https://i.ytimg.com/vi/R4WxHWQ-i_g/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Svend Buchardt is a light lover. Light, he says, makes him breathe, eat, digest, sleep, and live better. \n\nSo he built a three-sided greenhouse house in a tranquil Nordic village, where he lives with his two teenage sons, to get a Mediterranean climate all year round.\n\nHis reasoning is simple. Denma",
+      "published": 1792961225,
+      "published_str": "2026-10-25",
+      "embed_id": "R4WxHWQ-i_g",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pcHEMy7uN2Q",
       "youtube_id": "pcHEMy7uN2Q",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_YerFRnGDBYE",
-      "youtube_id": "YerFRnGDBYE",
-      "source": "youtube",
-      "title": "No bank loaned them money. They built dream Hobbit Home themselves",
-      "url": "https://www.youtube.com/watch?v=YerFRnGDBYE",
-      "thumbnail": "https://i.ytimg.com/vi/YerFRnGDBYE/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "When no bank would give them a loan for a sunken dome home, Steve Travis and Jeff Ingram began to build the earth-sheltered hobbit villa on their own, financing each step paycheck to paycheck and getting creative. They used recycled highway signs to lay the forms for the concrete foundation. \n\nThey ",
-      "published": 1702221565,
-      "published_str": "2023-12-10",
-      "embed_id": "YerFRnGDBYE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892987.4331293
+  "_ts": 1793155144.9387443
 }

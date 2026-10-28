@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_1bjkZYmQefA",
+      "youtube_id": "1bjkZYmQefA",
+      "source": "youtube",
+      "title": "How to Tame Your Pet AI Dragon",
+      "url": "https://www.youtube.com/watch?v=1bjkZYmQefA",
+      "thumbnail": "https://i.ytimg.com/vi/1bjkZYmQefA/mqdefault.jpg",
+      "author": "MinuteEarth",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Join the movement to keep humans in control of AI. Head on over to teamhuman.org and sign their petition. Every signature will be hand-delivered to lawmakers in DC and Brussels!\n\n#TeamHuman",
+      "published": 1793055701,
+      "published_str": "2026-10-26",
+      "embed_id": "1bjkZYmQefA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Tl-5u1AHQjo",
       "youtube_id": "Tl-5u1AHQjo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_kIXkIBWo6vE",
-      "youtube_id": "kIXkIBWo6vE",
-      "source": "youtube",
-      "title": "Four Places We Might Find Aliens",
-      "url": "https://www.youtube.com/watch?v=kIXkIBWo6vE",
-      "thumbnail": "https://i.ytimg.com/vi/kIXkIBWo6vE/mqdefault.jpg",
-      "author": "MinuteEarth",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We don’t actually know if aliens exist. But if they do, their cells probably have a special type of membrane. And that knowledge alone tells us where we can look for them and maybe even what they’ll be like.\n\nLEARN MORE\n**************\nTo learn more about this topic, start your googling with these ke",
-      "published": 1792085657,
-      "published_str": "2026-10-15",
-      "embed_id": "kIXkIBWo6vE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892995.5127723
+  "_ts": 1793155152.5143218
 }

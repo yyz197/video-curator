@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_aZglGvBPQGs",
+      "youtube_id": "aZglGvBPQGs",
+      "source": "youtube",
+      "title": "Jev Course – Prefill-Only Inference & Decision Models from Scratch",
+      "url": "https://www.youtube.com/watch?v=aZglGvBPQGs",
+      "thumbnail": "https://i.ytimg.com/vi/aZglGvBPQGs/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how to build high-speed decision-making pipelines for language models using Jev in PyTorch. This comprehensive course covers both encoder and decoder architectures, custom causal attention masking, and KV-cache reuse to bypass slow autoregressive generation. You will also explore fine-tuning t",
+      "published": 1793106325,
+      "published_str": "2026-10-27",
+      "embed_id": "aZglGvBPQGs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_JGly6PSK5iw",
       "youtube_id": "JGly6PSK5iw",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_soTfFFIQQ8U",
-      "youtube_id": "soTfFFIQQ8U",
-      "source": "youtube",
-      "title": "Design Software Systems Like a Senior Engineer – Complete Course",
-      "url": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
-      "thumbnail": "https://i.ytimg.com/vi/soTfFFIQQ8U/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn software system design and pass interviews. This course provides a practical five-step framework for structuring your thinking and tackling vague requirements under pressure. Additionally, the course walks through real-world examples, designing systems similar to Spotify, Booking.com, WhatsApp",
-      "published": 1791904101,
-      "published_str": "2026-10-13",
-      "embed_id": "soTfFFIQQ8U",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1792892996.1844518
+  "_ts": 1793155153.3721864
 }
