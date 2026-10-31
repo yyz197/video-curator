@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_cqfl38Ip1ho",
+      "youtube_id": "cqfl38Ip1ho",
+      "source": "youtube",
+      "title": "How Ethical Hackers Actually Break Into Systems",
+      "url": "https://www.youtube.com/watch?v=cqfl38Ip1ho",
+      "thumbnail": "https://i.ytimg.com/vi/cqfl38Ip1ho/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Throughout this hands-on ethical hacking crash course, you will learn the core Linux fundamentals and essential command-line tools needed to navigate and audit target systems effectively. From network scanning and web enumeration with tools like Nmap, Dirsearch, and Burp Suite, to exploiting vulnera",
+      "published": 1793205900,
+      "published_str": "2026-10-28",
+      "embed_id": "cqfl38Ip1ho",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_aZglGvBPQGs",
       "youtube_id": "aZglGvBPQGs",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Dg5KwM2ndMg",
-      "youtube_id": "Dg5KwM2ndMg",
-      "source": "youtube",
-      "title": "The magic of web dev: continuously and quickly improving your project. No waiting required.",
-      "url": "https://www.youtube.com/watch?v=Dg5KwM2ndMg",
-      "thumbnail": "https://i.ytimg.com/vi/Dg5KwM2ndMg/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "The magic of web dev: continuously and quickly improving your project. No waiting on app store approvals required. Chris discusses this with Quincy on the freeCodeCamp podcast.",
-      "published": 1775651365,
-      "published_str": "2026-04-08",
-      "embed_id": "Dg5KwM2ndMg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155140.7412143
+  "_ts": 1793414991.0047493
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_50TiXjkXdAY",
+      "youtube_id": "50TiXjkXdAY",
+      "source": "youtube",
+      "title": "R.L. Stine | Goosebumps & Beyond | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=50TiXjkXdAY",
+      "thumbnail": "https://i.ytimg.com/vi/50TiXjkXdAY/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "R.L. Stine, the mastermind behind the iconic \"Goosebumps\" series and one of the best-selling children's authors of all time, joins us to talk about the monsters that kept a generation awake at night to dive into his incredible creative journey, his prolific career, and his enduring cultural legacy. ",
+      "published": 1793376031,
+      "published_str": "2026-10-30",
+      "embed_id": "50TiXjkXdAY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_xXNChSrvZHc",
       "youtube_id": "xXNChSrvZHc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_jezPMP_ODZk",
-      "youtube_id": "jezPMP_ODZk",
-      "source": "youtube",
-      "title": "Ethan Kross | Chatter | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=jezPMP_ODZk",
-      "thumbnail": "https://i.ytimg.com/vi/jezPMP_ODZk/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "One of the world’s leading experts on the science of emotion regulation, Dr. Ethan Kross, discusses his workbook \"Chatter The Workbook: How to Stop Overthinking and Harness the Voice in Your Head,\" a companion to his acclaimed book \"Chatter,\" which offers tools for understanding and harnessing the v",
-      "published": 1789574433,
-      "published_str": "2026-09-16",
-      "embed_id": "jezPMP_ODZk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155152.7481482
+  "_ts": 1793415002.2532935
 }

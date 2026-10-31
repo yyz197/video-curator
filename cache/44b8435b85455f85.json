@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_rKOOP3xgy3s",
+      "youtube_id": "rKOOP3xgy3s",
+      "source": "youtube",
+      "title": "Archeologists Investigate The Mystery Of The Buried City Beneath Ancient Petra",
+      "url": "https://www.youtube.com/watch?v=rKOOP3xgy3s",
+      "thumbnail": "https://i.ytimg.com/vi/rKOOP3xgy3s/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "Petra guards more than sandstone splendor. Beneath Al-Khazneh, whispers of buried riches still echo.\n\nJournalist Jamie Theakston gains rare access inside the Treasury, then descends into the tombs below where offerings once hung and royal burials lay. Beyond daylight, he follows Bedouin guides on a ",
+      "published": 1793311236,
+      "published_str": "2026-10-29",
+      "embed_id": "rKOOP3xgy3s",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_YgCTX8hevjo",
       "youtube_id": "YgCTX8hevjo",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_M_R2QjPZRZw",
-      "youtube_id": "M_R2QjPZRZw",
-      "source": "youtube",
-      "title": "What Was Daily Life Like Inside Auschwitz-Birkenau?",
-      "url": "https://www.youtube.com/watch?v=M_R2QjPZRZw",
-      "thumbnail": "https://i.ytimg.com/vi/M_R2QjPZRZw/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "In this moving documentary, survivors of the Auschwitz-Birkenau complex share their harrowing experiences of life inside the most notorious death camp in history. From the construction of the gas chambers to the brutal \"Kapos\" system and the terrifying daily selections, these first-hand accounts rev",
-      "published": 1775077217,
-      "published_str": "2026-04-01",
-      "embed_id": "M_R2QjPZRZw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155141.8082163
+  "_ts": 1793414992.2025368
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iJU6csQs_no",
+      "youtube_id": "iJU6csQs_no",
+      "source": "youtube",
+      "title": "Blind Ranking Numbers (Daniel Litt)",
+      "url": "https://www.youtube.com/watch?v=iJU6csQs_no",
+      "thumbnail": "https://i.ytimg.com/vi/iJU6csQs_no/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Daniel Litt, an assistant Professor of mathematics at the University of Toronto, takes on our Blind Ranking challenge.\n\nDaniel: https://www.daniellitt.com/\n\nNumberphile is supported by Jane Street.\n\nLearn more about them (and exciting career opportunities) at: https://bit.ly/numberphile-janestreet\n\n",
+      "published": 1793295333,
+      "published_str": "2026-10-29",
+      "embed_id": "iJU6csQs_no",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_33_jJ4kIxfc",
       "youtube_id": "33_jJ4kIxfc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Zh86i_azaQw",
-      "youtube_id": "Zh86i_azaQw",
-      "source": "youtube",
-      "title": "The End of Mathematical Mountain Climbing - Numberphile",
-      "url": "https://www.youtube.com/watch?v=Zh86i_azaQw",
-      "thumbnail": "https://i.ytimg.com/vi/Zh86i_azaQw/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Fields medalist Hugo Duminil-Copin is grappling with how AI will change mathematics. The full 33-minute interview is at https://youtu.be/omuJpoV-Ko4 (or search Numberphile on your podcast player)\nMore links & stuff in full description below ↓↓↓\n\nHugo’s website at University of Geneva - https://www.u",
-      "published": 1791989935,
-      "published_str": "2026-10-14",
-      "embed_id": "Zh86i_azaQw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155153.1571782
+  "_ts": 1793415002.5433738
 }

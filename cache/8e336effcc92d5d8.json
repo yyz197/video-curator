@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_rKOOP3xgy3s",
+      "youtube_id": "rKOOP3xgy3s",
+      "source": "youtube",
+      "title": "Archeologists Investigate The Mystery Of The Buried City Beneath Ancient Petra",
+      "url": "https://www.youtube.com/watch?v=rKOOP3xgy3s",
+      "thumbnail": "https://i.ytimg.com/vi/rKOOP3xgy3s/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "Petra guards more than sandstone splendor. Beneath Al-Khazneh, whispers of buried riches still echo.\n\nJournalist Jamie Theakston gains rare access inside the Treasury, then descends into the tombs below where offerings once hung and royal burials lay. Beyond daylight, he follows Bedouin guides on a ",
+      "published": 1793311236,
+      "published_str": "2026-10-29",
+      "embed_id": "rKOOP3xgy3s",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_YgCTX8hevjo",
       "youtube_id": "YgCTX8hevjo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ikP6clhPmLc",
-      "youtube_id": "ikP6clhPmLc",
-      "source": "youtube",
-      "title": "1980 - 1999: Inside The Chaotic Final Chapter Of The Cold War",
-      "url": "https://www.youtube.com/watch?v=ikP6clhPmLc",
-      "thumbnail": "https://i.ytimg.com/vi/ikP6clhPmLc/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "For over four decades, the Cold War pushed humanity to the brink of nuclear catastrophe. This documentary explores the chaotic final chapter of the conflict during the 1980s and early 1990s. From US interventions in Grenada and Nicaragua to the Soviet disaster in Afghanistan, discover how proxy wars",
-      "published": 1792875606,
-      "published_str": "2026-10-24",
-      "embed_id": "ikP6clhPmLc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155153.8963673
+  "_ts": 1793415003.2708933
 }

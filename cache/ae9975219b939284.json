@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_UHGWG2QVl1Q",
+      "youtube_id": "UHGWG2QVl1Q",
+      "source": "youtube",
+      "title": "How NYC's Best Potato Dish is Made | Made to Order | Bon Appétit",
+      "url": "https://www.youtube.com/watch?v=UHGWG2QVl1Q",
+      "thumbnail": "https://i.ytimg.com/vi/UHGWG2QVl1Q/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Executive Sous Chef Daniel Gronert of Somssi in NYC shares what it takes to make their elaborate Potato, Potato, Potato dish. Using creamy Yukon Gold mashed potatoes, crispy spiralized russet potatoes, miso hollandaise sauce, and golden osetra caviar, Gronert turns the humble potato into a luxurious",
+      "published": 1793289606,
+      "published_str": "2026-10-29",
+      "embed_id": "UHGWG2QVl1Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_IZo3yZy2yR4",
       "youtube_id": "IZo3yZy2yR4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_DEVv_TKwzA8",
-      "youtube_id": "DEVv_TKwzA8",
-      "source": "youtube",
-      "title": "Cooking Seekh Kebabs Over an Inferno in Delhi 🔥",
-      "url": "https://www.youtube.com/watch?v=DEVv_TKwzA8",
-      "thumbnail": "https://i.ytimg.com/vi/DEVv_TKwzA8/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Chef Meherwan Irani gets up close and personal with the inferno that cooks Delhi's holy grail of street food: seekh kebabs.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStil",
-      "published": 1771261210,
-      "published_str": "2026-02-16",
-      "embed_id": "DEVv_TKwzA8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155146.0485213
+  "_ts": 1793414995.6741369
 }

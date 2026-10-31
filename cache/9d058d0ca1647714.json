@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_KBfIo9sZbC4",
+      "youtube_id": "KBfIo9sZbC4",
+      "source": "youtube",
+      "title": "How Does Ketamine Work?",
+      "url": "https://www.youtube.com/watch?v=KBfIo9sZbC4",
+      "thumbnail": "https://i.ytimg.com/vi/KBfIo9sZbC4/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Ketamine is often used in medicine as one of medicine's safest painkillers, but without safeguards, it can be very dangerous. So, what exactly is ketamine, and how does it work? \n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#drugawareness #drugs #healthawareness \n\nSou",
+      "published": 1793287829,
+      "published_str": "2026-10-29",
+      "embed_id": "KBfIo9sZbC4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_5_Fayfx2NUM",
       "youtube_id": "5_Fayfx2NUM",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_vSSkDos2hzo",
-      "youtube_id": "vSSkDos2hzo",
-      "source": "youtube",
-      "title": "We Need to Rethink Exercise (Updated Version)",
-      "url": "https://www.youtube.com/watch?v=vSSkDos2hzo",
-      "thumbnail": "https://i.ytimg.com/vi/vSSkDos2hzo/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Go to https://brilliant.org/nutshell/ to dive deeper into these topics and more with a free 30-day trial + 20% off the premium subscription! \nThis video was sponsored by Brilliant. Thanks a lot for the support!\n\nGrab your ✨Curiosity Guide ✨ now, only available from the kurzgesagt shop: https://shop.",
-      "published": 1726149671,
-      "published_str": "2024-09-12",
-      "embed_id": "vSSkDos2hzo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155130.9770954
+  "_ts": 1793414985.7354329
 }

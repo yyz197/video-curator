@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_UHGWG2QVl1Q",
+      "youtube_id": "UHGWG2QVl1Q",
+      "source": "youtube",
+      "title": "How NYC's Best Potato Dish is Made | Made to Order | Bon Appétit",
+      "url": "https://www.youtube.com/watch?v=UHGWG2QVl1Q",
+      "thumbnail": "https://i.ytimg.com/vi/UHGWG2QVl1Q/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "Executive Sous Chef Daniel Gronert of Somssi in NYC shares what it takes to make their elaborate Potato, Potato, Potato dish. Using creamy Yukon Gold mashed potatoes, crispy spiralized russet potatoes, miso hollandaise sauce, and golden osetra caviar, Gronert turns the humble potato into a luxurious",
+      "published": 1793289606,
+      "published_str": "2026-10-29",
+      "embed_id": "UHGWG2QVl1Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_IZo3yZy2yR4",
       "youtube_id": "IZo3yZy2yR4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_vs9lfTZmOMw",
-      "youtube_id": "vs9lfTZmOMw",
-      "source": "youtube",
-      "title": "How a French Chef Makes France's Most Famous Soup | French Fundamentals | Bon Appétit",
-      "url": "https://www.youtube.com/watch?v=vs9lfTZmOMw",
-      "thumbnail": "https://i.ytimg.com/vi/vs9lfTZmOMw/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "Learn how to make perfect French onion soup from scratch with French chef Alexia Duchêne. From slowly caramelizing onions to preparing a rich homemade beef stock, Alexia demonstrates the essential techniques behind this classic French dish. Finished with bone marrow, toasted baguette, and a blend of",
-      "published": 1792684810,
-      "published_str": "2026-10-22",
-      "embed_id": "vs9lfTZmOMw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155156.9521847
+  "_ts": 1793415005.6121526
 }

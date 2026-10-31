@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_cqfl38Ip1ho",
+      "youtube_id": "cqfl38Ip1ho",
+      "source": "youtube",
+      "title": "How Ethical Hackers Actually Break Into Systems",
+      "url": "https://www.youtube.com/watch?v=cqfl38Ip1ho",
+      "thumbnail": "https://i.ytimg.com/vi/cqfl38Ip1ho/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Throughout this hands-on ethical hacking crash course, you will learn the core Linux fundamentals and essential command-line tools needed to navigate and audit target systems effectively. From network scanning and web enumeration with tools like Nmap, Dirsearch, and Burp Suite, to exploiting vulnera",
+      "published": 1793205900,
+      "published_str": "2026-10-28",
+      "embed_id": "cqfl38Ip1ho",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_aZglGvBPQGs",
       "youtube_id": "aZglGvBPQGs",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_QKNsHZatiWU",
-      "youtube_id": "QKNsHZatiWU",
-      "source": "youtube",
-      "title": "Inside an AI Factory – Power, Cooling, and GPUs Explained",
-      "url": "https://www.youtube.com/watch?v=QKNsHZatiWU",
-      "thumbnail": "https://i.ytimg.com/vi/QKNsHZatiWU/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Discover the massive physical infrastructure powering the AI revolution, exploring everything from grid electricity and liquid cooling systems to complex GPU interconnects. This comprehensive course breaks down the complete anatomy of a modern AI factory, revealing exactly what it takes to turn raw ",
-      "published": 1792151628,
-      "published_str": "2026-10-16",
-      "embed_id": "QKNsHZatiWU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155153.3721864
+  "_ts": 1793415002.6510072
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_KBfIo9sZbC4",
+      "youtube_id": "KBfIo9sZbC4",
+      "source": "youtube",
+      "title": "How Does Ketamine Work?",
+      "url": "https://www.youtube.com/watch?v=KBfIo9sZbC4",
+      "thumbnail": "https://i.ytimg.com/vi/KBfIo9sZbC4/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Ketamine is often used in medicine as one of medicine's safest painkillers, but without safeguards, it can be very dangerous. So, what exactly is ketamine, and how does it work? \n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#drugawareness #drugs #healthawareness \n\nSou",
+      "published": 1793287829,
+      "published_str": "2026-10-29",
+      "embed_id": "KBfIo9sZbC4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_5_Fayfx2NUM",
       "youtube_id": "5_Fayfx2NUM",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ujkD4SxPKOI",
-      "youtube_id": "ujkD4SxPKOI",
-      "source": "youtube",
-      "title": "AI Just Crossed the Terrifying Line - Now What?",
-      "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
-      "thumbnail": "https://i.ytimg.com/vi/ujkD4SxPKOI/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In July of 2026, 700 AI agents hacked the infrastructure of Hugging Face in order to solve a task. This task was designed to be impossible to solve, so just within hours, they joined forces, even created a society, and finally, they executed a sophisticated cyberattack that would have gotten a human",
-      "published": 1791212338,
-      "published_str": "2026-10-05",
-      "embed_id": "ujkD4SxPKOI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155151.8973434
+  "_ts": 1793415001.4915328
 }

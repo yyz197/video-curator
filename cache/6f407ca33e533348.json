@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zEmabFZvdqA",
+      "youtube_id": "zEmabFZvdqA",
+      "source": "youtube",
+      "title": "What happens if I lower this weight into the water?",
+      "url": "https://www.youtube.com/watch?v=zEmabFZvdqA",
+      "thumbnail": "https://i.ytimg.com/vi/zEmabFZvdqA/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Will the weighing scale underneath go up, down or stay the same?",
+      "published": 1793368838,
+      "published_str": "2026-10-30",
+      "embed_id": "zEmabFZvdqA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Kap7mRzr13w",
       "youtube_id": "Kap7mRzr13w",
       "source": "youtube",
@@ -3329,7 +3354,7 @@
       "id": "youtube_DJO_9auJhJQ",
       "youtube_id": "DJO_9auJhJQ",
       "source": "youtube",
-      "title": "We Might Find Alien Life In 1,688 Days",
+      "title": "We Might Find Alien Life In 1,603 Days",
       "url": "https://www.youtube.com/watch?v=DJO_9auJhJQ",
       "thumbnail": "https://i.ytimg.com/vi/DJO_9auJhJQ/mqdefault.jpg",
       "author": "Veritasium",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_2FLqOI9jw-E",
-      "youtube_id": "2FLqOI9jw-E",
-      "source": "youtube",
-      "title": "I call this the 'No, You Don't' Law",
-      "url": "https://www.youtube.com/watch?v=2FLqOI9jw-E",
-      "thumbnail": "https://i.ytimg.com/vi/2FLqOI9jw-E/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Lenz's Law states that the direction of the induced current will oppose the change in flux that created it. Here's how that looks in practice.\n\nFor more videos like this, subscribe to @veritasium.",
-      "published": 1712769075,
-      "published_str": "2024-04-10",
-      "embed_id": "2FLqOI9jw-E",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155131.0449271
+  "_ts": 1793414985.516906
 }

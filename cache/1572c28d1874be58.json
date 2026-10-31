@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_K_fwA3GSTjM",
+      "youtube_id": "K_fwA3GSTjM",
+      "source": "youtube",
+      "title": "Grant Thompson needed this the most",
+      "url": "https://www.youtube.com/watch?v=K_fwA3GSTjM",
+      "thumbnail": "https://i.ytimg.com/vi/K_fwA3GSTjM/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Words of affirmation nourished Grant’s soul and fueled his passion for creating incredible videos.\n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. \n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite:",
+      "published": 1793376025,
+      "published_str": "2026-10-30",
+      "embed_id": "K_fwA3GSTjM",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_GMaEJesnQt4",
       "youtube_id": "GMaEJesnQt4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_HJbN1th6YmM",
-      "youtube_id": "HJbN1th6YmM",
-      "source": "youtube",
-      "title": "The Grant Thompson Legacy Documentary",
-      "url": "https://www.youtube.com/watch?v=HJbN1th6YmM",
-      "thumbnail": "https://i.ytimg.com/vi/HJbN1th6YmM/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "There was so much more to Grant than what you saw on YouTube. \n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. 👑❤️\n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite: https://www.scottbuckley.com.au/",
-      "published": 1792162804,
-      "published_str": "2026-10-16",
-      "embed_id": "HJbN1th6YmM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155152.294219
+  "_ts": 1793415001.7482185
 }

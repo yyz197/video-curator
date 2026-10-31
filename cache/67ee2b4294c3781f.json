@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_50TiXjkXdAY",
+      "youtube_id": "50TiXjkXdAY",
+      "source": "youtube",
+      "title": "R.L. Stine | Goosebumps & Beyond | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=50TiXjkXdAY",
+      "thumbnail": "https://i.ytimg.com/vi/50TiXjkXdAY/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "R.L. Stine, the mastermind behind the iconic \"Goosebumps\" series and one of the best-selling children's authors of all time, joins us to talk about the monsters that kept a generation awake at night to dive into his incredible creative journey, his prolific career, and his enduring cultural legacy. ",
+      "published": 1793376031,
+      "published_str": "2026-10-30",
+      "embed_id": "50TiXjkXdAY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_xXNChSrvZHc",
       "youtube_id": "xXNChSrvZHc",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_S_nyE5vOvG4",
-      "youtube_id": "S_nyE5vOvG4",
-      "source": "youtube",
-      "title": "World-renowned physicist on where Einstein's theory breaks down and her new theory of gravity",
-      "url": "https://www.youtube.com/watch?v=S_nyE5vOvG4",
-      "thumbnail": "https://i.ytimg.com/vi/S_nyE5vOvG4/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Watch the full video here: https://youtu.be/d1KCyxaTE6w #shorts",
-      "published": 1715976008,
-      "published_str": "2024-05-17",
-      "embed_id": "S_nyE5vOvG4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793155138.2674944
+  "_ts": 1793414989.7882743
 }
