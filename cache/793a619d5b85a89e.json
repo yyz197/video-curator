@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6JvtDtFybvg",
+      "youtube_id": "6JvtDtFybvg",
+      "source": "youtube",
+      "title": "Blackbeard: History's Most Well-Known Pirate (Full Episode) | Pirates: Behind the Legends | Nat Geo",
+      "url": "https://www.youtube.com/watch?v=6JvtDtFybvg",
+      "thumbnail": "https://i.ytimg.com/vi/6JvtDtFybvg/mqdefault.jpg",
+      "author": "National Geographic",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In this full episode of Pirates: Behind the Legends from National Geographic, dive into the rise and fall of Edward Teach, aka the infamous Blackbeard. \n\nLearn how Blackbeard transformed into history’s most feared high-seas outlaw aboard his stolen flagship, Queen Anne’s Revenge. Uncover the surpris",
+      "published": 1793451631,
+      "published_str": "2026-10-31",
+      "embed_id": "6JvtDtFybvg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_83nq_Zo3jz0",
       "youtube_id": "83nq_Zo3jz0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ScJKKXV7uVU",
-      "youtube_id": "ScJKKXV7uVU",
-      "source": "youtube",
-      "title": "Behind the Shot: Manta Ray #HammerheadSharksUpClose",
-      "url": "https://www.youtube.com/watch?v=ScJKKXV7uVU",
-      "thumbnail": "https://i.ytimg.com/vi/ScJKKXV7uVU/mqdefault.jpg",
-      "author": "National Geographic",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "When Bertie Gregory went diving near Roca Partida, he wasn't planning to encounter a giant oceanic manta ray called Chocolate Chip—or that she would be so eager for a bubble bath. \n\n#HammerheadSharksUpClose with Bertie Gregory is now streaming on Disney+ and Hulu. \n\nExplore the World with National G",
-      "published": 1784846786,
-      "published_str": "2026-07-23",
-      "embed_id": "ScJKKXV7uVU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793414987.6264493
+  "_ts": 1793500924.6404276
 }

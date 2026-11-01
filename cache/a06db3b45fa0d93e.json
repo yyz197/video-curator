@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ZVGS33A0nK0",
+      "youtube_id": "ZVGS33A0nK0",
+      "source": "youtube",
+      "title": "Authoritarianism isn’t winning, democracy is failing, says Sally Kohn #TEDTalks",
+      "url": "https://www.youtube.com/watch?v=ZVGS33A0nK0",
+      "thumbnail": "https://i.ytimg.com/vi/ZVGS33A0nK0/mqdefault.jpg",
+      "author": "TED",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Doesn't it seem like a lot of online news sites have moved beyond reporting the news to openly inciting your outrage (and your page views)? News analyst Sally Kohn suggests — don't engage with news that looks like it just wants to make you mad. Instead, give your precious clicks to the news sites yo",
+      "published": 1793462429,
+      "published_str": "2026-10-31",
+      "embed_id": "ZVGS33A0nK0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Uhk5S8rByUk",
       "youtube_id": "Uhk5S8rByUk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tu6tF-lVDJI",
-      "youtube_id": "tu6tF-lVDJI",
-      "source": "youtube",
-      "title": "Why You Should Share a Recipe with a Stranger | Anuj Gupta | TED",
-      "url": "https://www.youtube.com/watch?v=tu6tF-lVDJI",
-      "thumbnail": "https://i.ytimg.com/vi/tu6tF-lVDJI/mqdefault.jpg",
-      "author": "TED",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Can we eat our way to a stronger democracy? Civic leader Anuj Gupta believes that food is one of our last common denominators. Drawing on a decade spent bringing together strangers for shared meals, he explains how the stories and memories behind our recipes can bridge divides that seem insurmountab",
-      "published": 1793113200,
-      "published_str": "2026-10-27",
-      "embed_id": "tu6tF-lVDJI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793415002.0490005
+  "_ts": 1793500939.8447075
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_h3tLgxqU9nc",
+      "youtube_id": "h3tLgxqU9nc",
+      "source": "youtube",
+      "title": "Advice to my younger self",
+      "url": "https://www.youtube.com/watch?v=h3tLgxqU9nc",
+      "thumbnail": "https://i.ytimg.com/vi/h3tLgxqU9nc/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "🧠 Superfocus: Our Ultimate Productivity System for People with More Ambition than Time → https://superfocus.me/?utm_source=youtube&utm_medium=organic_social&utm_campaign=ali_yt&utm_term=video-desc&utm_content=h3tLgxqU9nc\n🚀 Lifestyle Business Academy: Our MBA alternative to build a 6-figure online bu",
+      "published": 1793440826,
+      "published_str": "2026-10-31",
+      "embed_id": "h3tLgxqU9nc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DrZNvkOgZRE",
       "youtube_id": "DrZNvkOgZRE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_8fxN1RVg0z0",
-      "youtube_id": "8fxN1RVg0z0",
-      "source": "youtube",
-      "title": "The Crab Bucket Mentality",
-      "url": "https://www.youtube.com/watch?v=8fxN1RVg0z0",
-      "thumbnail": "https://i.ytimg.com/vi/8fxN1RVg0z0/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "I'm hosting a completely free workshop to reflect on the first 90 days of 2026. If you'd like to join, register here: https://go.aliabdaal.com/yts260322",
-      "published": 1774173609,
-      "published_str": "2026-03-22",
-      "embed_id": "8fxN1RVg0z0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793414993.1924038
+  "_ts": 1793500930.2472677
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_DGtE0IAWyss",
+      "youtube_id": "DGtE0IAWyss",
+      "source": "youtube",
+      "title": "Hitler's Countdown To War: The 18-Months That Plunged The World Into WW2",
+      "url": "https://www.youtube.com/watch?v=DGtE0IAWyss",
+      "thumbnail": "https://i.ytimg.com/vi/DGtE0IAWyss/mqdefault.jpg",
+      "author": "Timeline - World History Documentaries",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "历史人文",
+      "description": "Between March 1938 and September 1939, Adolf Hitler orchestrated an 18-month campaign of manipulation, intimidation, and high-stakes brinkmanship that plunged the planet into the Second World War. From the euphoric annexation of Austria and the Munich Agreement to the coercive dismemberment of Czech",
+      "published": 1793484000,
+      "published_str": "2026-10-31",
+      "embed_id": "DGtE0IAWyss",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_rKOOP3xgy3s",
       "youtube_id": "rKOOP3xgy3s",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_tvTZW_ckBSY",
-      "youtube_id": "tvTZW_ckBSY",
-      "source": "youtube",
-      "title": "The Dark Secrets Behind The Metropolitan Museum Of Art's Most Famous Exhibits",
-      "url": "https://www.youtube.com/watch?v=tvTZW_ckBSY",
-      "thumbnail": "https://i.ytimg.com/vi/tvTZW_ckBSY/mqdefault.jpg",
-      "author": "Timeline - World History Documentaries",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "历史人文",
-      "description": "Go behind the scenes at New York’s Metropolitan Museum of Art to uncover the dark, hidden histories of world-famous artifacts. We investigate the medical evidence within Henry VIII’s final suit of armor to explain his transformation into a tyrant, explore the \"Trial of the Century\" sparked by a scan",
-      "published": 1775163651,
-      "published_str": "2026-04-02",
-      "embed_id": "tvTZW_ckBSY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793414992.2025368
+  "_ts": 1793500929.727991
 }

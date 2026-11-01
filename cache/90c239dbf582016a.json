@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6JvtDtFybvg",
+      "youtube_id": "6JvtDtFybvg",
+      "source": "youtube",
+      "title": "Blackbeard: History's Most Well-Known Pirate (Full Episode) | Pirates: Behind the Legends | Nat Geo",
+      "url": "https://www.youtube.com/watch?v=6JvtDtFybvg",
+      "thumbnail": "https://i.ytimg.com/vi/6JvtDtFybvg/mqdefault.jpg",
+      "author": "National Geographic",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In this full episode of Pirates: Behind the Legends from National Geographic, dive into the rise and fall of Edward Teach, aka the infamous Blackbeard. \n\nLearn how Blackbeard transformed into history’s most feared high-seas outlaw aboard his stolen flagship, Queen Anne’s Revenge. Uncover the surpris",
+      "published": 1793451631,
+      "published_str": "2026-10-31",
+      "embed_id": "6JvtDtFybvg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_83nq_Zo3jz0",
       "youtube_id": "83nq_Zo3jz0",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_X2BX0Q-tR0g",
-      "youtube_id": "X2BX0Q-tR0g",
-      "source": "youtube",
-      "title": "Disney+ Special Look | Everest: The Other Side | National Geographic",
-      "url": "https://www.youtube.com/watch?v=X2BX0Q-tR0g",
-      "thumbnail": "https://i.ytimg.com/vi/X2BX0Q-tR0g/mqdefault.jpg",
-      "author": "National Geographic",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Get Ready for Everest: The Other Side, only in theaters Oct 30.\n\nSubscribe: https://www.youtube.com/natgeo\n\nStream more on Disney+\n➡ Disney Plus: https://www.disneyplus.com/browse/national-geographic\n\nGet unlimited access to National Geographic stories, photography, and more by subscribing today:\n➡ ",
-      "published": 1793128945,
-      "published_str": "2026-10-27",
-      "embed_id": "X2BX0Q-tR0g",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793415001.9393058
+  "_ts": 1793500939.7466097
 }

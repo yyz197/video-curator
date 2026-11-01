@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ZVGS33A0nK0",
+      "youtube_id": "ZVGS33A0nK0",
+      "source": "youtube",
+      "title": "Authoritarianism isn’t winning, democracy is failing, says Sally Kohn #TEDTalks",
+      "url": "https://www.youtube.com/watch?v=ZVGS33A0nK0",
+      "thumbnail": "https://i.ytimg.com/vi/ZVGS33A0nK0/mqdefault.jpg",
+      "author": "TED",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Doesn't it seem like a lot of online news sites have moved beyond reporting the news to openly inciting your outrage (and your page views)? News analyst Sally Kohn suggests — don't engage with news that looks like it just wants to make you mad. Instead, give your precious clicks to the news sites yo",
+      "published": 1793462429,
+      "published_str": "2026-10-31",
+      "embed_id": "ZVGS33A0nK0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Uhk5S8rByUk",
       "youtube_id": "Uhk5S8rByUk",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_qWD0hHvsDLk",
-      "youtube_id": "qWD0hHvsDLk",
-      "source": "youtube",
-      "title": "Life Lessons from the DJ Booth | ELEW | TED",
-      "url": "https://www.youtube.com/watch?v=qWD0hHvsDLk",
-      "thumbnail": "https://i.ytimg.com/vi/qWD0hHvsDLk/mqdefault.jpg",
-      "author": "TED",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Welcome to Club Reality, where no matter what life throws at you, the music never stops. In this talk and performance, musician ELEW shares his path from jazz pianist to DJ — and the unexpected philosophy he finds in both. (Recorded at TEDNext 2025 on November 11, 2025)\n\nJoin us in person at a TED c",
-      "published": 1784386827,
-      "published_str": "2026-07-18",
-      "embed_id": "qWD0hHvsDLk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793414988.3009508
+  "_ts": 1793500925.0922506
 }
