@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_AIPhkp6uCEw",
+      "youtube_id": "AIPhkp6uCEw",
+      "source": "youtube",
+      "title": "King Tut in Color (Full Episode) | SPECIAL | National Geographic",
+      "url": "https://www.youtube.com/watch?v=AIPhkp6uCEw",
+      "thumbnail": "https://i.ytimg.com/vi/AIPhkp6uCEw/mqdefault.jpg",
+      "author": "National Geographic",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "On the anniversary of the discovery of King Tutankhamun's tomb in the Valley of Kings in 1922, this National Geographic special takes a look back at the iconic discovery, revealing it for the first time in color, thanks to colorization of black-and-white newsreel and photographs.\n\nKing Tut in Color ",
+      "published": 1793541626,
+      "published_str": "2026-11-01",
+      "embed_id": "AIPhkp6uCEw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6JvtDtFybvg",
       "youtube_id": "6JvtDtFybvg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_Z_WFyQm5kRI",
-      "youtube_id": "Z_WFyQm5kRI",
-      "source": "youtube",
-      "title": "Was the Wild West Really Wild? | What Really Happened: America's Wild West MEGA Episode | Nat Geo",
-      "url": "https://www.youtube.com/watch?v=Z_WFyQm5kRI",
-      "thumbnail": "https://i.ytimg.com/vi/Z_WFyQm5kRI/mqdefault.jpg",
-      "author": "National Geographic",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "What was it like in America's Wild West? National Geographic goes back in time into the history of America's Wild West. This America's Wild West MEGA episode examines the start of manifest destiny and the gold rush that sent people out west, to the railroad boom and cultural clashes, and finally, to",
-      "published": 1784898020,
-      "published_str": "2026-07-24",
-      "embed_id": "Z_WFyQm5kRI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500924.6404276
+  "_ts": 1793762716.93265
 }

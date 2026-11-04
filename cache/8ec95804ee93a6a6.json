@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_qxU9IPogiPw",
+      "youtube_id": "qxU9IPogiPw",
+      "source": "youtube",
+      "title": "How To Know Yourself",
+      "url": "https://www.youtube.com/watch?v=qxU9IPogiPw",
+      "thumbnail": "https://i.ytimg.com/vi/qxU9IPogiPw/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "One of the hardest things in the universe to understand is the interior of our own minds: we can have spent decades on the earth before we've grasped even very basic things about who we are and how we function. It's not for nothing that the Ancient Greeks felt philosophy had only one command: Know y",
+      "published": 1793541610,
+      "published_str": "2026-11-01",
+      "embed_id": "qxU9IPogiPw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_R5iJXYsLjs0",
       "youtube_id": "R5iJXYsLjs0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_iz3iU3LWRM8",
-      "youtube_id": "iz3iU3LWRM8",
-      "source": "youtube",
-      "title": "How to Deepen Your Friendships",
-      "url": "https://www.youtube.com/watch?v=iz3iU3LWRM8",
-      "thumbnail": "https://i.ytimg.com/vi/iz3iU3LWRM8/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Think great friendship is just luck? This film proves otherwise, presenting Eight Essential Rules for deep, fulfilling connection. Learn to ask the right questions, create space for vulnerability, manage your own anxiety, and cultivate the sincerity and kindness needed to be a truly better, more und",
-      "published": 1761746481,
-      "published_str": "2025-10-29",
-      "embed_id": "iz3iU3LWRM8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500926.2945127
+  "_ts": 1793762718.69294
 }

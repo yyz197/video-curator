@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_DDB7E6aUJa8",
+      "youtube_id": "DDB7E6aUJa8",
+      "source": "youtube",
+      "title": "The Most Valuable Sales Training You’ll Ever Watch",
+      "url": "https://www.youtube.com/watch?v=DDB7E6aUJa8",
+      "thumbnail": "https://i.ytimg.com/vi/DDB7E6aUJa8/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Check out Manychat for free or use the code ALIABDAAL for a free 30-day trial of Manychat Pro: https://manychat.com/creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalYT&utm_content=Youtube #ManychatPartner\n\n📝 The Zero-Pressure Sales System: the free cheat sheet from this video, wi",
+      "published": 1793727270,
+      "published_str": "2026-11-03",
+      "embed_id": "DDB7E6aUJa8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_h3tLgxqU9nc",
       "youtube_id": "h3tLgxqU9nc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_sEqibjGicCc",
-      "youtube_id": "sEqibjGicCc",
-      "source": "youtube",
-      "title": "The $2,000 question that changed everything",
-      "url": "https://www.youtube.com/watch?v=sEqibjGicCc",
-      "thumbnail": "https://i.ytimg.com/vi/sEqibjGicCc/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "🚀 Lifestyle Business Academy: Our MBA alternative to build a 6-figure online business → https://lifestylebusiness.com/academy?utm_source=youtube&utm_medium=organic_social&utm_campaign=ali_yt&utm_term=video-desc&utm_content=sEqibjGicCc\n🧠 Superfocus: Our Ultimate Productivity System for People with Mo",
-      "published": 1793181615,
-      "published_str": "2026-10-28",
-      "embed_id": "sEqibjGicCc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500941.6750078
+  "_ts": 1793762732.3759143
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_8EtdC9Bjubk",
+      "youtube_id": "8EtdC9Bjubk",
+      "source": "youtube",
+      "title": "Can you solve the Billy Bonka riddle? - Edwin F. Meyer",
+      "url": "https://www.youtube.com/watch?v=8EtdC9Bjubk",
+      "thumbnail": "https://i.ytimg.com/vi/8EtdC9Bjubk/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "You accidentally end up in the top secret lab of an eccentric candy factory. Can you win Billy Bonka's game and get set free?\n\n--\n\nYou’re on a tour of the eccentric Billy Bonka’s mysterious candy factory, when a wrong turn searching for the restroom lands you in the top secret candy laboratory. Enra",
+      "published": 1793721634,
+      "published_str": "2026-11-03",
+      "embed_id": "8EtdC9Bjubk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_8RPK5KwYhgA",
       "youtube_id": "8RPK5KwYhgA",
       "source": "youtube",
@@ -42,7 +67,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "演讲思想",
-      "description": "This Halloween, dig into a collection of 6 chilling tales of blood-thirsty creatures, a cursed talisman, vengeful ghosts, and more.\n\n--\n\nAt TED-Ed we pride ourselves on sparking curiosity and facilitating learning, but we all know that some lessons are only learned the hard way, and that curiosity k",
+      "description": "Dig into a collection of 6 chilling tales of blood-thirsty creatures, a cursed talisman, vengeful ghosts, and more.\n\n--\n\nAt TED-Ed we pride ourselves on sparking curiosity and facilitating learning, but we all know that some lessons are only learned the hard way, and that curiosity killed any number",
       "published": 1793113217,
       "published_str": "2026-10-27",
       "embed_id": "nXvKDYRvTno",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_O18-FA83BaM",
-      "youtube_id": "O18-FA83BaM",
-      "source": "youtube",
-      "title": "The myth of Medusa",
-      "url": "https://www.youtube.com/watch?v=O18-FA83BaM",
-      "thumbnail": "https://i.ytimg.com/vi/O18-FA83BaM/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "TED-Ed has launched its first ever physical game: Pandora's Legacy! Learn more and get your copy here: https://ed.ted.com/pandora\n\n--\n\nMedusa, transformed into a monstrous Gorgon by a wrathful Athena, sought refuge in a hidden cave. Time after time, would-be heroes journeyed to the cave to make thei",
-      "published": 1746111636,
-      "published_str": "2025-05-01",
-      "embed_id": "O18-FA83BaM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500925.5616496
+  "_ts": 1793762718.061108
 }

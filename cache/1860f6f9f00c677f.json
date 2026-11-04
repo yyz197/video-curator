@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_aITGbdW-67Q",
+      "youtube_id": "aITGbdW-67Q",
+      "source": "youtube",
+      "title": "Mocked for his cabin, welder builds 160-foot Castle alone, has last laugh",
+      "url": "https://www.youtube.com/watch?v=aITGbdW-67Q",
+      "thumbnail": "https://i.ytimg.com/vi/aITGbdW-67Q/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Jim Bishop never finished high school and never had any formal training in building, yet he spent more than 50 years constructing a 16-story, 160-plus-foot medieval castle by hand. It is widely considered the largest one-man construction project in the world.\n\nIt began when he was 15. In 1959, Bisho",
+      "published": 1793571556,
+      "published_str": "2026-11-01",
+      "embed_id": "aITGbdW-67Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_R4WxHWQ-i_g",
       "youtube_id": "R4WxHWQ-i_g",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_1vCSywzgn5I",
-      "youtube_id": "1vCSywzgn5I",
-      "source": "youtube",
-      "title": "Giant Earthship vs wildfire: Did good prepping save this ecovillage?",
-      "url": "https://www.youtube.com/watch?v=1vCSywzgn5I",
-      "thumbnail": "https://i.ytimg.com/vi/1vCSywzgn5I/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Dan Schultz spent 15 years building his off-grid, self-sufficient utopia with whimsical homes and trees and gardens that produced enough fruit, nuts and produce to feed the half dozen residents for much of the year. The one thing they worried about was fire and last August their fears were realized.",
-      "published": 1702832096,
-      "published_str": "2023-12-17",
-      "embed_id": "1vCSywzgn5I",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500932.010373
+  "_ts": 1793762723.709374
 }

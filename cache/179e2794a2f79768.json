@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_lR931Iz8Z6U",
+      "youtube_id": "lR931Iz8Z6U",
+      "source": "youtube",
+      "title": "Vector Databases Full Course for Beginners – Embeddings, Similarity Search & ChromaDB",
+      "url": "https://www.youtube.com/watch?v=lR931Iz8Z6U",
+      "thumbnail": "https://i.ytimg.com/vi/lR931Iz8Z6U/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how vector databases work, from the math behind vectors to building semantic search with ChromaDB. This beginner course covers vectors, cosine similarity, Euclidean distance, tokenization, and embedding models, then walks through a live demo of generating embeddings with Google's Gemini embedd",
+      "published": 1793710374,
+      "published_str": "2026-11-03",
+      "embed_id": "lR931Iz8Z6U",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cqfl38Ip1ho",
       "youtube_id": "cqfl38Ip1ho",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_kT7nXO32L-Q",
-      "youtube_id": "kT7nXO32L-Q",
-      "source": "youtube",
-      "title": "PostgreSQL Hybrid Search Course – Keyword (BM25) + Vector Retrieval",
-      "url": "https://www.youtube.com/watch?v=kT7nXO32L-Q",
-      "thumbnail": "https://i.ytimg.com/vi/kT7nXO32L-Q/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to build a complete Wikipedia search engine entirely within PostgreSQL using BM25 keyword matching, vector embeddings, and reciprocal rank fusion. This step-by-step course covers setting up `pg_textsearch` and `pgvector-scale`, analyzing query plans, tuning hybrid weights, and serving resu",
-      "published": 1792578636,
-      "published_str": "2026-10-21",
-      "embed_id": "kT7nXO32L-Q",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500940.5487058
+  "_ts": 1793762731.3588111
 }

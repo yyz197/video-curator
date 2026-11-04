@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_lR931Iz8Z6U",
+      "youtube_id": "lR931Iz8Z6U",
+      "source": "youtube",
+      "title": "Vector Databases Full Course for Beginners – Embeddings, Similarity Search & ChromaDB",
+      "url": "https://www.youtube.com/watch?v=lR931Iz8Z6U",
+      "thumbnail": "https://i.ytimg.com/vi/lR931Iz8Z6U/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn how vector databases work, from the math behind vectors to building semantic search with ChromaDB. This beginner course covers vectors, cosine similarity, Euclidean distance, tokenization, and embedding models, then walks through a live demo of generating embeddings with Google's Gemini embedd",
+      "published": 1793710374,
+      "published_str": "2026-11-03",
+      "embed_id": "lR931Iz8Z6U",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_cqfl38Ip1ho",
       "youtube_id": "cqfl38Ip1ho",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_SqQUQHdYWyc",
-      "youtube_id": "SqQUQHdYWyc",
-      "source": "youtube",
-      "title": "CUDA Programming for NVIDIA H100s – Comprehensive Course",
-      "url": "https://www.youtube.com/watch?v=SqQUQHdYWyc",
-      "thumbnail": "https://i.ytimg.com/vi/SqQUQHdYWyc/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn CUDA programming for NVIDIA Hopper GPUs. You will learn to build efficient WGMMA pipelines and leverage Cutlass optimizations to perform the massive matrix multiplications that power modern AI. Beyond single-chip performance, the curriculum covers multi-GPU scaling and NCCL primitives necessar",
-      "published": 1775728848,
-      "published_str": "2026-04-09",
-      "embed_id": "SqQUQHdYWyc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500928.1884542
+  "_ts": 1793762720.501042
 }

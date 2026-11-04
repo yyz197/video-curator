@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_aITGbdW-67Q",
+      "youtube_id": "aITGbdW-67Q",
+      "source": "youtube",
+      "title": "Mocked for his cabin, welder builds 160-foot Castle alone, has last laugh",
+      "url": "https://www.youtube.com/watch?v=aITGbdW-67Q",
+      "thumbnail": "https://i.ytimg.com/vi/aITGbdW-67Q/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Jim Bishop never finished high school and never had any formal training in building, yet he spent more than 50 years constructing a 16-story, 160-plus-foot medieval castle by hand. It is widely considered the largest one-man construction project in the world.\n\nIt began when he was 15. In 1959, Bisho",
+      "published": 1793571556,
+      "published_str": "2026-11-01",
+      "embed_id": "aITGbdW-67Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_R4WxHWQ-i_g",
       "youtube_id": "R4WxHWQ-i_g",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube__fin6BuM8Wk",
-      "youtube_id": "_fin6BuM8Wk",
-      "source": "youtube",
-      "title": "2nd act, fresh start: couple builds 4-generation mud-&-clay family village",
-      "url": "https://www.youtube.com/watch?v=_fin6BuM8Wk",
-      "thumbnail": "https://i.ytimg.com/vi/_fin6BuM8Wk/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Athena Steen learned to build with earth as a kid on her mother's pueblo in New Mexico, where if someone needed a house or a room, the family built it from mud and clay. \n\nAlmost four decades ago, she and her husband Bill Steen took that knowledge to an old homestead in Canelo, Arizona, with no mone",
-      "published": 1790199544,
-      "published_str": "2026-09-23",
-      "embed_id": "_fin6BuM8Wk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793500942.6227155
+  "_ts": 1793762733.3415792
 }
