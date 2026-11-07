@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_DMW5HEI4VLE",
+      "youtube_id": "DMW5HEI4VLE",
+      "source": "youtube",
+      "title": "The Kid No One Believed In | Grant Thompson Legacy Doc Episode 2",
+      "url": "https://www.youtube.com/watch?v=DMW5HEI4VLE",
+      "thumbnail": "https://i.ytimg.com/vi/DMW5HEI4VLE/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "This this episode of the TKOR Legacy Documentary of Grant Thompson Janae shares stories from his childhood struggles and how nobody believed in him. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed",
+      "published": 1793995218,
+      "published_str": "2026-11-06",
+      "embed_id": "DMW5HEI4VLE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_znFSO7K_RoE",
       "youtube_id": "znFSO7K_RoE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_prHix3RxSP8",
-      "youtube_id": "prHix3RxSP8",
-      "source": "youtube",
-      "title": "Making MAGIC Waterproof Sand",
-      "url": "https://www.youtube.com/watch?v=prHix3RxSP8",
-      "thumbnail": "https://i.ytimg.com/vi/prHix3RxSP8/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "We attempted to make magic waterproof sand and the results are shocking!\n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin our NEW DISCORD: https://discord.gg/CPUzJgaHaG\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nRoyalty Free Music from Epidemic Sound.\n\nWARNING:\n\nThis video",
-      "published": 1740610848,
-      "published_str": "2025-02-26",
-      "embed_id": "prHix3RxSP8",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762716.0166101
+  "_ts": 1794021510.757657
 }

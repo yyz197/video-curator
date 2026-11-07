@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_bw5tzcoEG88",
+      "youtube_id": "bw5tzcoEG88",
+      "source": "youtube",
+      "title": "How to effectively use visuals in your presentation",
+      "url": "https://www.youtube.com/watch?v=bw5tzcoEG88",
+      "thumbnail": "https://i.ytimg.com/vi/bw5tzcoEG88/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Episode 11: Explore the key components of strong visuals, how to effectively use them to bolster your presentation, and mistakes to avoid.\n\n--\n\nThis is episode 11 of the animated series, “Public Speaking 101.” Ideas change everything — and since language lets us share our ideas, learning how to use ",
+      "published": 1793894441,
+      "published_str": "2026-11-05",
+      "embed_id": "bw5tzcoEG88",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_8EtdC9Bjubk",
       "youtube_id": "8EtdC9Bjubk",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_NPJ9KZqrl50",
-      "youtube_id": "NPJ9KZqrl50",
-      "source": "youtube",
-      "title": "Why does this animal never age? - Raymond Adkins",
-      "url": "https://www.youtube.com/watch?v=NPJ9KZqrl50",
-      "thumbnail": "https://i.ytimg.com/vi/NPJ9KZqrl50/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Explore the incredible regenerative abilities of hydras, and get to know their biology to find out if they're really immortal. \n\n--\n\nIn 1740, naturalist Abraham Trembley found something shocking in pondwater. He couldn't tell if it was a plant or an animal, though its way of moving and consuming thi",
-      "published": 1792508460,
-      "published_str": "2026-10-20",
-      "embed_id": "NPJ9KZqrl50",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762730.9383364
+  "_ts": 1794021523.82503
 }

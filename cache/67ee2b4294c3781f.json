@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_iENFIS18ipQ",
+      "youtube_id": "iENFIS18ipQ",
+      "source": "youtube",
+      "title": "Broadway's The Lost Boys | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=iENFIS18ipQ",
+      "thumbnail": "https://i.ytimg.com/vi/iENFIS18ipQ/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Ali Louis Bouzgui, Jennifer Duka and Miguel Gil from Broadway's The Lost Boys, the most Tony Award-winning new musical of the year, discuss the Broadway show based on the classic Warner Bros. film.\n \nThis electrifying production follows Michael, a teenager seeking a fresh start who falls in with a m",
+      "published": 1793811615,
+      "published_str": "2026-11-04",
+      "embed_id": "iENFIS18ipQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_50TiXjkXdAY",
       "youtube_id": "50TiXjkXdAY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_p-k5t1QC1a0",
-      "youtube_id": "p-k5t1QC1a0",
-      "source": "youtube",
-      "title": "Andy Cohen | Design for a Radically Changing World | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=p-k5t1QC1a0",
-      "thumbnail": "https://i.ytimg.com/vi/p-k5t1QC1a0/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Co-chair of Gensler, Andy Cohen, discusses the book he co-authored with Diane Hoskins, “Design for a Radically Changing World,” where they uncover the design solutions impacting our lives and offer actionable advice for business leaders, designers, and all people, to embrace the power of design to c",
-      "published": 1716393644,
-      "published_str": "2024-05-22",
-      "embed_id": "p-k5t1QC1a0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762720.511582
+  "_ts": 1794021513.029565
 }

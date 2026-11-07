@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_a2jlDGZJRBI",
+      "youtube_id": "a2jlDGZJRBI",
+      "source": "youtube",
+      "title": "When Everyone Tried To Copy Star Wars",
+      "url": "https://www.youtube.com/watch?v=a2jlDGZJRBI",
+      "thumbnail": "https://i.ytimg.com/vi/a2jlDGZJRBI/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Support The Nerdwriter on PATREON: https://www.patreon.com/c/nerdwriter\n\nSOURCES\n\nTurnock, Julie A.. Plastic reality : Special effects, technology, and the emergence of 1970s blockbuster aesthetics. New York: Columbia University Press, 2015.\n\nShipka, Danny. Perverse Titillation: The Exploitation Cin",
+      "published": 1793885400,
+      "published_str": "2026-11-05",
+      "embed_id": "a2jlDGZJRBI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_1AdRE5qFzuE",
       "youtube_id": "1AdRE5qFzuE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_sj1y9FDJKCM",
-      "youtube_id": "sj1y9FDJKCM",
-      "source": "youtube",
-      "title": "The Film That Attacks You",
-      "url": "https://www.youtube.com/watch?v=sj1y9FDJKCM",
-      "thumbnail": "https://i.ytimg.com/vi/sj1y9FDJKCM/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Go to https://www.squarespace.com/nerdwriter for 10% off your first purchase.\nMY BOOK: https://amzn.to/3ymfQPV\n\nSOURCES\n\nThiher, Allen. “Surrealism’s Enduring Bite: ‘Un Chien Andalou.’” Literature/Film Quarterly, vol. 5, no. 1, 1977, pp. 38–49. JSTOR, http://www.jstor.org/stable/43796018\n\nPolizzotti",
-      "published": 1777379472,
-      "published_str": "2026-04-28",
-      "embed_id": "sj1y9FDJKCM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762733.0483007
+  "_ts": 1794021525.9989572
 }

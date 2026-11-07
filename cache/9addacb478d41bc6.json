@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_FcY4QW_lyYo",
+      "youtube_id": "FcY4QW_lyYo",
+      "source": "youtube",
+      "title": "The Quest for Stardust: Crash Course Lecture",
+      "url": "https://www.youtube.com/watch?v=FcY4QW_lyYo",
+      "thumbnail": "https://i.ytimg.com/vi/FcY4QW_lyYo/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Is it possible to find cosmic dust on Earth? That’s the question jazz-musician-turned-citizen-scientist Jon Larsen set out to answer. Over the course of a decade and in defiance of the experts, Jon collected dust from around the world using a magnet in search of micrometeorites. Would his efforts be",
+      "published": 1793898032,
+      "published_str": "2026-11-05",
+      "embed_id": "FcY4QW_lyYo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_oJXxCfwkb-o",
       "youtube_id": "oJXxCfwkb-o",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_9Q9WAe_aqPs",
-      "youtube_id": "9Q9WAe_aqPs",
-      "source": "youtube",
-      "title": "Is the Electoral College Broken?: Crash Course US Government #5",
-      "url": "https://www.youtube.com/watch?v=9Q9WAe_aqPs",
-      "thumbnail": "https://i.ytimg.com/vi/9Q9WAe_aqPs/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Is the Electoral College broken? More and more people in the U.S. are voicing dissatisfaction with the way we elect presidents. In this episode, we’ll unpack how the Electoral College works, why some people think it doesn’t work, and possible solutions to make our elections work better.\n\nChapter 1 -",
-      "published": 1792512023,
-      "published_str": "2026-10-20",
-      "embed_id": "9Q9WAe_aqPs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762730.5597222
+  "_ts": 1794021523.4939203
 }

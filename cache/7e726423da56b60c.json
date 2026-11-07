@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_eHHxRJulX74",
+      "youtube_id": "eHHxRJulX74",
+      "source": "youtube",
+      "title": "Godot 4 Roguelike Course – Build a Complete Top-Down Action Game",
+      "url": "https://www.youtube.com/watch?v=eHHxRJulX74",
+      "thumbnail": "https://i.ytimg.com/vi/eHHxRJulX74/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Build a complete top-down action roguelike in Godot 4, from an empty project to a game a stranger can open and play. About 10 hours, 8 chapters, 31 lessons. Most lessons stop for a Your Turn, where you build the next piece yourself before you see mine.\n\n✏️ Course from @CodingQuests \n\n➡️ Try the demo",
+      "published": 1793978522,
+      "published_str": "2026-11-06",
+      "embed_id": "eHHxRJulX74",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_lR931Iz8Z6U",
       "youtube_id": "lR931Iz8Z6U",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_TDUrGO9O_ro",
-      "youtube_id": "TDUrGO9O_ro",
-      "source": "youtube",
-      "title": "Git push -f? Uh huh...",
-      "url": "https://www.youtube.com/watch?v=TDUrGO9O_ro",
-      "thumbnail": "https://i.ytimg.com/vi/TDUrGO9O_ro/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Git push -f? Uh huh...more like git push my luck!",
-      "published": 1775735540,
-      "published_str": "2026-04-09",
-      "embed_id": "TDUrGO9O_ro",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762720.501042
+  "_ts": 1794021513.7606013
 }

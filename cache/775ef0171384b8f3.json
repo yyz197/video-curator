@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_a2jlDGZJRBI",
+      "youtube_id": "a2jlDGZJRBI",
+      "source": "youtube",
+      "title": "When Everyone Tried To Copy Star Wars",
+      "url": "https://www.youtube.com/watch?v=a2jlDGZJRBI",
+      "thumbnail": "https://i.ytimg.com/vi/a2jlDGZJRBI/mqdefault.jpg",
+      "author": "Nerdwriter1",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Support The Nerdwriter on PATREON: https://www.patreon.com/c/nerdwriter\n\nSOURCES\n\nTurnock, Julie A.. Plastic reality : Special effects, technology, and the emergence of 1970s blockbuster aesthetics. New York: Columbia University Press, 2015.\n\nShipka, Danny. Perverse Titillation: The Exploitation Cin",
+      "published": 1793885400,
+      "published_str": "2026-11-05",
+      "embed_id": "a2jlDGZJRBI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_1AdRE5qFzuE",
       "youtube_id": "1AdRE5qFzuE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_lncVHzsc_QA",
-      "youtube_id": "lncVHzsc_QA",
-      "source": "youtube",
-      "title": "Holocene: How Bon Iver Creates A Mood",
-      "url": "https://www.youtube.com/watch?v=lncVHzsc_QA",
-      "thumbnail": "https://i.ytimg.com/vi/lncVHzsc_QA/mqdefault.jpg",
-      "author": "Nerdwriter1",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "GET MY BOOK: https://amzn.to/3ymfQPV\n\n\nSupport Nerdwriter videos: https://patreon.com/nerdwriter\nSubscribe: http://bit.ly/SubNerdwriter\n\nFacebook: https://facebook.com/The-Nerdwriter-314141501931192/\nTwitter: https://twitter.com/TheeNerdwriter\n\nSOURCES AND FURTHER READING:\n\nBob Owsisnki, \"Bon Iver '",
-      "published": 1471528803,
-      "published_str": "2016-08-18",
-      "embed_id": "lncVHzsc_QA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762723.0545616
+  "_ts": 1794021516.3231175
 }

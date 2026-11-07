@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BmBw827GgFA",
+      "youtube_id": "BmBw827GgFA",
+      "source": "youtube",
+      "title": "Mutex Explained - Computerphile",
+      "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
+      "thumbnail": "https://i.ytimg.com/vi/BmBw827GgFA/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://jane-st.co/computerphile\n\nThis video was filmed and edited b",
+      "published": 1793887216,
+      "published_str": "2026-11-05",
+      "embed_id": "BmBw827GgFA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_NDgS__J1U-M",
       "youtube_id": "NDgS__J1U-M",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_W0jPTqIo5oE",
-      "youtube_id": "W0jPTqIo5oE",
-      "source": "youtube",
-      "title": "Race Conditions on a Human Scale - Computerphile",
-      "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
-      "thumbnail": "https://i.ytimg.com/vi/W0jPTqIo5oE/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "When two threads or processes clash, a race condition can occur. Matt Godbolt demonstrates different kinds of race conditions by equating these to real-life human situations. \n\nFind out more about Matt from his blog: https://bit.ly/C_MGodbolt \n\nComputerphile is supported by Jane Street. Learn more a",
-      "published": 1791464425,
-      "published_str": "2026-10-08",
-      "embed_id": "W0jPTqIo5oE",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762731.2424448
+  "_ts": 1794021524.2233503
 }

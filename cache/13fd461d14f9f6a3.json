@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BmBw827GgFA",
+      "youtube_id": "BmBw827GgFA",
+      "source": "youtube",
+      "title": "Mutex Explained - Computerphile",
+      "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
+      "thumbnail": "https://i.ytimg.com/vi/BmBw827GgFA/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://jane-st.co/computerphile\n\nThis video was filmed and edited b",
+      "published": 1793887216,
+      "published_str": "2026-11-05",
+      "embed_id": "BmBw827GgFA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_NDgS__J1U-M",
       "youtube_id": "NDgS__J1U-M",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JqHVs5zhD5g",
-      "youtube_id": "JqHVs5zhD5g",
-      "source": "youtube",
-      "title": "Quantum: Current State 2023 (Quantum pt2) - Computerphile",
-      "url": "https://www.youtube.com/watch?v=JqHVs5zhD5g",
-      "thumbnail": "https://i.ytimg.com/vi/JqHVs5zhD5g/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Continuing our look at the world of quantum, we're looking at the application of quantum technologies, from quantum cryptography to quantum computing. Victor V. Albert is a Theoretical physicist at University of Maryland and NIST. \n\nVictor V. Albert: @victorvalbert on Twitter\n\nhttps://www.facebook.c",
-      "published": 1686842081,
-      "published_str": "2023-06-15",
-      "embed_id": "JqHVs5zhD5g",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762719.876932
+  "_ts": 1794021513.4076731
 }

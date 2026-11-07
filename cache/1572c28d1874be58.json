@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_DMW5HEI4VLE",
+      "youtube_id": "DMW5HEI4VLE",
+      "source": "youtube",
+      "title": "The Kid No One Believed In | Grant Thompson Legacy Doc Episode 2",
+      "url": "https://www.youtube.com/watch?v=DMW5HEI4VLE",
+      "thumbnail": "https://i.ytimg.com/vi/DMW5HEI4VLE/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "This this episode of the TKOR Legacy Documentary of Grant Thompson Janae shares stories from his childhood struggles and how nobody believed in him. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed",
+      "published": 1793995218,
+      "published_str": "2026-11-06",
+      "embed_id": "DMW5HEI4VLE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_znFSO7K_RoE",
       "youtube_id": "znFSO7K_RoE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_v6hCm5QxgBY",
-      "youtube_id": "v6hCm5QxgBY",
-      "source": "youtube",
-      "title": "The Boy Without a Home | Grant Thompson Legacy Doc Episode 1",
-      "url": "https://www.youtube.com/watch?v=v6hCm5QxgBY",
-      "thumbnail": "https://i.ytimg.com/vi/v6hCm5QxgBY/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "In this video we take a deep dive into the early life of Grant Thompson and what home like was for him growing up\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the respo",
-      "published": 1792774811,
-      "published_str": "2026-10-23",
-      "embed_id": "v6hCm5QxgBY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1793762730.5955584
+  "_ts": 1794021523.5459695
 }
