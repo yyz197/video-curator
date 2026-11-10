@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hEimflhZ0fI",
+      "youtube_id": "hEimflhZ0fI",
+      "source": "youtube",
+      "title": "The one thing that Grant remembers school by",
+      "url": "https://www.youtube.com/watch?v=hEimflhZ0fI",
+      "thumbnail": "https://i.ytimg.com/vi/hEimflhZ0fI/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Grant expressed how he went through school only remembering one thing.\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the responsibility for the results. Have fun, but al",
+      "published": 1794157221,
+      "published_str": "2026-11-08",
+      "embed_id": "hEimflhZ0fI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DMW5HEI4VLE",
       "youtube_id": "DMW5HEI4VLE",
       "source": "youtube",
@@ -17,7 +42,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "This this episode of the TKOR Legacy Documentary of Grant Thompson Janae shares stories from his childhood struggles and how nobody believed in him. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed",
+      "description": "This episode of the TKOR Legacy Documentary of Grant Thompson Janae shares stories from his childhood struggles and how nobody believed in him. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in t",
       "published": 1793995218,
       "published_str": "2026-11-06",
       "embed_id": "DMW5HEI4VLE",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_sTqtd_3YNkA",
-      "youtube_id": "sTqtd_3YNkA",
-      "source": "youtube",
-      "title": "This Candy Cannon Shoots Candy Over 100 Feet! (Bonus Footage Included)",
-      "url": "https://www.youtube.com/watch?v=sTqtd_3YNkA",
-      "thumbnail": "https://i.ytimg.com/vi/sTqtd_3YNkA/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Be the coolest person on the block by making it rain candy!! This is how to up-cycle sprinkler parts into a high power Candy Cannon that will launch candy 100 feet in the air!!! It's cheap to make, and a huge hit at birthday parties. \n\nCheck out the list of materials we used, linked below! ⬇️🔗\n\nJoin",
-      "published": 1740682846,
-      "published_str": "2025-02-27",
-      "embed_id": "sTqtd_3YNkA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021510.757657
+  "_ts": 1794286205.7202182
 }

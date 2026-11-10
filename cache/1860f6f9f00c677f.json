@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Re-60bdrzow",
+      "youtube_id": "Re-60bdrzow",
+      "source": "youtube",
+      "title": "Nobody wanted underground fixer-upper. He turned it into sun-warmed gem",
+      "url": "https://www.youtube.com/watch?v=Re-60bdrzow",
+      "thumbnail": "https://i.ytimg.com/vi/Re-60bdrzow/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "Adrian and Jeff Young had been carrying around a photo of a dream house for years: an arched, glass-sided mountain haven that would let their family feel immersed in the outdoors. \n\nThen Adrian walked into a house in Pagosa Springs, Colorado, that nobody seemed to want, and it looked like a near twi",
+      "published": 1794181739,
+      "published_str": "2026-11-08",
+      "embed_id": "Re-60bdrzow",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_aITGbdW-67Q",
       "youtube_id": "aITGbdW-67Q",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_O7J3h5aPAMg",
-      "youtube_id": "O7J3h5aPAMg",
-      "source": "youtube",
-      "title": "Modern home hideout sits on forsaken volcano like Star Wars rebel ship",
-      "url": "https://www.youtube.com/watch?v=O7J3h5aPAMg",
-      "thumbnail": "https://i.ytimg.com/vi/O7J3h5aPAMg/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Perched on a slope of what is arguably the tallest mountain in the world (Mauna Kea), and accessible only by 4 wheel drive, Musubi House doesn't rely on city grids, but instead is powered by the sun and captures all of its water from a huge trapezoid sloped roof.\n\nDeep in the heart of paniolo (cowbo",
-      "published": 1703425661,
-      "published_str": "2023-12-24",
-      "embed_id": "O7J3h5aPAMg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021516.8516064
+  "_ts": 1794286212.847326
 }

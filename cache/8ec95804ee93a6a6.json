@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Nqtv2ELLvPs",
+      "youtube_id": "Nqtv2ELLvPs",
+      "source": "youtube",
+      "title": "The Problem with Over-Friendly People #theschooloflife #animation #friendship",
+      "url": "https://www.youtube.com/watch?v=Nqtv2ELLvPs",
+      "thumbnail": "https://i.ytimg.com/vi/Nqtv2ELLvPs/mqdefault.jpg",
+      "author": "The School of Life",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Friendliness is a great virtue. Over-friendliness can be an unexpected problem.  \n\nEnjoying our Youtube videos? Get full access to all our audio content, videos, and thousands of thought-provoking articles, conversation cards and more with The School of Life Subscription: https://t.ly/tNyod\n\nBe more",
+      "published": 1794146417,
+      "published_str": "2026-11-08",
+      "embed_id": "Nqtv2ELLvPs",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_uAAQZMJKmnA",
       "youtube_id": "uAAQZMJKmnA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-c6r2lACQyU",
-      "youtube_id": "-c6r2lACQyU",
-      "source": "youtube",
-      "title": "How to Protect Ourselves",
-      "url": "https://www.youtube.com/watch?v=-c6r2lACQyU",
-      "thumbnail": "https://i.ytimg.com/vi/-c6r2lACQyU/mqdefault.jpg",
-      "author": "The School of Life",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Emotional Intelligence, Daily. Start now: https://www.theschooloflife.com/subscription/ \nWhy do highly capable people become powerless in intimate relationships? This film explores the paradox of individuals who are shrewd in public but unable to protect themselves in love. We trace this pattern to ",
-      "published": 1762351200,
-      "published_str": "2025-11-05",
-      "embed_id": "-c6r2lACQyU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021512.406409
+  "_ts": 1794286208.1330886
 }

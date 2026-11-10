@@ -51,6 +51,31 @@
       "favorited": false
     },
     {
+      "id": "youtube_EQr_eJOFy4Q",
+      "youtube_id": "EQr_eJOFy4Q",
+      "source": "youtube",
+      "title": "Crash Course World History Marathon • Full Series",
+      "url": "https://www.youtube.com/watch?v=EQr_eJOFy4Q",
+      "thumbnail": "https://i.ytimg.com/vi/EQr_eJOFy4Q/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In Crash Course Marathons, we’re revisiting the series you love, in long-form videos that cover entire subjects from back to front. Crash Course World History covers the major beats of humanity’s past, from the agricultural revolution to the Cold War. We’ll follow kings, traders, samurai, pirates, a",
+      "published": 1793391359,
+      "published_str": "2026-10-30",
+      "embed_id": "EQr_eJOFy4Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_y5RqfQvCaBY",
       "youtube_id": "y5RqfQvCaBY",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_uJA1qZirWVc",
-      "youtube_id": "uJA1qZirWVc",
-      "source": "youtube",
-      "title": "How do we Mine Minerals?: Crash Course Geology #22",
-      "url": "https://www.youtube.com/watch?v=uJA1qZirWVc",
-      "thumbnail": "https://i.ytimg.com/vi/uJA1qZirWVc/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Minerals—they’re in our homes and our smartphones. But can we meet the demand for them without hurting the places and communities they come from? In this episode of Crash Course Geology, we’ll learn about mining, the critical minerals that power our technologies, and efforts to meet our mineral need",
-      "published": 1792684805,
-      "published_str": "2026-10-22",
-      "embed_id": "uJA1qZirWVc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021523.4939203
+  "_ts": 1794286216.9788983
 }

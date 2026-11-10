@@ -51,6 +51,31 @@
       "favorited": false
     },
     {
+      "id": "youtube_EQr_eJOFy4Q",
+      "youtube_id": "EQr_eJOFy4Q",
+      "source": "youtube",
+      "title": "Crash Course World History Marathon • Full Series",
+      "url": "https://www.youtube.com/watch?v=EQr_eJOFy4Q",
+      "thumbnail": "https://i.ytimg.com/vi/EQr_eJOFy4Q/mqdefault.jpg",
+      "author": "CrashCourse",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In Crash Course Marathons, we’re revisiting the series you love, in long-form videos that cover entire subjects from back to front. Crash Course World History covers the major beats of humanity’s past, from the agricultural revolution to the Cold War. We’ll follow kings, traders, samurai, pirates, a",
+      "published": 1793391359,
+      "published_str": "2026-10-30",
+      "embed_id": "EQr_eJOFy4Q",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_y5RqfQvCaBY",
       "youtube_id": "y5RqfQvCaBY",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_68WPYhpIWx4",
-      "youtube_id": "68WPYhpIWx4",
-      "source": "youtube",
-      "title": "What’s the Difference Between Religion and Magic? | Crash Course Religions #4",
-      "url": "https://www.youtube.com/watch?v=68WPYhpIWx4",
-      "thumbnail": "https://i.ytimg.com/vi/68WPYhpIWx4/mqdefault.jpg",
-      "author": "CrashCourse",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The word “magic” has dubious, demonic connotations. But is there really a difference between magic and religion? In this episode of Crash Course Religions, we’ll explore the history of magical practices and discover how modern-day witches, brujas, and Hoodoo practitioners are reclaiming the label.\n\n",
-      "published": 1727798407,
-      "published_str": "2024-10-01",
-      "embed_id": "68WPYhpIWx4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021510.3671536
+  "_ts": 1794286205.3508668
 }

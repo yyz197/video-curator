@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_hEimflhZ0fI",
+      "youtube_id": "hEimflhZ0fI",
+      "source": "youtube",
+      "title": "The one thing that Grant remembers school by",
+      "url": "https://www.youtube.com/watch?v=hEimflhZ0fI",
+      "thumbnail": "https://i.ytimg.com/vi/hEimflhZ0fI/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Grant expressed how he went through school only remembering one thing.\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the responsibility for the results. Have fun, but al",
+      "published": 1794157221,
+      "published_str": "2026-11-08",
+      "embed_id": "hEimflhZ0fI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_DMW5HEI4VLE",
       "youtube_id": "DMW5HEI4VLE",
       "source": "youtube",
@@ -17,7 +42,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "科学科普",
-      "description": "This this episode of the TKOR Legacy Documentary of Grant Thompson Janae shares stories from his childhood struggles and how nobody believed in him. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed",
+      "description": "This episode of the TKOR Legacy Documentary of Grant Thompson Janae shares stories from his childhood struggles and how nobody believed in him. \n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in t",
       "published": 1793995218,
       "published_str": "2026-11-06",
       "embed_id": "DMW5HEI4VLE",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_IPNYGBJdmQU",
-      "youtube_id": "IPNYGBJdmQU",
-      "source": "youtube",
-      "title": "Grants Mother Never Wanted A Boy",
-      "url": "https://www.youtube.com/watch?v=IPNYGBJdmQU",
-      "thumbnail": "https://i.ytimg.com/vi/IPNYGBJdmQU/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Grants early stages of life were hard from the start because his Mother never wanted to have a boy\n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. \n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n\nMusic Credits:\n\nCirrus — Scott Buckley\nWebsite:",
-      "published": 1792947602,
-      "published_str": "2026-10-25",
-      "embed_id": "IPNYGBJdmQU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021523.5459695
+  "_ts": 1794286217.0040736
 }

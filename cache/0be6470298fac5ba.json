@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_p2AAz24AzU4",
+      "youtube_id": "p2AAz24AzU4",
+      "source": "youtube",
+      "title": "Terence Tao's Math(s) Essentials - Numberphile",
+      "url": "https://www.youtube.com/watch?v=p2AAz24AzU4",
+      "thumbnail": "https://i.ytimg.com/vi/p2AAz24AzU4/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Terence Tao discusses his new popular book about mathematics… and a little bit of Australian nostalgia. More links & stuff in full description below ↓↓↓\n\nOrder Six Math Essentials - https://www.quantabooks.org/books/six-math-essentials/\n\nAmazon UK - https://link.amazon/B0bCSas3B\nAmazon US - https://",
+      "published": 1794228196,
+      "published_str": "2026-11-09",
+      "embed_id": "p2AAz24AzU4",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_v9sfKhXDOn0",
       "youtube_id": "v9sfKhXDOn0",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_5q32heFz1bs",
-      "youtube_id": "5q32heFz1bs",
-      "source": "youtube",
-      "title": "Go First Dice - Numberphile",
-      "url": "https://www.youtube.com/watch?v=5q32heFz1bs",
-      "thumbnail": "https://i.ytimg.com/vi/5q32heFz1bs/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "James Grime reveals a breakthrough in the dice world. See https://brilliant.org/numberphile for Brilliant and 20% off their premium service & 30-day trial (episode sponsor)... More links & stuff in full description below ↓↓↓\n\nJames's paper in Recreational Mathematics Magazine: https://sciendo.com/is",
-      "published": 1681827631,
-      "published_str": "2023-04-18",
-      "embed_id": "5q32heFz1bs",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794021513.310372
+  "_ts": 1794286208.7549062
 }
