@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_qr57Gm67jQY",
+      "youtube_id": "qr57Gm67jQY",
+      "source": "youtube",
+      "title": "The Most Misunderstood Idea in Flight",
+      "url": "https://www.youtube.com/watch?v=qr57Gm67jQY",
+      "thumbnail": "https://i.ytimg.com/vi/qr57Gm67jQY/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Learn more about AnyDesk here: https://anydesk.com/besmart \nSupport us on Patreon  https://www.patreon.com/cw/itsokaytobesmart  \n↓↓↓ More info and sources below ↓↓↓\n\nI flew with the U.S. Navy Blue Angels, pulled 7.5 g's, and came home with one big question: How does lift actually work? So of course ",
+      "published": 1794501267,
+      "published_str": "2026-11-12",
+      "embed_id": "qr57Gm67jQY",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_fcjR9ORNtXc",
       "youtube_id": "fcjR9ORNtXc",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_sj3Z999TJqM",
-      "youtube_id": "sj3Z999TJqM",
-      "source": "youtube",
-      "title": "Your blood is never blue?",
-      "url": "https://www.youtube.com/watch?v=sj3Z999TJqM",
-      "thumbnail": "https://i.ytimg.com/vi/sj3Z999TJqM/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
-      "published": 1791486279,
-      "published_str": "2026-10-08",
-      "embed_id": "sj3Z999TJqM",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794286217.0729175
+  "_ts": 1794541278.778835
 }

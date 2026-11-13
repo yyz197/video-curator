@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ajfQWhGQGLE",
+      "youtube_id": "ajfQWhGQGLE",
+      "source": "youtube",
+      "title": "Codex & AI Coding Agents - Learn Agentic Coding",
+      "url": "https://www.youtube.com/watch?v=ajfQWhGQGLE",
+      "thumbnail": "https://i.ytimg.com/vi/ajfQWhGQGLE/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn agentic coding with AI coding agents such as Codex: prompting, plan mode, skills, testing, Git, secrets, permissions and MCP in one hands-on course.\n\n✏️ Study this course interactively on Scrimba: \nhttps://scrimba.com/learn-agentic-coding-c0g68l84pg?via=scrimbafcc\n\nCode is available on the Scr",
+      "published": 1794312039,
+      "published_str": "2026-11-10",
+      "embed_id": "ajfQWhGQGLE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_eHHxRJulX74",
       "youtube_id": "eHHxRJulX74",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_JGly6PSK5iw",
-      "youtube_id": "JGly6PSK5iw",
-      "source": "youtube",
-      "title": "Gemini 4 Argon API Crash Course",
-      "url": "https://www.youtube.com/watch?v=JGly6PSK5iw",
-      "thumbnail": "https://i.ytimg.com/vi/JGly6PSK5iw/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Learn how to use Google's Gemini 4 Argon model through practical JavaScript examples. This course walks through key development topics including API key setup, sending basic API requests, adjusting model thinking levels, managing multi-turn chat history with interaction IDs, and leveraging backgroun",
-      "published": 1792764625,
-      "published_str": "2026-10-23",
-      "embed_id": "JGly6PSK5iw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794286217.7405932
+  "_ts": 1794541279.5535104
 }

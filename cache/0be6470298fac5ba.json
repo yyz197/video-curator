@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LxVW3b8jVdE",
+      "youtube_id": "LxVW3b8jVdE",
+      "source": "youtube",
+      "title": "A Two-Button Calculator That Does Everything - Numberphile",
+      "url": "https://www.youtube.com/watch?v=LxVW3b8jVdE",
+      "thumbnail": "https://i.ytimg.com/vi/LxVW3b8jVdE/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Dr James Grime explains how to make a fully-functional scientific calculator with just two buttons. More links & stuff in full description below ↓↓↓\n\nPAPER: All elementary functions from a single operator by Andrzej Odrzywołek - https://arxiv.org/html/2603.21852v2\n\nDr Grime's website - https://www.s",
+      "published": 1794493767,
+      "published_str": "2026-11-12",
+      "embed_id": "LxVW3b8jVdE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_p2AAz24AzU4",
       "youtube_id": "p2AAz24AzU4",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_qw2Pl_Nk3CA",
-      "youtube_id": "qw2Pl_Nk3CA",
-      "source": "youtube",
-      "title": "Discovery about Book Embedding of Graphs - Numberphile",
-      "url": "https://www.youtube.com/watch?v=qw2Pl_Nk3CA",
-      "thumbnail": "https://i.ytimg.com/vi/qw2Pl_Nk3CA/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Featuring James Grime. Check opportunities with Jane Street at https://www.janestreet.com/join-jane-street/ (episode sponsor)\nMore links & stuff in full description below ↓↓↓\n\nJames Grime: https://www.singingbanana.com\nHis YouTube channel: https://www.youtube.com/user/singingbanana\nMore James on Num",
-      "published": 1682867589,
-      "published_str": "2023-04-30",
-      "embed_id": "qw2Pl_Nk3CA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794286208.7549062
+  "_ts": 1794541267.5552304
 }

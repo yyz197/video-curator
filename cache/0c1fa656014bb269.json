@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_LxVW3b8jVdE",
+      "youtube_id": "LxVW3b8jVdE",
+      "source": "youtube",
+      "title": "A Two-Button Calculator That Does Everything - Numberphile",
+      "url": "https://www.youtube.com/watch?v=LxVW3b8jVdE",
+      "thumbnail": "https://i.ytimg.com/vi/LxVW3b8jVdE/mqdefault.jpg",
+      "author": "Numberphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Dr James Grime explains how to make a fully-functional scientific calculator with just two buttons. More links & stuff in full description below ↓↓↓\n\nPAPER: All elementary functions from a single operator by Andrzej Odrzywołek - https://arxiv.org/html/2603.21852v2\n\nDr Grime's website - https://www.s",
+      "published": 1794493767,
+      "published_str": "2026-11-12",
+      "embed_id": "LxVW3b8jVdE",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_p2AAz24AzU4",
       "youtube_id": "p2AAz24AzU4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_33_jJ4kIxfc",
-      "youtube_id": "33_jJ4kIxfc",
-      "source": "youtube",
-      "title": "Blind Ranking Numbers (Terence Tao)",
-      "url": "https://www.youtube.com/watch?v=33_jJ4kIxfc",
-      "thumbnail": "https://i.ytimg.com/vi/33_jJ4kIxfc/mqdefault.jpg",
-      "author": "Numberphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Possibly the world's greatest mathematician. Terence Tao is a Fields Medalist, Breakthrough Prize winner, and now a Numberphile Blind Ranker of Numbers!\n\nOrder Six Math Essentials - https://www.quantabooks.org/books/six-math-essentials/\n\nAmazon UK - https://link.amazon/B0bCSas3B\nAmazon US - https://",
-      "published": 1793091623,
-      "published_str": "2026-10-27",
-      "embed_id": "33_jJ4kIxfc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794286217.627224
+  "_ts": 1794541279.4310472
 }

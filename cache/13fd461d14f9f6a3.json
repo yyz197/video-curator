@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_BHOw09O3ZsI",
+      "youtube_id": "BHOw09O3ZsI",
+      "source": "youtube",
+      "title": "Atomic Operations - Computerphile",
+      "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
+      "thumbnail": "https://i.ytimg.com/vi/BHOw09O3ZsI/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) ",
+      "published": 1794495569,
+      "published_str": "2026-11-12",
+      "embed_id": "BHOw09O3ZsI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BmBw827GgFA",
       "youtube_id": "BmBw827GgFA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_vXe8pe18MNk",
-      "youtube_id": "vXe8pe18MNk",
-      "source": "youtube",
-      "title": "Power LED Attack - Computerphile",
-      "url": "https://www.youtube.com/watch?v=vXe8pe18MNk",
-      "thumbnail": "https://i.ytimg.com/vi/vXe8pe18MNk/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Extracting a secret key by simply watching the flickering of an LED? Sounds implausible but that's what we're discussing with Dr Mike Pound!\n\nAuthor’s page on the attack:\nVideo-Based Cryptanalysis (nassiben.com)\nPaper: https://bit.ly/C_PowerLED \n\nhttps://www.facebook.com/computerphile\r\nhttps://twitt",
-      "published": 1688042882,
-      "published_str": "2023-06-29",
-      "embed_id": "vXe8pe18MNk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794286208.65219
+  "_ts": 1794541267.5949779
 }
