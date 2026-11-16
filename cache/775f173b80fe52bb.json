@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_V8rT6UI3Crg",
+      "youtube_id": "V8rT6UI3Crg",
+      "source": "youtube",
+      "title": "Making Gunpowder From Scratch",
+      "url": "https://www.youtube.com/watch?v=V8rT6UI3Crg",
+      "thumbnail": "https://i.ytimg.com/vi/V8rT6UI3Crg/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The earliest gunpowder recipe contains just 3 natural ingredients...\n\nThe following demonstration was performed by professionals in a safe and controlled environment; do not attempt at home.",
+      "published": 1794578408,
+      "published_str": "2026-11-13",
+      "embed_id": "V8rT6UI3Crg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_2QSkkhbl3v4",
       "youtube_id": "2QSkkhbl3v4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_zEmabFZvdqA",
-      "youtube_id": "zEmabFZvdqA",
-      "source": "youtube",
-      "title": "What happens if I lower this weight into the water?",
-      "url": "https://www.youtube.com/watch?v=zEmabFZvdqA",
-      "thumbnail": "https://i.ytimg.com/vi/zEmabFZvdqA/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Will the weighing scale underneath go up, down or stay the same?",
-      "published": 1793368838,
-      "published_str": "2026-10-30",
-      "embed_id": "zEmabFZvdqA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794541278.5612938
+  "_ts": 1794799087.4425602
 }

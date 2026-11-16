@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_oMif1RP7yME",
+      "youtube_id": "oMif1RP7yME",
+      "source": "youtube",
+      "title": "Grant had a talent no one knew about",
+      "url": "https://www.youtube.com/watch?v=oMif1RP7yME",
+      "thumbnail": "https://i.ytimg.com/vi/oMif1RP7yME/mqdefault.jpg",
+      "author": "TKOR",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Turns out making YouTube videos wasnt the only thing Grant was good at.\n\nFollow us on Social Media: https://linktr.ee/tkor1\n\nWARNING:\n\nThis video is only for entertainment purposes. If you rely on the information portrayed in this video, you assume the responsibility for the results. Have fun, but a",
+      "published": 1794589209,
+      "published_str": "2026-11-13",
+      "embed_id": "oMif1RP7yME",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_hEimflhZ0fI",
       "youtube_id": "hEimflhZ0fI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_GMaEJesnQt4",
-      "youtube_id": "GMaEJesnQt4",
-      "source": "youtube",
-      "title": "Nobody knew that Grant went through this as a child",
-      "url": "https://www.youtube.com/watch?v=GMaEJesnQt4",
-      "thumbnail": "https://i.ytimg.com/vi/GMaEJesnQt4/mqdefault.jpg",
-      "author": "TKOR",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Grant faced difficult experiences during his early life that shaped his development and influenced the challenges he encountered as he grew older.\n\nThis video is dedicated to our friend and founder, Grant Thompson—the one and only King of Random. \n\nFollow us on Social Media:\nhttps://linktr.ee/tkor1\n",
-      "published": 1793116810,
-      "published_str": "2026-10-27",
-      "embed_id": "GMaEJesnQt4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794541278.7120113
+  "_ts": 1794799087.645461
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_6bgwtFeJ1VQ",
+      "youtube_id": "6bgwtFeJ1VQ",
+      "source": "youtube",
+      "title": "Rock lover wanted cliffside home. He dug hanging cave to build his own",
+      "url": "https://www.youtube.com/watch?v=6bgwtFeJ1VQ",
+      "thumbnail": "https://i.ytimg.com/vi/6bgwtFeJ1VQ/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "When Bruce Black Jr. was in high school, his father bought land with a sandstone cliff, met two out-of-work miners at a bar, and told them to keep blasting until his $20,000 ran out. They blasted rooms deep into the side of the mountain.\n\nBruce Sr. meant it as his office, but getting clients down to",
+      "published": 1794787918,
+      "published_str": "2026-11-16",
+      "embed_id": "6bgwtFeJ1VQ",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Re-60bdrzow",
       "youtube_id": "Re-60bdrzow",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ngbls4GiT40",
-      "youtube_id": "ngbls4GiT40",
-      "source": "youtube",
-      "title": "Enchanted Castle hides underground water-maze in San Francisco",
-      "url": "https://www.youtube.com/watch?v=ngbls4GiT40",
-      "thumbnail": "https://i.ytimg.com/vi/ngbls4GiT40/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Within San Francisco city limits, there's a Norman-style castle with a 4-story turret that few residents have heard of. Built in 1870 by a 21-year-old English immigrant who wanted to start a brewery so he hand-carved two 200-foot caverns under the castle to tap into one of the city’s only sources of",
-      "published": 1704136390,
-      "published_str": "2024-01-01",
-      "embed_id": "ngbls4GiT40",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794541272.2267275
+  "_ts": 1794799082.4071114
 }

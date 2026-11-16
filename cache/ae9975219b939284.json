@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_df-GNBstagk",
+      "youtube_id": "df-GNBstagk",
+      "source": "youtube",
+      "title": "Every Great Meal Needs Some Good Bread",
+      "url": "https://www.youtube.com/watch?v=df-GNBstagk",
+      "thumbnail": "https://i.ytimg.com/vi/df-GNBstagk/mqdefault.jpg",
+      "author": "Bon Appétit",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "美食旅游",
+      "description": "At Sunny's in Miami, the kitchen makes up to 750 buttery Parker House rolls every day to pair with their delicious steaks.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.com/?utm_source=youtube&utm_brand=ba&utm_campaign=aud-dev&utm_medium=video&utm_content=merch-shop-promo\r\n\r\nStill",
+      "published": 1794589209,
+      "published_str": "2026-11-13",
+      "embed_id": "df-GNBstagk",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Whqklgi70q8",
       "youtube_id": "Whqklgi70q8",
       "source": "youtube",
-      "title": "The Man Behind Miami’s Most Viral Italian Pop-Up | Behind the Hype | Bon Appétit",
+      "title": "The 22-Year-Old Behind Miami’s Hottest Pop-Up Restaurant | Behind the Hype | Bon Appétit",
       "url": "https://www.youtube.com/watch?v=Whqklgi70q8",
       "thumbnail": "https://i.ytimg.com/vi/Whqklgi70q8/mqdefault.jpg",
       "author": "Bon Appétit",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3QEiVctiJcc",
-      "youtube_id": "3QEiVctiJcc",
-      "source": "youtube",
-      "title": "The Chef With 2 Michelin Stars at 22-Years-Old",
-      "url": "https://www.youtube.com/watch?v=3QEiVctiJcc",
-      "thumbnail": "https://i.ytimg.com/vi/3QEiVctiJcc/mqdefault.jpg",
-      "author": "Bon Appétit",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "美食旅游",
-      "description": "E.J. Lagasse talks about taking over Emeril’s in New Orleans–the iconic restaurant founded by his dad, Emeril Lagasse. At just 22 years old, he became the youngest chef to lead a two-Michelin-star kitchen, continuing a 35-year legacy.\n\nWant Bon Appétit shirts, hats and more? https://shop.bonappetit.",
-      "published": 1773676809,
-      "published_str": "2026-03-16",
-      "embed_id": "3QEiVctiJcc",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794541273.0606148
+  "_ts": 1794799083.3259358
 }

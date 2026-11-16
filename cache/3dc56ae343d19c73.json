@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_NKeZ_HRk_O8",
+      "youtube_id": "NKeZ_HRk_O8",
+      "source": "youtube",
+      "title": "Cool Down Your Room... With a FRIDGE?",
+      "url": "https://www.youtube.com/watch?v=NKeZ_HRk_O8",
+      "thumbnail": "https://i.ytimg.com/vi/NKeZ_HRk_O8/mqdefault.jpg",
+      "author": "Kurzgesagt – In a Nutshell",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Opening a fridge lets a cold breeze out, so could you use it to cool down your room?\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#fridge #physics \n\nSources & further reading: \nhttps://sites.google.com/view/kgs-tiktok-sources\n\nFollow us for more sciencey content! 🦆\n\nO",
+      "published": 1794668411,
+      "published_str": "2026-11-14",
+      "embed_id": "NKeZ_HRk_O8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_Y1vEGsnNYek",
       "youtube_id": "Y1vEGsnNYek",
       "source": "youtube",
@@ -29,7 +54,7 @@
       "id": "youtube_fEjvSbI_PT4",
       "youtube_id": "fEjvSbI_PT4",
       "source": "youtube",
-      "title": "What Actually Happens When You Die?",
+      "title": "Dying Is Complicated",
       "url": "https://www.youtube.com/watch?v=fEjvSbI_PT4",
       "thumbnail": "https://i.ytimg.com/vi/fEjvSbI_PT4/mqdefault.jpg",
       "author": "Kurzgesagt – In a Nutshell",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_35No369rmq0",
-      "youtube_id": "35No369rmq0",
-      "source": "youtube",
-      "title": "What If We Cool Down the Sun?",
-      "url": "https://www.youtube.com/watch?v=35No369rmq0",
-      "thumbnail": "https://i.ytimg.com/vi/35No369rmq0/mqdefault.jpg",
-      "author": "Kurzgesagt – In a Nutshell",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The sunlight and the heat coming from Sun are essential for nearly all of life on Earth. So, what would happen if we cool down our star by 30%?\n\n#kurzgesagt\n#inanutshell #kurzgesagt_inanutshell #learnwithshorts #science \n#sun #astrophysics \n\nSources & further reading: \nhttps://sites.google.com/view/",
-      "published": 1792850415,
-      "published_str": "2026-10-24",
-      "embed_id": "35No369rmq0",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794541278.5170653
+  "_ts": 1794799087.4254663
 }

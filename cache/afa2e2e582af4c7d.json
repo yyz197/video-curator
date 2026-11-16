@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_S7ELHbvqaeA",
+      "youtube_id": "S7ELHbvqaeA",
+      "source": "youtube",
+      "title": "The Deep Sea Sub Built By a Cereal Company",
+      "url": "https://www.youtube.com/watch?v=S7ELHbvqaeA",
+      "thumbnail": "https://i.ytimg.com/vi/S7ELHbvqaeA/mqdefault.jpg",
+      "author": "SciShow",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "The Alvin submersible revolutionized deep-sea exploration in 1964, and it's still being used today. But it wasn't made by a traditional submarine builder or defense contractor. It was built by General Mills. \n\nHosted by: Denali Kincaid (they/them)\n\nThis premiere is part of Learn-a-Thon, an annual ce",
+      "published": 1794592807,
+      "published_str": "2026-11-13",
+      "embed_id": "S7ELHbvqaeA",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_FKiSYHf1HyI",
       "youtube_id": "FKiSYHf1HyI",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_0mffmUA7d_4",
-      "youtube_id": "0mffmUA7d_4",
-      "source": "youtube",
-      "title": "The Evolutionary Basis of Autism",
-      "url": "https://www.youtube.com/watch?v=0mffmUA7d_4",
-      "thumbnail": "https://i.ytimg.com/vi/0mffmUA7d_4/mqdefault.jpg",
-      "author": "SciShow",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "At some point in human evolution, our brains developed our signature sophisticated cognition. At the same time, not all brains are alike. Some people are built a bit different, like in the case of autism. There’s some evidence to suggest that autism might be /so/ hard-coded into our brains, it’s res",
-      "published": 1772560800,
-      "published_str": "2026-03-03",
-      "embed_id": "0mffmUA7d_4",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794541264.166804
+  "_ts": 1794799075.7210073
 }
