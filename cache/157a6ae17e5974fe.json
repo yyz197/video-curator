@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_dkocGur84i8",
+      "youtube_id": "dkocGur84i8",
+      "source": "youtube",
+      "title": "The three words that power every device you own - Lane Gunderman",
+      "url": "https://www.youtube.com/watch?v=dkocGur84i8",
+      "thumbnail": "https://i.ytimg.com/vi/dkocGur84i8/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Learn more at https://brilliant.org/TedEd\n\n--\n\nIn the 1840s, George Boole created a branch of algebra that allowed mathematicians to input logical claims and mathematically determine if they were true or false. And perhaps even more impressive, Boolean algebra achieves this lofty goal with just thre",
+      "published": 1794931259,
+      "published_str": "2026-11-17",
+      "embed_id": "dkocGur84i8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_aDblEBU41nA",
       "youtube_id": "aDblEBU41nA",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_i13h9MO4Zuk",
-      "youtube_id": "i13h9MO4Zuk",
-      "source": "youtube",
-      "title": "It’s not your typical jigsaw puzzle — it’s your next great adventure",
-      "url": "https://www.youtube.com/watch?v=i13h9MO4Zuk",
-      "thumbnail": "https://i.ytimg.com/vi/i13h9MO4Zuk/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Critically acclaimed: TED-Ed’s first ever game is now live on Kickstarter! Assemble pieces. Decode riddles. Uncover artifacts. Explore stories. Pandora’s Legacy is a gaming experience like no other. Get your copy and immerse yourself in the world of Olympian gods: https://ed.ted.com/pandora\n\n#shorts",
-      "published": 1746803922,
-      "published_str": "2025-05-09",
-      "embed_id": "i13h9MO4Zuk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794799077.65354
+  "_ts": 1795062996.636543
 }

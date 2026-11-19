@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_wCRzZ0ccP_0",
+      "youtube_id": "wCRzZ0ccP_0",
+      "source": "youtube",
+      "title": "AI Is Breaking Math. Will It Solve Physics Next?",
+      "url": "https://www.youtube.com/watch?v=wCRzZ0ccP_0",
+      "thumbnail": "https://i.ytimg.com/vi/wCRzZ0ccP_0/mqdefault.jpg",
+      "author": "PBS Space Time",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Displate’s Black Friday sale is give you up to up to for 42% off at: https://displate.com/l/spacetime when you use the code: SPACETIME \n(Promotions do not apply to Limited Editions and Shards)\n\nAI is solving mathematical problems that have stumped humanity for decades. But can it do more than solve ",
+      "published": 1794946518,
+      "published_str": "2026-11-17",
+      "embed_id": "wCRzZ0ccP_0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_AlQcCMRiOnE",
       "youtube_id": "AlQcCMRiOnE",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_FSwND7rvjpo",
-      "youtube_id": "FSwND7rvjpo",
-      "source": "youtube",
-      "title": "Can We Turn The Solar System Into A Spaceship?",
-      "url": "https://www.youtube.com/watch?v=FSwND7rvjpo",
-      "thumbnail": "https://i.ytimg.com/vi/FSwND7rvjpo/mqdefault.jpg",
-      "author": "PBS Space Time",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "What if we could turn our entire solar system into a spaceship, using the Sun itself as an engine to travel across the galaxy? From giant solar sails to fusion-powered stellar engines, we explore the extraordinary technologies that could one day let humanity steer our solar system through the Milky ",
-      "published": 1793650516,
-      "published_str": "2026-11-02",
-      "embed_id": "FSwND7rvjpo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794799087.4808195
+  "_ts": 1795063007.517233
 }

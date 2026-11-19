@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_0S6dgC3J7Do",
+      "youtube_id": "0S6dgC3J7Do",
+      "source": "youtube",
+      "title": "A Turtle-y Amazing Success Story About Green Sea Turtles",
+      "url": "https://www.youtube.com/watch?v=0S6dgC3J7Do",
+      "thumbnail": "https://i.ytimg.com/vi/0S6dgC3J7Do/mqdefault.jpg",
+      "author": "MinuteEarth",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Sea turtles have become a poster child for conservation, and it seems like we could use what we’ve learned from saving them to save a bunch of other species too. Is it that simple, though? 🐢\n\nCheck out the WWF's Living Planet Report 2026: https://wwf.to/LPR2026\n@WWF",
+      "published": 1794844239,
+      "published_str": "2026-11-16",
+      "embed_id": "0S6dgC3J7Do",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_wfGo-1kM9OQ",
       "youtube_id": "wfGo-1kM9OQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_1bjkZYmQefA",
-      "youtube_id": "1bjkZYmQefA",
-      "source": "youtube",
-      "title": "How to Tame Your Pet AI Dragon",
-      "url": "https://www.youtube.com/watch?v=1bjkZYmQefA",
-      "thumbnail": "https://i.ytimg.com/vi/1bjkZYmQefA/mqdefault.jpg",
-      "author": "MinuteEarth",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Join the movement to keep humans in control of AI. Head on over to teamhuman.org and sign their petition. Every signature will be hand-delivered to lawmakers in DC and Brussels!\n\n#TeamHuman",
-      "published": 1793055701,
-      "published_str": "2026-10-26",
-      "embed_id": "1bjkZYmQefA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794799087.8010094
+  "_ts": 1795063008.0333028
 }

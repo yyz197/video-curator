@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_dkocGur84i8",
+      "youtube_id": "dkocGur84i8",
+      "source": "youtube",
+      "title": "The three words that power every device you own - Lane Gunderman",
+      "url": "https://www.youtube.com/watch?v=dkocGur84i8",
+      "thumbnail": "https://i.ytimg.com/vi/dkocGur84i8/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Learn more at https://brilliant.org/TedEd\n\n--\n\nIn the 1840s, George Boole created a branch of algebra that allowed mathematicians to input logical claims and mathematically determine if they were true or false. And perhaps even more impressive, Boolean algebra achieves this lofty goal with just thre",
+      "published": 1794931259,
+      "published_str": "2026-11-17",
+      "embed_id": "dkocGur84i8",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_aDblEBU41nA",
       "youtube_id": "aDblEBU41nA",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_8RPK5KwYhgA",
-      "youtube_id": "8RPK5KwYhgA",
-      "source": "youtube",
-      "title": "What if you didn’t brush your teeth for a year? - Justin Merritt",
-      "url": "https://www.youtube.com/watch?v=8RPK5KwYhgA",
-      "thumbnail": "https://i.ytimg.com/vi/8RPK5KwYhgA/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Trace the impact that not brushing or flossing can have on your teeth, gums, microbiome, and overall health over time.\n\n--\n\nAt any given time, your mouth is maintaining a delicate balance between hundreds of microbial species, which is why dentists agree that you should brush twice and floss once ev",
-      "published": 1793286029,
-      "published_str": "2026-10-29",
-      "embed_id": "8RPK5KwYhgA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794799087.8830466
+  "_ts": 1795063008.2638054
 }

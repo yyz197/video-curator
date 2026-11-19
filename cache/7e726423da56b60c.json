@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_ybe6EGe_wjo",
+      "youtube_id": "ybe6EGe_wjo",
+      "source": "youtube",
+      "title": "Learn Data Structures and Algorithms in Python with Visualizations",
+      "url": "https://www.youtube.com/watch?v=ybe6EGe_wjo",
+      "thumbnail": "https://i.ytimg.com/vi/ybe6EGe_wjo/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Learn data structures and algorithms in Python in this beginner's course. This course covers arrays, linked lists, stacks, queues, hash tables, trees, heaps, and graphs, plus recursion, searching, sorting, and interview prep. Each topic is explained with custom animations and visualizations alongsid",
+      "published": 1795005466,
+      "published_str": "2026-11-18",
+      "embed_id": "ybe6EGe_wjo",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ajfQWhGQGLE",
       "youtube_id": "ajfQWhGQGLE",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XSxRY1666nA",
-      "youtube_id": "XSxRY1666nA",
-      "source": "youtube",
-      "title": "Bangladesh's thriving developer scene is full of beginners who are truly passionate about learning",
-      "url": "https://www.youtube.com/watch?v=XSxRY1666nA",
-      "thumbnail": "https://i.ytimg.com/vi/XSxRY1666nA/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Bangladesh's thriving developer scene is full of beginners who are truly passionate about learning. Sumit chats about this with Quincy on the freeCodeCamp podcast.",
-      "published": 1775823508,
-      "published_str": "2026-04-10",
-      "embed_id": "XSxRY1666nA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1794799079.6095352
+  "_ts": 1795062999.3233087
 }
