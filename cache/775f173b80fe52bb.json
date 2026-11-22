@@ -1,10 +1,35 @@
 {
   "videos": [
     {
+      "id": "youtube_HZjRoKgDnow",
+      "youtube_id": "HZjRoKgDnow",
+      "source": "youtube",
+      "title": "Does adding helium reduce a balloon’s mass?",
+      "url": "https://www.youtube.com/watch?v=HZjRoKgDnow",
+      "thumbnail": "https://i.ytimg.com/vi/HZjRoKgDnow/mqdefault.jpg",
+      "author": "Veritasium",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "These questions are from our upcoming table top game Elements of Truth.\n\nOrder yours today here - https://ve42.co/elementsoftruth_ytsqs\n\nIf you want to try a digital version of the game you can play it here on YouTube - https://ve42.co/YouTubePlayables",
+      "published": 1795185298,
+      "published_str": "2026-11-20",
+      "embed_id": "HZjRoKgDnow",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_uXuQF_PPg5U",
       "youtube_id": "uXuQF_PPg5U",
       "source": "youtube",
-      "title": "The World Depends on Random Numbers That Aren't Really Random",
+      "title": "Randomness is a lie. Let me explain",
       "url": "https://www.youtube.com/watch?v=uXuQF_PPg5U",
       "thumbnail": "https://i.ytimg.com/vi/uXuQF_PPg5U/mqdefault.jpg",
       "author": "Veritasium",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rL0qEmTRI-I",
-      "youtube_id": "rL0qEmTRI-I",
-      "source": "youtube",
-      "title": "Why do deserts get cold at night?",
-      "url": "https://www.youtube.com/watch?v=rL0qEmTRI-I",
-      "thumbnail": "https://i.ytimg.com/vi/rL0qEmTRI-I/mqdefault.jpg",
-      "author": "Veritasium",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The desert ground is blistering hot in the day but just a few hours after nightfall, it's freezing.\n\nWhy does this happen?",
-      "published": 1793973617,
-      "published_str": "2026-11-06",
-      "embed_id": "rL0qEmTRI-I",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795063007.4205823
+  "_ts": 1795318526.8375924
 }

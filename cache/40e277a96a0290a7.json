@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_fqL9dt6QHWg",
+      "youtube_id": "fqL9dt6QHWg",
+      "source": "youtube",
+      "title": "5 of the most dangerous scientific discoveries - Shannon Odell",
+      "url": "https://www.youtube.com/watch?v=fqL9dt6QHWg",
+      "thumbnail": "https://i.ytimg.com/vi/fqL9dt6QHWg/mqdefault.jpg",
+      "author": "TED-Ed",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Dig into the bold self-experimentation of 5 scientists, and how their discoveries led to scientific breakthroughs in medicine.\n\n--\n\nThe history of science is filled with stories of self-experimentation. While some cases have resulted in horrific infections, accidental psychedelic trips, and even dea",
+      "published": 1795103994,
+      "published_str": "2026-11-19",
+      "embed_id": "fqL9dt6QHWg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_dkocGur84i8",
       "youtube_id": "dkocGur84i8",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_8EtdC9Bjubk",
-      "youtube_id": "8EtdC9Bjubk",
-      "source": "youtube",
-      "title": "Can you solve the Billy Bonka riddle? - Edwin F. Meyer",
-      "url": "https://www.youtube.com/watch?v=8EtdC9Bjubk",
-      "thumbnail": "https://i.ytimg.com/vi/8EtdC9Bjubk/mqdefault.jpg",
-      "author": "TED-Ed",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "You accidentally end up in the top secret lab of an eccentric candy factory. Can you win Billy Bonka's game and get set free?\n\n--\n\nYou’re on a tour of the eccentric Billy Bonka’s mysterious candy factory, when a wrong turn searching for the restroom lands you in the top secret candy laboratory. Enra",
-      "published": 1793721634,
-      "published_str": "2026-11-03",
-      "embed_id": "8EtdC9Bjubk",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795063008.2638054
+  "_ts": 1795318527.3782513
 }

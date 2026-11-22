@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_onpX6zk1ksc",
+      "youtube_id": "onpX6zk1ksc",
+      "source": "youtube",
+      "title": "Yung Pueblo | Journey: The Year That Changes Everything | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=onpX6zk1ksc",
+      "thumbnail": "https://i.ytimg.com/vi/onpX6zk1ksc/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Diego Perez—the #1 New York Times bestselling author widely known by his pen name, Yung Pueblo—joined us to discuss his book, \"Journey: The Year That Changes Everything: 365 Daily Reflections to Build Self-Awareness and Inner Peace.\" More than just a year-long guide to personal growth, it is a uniqu",
+      "published": 1795280422,
+      "published_str": "2026-11-21",
+      "embed_id": "onpX6zk1ksc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_iENFIS18ipQ",
       "youtube_id": "iENFIS18ipQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_rreetB2xW-I",
-      "youtube_id": "rreetB2xW-I",
-      "source": "youtube",
-      "title": "Co-chair of top architecture & design firm, Gensler, on designing carbon neutral buildings",
-      "url": "https://www.youtube.com/watch?v=rreetB2xW-I",
-      "thumbnail": "https://i.ytimg.com/vi/rreetB2xW-I/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Watch the full video here: https://youtu.be/p-k5t1QC1a0 #shorts",
-      "published": 1716494414,
-      "published_str": "2024-05-23",
-      "embed_id": "rreetB2xW-I",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795062997.1700537
+  "_ts": 1795318516.826532
 }

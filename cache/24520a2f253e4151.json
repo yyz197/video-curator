@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zqzk43bSdDI",
+      "youtube_id": "zqzk43bSdDI",
+      "source": "youtube",
+      "title": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
+      "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+      "thumbnail": "https://i.ytimg.com/vi/zqzk43bSdDI/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\n\n------------------\n\nThese animations are largely made using a custom Python l",
+      "published": 1795312932,
+      "published_str": "2026-11-22",
+      "embed_id": "zqzk43bSdDI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_qbsb9DpdZ6s",
       "youtube_id": "qbsb9DpdZ6s",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_4PDoT7jtxmw",
-      "youtube_id": "4PDoT7jtxmw",
-      "source": "youtube",
-      "title": "What makes the natural log \"natural\"? | Ep. 7 Lockdown live math",
-      "url": "https://www.youtube.com/watch?v=4PDoT7jtxmw",
-      "thumbnail": "https://i.ytimg.com/vi/4PDoT7jtxmw/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "All about ln(x).\nFull playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev\nHome page: https://www.3blue1brown.com\nBrought to you by you: https://3b1b.co/ldm-thanks\n\nBeautiful pictorial summary by @ThuyNganVu:\nhttps://twitter.com/ThuyNganVu/status/1259288683489849344\n\nEr",
-      "published": 1588969332,
-      "published_str": "2020-05-08",
-      "embed_id": "4PDoT7jtxmw",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795062998.0335102
+  "_ts": 1795318516.4482179
 }

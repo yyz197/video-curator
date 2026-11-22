@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_Y0-xv7bNVvU",
+      "youtube_id": "Y0-xv7bNVvU",
+      "source": "youtube",
+      "title": "This One AI Prompt Will Organise Your Entire Life",
+      "url": "https://www.youtube.com/watch?v=Y0-xv7bNVvU",
+      "thumbnail": "https://i.ytimg.com/vi/Y0-xv7bNVvU/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Try Waking Up free for 14 days 👉 https://www.wakingup.com/aliabdaal\n\n🚀 Free live masterclass: how to launch your online business by Christmas and get your first high-paying client by January. Save your free spot 👉 https://go.lifestylebusiness.com/bf26-organise-desc\n🧭 The Life Organiser: the free AI ",
+      "published": 1795183767,
+      "published_str": "2026-11-20",
+      "embed_id": "Y0-xv7bNVvU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_L9GHmwO4-uw",
       "youtube_id": "L9GHmwO4-uw",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_W8XNHsZWFSo",
-      "youtube_id": "W8XNHsZWFSo",
-      "source": "youtube",
-      "title": "Claude's new features are insane #ad",
-      "url": "https://www.youtube.com/watch?v=W8XNHsZWFSo",
-      "thumbnail": "https://i.ytimg.com/vi/W8XNHsZWFSo/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "I've been using @claude  for 2 years, but Claude Code and Claude Co-work are on another level #ad\n\nClaude Code: I was intimidated at first (terminal = scary), but it's not just for coding. I've connected it to all my files. It knows my projects, goals, and ideas. It can generate content from transcr",
-      "published": 1775140232,
-      "published_str": "2026-04-02",
-      "embed_id": "W8XNHsZWFSo",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795063001.230611
+  "_ts": 1795318519.2765994
 }

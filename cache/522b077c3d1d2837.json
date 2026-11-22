@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_zqzk43bSdDI",
+      "youtube_id": "zqzk43bSdDI",
+      "source": "youtube",
+      "title": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
+      "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+      "thumbnail": "https://i.ytimg.com/vi/zqzk43bSdDI/mqdefault.jpg",
+      "author": "3Blue1Brown",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\n\n------------------\n\nThese animations are largely made using a custom Python l",
+      "published": 1795312932,
+      "published_str": "2026-11-22",
+      "embed_id": "zqzk43bSdDI",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_qbsb9DpdZ6s",
       "youtube_id": "qbsb9DpdZ6s",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_ausLKMojXaY",
-      "youtube_id": "ausLKMojXaY",
-      "source": "youtube",
-      "title": "The Phone Number puzzle",
-      "url": "https://www.youtube.com/watch?v=ausLKMojXaY",
-      "thumbnail": "https://i.ytimg.com/vi/ausLKMojXaY/mqdefault.jpg",
-      "author": "3Blue1Brown",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Part of a monthly series of puzzles: https://momath.org/mindbenders/",
-      "published": 1790343302,
-      "published_str": "2026-09-25",
-      "embed_id": "ausLKMojXaY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795063008.8223853
+  "_ts": 1795318527.5804007
 }

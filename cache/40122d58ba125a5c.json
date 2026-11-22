@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_onpX6zk1ksc",
+      "youtube_id": "onpX6zk1ksc",
+      "source": "youtube",
+      "title": "Yung Pueblo | Journey: The Year That Changes Everything | Talks at Google",
+      "url": "https://www.youtube.com/watch?v=onpX6zk1ksc",
+      "thumbnail": "https://i.ytimg.com/vi/onpX6zk1ksc/mqdefault.jpg",
+      "author": "Talks at Google",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "演讲思想",
+      "description": "Diego Perez—the #1 New York Times bestselling author widely known by his pen name, Yung Pueblo—joined us to discuss his book, \"Journey: The Year That Changes Everything: 365 Daily Reflections to Build Self-Awareness and Inner Peace.\" More than just a year-long guide to personal growth, it is a uniqu",
+      "published": 1795280422,
+      "published_str": "2026-11-21",
+      "embed_id": "onpX6zk1ksc",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_iENFIS18ipQ",
       "youtube_id": "iENFIS18ipQ",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_XIYkIWRXAtA",
-      "youtube_id": "XIYkIWRXAtA",
-      "source": "youtube",
-      "title": "Cheryl Strauss Einhorn | The Human Edge: Smarter Decisions in the Age of AI | Talks at Google",
-      "url": "https://www.youtube.com/watch?v=XIYkIWRXAtA",
-      "thumbnail": "https://i.ytimg.com/vi/XIYkIWRXAtA/mqdefault.jpg",
-      "author": "Talks at Google",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "演讲思想",
-      "description": "Award-winning author, educator, and Decisive CEO Cheryl Strauss Einhorn discusses her book, \"The Human Edge: Smarter Decisions in the Age of AI,\" where she shares how you and your organization can confidently leverage AI for smart decision-making.\n\nThe Human Edge is an approachable guide for profess",
-      "published": 1790870426,
-      "published_str": "2026-10-01",
-      "embed_id": "XIYkIWRXAtA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795063008.393393
+  "_ts": 1795318527.4708018
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_JnGar-MSZwU",
+      "youtube_id": "JnGar-MSZwU",
+      "source": "youtube",
+      "title": "The Time an Airplane Hit a Bird at Cruising Altitude (11,000 METERS)",
+      "url": "https://www.youtube.com/watch?v=JnGar-MSZwU",
+      "thumbnail": "https://i.ytimg.com/vi/JnGar-MSZwU/mqdefault.jpg",
+      "author": "MinuteEarth",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "In 1973, an airliner struck a bird called a Rüppell's griffon vulture at a cruising height of over 11,000 meters(!!!). That’s WAY above the height at which most birds fly.  🦅\n\nSorry if this increases any flying anxiety y'all might have 🥲",
+      "published": 1795129367,
+      "published_str": "2026-11-19",
+      "embed_id": "JnGar-MSZwU",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_0S6dgC3J7Do",
       "youtube_id": "0S6dgC3J7Do",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_hlygle3Yd6o",
-      "youtube_id": "hlygle3Yd6o",
-      "source": "youtube",
-      "title": "What Happens When Predators Disappear?",
-      "url": "https://www.youtube.com/watch?v=hlygle3Yd6o",
-      "thumbnail": "https://i.ytimg.com/vi/hlygle3Yd6o/mqdefault.jpg",
-      "author": "MinuteEarth",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "To learn more about how Florida International University's research, visit https://FIU.edu \n\nA world without predators. It sounds like a safer, happier world, but come on, this is SCIENCE…\n\nLEARN MORE\n**************\nTo learn more about this topic, start your googling with these keywords: \n- Ecosyste",
-      "published": 1727975173,
-      "published_str": "2024-10-03",
-      "embed_id": "hlygle3Yd6o",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795062996.1384075
+  "_ts": 1795318514.5811799
 }
