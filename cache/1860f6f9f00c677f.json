@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_PuDNSInJsH0",
+      "youtube_id": "PuDNSInJsH0",
+      "source": "youtube",
+      "title": "Bananas in the snow: Rocky Mountain greenhouse home has no heating system",
+      "url": "https://www.youtube.com/watch?v=PuDNSInJsH0",
+      "thumbnail": "https://i.ytimg.com/vi/PuDNSInJsH0/mqdefault.jpg",
+      "author": "Kirsten Dirksen",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "创意设计",
+      "description": "At 7,200 feet in the Colorado Rockies, where temperatures have dropped to -47°F and one winter brought 39 days of unbroken cloud, Amory and Judy Lovins grow bananas indoors with no furnace, no air conditioning, and not even a wood stove. Even when it falls far below zero outside, the house never dro",
+      "published": 1795391447,
+      "published_str": "2026-11-22",
+      "embed_id": "PuDNSInJsH0",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6bgwtFeJ1VQ",
       "youtube_id": "6bgwtFeJ1VQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_AJgVIEC84zg",
-      "youtube_id": "AJgVIEC84zg",
-      "source": "youtube",
-      "title": "Building Bunker Villa on a budget using Quonset Hut structure",
-      "url": "https://www.youtube.com/watch?v=AJgVIEC84zg",
-      "thumbnail": "https://i.ytimg.com/vi/AJgVIEC84zg/mqdefault.jpg",
-      "author": "Kirsten Dirksen",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "创意设计",
-      "description": "Fifteen years ago David had friends building underground shelters, but he didn’t understand the attraction, until an ice storm took out his power and left him without electricity for a couple weeks. After building his own “concrete box” underground which doubled as both disaster bunker and guest hou",
-      "published": 1704638409,
-      "published_str": "2024-01-07",
-      "embed_id": "AJgVIEC84zg",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318520.6693027
+  "_ts": 1795585434.1434658
 }

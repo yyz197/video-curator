@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_J5xUnREwFhw",
+      "youtube_id": "J5xUnREwFhw",
+      "source": "youtube",
+      "title": "New Weather Balloons Are MINDBLOWING - Smarter Every Day 318",
+      "url": "https://www.youtube.com/watch?v=J5xUnREwFhw",
+      "thumbnail": "https://i.ytimg.com/vi/J5xUnREwFhw/mqdefault.jpg",
+      "author": "SmarterEveryDay",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "A big thanks to Henson for sponsoring this video. Check them out at http://hensonshaving.com/smarter (Make sure the 100 pack is in your cart to get them for free.)\n\nPlease consider supporting Smarter Every Day on Patreon:\nhttp://www.patreon.com/smartereveryday\n\n2nd Channel Video: https://youtu.be/Io",
+      "published": 1795446007,
+      "published_str": "2026-11-23",
+      "embed_id": "J5xUnREwFhw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pXypQ6d_iDg",
       "youtube_id": "pXypQ6d_iDg",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_-0JKHuzJ67A",
-      "youtube_id": "-0JKHuzJ67A",
-      "source": "youtube",
-      "title": "Everything About Disc Golf Aerodynamics - Smarter Every Day 313",
-      "url": "https://www.youtube.com/watch?v=-0JKHuzJ67A",
-      "thumbnail": "https://i.ytimg.com/vi/-0JKHuzJ67A/mqdefault.jpg",
-      "author": "SmarterEveryDay",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "The coolest part about this is that Brad and Chad didn't ask me to say anything in particular.... they partner with wholesale dealers so you should be able to find MVP discs at your local disc golf store.  If you'd like to explore what they make you can check out their website here. https://mvpdiscs",
-      "published": 1772829016,
-      "published_str": "2026-03-06",
-      "embed_id": "-0JKHuzJ67A",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318526.8408637
+  "_ts": 1795585440.7281137
 }

@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_4nFA4zntF7I",
+      "youtube_id": "4nFA4zntF7I",
+      "source": "youtube",
+      "title": "Java4Shell Exploit - Computerphile",
+      "url": "https://www.youtube.com/watch?v=4nFA4zntF7I",
+      "thumbnail": "https://i.ytimg.com/vi/4nFA4zntF7I/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Another week, another exploit has Dr Steve Bagley urging people to \"Patch, Patch, Patch!\"\n\nExploit discovered by: https://calif.io/java4shell \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://jane-st.co/computerphile\n\nThis video was fi",
+      "published": 1795547278,
+      "published_str": "2026-11-24",
+      "embed_id": "4nFA4zntF7I",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BHOw09O3ZsI",
       "youtube_id": "BHOw09O3ZsI",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_gH_rF9LLzFA",
-      "youtube_id": "gH_rF9LLzFA",
-      "source": "youtube",
-      "title": "Quantum Computing in Reality (Pt3: Beyond the Hype) - Computerphile",
-      "url": "https://www.youtube.com/watch?v=gH_rF9LLzFA",
-      "thumbnail": "https://i.ytimg.com/vi/gH_rF9LLzFA/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "What's actually possible vs what's theoretically possible vs what's actually useful with quantum computing? Victor V. Albert of University of Maryland and NIST simplifies!\n\nVictor on Twitter: @victorvalbert \n\nEntire Quantum playlist: https://www.youtube.com/playlist?list=PLzH6n4zXucko55y-YFE4ng1CLiu",
-      "published": 1688652971,
-      "published_str": "2023-07-06",
-      "embed_id": "gH_rF9LLzFA",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318516.82021
+  "_ts": 1795585429.8376174
 }

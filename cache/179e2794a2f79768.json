@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_rCx4SCd4N-s",
+      "youtube_id": "rCx4SCd4N-s",
+      "source": "youtube",
+      "title": "Microsoft Azure AI Fundamentals (AI-901) Certification Course",
+      "url": "https://www.youtube.com/watch?v=rCx4SCd4N-s",
+      "thumbnail": "https://i.ytimg.com/vi/rCx4SCd4N-s/mqdefault.jpg",
+      "author": "freeCodeCamp.org",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Prepare to pass the Microsoft Azure AI Fundamentals (AI-901) exam. As a candidate for this Microsoft Certification, you’re at the beginning of your career in AI solution development. For this exam, you should have conceptual knowledge of AI solutions in Azure and the foundational technical skills to",
+      "published": 1795534526,
+      "published_str": "2026-11-24",
+      "embed_id": "rCx4SCd4N-s",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_ybe6EGe_wjo",
       "youtube_id": "ybe6EGe_wjo",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_cqfl38Ip1ho",
-      "youtube_id": "cqfl38Ip1ho",
-      "source": "youtube",
-      "title": "How Ethical Hackers Actually Break Into Systems",
-      "url": "https://www.youtube.com/watch?v=cqfl38Ip1ho",
-      "thumbnail": "https://i.ytimg.com/vi/cqfl38Ip1ho/mqdefault.jpg",
-      "author": "freeCodeCamp.org",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Throughout this hands-on ethical hacking crash course, you will learn the core Linux fundamentals and essential command-line tools needed to navigate and audit target systems effectively. From network scanning and web enumeration with tools like Nmap, Dirsearch, and Burp Suite, to exploiting vulnera",
-      "published": 1793205900,
-      "published_str": "2026-10-28",
-      "embed_id": "cqfl38Ip1ho",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318527.810456
+  "_ts": 1795585441.9608657
 }

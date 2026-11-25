@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_4nFA4zntF7I",
+      "youtube_id": "4nFA4zntF7I",
+      "source": "youtube",
+      "title": "Java4Shell Exploit - Computerphile",
+      "url": "https://www.youtube.com/watch?v=4nFA4zntF7I",
+      "thumbnail": "https://i.ytimg.com/vi/4nFA4zntF7I/mqdefault.jpg",
+      "author": "Computerphile",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "数学计算机",
+      "description": "Another week, another exploit has Dr Steve Bagley urging people to \"Patch, Patch, Patch!\"\n\nExploit discovered by: https://calif.io/java4shell \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://jane-st.co/computerphile\n\nThis video was fi",
+      "published": 1795547278,
+      "published_str": "2026-11-24",
+      "embed_id": "4nFA4zntF7I",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_BHOw09O3ZsI",
       "youtube_id": "BHOw09O3ZsI",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_h6j_ixGnpiY",
-      "youtube_id": "h6j_ixGnpiY",
-      "source": "youtube",
-      "title": "How Image Watermarking Works - Computerphile",
-      "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
-      "thumbnail": "https://i.ytimg.com/vi/h6j_ixGnpiY/mqdefault.jpg",
-      "author": "Computerphile",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "数学计算机",
-      "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganography vs Watermarking & Metadata Limitations\n01:39 - Why Least",
-      "published": 1792674006,
-      "published_str": "2026-10-22",
-      "embed_id": "h6j_ixGnpiY",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318527.7122474
+  "_ts": 1795585441.827323
 }

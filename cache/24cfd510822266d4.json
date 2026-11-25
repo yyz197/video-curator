@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_5kWanQjVt9U",
+      "youtube_id": "5kWanQjVt9U",
+      "source": "youtube",
+      "title": "Why don't sleeping birds fall out of trees?",
+      "url": "https://www.youtube.com/watch?v=5kWanQjVt9U",
+      "thumbnail": "https://i.ytimg.com/vi/5kWanQjVt9U/mqdefault.jpg",
+      "author": "Be Smart",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+      "published": 1795532422,
+      "published_str": "2026-11-24",
+      "embed_id": "5kWanQjVt9U",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_6_odOjUzdm4",
       "youtube_id": "6_odOjUzdm4",
       "source": "youtube",
@@ -99,32 +124,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_YgoiujmwLKI",
-      "youtube_id": "YgoiujmwLKI",
-      "source": "youtube",
-      "title": "The Real Cost of AI Will Shock You",
-      "url": "https://www.youtube.com/watch?v=YgoiujmwLKI",
-      "thumbnail": "https://i.ytimg.com/vi/YgoiujmwLKI/mqdefault.jpg",
-      "author": "Be Smart",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "Take the PBS Digital Studios Annual Survey: https://to.pbs.org/2026SurveyBeSmart \n↓↓↓ More info and sources below ↓↓↓\n\nIf you ask what is the environmental impact of AI, you’ll get two answers. One says it’s minimal and worth it. The other says it’s an environmental catastrophe. So what's the truth?",
-      "published": 1792682730,
-      "published_str": "2026-10-22",
-      "embed_id": "YgoiujmwLKI",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318527.117876
+  "_ts": 1795585441.067207
 }

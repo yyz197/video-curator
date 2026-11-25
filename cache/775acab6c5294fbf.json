@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_J5xUnREwFhw",
+      "youtube_id": "J5xUnREwFhw",
+      "source": "youtube",
+      "title": "New Weather Balloons Are MINDBLOWING - Smarter Every Day 318",
+      "url": "https://www.youtube.com/watch?v=J5xUnREwFhw",
+      "thumbnail": "https://i.ytimg.com/vi/J5xUnREwFhw/mqdefault.jpg",
+      "author": "SmarterEveryDay",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "科学科普",
+      "description": "A big thanks to Henson for sponsoring this video. Check them out at http://hensonshaving.com/smarter (Make sure the 100 pack is in your cart to get them for free.)\n\nPlease consider supporting Smarter Every Day on Patreon:\nhttp://www.patreon.com/smartereveryday\n\n2nd Channel Video: https://youtu.be/Io",
+      "published": 1795446007,
+      "published_str": "2026-11-23",
+      "embed_id": "J5xUnREwFhw",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_pXypQ6d_iDg",
       "youtube_id": "pXypQ6d_iDg",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_F3FkAUbetWU",
-      "youtube_id": "F3FkAUbetWU",
-      "source": "youtube",
-      "title": ".38 Special vs Prince Ruperts Drop at 170,000 FPS - Smarter Every Day 169",
-      "url": "https://www.youtube.com/watch?v=F3FkAUbetWU",
-      "thumbnail": "https://i.ytimg.com/vi/F3FkAUbetWU/mqdefault.jpg",
-      "author": "SmarterEveryDay",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "科学科普",
-      "description": "I'm going to walk it up until I can find the limit.  \nUse the promo code \"Smarter\" to get $50 off a Casper mattress here http://www.casper.com/smarter ⇊ Click below for more links! ⇊\n\nClick here to tweet this video: https://goo.gl/R5N49U\n\nI shot a .22 Magnum and a .38 Special bullet at the Prince Ru",
-      "published": 1493212590,
-      "published_str": "2017-04-26",
-      "embed_id": "F3FkAUbetWU",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795318513.0567005
+  "_ts": 1795585426.151379
 }

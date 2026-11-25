@@ -4,7 +4,7 @@
       "id": "youtube_zqzk43bSdDI",
       "youtube_id": "zqzk43bSdDI",
       "source": "youtube",
-      "title": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
+      "title": "We've been asking: “What if AI solved the Riemann Hypothesis?”",
       "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
       "thumbnail": "https://i.ytimg.com/vi/zqzk43bSdDI/mqdefault.jpg",
       "author": "3Blue1Brown",
@@ -17,7 +17,7 @@
       "likes": "",
       "likes_raw": 0,
       "category": "数学计算机",
-      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\n\n------------------\n\nThese animations are largely made using a custom Python l",
+      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\n\nAnnouncement from Alessandro Maria Masullo on his work on GHR: https://sites.google.com/view/tmotp/home\n\n0:00 - Kevin Buzzard\n0:45 - Ken Ono\n1:14 - Elliot Glazer\n1:28 - Jordan Ellenberg\n2:18 - Leo de Moura\n3:14 - Terence",
       "published": 1795312932,
       "published_str": "2026-11-22",
       "embed_id": "zqzk43bSdDI",
@@ -126,5 +126,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1795318527.5804007
+  "_ts": 1795585441.6610136
 }
