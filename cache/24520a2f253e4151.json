@@ -29,7 +29,7 @@
       "id": "youtube_qbsb9DpdZ6s",
       "youtube_id": "qbsb9DpdZ6s",
       "source": "youtube",
-      "title": "This algorithm changed how I think about compression | Information theory, part 3",
+      "title": "This algorithm changed how I think about compression | Compression & Intelligence, part 3",
       "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
       "thumbnail": "https://i.ytimg.com/vi/qbsb9DpdZ6s/mqdefault.jpg",
       "author": "3Blue1Brown",
@@ -254,7 +254,7 @@
       "id": "youtube_GlYgs6v2YfU",
       "youtube_id": "GlYgs6v2YfU",
       "source": "youtube",
-      "title": "What is cross-entropy, and why is it used in ML? | Information theory, part 2",
+      "title": "Cross-entropy: Compression ratios as loss functions | Compression & Intelligence, part 2",
       "url": "https://www.youtube.com/watch?v=GlYgs6v2YfU",
       "thumbnail": "https://i.ytimg.com/vi/GlYgs6v2YfU/mqdefault.jpg",
       "author": "3Blue1Brown",
@@ -354,7 +354,7 @@
       "id": "youtube_l6DKRf-fAAM",
       "youtube_id": "l6DKRf-fAAM",
       "source": "youtube",
-      "title": "Shannon's dream: The limit of compressibility | Information theory, part 1",
+      "title": "How to invent entropy | Compression & Intelligence, part 1",
       "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
       "thumbnail": "https://i.ytimg.com/vi/l6DKRf-fAAM/mqdefault.jpg",
       "author": "3Blue1Brown",
@@ -3751,5 +3751,5 @@
       "favorited": false
     }
   ],
-  "_ts": 1795585429.6874802
+  "_ts": 1795842179.0330398
 }

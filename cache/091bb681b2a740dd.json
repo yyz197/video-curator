@@ -1,6 +1,31 @@
 {
   "videos": [
     {
+      "id": "youtube_vghv2DLGvVg",
+      "youtube_id": "vghv2DLGvVg",
+      "source": "youtube",
+      "title": "The 9-5 Trap, Explained",
+      "url": "https://www.youtube.com/watch?v=vghv2DLGvVg",
+      "thumbnail": "https://i.ytimg.com/vi/vghv2DLGvVg/mqdefault.jpg",
+      "author": "Ali Abdaal",
+      "duration": "",
+      "duration_seconds": 0,
+      "duration_badge": "",
+      "views": "",
+      "views_raw": 0,
+      "danmaku": "",
+      "likes": "",
+      "likes_raw": 0,
+      "category": "经济商业",
+      "description": "Check out Manychat for free or use the code ALIABDAAL for a free 30-day trial of Manychat Pro: https://manychat.com/creators?utm_source=influencer&utm_medium=cold&utm_campaign=AliAbdaalYT&utm_content=Youtube #ManychatPartner\n\n🚀 Join our 8-week Lifestyle Business Launchpad Challenge  👉 https://go.lif",
+      "published": 1795627172,
+      "published_str": "2026-11-25",
+      "embed_id": "vghv2DLGvVg",
+      "embed_src": "youtube",
+      "summary": null,
+      "favorited": false
+    },
+    {
       "id": "youtube_PiwBdhcpsxQ",
       "youtube_id": "PiwBdhcpsxQ",
       "source": "youtube",
@@ -3724,32 +3749,7 @@
       "embed_src": "youtube",
       "summary": null,
       "favorited": false
-    },
-    {
-      "id": "youtube_3HWvOdAcd18",
-      "youtube_id": "3HWvOdAcd18",
-      "source": "youtube",
-      "title": "My surprising energy lesson",
-      "url": "https://www.youtube.com/watch?v=3HWvOdAcd18",
-      "thumbnail": "https://i.ytimg.com/vi/3HWvOdAcd18/mqdefault.jpg",
-      "author": "Ali Abdaal",
-      "duration": "",
-      "duration_seconds": 0,
-      "duration_badge": "",
-      "views": "",
-      "views_raw": 0,
-      "danmaku": "",
-      "likes": "",
-      "likes_raw": 0,
-      "category": "经济商业",
-      "description": "I'm hosting a completely free workshop to reflect on the first 90 days of 2026. If you'd like to join, register here: https://go.aliabdaal.com/yts260404",
-      "published": 1775296803,
-      "published_str": "2026-04-04",
-      "embed_id": "3HWvOdAcd18",
-      "embed_src": "youtube",
-      "summary": null,
-      "favorited": false
     }
   ],
-  "_ts": 1795585432.632291
+  "_ts": 1795842181.7153442
 }
